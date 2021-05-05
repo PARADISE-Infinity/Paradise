@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.25" xmi:version="2.0">
+  <projects id="a53e31f5-7ecc-495f-81fe-d052a0ed03ad" name="p1.1">
+    <parameters id="e43ce192-aeae-46a1-8084-bf1d010de5d7" name="in" xsi:type="prem:Parameter">
+      <value value="342" xsi:type="reg:Value"/>
+    </parameters>
+    <parameters id="04c83f3e-1538-4a98-abcf-5afd3e790a38" name="out" xsi:type="prem:Parameter">
+      <value value="17.0" xsi:type="reg:Value"/>
+    </parameters>
+    <balancings description="" function="out = Sum(const, in)" name="bal" xsi:type="prem:Balancing">
+    <actualSources key="const">
+<value xsi:type="graph:DirectPointer">
+	<target href="reg.registry#18333bf0-b1f0-403a-80cf-c9d8dbc53a52" xsi:type="reg:Constant"/>
+</value>
+</actualSources>
+<actualSources key="in">
+<value xsi:type="graph:DirectPointer">
+	<target href="#e43ce192-aeae-46a1-8084-bf1d010de5d7" xsi:type="prem:Parameter"/>
+</value>
+</actualSources>
+<actualTarget key="out">
+<value target="04c83f3e-1538-4a98-abcf-5afd3e790a38" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+  </projects>
+  <projects id="75ebd9a1-bb53-46e3-ad54-1a71e5481119" name="p1.2"/>
+  <projects id="48263fdc-dfe1-45ac-8d5a-589ba9b06d09" name="p1.3"/>
+<functionPools href="func.functionpool#/"/>
+</prem:ProjectRepository>

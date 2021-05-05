@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" metaModel="1.23">
+  <metaData name="View">
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="false"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Show Parameters" value="true"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Edit local statemachines">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+    </children>
+  </metaData>
+  <usecases name="Root" id="6a90cd84-5c30-47ab-878b-51ed915f569d">
+    <children name="UC1" id="0a9b36af-bfff-411f-8698-b63cd7af38c4"/>
+    <children name="UC2" id="652004e9-f0fa-4a3e-9904-b0030f0b6789"/>
+  </usecases>
+</uc:UseCaseRepository>

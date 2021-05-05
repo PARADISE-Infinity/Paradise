@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fnp:FunctionPool xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <calcEngines description="Engine used by all team members" fileURI="GlobalCalcFunctions.xls" id="914e4754-1a84-4f66-909b-bbefb5ce6a12" name="Excel_Global" xsi:type="fnp:CalcEngineSpreadSheet"/>
+  <functions calcEngine="914e4754-1a84-4f66-909b-bbefb5ce6a12" lastInputMultiple="true" name="Sum" xsi:type="fnp:FnDefSpreadSheet">
+    <output cell="A6" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A5" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+  <functions calcEngine="914e4754-1a84-4f66-909b-bbefb5ce6a12" lastInputMultiple="true" name="Multiply" xsi:type="fnp:FnDefSpreadSheet">
+    <output cell="A10" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A9" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+  <functions calcEngine="914e4754-1a84-4f66-909b-bbefb5ce6a12" description="Divides 1st parameter by all following parameters." lastInputMultiple="true" name="Divide" xsi:type="fnp:FnDefSpreadSheet">
+    <output cell="A14" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A13" name="dividenden" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+  <functions calcEngine="914e4754-1a84-4f66-909b-bbefb5ce6a12" description="Adds a margin (%) to 1st parameter; P1: arbitrary value, P2: value in per-cent (%)" name="Add_Margin" xsi:type="fnp:FnDefSpreadSheet">
+    <output cell="A18" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A17" name="baseValue" xsi:type="fnp:FnInputSpreadSheet"/>
+    <inputs cell="B17" name="margin" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+  <functions calcEngine="914e4754-1a84-4f66-909b-bbefb5ce6a12" description="Maximum of given parameters" lastInputMultiple="true" name="Max" xsi:type="fnp:FnDefSpreadSheet">
+    <output cell="A22" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A21" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+  <functions calcEngine="914e4754-1a84-4f66-909b-bbefb5ce6a12" description="Minimum of given parameters" lastInputMultiple="true" name="Min" xsi:type="fnp:FnDefSpreadSheet">
+    <output cell="A26" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A25" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+  <functions calcEngine="914e4754-1a84-4f66-909b-bbefb5ce6a12" description="Average value of being in duty and not in duty. Parameters: ValueForON, ValueForOFF, PercentageOfON. In case of power discipline, with Dc=PercentageOfON: Pavg = Pon * Dc + Pstby * (100 - Dc)." name="Avg_DutyCycle" xsi:type="fnp:FnDefSpreadSheet">
+    <output cell="A30" description="Sum of values being on and off, related to percentage of being on" name="AvgOnDuty" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A29" description="Value for being on (e.g. Watt in power on)" name="OnValue" xsi:type="fnp:FnInputSpreadSheet"/>
+    <inputs cell="B29" description="Value for being off (e.g. Watt in power stand-by)" name="OffValue" xsi:type="fnp:FnInputSpreadSheet"/>
+    <inputs cell="C29" description="Duty cycle, percentage of being on" name="Dc" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+  <functions calcEngine="914e4754-1a84-4f66-909b-bbefb5ce6a12" name="Multiply_Sinus" xsi:type="fnp:FnDefSpreadSheet">
+    <output cell="A34" name="Shortened" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A33" name="BaseValue" xsi:type="fnp:FnInputSpreadSheet"/>
+    <inputs cell="B33" name="Degree" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+  <functions calcEngine="914e4754-1a84-4f66-909b-bbefb5ce6a12" name="Multiply_Cosinus" xsi:type="fnp:FnDefSpreadSheet">
+    <output cell="A38" name="Shortened" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A37" name="BaseValue" xsi:type="fnp:FnInputSpreadSheet"/>
+    <inputs cell="B37" name="Degree" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+  <functions calcEngine="914e4754-1a84-4f66-909b-bbefb5ce6a12" name="ArcTan" xsi:type="fnp:FnDefSpreadSheet">
+    <output cell="A46" name="Degree" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A45" description="" name="OppositeLeg" xsi:type="fnp:FnInputSpreadSheet"/>
+    <inputs cell="B45" name="AdjacentLeg" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+  <functions calcEngine="914e4754-1a84-4f66-909b-bbefb5ce6a12" description="First two parameters are used for division, following 5 parameters are used as factors" lastInputMultiple="true" name="DivideFirstThenMultiply" xsi:type="fnp:FnDefSpreadSheet">
+    <output cell="A50" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A49" name="dividend" xsi:type="fnp:FnInputSpreadSheet"/>
+    <inputs cell="B49" name="divisor" xsi:type="fnp:FnInputSpreadSheet"/>
+    <inputs cell="C49" name="factor" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+  <functions calcEngine="914e4754-1a84-4f66-909b-bbefb5ce6a12" lastInputMultiple="true" name="FailRateSumOnOR_NotRedundant" xsi:type="fnp:FnDefSpreadSheet">
+    <output cell="A6" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A5" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+  <functions calcEngine="914e4754-1a84-4f66-909b-bbefb5ce6a12" lastInputMultiple="true" name="FailRateMulOnAND_Redundant" xsi:type="fnp:FnDefSpreadSheet">
+    <output cell="A10" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A9" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+  <functions calcEngine="914e4754-1a84-4f66-909b-bbefb5ce6a12" lastInputMultiple="true" name="Subtract" xsi:type="fnp:FnDefSpreadSheet">
+    <output cell="A42" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A41" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+  <functions calcEngine="914e4754-1a84-4f66-909b-bbefb5ce6a12" name="km/h_to_m/s" xsi:type="fnp:FnDefSpreadSheet">
+    <output cell="A54" name="speed_m/s" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A53" name="speed_km/h" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+  <functions calcEngine="914e4754-1a84-4f66-909b-bbefb5ce6a12" lastInputMultiple="true" name="Mean" xsi:type="fnp:FnDefSpreadSheet">
+    <output cell="A58" name="Mean" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A57" name="Part" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+</fnp:FunctionPool>

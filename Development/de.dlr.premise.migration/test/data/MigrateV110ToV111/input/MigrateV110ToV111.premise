@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:regval="http://www.dlr.de/ft/premise/registry/validated/2013/" xmlns:val="http://www.dlr.de/ft/premise/validated/2013/" metaModel="1.10">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+  </metaData>
+  <projects name="Comp1" id="02cba07b-3856-43da-92c1-ad6f22620eff">
+    <modes xsi:type="val:Mode" name="Mode1" id="98f02410-5b19-44cc-9500-3d8f5a10831a"/>
+    <modes xsi:type="val:Mode" name="Mode2" id="0ad10d36-7bea-48a9-98f4-3c325dc615c5"/>
+    <transitions xsi:type="val:Transition" id="3df6a498-2da4-4b6f-a12f-ff9ed2e061b1" target="0ad10d36-7bea-48a9-98f4-3c325dc615c5" source="98f02410-5b19-44cc-9500-3d8f5a10831a">
+      <constraint xsi:type="prem:TransitionConstraint" trigger="0ad10d36-7bea-48a9-98f4-3c325dc615c5"/>
+      <parameters name="TParam1" id="ee4373fc-4658-4e8a-970b-fa905ee57525"/>
+      <parameters name="TParam2" id="5fdb0bc6-8dc1-4669-82c4-e558ef51162a"/>
+      <balancings xsi:type="val:TransitionBalancing" name="" target="5fdb0bc6-8dc1-4669-82c4-e558ef51162a" sources="ee4373fc-4658-4e8a-970b-fa905ee57525"/>
+    </transitions>
+    <parameters xsi:type="val:Parameter" name="Param1" id="2d8faaa0-2345-4d91-9c6b-d9b4ea66548a">
+      <value xsi:type="regval:Value" value="0"/>
+      <modeValues xsi:type="val:ModeValueRef" modes="98f02410-5b19-44cc-9500-3d8f5a10831a" value="1"/>
+    </parameters>
+    <parameters xsi:type="val:Parameter" name="Param2" id="bc0184c2-41f6-4814-b5d4-327b0aed8d63">
+      <value xsi:type="regval:Value" value="0"/>
+      <modeValues xsi:type="val:ModeValueRef" modes="98f02410-5b19-44cc-9500-3d8f5a10831a" value="1"/>
+    </parameters>
+    <balancings xsi:type="val:Balancing" name="Copy" target="bc0184c2-41f6-4814-b5d4-327b0aed8d63">
+      <sources xsi:type="reg:Constant" href="MigrateV110ToV111.registry#c7ef1b3e-032a-4cc9-adcb-299cbc929f81"/>
+      <sources xsi:type="prem:TransitionParameter" href="#ee4373fc-4658-4e8a-970b-fa905ee57525"/>
+      <sources xsi:type="val:Parameter" href="#2d8faaa0-2345-4d91-9c6b-d9b4ea66548a"/>
+    </balancings>
+    <connections xsi:type="val:Connection" source="02cba07b-3856-43da-92c1-ad6f22620eff" target="02cba07b-3856-43da-92c1-ad6f22620eff" type="" targetPortName=""/>
+    <relations source="02cba07b-3856-43da-92c1-ad6f22620eff" target="02cba07b-3856-43da-92c1-ad6f22620eff" type="Circle"/>
+  </projects>
+</prem:ProjectRepository>

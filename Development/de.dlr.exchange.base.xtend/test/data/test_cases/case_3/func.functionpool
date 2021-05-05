@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fnp:FunctionPool xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <calcEngines fileURI="GlobalCalcFunctions.xls" id="a366a547-ab81-463c-bb05-7be2bc321e3f" name="excel" xsi:type="fnp:CalcEngineSpreadSheet"/>
+  <functions calcEngine="a366a547-ab81-463c-bb05-7be2bc321e3f" description="Maximum of given parameters" lastInputMultiple="true" name="Max" xsi:type="fnp:FnDefSpreadSheet">
+    <output cell="A22" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A21" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+  <functions calcEngine="a366a547-ab81-463c-bb05-7be2bc321e3f" lastInputMultiple="true" name="Sum" xsi:type="fnp:FnDefSpreadSheet">
+    <output cell="A6" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A5" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+</fnp:FunctionPool>

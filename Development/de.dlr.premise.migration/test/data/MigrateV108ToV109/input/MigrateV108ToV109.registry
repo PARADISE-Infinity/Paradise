@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><reg:Registry xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:regval="http://www.dlr.de/ft/premise/registry/validated/2013/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <units description="Mass of an object." name="Mass" symbol="kg"/>
+  <constants description="" id="d433632a-20f4-4ce7-9999-16d2e9b0e5b5" name="" unit="kg">
+    <value value="1" xsi:type="regval:Value"/>
+  </constants>
+</reg:Registry>

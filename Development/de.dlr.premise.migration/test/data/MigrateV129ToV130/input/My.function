@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" metaModel="1.29">
+  <metaData name="View">
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Group Elements" value="false"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Edit local statemachines">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+    </children>
+  </metaData>
+  <usecases id="54f109a6-fe8c-46bd-8623-deba3c1c3924">
+    <statemachines name="SM" id="b03cf8e9-40ec-4544-9c49-aa9e758d47f4">
+      <modes name="A" id="41849476-850c-4afb-9a4f-4b16ec626365" entryMode="true"/>
+      <modes name="B" id="85baacda-0c9d-481e-af19-3c9f410c9818"/>
+      <transitions id="a59e3614-d771-4618-b02d-d965728e2d04">
+        <sourcePointer xsi:type="graph:DirectPointer" target="41849476-850c-4afb-9a4f-4b16ec626365"/>
+        <targetPointer xsi:type="graph:DirectPointer" target="85baacda-0c9d-481e-af19-3c9f410c9818"/>
+        <condition xsi:type="elem:GuardCombination">
+          <children xsi:type="elem:ModeGuard">
+            <mode href="My.system#2a65fb22-16bd-40d4-8bc0-94edc25ea1ff"/>
+          </children>
+          <children xsi:type="elem:ModeGuard">
+            <mode href="My.system#eed10b2c-75ee-4349-83d2-bb393f31c33e"/>
+          </children>
+        </condition>
+      </transitions>
+    </statemachines>
+    <requiredParameters name="RP" id="fa71b6a3-4321-4869-bbd6-564f323e0c3d">
+      <modeValueConstraints xsi:type="uc:ModeRangeConstraint" upper="5" lower="0">
+        <modes href="My.system#2a65fb22-16bd-40d4-8bc0-94edc25ea1ff"/>
+      </modeValueConstraints>
+      <modeValueConstraints xsi:type="uc:ModeRangeConstraint">
+        <modes href="#85baacda-0c9d-481e-af19-3c9f410c9818"/>
+        <modes href="My.system#c73c742a-7c96-4f5a-aaff-aa4c196066c6"/>
+      </modeValueConstraints>
+    </requiredParameters>
+  </usecases>
+</uc:UseCaseRepository>

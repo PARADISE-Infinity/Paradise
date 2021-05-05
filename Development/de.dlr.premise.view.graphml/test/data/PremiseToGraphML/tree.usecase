@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <usecases id="11ea69f7-5734-489c-a866-c1bf720a92ad" name="Root">
+    <children id="87fef554-99d7-4731-961f-ec30033dd529" name="1"/>
+    <children id="3df93763-118a-4fba-9688-299d1173ccda" name="2">
+      <relations>
+<sourcePointer target="df00cf4a-ffd4-4c36-a514-a0745574172f" xsi:type="graph:DirectPointer"/>
+<targetPointer target="a970c499-84c6-4162-9216-da12a7ad0311" xsi:type="graph:DirectPointer"/>
+</relations>
+      <children id="df00cf4a-ffd4-4c36-a514-a0745574172f" name="2.1">
+        <relations>
+<sourcePointer target="df00cf4a-ffd4-4c36-a514-a0745574172f" xsi:type="graph:DirectPointer"/>
+<targetPointer target="a970c499-84c6-4162-9216-da12a7ad0311" xsi:type="graph:DirectPointer"/>
+</relations>
+      </children>
+    </children>
+    <children id="a676a9ca-8b73-467a-a5ff-1436e9b56322" name="3">
+      <children id="a970c499-84c6-4162-9216-da12a7ad0311" name="3.1"/>
+      <children id="12f46d8c-373f-47f7-af8f-b7f30a6c0b4c" name="3.2"/>
+      <children id="3ad10b63-8735-48b4-a6d0-ae9c8280f521" name="3.3"/>
+    </children>
+  </usecases>
+</uc:UseCaseRepository>

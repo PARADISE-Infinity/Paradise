@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="false"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Show Parameters" value="true"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Edit local statemachines">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <usecases id="210752c5-7ec5-4d10-896f-70482eadd5e4" name="12345">
+    <relations name="">
+      <sourcePointer target="210752c5-7ec5-4d10-896f-70482eadd5e4" xsi:type="graph:DirectPointer"/>
+      <targetPointer xsi:type="graph:DirectPointer">
+        <target href="input.premise#3831ebd3-8e62-4590-8503-ccae9ab88197" xsi:type="prem:SystemComponent"/>
+      </targetPointer>
+    </relations>
+  </usecases>
+  <usecases id="84fa5e2d-d0d3-4202-808c-f7c1679fb985" name="45754">
+    <children id="3f1eb4ac-c85b-438a-bd69-79d914c70794" name="24556"/>
+  </usecases>
+  <usecases id="1a0a7580-6e63-405d-a61e-68a5960c6c7d" name="75634"/>
+</uc:UseCaseRepository>

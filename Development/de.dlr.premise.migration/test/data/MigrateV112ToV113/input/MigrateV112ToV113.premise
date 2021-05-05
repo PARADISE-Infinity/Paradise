@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:prem="http://www.dlr.de/ft/premise/2010/" metaModel="1.12">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+  </metaData>
+  <projects id="61f4e96c-3081-4838-99cb-963e1a9323ff">
+    <parameters name="Cool Param" id="5864afe6-55a0-4485-b559-0a3305a5f1de">
+      <value value="2"/>
+      <satisfies href="MigrateV112ToV113.usecase#//@usecases.1/@constraints.0"/>
+    </parameters>
+  </projects>
+</prem:ProjectRepository>

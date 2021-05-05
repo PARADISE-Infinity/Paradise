@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!-- $Id$
+-->
+
+<plugin>
+   <extension-point id="beforeModelLoad" name="Before Model Load" schema="schema/beforeModelLoad.exsd"/>
+   <extension-point id="customCellEditor" name="Custom Cell Editor" schema="schema/customCellEditor.exsd"/>
+
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="de.dlr.ft.premise.editor.keybinding.transition"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+T">
+      </key>
+      <key
+            commandId="de.dlr.ft.premise.editor.keybinding.transition.reversed"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+M3+T">
+      </key>
+      <key
+            commandId="de.dlr.ft.premise.editor.keybinding.connection"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+J">
+      </key>
+      <key
+            commandId="de.dlr.ft.premise.editor.keybinding.connection.reversed"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+M3+J">
+      </key>
+      <key
+            commandId="de.dlr.ft.premise.editor.keybinding.openfile"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="F8">
+      </key>
+      <key
+            commandId="de.dlr.premise.editor.keybinding.createparameter"
+            schemeId="de.dlr.premise"
+            sequence="M1+P">
+      </key>
+      <key
+            commandId="de.dlr.premise.editor.keybinding.createaelement"
+            schemeId="de.dlr.premise"
+            sequence="M1+M2+N">
+      </key>
+      <key
+            commandId="de.dlr.premise.editor.keybinding.createaelementsibling"
+            schemeId="de.dlr.premise"
+            sequence="M1+N">
+      </key>
+      <key
+            commandId="de.dlr.premise.editor.keybinding.createrelation"
+            schemeId="de.dlr.premise"
+            sequence="M1+R">
+      </key>
+      <key
+            commandId="de.dlr.premise.editor.keybinding.createrelation.reversed"
+            schemeId="de.dlr.premise"
+            sequence="M1+M3+R">
+      </key>
+      <key
+            commandId="de.dlr.premise.editor.commands.expandall"
+            schemeId="de.dlr.premise"
+            sequence="M1+ARROW_RIGHT">
+      </key>
+      <key
+            commandId="de.dlr.premise.editor.commands.collapseall"
+            schemeId="de.dlr.premise"
+            sequence="M1+ARROW_LEFT">
+      </key>
+      <key
+            commandId="de.dlr.premise.editor.opensearchcommand"
+            contextId="de.dlr.premise.editor.context"
+            schemeId="de.dlr.premise"
+            sequence="M1+F">
+      </key>
+      <scheme
+            id="de.dlr.premise"
+            name="de.dlr.premise"
+            parentId="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </scheme>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:org.eclipse.ui.popup.any?endof=edit">
+         <command
+               commandId="de.dlr.premise.editor.commands.expandall"
+               style="push">
+         </command>
+         <command
+               commandId="de.dlr.premise.editor.commands.collapseall"
+               style="push">
+         </command>
+         <separator
+               name="de.dlr.premise.editor.separator2"
+               visible="true">
+         </separator>
+         <command
+               commandId="de.dlr.premise.editor.commands.extractcomponentdefinition"
+               style="push">
+            <visibleWhen
+                  checkEnabled="false">
+               <and>
+                  <count
+                        value="1">
+                  </count>
+                  <iterate
+                        ifEmpty="false"
+                        operator="and">
+                     <instanceof
+                           value="de.dlr.premise.system.SystemComponent">
+                     </instanceof>
+                  </iterate>
+               </and>
+            </visibleWhen>
+         </command>
+         <command
+               commandId="de.dlr.premise.editor.commands.matchcomponentdefinition"
+               style="push">
+            <visibleWhen
+                  checkEnabled="false">
+               <and>
+                  <count
+                        value="1">
+                  </count>
+                  <iterate
+                        ifEmpty="false"
+                        operator="and">
+                     <instanceof
+                           value="de.dlr.premise.system.SystemComponent">
+                     </instanceof>
+                  </iterate>
+               </and>
+            </visibleWhen>
+         </command>
+         <command
+               commandId="de.dlr.premise.editor.commands.createsubstitution"
+               style="push">
+            <visibleWhen
+                  checkEnabled="false">
+               <and>
+                  <count
+                        value="1">
+                  </count>
+                  <iterate>
+                     <test
+                           forcePluginActivation="true"
+                           property="de.dlr.premise.editor.createSubstitutionPropertyTester.isSubstitutable"
+                           value="true">
+                     </test>
+                     <instanceof
+                           value="de.dlr.premise.system.provider.my.ComponentReferenceChildrenDelegatingWrapperItemProvider">
+                     </instanceof>
+                  </iterate>
+               </and>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:org.eclipse.ui.popup.any?after=additions-end">
+         <command
+               commandId="de.dlr.premise.editor.commands.unloadresource"
+               style="push">
+            <visibleWhen
+                  checkEnabled="false">
+               <iterate
+                     operator="and">
+                  <instanceof
+                        value="org.eclipse.emf.ecore.resource.Resource">
+                  </instanceof>
+               </iterate>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:common.new.menu">
+         <command
+               commandId="org.eclipse.ui.newWizard"
+               label="SystemModelWizard"
+               style="push">
+            <parameter
+                  name="newWizardId"
+                  value="de.dlr.premise.system.presentation.SystemModelWizardID">
+            </parameter>
+            <visibleWhen
+                  checkEnabled="false">
+               <iterate
+                     ifEmpty="false">
+                  <instanceof
+                        value="org.eclipse.core.resources.IResource">
+                  </instanceof>
+               </iterate>
+            </visibleWhen>
+         </command>
+         <command
+               commandId="org.eclipse.ui.newWizard"
+               label="UseCaseModelWizard"
+               style="push">
+            <parameter
+                  name="newWizardId"
+                  value="de.dlr.premise.functions.presentation.UseCaseModelWizardID">
+            </parameter>
+            <visibleWhen
+                  checkEnabled="false">
+               <iterate
+                     ifEmpty="false">
+                  <instanceof
+                        value="org.eclipse.core.resources.IResource">
+                  </instanceof>
+               </iterate>
+            </visibleWhen>
+         </command>
+         <command
+               commandId="org.eclipse.ui.newWizard"
+               label="FunctionPoolModelWizard"
+               style="push">
+            <parameter
+                  name="newWizardId"
+                  value="de.dlr.premise.functionpool.presentation.FunctionpoolModelWizardID">
+            </parameter>
+            <visibleWhen
+                  checkEnabled="false">
+               <iterate
+                     ifEmpty="false">
+                  <instanceof
+                        value="org.eclipse.core.resources.IResource">
+                  </instanceof>
+               </iterate>
+            </visibleWhen>
+         </command>
+         <command
+               commandId="org.eclipse.ui.newWizard"
+               label="RegistryModelWizard"
+               style="push">
+            <parameter
+                  name="newWizardId"
+                  value="de.dlr.premise.registry.presentation.RegistryModelWizardID">
+            </parameter>
+            <visibleWhen
+                  checkEnabled="false">
+               <iterate
+                     ifEmpty="false">
+                  <instanceof
+                        value="org.eclipse.core.resources.IResource">
+                  </instanceof>
+               </iterate>
+            </visibleWhen>
+         </command>
+         <command
+               commandId="org.eclipse.ui.newWizard"
+               label="RepresentationModelWizard"
+               style="push">
+            <parameter
+                  name="newWizardId"
+                  value="de.dlr.premise.representation.presentation.RepresentationModelWizardID">
+            </parameter>
+            <visibleWhen
+                  checkEnabled="false">
+               <iterate
+                     ifEmpty="false">
+                  <instanceof
+                        value="org.eclipse.core.resources.IResource">
+                  </instanceof>
+               </iterate>
+            </visibleWhen>
+         </command>
+         <command
+               commandId="org.eclipse.ui.newWizard"
+               label="ComponentModelWizard"
+               style="push">
+            <parameter
+                  name="newWizardId"
+                  value="de.dlr.premise.component.presentation.ComponentModelWizardID">
+            </parameter>
+            <visibleWhen
+                  checkEnabled="false">
+               <iterate
+                     ifEmpty="false">
+                  <instanceof
+                        value="org.eclipse.core.resources.IResource">
+                  </instanceof>
+               </iterate>
+            </visibleWhen>
+         </command>
+         <command
+               commandId="org.eclipse.ui.newWizard"
+               label="SafetyModelWizard"
+               style="push">
+            <parameter
+                  name="newWizardId"
+                  value="de.dlr.premise.safety.presentation.SafetyModelWizardID">
+            </parameter>
+            <visibleWhen
+                  checkEnabled="false">
+               <iterate
+                     ifEmpty="false">
+                  <instanceof
+                        value="org.eclipse.core.resources.IResource">
+                  </instanceof>
+               </iterate>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <menu
+               id="org.eclipse.ui.edit"
+               label="Edit">
+            <separator
+                  name="de.dlr.premise.editor.find.separator"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="de.dlr.premise.editor.opensearchcommand"
+                  label="Find"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="de.dlr.premise.system.handler.OpenFileHandler"
+            id="de.dlr.ft.premise.editor.keybinding.openfile"
+            name="OpenFile">
+      </command>
+      <command
+            defaultHandler="de.dlr.premise.system.handler.CreateConnectionHandler"
+            id="de.dlr.ft.premise.editor.keybinding.connection"
+            name="CreateConnection">
+      </command>
+      <command
+            defaultHandler="de.dlr.premise.system.handler.CreateConnectionHandler$Reversed"
+            id="de.dlr.ft.premise.editor.keybinding.connection.reversed"
+            name="CreateConnectionReversed">
+      </command>
+      <command
+            defaultHandler="de.dlr.premise.system.handler.CreateParameterHandler"
+            id="de.dlr.premise.editor.keybinding.createparameter"
+            name="CreateParameter">
+      </command>
+      <command
+            defaultHandler="de.dlr.premise.system.handler.CreateAElementHandler"
+            id="de.dlr.premise.editor.keybinding.createaelement"
+            name="CreateAElement">
+      </command>
+      <command
+            defaultHandler="de.dlr.premise.system.handler.CreateAElementSiblingHandler"
+            id="de.dlr.premise.editor.keybinding.createaelementsibling"
+            name="CreateAElementSibling">
+      </command>
+      <command
+            defaultHandler="de.dlr.premise.system.handler.CreateRelationHandler"
+            id="de.dlr.premise.editor.keybinding.createrelation"
+            name="CreateRelation">
+      </command>
+      <command
+            defaultHandler="de.dlr.premise.system.handler.CreateRelationHandler$Reversed"
+            id="de.dlr.premise.editor.keybinding.createrelation.reversed"
+            name="CreateRelationReversed">
+      </command>
+      <command
+            defaultHandler="de.dlr.premise.system.handler.CreateTransitionHandler"
+            id="de.dlr.ft.premise.editor.keybinding.transition"
+            name="CreateTransition">
+      </command>
+      <command
+            defaultHandler="de.dlr.premise.system.handler.CreateTransitionHandler$Reversed"
+            id="de.dlr.ft.premise.editor.keybinding.transition.reversed"
+            name="CreateTransitionReversed">
+      </command>
+      <command
+            defaultHandler="de.dlr.premise.system.handler.ExpandAllHandler"
+            id="de.dlr.premise.editor.commands.expandall"
+            name="Expand All">
+      </command>
+      <command
+            defaultHandler="de.dlr.premise.system.handler.CollapseAllHandler"
+            id="de.dlr.premise.editor.commands.collapseall"
+            name="Collapse All">
+      </command>
+      <command
+            defaultHandler="de.dlr.premise.system.handler.ExtractComponentDefinitionHandler"
+            id="de.dlr.premise.editor.commands.extractcomponentdefinition"
+            name="Extract Component Definition">
+      </command>
+      <command
+            defaultHandler="de.dlr.premise.system.handler.MatchComponentDefintionHandler"
+            id="de.dlr.premise.editor.commands.matchcomponentdefinition"
+            name="Create children to match component definiton">
+      </command>
+      <command
+            defaultHandler="de.dlr.premise.system.handler.OpenSearchHandler"
+            id="de.dlr.premise.editor.opensearchcommand"
+            name="Open Search Dialog">
+      </command>
+      <command
+            defaultHandler="de.dlr.premise.system.handler.UnloadResourceHandler"
+            id="de.dlr.premise.editor.commands.unloadresource"
+            name="Unload Resource">
+      </command>
+      <command
+            defaultHandler="de.dlr.premise.system.handler.CreateSubstitutionHandler"
+            id="de.dlr.premise.editor.commands.createsubstitution"
+            name="Create Substitution">
+      </command>
+   </extension>
+   
+   <extension
+         point="org.eclipse.core.expressions.propertyTesters">
+      <propertyTester
+            class="de.dlr.premise.system.handler.CreateSubstitutionHandler$CreateSubstitutionPropertyTester"
+            id="de.dlr.premise.editor.createSubstitutionPropertyTester"
+            namespace="de.dlr.premise.editor.createSubstitutionPropertyTester"
+            properties="isSubstitutable"
+            type="de.dlr.premise.system.provider.my.ComponentReferenceChildrenDelegatingWrapperItemProvider">
+      </propertyTester>
+   </extension>
+   
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated not PREMISE -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="de.dlr.premise.system.presentation.SystemModelWizardID"
+            name="%_UI_SystemModelWizard_label"
+            class="de.dlr.premise.system.presentation.my.SystemModelWizardMy"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SystemModelFile.gif">
+         <description>%_UI_SystemModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated not PREMISE -->
+      <editor
+            id="de.dlr.premise.system.presentation.SystemEditorID"
+            name="%_UI_SystemEditor_label"
+            icon="icons/full/obj16/SystemModelFile.gif"
+            extensions="premise,system"
+            class="de.dlr.premise.system.presentation.my.SystemEditorMy"
+            contributorClass="de.dlr.premise.system.presentation.my.SystemActionBarContributorMy">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated not PREMISE -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="de.dlr.premise.registry.presentation.RegistryModelWizardID"
+            name="%_UI_RegistryModelWizard_label"
+            class="de.dlr.premise.registry.presentation.my.RegistryModelWizardMy"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/RegistryModelFile.gif">
+         <description>%_UI_RegistryModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated not PREMISE -->
+      <editor
+            id="de.dlr.premise.registry.presentation.RegistryEditorID"
+            name="%_UI_RegistryEditor_label"
+            icon="icons/full/obj16/RegistryModelFile.gif"
+            extensions="registry"
+            class="de.dlr.premise.system.presentation.my.SystemEditorMy"
+            contributorClass="de.dlr.premise.system.presentation.my.SystemActionBarContributorMy">
+      </editor>
+   </extension>
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="de.dlr.premise.component.presentation.ComponentModelWizardID"
+            name="%_UI_ComponentModelWizard_label"
+            class="de.dlr.premise.component.presentation.my.ComponentModelWizardMy"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ComponentModelFile.gif">
+         <description>%_UI_ComponentModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated not PREMISE -->
+      <editor
+            id="de.dlr.premise.component.presentation.ComponentEditorID"
+            name="%_UI_ComponentEditor_label"
+            icon="icons/full/obj16/ComponentModelFile.gif"
+            extensions="component"
+            class="de.dlr.premise.system.presentation.my.SystemEditorMy"
+            contributorClass="de.dlr.premise.system.presentation.my.SystemActionBarContributorMy">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated PREMISE -->
+      <editor
+            id="de.dlr.premise.graph.presentation.GraphEditorID"
+            name="%_UI_GraphEditor_label"
+            icon="icons/full/obj16/GraphModelFile.gif"
+            extensions="graph"
+            class="de.dlr.premise.graph.presentation.GraphEditor"
+            contributorClass="de.dlr.premise.graph.presentation.GraphActionBarContributor">
+      </editor>
+   </extension>
+
+
+
+
+   <extension name="UseCase Wizard" point="org.eclipse.ui.newWizards">
+      <!-- @generated not PREMISE -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="de.dlr.premise.functions.presentation.UseCaseModelWizardID"
+            name="%_UI_UseCaseModelWizard_label"
+            class="de.dlr.premise.functions.presentation.my.UseCaseModelWizardMy"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/UseCaseModelFile.gif">
+         <description>%_UI_UseCaseModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated not PREMISE -->
+      <editor
+            id="de.dlr.premise.functions.presentation.UseCaseEditorID"
+            name="%_UI_UseCaseEditor_label"
+            icon="icons/full/obj16/UseCaseModelFile.gif"
+            extensions="usecase,function"
+            class="de.dlr.premise.system.presentation.my.SystemEditorMy"
+            contributorClass="de.dlr.premise.system.presentation.my.SystemActionBarContributorMy">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated not PREMISE -->
+      <editor
+            id="de.dlr.premise.element.presentation.ElementEditorID"
+            name="%_UI_ElementEditor_label"
+            icon="icons/full/obj16/ElementModelFile.gif"
+            extensions="element"
+            class="de.dlr.premise.element.presentation.ElementEditor"
+            contributorClass="de.dlr.premise.element.presentation.ElementActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated not PREMISE -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="de.dlr.premise.functionpool.presentation.FunctionpoolModelWizardID"
+            name="%_UI_FunctionpoolModelWizard_label"
+            class="de.dlr.premise.functionpool.presentation.my.FunctionpoolModelWizardMy"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/FunctionpoolModelFile.gif">
+         <description>%_UI_FunctionpoolModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated not PREMISE -->
+      <editor
+            id="de.dlr.premise.functionpool.presentation.FunctionpoolEditorID"
+            name="%_UI_FunctionpoolEditor_label"
+            icon="icons/full/obj16/FunctionpoolModelFile.gif"
+            extensions="functionpool"
+            class="de.dlr.premise.system.presentation.my.SystemEditorMy"
+            contributorClass="de.dlr.premise.system.presentation.my.SystemActionBarContributorMy">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated not PREMISE_Representation -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="de.dlr.premise.representation.presentation.RepresentationModelWizardID"
+            name="%_UI_RepresentationModelWizard_label"
+            class="de.dlr.premise.representation.presentation.my.RepresentationModelWizardMy"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/RepresentationModelFile.gif">
+         <description>%_UI_RepresentationModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated not PREMISE_Representation -->
+      <editor
+            id="de.dlr.premise.representation.presentation.RepresentationEditorID"
+            name="%_UI_RepresentationEditor_label"
+            icon="icons/full/obj16/RepresentationModelFile.gif"
+            extensions="representation"
+            class="de.dlr.premise.system.presentation.my.SystemEditorMy"
+            contributorClass="de.dlr.premise.system.presentation.my.SystemActionBarContributorMy">
+      </editor>
+   </extension>
+   
+   <extension
+         point="de.dlr.premise.editor.customCellEditor">
+      <client
+            class="de.dlr.premise.registry.provider.my.MetaTypeDefImageCustomCellEditor"></client>
+      <client
+            class="de.dlr.premise.representation.presentation.my.AColorValueCustomCellEditor">
+      </client>
+   </extension>
+   <extension
+         point="org.eclipse.ui.contexts">
+      <context
+            id="de.dlr.premise.editor.context"
+            name="In PREMISE Editor"
+            parentId="org.eclipse.ui.contexts.window">
+      </context>
+   </extension>
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated not PREMISE_Safety -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="de.dlr.premise.safety.presentation.SafetyModelWizardID"
+            name="%_UI_SafetyModelWizard_label"
+            class="de.dlr.premise.safety.presentation.my.SafetyModelWizardMy"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SafetyModelFile.gif">
+         <description>%_UI_SafetyModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated not PREMISE_Safety -->
+      <editor
+            id="de.dlr.premise.safety.presentation.SafetyEditorID"
+            name="%_UI_SafetyEditor_label"
+            icon="icons/full/obj16/SafetyModelFile.gif"
+            extensions="safety"
+            class="de.dlr.premise.system.presentation.my.SystemEditorMy"
+            contributorClass="de.dlr.premise.system.presentation.my.SystemActionBarContributorMy">
+      </editor>
+   </extension>
+
+</plugin>

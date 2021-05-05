@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+  </metaData>
+  <projects id="465019c0-d47e-4a45-88ca-2e4475750f93" name="Required">
+    <children id="2be39c86-1cf8-4345-a27c-6779a01f27f8" name="Support" xsi:type="prem:SystemComponent">
+      <parameters id="888e16f3-e5b2-4852-9180-e58f4e1b4ffa" name="RCP">
+        <value uncertainty="1" value="1"/>
+        <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="TestTool.usecase#59e28934-04bb-4d22-b550-0aca44b1dee2" xsi:type="uc:RequiredParameter"/>
+	</targetPointer>
+</satisfies>
+      </parameters>
+      <parameters id="49f5c934-fcfb-4231-a27a-8e9d258383bc" name="Long Term Support">
+        <value uncertainty="1" value="1"/>
+        <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="TestTool.usecase#1a4630b5-7b6f-467d-83d6-3ff70864dd69" xsi:type="uc:RequiredParameter"/>
+	</targetPointer>
+</satisfies>
+      </parameters>
+    </children>
+    <children id="44d7242a-2303-4f4f-b2af-4518503047e6" name="Tests" xsi:type="prem:SystemComponent">
+      <parameters id="9374bcea-d7a3-4b78-aa2c-6481b830d166" name="Error Handling">
+        <value uncertainty="1" value="1"/>
+        <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="TestTool.usecase#94b1f3e9-be90-433b-a403-07e9737f3f7b" xsi:type="uc:RequiredParameter"/>
+	</targetPointer>
+</satisfies>
+      </parameters>
+      <parameters id="acc8a2e5-ea5c-4218-bf6a-efcc52843c63" name="Multiple Tests">
+        <value uncertainty="1" value="1"/>
+        <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="TestTool.usecase#460bc910-7cc3-4846-a4ff-34e0452a1fd4" xsi:type="uc:RequiredParameter"/>
+	</targetPointer>
+</satisfies>
+      </parameters>
+      <parameters id="7a159aef-1453-4c03-acc7-28348ca226ea" name="Data Driven">
+        <value uncertainty="1" value="1"/>
+        <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="TestTool.usecase#967c5c48-cac2-49bd-b401-b505392c531a" xsi:type="uc:RequiredParameter"/>
+	</targetPointer>
+</satisfies>
+      </parameters>
+      <parameters id="ec418b00-e8e6-4496-8dd0-f76b1da60e95" name="Managment">
+        <value uncertainty="1" value="1"/>
+        <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="TestTool.usecase#fa460aaf-d644-40aa-95cd-ef51594d1ad4" xsi:type="uc:RequiredParameter"/>
+	</targetPointer>
+</satisfies>
+      </parameters>
+    </children>
+    <children id="dd98c814-214a-44a4-9ac4-ea465e0ebed4" name="Flexibility" xsi:type="prem:SystemComponent">
+      <parameters id="22ca38d8-a4b4-4e0d-bc53-0295316cef48" name="Reusable Tests">
+        <value uncertainty="1" value="1"/>
+        <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="TestTool.usecase#77c86b66-70d6-4e64-b3e4-12cd075fa76b" xsi:type="uc:RequiredParameter"/>
+	</targetPointer>
+</satisfies>
+      </parameters>
+    </children>
+    <children id="fa82cea1-9118-4fab-846e-03968a85d3f9" name="API" xsi:type="prem:SystemComponent">
+      <parameters id="02122a6c-b978-47cb-8566-ca5dfad4dd09" name="Save/Export Error Report">
+        <value uncertainty="1" value="1"/>
+        <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="TestTool.usecase#1651a3ee-0969-4a91-bb81-c16f356ab5e7" xsi:type="uc:RequiredParameter"/>
+	</targetPointer>
+</satisfies>
+      </parameters>
+      <parameters id="92c5ffbf-7ab4-4eaa-b840-0d169e9fb4a3" name="EclEmma Support">
+        <value uncertainty="1" value="1"/>
+        <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="TestTool.usecase#1c928eb1-3c22-44dc-b13d-10937fa7109f" xsi:type="uc:RequiredParameter"/>
+	</targetPointer>
+</satisfies>
+      </parameters>
+    </children>
+  </projects>
+  <projects id="879e5789-ad29-4375-8c99-cf03b01ae399" name="Extras">
+    <parameters description="" id="da0bf16e-d3c3-40f9-903d-eafaafe83a29" name="Error Image">
+      <value uncertainty="1" value="1"/>
+      <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="TestTool.usecase#cb7009da-1b73-4d51-a34e-d420ef57c4ed" xsi:type="uc:RequiredParameter"/>
+	</targetPointer>
+</satisfies>
+    </parameters>
+    <parameters id="5801b300-e52f-47d2-950c-e670262af6da" name="Automatic GUI Mapping">
+      <value uncertainty="1" value="0"/>
+      <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="TestTool.usecase#b7ad0fdd-a14d-4d90-9d73-070c51cb517c" xsi:type="uc:RequiredParameter"/>
+	</targetPointer>
+</satisfies>
+    </parameters>
+  </projects>
+  <projects id="ce8ec787-dea4-478c-b292-59099abae61e" name="Ratings">
+    <parameters id="718bdf66-1066-4284-8343-7013b68f4516" name="Reproducibility">
+      <value uncertainty="9" value="9"/>
+      <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="TestTool.usecase#7648ab01-bcbc-4bdb-89df-32e0d7e490e8" xsi:type="uc:RequiredParameter"/>
+	</targetPointer>
+</satisfies>
+    </parameters>
+    <parameters id="2db51762-f0c3-4ba0-a8d7-116715ab6f69" name="Lernability">
+      <value uncertainty="8" value="8"/>
+      <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="TestTool.usecase#9b360e7f-0b03-4178-935b-e02e42b6e079" xsi:type="uc:RequiredParameter"/>
+	</targetPointer>
+</satisfies>
+    </parameters>
+    <parameters id="d06212e4-ee51-421a-a2c0-af0a1c121a25" name="Operability">
+      <value uncertainty="9" value="9"/>
+      <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="TestTool.usecase#7cafec25-d74e-49e6-9003-92290adf1a24" xsi:type="uc:RequiredParameter"/>
+	</targetPointer>
+</satisfies>
+    </parameters>
+    <parameters description="" id="c82f12bc-1c99-476f-938d-9654a2cff2bb" name="Appearance">
+      <value uncertainty="8" value="8"/>
+      <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="TestTool.usecase#853ae134-3c5f-45d0-bd34-f37114699644" xsi:type="uc:RequiredParameter"/>
+	</targetPointer>
+</satisfies>
+    </parameters>
+    <parameters id="f10606ee-3720-48c1-b3d5-d1e417d5970f" name="Performance">
+      <value uncertainty="6" value="6"/>
+      <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="TestTool.usecase#c528187e-43f8-4398-848d-061fe62c795c" xsi:type="uc:RequiredParameter"/>
+	</targetPointer>
+</satisfies>
+    </parameters>
+  </projects>
+  <projects id="fc83d4a4-84a6-476a-b572-7e5fd724e1af" name="License">
+    <parameters id="fd6b0773-ac9f-4128-a27e-30f677730d89" name="License">
+      <value uncertainty="10000" value="0"/>
+      <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="TestTool.usecase#626bfe16-ba90-4051-be18-9b60ad5a44b3" xsi:type="uc:RequiredParameter"/>
+	</targetPointer>
+</satisfies>
+    </parameters>
+  </projects>
+</prem:ProjectRepository>

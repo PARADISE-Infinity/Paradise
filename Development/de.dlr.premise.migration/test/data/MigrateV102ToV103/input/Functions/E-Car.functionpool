@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fnp:FunctionPool xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/">
+  <functions xsi:type="fnp:FnDefSpreadSheet" name="Sum" description="Benzin" lastInputMultiple="true" sheetName="Structure">
+    <calcEngine xsi:type="reg:CalcEngineSpreadSheet" href="E-Car.registry#Structure_Excel"/>
+    <output xsi:type="fnp:FnOutputSpreadSheet" name="Total Mass" description="" cell="A6">
+      <unit href="E-Car.registry#kg"/>
+    </output>
+    <inputs xsi:type="fnp:FnInputSpreadSheet" name="Masses" description="" cell="A5">
+      <unit href="E-Car.registry#kg"/>
+    </inputs>
+  </functions>
+  <functions xsi:type="fnp:FnDefSpreadSheet" name="Range" description="" sheetName="Performance">
+    <calcEngine xsi:type="reg:CalcEngineSpreadSheet" href="E-Car.registry#Structure_Excel"/>
+    <output xsi:type="fnp:FnOutputSpreadSheet" name="Range" cell="C27">
+      <unit href="E-Car.registry#km"/>
+    </output>
+    <inputs xsi:type="fnp:FnInputSpreadSheet" name="InputMass" description="" cell="C4">
+      <unit href="E-Car.registry#kg"/>
+    </inputs>
+  </functions>
+  <functions xsi:type="fnp:FnDefSpreadSheet" name="ExportRange" sheetName="Compare">
+    <calcEngine xsi:type="reg:CalcEngineSpreadSheet" href="E-Car.registry#Structure_Excel"/>
+    <inputs xsi:type="fnp:FnInputSpreadSheet" name="Range" cell="C2">
+      <unit href="E-Car.registry#km"/>
+    </inputs>
+  </functions>
+</fnp:FunctionPool>

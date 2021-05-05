@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rep:Representation xmlns:rep="http://www.dlr.de/ft/premise/representation/2012/" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1750f9ef-4ebf-40a9-a3bb-86b1f035b33f" metaModel="1.27" name="migration representation" xmi:version="2.0">
+<selectors description="Neue Farbe von der Messe „Schlechter wohnen“." name="Node Hornhaut Umbra" query="graph::INode.allInstances()&#13;&#10;-&gt;selectByKind(registry::ANameItem)-&gt;select(name.matches('(?i)C.*'))&#13;&#10;-&gt;closure(oclContents)-&gt;selectByKind(graph::INode)&#13;&#10;">
+<decorators description="Neue Farbe von der Messe „Schlechter wohnen“." name="Hornhaut Umbra" value="#EFAA4E" xsi:type="rep:Color"/>
+</selectors>
+<selectors name="Node Wide" query="graph::INode.allInstances()&#13;&#10;-&gt;selectByKind(registry::ADataItem)-&gt;select(Set{'c8eef920-b53c-4161-b0d2-d7d0a3f66f0f'}-&gt;includes(id))&#13;&#10;">
+<decorators height="1.0" name="Wide" width="1000.0" xsi:type="rep:NodeShape"/>
+</selectors>
+<selectors description="Useless edge color" name="Edge Green" query="graph::IEdge.allInstances()&#13;&#10;-&gt;select(getReferencedSources()-&gt;selectByKind(registry::ADataItem).id-&gt;intersection(Set{'c8eef920-b53c-4161-b0d2-d7d0a3f66f0f'})-&gt;notEmpty())&#13;&#10;-&gt;selectByKind(registry::IMetaTypable)-&gt;select(metaTypes.id-&gt;intersection(Set{'id_Container'})-&gt;notEmpty())&#13;&#10;">
+<decorators description="Useless edge color" name="Green" value="#00FF00" xsi:type="rep:Color"/>
+</selectors>
+<selectors name="Edge Thick line" query="graph::IEdge.allInstances()&#13;&#10;-&gt;selectByKind(registry::ANameItem)-&gt;select(name.matches('(?i)yyy'))&#13;&#10;">
+<decorators name="Thick line" type="DASHED" width="5.0" xsi:type="rep:LineStyle"/>
+</selectors>
+</rep:Representation>

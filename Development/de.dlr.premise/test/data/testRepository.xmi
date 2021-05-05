@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<prem:ProjectRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:prem="http://www.dlr.de/ft/premise/2010/" metaModel="1.33">
+  <projects name="SC1" id="00000000-0000-0000-0000-000000000000">
+    <parameters name="param1" id="00000000-0000-0000-0000-000000000001"/>
+    <parameters name="param2" id="00000000-0000-0000-0000-000000000002"/>
+  </projects>
+  <projects name="SC2" id="00000000-0000-0000-0000-000000000003"/>
+</prem:ProjectRepository>

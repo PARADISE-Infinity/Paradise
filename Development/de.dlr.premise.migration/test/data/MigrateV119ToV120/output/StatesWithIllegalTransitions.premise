@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:prem="http://www.dlr.de/ft/premise/2010/" metaModel="1.19">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+    <children name="number representation pattern" value="##0.0###E0"/>
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="false"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Show Parameters" value="true"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Edit local statemachines">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+    </children>
+  </metaData>
+  <projects name="1" id="c5d605cb-6996-4e07-8f92-5b526c2c658e">
+    <modes name="1" id="4006f879-b26e-46e3-ad13-2a6c80db58c0"/>
+    <modes name="2" id="13733a9f-690e-46cb-b35c-d231a46a8763"/>
+    <transitions id="4a5d2df3-7c03-479b-9b24-672ccf223858" target="13733a9f-690e-46cb-b35c-d231a46a8763" source="4006f879-b26e-46e3-ad13-2a6c80db58c0"/>
+    <transitions id="113ff57a-b16b-4da7-915e-af81087b56de" target="4006f879-b26e-46e3-ad13-2a6c80db58c0" source="13733a9f-690e-46cb-b35c-d231a46a8763">
+      <constraint xsi:type="elem:TransitionConstraint" trigger="4006f879-b26e-46e3-ad13-2a6c80db58c0"/>
+    </transitions>
+    <transitions id="0f3ecfef-de71-4837-a5d5-7b7cdd606360" target="13733a9f-690e-46cb-b35c-d231a46a8763" source="4006f879-b26e-46e3-ad13-2a6c80db58c0">
+      <constraint xsi:type="elem:TransitionConstraint" trigger="0f3ecfef-de71-4837-a5d5-7b7cdd606360"/>
+    </transitions>
+    <transitions id="47887693-ee00-44a8-b40a-23d6b6b2125c" target="13733a9f-690e-46cb-b35c-d231a46a8763" source="4006f879-b26e-46e3-ad13-2a6c80db58c0">
+      <constraint xsi:type="elem:NestedTransitionConstraint">
+        <children xsi:type="elem:NestedTransitionConstraint" junction="NOT">
+          <children xsi:type="elem:TransitionConstraint" trigger="13733a9f-690e-46cb-b35c-d231a46a8763"/>
+        </children>
+        <children xsi:type="elem:TransitionConstraint" trigger="4006f879-b26e-46e3-ad13-2a6c80db58c0"/>
+      </constraint>
+    </transitions>
+  </projects>
+  <projects name="2" id="caa48b36-39a1-4a37-8154-6a16d8ee4ab3"/>
+</prem:ProjectRepository>

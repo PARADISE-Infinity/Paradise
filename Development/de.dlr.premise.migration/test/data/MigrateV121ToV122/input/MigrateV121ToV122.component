@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comp:ComponentRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/">
+  <metaData name="View">
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="false"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Show Parameters" value="true"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Edit local statemachines">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+    </children>
+    <children name="dataTypeNames" value="on"/>
+    <children name="number representation pattern" value="##0.0###E0"/>
+  </metaData>
+  <definitions name="Def1" id="a01e4219-84ec-44d3-beaa-668dc5df9270">
+    <parameters name="PD1" id="50f91d6b-9680-4b80-bf73-013e9e3c256d"/>
+    <parameters name="PD2" id="ded8f8ea-0592-4105-b4ab-48ef2590f08b"/>
+  </definitions>
+  <components name="C3" id="f807c009-3ec5-4709-8624-e98de685f597">
+    <satisfies xsi:type="comp:ComponentDefinition" href="#a01e4219-84ec-44d3-beaa-668dc5df9270"/>
+    <satisfies xsi:type="uc:UseCase" href="MigrateV121ToV122.usecase#0d40930b-c613-4814-b972-f772362d35f3"/>
+    <parameters name="P31" id="4a0244fd-9c32-4fd6-9a4b-0412339ef5d3">
+      <value value=""/>
+      <satisfies xsi:type="comp:ParameterDefinition" href="#50f91d6b-9680-4b80-bf73-013e9e3c256d"/>
+      <satisfies xsi:type="comp:ParameterDefinition" href="#ded8f8ea-0592-4105-b4ab-48ef2590f08b"/>
+      <satisfies xsi:type="uc:RequiredParameter" href="MigrateV121ToV122.usecase#be0b25e4-2a62-4bc3-89ec-96ec488afd90"/>
+    </parameters>
+  </components>
+  <components name="C4" id="38b4af57-8652-49ba-99d8-b3a128055f81" satisfies="a01e4219-84ec-44d3-beaa-668dc5df9270">
+    <parameters name="P41" id="1e459e6f-6917-4e08-a40a-4d043057b99e" satisfies="50f91d6b-9680-4b80-bf73-013e9e3c256d ded8f8ea-0592-4105-b4ab-48ef2590f08b"/>
+  </components>
+</comp:ComponentRepository>

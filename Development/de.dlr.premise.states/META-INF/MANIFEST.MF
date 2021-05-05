@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: PREMISE States
+Bundle-SymbolicName: de.dlr.premise.states;singleton:=true
+Bundle-Version: 1.25.0.qualifier
+Bundle-Vendor: DLR
+Automatic-Module-Name: de.dlr.premise.states
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.ui;bundle-version="3.109.0",
+ com.google.guava,
+ org.eclipse.xtext.xbase.lib,
+ org.eclipse.xtend.lib,
+ org.eclipse.xtend.lib.macro,
+ de.dlr.premise;bundle-version="1.21.0",
+ org.eclipse.core.runtime;bundle-version="3.13.0",
+ org.junit;bundle-version="4.12.0";resolution:=optional
+Export-Package: de.dlr.premise.states,
+ de.dlr.premise.states.data;uses:="de.dlr.premise.states.reachability.mode,de.dlr.premise.element,com.google.common.collect",
+ de.dlr.premise.states.test;uses:="de.dlr.premise.states.data,org.eclipse.emf.common.util",
+ de.dlr.premise.states.test.reachability,
+ de.dlr.premise.states.test.reachability.mode,
+ de.dlr.premise.states.test.stability,
+ de.dlr.premise.states.test.util
+

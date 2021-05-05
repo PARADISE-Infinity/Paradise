@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+  <extension
+        point="org.eclipse.ui.handlers">
+     <handler
+           class="de.dlr.exchange.graphml.fta.xtend.ExecutableExtensionFactory:de.dlr.exchange.base.xtend.ui.GenerationHandler"
+           commandId="de.dlr.exchange.graphml.fta.xtend.ui.GenerationCommand">
+     </handler>
+  </extension>
+
+  <extension
+        point="org.eclipse.ui.commands">
+        <command name="Fault Tree (GraphML)"
+              id="de.dlr.exchange.graphml.fta.xtend.ui.GenerationCommand">
+        </command>
+  </extension>
+
+  <extension
+        point="org.eclipse.ui.menus">
+     <menuContribution
+           locationURI="popup:nav_exp_save">
+        <command
+              commandId="de.dlr.exchange.graphml.fta.xtend.ui.GenerationCommand"
+              hoverIcon="icons/faulttree16.png"
+              icon="icons/faulttree16.png"
+              style="push">
+           <visibleWhen
+                 checkEnabled="false">
+              <iterate
+                    ifEmpty="false">
+                 <or>
+                    <reference
+                          definitionId="de.dlr.exchange.base.expressions.IsFunctionFile">
+                    </reference>
+                    <reference
+                          definitionId="de.dlr.exchange.base.expressions.IsSystemFile">
+                    </reference>
+                 </or>
+              </iterate>
+           </visibleWhen>
+        </command>
+     </menuContribution>
+     <menuContribution
+           locationURI="popup:edi_exp_save">
+        <command
+              commandId="de.dlr.exchange.graphml.fta.xtend.ui.GenerationCommand"
+              hoverIcon="icons/faulttree16.png"
+              icon="icons/faulttree16.png"
+              style="push">
+           <visibleWhen
+                 checkEnabled="false">
+              <iterate
+                    ifEmpty="false">
+                 <or>
+                    <instanceof
+                          value="de.dlr.premise.system.SystemComponent">
+                    </instanceof>
+                    <instanceof
+                          value="de.dlr.premise.functions.UseCase">
+                    </instanceof>
+                 </or>
+              </iterate>
+           </visibleWhen>
+        </command>
+     </menuContribution>
+      <menuContribution
+        locationURI="popup:de.dlr.premise.system.presentation.SystemEditorID">
+     <menu
+           icon="icons/notebook--arrow.png"
+           id="edi_exp_save"
+           label="Export Safety">
+     </menu>
+  </menuContribution>
+      <menuContribution
+            locationURI="popup:de.dlr.premise.functions.presentation.UseCaseEditorID">
+         <menu
+               icon="icons/notebook--arrow.png"
+               id="edi_exp_save"
+               label="Export Safety">
+         </menu>
+      </menuContribution>
+      <menuContribution
+            locationURI="popup:de.dlr.premise.component.presentation.ComponentEditorID">
+         <menu
+               icon="icons/notebook--arrow.png"
+               id="edi_exp_save"
+               label="Export Safety">
+         </menu>
+      </menuContribution>
+  
+  <menuContribution
+        locationURI="popup:premise.rcp.navigator">
+     <menu
+           icon="icons/notebook--arrow.png"
+           id="nav_exp_save"
+           label="Export Safety">
+     </menu>
+  </menuContribution>
+  
+  </extension>
+
+</plugin>

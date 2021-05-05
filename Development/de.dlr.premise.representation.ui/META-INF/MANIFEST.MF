@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Ui
+Bundle-SymbolicName: de.dlr.premise.representation.ui;singleton:=true
+Bundle-Version: 1.25.0.qualifier
+Export-Package: de.dlr.premise.representation.ui
+Require-Bundle: de.dlr.premise.editor,
+ de.dlr.premise.query.ui,
+ de.dlr.exchange.base.xtend
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: de.dlr.premise.representation.ui

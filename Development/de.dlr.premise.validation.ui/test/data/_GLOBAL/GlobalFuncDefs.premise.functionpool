@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fnp:FunctionPool xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <calcEngines description="Engine used by all team members" fileURI="test/data/_GLOBAL/GlobalCalcFunctions.xls" id="09521787-1103-47a0-997c-c927b396e1db" name="Excel_Global" xsi:type="fnp:CalcEngineSpreadSheet"/>
+  <functions calcEngine="09521787-1103-47a0-997c-c927b396e1db" lastInputMultiple="true" name="Sum" xsi:type="fnp:FnDefSpreadSheet">
+    <output cell="A6" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A5" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+  <functions calcEngine="09521787-1103-47a0-997c-c927b396e1db" lastInputMultiple="true" name="Multiply" xsi:type="fnp:FnDefSpreadSheet">
+    <output cell="A10" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A9" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+</fnp:FunctionPool>

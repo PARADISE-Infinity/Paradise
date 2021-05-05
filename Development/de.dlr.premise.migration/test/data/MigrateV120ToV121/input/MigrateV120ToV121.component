@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comp:ComponentRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:prem="http://www.dlr.de/ft/premise/2010/">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+    <children name="number representation pattern" value="##0.0###E0"/>
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="false"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Show Parameters" value="true"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Edit local statemachines">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+    </children>
+  </metaData>
+  <definitions name="Def1" id="f3094ee4-7b5a-4bca-a62d-e7b76fa51a7b">
+    <parameters name="dp1" id="a219bf10-352e-4e87-ad0d-f810f3408e34"/>
+  </definitions>
+  <definitions name="Def2" id="3c15bbb0-0e22-402f-a7ea-1e7c0f7b74d0">
+    <parameters name="dp2" id="1045c1dc-ac00-46f2-a207-7994550328bf"/>
+    <parameters name="dp3" id="dd1d2cfc-d128-41d3-9421-ae9b1b9fe485"/>
+  </definitions>
+  <components name="sd1" id="7bea8ae7-b1ae-4b70-b1ff-ec2f726b3304" satisfies="f3094ee4-7b5a-4bca-a62d-e7b76fa51a7b">
+    <parameters name="sdp1" id="381ba115-88a3-4fc8-bd65-fed4b3efca84" satisfies="a219bf10-352e-4e87-ad0d-f810f3408e34">
+      <value value="100"/>
+    </parameters>
+    <children xsi:type="prem:SystemComponent" name="culis" id="cb15dde9-5732-4f57-a649-a1e8001da733"/>
+    <children xsi:type="prem:SystemComponent" name="cenuq" id="74dd3bf4-9c70-4c84-bc8d-cb0cda7fcde5"/>
+    <children xsi:type="prem:SystemComponent" name="yevej" id="27f6486b-03ed-43b3-ba9c-c8a825a3d967"/>
+  </components>
+  <components name="sd2" id="f66e4389-1066-4c45-9908-51b90105767e" satisfies="3c15bbb0-0e22-402f-a7ea-1e7c0f7b74d0">
+    <parameters name="sdp2" id="259bfa8d-8e8d-4233-bb44-fee5cb0421dc" satisfies="1045c1dc-ac00-46f2-a207-7994550328bf">
+      <value value="12"/>
+    </parameters>
+    <children xsi:type="prem:SystemComponent" name="cawox" id="9339ed03-c8b1-403d-aa50-bee28524580c">
+      <parameters name="sdp3" id="399faf2f-036f-4a53-b420-87830bc865b6" satisfies="dd1d2cfc-d128-41d3-9421-ae9b1b9fe485">
+        <value value="42"/>
+      </parameters>
+    </children>
+    <children xsi:type="prem:SystemComponent" name="pequf" id="71a94acc-c8fe-498c-ae93-40dd81746946"/>
+    <children xsi:type="prem:SystemComponent" name="gedoc" id="bacca9f8-dd7f-4b7b-b241-48483e9788e5"/>
+  </components>
+  <components name="sd2_2" id="92e7f441-95f8-4fc5-ae54-37d63cb167ed" satisfies="3c15bbb0-0e22-402f-a7ea-1e7c0f7b74d0">
+    <parameters name="sdp2" id="1864c2e3-0668-416b-954b-211d4402be48" satisfies="1045c1dc-ac00-46f2-a207-7994550328bf">
+      <value value="54.0"/>
+    </parameters>
+    <parameters name="sdp3" id="29ec8b32-ace8-4b6d-a3e8-b65593ecb5cb" satisfies="dd1d2cfc-d128-41d3-9421-ae9b1b9fe485">
+      <value value="84"/>
+    </parameters>
+    <balancings function="sd2_2.sdp2 = ref.dp2 + ref.dp3">
+      <actualSources xsi:type="prem:ParameterNameToParameterDefinitionReferenceMapping" key="ref.dp2">
+        <actualValue parameterDefinition="1045c1dc-ac00-46f2-a207-7994550328bf" componentReference="d71ec86a-00e6-4f7c-82fa-0c022258e680"/>
+      </actualSources>
+      <actualSources xsi:type="prem:ParameterNameToParameterDefinitionReferenceMapping" key="ref.dp3">
+        <actualValue parameterDefinition="dd1d2cfc-d128-41d3-9421-ae9b1b9fe485" componentReference="d71ec86a-00e6-4f7c-82fa-0c022258e680"/>
+      </actualSources>
+      <actualTarget key="sd2_2.sdp2" actualValue="1864c2e3-0668-416b-954b-211d4402be48"/>
+    </balancings>
+    <children xsi:type="prem:ComponentReference" name="ref" id="d71ec86a-00e6-4f7c-82fa-0c022258e680" componentDefinition="3c15bbb0-0e22-402f-a7ea-1e7c0f7b74d0" activeImplementation="f66e4389-1066-4c45-9908-51b90105767e"/>
+  </components>
+</comp:ComponentRepository>

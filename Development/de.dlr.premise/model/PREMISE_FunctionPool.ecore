@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="functionpool" nsURI="http://www.dlr.de/ft/premise/funcpool/2010/"
+    nsPrefix="fnp">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+    <details key="documentation" value="A function pool contains a list of functions that can be used for the calculations. This package contains all necessary elements for this model."/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="FunctionPool" eSuperTypes="PREMISE_Registry.ecore#//AVersionedModelRoot">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="A function pool contains a list of functions, which can be used for the calculations. "/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calcEngines" upperBound="-1"
+        eType="#//ACalculationEngine" containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Provides a calculation engine to calculate the value of parameters. "/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="functions" lowerBound="1"
+        upperBound="-1" eType="#//AFnDef" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AFnDef" abstract="true" eSuperTypes="PREMISE_Registry.ecore#//ANameItem">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Defines an abstract function definition. A Function must reference a calculation engine and the function inputs and the output."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calcEngine" eType="#//ACalculationEngine"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="output" eType="#//FnOutput"
+        containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inputs" upperBound="-1"
+        eType="#//FnInput" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lastInputMultiple" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FnDefScript" eSuperTypes="#//AFnDef">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Defines the function definition of a script based calculation."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scriptName" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FnDefSpreadSheet" eSuperTypes="#//AFnDef">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Defines the function definition of a spread sheet calculation. This includes the sheet which contains the calculation and the definition of a multiple input caclulation."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sheetName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="multipleInputsCellDirection"
+        eType="#//MultipleInputsCellDirection"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FnDefJava" eSuperTypes="#//AFnDef">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="methodName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FnInput" eSuperTypes="PREMISE_Registry.ecore#//ANameItem">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Defines the input of a function"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="unit" eType="ecore:EClass PREMISE_Registry.ecore#//Unit"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FnOutput" eSuperTypes="PREMISE_Registry.ecore#//ANameItem">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Defines the output of a function."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="unit" eType="ecore:EClass PREMISE_Registry.ecore#//Unit"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FnInputSpreadSheet" eSuperTypes="#//FnInput">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Defines the input cell of a spread sheet."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cell" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FnOutputSpreadSheet" eSuperTypes="#//FnOutput">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Defines the output cell of a spread sheet."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cell" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="MultipleInputsCellDirection">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="In case of mulitple input cells of a spread sheet the enumeration defines the allowed direction. "/>
+    </eAnnotations>
+    <eLiterals name="Horizontal"/>
+    <eLiterals name="Vertical" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ACalculationEngine" abstract="true"
+      eSuperTypes="PREMISE_Registry.ecore#//ADataItem">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Defines an abstract calculation engine."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="properties" upperBound="-1"
+        eType="ecore:EClass PREMISE_Registry.ecore#//MetaData" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CalcEngineScript" eSuperTypes="#//ACalculationEngine">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Defines a script based calculation engine like matlab."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="workDirURI" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="libURIs" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CalcEngineSpreadSheet" eSuperTypes="#//ACalculationEngine">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Defines a spread sheet based calculation, like excel funktions."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fileURI" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CalcEngineJava" eSuperTypes="#//ACalculationEngine">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="className" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

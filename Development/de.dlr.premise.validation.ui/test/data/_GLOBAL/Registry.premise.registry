@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reg:Registry xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" metaModel="1.31" xmi:version="2.0">
+  <constants id="9030b7b5-1941-47ff-8fca-5bbf25304aab" name="One">
+    <notes author="steh_ti" date="2014-07-23 12:54:35" text="As if the value of 1 will fluctuate!"/>
+    <value value="1.0000000001"/>
+  </constants>
+</reg:Registry>

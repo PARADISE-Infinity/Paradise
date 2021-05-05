@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.32" xmi:version="2.0">
+  <projects id="cf604802-9a29-4e56-b9f4-d791209d2d18" name="RootSC">
+    <statemachines id="5bfbd416-409c-48dd-85ab-01e9b0f1468c" name="SM1">
+      <modes entryMode="true" id="f6407a20-e659-4819-ad9b-84a82f8b5623" name="A"/>
+      <modes id="67d57cc6-6500-42f4-8300-1058dcef9711" name="B"/>
+      <transitions id="ba4c010b-546b-465c-be66-ffa1ed8a9136">
+        <sourcePointer target="f6407a20-e659-4819-ad9b-84a82f8b5623" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="67d57cc6-6500-42f4-8300-1058dcef9711" xsi:type="graph:DirectPointer"/>
+        <condition xsi:type="elem:GuardCombination">
+          <children xsi:type="elem:ModeGuard">
+            <modePointer xsi:type="graph:DirectPointer">
+              <target href="My.function#9193408a-5232-4f28-b71a-4644cbe43a1b" xsi:type="elem:Mode"/>
+            </modePointer>
+          </children>
+          <children xsi:type="elem:ModeGuard">
+            <modePointer xsi:type="graph:DirectPointer">
+              <target href="My.function#ac1dfd0e-5e4d-4e81-94f5-5fed0deebdf8" xsi:type="elem:Mode"/>
+            </modePointer>
+          </children>
+        </condition>
+      </transitions>
+      <transitions id="e6872fe0-cfb2-420e-be36-d5527b069e3d">
+        <sourcePointer target="67d57cc6-6500-42f4-8300-1058dcef9711" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="f6407a20-e659-4819-ad9b-84a82f8b5623" xsi:type="graph:DirectPointer"/>
+      </transitions>
+    </statemachines>
+  </projects>
+</prem:ProjectRepository>

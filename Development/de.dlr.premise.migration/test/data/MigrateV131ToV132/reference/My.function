@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.32" xmi:version="2.0">
+  <usecases id="03e60cf7-79b4-4edd-ba6e-d3a61c93df62" name="RootUC">
+    <statemachines id="5b52f225-abe8-44b5-9544-ffc38142e408" name="SM2">
+      <modes entryMode="true" id="a775589d-8c84-40e0-b727-bec688f66989" name="Q"/>
+      <modes id="ac1dfd0e-5e4d-4e81-94f5-5fed0deebdf8" name="W"/>
+      <transitions id="1dadbe7b-a2a1-4b62-91f0-38b675e23915">
+        <sourcePointer target="a775589d-8c84-40e0-b727-bec688f66989" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="ac1dfd0e-5e4d-4e81-94f5-5fed0deebdf8" xsi:type="graph:DirectPointer"/>
+        <condition xsi:type="elem:ModeGuard">
+          <modePointer target="9193408a-5232-4f28-b71a-4644cbe43a1b" xsi:type="graph:DirectPointer"/>
+        </condition>
+      </transitions>
+      <transitions id="7ba2a7fa-58a2-4af1-8255-d6872a6f5ef4">
+        <sourcePointer target="ac1dfd0e-5e4d-4e81-94f5-5fed0deebdf8" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="a775589d-8c84-40e0-b727-bec688f66989" xsi:type="graph:DirectPointer"/>
+      </transitions>
+    </statemachines>
+    <statemachines id="c9555a6d-7323-4168-87b7-3b1c355d9354" name="SM3">
+      <modes entryMode="true" id="debfcd00-b7d1-430e-b6bc-6b299e9fa52c" name="X"/>
+      <modes id="9193408a-5232-4f28-b71a-4644cbe43a1b" name="Y"/>
+      <transitions id="a97a81c4-18fc-4743-92d8-24c530b765bd">
+        <sourcePointer target="debfcd00-b7d1-430e-b6bc-6b299e9fa52c" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="9193408a-5232-4f28-b71a-4644cbe43a1b" xsi:type="graph:DirectPointer"/>
+      </transitions>
+      <transitions id="01a029a7-1a03-4de3-b44d-5dd647c4d650">
+        <sourcePointer target="9193408a-5232-4f28-b71a-4644cbe43a1b" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="debfcd00-b7d1-430e-b6bc-6b299e9fa52c" xsi:type="graph:DirectPointer"/>
+      </transitions>
+    </statemachines>
+    <children id="61651abb-c8af-481f-8d79-7ff8ce3d9c5c" name="UC1">
+    <condition xsi:type="elem:ModeGuard">
+  <modePointer xsi:type="graph:DirectPointer">
+    <target href="My.system#f6407a20-e659-4819-ad9b-84a82f8b5623" xsi:type="elem:Mode"/>
+  </modePointer>
+</condition>
+</children>
+    <children id="cf4a7e3b-c666-4470-82f1-7f2459deef19" name="UC2">
+    <condition junction="AND" xsi:type="elem:GuardCombination">
+  <children xsi:type="elem:ModeGuard">
+    <modePointer xsi:type="graph:DirectPointer">
+      <target href="My.system#67d57cc6-6500-42f4-8300-1058dcef9711" xsi:type="elem:Mode"/>
+    </modePointer>
+  </children>
+  <children xsi:type="elem:ModeGuard">
+    <modePointer xsi:type="graph:DirectPointer">
+      <target href="#ac1dfd0e-5e4d-4e81-94f5-5fed0deebdf8" xsi:type="elem:Mode"/>
+    </modePointer>
+  </children>
+</condition>
+</children>
+    <children id="5fa91273-6426-4009-b303-8867e535c211" name="UC3">
+<condition junction="AND" xsi:type="elem:GuardCombination">
+  <children xsi:type="elem:ModeGuard">
+    <modePointer target="a775589d-8c84-40e0-b727-bec688f66989" xsi:type="graph:DirectPointer"/>
+  </children>
+  <children xsi:type="elem:ModeGuard">
+    <modePointer target="9193408a-5232-4f28-b71a-4644cbe43a1b" xsi:type="graph:DirectPointer"/>
+  </children>
+</condition>
+</children>
+    <children id="4b18423e-8900-4263-9d3c-9eb46ba350bc" name="UC4">
+<condition xsi:type="elem:ModeGuard">
+  <modePointer target="9193408a-5232-4f28-b71a-4644cbe43a1b" xsi:type="graph:DirectPointer"/>
+</condition>
+</children>
+    <children id="feece3fd-f094-4b6d-a1ee-9956ba491ef5" name="UC5">
+<condition junction="AND" xsi:type="elem:GuardCombination">
+  <children xsi:type="elem:ModeGuard">
+    <modePointer target="debfcd00-b7d1-430e-b6bc-6b299e9fa52c" xsi:type="graph:DirectPointer"/>
+  </children>
+  <children xsi:type="elem:ModeGuard">
+    <modePointer target="9193408a-5232-4f28-b71a-4644cbe43a1b" xsi:type="graph:DirectPointer"/>
+  </children>
+</condition>
+</children>
+  <condition xsi:type="elem:ModeGuard">
+  <modePointer xsi:type="graph:DirectPointer">
+    <target href="My.system#67d57cc6-6500-42f4-8300-1058dcef9711" xsi:type="elem:Mode"/>
+  </modePointer>
+</condition>
+</usecases>
+</uc:UseCaseRepository>

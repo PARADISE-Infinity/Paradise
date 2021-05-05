@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="off"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+  </metaData>
+  <functionPools href="_GLOBAL/GlobalFuncDefs.premise.functionpool#/"/>
+  <projects id="78db26be-2a2a-4f4a-9250-f63983aa4e82" name="SC1">
+    <parameters id="3c8fdc42-782d-4ac3-87c4-f7b4b8503934" name="P1">
+      <value value="1"/>
+    </parameters>
+    <parameters id="e6b10e1a-91d8-456f-a2eb-14e45c8d2aa8" name="P2">
+      <value value="2"/>
+      <modeValues value="4">
+<modePointers target="M1.1" xsi:type="graph:DirectPointer"/>
+</modeValues>
+    </parameters>
+    <parameters id="6e910191-afb1-4a00-aed5-497c4d1ed983" name="P3"/>
+    <balancings function="P3 = Sum(P1, P2, ConstValue2, TP_1_1)" name="P3=P1+P2+C1">
+      <actualSources key="P1">
+<value target="3c8fdc42-782d-4ac3-87c4-f7b4b8503934" xsi:type="graph:DirectPointer"/>
+</actualSources>
+      <actualSources key="P2">
+<value target="e6b10e1a-91d8-456f-a2eb-14e45c8d2aa8" xsi:type="graph:DirectPointer"/>
+</actualSources>
+      <actualSources key="ConstValue2">
+      <value xsi:type="graph:DirectPointer">
+	<target href="_GLOBAL/Registry.premise.registry#Constant1" xsi:type="reg:Constant"/>
+</value>
+</actualSources>
+      <actualSources key="TP_1_1">
+<value target="TP&gt;1.1" xsi:type="graph:DirectPointer"/>
+</actualSources>
+      <actualTarget key="P3">
+<value target="6e910191-afb1-4a00-aed5-497c4d1ed983" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+    </balancings>
+  <statemachines name="SC1">
+<modes entryMode="true" id="M1.1" name="M1.1"/>
+<transitions id="MM&gt;1.1" name="MM&gt;1.1">
+      <condition xsi:type="elem:ModeGuard">
+<modePointer target="M1.1" xsi:type="graph:DirectPointer"/>
+</condition>
+      <parameters id="TP&gt;1.1" name="TP&gt;1.1">
+        <value value="8"/>
+      </parameters>
+    <targetPointer target="M1.1" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</projects>
+  <projects id="0c3b461f-ae23-40ef-8615-ffbf5223f9e3" name="SC2">
+    <parameters id="P2.1" name="P2.1">
+      <value value="1"/>
+    </parameters>
+    <parameters id="P2.2" name="P2.2">
+      <value value="2"/>
+    </parameters>
+    <parameters id="P2.3" name="P2.3"/>
+    <children id="SC3" name="SC3" xsi:type="prem:SystemComponent">
+    <statemachines name="SC3">
+<modes entryMode="true" id="0c62f076-0215-417a-b55a-dfe3f153cf20" name="M3.1"/>
+<modes entryMode="true" id="ce114bb0-3526-4f7b-b0ad-86aa1d2e13cb" name="M3.2"/>
+<modes entryMode="true" id="M3.3" name="M3.3"/>
+<transitions id="eab4fd99-ba3d-44b7-a810-46e38d7a9741" name="MM1&gt;3">
+        <parameters id="TP1&gt;3" name="TP1&gt;3">
+          <value value="0.1"/>
+        </parameters>
+      <sourcePointer target="0c62f076-0215-417a-b55a-dfe3f153cf20" xsi:type="graph:DirectPointer"/>
+<targetPointer target="M3.3" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="MM2&gt;3" name="MM2&gt;3">
+        <parameters id="TP2&gt;3" name="TP2&gt;3">
+          <value value="0.2"/>
+        </parameters>
+      <sourcePointer target="ce114bb0-3526-4f7b-b0ad-86aa1d2e13cb" xsi:type="graph:DirectPointer"/>
+<targetPointer target="M3.3" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+  <statemachines name="SC2">
+<modes entryMode="true" id="M2.1" name="M2.1"/>
+<modes entryMode="true" id="M2.2" name="M2.2"/>
+<transitions id="MM&gt;2" name="MM&gt;2">
+      <condition xsi:type="elem:ModeGuard">
+<modePointer target="M3.3" xsi:type="graph:DirectPointer"/>
+</condition>
+      <parameters id="TP&gt;2" name="TP&gt;2"/>
+      <balancings name="MM&gt;2 . TP&gt;2  = TP1&gt;3 + TP2&gt;3 (of SC3)" target="TP&gt;2">
+      </balancings>
+    <targetPointer target="M2.2" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="MM&gt;2b" name="MM&gt;2b">
+      <condition xsi:type="elem:ModeGuard">
+<modePointer target="M3.3" xsi:type="graph:DirectPointer"/>
+</condition>
+      <parameters id="TP&gt;2b" name="TP&gt;2b">
+        <value value="0.1"/>
+      </parameters>
+      <balancings name="MM&gt;2b.TP&gt;2b= TP1&gt;3 (of SC3)" target="TP&gt;2b">
+      </balancings>
+    <targetPointer target="M2.2" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</projects>
+</prem:ProjectRepository>

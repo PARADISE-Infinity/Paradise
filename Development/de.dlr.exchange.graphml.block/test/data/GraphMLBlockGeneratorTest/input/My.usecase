@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:xmi="http://www.omg.org/XMI" metaModel="1.33" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="false"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Show Parameters" value="true"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Edit local statemachines">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <metaData name="Export">
+    <metaData name="GraphML">
+      <metaData name="logical_hierarchy" value="on">
+        <metaData name="group" value="on"/>
+        <metaData name="depth" value="0"/>
+      </metaData>
+      <metaData name="physical_portmappings" value="on"/>
+      <metaData name="parameter" value="on"/>
+      <metaData name="relations" value="on"/>
+    </metaData>
+  </metaData>
+  <usecases id="41ad285e-b2bf-4097-9b5a-577b1eac520b" name="UcRoot">
+    <children id="7448574a-f45b-45e6-bcf1-4b812ca5cc21" name="U1"/>
+    <children id="d6143bb9-7001-4462-a04e-da358879fb52" name="U2">
+      <metaTypes href="My.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+      <requiredParameters id="67045d49-0b43-4b67-8fdb-48811335c837" name="RP21"/>
+      <children id="9c8dad9f-4ec6-4b46-a186-361aa33d3c01" name="U21"/>
+    </children>
+    <children id="1957ef95-8c66-4b38-b29b-df474205768a" name="U3"/>
+  </usecases>
+</uc:UseCaseRepository>

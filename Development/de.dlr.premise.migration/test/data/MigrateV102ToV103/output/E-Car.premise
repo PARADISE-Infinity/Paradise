@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.03" xmi:version="2.0">
+  <metaData name="View">
+    <children name="dataTypeNames" value="off"/>
+  </metaData>
+  <projects id="559cb12d-2557-4239-b13f-5495074c2466" name="Lupo3L - Diesel">
+    <parameters id="aff70643-9cb7-4535-9f11-fbefc40b073b" name="Mass">
+      <value shared="true" value="841.0">
+        <unit href="Functions/E-Car.registry#kg"/>
+      </value>
+    </parameters>
+    <parameters id="c98c2a1e-00b1-436e-ad93-46565b379eca" name="Dieselpreis/l">
+      <value value="1.35">
+        <unit href="Functions/E-Car.registry#€"/>
+      </value>
+    </parameters>
+    <parameters id="d68e1e6e-390a-4c6e-a0c7-9e78eb663bf0" name="Verbrauch">
+      <value value="1.9">
+        <unit href="Functions/E-Car.registry#l"/>
+      </value>
+    </parameters>
+    <balancings description="Calculate Total Mass of the Lupo3L diesel" name="total mass" sources="d4cb32a2-da4e-4654-bc2f-eeb2fa869184 be9008a1-2629-41c7-b06c-09c5bae10b90 042e7898-0df1-4d64-8a23-d9d2b9e413c9 8b17b621-bbbe-413d-8012-a88ccdfbc803 fb2beced-9bcb-4ec9-bfe5-bea99a5366b4 69d65828-19d3-4d63-9667-662fa34cfa88 d538ba06-2e06-4dcf-94cd-e4f8f955c27d f8be4cf5-c5b4-4dc3-8755-8149ada980c9" target="aff70643-9cb7-4535-9f11-fbefc40b073b" xsi:type="prem:Balancing">
+      <functionDef href="Functions/E-Car.functionpool#//@functions.0" xsi:type="fnp:FnDefSpreadSheet"/>
+    </balancings>
+    <children id="5d4edf63-4eb5-452a-b1eb-239827bdc75b" name="Chassis">
+      <parameters description="" id="d4cb32a2-da4e-4654-bc2f-eeb2fa869184" name="Mass">
+        <value value="595">
+          <unit href="Functions/E-Car.registry#kg"/>
+        </value>
+      </parameters>
+    </children>
+    <children id="3e498f4b-5f43-41f2-8f33-dc35d0c12eb0" name="Engine + Gearbox + Drive Shafts">
+      <parameters id="8b17b621-bbbe-413d-8012-a88ccdfbc803" name="Mass">
+        <value value="180">
+          <unit href="Functions/E-Car.registry#kg"/>
+        </value>
+      </parameters>
+    </children>
+    <children id="490a16a3-0222-4a28-8aa4-ab262d6f2b56" name="Cooling">
+      <parameters id="042e7898-0df1-4d64-8a23-d9d2b9e413c9" name="Mass">
+        <value value="10">
+          <unit href="Functions/E-Car.registry#kg"/>
+        </value>
+      </parameters>
+    </children>
+    <children id="3b583bf8-d4e8-4214-b53e-6e274b80ede3" name="Exhaust">
+      <parameters id="fb2beced-9bcb-4ec9-bfe5-bea99a5366b4" name="Mass">
+        <value value="15">
+          <unit href="Functions/E-Car.registry#kg"/>
+        </value>
+      </parameters>
+    </children>
+    <children id="bc862d5c-472e-4769-9523-a896c7541d30" name="Fuel tank + Cooler + Filter">
+      <parameters id="d538ba06-2e06-4dcf-94cd-e4f8f955c27d" name="Mass">
+        <value value="9">
+          <unit href="Functions/E-Car.registry#kg"/>
+        </value>
+      </parameters>
+    </children>
+    <children id="b004e7f2-5dc3-44e1-b52f-090f23610c4d" name="Fuel (Diesel)">
+      <parameters description="Tank with 7 l  diesel for 250 km range" id="69d65828-19d3-4d63-9667-662fa34cfa88" name="Mass">
+        <value value="7">
+          <unit href="Functions/E-Car.registry#kg"/>
+        </value>
+      </parameters>
+    </children>
+    <children id="4eb5238d-7cbc-4b77-8432-0f599784479a" name="Battery (12V)">
+      <parameters id="be9008a1-2629-41c7-b06c-09c5bae10b90" name="Mass">
+        <value value="20">
+          <unit href="Functions/E-Car.registry#kg"/>
+        </value>
+      </parameters>
+    </children>
+    <children id="ae8adb42-125f-4c40-a3b7-243211b746e2" name="Miscs">
+      <parameters id="f8be4cf5-c5b4-4dc3-8755-8149ada980c9" name="Mass">
+        <value value="5">
+          <unit href="Functions/E-Car.registry#kg"/>
+        </value>
+      </parameters>
+    </children>
+  </projects>
+  <projects id="5aaea104-45d4-4b5e-8037-93a26933e1cb" name="Lupo3L - Electro">
+    <parameters id="4b6b8f2f-f873-42fa-a42c-64516fc820b8" name="Mass">
+      <value value="1030.0">
+        <unit href="Functions/E-Car.registry#kg"/>
+      </value>
+    </parameters>
+    <parameters id="671f3d7c-8048-4545-89d2-7f7fec3368b2" name="Strompreis/kWh">
+      <value value="0.24">
+        <unit href="Functions/E-Car.registry#€"/>
+      </value>
+    </parameters>
+    <parameters id="ddc45aee-7ffe-4819-972d-ba78bafba477" name="Range">
+      <value value="381.6134389305011">
+        <unit href="Functions/E-Car.registry#km"/>
+      </value>
+    </parameters>
+    <balancings description="Calculate Total Mass of the Lupo3L electro" name="total mass" sources="7d2a4e48-5b9d-4fb2-a191-bb39eba8e5e7 45fa2bfc-6ed0-433b-88a6-b3cf867af7e1 addaa5e5-316d-4d4f-9df0-7919f82e06d2 0bcf76f1-7693-42fa-b875-f3f9519031f8 10d1fa05-1ef9-456c-a4f8-25a95314421d 3fc5acae-4937-4744-9b7e-52c1d25c72aa a3dfa835-f56b-47f8-b72f-2e0003e6028f da8c9b0d-282f-49fd-92d8-9792f907716a d8212caf-f3d6-4cf5-8595-bff32ff7b410" target="4b6b8f2f-f873-42fa-a42c-64516fc820b8" xsi:type="prem:Balancing">
+      <functionDef href="Functions/E-Car.functionpool#//@functions.0" xsi:type="fnp:FnDefSpreadSheet"/>
+    </balancings>
+    <balancings description="Calculate" name="range" sources="4b6b8f2f-f873-42fa-a42c-64516fc820b8" target="ddc45aee-7ffe-4819-972d-ba78bafba477" xsi:type="prem:Balancing">
+      <functionDef href="Functions/E-Car.functionpool#//@functions.1" xsi:type="fnp:FnDefSpreadSheet"/>
+    </balancings>
+    <balancings balancingMode="EXPORT" name="excel export" sources="ddc45aee-7ffe-4819-972d-ba78bafba477" xsi:type="prem:Balancing">
+      <functionDef href="Functions/E-Car.functionpool#//@functions.2" xsi:type="fnp:FnDefSpreadSheet"/>
+    </balancings>
+    <children id="a79a4df6-50b1-4504-9c7d-4f71bd35c86b" name="eChassis">
+      <parameters description="" id="7d2a4e48-5b9d-4fb2-a191-bb39eba8e5e7" name="Mass">
+        <value value="595">
+          <unit href="Functions/E-Car.registry#kg"/>
+        </value>
+      </parameters>
+    </children>
+    <children id="bf83df4b-c19f-4a21-a51d-d3ab5d4aee15" name="eEngine+GearBox+DriveShaft">
+      <parameters id="45fa2bfc-6ed0-433b-88a6-b3cf867af7e1" name="Mass">
+        <value value="85">
+          <unit href="Functions/E-Car.registry#kg"/>
+        </value>
+      </parameters>
+    </children>
+    <children id="cac1eb2a-6e59-4278-849d-2e6bee069976" name="eCooling">
+      <parameters id="addaa5e5-316d-4d4f-9df0-7919f82e06d2" name="Mass">
+        <value value="7">
+          <unit href="Functions/E-Car.registry#kg"/>
+        </value>
+      </parameters>
+    </children>
+    <children id="9a38cbee-4e2a-4e59-a11e-a878f0c0c488" name="ePowerElectronics">
+      <parameters description="" id="3fc5acae-4937-4744-9b7e-52c1d25c72aa" name="Mass">
+        <value value="20">
+          <unit href="Functions/E-Car.registry#kg"/>
+        </value>
+      </parameters>
+    </children>
+    <children id="a11566f2-a7fd-4b82-8e87-afca35cafcea" name="eBattery (12V)">
+      <parameters id="0bcf76f1-7693-42fa-b875-f3f9519031f8" name="Mass">
+        <value value="6">
+          <unit href="Functions/E-Car.registry#kg"/>
+        </value>
+      </parameters>
+    </children>
+    <children id="887bcb7d-ca7d-4988-9851-a4d9deecaca3" name="eMiscs">
+      <parameters id="10d1fa05-1ef9-456c-a4f8-25a95314421d" name="Mass">
+        <value value="44">
+          <unit href="Functions/E-Car.registry#kg"/>
+        </value>
+      </parameters>
+    </children>
+    <children id="6f373dfa-a1d4-4195-a15b-50cd3ecfe1ef" name="BatteryPack">
+      <parameters id="dc97a5ef-2f0b-416d-b09c-704c04bbb992" name="Capacity">
+        <value value="27kWh"/>
+      </parameters>
+      <children id="ec652264-8e28-4336-b0a4-3c6dad9fb340" name="Front">
+        <parameters id="da8c9b0d-282f-49fd-92d8-9792f907716a" name="Mass">
+          <value value="84">
+            <unit href="Functions/E-Car.registry#kg"/>
+          </value>
+        </parameters>
+      </children>
+      <children id="7f4508e9-6990-4d68-ab15-30676b321330" name="Center">
+        <parameters id="a3dfa835-f56b-47f8-b72f-2e0003e6028f" name="Mass">
+          <value value="78">
+            <unit href="Functions/E-Car.registry#kg"/>
+          </value>
+        </parameters>
+      </children>
+      <children id="cffbdefb-0781-454e-a3fe-cf6e48909b1c" name="Rear">
+        <parameters id="d8212caf-f3d6-4cf5-8595-bff32ff7b410" name="Mass">
+          <value value="111">
+            <unit href="Functions/E-Car.registry#kg"/>
+          </value>
+        </parameters>
+      </children>
+    </children>
+  </projects>
+</prem:ProjectRepository>

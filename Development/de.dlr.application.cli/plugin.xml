@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="de.dlr.application.cli.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         id="Application"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="de.dlr.application.cli.application"
+            name="PARADISE">
+         <property
+               name="windowImages"
+               value="platform:/plugin/de.dlr.application.rcp/icons/dlr16white.png,platform:/plugin/de.dlr.application.rcp/icons/dlr32.png,platform:/plugin/de.dlr.application.rcp/icons/dlr.png">
+         </property>
+         <property
+               name="startupForegroundColor"
+               value="000000">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="20,275,430,15">
+         </property>
+         <property
+               name="startupMessageRect"
+               value="20,260,430,15">
+         </property>
+         <property
+               name="appName"
+               value="PARADISE">
+         </property>
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+      </product>
+   </extension>
+
+</plugin>

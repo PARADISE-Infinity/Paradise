@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.core.expressions.definitions">
+      <definition
+            id="de.dlr.exchange.base.expressions.IsSystemFile">
+            <or>
+               <test
+                     property="org.eclipse.core.resources.extension"
+                     value="system">
+               </test>
+               <test
+                     property="org.eclipse.core.resources.extension"
+                     value="premise">
+               </test>
+            </or>
+      </definition>
+      <definition
+            id="de.dlr.exchange.base.expressions.IsFunctionFile">
+            <or>
+               <test
+                     property="org.eclipse.core.resources.extension"
+                     value="function">
+               </test>
+               <test
+                     property="org.eclipse.core.resources.extension"
+                     value="usecase">
+               </test>
+            </or>
+      </definition>
+   </extension>
+
+</plugin>

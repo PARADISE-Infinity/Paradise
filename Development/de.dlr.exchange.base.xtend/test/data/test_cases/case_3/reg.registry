@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reg:Registry xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <constants id="18333bf0-b1f0-403a-80cf-c9d8dbc53a52" name="const">
+    <value value="12" xsi:type="reg:Value"/>
+  </constants>
+</reg:Registry>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rep:Representation xmlns:rep="http://www.dlr.de/ft/premise/representation/2012/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="3a056681-daf1-4a5c-9d93-5636f300b3db" name="r2" xmi:version="2.0">
+<selectors name="Node yellow" query="graph::INode.allInstances()&#13;&#10;-&gt;selectByKind(registry::ADataItem)-&gt;select(Set{'46c03b13-4157-4163-936a-f96870318d23'}-&gt;includes(id))&#13;&#10;">
+<decorators name="yellow" value="#FFFF00" xsi:type="rep:Color"/>
+</selectors>
+</rep:Representation>

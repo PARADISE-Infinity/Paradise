@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" metaModel="1.29">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+    <children name="number representation pattern" value="##0.0###E0"/>
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Group Elements" value="false"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Edit local statemachines">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+    </children>
+  </metaData>
+  <projects name="Root" id="4c4a025b-23af-460d-949e-bacff1429164">
+    <statemachines name="SM" id="f05b3bc2-a48a-42fa-800c-c0e749fa06c3">
+      <modes name="1" id="2a65fb22-16bd-40d4-8bc0-94edc25ea1ff" entryMode="true"/>
+      <modes name="2" id="eed10b2c-75ee-4349-83d2-bb393f31c33e"/>
+      <modes name="3" id="c73c742a-7c96-4f5a-aaff-aa4c196066c6"/>
+      <transitions id="6a0ad1c2-9af0-4808-8c44-0f3b3b14c035">
+        <sourcePointer xsi:type="graph:DirectPointer" target="2a65fb22-16bd-40d4-8bc0-94edc25ea1ff"/>
+        <targetPointer xsi:type="graph:DirectPointer" target="eed10b2c-75ee-4349-83d2-bb393f31c33e"/>
+        <condition xsi:type="elem:ModeGuard" mode="2a65fb22-16bd-40d4-8bc0-94edc25ea1ff"/>
+      </transitions>
+      <transitions id="722a93cd-5c09-40c5-9fab-12f435d48f97">
+        <sourcePointer xsi:type="graph:DirectPointer" target="eed10b2c-75ee-4349-83d2-bb393f31c33e"/>
+        <targetPointer xsi:type="graph:DirectPointer" target="c73c742a-7c96-4f5a-aaff-aa4c196066c6"/>
+        <condition xsi:type="elem:GuardCombination">
+          <children xsi:type="elem:ModeGuard" mode="eed10b2c-75ee-4349-83d2-bb393f31c33e"/>
+          <children xsi:type="elem:ModeGuard" mode="c73c742a-7c96-4f5a-aaff-aa4c196066c6"/>
+        </condition>
+      </transitions>
+      <transitions id="2fecf631-e0c9-4559-a9d3-ab5b6d433f8c">
+        <sourcePointer xsi:type="graph:DirectPointer" target="c73c742a-7c96-4f5a-aaff-aa4c196066c6"/>
+        <targetPointer xsi:type="graph:DirectPointer" target="2a65fb22-16bd-40d4-8bc0-94edc25ea1ff"/>
+      </transitions>
+    </statemachines>
+    <satisfies>
+      <targetPointer xsi:type="graph:DirectPointer">
+        <target xsi:type="uc:UseCase" href="My.function#54f109a6-fe8c-46bd-8623-deba3c1c3924"/>
+      </targetPointer>
+    </satisfies>
+    <parameters name="P" id="4066bf59-a1c9-426d-93a8-1c1ab1b6b387">
+      <value value="5"/>
+      <satisfies>
+        <targetPointer xsi:type="graph:DirectPointer">
+          <target xsi:type="uc:RequiredParameter" href="My.function#fa71b6a3-4321-4869-bbd6-564f323e0c3d"/>
+        </targetPointer>
+      </satisfies>
+      <modeValues modes="2a65fb22-16bd-40d4-8bc0-94edc25ea1ff" value="0" uncertainty=""/>
+      <modeValues value="3" uncertainty="">
+        <modes href="My.function#41849476-850c-4afb-9a4f-4b16ec626365"/>
+        <modes href="#eed10b2c-75ee-4349-83d2-bb393f31c33e"/>
+      </modeValues>
+      <modeValues modes="eed10b2c-75ee-4349-83d2-bb393f31c33e c73c742a-7c96-4f5a-aaff-aa4c196066c6"/>
+    </parameters>
+  </projects>
+</prem:ProjectRepository>

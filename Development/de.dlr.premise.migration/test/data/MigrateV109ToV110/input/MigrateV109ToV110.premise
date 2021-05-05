@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:val="http://www.dlr.de/ft/premise/validated/2013/" metaModel="1.09">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+  </metaData>
+  <projects name="Root" id="6e976992-21bc-40de-83d7-b577542ff380">
+    <inputs name="massFlow" id="c434159c-9db8-44c0-9042-2a1e12bfad45"/>
+    <connections xsi:type="val:Connection" sourcePortName="25a6e2bc-5552-45a7-a199-b3e75be9a0cc" targetPortName="2b80dc74-28a9-4338-a10e-ef15345b42c2"/>
+    <connections xsi:type="val:Connection" sourcePortName="25a6e2bc-5552-45a7-a199-b3e75be9a0cc" targetPortName="c434159c-9db8-44c0-9042-2a1e12bfad45"/>
+    <children name="A" id="13804fb6-9c92-4350-a11e-970e2dc2b6d3">
+      <inputs name="massFlow" id="2b80dc74-28a9-4338-a10e-ef15345b42c2"/>
+    </children>
+    <children name="B" id="1c8f495f-7a80-4b45-b4ef-48e84e05434a">
+      <outputs name="massFlow" id="25a6e2bc-5552-45a7-a199-b3e75be9a0cc"/>
+    </children>
+  </projects>
+</prem:ProjectRepository>

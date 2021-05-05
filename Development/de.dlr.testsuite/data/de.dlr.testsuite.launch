@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.pde.ui.JunitLaunchConfig">
+<booleanAttribute key="append.args" value="true"/>
+<stringAttribute key="application" value="org.eclipse.pde.junit.runtime.coretestapplication"/>
+<booleanAttribute key="askclear" value="false"/>
+<booleanAttribute key="automaticAdd" value="true"/>
+<booleanAttribute key="automaticValidate" value="false"/>
+<stringAttribute key="bad_container_name" value="\de.dlr.testsuite\launchCoverage"/>
+<stringAttribute key="bootstrap" value=""/>
+<stringAttribute key="checked" value="[NONE]"/>
+<booleanAttribute key="clearConfig" value="true"/>
+<booleanAttribute key="clearws" value="true"/>
+<booleanAttribute key="clearwslog" value="false"/>
+<stringAttribute key="configLocation" value="${workspace_loc}/.metadata/.plugins/org.eclipse.pde.core/pde-junit"/>
+<booleanAttribute key="default" value="true"/>
+<booleanAttribute key="includeOptional" value="true"/>
+<stringAttribute key="location" value="${workspace_loc}/../junit-workspace"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/de.dlr.testsuite/test/plugin/de/dlr/testsuite/AllTestsRandom.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<mapAttribute key="org.eclipse.debug.core.preferred_launchers">
+<mapEntry key="[debug]" value="org.eclipse.pde.ui.JunitLaunchConfig"/>
+<mapEntry key="[run]" value="org.eclipse.pde.ui.JunitLaunchConfig"/>
+</mapAttribute>
+<listAttribute key="org.eclipse.debug.ui.favoriteGroups">
+<listEntry value="org.eclipse.debug.ui.launchGroup.debug"/>
+<listEntry value="org.eclipse.eclemma.ui.launchGroup.coverage"/>
+<listEntry value="org.eclipse.debug.ui.launchGroup.run"/>
+</listAttribute>
+<listAttribute key="org.eclipse.eclemma.core.SCOPE_IDS">
+<listEntry value="=de.dlr.calc.engine.combined/xtend-gen"/>
+<listEntry value="=de.dlr.calc.engine.dsl.xtext/src-impl"/>
+<listEntry value="=de.dlr.calc.engine.dsl.xtext/xtend-gen"/>
+<listEntry value="=de.dlr.calc.engine.dsl/src-impl"/>
+<listEntry value="=de.dlr.calc.engine.dsl/xtend-gen"/>
+<listEntry value="=de.dlr.calc.engine.excel/src-impl"/>
+<listEntry value="=de.dlr.calc.engine.java/src-impl"/>
+<listEntry value="=de.dlr.calc.engine.java/xtend-gen"/>
+<listEntry value="=de.dlr.calc.engine.matlab/src-impl"/>
+<listEntry value="=de.dlr.calc.engine/src-impl"/>
+<listEntry value="=de.dlr.exchange.base.xtend/xtend-gen"/>
+<listEntry value="=de.dlr.exchange.excel.trace.xtend/xtend-gen"/>
+<listEntry value="=de.dlr.exchange.excel.tradeoff.xtend/xtend-gen"/>
+<listEntry value="=de.dlr.exchange.graphml.block/xtend-gen"/>
+<listEntry value="=de.dlr.exchange.graphml.cfta.xtend/xtend-gen"/>
+<listEntry value="=de.dlr.exchange.graphml.fta.xtend/xtend-gen"/>
+<listEntry value="=de.dlr.exchange.graphml.xtend/xtend-gen"/>
+<listEntry value="=de.dlr.exchange.json.structure/xtend-gen"/>
+<listEntry value="=de.dlr.exchange.matlab.struct.xtend/xtend-gen"/>
+<listEntry value="=de.dlr.exchange.petrinet.base.xtend/xtend-gen"/>
+<listEntry value="=de.dlr.exchange.petrinet.pnml.pipe.xtend/xtend-gen"/>
+<listEntry value="=de.dlr.exchange.petrinet.snoopy.xtend/xtend-gen"/>
+<listEntry value="=de.dlr.premise.calc/src-impl"/>
+<listEntry value="=de.dlr.premise.calc/xtend-gen"/>
+<listEntry value="=de.dlr.premise.constraints/src-impl"/>
+<listEntry value="=de.dlr.premise.edit/src-impl"/>
+<listEntry value="=de.dlr.premise.edit/xtend-gen"/>
+<listEntry value="=de.dlr.premise.editor/xtend-gen"/>
+<listEntry value="=de.dlr.premise.migration/src-impl"/>
+<listEntry value="=de.dlr.premise.migration/xtend-gen"/>
+<listEntry value="=de.dlr.premise.query/src-impl"/>
+<listEntry value="=de.dlr.premise.query/xtend-gen"/>
+<listEntry value="=de.dlr.premise.states/src"/>
+<listEntry value="=de.dlr.premise.states/xtend-gen"/>
+<listEntry value="=de.dlr.premise.util/src-impl"/>
+<listEntry value="=de.dlr.premise.validation/src-impl"/>
+<listEntry value="=de.dlr.premise.view.GraphicalEditorView/src-impl"/>
+<listEntry value="=de.dlr.premise.view.GraphicalEditorView/xtend-gen"/>
+<listEntry value="=de.dlr.premise.view.graphml/xtend-gen"/>
+<listEntry value="=de.dlr.premise.xtext/src-impl"/>
+<listEntry value="=de.dlr.premise.xtext/xtend-gen"/>
+<listEntry value="=de.dlr.premise/src-impl"/>
+<listEntry value="=de.dlr.premise/xtend-gen"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.junit.CONTAINER" value=""/>
+<booleanAttribute key="org.eclipse.jdt.junit.KEEPRUNNING_ATTR" value="false"/>
+<stringAttribute key="org.eclipse.jdt.junit.TESTNAME" value=""/>
+<stringAttribute key="org.eclipse.jdt.junit.TEST_KIND" value="org.eclipse.jdt.junit.loader.junit4"/>
+<stringAttribute key="org.eclipse.jdt.launching.JAVA_COMMAND" value="java"/>
+<stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="de.dlr.testsuite.AllTestsRandom"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-os ${target.os} -ws ${target.ws} -arch ${target.arch} -nl ${target.nl} -consoleLog"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="de.dlr.testsuite"/>
+<stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.pde.ui.workbenchClasspathProvider"/>
+<stringAttribute key="pde.version" value="3.3"/>
+<stringAttribute key="product" value="org.eclipse.platform.ide"/>
+<booleanAttribute key="run_in_ui_thread" value="true"/>
+<booleanAttribute key="show_selected_only" value="false"/>
+<booleanAttribute key="tracing" value="false"/>
+<booleanAttribute key="useCustomFeatures" value="false"/>
+<booleanAttribute key="useDefaultConfig" value="true"/>
+<booleanAttribute key="useDefaultConfigArea" value="false"/>
+<booleanAttribute key="useProduct" value="false"/>
+</launchConfiguration>

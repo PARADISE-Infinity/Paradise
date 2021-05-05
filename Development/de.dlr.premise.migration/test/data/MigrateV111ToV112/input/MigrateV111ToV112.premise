@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:prem="http://www.dlr.de/ft/premise/2010/" metaModel="1.11">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+  </metaData>
+  <projects name="Alpha" id="063ad883-379a-478a-b8a7-777829f4368f">
+    <modes name="Uno" description="" id="c6eff05e-63ff-4308-9405-818e23dff7a8"/>
+    <modes name="Dos" id="f7429c16-ec25-4a1a-8dac-534377925e95" entryMode="false"/>
+    <modes name="Tres" id="c3e639a9-dd99-4765-8247-42db00fc3408" entryMode="false"/>
+    <transitions id="cdf78a71-264b-459f-a304-34b76319df6a" target="f7429c16-ec25-4a1a-8dac-534377925e95" source="c6eff05e-63ff-4308-9405-818e23dff7a8">
+      <constraint xsi:type="prem:NestedTransitionConstraint">
+        <children xsi:type="prem:TransitionConstraint">
+          <trigger xsi:type="prem:Transition" href="MigrateV111ToV112.usecase#3acc0daf-e6f1-4ef5-9515-3ab8211ff3ca"/>
+        </children>
+        <children xsi:type="prem:TransitionConstraint" trigger="c8cfafd5-f30b-418b-b37f-80f89ba6b511"/>
+      </constraint>
+      <parameters name="Spanish 1>2" id="eb71a164-8cae-4486-bf46-b6b0907374da">
+        <unit href="MigrateV111ToV112.registry#1"/>
+      </parameters>
+      <balancings target="eb71a164-8cae-4486-bf46-b6b0907374da">
+        <sources href="MigrateV111ToV112.usecase#43c908de-1e6d-429f-8613-8402cf7d7a0f"/>
+        <sources href="#3102b1e2-96bb-41c7-a72d-ff8c180a5dac"/>
+      </balancings>
+    </transitions>
+    <transitions id="f3ca457c-88b9-4ed1-bbe4-6748b49a2e2f" target="c3e639a9-dd99-4765-8247-42db00fc3408" source="f7429c16-ec25-4a1a-8dac-534377925e95"/>
+    <children name="Beta" id="9e34c2d3-6c70-4903-8040-3ff5c62fe18a">
+      <metaTypes href="MigrateV111ToV112.registry#3d7bdeb5-a2b3-47b6-a959-67739118b850"/>
+      <modes name="ena" id="d18a0d78-ecbb-4a4d-89ed-2cd13c8b8de8"/>
+      <modes name="dyo" id="f69afafa-adf2-49cc-b5d3-c9e372af501c" entryMode="false"/>
+      <modes name="tria" id="4039f148-e671-4d4d-a69d-807b408ef2e3" entryMode="false"/>
+      <transitions id="c8cfafd5-f30b-418b-b37f-80f89ba6b511" target="f69afafa-adf2-49cc-b5d3-c9e372af501c" source="d18a0d78-ecbb-4a4d-89ed-2cd13c8b8de8">
+        <parameters name="Greek 1>2" id="3102b1e2-96bb-41c7-a72d-ff8c180a5dac">
+          <unit href="MigrateV111ToV112.registry#1"/>
+        </parameters>
+      </transitions>
+      <transitions name="" id="e419337a-b196-4071-bcca-95a11b00a6fb" target="4039f148-e671-4d4d-a69d-807b408ef2e3" source="f69afafa-adf2-49cc-b5d3-c9e372af501c"/>
+    </children>
+  </projects>
+  <projects name="Gamma" id="959d74c5-7ae5-4524-8c71-abbf250e7b7f">
+    <parameters name="Parameter" id="2f13d9f9-826b-487c-a33d-c29899c3af6a">
+      <value value="0"/>
+      <unit href="MigrateV111ToV112.registry#1"/>
+      <satisfies href="MigrateV111ToV112.usecase#//@usecases.1/@constraints.0"/>
+      <modeValues value="15">
+        <modes href="MigrateV111ToV112.usecase#81ed27ea-39a0-4c1a-b77f-79555b9022ab"/>
+      </modeValues>
+    </parameters>
+  </projects>
+</prem:ProjectRepository>

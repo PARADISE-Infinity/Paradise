@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="element" nsURI="http://www.dlr.de/premise/element/2014/" nsPrefix="elem">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+    <details key="documentation" value="The Ecore model element contains the basic elements of the PREMISE model used by various sub-models."/>
+  </eAnnotations>
+  <eAnnotations source="http://www.eclipse.org/OCL/Import">
+    <details key="comp" value="PREMISE_Component.ecore#/"/>
+    <details key="fnp" value="PREMISE_FunctionPool.ecore#/"/>
+    <details key="graph" value="PREMISE_Graph.ecore#/"/>
+    <details key="prem" value="PREMISE_System.ecore#/"/>
+    <details key="reg" value="PREMISE_Registry.ecore#/"/>
+  </eAnnotations>
+  <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+    <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="ARepository" abstract="true" eSuperTypes="PREMISE_Registry.ecore#//AVersionedModelRoot">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="A Repository contains all storable infromation like registries function pools and so on."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="registries" upperBound="-1"
+        eType="ecore:EClass PREMISE_Registry.ecore#//Registry"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="functionPools" upperBound="-1"
+        eType="ecore:EClass PREMISE_FunctionPool.ecore#//FunctionPool"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="extensions" upperBound="-1"
+        eType="#//AExtension"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AExtension" abstract="true" eSuperTypes="PREMISE_Registry.ecore#//ADataItem">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Defines a unique name for a file extension."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AElement" abstract="true" eSuperTypes="PREMISE_Registry.ecore#//ADataItem PREMISE_Registry.ecore#//IMetaTypable PREMISE_Graph.ecore#//INode">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Is an abstract element to describe a part of the system or problem description."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="statemachines" upperBound="-1"
+        eType="#//StateMachine" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Relation">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Defines a generic relation between two model elements. By setting the relation type or the meta type, the relation context is defined like realization, inheritation, satisfy or fullfil."/>
+    </eAnnotations>
+    <eOperations name="getSourcePointers" upperBound="-1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.element.impl.my.util.IEdgeHelper.getSourcePointers(this);"/>
+      </eAnnotations>
+      <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+        <eTypeArguments eClassifier="ecore:EClass PREMISE_Graph.ecore#//INode"/>
+      </eGenericType>
+    </eOperations>
+    <eOperations name="getTargetPointers" upperBound="-1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.element.impl.my.util.IEdgeHelper.getTargetPointers(this);"/>
+      </eAnnotations>
+      <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+        <eTypeArguments eClassifier="ecore:EClass PREMISE_Graph.ecore#//INode"/>
+      </eGenericType>
+    </eOperations>
+    <eOperations name="setSource">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="de.dlr.premise.util.PointerHelper.delegateSetToPointer(this, ElementPackage.Literals.RELATION__SOURCE_POINTER, newSource);"/>
+      </eAnnotations>
+      <eParameters name="newSource" eType="ecore:EClass PREMISE_Graph.ecore#//INode"/>
+    </eOperations>
+    <eOperations name="setTarget">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="de.dlr.premise.util.PointerHelper.delegateSetToPointer(this, ElementPackage.Literals.RELATION__TARGET_POINTER, newTarget);"/>
+      </eAnnotations>
+      <eParameters name="newTarget" eType="ecore:EClass PREMISE_Graph.ecore#//INode"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+        eType="ecore:EClass PREMISE_Graph.ecore#//INode" changeable="false" volatile="true"
+        transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="get" value="return de.dlr.premise.util.PointerHelper.delegateGetToPointer(this, ElementPackage.Literals.RELATION__SOURCE_POINTER);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
+        eType="ecore:EClass PREMISE_Graph.ecore#//INode" changeable="false" volatile="true"
+        transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="get" value="return de.dlr.premise.util.PointerHelper.delegateGetToPointer(this, ElementPackage.Literals.RELATION__TARGET_POINTER);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourcePointer" containment="true">
+      <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+        <eTypeArguments eClassifier="ecore:EClass PREMISE_Graph.ecore#//INode"/>
+      </eGenericType>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetPointer" containment="true">
+      <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+        <eTypeArguments eClassifier="ecore:EClass PREMISE_Graph.ecore#//INode"/>
+      </eGenericType>
+    </eStructuralFeatures>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//IMetaTypable"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Graph.ecore#//IEdge">
+      <eTypeArguments eClassifier="ecore:EClass PREMISE_Graph.ecore#//INode"/>
+      <eTypeArguments eClassifier="ecore:EClass PREMISE_Graph.ecore#//INode"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Connection">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="A connection is a relation from an output to an input. Sometimes it can be used for a signal."/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="SourceValid TargetValid"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="SourceValid" value="Tuple {&#xA;&#x9;message : String = 'Connection: Source must be the parent element or any of its children.',&#xA;&#x9;status : Boolean = isSourcePointerValid()&#xA;}.status"/>
+      <details key="TargetValid" value="Tuple {&#xA;&#x9;message : String = 'Connection: Target must be the parent element or any of its children.',&#xA;&#x9;status : Boolean = isTargetPointerValid()&#xA;}.status"/>
+    </eAnnotations>
+    <eTypeParameters name="T">
+      <eBounds eClassifier="#//AElement"/>
+    </eTypeParameters>
+    <eOperations name="queryValidSourcePointerParentComponentReferenceList" ordered="false"
+        upperBound="-1" eType="ecore:EClass PREMISE_System.ecore#//ComponentReference">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.element.impl.my.util.ConnectionHelper.queryValidSourcePointerParentComponentReferenceList(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="queryValidTargetPointerParentComponentReferenceList" ordered="false"
+        upperBound="-1" eType="ecore:EClass PREMISE_System.ecore#//ComponentReference">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.element.impl.my.util.ConnectionHelper.queryValidTargetPointerParentComponentReferenceList(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="queryValidSourcePointerList" ordered="false" upperBound="-1"
+        eType="#//AElement">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="let parent : element::AElement = self.oclContainer().oclAsType(element::AElement)&#xA;&#x9;&#x9;in parent->closure(element | self.getChildren(element))"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="queryValidTargetPointerList" ordered="false" upperBound="-1"
+        eType="#//AElement">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="let parent : element::AElement = self.oclContainer().oclAsType(element::AElement)&#xA;&#x9;in parent->closure(element | self.getChildren(element))"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getChildren" ordered="false" upperBound="-1" eType="#//AElement">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="if (parent.oclIsKindOf(functions::UseCase))&#xA;&#x9;&#x9;then parent.oclAsType(functions::UseCase).children else if (parent.oclIsKindOf(system::SystemComponent))&#xA;&#x9;&#x9;&#x9;then parent.oclAsType(system::SystemComponent).children->select(c | c.oclIsKindOf(system::SystemComponent)) else&#xA;&#x9;&#x9;&#x9;&#x9;Sequence{}&#xA;&#x9;&#x9;&#x9;endif endif"/>
+      </eAnnotations>
+      <eParameters name="parent" lowerBound="1" eType="#//AElement"/>
+    </eOperations>
+    <eOperations name="getSourcePointers" upperBound="-1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.element.impl.my.util.IEdgeHelper.getSourcePointers(this);"/>
+      </eAnnotations>
+      <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+        <eTypeArguments eTypeParameter="#//Connection/T"/>
+      </eGenericType>
+    </eOperations>
+    <eOperations name="getTargetPointers" upperBound="-1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.element.impl.my.util.IEdgeHelper.getTargetPointers(this);"/>
+      </eAnnotations>
+      <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+        <eTypeArguments eTypeParameter="#//Connection/T"/>
+      </eGenericType>
+    </eOperations>
+    <eOperations name="isSourcePointerValid" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.element.impl.my.util.ConnectionHelper.isSourcePointerValid(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="isTargetPointerValid" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.element.impl.my.util.ConnectionHelper.isTargetPointerValid(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="setSource">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="de.dlr.premise.util.PointerHelper.delegateSetToPointer(this, ElementPackage.Literals.CONNECTION__SOURCE_POINTER, newSource);"/>
+      </eAnnotations>
+      <eParameters name="newSource">
+        <eGenericType eTypeParameter="#//Connection/T"/>
+      </eParameters>
+    </eOperations>
+    <eOperations name="setTarget">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="de.dlr.premise.util.PointerHelper.delegateSetToPointer(this, ElementPackage.Literals.CONNECTION__TARGET_POINTER, newTarget);"/>
+      </eAnnotations>
+      <eParameters name="newTarget">
+        <eGenericType eTypeParameter="#//Connection/T"/>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="get" value="return de.dlr.premise.util.PointerHelper.delegateGetToPointer(this, ElementPackage.Literals.CONNECTION__SOURCE_POINTER);"/>
+      </eAnnotations>
+      <eGenericType eTypeParameter="#//Connection/T"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="get" value="return de.dlr.premise.util.PointerHelper.delegateGetToPointer(this, ElementPackage.Literals.CONNECTION__TARGET_POINTER);"/>
+      </eAnnotations>
+      <eGenericType eTypeParameter="#//Connection/T"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourcePointer" containment="true">
+      <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+        <eTypeArguments eTypeParameter="#//Connection/T"/>
+      </eGenericType>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetPointer" containment="true">
+      <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+        <eTypeArguments eTypeParameter="#//Connection/T"/>
+      </eGenericType>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bidirectional" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourcePortName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="targetPortName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//IOclValidated"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//IMetaTypable"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Graph.ecore#//IEdge">
+      <eTypeArguments eTypeParameter="#//Connection/T"/>
+      <eTypeArguments eTypeParameter="#//Connection/T"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Mode">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Represents an operating mode or state of a system component.&#xA;It can be interpreted as a place in a 1-bounded (or safe) Petri net, capacity is 1 and an initial token is specified by entryMode.&#xA;Time and colored Peri nets are not considered yet.&#xA;&#xA;In case k-bounded petri net places shall be allowed,&#xA;- add tokenCapacity (default is null which means max)&#xA;- change entryMode to entryTokens (default is 0)&#xA;- change concept: the local state of a component is not fully specified by one mode anymore,&#xA;it may be specified by e.g. modeA=1 &amp; modeB=2 (count of current tokens),&#xA;the selection of modes for mode dependent parameters (ModeValueRef) shall be re-thought carefully&#xA;(modeA>0 &amp; modeB=2)&#xA;- can be extended by containing mode children representing a sub petri net,&#xA;e.g., thisMode&lt;=>placeA=2&amp;placeB>1&amp;placeG=0 (all cumulations must be disjunct)&#xA;- clarify if sub petri net modes can be used in mode mappings/transitions"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="Reachable"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="Reachable" value="Tuple {&#xD;&#xA;&#x9;message : String = 'Mode: Must be reachable via Transitions from the entry mode.',&#xD;&#xA;&#x9;status : Boolean = self.isReachable()&#xD;&#xA;}.status"/>
+    </eAnnotations>
+    <eOperations name="isReachable" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.element.impl.my.util.ModeHelper.isReachable(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="entryMode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="false"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//ADataItem"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Graph.ecore#//INode"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//IMetaTypable"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Component.ecore#//ISatisfying">
+      <eTypeArguments eClassifier="#//Mode"/>
+      <eTypeArguments eClassifier="ecore:EClass PREMISE_Component.ecore#//IModeSatisfieable"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AModeCombination" abstract="true">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Represents a combination of system states."/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="Valid"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="Valid" value="Tuple {&#xD;&#xA;&#x9;message : String = 'Must represent a valid combination of Modes.',&#xD;&#xA;&#x9;status : Boolean = self.isValid()&#xD;&#xA;}.status"/>
+    </eAnnotations>
+    <eOperations name="isValid" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.element.impl.my.util.AModeCombinationHelper.isValid(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modes" lowerBound="1" upperBound="-1"
+        eType="#//Mode" changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="get" value="return de.dlr.premise.util.PointerHelper.delegateGetToPointerCollection(this, ElementPackage.Literals.AMODE_COMBINATION__MODE_POINTERS);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modePointers" upperBound="-1"
+        containment="true">
+      <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+        <eTypeArguments eClassifier="#//Mode"/>
+      </eGenericType>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Transition">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Represents an abstract transition from on system mode into another mode. A given condition limits the circumstances in which this transition acts or &quot;fires&quot; and therefore specifies an exclusive trigger.&#xA;&#xA;- rename as Transition&#xA;- can be extended by inhibitingInputs (see Petri nets)&#xA;- can be extended by one constraint per input and output"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="SourceReachable TargetReachable"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="SourceReachable" value="Tuple {&#xA;&#x9;message : String = 'Transition: Source mode must be a direct sibling.',&#xA;&#x9;status : Boolean = source &lt;> null implies queryValidSourcePointerList()->includes(source)&#xA;}.status"/>
+      <details key="TargetReachable" value="Tuple {&#xA;&#x9;message : String = 'Transition: Target mode must be a direct sibling.',&#xA;&#x9;status : Boolean = target &lt;> null implies queryValidTargetPointerList()->includes(target)&#xA;}.status"/>
+    </eAnnotations>
+    <eOperations name="queryReachableModes" ordered="false" upperBound="-1" eType="#//Mode">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="self.oclContainer().oclAsType(element::StateMachine).modes"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="queryValidSourcePointerList" ordered="false" upperBound="-1"
+        eType="#//Mode">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="queryReachableModes()"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="queryValidTargetPointerList" ordered="false" upperBound="-1"
+        eType="#//Mode">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="queryReachableModes()"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getSourcePointers" upperBound="-1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.element.impl.my.util.IEdgeHelper.getSourcePointers(this);"/>
+      </eAnnotations>
+      <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+        <eTypeArguments eClassifier="#//Mode"/>
+      </eGenericType>
+    </eOperations>
+    <eOperations name="getTargetPointers" upperBound="-1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.element.impl.my.util.IEdgeHelper.getTargetPointers(this);"/>
+      </eAnnotations>
+      <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+        <eTypeArguments eClassifier="#//Mode"/>
+      </eGenericType>
+    </eOperations>
+    <eOperations name="setSource">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="de.dlr.premise.util.PointerHelper.delegateSetToPointer(this, ElementPackage.Literals.TRANSITION__SOURCE_POINTER, newSource);"/>
+      </eAnnotations>
+      <eParameters name="newSource" eType="#//Mode"/>
+    </eOperations>
+    <eOperations name="setTarget">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="de.dlr.premise.util.PointerHelper.delegateSetToPointer(this, ElementPackage.Literals.TRANSITION__TARGET_POINTER, newTarget);"/>
+      </eAnnotations>
+      <eParameters name="newTarget" eType="#//Mode"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="#//Mode"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="get" value="return de.dlr.premise.util.PointerHelper.delegateGetToPointer(this, ElementPackage.Literals.TRANSITION__SOURCE_POINTER);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
+        eType="#//Mode" changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="get" value="return de.dlr.premise.util.PointerHelper.delegateGetToPointer(this, ElementPackage.Literals.TRANSITION__TARGET_POINTER);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourcePointer" containment="true">
+      <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+        <eTypeArguments eClassifier="#//Mode"/>
+      </eGenericType>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetPointer" containment="true">
+      <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+        <eTypeArguments eClassifier="#//Mode"/>
+      </eGenericType>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameters" upperBound="-1"
+        eType="ecore:EClass PREMISE_System.ecore#//TransitionParameter" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="balancings" ordered="false"
+        upperBound="-1" eType="ecore:EClass PREMISE_System.ecore#//TransitionBalancing"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="behavior" eType="#//TransitionActivationBehavior"
+        defaultValueLiteral="DEFAULT"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//ADataItem"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Graph.ecore#//IEdge">
+      <eTypeArguments eClassifier="#//Mode"/>
+      <eTypeArguments eClassifier="#//Mode"/>
+    </eGenericSuperTypes>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//IOclValidated"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//IMetaTypable"/>
+    <eGenericSuperTypes eClassifier="#//IConditional"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TransitionActivationBehavior">
+    <eLiterals name="DEFAULT"/>
+    <eLiterals name="EXTERNAL" value="1"/>
+    <eLiterals name="IMMEDIATE" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IConditional" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="condition" eType="#//AGuardCondition"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AGuardCondition" abstract="true">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="The abstract model element AGuardCondition describes the boundary condition of a transition. If this satisfies the transition is performed and the system proceeds to a new system state."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GuardCombination" eSuperTypes="#//AGuardCondition PREMISE_Registry.ecore#//ANameItem">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Represents a combination of GuardConditions through a Junction."/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="RestrictArity"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="RestrictArity" value="Tuple {&#xA;&#x9;message : String = 'GuardCombination: A NOT combination can only have one child',&#xA;&#x9;status : Boolean = junction = registry::Junction::NOT implies children->size() = 1&#xA;}.status"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="junction" lowerBound="1"
+        eType="ecore:EEnum PREMISE_Registry.ecore#//Junction"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="children" lowerBound="1"
+        upperBound="-1" eType="#//AGuardCondition" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ModeGuard" eSuperTypes="#//AGuardCondition PREMISE_Registry.ecore#//IPremiseObject">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="ModeGuardReferenceNotEmpty"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="ModeGuardReferenceNotEmpty" value="Tuple {&#xA;&#x9;message : String = 'ModeGuards must reference a Mode',&#xA;&#x9;status : Boolean = mode &lt;> null&#xA;}.status"/>
+    </eAnnotations>
+    <eOperations name="setMode">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="de.dlr.premise.util.PointerHelper.delegateSetToPointer(this, ElementPackage.Literals.MODE_GUARD__MODE_POINTER, newMode);"/>
+      </eAnnotations>
+      <eParameters name="newMode" eType="#//Mode"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mode" eType="#//Mode" changeable="false"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="get" value="return de.dlr.premise.util.PointerHelper.delegateGetToPointer(this, ElementPackage.Literals.MODE_GUARD__MODE_POINTER);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modePointer" containment="true">
+      <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+        <eTypeArguments eClassifier="#//Mode"/>
+      </eGenericType>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StateMachine" eSuperTypes="PREMISE_Registry.ecore#//ADataItem PREMISE_Graph.ecore#//INode PREMISE_Registry.ecore#//IMetaTypable">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Is an element to describe a state machine of the system or problem."/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="OneEntryMode"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="OneEntryMode" value="Tuple {&#xA;&#x9;message : String = self.oclType().name + ': State machine must have exactly one entry mode',&#xA;&#x9;status : Boolean = not&#xA;self.modes->isEmpty() implies self.modes->select(entryMode)->size() = 1&#xA;}.status"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modes" upperBound="-1"
+        eType="#//Mode" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="transitions" upperBound="-1"
+        eType="#//Transition" containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>

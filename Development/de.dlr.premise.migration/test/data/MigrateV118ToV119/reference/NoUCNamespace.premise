@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.19" xmi:version="2.0">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+    <children name="number representation pattern" value="##0.0###E0"/>
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Show Parameters" value="true"/>
+        <children name="Group Elements" value="true"/>
+      </children>
+    </children>
+  </metaData>
+  <projects id="f1af8e4f-8d74-4a77-9086-3fa91858e17c" name="Root">
+    <parameters id="9d39e9b5-e507-4807-9840-fa792af9cda5" name="Param">
+      <satisfies href="NoUCNamespace.usecase#0d94f9db-67b1-4b03-8d27-3f453f283ca3" xsi:type="uc:RequiredParameter"/>
+    </parameters>
+  </projects>
+</prem:ProjectRepository>

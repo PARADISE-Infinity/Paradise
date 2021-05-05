@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:prem="http://www.dlr.de/ft/premise/2010/" metaModel="1.28">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+    <children name="number representation pattern" value="##0.0###E0"/>
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Group Elements" value="false"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Edit local statemachines">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+    </children>
+  </metaData>
+  <projects id="f9f51a0a-b142-4165-8163-c1a718022a44">
+    <statemachines name="SM1" id="7953ad66-9448-4f08-b3af-9f11989c766c">
+      <modes name="1" id="4f6ad39a-2f64-477a-b640-c7b12c08662e" entryMode="true"/>
+      <modes name="2" id="d2fe7df6-c616-4805-8fba-5ccb17df3722"/>
+      <modes name="3" id="12bd50bb-b1fa-4a98-aa6f-ae41a0e8d3eb"/>
+      <transitions id="7a80cc51-ed15-404e-be6b-1e124b2ae590" externallyTriggered="true">
+        <sourcePointer xsi:type="graph:DirectPointer" target="4f6ad39a-2f64-477a-b640-c7b12c08662e"/>
+        <targetPointer xsi:type="graph:DirectPointer" target="d2fe7df6-c616-4805-8fba-5ccb17df3722"/>
+      </transitions>
+      <transitions id="ce8b491b-1d3b-4224-a0a2-f43cddf44db7">
+        <notes text="externallyTriggered is false and doesn't have condition. Might need behavior=IMMEDIATE, but since extenallyTriggered was false by default, this would lead to many unwanted IMMEDIATES" author="steh_ti" date="2018-05-28 18:49:50"/>
+        <sourcePointer xsi:type="graph:DirectPointer" target="d2fe7df6-c616-4805-8fba-5ccb17df3722"/>
+        <targetPointer xsi:type="graph:DirectPointer" target="12bd50bb-b1fa-4a98-aa6f-ae41a0e8d3eb"/>
+      </transitions>
+      <transitions id="d4658f60-10b5-4bd1-bc8a-9dff6dcd7da3" externallyTriggered="true">
+        <sourcePointer xsi:type="graph:DirectPointer" target="12bd50bb-b1fa-4a98-aa6f-ae41a0e8d3eb"/>
+        <targetPointer xsi:type="graph:DirectPointer" target="4f6ad39a-2f64-477a-b640-c7b12c08662e"/>
+      </transitions>
+    </statemachines>
+    <statemachines name="SM2" id="10b9b627-ac7b-4456-85ce-1eff7d301990">
+      <modes name="A" id="96513232-23a2-41f2-9b3b-bfa5f588e085" entryMode="true"/>
+      <modes name="B" id="d1fd767f-ad93-4428-bc2a-ea517b1d5e5a"/>
+      <modes name="C" id="4f962d47-ed96-4213-9dc6-3061b2b4596a"/>
+      <transitions id="0e5c0a1c-7643-4b02-a5e0-f2a43925ca6b" externallyTriggered="true">
+        <notes text="externallyTriggered is true and has condition, needs behavior=EXTERNAL" author="steh_ti" date="2018-05-28 18:15:31"/>
+        <sourcePointer xsi:type="graph:DirectPointer" target="96513232-23a2-41f2-9b3b-bfa5f588e085"/>
+        <targetPointer xsi:type="graph:DirectPointer" target="d1fd767f-ad93-4428-bc2a-ea517b1d5e5a"/>
+        <condition xsi:type="elem:ModeGuard" mode="d2fe7df6-c616-4805-8fba-5ccb17df3722"/>
+      </transitions>
+      <transitions id="912826d7-336e-4eb4-ac6d-7db45b07091b">
+        <sourcePointer xsi:type="graph:DirectPointer" target="d1fd767f-ad93-4428-bc2a-ea517b1d5e5a"/>
+        <targetPointer xsi:type="graph:DirectPointer" target="4f962d47-ed96-4213-9dc6-3061b2b4596a"/>
+        <condition xsi:type="elem:ModeGuard" mode="12bd50bb-b1fa-4a98-aa6f-ae41a0e8d3eb"/>
+      </transitions>
+      <transitions id="320899d3-3110-405e-9f42-e32337c6a2df">
+        <sourcePointer xsi:type="graph:DirectPointer" target="4f962d47-ed96-4213-9dc6-3061b2b4596a"/>
+        <targetPointer xsi:type="graph:DirectPointer" target="96513232-23a2-41f2-9b3b-bfa5f588e085"/>
+        <condition xsi:type="elem:ModeGuard" mode="4f6ad39a-2f64-477a-b640-c7b12c08662e"/>
+      </transitions>
+    </statemachines>
+  </projects>
+</prem:ProjectRepository>

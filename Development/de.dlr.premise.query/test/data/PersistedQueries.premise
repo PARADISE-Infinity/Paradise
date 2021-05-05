@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:xmi="http://www.omg.org/XMI" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+    <metaData name="Persisted Queries">
+      <metaData name="filtering" value="filteringQuery"/>
+      <metaData name="highlighting" value="highlightingQuery">
+        <metaData name="Mode" value="HIGHLIGHT"/>
+      </metaData>
+      <metaData name="listing" value="listingQuery">
+        <metaData name="Mode" value="list"/>
+      </metaData>
+    </metaData>
+  </metaData>
+</prem:ProjectRepository>

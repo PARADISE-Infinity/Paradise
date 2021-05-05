@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comp:ComponentRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:comp="http://www.dlr.de/premise/component/2016/">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+    <children name="number representation pattern" value="##0.0###E0"/>
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="false"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Show Parameters" value="true"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Edit local statemachines">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+    </children>
+  </metaData>
+  <definitions name="Motor" id="814cda75-f3a8-4938-ac2c-6f6c7fdfd21e">
+    <parameters name="ElectricalEnergy" id="a0520869-eead-4f9c-b82d-72e39dd4fd6b"/>
+    <parameters name="RotationalEnergy" id="ea2005c4-c4de-4f63-9392-aa7f9458c2e3"/>
+  </definitions>
+  <components name="MotorA" id="17e64868-38e4-457e-a6fb-ba9836a027f9">
+    <modes name="On" id="c5a1f937-1a8c-4f62-8cd9-c17f74da1108" entryMode="true"/>
+    <modes name="Off" id="fcda55a3-89f5-4c0c-a37b-233a6e5c871f"/>
+    <satisfies>
+      <targetPointer xsi:type="comp:DirectPointer" target="814cda75-f3a8-4938-ac2c-6f6c7fdfd21e"/>
+    </satisfies>
+    <transitions id="97ff25b8-0627-4f69-9079-989fbec50791">
+      <sourcePointer xsi:type="comp:DirectPointer" target="c5a1f937-1a8c-4f62-8cd9-c17f74da1108"/>
+      <targetPointer xsi:type="comp:DirectPointer" target="fcda55a3-89f5-4c0c-a37b-233a6e5c871f"/>
+    </transitions>
+    <transitions id="f8a29df6-f7d6-440f-9935-706a54b131be">
+      <sourcePointer xsi:type="comp:DirectPointer" target="fcda55a3-89f5-4c0c-a37b-233a6e5c871f"/>
+      <targetPointer xsi:type="comp:DirectPointer" target="c5a1f937-1a8c-4f62-8cd9-c17f74da1108"/>
+    </transitions>
+    <parameters name="ElEnergy" id="cc457b67-72f5-4e7e-855c-bcbac2f0918a">
+      <value value=""/>
+      <satisfies>
+        <targetPointer xsi:type="comp:DirectPointer" target="a0520869-eead-4f9c-b82d-72e39dd4fd6b"/>
+      </satisfies>
+    </parameters>
+    <parameters name="RotEnergy" id="c5aa5dbd-590d-4d3a-a494-181161c72927">
+      <value value=""/>
+      <satisfies>
+        <targetPointer xsi:type="comp:DirectPointer" target="ea2005c4-c4de-4f63-9392-aa7f9458c2e3"/>
+      </satisfies>
+    </parameters>
+    <balancings function="MotorA.RotEnergy = MotorA.ElEnergy * 3">
+      <actualSources key="MotorA.ElEnergy">
+        <value xsi:type="comp:DirectPointer" target="cc457b67-72f5-4e7e-855c-bcbac2f0918a"/>
+      </actualSources>
+      <actualTarget key="MotorA.RotEnergy">
+        <value xsi:type="comp:DirectPointer" target="c5aa5dbd-590d-4d3a-a494-181161c72927"/>
+      </actualTarget>
+    </balancings>
+  </components>
+  <components name="MotorB" id="f104177e-9e4a-4b76-a5b5-aa3e241b6807">
+    <satisfies>
+      <targetPointer xsi:type="comp:DirectPointer" target="814cda75-f3a8-4938-ac2c-6f6c7fdfd21e"/>
+    </satisfies>
+    <parameters name="ElEnergy" id="b9b9a592-b17a-4e0e-8d7e-f170640ca6bd">
+      <value value=""/>
+      <satisfies>
+        <targetPointer xsi:type="comp:DirectPointer" target="a0520869-eead-4f9c-b82d-72e39dd4fd6b"/>
+      </satisfies>
+    </parameters>
+    <parameters name="RotEnergy" id="4ed0fc44-bfeb-4580-9148-f0f3ad85cab8">
+      <value value=""/>
+      <satisfies>
+        <targetPointer xsi:type="comp:DirectPointer" target="ea2005c4-c4de-4f63-9392-aa7f9458c2e3"/>
+      </satisfies>
+    </parameters>
+  </components>
+</comp:ComponentRepository>

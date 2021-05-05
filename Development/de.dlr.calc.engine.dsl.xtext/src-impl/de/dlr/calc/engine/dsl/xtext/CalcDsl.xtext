@@ -1,0 +1,109 @@
+/**
+* Copyright (C) 2011-2021 German Aerospace Center e. V. (DLR), Braunschweig
+*
+* This code is part of the PARADISE project and is licensed under the EPL 2.0 license,
+* which is available at https://www.eclipse.org/legal/epl-2.0/
+*
+* @author: Axel Berres, Tim Bittner, Söhnke Escher, Dominik Engelhardt, Holger Schumann, Tillman Stehr
+*
+*/
+
+
+grammar de.dlr.calc.engine.dsl.xtext.CalcDsl with org.eclipse.xtext.common.Terminals
+
+generate calcDsl "http://www.dlr.de/premise/calcdsl/2016/"
+
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+
+Model:
+	(
+		'definitions'
+		(definitions += Definition)+
+	)?
+	
+	'body' 
+	target = [TargetParameter | QualifiedName]
+	'=' 
+	body = Expression
+;
+
+Definition:
+	SourceParameter | TargetParameter | Function
+;
+
+SourceParameter:
+	'sourceParameter' name=QualifiedName
+;
+
+TargetParameter:
+	'targetParameter' name=QualifiedName
+;
+
+Function:
+	'function' name=ID (parameters+=STRING)* (lastParameterMultiple?='lastParameterMultiple')?
+;
+
+
+Expression returns Expression:
+	AdditiveExpression
+;
+
+AdditiveExpression returns Expression:
+  MultiplicativeExpression ({AdditiveExpression.left=current} operand=OpAdd right=MultiplicativeExpression)*;
+  
+enum OpAdd:
+	ADD = '+' | SUBSTRACT = '-';
+  
+MultiplicativeExpression returns Expression:
+  UnaryExpression ({MultiplicativeExpression.left=current} operand=OpMulti right=UnaryExpression)*;
+
+enum OpMulti:
+	MULTIPLY = '*' | DIVIDE = '/' | MODULO = '%';
+	
+UnaryExpression returns Expression:
+  {UnaryExpression} operand=OpUnary => right=ExponentiationExpression
+  | ExponentiationExpression
+; 
+
+enum OpUnary:
+	PLUS = '+' | MINUS = '-'
+;
+ 
+ExponentiationExpression returns Expression:
+	Primary ({ExponentiationExpression.left=current} '^' right=UnaryExpression)?
+;
+
+Primary returns Expression:
+  NumberLiteral |
+  ParameterLiteral |
+  FunctionCall |
+  '(' Expression ')';
+  
+NumberLiteral:
+  value=Double;
+  
+ParameterLiteral:
+	value=[SourceParameter|QualifiedName]
+;
+  
+FunctionCall:
+	function=[Function|ID] 
+	'('
+		(
+			arguments += Expression
+			(',' arguments += Expression)*
+		)?
+	')'
+;
+
+Double returns ecore::EDouble hidden():
+	INT ('.' INT)?
+;
+
+QualifiedName:
+  ID (=>'.' ID)*;
+
+// remove caret as escape character, since we want to use it as power operator
+@Override 
+terminal ID:
+	('a'..'z'|'A'..'Z'|'$'|'_') ('a'..'z'|'A'..'Z'|'$'|'_'|'0'..'9')*;

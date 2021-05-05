@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" metaModel="1.24">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+    <children name="number representation pattern" value="##0.0###E0"/>
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Group Elements" value="false"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Edit local statemachines">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+    </children>
+  </metaData>
+  <usecases name="uc" id="cbdecbd2-e756-4b74-8519-916e3ab9863c">
+    <statemachines name="uc Failure State">
+      <modes name="Normal" id="402e9a50-d0ce-4189-b9e6-c9185c6dacad" entryMode="true"/>
+      <modes name="uc Failure" id="e35f6cbc-d0ba-4c4e-bd6a-17f5909beaa9"/>
+      <transitions name="F: uc Failure" id="27c622d8-3004-4471-9f82-fa383c5ed026">
+        <sourcePointer xsi:type="graph:DirectPointer" target="402e9a50-d0ce-4189-b9e6-c9185c6dacad"/>
+        <targetPointer xsi:type="graph:DirectPointer" target="e35f6cbc-d0ba-4c4e-bd6a-17f5909beaa9"/>
+        <condition xsi:type="elem:GuardCombination">
+          <children xsi:type="elem:ModeGuard" mode="673ba6a4-8b21-4634-badf-0bc17b0ee1bb"/>
+          <children xsi:type="elem:ModeGuard" mode="0a43b124-2606-4538-80ac-f949db6b8ffc"/>
+        </condition>
+        <parameters name="Failure Rate" id="8f37b84f-7fe9-492a-aba0-181db22cf1b0">
+          <value value="0"/>
+        </parameters>
+        <balancings name="bal" target="8f37b84f-7fe9-492a-aba0-181db22cf1b0" sources="cfe3ccb7-5190-438a-a60c-05f82cee35d9 6f4468a8-0f43-46b8-9735-233c4dc14e05">
+          <functionDefOr xsi:type="fnp:FnDefScript" href="My.functionpool#//@functions.0"/>
+          <functionDefAnd xsi:type="fnp:FnDefScript" href="My.functionpool#//@functions.0"/>
+        </balancings>
+      </transitions>
+    </statemachines>
+    <statemachines name="uc Failure State">
+      <modes name="Normal" id="048b7726-ad21-4250-a182-bfe9a6faa05a" entryMode="true"/>
+      <modes name="uc Failure" id="673ba6a4-8b21-4634-badf-0bc17b0ee1bb"/>
+      <transitions name="F: uc Failure" id="dfbeedd9-0307-4246-b8d1-cbdf424a94a1">
+        <sourcePointer xsi:type="graph:DirectPointer" target="048b7726-ad21-4250-a182-bfe9a6faa05a"/>
+        <targetPointer xsi:type="graph:DirectPointer" target="673ba6a4-8b21-4634-badf-0bc17b0ee1bb"/>
+        <parameters name="Failure Rate" id="6f4468a8-0f43-46b8-9735-233c4dc14e05">
+          <value value="0"/>
+        </parameters>
+      </transitions>
+    </statemachines>
+    <statemachines name="uc Failure State">
+      <modes name="Normal" id="3ea0b1ca-e1c6-461c-833f-2ac63825baf2" entryMode="true"/>
+      <modes name="uc Failure" id="0a43b124-2606-4538-80ac-f949db6b8ffc"/>
+      <transitions name="F: uc Failure" id="f118c6ea-93c9-402a-8a61-e8f43567cc9d">
+        <sourcePointer xsi:type="graph:DirectPointer" target="3ea0b1ca-e1c6-461c-833f-2ac63825baf2"/>
+        <targetPointer xsi:type="graph:DirectPointer" target="0a43b124-2606-4538-80ac-f949db6b8ffc"/>
+        <parameters name="Failure Rate" id="cfe3ccb7-5190-438a-a60c-05f82cee35d9">
+          <value value="0"/>
+        </parameters>
+      </transitions>
+    </statemachines>
+  </usecases>
+</uc:UseCaseRepository>

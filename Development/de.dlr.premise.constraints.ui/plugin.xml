@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="de.dlr.premise.constraints.violation"
+         name="ConstraintViolation"
+         point="org.eclipse.core.resources.markers">
+      <super
+            type="org.eclipse.core.resources.problemmarker">
+      </super>
+      <persistent
+            value="true">
+      </persistent>
+   </extension>
+
+
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup
+            class="de.dlr.premise.constraints.Startup"></startup>
+   </extension>
+
+
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            category="de.dlr.application.rcp.category.paradise"
+            class="de.dlr.premise.constraints.ui.ConstraintsView"
+            icon="icons/RequiredParameter.gif"
+            id="de.dlr.premise.constraints.ui.ConstraintsView"
+            name="Constraints"
+            restorable="true">
+      </view>
+   </extension>
+
+   
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="com.example.test">
+         <view
+               id="de.dlr.premise.constraints.ui.ConstraintsView"
+               minimized="false"
+               ratio="0.8"
+               relationship="right"
+               relative="de.dlr.application.rcp.ProblemsView">
+         </view>
+         <viewShortcut
+               id="de.dlr.premise.constraints.ui.ConstraintsView">
+         </viewShortcut>
+      </perspectiveExtension>
+   </extension>
+
+</plugin>

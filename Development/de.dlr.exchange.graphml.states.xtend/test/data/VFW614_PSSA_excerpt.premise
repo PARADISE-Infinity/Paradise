@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0" xsi:schemaLocation="http://www.dlr.de/ft/premise/funcpool/2010/ ../../../de.dlr.ft.premise/model/PREMISE_FnPool.ecore http://www.dlr.de/ft/premise/2010/ ../../../de.dlr.ft.premise/model/PREMISE_system.ecore http://www.dlr.de/ft/premise/validated/2013/ ../../../de.dlr.ft.premise/model/PREMISE_system.ecore#//validated">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="off"/>
+  </metaData>
+  <metaData name="Export">
+    <metaData name="GraphML/FTA">
+      <metaData name="Names of parameters to be shown in diagram:" value="ParameterName1, ParameterName2"/>
+      <metaData name="Component names containing one of the following are skipped (parent name is taken instead):" value="modes, _"/>
+    </metaData>
+    <metaData name="GraphML/StateMachines">
+      <metaData name="Transition constraints" value="on"/>
+      <metaData name="Links between referenced foreign mode and their origin" value="off"/>
+      <metaData name="Color for referenced foreign modes and edges (default grey: #AAAAAA)" value="#AAAAAA"/>
+    </metaData>
+  </metaData>
+  <projects description="Aerospace Technologies Demonstrator, Vereinigte Flugtechnische Werke, Entwicklungsbeginn 1961" id="fe4fedbd-e4f8-4829-a8b1-0bc6014d0ffe" name="ATD VFW 614_excerpt">
+    <children description="" id="3e5bdf7d-8e09-40d4-9712-f750337bad5a" name="Aileron Actuation" xsi:type="prem:SystemComponent">
+      <children description="Electric-Hydraulic Servo Actuator" id="0843386b-a6d8-45a0-b7f6-724195cb432d" name="EHS 6 (LH)" xsi:type="prem:SystemComponent">
+        <children id="a65128ea-063b-4210-b066-3f2f3802ddf3" name="_failure modes" xsi:type="prem:SystemComponent">
+        <statemachines name="_failure modes">
+<modes entryMode="true" id="eb84a7e5-6ecc-4bee-b336-5c849efddb84" name="2Runaway" xsi:type="elem:Mode"/>
+<transitions id="172dcb97-b3b0-47d2-8c99-fad23e491826">
+            <condition xsi:type="elem:GuardCombination">
+              <children junction="AND" xsi:type="elem:GuardCombination">
+                <children xsi:type="elem:ModeGuard">
+<modePointer target="59fbd165-27e4-424f-b517-2ecf82621e20" xsi:type="graph:DirectPointer"/>
+</children>
+                <children xsi:type="elem:ModeGuard">
+<modePointer target="25d29cb9-cea9-449f-bf10-3b6fca7e6e0d" xsi:type="graph:DirectPointer"/>
+</children>
+              </children>
+              <children junction="AND" xsi:type="elem:GuardCombination">
+                <children xsi:type="elem:ModeGuard">
+<modePointer target="59fbd165-27e4-424f-b517-2ecf82621e20" xsi:type="graph:DirectPointer"/>
+</children>
+                <children xsi:type="elem:ModeGuard">
+<modePointer target="25d29cb9-cea9-449f-bf10-3b6fca7e6e0d" xsi:type="graph:DirectPointer"/>
+</children>
+              </children>
+            </condition>
+            <parameters id="08b999cf-d9fe-4628-a611-8d7c94333625" name="failureRate">
+              <value value="4.559999999999999E-12" xsi:type="reg:Value"/>
+            </parameters>
+            <balancings target="08b999cf-d9fe-4628-a611-8d7c94333625" xsi:type="prem:TransitionBalancing">
+            </balancings>
+          <targetPointer target="eb84a7e5-6ecc-4bee-b336-5c849efddb84" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+        <children id="c3bdc049-1429-42f8-8cd1-8e32a2b204fd" name="Actuator" xsi:type="prem:SystemComponent">
+        <statemachines name="Actuator">
+<modes entryMode="false" id="25d29cb9-cea9-449f-bf10-3b6fca7e6e0d" name="3Runaway" xsi:type="elem:Mode"/>
+<transitions id="g432b0af-cac2-47a0-91b1-87bfb11a091d">
+            <parameters id="2e529bea-3992-499c-9de5-2a486e14857b" name="failureRate">
+              <value value="5.7E-06" xsi:type="reg:Value"/>
+            </parameters>
+          <targetPointer target="25d29cb9-cea9-449f-bf10-3b6fca7e6e0d" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+        <children id="4d06d5c6-a323-4bb8-a97e-9edda30c719f" name="Switch Mechanism" xsi:type="prem:SystemComponent">
+        <statemachines name="Switch Mechanism">
+<modes entryMode="true" id="59fbd165-27e4-424f-b517-2ecf82621e20" name="3Failure" xsi:type="elem:Mode"/>
+<transitions id="4cd3043e-b341-4abb-9206-c48a1c9b8863">
+            <parameters id="5623fb7c-7cd9-4339-8f00-66029d030e37" name="failureRate">
+              <value value="8.0E-7" xsi:type="reg:Value"/>
+            </parameters>
+          <targetPointer target="59fbd165-27e4-424f-b517-2ecf82621e20" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+      </children>
+      <children id="8a03a6b5-1a3f-4782-9d85-8f208d997ad2" name="Failed stand-by\n actuator" xsi:type="prem:SystemComponent">
+      <statemachines name="Failed stand-by\n actuator">
+<modes entryMode="true" id="6017ef21-6c04-439e-9aa2-d84dd85ae639" name="2Switching \nactive" xsi:type="elem:Mode"/>
+<transitions id="f432b0af-cac2-47a0-91b1-87bfb11a091c">
+          <parameters id="994cd69e-04d9-48e4-904d-24b057478959" name="failureRate">
+            <value value="2.43E-04" xsi:type="reg:Value"/>
+          </parameters>
+        <targetPointer target="6017ef21-6c04-439e-9aa2-d84dd85ae639" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+      <children id="9c5e97f4-eef1-4e3c-91c4-e3e309322899" name="testComponent_woEntryMode" xsi:type="prem:SystemComponent">
+      <statemachines name="testComponent_woEntryMode">
+<modes entryMode="false" id="af735f40-7155-4d0e-8d1c-40683e047ec3" name="Failure" xsi:type="elem:Mode"/>
+<transitions id="e432b0af-cac2-47a0-91b1-87bfb11a091b">
+<targetPointer target="af735f40-7155-4d0e-8d1c-40683e047ec3" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+    <statemachines name="Aileron Actuation">
+<modes entryMode="true" id="aee88941-e85f-4495-88c2-6f377b5f6389" name="Healthy" xsi:type="elem:Mode"/>
+<modes entryMode="false" id="94c815d0-1d15-456e-ac30-54546f026ebd" name="1Runaway" xsi:type="elem:Mode"/>
+<transitions id="e9f4d253-f98c-453e-8fb4-7a2a2a79d0b3">
+        <condition xsi:type="elem:GuardCombination">
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="6017ef21-6c04-439e-9aa2-d84dd85ae639" xsi:type="graph:DirectPointer"/>
+</children>
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="eb84a7e5-6ecc-4bee-b336-5c849efddb84" xsi:type="graph:DirectPointer"/>
+</children>
+        </condition>
+	    <parameters id="62af89b0-b879-46d0-80d4-92c2402c3c1c" name="failureRate">
+          <value value="2.4300000456E-4" xsi:type="reg:Value"/>
+        </parameters>
+        <balancings target="62af89b0-b879-46d0-80d4-92c2402c3c1c" xsi:type="prem:TransitionBalancing">
+        </balancings>
+      <targetPointer target="94c815d0-1d15-456e-ac30-54546f026ebd" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+  </projects>
+</prem:ProjectRepository>

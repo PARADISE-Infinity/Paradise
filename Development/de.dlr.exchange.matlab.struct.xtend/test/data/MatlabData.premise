@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+  </metaData>
+  <projects description="This are the flaps" id="bf83ecdb-e161-4cb3-a704-7c1f9841f050" name="Flaps">
+    <parameters description="This is P1" id="9dc9f444-c0d2-4ee8-af53-854c51076774" name="P1" xsi:type="prem:Parameter">
+	  <unit href="premise:/Base.registry#kg"/>
+      <value value="0.99" xsi:type="reg:Value">
+      </value>
+    </parameters>
+    <parameters id="f66293eb-18c5-4161-a620-d5f5779e2628" name="P2" xsi:type="prem:Parameter">
+      <value value="0.88" xsi:type="reg:Value"/>
+    </parameters>
+    <children id="36b3a598-1235-4671-ac22-e0976fbd9d41" name="Flap_IB" xsi:type="prem:SystemComponent">
+      <parameters id="3de4514c-9b5d-4412-9888-a6361341d457" name="P1.1" xsi:type="prem:Parameter">
+        <value value="0.66" xsi:type="reg:Value"/>
+      </parameters>
+      <parameters id="bd66cfcc-b317-49f4-afab-7c452c7de64d" name="P1.2" xsi:type="prem:Parameter"/>
+      <metaTypes href="MatlabData.registry#0d5e2ab0-929f-4aee-8065-e073b9a6768b"/>
+      <metaTypes href="MatlabData.registry#ae649381-07a3-47f6-a6f7-a800386beff4"/>
+    </children>
+    <children id="d213c3a9-bc1f-48ad-800c-d4c02b2233ec" name="Flap OB" xsi:type="prem:SystemComponent">
+      <metaTypes href="MatlabData.registry#0d5e2ab0-929f-4aee-8065-e073b9a6768b"/>
+      <children id="daf62955-9a3d-45ef-9406-e38a4cb9f45d" name="Supp:Left" xsi:type="prem:SystemComponent">
+        <parameters id="c614dac1-8d55-487b-9cff-66fbee00efb4" name="P1.1.1" xsi:type="prem:Parameter">
+          <value value="0.55" xsi:type="reg:Value"/>
+        </parameters>
+      </children>
+      <children id="14b2db1b-7bf9-4d72-bf46-ab40d2718689" name="Supp.Right" xsi:type="prem:SystemComponent"/>
+    </children>
+  </projects>
+  <projects id="99816aec-b421-4c2a-b083-30a3d2b46c33" name="Environment">
+    <parameters id="c8122211-7a80-429f-9a2f-cb487aa48ced" name="P3" xsi:type="prem:Parameter">
+      <value value="0.77" xsi:type="reg:Value"/>
+    </parameters>
+  </projects>
+  <projects id="f46de4f5-9551-4a62-a636-ddf345220b82" name="System &quot;Functions&quot;">
+    <metaTypes href="MatlabData.registry#ae649381-07a3-47f6-a6f7-a800386beff4"/>
+  </projects>
+</prem:ProjectRepository>

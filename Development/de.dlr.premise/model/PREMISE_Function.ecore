@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="functions" nsURI="http://www.dlr.de/premise/usecase/2014/" nsPrefix="uc">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+    <details key="documentation" value="The usecase package contains the basic elements of the PREMISE model which are used by the problem definition."/>
+  </eAnnotations>
+  <eAnnotations source="http://www.eclipse.org/OCL/Import">
+    <details key="elem" value="PREMISE_Element.ecore#/"/>
+    <details key="reg" value="PREMISE_Registry.ecore#/"/>
+  </eAnnotations>
+  <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+    <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="UseCaseRepository" eSuperTypes="PREMISE_Element.ecore#//ARepository">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="A use case repository persists a collection of use cases in a persistence. Therefore a usecase file is created."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="usecases" ordered="false"
+        upperBound="-1" eType="#//UseCase" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UseCase">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="A use case is a series of related interactions between an actor and a system that enables the actor to achieve a goal."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requiredParameters" upperBound="-1"
+        eType="#//RequiredParameter" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="connections" upperBound="-1"
+        containment="true">
+      <eGenericType eClassifier="ecore:EClass PREMISE_Element.ecore#//Connection">
+        <eTypeArguments/>
+      </eGenericType>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="relations" ordered="false"
+        upperBound="-1" eType="ecore:EClass PREMISE_Element.ecore#//Relation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="children" upperBound="-1"
+        eType="#//UseCase" containment="true"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Element.ecore#//AElement"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Element.ecore#//IConditional"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Component.ecore#//ISatisfyingRoot">
+      <eTypeArguments eClassifier="#//UseCase"/>
+      <eTypeArguments eClassifier="ecore:EClass PREMISE_Component.ecore#//IUseCaseSatisfieable"/>
+    </eGenericSuperTypes>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Component.ecore#//IComponentReferenceSatisfieable"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Component.ecore#//ISystemComponentSatisfieable"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Component.ecore#//IUseCaseSatisfieable"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RequiredParameter" eSuperTypes="PREMISE_Registry.ecore#//ADataItem PREMISE_Registry.ecore#//IMetaTypable PREMISE_Registry.ecore#//IQuantity PREMISE_Component.ecore#//IParameterSatisfieable">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="The model element RequiredParameter describes a boundary condition of a parameter."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="evaluationWeight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="valueConstraint" eType="#//AValueConstraint"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modeValueConstraints" upperBound="-1"
+        eType="#//AModeValueConstraint" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="optimum" eType="#//Optimum"
+        defaultValueLiteral="NONE"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AConstraint" abstract="true" eSuperTypes="PREMISE_Registry.ecore#//IPremiseObject">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="The abstract model element AConstraint describes a boundary condition in general."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AValueConstraint" abstract="true" eSuperTypes="#//AConstraint">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="The abstract model element AValueConstraint describes a boundary condition of a value."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AModeValueConstraint" abstract="true"
+      eSuperTypes="#//AConstraint PREMISE_Element.ecore#//AModeCombination">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="The abstract model element AValueConstraint describes a boundary condition of a value depending on a mode."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ARange" abstract="true">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Describes a range with a upper and a lower limit."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="upper" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lower" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RangeConstraint" eSuperTypes="#//AValueConstraint #//ARange">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Is a constraint, which describes a restriction to an item with an upper and a lower limit."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ModeRangeConstraint" eSuperTypes="#//AModeValueConstraint #//ARange">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Is a constraint, which describes a mode dependent restriction to an item with an upper and a lower limit."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Optimum">
+    <eLiterals name="NONE"/>
+    <eLiterals name="HIGH" value="1"/>
+    <eLiterals name="LOW" value="-1"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.13" xmi:version="2.0">
+  <usecases id="6aabac23-c81c-4be3-903e-1d4067739041" name="Modes">
+    <modes id="39049e53-3d5d-42f3-a1ca-4b775cf74ba2" name="A"/>
+    <modes id="df8d277f-1a7d-4ced-a7ef-f04c22721de2" name="B"/>
+    <modes id="07adf464-869a-4a56-9072-88983ecac758" name="C"/>
+  </usecases>
+  <usecases id="3f5bc217-995e-4d9e-b39e-ec7c6a5b0df9" name="Uno">
+    <requiredParameters description="" evaluationWeight="" id="f24650dc-0a8d-4aee-b911-59b951eafa7e" name="1">
+      <valueConstraint lower="1" upper="20" xsi:type="uc:RangeConstraint"/>
+      <modeValueConstraints modes="df8d277f-1a7d-4ced-a7ef-f04c22721de2" upper="10" xsi:type="uc:ModeRangeConstraint"/>
+    </requiredParameters>
+    <requiredParameters id="82c43b64-212d-4aec-b39b-ee3fbad39a2a" name="2"/>
+  </usecases>
+  <usecases id="48ddea05-e77e-45c5-9b27-fd2c6109c642" name="Two">
+    <requiredParameters id="755f7a0a-cfd4-4e3d-9b67-ae931b3e0d50" name="3">
+      <valueConstraint lower="0" upper="42" xsi:type="uc:RangeConstraint"/>
+    </requiredParameters>
+  </usecases>
+  <usecases id="a35c2aa4-2854-4455-b819-10dac2349b46" name="Drei">
+    <requiredParameters description="Describe" evaluationWeight="20" id="6f39aca2-dfd7-47c2-bbbe-f85b43b6d5e7" name="4" optimalValue="1">
+      <valueConstraint lower="" xsi:type="uc:RangeConstraint"/>
+    </requiredParameters>
+    <requiredParameters description="Describe" evaluationWeight="20" id="f9e8d063-fc8c-45f3-8ec2-fc2ec6d003d1" name="5" optimalValue="1">
+      <valueConstraint lower="" xsi:type="uc:RangeConstraint"/>
+    </requiredParameters>
+  </usecases>
+</uc:UseCaseRepository>

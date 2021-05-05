@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" metaModel="1.21">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+    <children name="number representation pattern" value="##0.0###E0"/>
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="false"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Show Parameters" value="true"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Edit local statemachines">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+    </children>
+  </metaData>
+  <projects name="Root" id="dcb1c743-c75a-4ac8-b64d-d4c94edd8a5c">
+    <children xsi:type="prem:SystemComponent" name="C1" id="c2ae4ad5-c90d-41bb-861d-87736ef07b6a">
+      <modes name="1" id="4addf140-69b7-4cc7-92d3-a9451d1fab8a" entryMode="true"/>
+      <modes name="2" id="b88f69d2-3e1b-4630-9462-490218368eae"/>
+      <modes name="3" id="d36c257c-c91c-4722-b6a7-c3ccf275705e"/>
+      <modes name="4" id="507c5e87-c17a-470b-a68b-fbe484686b11"/>
+      <satisfies xsi:type="uc:UseCase" href="MigrateV121ToV122.usecase#0d40930b-c613-4814-b972-f772362d35f3"/>
+      <transitions id="355c50ca-f5af-4936-8734-aad15da5a045" target="b88f69d2-3e1b-4630-9462-490218368eae" source="4addf140-69b7-4cc7-92d3-a9451d1fab8a"/>
+      <transitions id="a7b9c366-fa75-41f5-bb3f-fad090937198" target="4addf140-69b7-4cc7-92d3-a9451d1fab8a" source="b88f69d2-3e1b-4630-9462-490218368eae"/>
+      <transitions id="e1259fc4-37b4-4117-b25f-9787f9e95e2d" target="d36c257c-c91c-4722-b6a7-c3ccf275705e" source="4addf140-69b7-4cc7-92d3-a9451d1fab8a">
+        <condition xsi:type="elem:GuardCombination"/>
+      </transitions>
+      <transitions id="2975ab97-e30c-48d4-9d80-01771f975008" target="507c5e87-c17a-470b-a68b-fbe484686b11" source="d36c257c-c91c-4722-b6a7-c3ccf275705e"/>
+      <transitions id="4ffdd932-fcf4-4448-ac8a-daa970a1b053" target="4addf140-69b7-4cc7-92d3-a9451d1fab8a" source="507c5e87-c17a-470b-a68b-fbe484686b11"/>
+    </children>
+    <children xsi:type="prem:SystemComponent" name="C2" id="9a4e5552-aa2c-4171-a005-e5cf0eb45812">
+      <satisfies xsi:type="uc:UseCase" href="MigrateV121ToV122.usecase#107ebdd5-fdd8-4199-9a26-85f0731fa372"/>
+      <satisfies xsi:type="comp:ComponentDefinition" href="MigrateV121ToV122.component#a01e4219-84ec-44d3-beaa-668dc5df9270"/>
+      <parameters name="P21" id="f958b203-06e0-437e-b2f1-d3bfe6ee446d">
+        <satisfies xsi:type="uc:RequiredParameter" href="MigrateV121ToV122.usecase#e859de33-2a34-46bb-9dce-74ba4a85123f"/>
+        <satisfies xsi:type="comp:ParameterDefinition" href="MigrateV121ToV122.component#50f91d6b-9680-4b80-bf73-013e9e3c256d"/>
+      </parameters>
+    </children>
+  </projects>
+</prem:ProjectRepository>

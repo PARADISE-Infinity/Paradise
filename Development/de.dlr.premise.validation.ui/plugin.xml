@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup
+            class="de.dlr.premise.validation.Startup"></startup>
+   </extension>
+   <extension
+         point="de.dlr.premise.editor.beforeModelLoad">
+      <client
+            class="de.dlr.premise.validation.RegisterOCLBeforeModelLoad">
+      </client>
+   </extension>
+</plugin>

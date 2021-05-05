@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reg:Registry xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" metaModel="1.18">
+  <constants name="x" id="25c7247a-3e69-4bfc-a139-856eba685148">
+    <notes text="http://www.der-postillon.com/2012/08/mathemuffel-erleichtert-wert-von-x-ein.html" author="steh_ti" date="2016-06-16 13:38:38"/>
+    <value value="5"/>
+  </constants>
+</reg:Registry>

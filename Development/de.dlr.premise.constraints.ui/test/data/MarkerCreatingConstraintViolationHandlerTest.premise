@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0" xsi:schemaLocation="       http://www.dlr.de/ft/premise/registry/2010/ ../../../de.dlr.ft.premise/model/PREMISE_Registry.ecore        http://www.dlr.de/ft/premise/registry/validated/2013/ ../../../de.dlr.ft.premise/model/PREMISE_Registry.ecore#//validated        http://www.dlr.de/ft/premise/funcpool/2010/ ../../../de.dlr.ft.premise/model/PREMISE_FnPool.ecore        http://www.dlr.de/premise/usecase/2014/ ../../../de.dlr.ft.premise/model/PREMISE_UseCase.ecore        http://www.dlr.de/ft/premise/2010/ ../../../de.dlr.ft.premise/model/PREMISE_system.ecore        http://www.dlr.de/ft/premise/validated/2013/ ../../../de.dlr.ft.premise/model/PREMISE_system.ecore#//validated      ">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+  </metaData>
+  <projects id="48d611cf-af41-4c81-adc4-6e6937229e8c" name="TheComponent">
+    <parameters id="ec6c4de6-dfb9-4e4b-b5b4-98eccad7d151" name="TheParameter" xsi:type="prem:Parameter">
+      <value value="123" xsi:type="reg:Value"/>
+    </parameters>
+    <parameters id="d7bf50f6-c0c4-4685-b14f-6ea59e9aa151" name="TheOtherParameter" xsi:type="prem:Parameter">
+      <value value="000" xsi:type="reg:Value"/>
+    </parameters>
+  </projects>
+</prem:ProjectRepository>

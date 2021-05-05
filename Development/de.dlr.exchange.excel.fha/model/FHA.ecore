@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="FHA" nsURI="www.dlr.de/ft/ssy/fha" nsPrefix="">
+  <eClassifiers xsi:type="ecore:EClass" name="Analysis">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hazards" upperBound="-1"
+        eType="#//Hazard"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="functions" upperBound="-1"
+        eType="#//Function"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Hazard">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="function" lowerBound="1"
+        eType="#//Function"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="conditions" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="effects" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mitigations" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="riskassessment" eType="#//Assessment"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mitigationassessment" eType="#//Assessment"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="phases" lowerBound="1"
+        eType="#//Phase"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="compliance" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="documentation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="uuid" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Assessment">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="objective" eType="#//Objective"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="failsafe" eType="#//Failsafe"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="probability" eType="#//Probability"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="classification" eType="#//Classification"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Function">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fid" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="safetyobjective" eType="#//Objective"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mitigationobjective" eType="#//Objective"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="uuid" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Phase">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Phase" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Objective">
+    <eLiterals name="none" value="5"/>
+    <eLiterals name="FAILED"/>
+    <eLiterals name="PASSED" value="1"/>
+    <eLiterals name="MAYBE" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Classification">
+    <eLiterals name="none" value="5"/>
+    <eLiterals name="Catastrophic"/>
+    <eLiterals name="Hazardous" value="1"/>
+    <eLiterals name="Major" value="2"/>
+    <eLiterals name="Minor" value="3"/>
+    <eLiterals name="NoEffect" value="4" literal="No_Effect"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Probability">
+    <eLiterals name="none" value="5"/>
+    <eLiterals name="Frequent"/>
+    <eLiterals name="ReasonablyProbable" value="1"/>
+    <eLiterals name="Remote" value="2"/>
+    <eLiterals name="ExtremelyRemote" value="3"/>
+    <eLiterals name="ExtremelyImprobable" value="4" literal="No_Effect"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Failsafe">
+    <eLiterals name="none" value="2"/>
+    <eLiterals name="Yes"/>
+    <eLiterals name="No" value="1"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.25" xmi:version="2.0" xsi:schemaLocation="http://www.dlr.de/ft/premise/funcpool/2010/ ../../../de.dlr.ft.premise/model/PREMISE_FnPool.ecore http://www.dlr.de/ft/premise/2010/ ../../../de.dlr.ft.premise/model/PREMISE_system.ecore http://www.dlr.de/ft/premise/registry/validated/2013/ ../../../de.dlr.ft.premise/model/PREMISE_Registry.ecore#//validated http://www.dlr.de/ft/premise/validated/2013/ ../../../de.dlr.ft.premise/model/PREMISE_system.ecore#//validated">
+  <projects description="" id="A" name="A">
+    <parameters id="A_Source" name="A_Source" xsi:type="prem:Parameter">
+      <value value="0" xsi:type="reg:Value"/>
+    </parameters>
+    <parameters id="A_Target" name="A_Target" xsi:type="prem:Parameter"/>
+    <balancings function="A_Target = Sum(A_Source)" name="CalculateSomething" xsi:type="prem:Balancing">
+    <actualSources key="A_Source">
+<value target="A_Source" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="A_Target">
+<value target="A_Target" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+  </projects>
+  <projects id="B" name="B">
+    <parameters id="B_Source" name="B_Source" xsi:type="prem:Parameter">
+      <value value="0" xsi:type="reg:Value"/>
+    </parameters>
+    <parameters description="" id="B_Target" name="B_Target" xsi:type="prem:Parameter"/>
+    <balancings function="B_Target = Multiply(B_Source)" name="CalculateSomethingElse" xsi:type="prem:Balancing">
+    <actualSources key="B_Source">
+<value target="B_Source" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="B_Target">
+<value target="B_Target" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+  </projects>
+<functionPools href="_GLOBAL/GlobalFuncDefs.premise.functionpool#/"/>
+</prem:ProjectRepository>

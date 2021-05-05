@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.dlr.premise/src-gen" editDirectory="/de.dlr.premise.edit/src-gen"
+    editorDirectory="/de.dlr.premise.editor/src-gen" modelPluginID="de.dlr.premise"
+    modelName="PREMISE" rootExtendsClass="de.dlr.premise.util.scope.EObjectImplMy"
+    testsDirectory="/de.dlr.premise.tests/src-gen" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false" providerRootExtendsClass="de.dlr.premise.provider.util.ItemProviderAdapterMy"
+    language="" operationReflection="true" decoration="Manual">
+  <foreignModel>PREMISE_System.ecore</foreignModel>
+  <genPackages prefix="System" basePackage="de.dlr.premise" disposableProviderFactory="true"
+      multipleEditorPages="false" fileExtensions="system,premise" ecorePackage="PREMISE_System.ecore#/">
+    <genClasses ecoreClass="PREMISE_System.ecore#//Parameter">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_System.ecore#//Parameter/modeValues"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference PREMISE_System.ecore#//Parameter/satisfiesRequiredParameters"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//Parameter/isUniqueTarget"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//Parameter/getErrorMessageForUniqueTarget"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//Parameter/isValidSatisfiedUnit"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//Parameter/getErrorMessageForValidSatisfiedUnit"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PREMISE_System.ecore#//ABalancing">
+      <genTypeParameters ecoreTypeParameter="PREMISE_System.ecore#//ABalancing/T"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//ABalancing/isNotCyclicBalancing"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//ABalancing/getErrorMessageForNotCyclicBalancing"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//ABalancing/getSources"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//ABalancing/getTarget"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_System.ecore#//Balancing">
+      <genFeatures property="None" notify="false" createChild="false" propertySortChoices="true"
+          ecoreFeature="ecore:EReference PREMISE_System.ecore#//Balancing/sources"/>
+      <genFeatures property="None" notify="false" createChild="false" propertySortChoices="true"
+          ecoreFeature="ecore:EReference PREMISE_System.ecore#//Balancing/target"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference PREMISE_System.ecore#//Balancing/sourcePointers"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference PREMISE_System.ecore#//Balancing/targetPointer"/>
+      <genFeatures property="None" createChild="false" ecoreFeature="ecore:EReference PREMISE_System.ecore#//Balancing/actualSources"/>
+      <genFeatures property="None" createChild="false" ecoreFeature="ecore:EReference PREMISE_System.ecore#//Balancing/actualTarget"/>
+      <genFeatures createChild="false" propertyMultiLine="true" ecoreFeature="ecore:EAttribute PREMISE_System.ecore#//Balancing/function"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//Balancing/queryValidSourcesParentComponentReferenceList"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//Balancing/queryValidTargetParentComponentReferenceList"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//Balancing/queryValidSourcesList"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//Balancing/queryValidTargetList"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//Balancing/isSourcesValid"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//Balancing/isTargetValid"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//Balancing/setTarget">
+        <genParameters ecoreParameter="PREMISE_System.ecore#//Balancing/setTarget/newTarget"/>
+      </genOperations>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//Balancing/setTargetPointer">
+        <genParameters ecoreParameter="PREMISE_System.ecore#//Balancing/setTargetPointer/newTargetPointer"/>
+      </genOperations>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//Balancing/getTargetPointers"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//Balancing/getSourceParameterProportionality">
+        <genParameters ecoreParameter="PREMISE_System.ecore#//Balancing/getSourceParameterProportionality/parameter"/>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PREMISE_System.ecore#//ParameterNameMapping">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_System.ecore#//ParameterNameMapping/key"/>
+      <genFeatures property="Readonly" notify="false" children="true" createChild="false"
+          ecoreFeature="ecore:EReference PREMISE_System.ecore#//ParameterNameMapping/value"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_System.ecore#//TransitionBalancing">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PREMISE_System.ecore#//TransitionBalancing/target"/>
+      <genFeatures property="None" notify="false" createChild="false" propertySortChoices="true"
+          ecoreFeature="ecore:EReference PREMISE_System.ecore#//TransitionBalancing/sources"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference PREMISE_System.ecore#//TransitionBalancing/sourcePointers"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//TransitionBalancing/queryValidTargetList"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//TransitionBalancing/getTargetPointers"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_System.ecore#//TransitionParameter"/>
+    <genClasses image="false" ecoreClass="PREMISE_System.ecore#//IComponent">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference PREMISE_System.ecore#//IComponent/component"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_System.ecore#//SystemComponent">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_System.ecore#//SystemComponent/parameters"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_System.ecore#//SystemComponent/balancings"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_System.ecore#//SystemComponent/connections"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_System.ecore#//SystemComponent/relations"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_System.ecore#//SystemComponent/children"/>
+      <genFeatures property="None" notify="false" createChild="false" propertySortChoices="true"
+          ecoreFeature="ecore:EReference PREMISE_System.ecore#//SystemComponent/referencedChildren"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//SystemComponent/getUnsatisfiedSatisfieablesFor">
+        <genParameters ecoreParameter="PREMISE_System.ecore#//SystemComponent/getUnsatisfiedSatisfieablesFor/componentSatisfieable"/>
+      </genOperations>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//SystemComponent/satisfieableApplies">
+        <genParameters ecoreParameter="PREMISE_System.ecore#//SystemComponent/satisfieableApplies/componentSatisfieable"/>
+      </genOperations>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//SystemComponent/getInapplicableSatisfies"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//SystemComponent/isSatisfiesValid"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//SystemComponent/getErrorMessageForInvalidSatisfies"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//SystemComponent/hasCyclicComponentReference"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_System.ecore#//ComponentReference">
+      <genFeatures children="true" createChild="false" propertyCategory="" propertySortChoices="true"
+          ecoreFeature="ecore:EReference PREMISE_System.ecore#//ComponentReference/componentDefinition"/>
+      <genFeatures children="true" createChild="false" propertySortChoices="true"
+          ecoreFeature="ecore:EReference PREMISE_System.ecore#//ComponentReference/activeImplementation"/>
+      <genFeatures property="None" createChild="false" ecoreFeature="ecore:EReference PREMISE_System.ecore#//ComponentReference/substitutionMap"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//ComponentReference/queryIsValidActiveImplementationValue">
+        <genParameters ecoreParameter="PREMISE_System.ecore#//ComponentReference/queryIsValidActiveImplementationValue/activeImplementation"/>
+      </genOperations>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//ComponentReference/isActiveImplementationValid"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_System.ecore#//ComponentReferenceSubstitutionMapping">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_System.ecore#//ComponentReferenceSubstitutionMapping/pinned"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PREMISE_System.ecore#//ComponentReferenceSubstitutionMapping/original"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PREMISE_System.ecore#//ComponentReferenceSubstitutionMapping/relativeScope"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_System.ecore#//ComponentReferenceSubstitutionMapping/subsitution"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_System.ecore#//ModeValueRef">
+      <genOperations ecoreOperation="PREMISE_System.ecore#//ModeValueRef/isModesValid"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//ModeValueRef/queryValidModePointersList"/>
+      <genOperations ecoreOperation="PREMISE_System.ecore#//ModeValueRef/queryValidModePointersParentComponentReferenceList"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_System.ecore#//ProjectRepository">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_System.ecore#//ProjectRepository/projects"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_System.ecore#//ParameterProportionality">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PREMISE_System.ecore#//ParameterProportionality/p"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_System.ecore#//ParameterProportionality/a"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_System.ecore#//ParameterProportionality/b"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Registry" basePackage="de.dlr.premise" disposableProviderFactory="true"
+      multipleEditorPages="false" ecorePackage="PREMISE_Registry.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="PREMISE_Registry.ecore#//Junction">
+      <genEnumLiterals ecoreEnumLiteral="PREMISE_Registry.ecore#//Junction/OR"/>
+      <genEnumLiterals ecoreEnumLiteral="PREMISE_Registry.ecore#//Junction/AND"/>
+      <genEnumLiterals ecoreEnumLiteral="PREMISE_Registry.ecore#//Junction/NOT"/>
+      <genEnumLiterals ecoreEnumLiteral="PREMISE_Registry.ecore#//Junction/XOR"/>
+      <genEnumLiterals ecoreEnumLiteral="PREMISE_Registry.ecore#//Junction/VOTE"/>
+      <genEnumLiterals ecoreEnumLiteral="PREMISE_Registry.ecore#//Junction/PAND"/>
+    </genEnums>
+    <genClasses ecoreClass="PREMISE_Registry.ecore#//Registry">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Registry.ecore#//Registry/units"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Registry.ecore#//Registry/constants"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Registry.ecore#//Registry/metaTypes"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PREMISE_Registry.ecore#//ANameItem">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Registry.ecore#//ANameItem/name"/>
+      <genFeatures createChild="false" propertyMultiLine="true" ecoreFeature="ecore:EAttribute PREMISE_Registry.ecore#//ANameItem/description"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PREMISE_Registry.ecore#//ADataItem">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Registry.ecore#//ADataItem/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Registry.ecore#//ADataItem/notes"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Registry.ecore#//Note">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Registry.ecore#//Note/text"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Registry.ecore#//Note/author"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Registry.ecore#//Note/date"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Registry.ecore#//Note/children"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Registry.ecore#//MetaData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Registry.ecore#//MetaData/name"/>
+      <genFeatures createChild="false" propertyMultiLine="true" ecoreFeature="ecore:EAttribute PREMISE_Registry.ecore#//MetaData/value"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Registry.ecore#//Unit">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Registry.ecore#//Unit/symbol"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Registry.ecore#//Unit/siUnitRef"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Registry.ecore#//siUnitRef">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PREMISE_Registry.ecore#//siUnitRef/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Registry.ecore#//siUnitRef/conversionFactorFromSI"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Registry.ecore#//AValueDef">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Registry.ecore#//AValueDef/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Registry.ecore#//AValueDef/uncertainty"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Registry.ecore#//Value"/>
+    <genClasses image="false" ecoreClass="PREMISE_Registry.ecore#//AParameterDef">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Registry.ecore#//AParameterDef/value"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Registry.ecore#//Constant"/>
+    <genClasses ecoreClass="PREMISE_Registry.ecore#//MetaTypeDef">
+      <genFeatures property="None" createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Registry.ecore#//MetaTypeDef/iconBase64"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Registry.ecore#//MetaTypeDef/icon"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PREMISE_Registry.ecore#//IOclValidated"/>
+    <genClasses image="false" ecoreClass="PREMISE_Registry.ecore#//AVersionedModelRoot">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Registry.ecore#//AVersionedModelRoot/metaModel"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PREMISE_Registry.ecore#//IMetaTypable">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PREMISE_Registry.ecore#//IMetaTypable/metaTypes"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PREMISE_Registry.ecore#//IPremiseObject">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Registry.ecore#//IPremiseObject/metaData"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PREMISE_Registry.ecore#//IQuantity">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PREMISE_Registry.ecore#//IQuantity/unit"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Component" basePackage="de.dlr.premise" disposableProviderFactory="true"
+      ecorePackage="PREMISE_Component.ecore#/">
+    <genClasses image="false" ecoreClass="PREMISE_Component.ecore#//ISatisfieable">
+      <genTypeParameters ecoreTypeParameter="PREMISE_Component.ecore#//ISatisfieable/T"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PREMISE_Component.ecore#//ISatisfying">
+      <genTypeParameters ecoreTypeParameter="PREMISE_Component.ecore#//ISatisfying/T"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Component.ecore#//ISatisfying/satisfies"/>
+      <genOperations ecoreOperation="PREMISE_Component.ecore#//ISatisfying/getSatisfiedSatisfieables"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PREMISE_Component.ecore#//ISatisfyingRoot">
+      <genTypeParameters ecoreTypeParameter="PREMISE_Component.ecore#//ISatisfyingRoot/T"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Component.ecore#//Satisfies">
+      <genTypeParameters ecoreTypeParameter="PREMISE_Component.ecore#//Satisfies/T"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference PREMISE_Component.ecore#//Satisfies/source"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference PREMISE_Component.ecore#//Satisfies/target"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference PREMISE_Component.ecore#//Satisfies/sourcePointer"/>
+      <genFeatures notify="false" createChild="false" ecoreFeature="ecore:EReference PREMISE_Component.ecore#//Satisfies/targetPointer"/>
+      <genOperations ecoreOperation="PREMISE_Component.ecore#//Satisfies/queryIsValidTargetPointerValue">
+        <genParameters ecoreParameter="PREMISE_Component.ecore#//Satisfies/queryIsValidTargetPointerValue/target"/>
+      </genOperations>
+      <genOperations ecoreOperation="PREMISE_Component.ecore#//Satisfies/setTarget">
+        <genParameters ecoreParameter="PREMISE_Component.ecore#//Satisfies/setTarget/newTarget"/>
+      </genOperations>
+      <genOperations ecoreOperation="PREMISE_Component.ecore#//Satisfies/getSourcePointers"/>
+      <genOperations ecoreOperation="PREMISE_Component.ecore#//Satisfies/getTargetPointers"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PREMISE_Component.ecore#//IDefinition">
+      <genTypeParameters ecoreTypeParameter="PREMISE_Component.ecore#//IDefinition/T"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Component.ecore#//ComponentReferencePointer">
+      <genTypeParameters ecoreTypeParameter="PREMISE_Component.ecore#//ComponentReferencePointer/T"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PREMISE_Component.ecore#//ComponentReferencePointer/componentReference"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PREMISE_Component.ecore#//ComponentReferencePointer/definition"/>
+      <genOperations ecoreOperation="PREMISE_Component.ecore#//ComponentReferencePointer/isValid"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Component.ecore#//ComponentReferenceDirectPointer">
+      <genTypeParameters ecoreTypeParameter="PREMISE_Component.ecore#//ComponentReferenceDirectPointer/T"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PREMISE_Component.ecore#//ComponentReferenceDirectPointer/relativeScope"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Component.ecore#//ComponentRepository">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Component.ecore#//ComponentRepository/definitions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Component.ecore#//ComponentRepository/components"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Component.ecore#//ComponentDefinition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Component.ecore#//ComponentDefinition/parameters"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Component.ecore#//ComponentDefinition/modes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Component.ecore#//ComponentDefinition/children"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Component.ecore#//ChildComponentDefinition"/>
+    <genClasses ecoreClass="PREMISE_Component.ecore#//ParameterDefinition"/>
+    <genClasses ecoreClass="PREMISE_Component.ecore#//ModeDefinition"/>
+  </genPackages>
+  <genPackages prefix="Graph" basePackage="de.dlr.premise" multipleEditorPages="false"
+      generateModelWizard="false" ecorePackage="PREMISE_Graph.ecore#/">
+    <genClasses image="false" ecoreClass="PREMISE_Graph.ecore#//INode">
+      <genOperations ecoreOperation="PREMISE_Graph.ecore#//INode/getConnectedElements"/>
+      <genOperations ecoreOperation="PREMISE_Graph.ecore#//INode/getConnectedElements.1">
+        <genParameters ecoreParameter="PREMISE_Graph.ecore#//INode/getConnectedElements.1/depth"/>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PREMISE_Graph.ecore#//IEdge">
+      <genTypeParameters ecoreTypeParameter="PREMISE_Graph.ecore#//IEdge/S"/>
+      <genTypeParameters ecoreTypeParameter="PREMISE_Graph.ecore#//IEdge/T"/>
+      <genOperations ecoreOperation="PREMISE_Graph.ecore#//IEdge/getSourcePointers"/>
+      <genOperations ecoreOperation="PREMISE_Graph.ecore#//IEdge/getTargetPointers"/>
+      <genOperations ecoreOperation="PREMISE_Graph.ecore#//IEdge/getReferencedSources"/>
+      <genOperations ecoreOperation="PREMISE_Graph.ecore#//IEdge/getReferencedTargets"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PREMISE_Graph.ecore#//APointer">
+      <genTypeParameters ecoreTypeParameter="PREMISE_Graph.ecore#//APointer/T"/>
+      <genOperations ecoreOperation="PREMISE_Graph.ecore#//APointer/getTarget"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Graph.ecore#//DirectPointer">
+      <genTypeParameters ecoreTypeParameter="PREMISE_Graph.ecore#//DirectPointer/T"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PREMISE_Graph.ecore#//DirectPointer/target"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="UseCase" basePackage="de.dlr.premise" disposableProviderFactory="true"
+      multipleEditorPages="false" fileExtensions="usecase,function" ecorePackage="PREMISE_Function.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="PREMISE_Function.ecore#//Optimum">
+      <genEnumLiterals ecoreEnumLiteral="PREMISE_Function.ecore#//Optimum/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="PREMISE_Function.ecore#//Optimum/HIGH"/>
+      <genEnumLiterals ecoreEnumLiteral="PREMISE_Function.ecore#//Optimum/LOW"/>
+    </genEnums>
+    <genClasses ecoreClass="PREMISE_Function.ecore#//UseCaseRepository">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Function.ecore#//UseCaseRepository/usecases"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Function.ecore#//UseCase">
+      <genFeatures property="None" children="true" createChild="true" propertyDescription=""
+          ecoreFeature="ecore:EReference PREMISE_Function.ecore#//UseCase/condition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Function.ecore#//UseCase/requiredParameters"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Function.ecore#//UseCase/connections"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Function.ecore#//UseCase/relations"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Function.ecore#//UseCase/children"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Function.ecore#//RequiredParameter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Function.ecore#//RequiredParameter/evaluationWeight"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Function.ecore#//RequiredParameter/valueConstraint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Function.ecore#//RequiredParameter/modeValueConstraints"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Function.ecore#//RequiredParameter/optimum"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PREMISE_Function.ecore#//AConstraint"/>
+    <genClasses image="false" ecoreClass="PREMISE_Function.ecore#//AValueConstraint"/>
+    <genClasses image="false" ecoreClass="PREMISE_Function.ecore#//AModeValueConstraint"/>
+    <genClasses image="false" ecoreClass="PREMISE_Function.ecore#//ARange">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Function.ecore#//ARange/upper"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Function.ecore#//ARange/lower"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Function.ecore#//RangeConstraint"/>
+    <genClasses ecoreClass="PREMISE_Function.ecore#//ModeRangeConstraint"/>
+  </genPackages>
+  <genPackages prefix="Element" basePackage="de.dlr.premise" disposableProviderFactory="true"
+      multipleEditorPages="false" generateModelWizard="false" ecorePackage="PREMISE_Element.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="PREMISE_Element.ecore#//TransitionActivationBehavior">
+      <genEnumLiterals ecoreEnumLiteral="PREMISE_Element.ecore#//TransitionActivationBehavior/DEFAULT"/>
+      <genEnumLiterals ecoreEnumLiteral="PREMISE_Element.ecore#//TransitionActivationBehavior/EXTERNAL"/>
+      <genEnumLiterals ecoreEnumLiteral="PREMISE_Element.ecore#//TransitionActivationBehavior/IMMEDIATE"/>
+    </genEnums>
+    <genClasses image="false" ecoreClass="PREMISE_Element.ecore#//ARepository">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PREMISE_Element.ecore#//ARepository/registries"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PREMISE_Element.ecore#//ARepository/functionPools"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PREMISE_Element.ecore#//ARepository/extensions"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PREMISE_Element.ecore#//AExtension"/>
+    <genClasses image="false" ecoreClass="PREMISE_Element.ecore#//AElement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Element.ecore#//AElement/statemachines"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Element.ecore#//Relation">
+      <genFeatures property="None" notify="false" createChild="false" propertySortChoices="true"
+          ecoreFeature="ecore:EReference PREMISE_Element.ecore#//Relation/source"/>
+      <genFeatures property="None" notify="false" createChild="false" propertySortChoices="true"
+          ecoreFeature="ecore:EReference PREMISE_Element.ecore#//Relation/target"/>
+      <genFeatures createChild="false" propertyDescription="" ecoreFeature="ecore:EReference PREMISE_Element.ecore#//Relation/sourcePointer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference PREMISE_Element.ecore#//Relation/targetPointer"/>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//Relation/getSourcePointers"/>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//Relation/getTargetPointers"/>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//Relation/setSource">
+        <genParameters ecoreParameter="PREMISE_Element.ecore#//Relation/setSource/newSource"/>
+      </genOperations>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//Relation/setTarget">
+        <genParameters ecoreParameter="PREMISE_Element.ecore#//Relation/setTarget/newTarget"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Element.ecore#//Connection">
+      <genTypeParameters ecoreTypeParameter="PREMISE_Element.ecore#//Connection/T"/>
+      <genFeatures property="None" notify="false" createChild="false" propertySortChoices="true"
+          ecoreFeature="ecore:EReference PREMISE_Element.ecore#//Connection/source"/>
+      <genFeatures property="None" notify="false" createChild="false" propertySortChoices="true"
+          ecoreFeature="ecore:EReference PREMISE_Element.ecore#//Connection/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference PREMISE_Element.ecore#//Connection/sourcePointer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference PREMISE_Element.ecore#//Connection/targetPointer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Element.ecore#//Connection/bidirectional"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Element.ecore#//Connection/sourcePortName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Element.ecore#//Connection/targetPortName"/>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//Connection/queryValidSourcePointerParentComponentReferenceList"/>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//Connection/queryValidTargetPointerParentComponentReferenceList"/>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//Connection/queryValidSourcePointerList"/>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//Connection/queryValidTargetPointerList"/>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//Connection/getChildren">
+        <genParameters ecoreParameter="PREMISE_Element.ecore#//Connection/getChildren/parent"/>
+      </genOperations>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//Connection/getSourcePointers"/>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//Connection/getTargetPointers"/>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//Connection/isSourcePointerValid"/>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//Connection/isTargetPointerValid"/>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//Connection/setSource">
+        <genParameters ecoreParameter="PREMISE_Element.ecore#//Connection/setSource/newSource"/>
+      </genOperations>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//Connection/setTarget">
+        <genParameters ecoreParameter="PREMISE_Element.ecore#//Connection/setTarget/newTarget"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Element.ecore#//Mode">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Element.ecore#//Mode/entryMode"/>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//Mode/isReachable"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PREMISE_Element.ecore#//AModeCombination">
+      <genFeatures property="None" notify="false" createChild="false" propertySortChoices="true"
+          ecoreFeature="ecore:EReference PREMISE_Element.ecore#//AModeCombination/modes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference PREMISE_Element.ecore#//AModeCombination/modePointers"/>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//AModeCombination/isValid"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PREMISE_Element.ecore#//Transition">
+      <genFeatures property="None" notify="false" createChild="false" propertySortChoices="true"
+          ecoreFeature="ecore:EReference PREMISE_Element.ecore#//Transition/source"/>
+      <genFeatures property="None" notify="false" createChild="false" propertySortChoices="true"
+          ecoreFeature="ecore:EReference PREMISE_Element.ecore#//Transition/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference PREMISE_Element.ecore#//Transition/sourcePointer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference PREMISE_Element.ecore#//Transition/targetPointer"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Element.ecore#//Transition/condition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Element.ecore#//Transition/parameters"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Element.ecore#//Transition/balancings"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Element.ecore#//Transition/behavior"/>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//Transition/queryReachableModes"/>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//Transition/queryValidSourcePointerList"/>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//Transition/queryValidTargetPointerList"/>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//Transition/getSourcePointers"/>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//Transition/getTargetPointers"/>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//Transition/setSource">
+        <genParameters ecoreParameter="PREMISE_Element.ecore#//Transition/setSource/newSource"/>
+      </genOperations>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//Transition/setTarget">
+        <genParameters ecoreParameter="PREMISE_Element.ecore#//Transition/setTarget/newTarget"/>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PREMISE_Element.ecore#//AGuardCondition"/>
+    <genClasses ecoreClass="PREMISE_Element.ecore#//GuardCombination">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Element.ecore#//GuardCombination/junction"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Element.ecore#//GuardCombination/children"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Element.ecore#//ModeGuard">
+      <genFeatures property="None" notify="false" createChild="false" propertySortChoices="true"
+          ecoreFeature="ecore:EReference PREMISE_Element.ecore#//ModeGuard/mode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference PREMISE_Element.ecore#//ModeGuard/modePointer"/>
+      <genOperations ecoreOperation="PREMISE_Element.ecore#//ModeGuard/setMode">
+        <genParameters ecoreParameter="PREMISE_Element.ecore#//ModeGuard/setMode/newMode"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Element.ecore#//StateMachine">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Element.ecore#//StateMachine/modes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Element.ecore#//StateMachine/transitions"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Functionpool" basePackage="de.dlr.premise" disposableProviderFactory="true"
+      multipleEditorPages="false" ecorePackage="PREMISE_FunctionPool.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="PREMISE_FunctionPool.ecore#//MultipleInputsCellDirection">
+      <genEnumLiterals ecoreEnumLiteral="PREMISE_FunctionPool.ecore#//MultipleInputsCellDirection/Horizontal"/>
+      <genEnumLiterals ecoreEnumLiteral="PREMISE_FunctionPool.ecore#//MultipleInputsCellDirection/Vertical"/>
+    </genEnums>
+    <genClasses ecoreClass="PREMISE_FunctionPool.ecore#//FunctionPool">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_FunctionPool.ecore#//FunctionPool/calcEngines"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_FunctionPool.ecore#//FunctionPool/functions"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PREMISE_FunctionPool.ecore#//AFnDef">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PREMISE_FunctionPool.ecore#//AFnDef/calcEngine"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_FunctionPool.ecore#//AFnDef/output"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_FunctionPool.ecore#//AFnDef/inputs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_FunctionPool.ecore#//AFnDef/lastInputMultiple"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_FunctionPool.ecore#//FnDefScript">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_FunctionPool.ecore#//FnDefScript/scriptName"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_FunctionPool.ecore#//FnDefSpreadSheet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_FunctionPool.ecore#//FnDefSpreadSheet/sheetName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_FunctionPool.ecore#//FnDefSpreadSheet/multipleInputsCellDirection"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_FunctionPool.ecore#//FnDefJava">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_FunctionPool.ecore#//FnDefJava/methodName"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_FunctionPool.ecore#//FnInput">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PREMISE_FunctionPool.ecore#//FnInput/unit"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_FunctionPool.ecore#//FnOutput">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PREMISE_FunctionPool.ecore#//FnOutput/unit"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_FunctionPool.ecore#//FnInputSpreadSheet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_FunctionPool.ecore#//FnInputSpreadSheet/cell"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_FunctionPool.ecore#//FnOutputSpreadSheet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_FunctionPool.ecore#//FnOutputSpreadSheet/cell"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PREMISE_FunctionPool.ecore#//ACalculationEngine">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_FunctionPool.ecore#//ACalculationEngine/properties"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_FunctionPool.ecore#//CalcEngineScript">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_FunctionPool.ecore#//CalcEngineScript/workDirURI"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_FunctionPool.ecore#//CalcEngineScript/libURIs"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_FunctionPool.ecore#//CalcEngineSpreadSheet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_FunctionPool.ecore#//CalcEngineSpreadSheet/fileURI"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_FunctionPool.ecore#//CalcEngineJava">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_FunctionPool.ecore#//CalcEngineJava/className"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

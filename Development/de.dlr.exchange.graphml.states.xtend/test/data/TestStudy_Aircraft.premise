@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="off"/>
+  </metaData>
+  <metaData name="Export">
+    <metaData name="GraphML/StateMachines">
+      <metaData name="Transition constraints" value="on"/>
+      <metaData name="Links between referenced foreign mode and their origin" value="on"/>
+      <metaData name="Color for referenced foreign modes and edges (default grey: #AAAAAA)" value="#AAAAAA"/>
+    </metaData>
+  </metaData>
+  <projects id="60abb1b4-694e-4ec5-9ad1-bc49026017c3" name="Air Vehicle System">
+    <children description="International Standard Atmosphere (ISA)" id="925fa9e5-0d27-4cb8-b6c2-696863ccbba7" name="Atmosphere" xsi:type="prem:SystemComponent">
+      <parameters id="0b62b982-fbcc-4e06-b41d-19258d8119a3" name="AltitudeVehicle" xsi:type="prem:Parameter">
+        <value value="12000.0" xsi:type="reg:Value">
+        </value>
+        <modeValues value="0.0" xsi:type="prem:ModeValueRef">
+<modePointers target="49f65451-dd8a-473a-8994-187caff60506" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      <unit href="premise:/Base.registry#m"/>
+</parameters>
+      <children id="37e91543-9b41-490b-a289-95f7e1fb995c" name="Temperature" xsi:type="prem:SystemComponent">
+        <parameters id="326fc5a9-9c60-415c-a854-db92ace175e7" name="TempAvgOnGrnd" xsi:type="prem:Parameter">
+          <value value="15" xsi:type="reg:Value">
+          </value>
+        <unit href="premise:/Base.registry#deg"/>
+</parameters>
+        <parameters id="2f75b64f-d233-4170-b230-27765bb90f91" name="TempLapseRate" xsi:type="prem:Parameter">
+          <value value="0.0065" xsi:type="reg:Value"/>
+        </parameters>
+        <parameters id="b0a9b858-3556-4a20-b061-b9815465068c" name="Temperature" xsi:type="prem:Parameter">
+          <value value="-63.0" xsi:type="reg:Value">
+          </value>
+          <modeValues value="15.0" xsi:type="prem:ModeValueRef">
+<modePointers target="49f65451-dd8a-473a-8994-187caff60506" xsi:type="graph:DirectPointer"/>
+</modeValues>
+        <unit href="premise:/Base.registry#deg"/>
+</parameters>
+      </children>
+      <children id="86a9279b-06eb-4170-a729-cd4d3af5fdf5" name="Pressure" xsi:type="prem:SystemComponent">
+        <parameters id="63beb583-e3a4-4650-bd6e-07dfc1c4e85e" name="Humidity" xsi:type="prem:Parameter">
+          <value value="60" xsi:type="reg:Value">
+          </value>
+        <unit href="premise:/Base.registry#%"/>
+</parameters>
+        <parameters id="582f854d-4779-448b-8193-e400d8dbeba3" name="PressureDryAvgOnGrnd" xsi:type="prem:Parameter">
+          <value value="101325" xsi:type="reg:Value"/>
+        </parameters>
+        <parameters id="2ad68461-96da-471a-91f9-5fe8dc0ae4ba" name="PressureDry" xsi:type="prem:Parameter">
+          <value value="19283.79940968048" xsi:type="reg:Value"/>
+          <modeValues value="101325.0" xsi:type="prem:ModeValueRef">
+<modePointers target="49f65451-dd8a-473a-8994-187caff60506" xsi:type="graph:DirectPointer"/>
+</modeValues>
+        </parameters>
+        <parameters id="867dec02-b7a1-4f30-a7d0-1b62021c6a5c" name="PressureVapor" xsi:type="prem:Parameter">
+          <value value="0.7131693735989239" xsi:type="reg:Value"/>
+          <modeValues value="1023.1370196462942" xsi:type="prem:ModeValueRef">
+<modePointers target="49f65451-dd8a-473a-8994-187caff60506" xsi:type="graph:DirectPointer"/>
+</modeValues>
+        </parameters>
+        <parameters id="d91020e3-4d3b-4626-aca5-f47fd4ae184c" name="PressureTotal" xsi:type="prem:Parameter">
+          <value value="13752.615145609125" xsi:type="reg:Value"/>
+          <modeValues value="1.0366935851566076E8" xsi:type="prem:ModeValueRef">
+<modePointers target="49f65451-dd8a-473a-8994-187caff60506" xsi:type="graph:DirectPointer"/>
+</modeValues>
+        </parameters>
+      </children>
+      <children id="44242320-1b13-478b-99f2-65e0743c38f0" name="Density" xsi:type="prem:SystemComponent">
+        <parameters id="ffe362d2-1318-4298-8661-f9e224a5654b" name="Density" xsi:type="prem:Parameter">
+          <value value="0.31966489148961585" xsi:type="reg:Value"/>
+          <modeValues value="1.2203235370970162" xsi:type="prem:ModeValueRef">
+<modePointers target="49f65451-dd8a-473a-8994-187caff60506" xsi:type="graph:DirectPointer"/>
+</modeValues>
+        </parameters>
+      </children>
+      <children id="e326365a-bd0c-481e-9c72-4b8fe4578041" name="O2" xsi:type="prem:SystemComponent">
+        <parameters description="" id="123c8c67-32cc-4a7c-9063-e2d0cc71bbf9" name="O2AvgOnGrnd" xsi:type="prem:Parameter">
+          <value value="0.280" xsi:type="reg:Value">
+          </value>
+        <unit href="premise:/Base.registry#kg"/>
+</parameters>
+        <parameters id="955320a9-2f45-451e-a85e-7379305816c1" name="O2" xsi:type="prem:Parameter">
+          <value value="0.07205669592252482" xsi:type="reg:Value">
+          </value>
+          <modeValues value="0.28" xsi:type="prem:ModeValueRef">
+<modePointers target="49f65451-dd8a-473a-8994-187caff60506" xsi:type="graph:DirectPointer"/>
+</modeValues>
+        <unit href="premise:/Base.registry#kg"/>
+</parameters>
+      </children>
+    <statemachines name="Atmosphere">
+<modes entryMode="true" id="bc1d4f91-4195-44c8-a318-e5a52bb1017a" name="-" xsi:type="elem:Mode"/>
+<modes entryMode="true" id="abe65a6f-4042-4187-8353-ceb08150ea02" name="Crosswind" xsi:type="elem:Mode"/>
+<modes entryMode="true" id="fd93481d-8d5f-4d92-be27-9dfe94310cc0" name="Gust/Turbulence" xsi:type="elem:Mode"/>
+</statemachines>
+</children>
+    <children id="72bde652-3bbd-417e-a338-fbe76af54520" name="Aircraft" xsi:type="prem:SystemComponent">
+      <children id="7a27ab74-d7cb-4fc8-a10b-637f18796d7c" name="A/C Modes" xsi:type="prem:SystemComponent">
+      <statemachines name="A/C Modes">
+<modes description="" entryMode="false" id="716b9409-d87e-4622-9269-d892c75af14d" name="Clean" xsi:type="elem:Mode"/>
+<modes entryMode="false" id="982a9197-d41e-4803-aa7b-26721bc2fbe6" name="Landing" xsi:type="elem:Mode"/>
+<modes entryMode="false" id="a9fefbe9-820a-4b32-9b7e-5c8e10b82c94" name="TakeOff" xsi:type="elem:Mode"/>
+<modes entryMode="false" id="49f65451-dd8a-473a-8994-187caff60506" name="Landing/Ground" xsi:type="elem:Mode"/>
+<modes entryMode="true" id="ae062607-bb1b-4412-bb19-cf9778f67d33" name="TakeOff/Ground" xsi:type="elem:Mode"/>
+<transitions id="2871fb92-2321-4a0e-adb8-9a61fc56b928">
+<sourcePointer target="ae062607-bb1b-4412-bb19-cf9778f67d33" xsi:type="graph:DirectPointer"/>
+<targetPointer target="a9fefbe9-820a-4b32-9b7e-5c8e10b82c94" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="eb480704-923e-4b8a-803a-0a33839dfcdc">
+          <condition junction="AND" xsi:type="elem:GuardCombination">
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="418d47ff-cd24-4f63-afc8-8a1c9d90d950" xsi:type="graph:DirectPointer"/>
+</children>
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="62d8bc18-13cc-4a35-baf3-45f6f304ab23" xsi:type="graph:DirectPointer"/>
+</children>
+          </condition>
+        <sourcePointer target="a9fefbe9-820a-4b32-9b7e-5c8e10b82c94" xsi:type="graph:DirectPointer"/>
+<targetPointer target="716b9409-d87e-4622-9269-d892c75af14d" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="d65a68c4-aaa8-4e76-9889-11b58954a12a">
+          <condition xsi:type="elem:GuardCombination">
+            <children junction="AND" xsi:type="elem:GuardCombination">
+              <children xsi:type="elem:ModeGuard">
+<modePointer target="1123c719-137b-4c9d-ae6d-d0100d50da35" xsi:type="graph:DirectPointer"/>
+</children>
+              <children xsi:type="elem:ModeGuard">
+<modePointer target="2485b31b-eab9-4c1d-81a9-7fd53e2e6fcb" xsi:type="graph:DirectPointer"/>
+</children>
+            </children>
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="9c2c1c24-5009-42a0-913b-9a7eb050e56e" xsi:type="graph:DirectPointer"/>
+</children>
+          </condition>
+        <sourcePointer target="716b9409-d87e-4622-9269-d892c75af14d" xsi:type="graph:DirectPointer"/>
+<targetPointer target="982a9197-d41e-4803-aa7b-26721bc2fbe6" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="3986a9e6-f42e-447b-a305-976279285731">
+<sourcePointer target="982a9197-d41e-4803-aa7b-26721bc2fbe6" xsi:type="graph:DirectPointer"/>
+<targetPointer target="49f65451-dd8a-473a-8994-187caff60506" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="cffa3722-b46c-438e-9824-f542ee641e20">
+          <condition xsi:type="elem:ModeGuard">
+<modePointer target="57e41f0c-c6ad-4344-bfd0-3fc0969c1d9a" xsi:type="graph:DirectPointer"/>
+</condition>
+        <sourcePointer target="982a9197-d41e-4803-aa7b-26721bc2fbe6" xsi:type="graph:DirectPointer"/>
+<targetPointer target="a9fefbe9-820a-4b32-9b7e-5c8e10b82c94" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="993e8725-2d38-4674-84bd-9c0428952345">
+          <condition xsi:type="elem:ModeGuard">
+<modePointer target="57e41f0c-c6ad-4344-bfd0-3fc0969c1d9a" xsi:type="graph:DirectPointer"/>
+</condition>
+        <sourcePointer target="49f65451-dd8a-473a-8994-187caff60506" xsi:type="graph:DirectPointer"/>
+<targetPointer target="ae062607-bb1b-4412-bb19-cf9778f67d33" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+      <children id="facd4737-d44f-48d5-aba2-26efb898acbb" name="Failure Conditions" xsi:type="prem:SystemComponent">
+      <statemachines name="Failure Conditions">
+<modes entryMode="true" id="80697631-df7e-4048-81c4-842b6bbb9f45" name="-" xsi:type="elem:Mode"/>
+<modes entryMode="true" id="ec5714cc-3385-49c6-bc80-476d587af47b" name="Failure" xsi:type="elem:Mode"/>
+<modes description="One engine inoperative" entryMode="true" id="9c2c1c24-5009-42a0-913b-9a7eb050e56e" name="OEI" xsi:type="elem:Mode"/>
+<transitions id="fcf2203a-46b4-4ef5-8978-ea63d8258a14">
+<targetPointer target="ec5714cc-3385-49c6-bc80-476d587af47b" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="5579cc84-55e7-483e-8309-9f609e3d0585">
+<targetPointer target="9c2c1c24-5009-42a0-913b-9a7eb050e56e" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+      <children id="301d4048-aaa9-4b97-bd93-70097f6ca08c" name="A320 Physical Assembly" xsi:type="prem:SystemComponent">
+        <children id="070ebb11-931a-4197-8770-585f4297dc3c" name="Surfaces" xsi:type="prem:SystemComponent">
+          <children id="77a87aae-88ee-4a9e-b190-575af40a07f5" name="WingsSystem" xsi:type="prem:SystemComponent">
+            <children id="5ac8a3e9-bc80-450d-bb7a-dfbb72a19b96" name="Wings" xsi:type="prem:SystemComponent"/>
+            <children description="" id="89987a93-2e9e-498e-be4c-bd1cb07b7fbd" name="Flaps" xsi:type="prem:SystemComponent">
+            <statemachines name="Flaps">
+<modes entryMode="false" id="418d47ff-cd24-4f63-afc8-8a1c9d90d950" name="0" xsi:type="elem:Mode"/>
+<modes entryMode="true" id="57e41f0c-c6ad-4344-bfd0-3fc0969c1d9a" name="1+F" xsi:type="elem:Mode"/>
+<modes entryMode="false" id="b1f2196a-3ba5-46cd-b9b4-9cc498a35718" name="2+F" xsi:type="elem:Mode"/>
+<modes entryMode="false" id="1123c719-137b-4c9d-ae6d-d0100d50da35" name="3+F" xsi:type="elem:Mode"/>
+<transitions id="6f25e856-9fe2-4b1e-9f2f-2f1b5d5f4f20">
+<sourcePointer target="57e41f0c-c6ad-4344-bfd0-3fc0969c1d9a" xsi:type="graph:DirectPointer"/>
+<targetPointer target="418d47ff-cd24-4f63-afc8-8a1c9d90d950" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="b083654b-fdb2-4d41-a377-9fd94605c3d4">
+<sourcePointer target="418d47ff-cd24-4f63-afc8-8a1c9d90d950" xsi:type="graph:DirectPointer"/>
+<targetPointer target="1123c719-137b-4c9d-ae6d-d0100d50da35" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+          </children>
+        </children>
+        <children id="ccc26f91-8660-4e9b-8be7-d1824be40cca" name="Propulsion" xsi:type="prem:SystemComponent"/>
+        <children id="be3ba10f-6790-4e80-a990-97997c73a78e" name="Landing Gear" xsi:type="prem:SystemComponent">
+        <statemachines name="Landing Gear">
+<modes entryMode="true" id="2485b31b-eab9-4c1d-81a9-7fd53e2e6fcb" name="Extracted" xsi:type="elem:Mode"/>
+<modes entryMode="false" id="62d8bc18-13cc-4a35-baf3-45f6f304ab23" name="Retracted" xsi:type="elem:Mode"/>
+<transitions id="f028c74d-5e51-4d0a-a443-dd171c0c05f7">
+<sourcePointer target="2485b31b-eab9-4c1d-81a9-7fd53e2e6fcb" xsi:type="graph:DirectPointer"/>
+<targetPointer target="62d8bc18-13cc-4a35-baf3-45f6f304ab23" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+      </children>
+    </children>
+  </projects>
+</prem:ProjectRepository>

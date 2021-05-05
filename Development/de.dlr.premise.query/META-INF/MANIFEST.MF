@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Query
+Bundle-SymbolicName: de.dlr.premise.query;singleton:=true
+Bundle-Version: 1.25.0.qualifier
+Require-Bundle: de.dlr.premise,
+ org.eclipse.ocl.pivot,
+ org.eclipse.core.resources,
+ de.dlr.premise.ocl.hacks,
+ org.junit;resolution:=optional
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: www.dlr.de/ft/ssy
+Export-Package: de.dlr.premise.query,
+ de.dlr.premise.query.exceptions,
+ de.dlr.premise.query.persistent
+Automatic-Module-Name: de.dlr.premise.query

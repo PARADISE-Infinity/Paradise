@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:val="http://www.dlr.de/ft/premise/validated/2013/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.10" xmi:version="2.0">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+  </metaData>
+  <projects id="6e976992-21bc-40de-83d7-b577542ff380" name="Root">
+    <connections source="1c8f495f-7a80-4b45-b4ef-48e84e05434a" sourcePortName="massFlow" target="13804fb6-9c92-4350-a11e-970e2dc2b6d3" targetPortName="massFlow" xsi:type="val:Connection"/>
+    <connections source="1c8f495f-7a80-4b45-b4ef-48e84e05434a" sourcePortName="massFlow" target="6e976992-21bc-40de-83d7-b577542ff380" targetPortName="massFlow" xsi:type="val:Connection"/>
+    <children id="13804fb6-9c92-4350-a11e-970e2dc2b6d3" name="A">
+    </children>
+    <children id="1c8f495f-7a80-4b45-b4ef-48e84e05434a" name="B">
+    </children>
+  </projects>
+</prem:ProjectRepository>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+ <extension
+       point="org.eclipse.ui.commands">
+    <command
+          defaultHandler="de.dlr.premise.states.util.StateInspectHandler"
+          id="de.dlr.premise.states.inspect"
+          name="Inspect States">
+    </command>
+ </extension>
+ <extension
+       point="org.eclipse.ui.bindings">
+    <key
+          commandId="de.dlr.premise.states.inspect"
+          contextId="org.eclipse.ui.contexts.window"
+          schemeId="de.dlr.premise"
+          sequence="M2+M3+S S">
+    </key>
+ </extension>
+ <extension
+       point="de.dlr.premise.modeValidator">
+    <client
+          class="de.dlr.premise.states.util.ModeValidatorImpl">
+    </client>
+ </extension>
+
+</plugin>

@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Calculation
+Bundle-SymbolicName: de.dlr.calc.engine;singleton:=true
+Bundle-Version: 1.25.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: de.dlr.premise;bundle-version="1.0.0",
+ de.dlr.premise.util;bundle-version="1.11.1",
+ de.dlr.premise.states;bundle-version="1.0.0",
+ org.junit;resolution:=optional
+Bundle-ClassPath: .
+Import-Package: org.eclipse.core.runtime
+Bundle-Vendor: www.dlr.de/ft/ssy
+Export-Package: de.dlr.calc.my
+Automatic-Module-Name: de.dlr.calc.engine

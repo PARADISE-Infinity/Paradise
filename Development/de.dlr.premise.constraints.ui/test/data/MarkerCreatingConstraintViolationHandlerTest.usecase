@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0" xsi:schemaLocation="       http://www.dlr.de/ft/premise/registry/2010/ ../../../de.dlr.ft.premise/model/PREMISE_Registry.ecore        http://www.dlr.de/ft/premise/registry/validated/2013/ ../../../de.dlr.ft.premise/model/PREMISE_Registry.ecore#//validated        http://www.dlr.de/ft/premise/funcpool/2010/ ../../../de.dlr.ft.premise/model/PREMISE_FnPool.ecore        http://www.dlr.de/premise/usecase/2014/ ../../../de.dlr.ft.premise/model/PREMISE_UseCase.ecore        http://www.dlr.de/ft/premise/2010/ ../../../de.dlr.ft.premise/model/PREMISE_system.ecore        http://www.dlr.de/ft/premise/validated/2013/ ../../../de.dlr.ft.premise/model/PREMISE_system.ecore#//validated      ">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+  </metaData>
+  <usecases id="d63c42a3-324b-4abb-9897-161fa54425cd" name="TheUseCase">
+    <children id="d0119b67-fd81-4bfe-9f54-05478c89fd77" name="TheRequirement">
+      <requiredParameters description="" id="df4914c9-e23c-4c33-b396-1cf716313026" name="TheParameterConstraint">
+        <valueConstraint lower="4" upper="20" xsi:type="uc:RangeConstraint"/>
+        <modeValueConstraints lower="asd" upper="200" xsi:type="uc:ModeRangeConstraint"/>
+      </requiredParameters>
+    </children>
+  <statemachines name="TheUseCase">
+<modes entryMode="true" id="600f6a10-17df-4f7b-bb10-d8812608f29b" name="TheMode" xsi:type="elem:Mode"/>
+</statemachines>
+</usecases>
+</uc:UseCaseRepository>

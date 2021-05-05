@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="false"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Show Parameters" value="true"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Edit local statemachines">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <projects id="2eefa218-9554-4df3-a103-bda826e1f285" name="SC1">
+    <children id="95144c4f-363e-4b3c-9d64-6c8b7215d48f" name="SC_OR" xsi:type="prem:SystemComponent">
+      <statemachines name="SC_OR Failure State">
+        <modes entryMode="true" id="09cd48eb-3534-481e-a806-94b982245ceb" name="Normal"/>
+        <modes id="b47cbbf2-e818-4ea5-9ff3-9f8b16eca458" name="SC_OR Failure"/>
+        <transitions id="d780b9e8-3a7b-436f-8726-58f76f951c57" name="F: SC_OR Failure">
+          <sourcePointer target="09cd48eb-3534-481e-a806-94b982245ceb" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="b47cbbf2-e818-4ea5-9ff3-9f8b16eca458" xsi:type="graph:DirectPointer"/>
+          <condition xsi:type="elem:GuardCombination">
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="7e36f547-6e10-4938-b69d-6e8774152008" xsi:type="graph:DirectPointer"/>
+</children>
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="e3e9a3d8-38de-426c-833e-87ba60f45794" xsi:type="graph:DirectPointer"/>
+</children>
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="6cdc334d-618b-405c-b254-c6229c86229f" xsi:type="graph:DirectPointer"/>
+</children>
+          </condition>
+          <parameters id="6b25c0b8-ceda-4a14-bff3-e89e403120db" name="Failure Rate">
+            <value value="0.622"/>
+          </parameters>
+          <balancings target="6b25c0b8-ceda-4a14-bff3-e89e403120db"/>
+        </transitions>
+      </statemachines>
+      <statemachines name="SC_OR Failure 1 State">
+        <modes entryMode="true" id="f0d32525-224e-4a53-9385-0f628099d971" name="Normal"/>
+        <modes id="6cdc334d-618b-405c-b254-c6229c86229f" name="SC_OR Failure 1"/>
+        <transitions id="c41bdf66-bfc6-4511-a1fe-83fdd3f08d7b" name="F: SC_OR Failure 1">
+          <sourcePointer target="f0d32525-224e-4a53-9385-0f628099d971" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="6cdc334d-618b-405c-b254-c6229c86229f" xsi:type="graph:DirectPointer"/>
+          <parameters id="323a0cae-a49e-4e0b-9c32-29c40cea4320" name="Failure Rate">
+            <value value="0.1"/>
+          </parameters>
+        </transitions>
+      </statemachines>
+      <statemachines name="SC_OR Failure 2 State">
+        <modes entryMode="true" id="eee77b2e-bcae-45a0-a34e-fbbfc1a64659" name="Normal"/>
+        <modes id="e3e9a3d8-38de-426c-833e-87ba60f45794" name="SC_OR Failure 2"/>
+        <transitions id="0c3d156b-dab5-49a2-8a29-7e770b4f425b" name="F: SC_OR Failure 2">
+          <sourcePointer target="eee77b2e-bcae-45a0-a34e-fbbfc1a64659" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="e3e9a3d8-38de-426c-833e-87ba60f45794" xsi:type="graph:DirectPointer"/>
+          <parameters id="a012262f-fe28-4cde-ba68-b602878330a3" name="Failure Rate">
+            <value value="0.3"/>
+          </parameters>
+        </transitions>
+      </statemachines>
+      <statemachines name="SC_OR Failure 3 State">
+        <modes entryMode="true" id="98cfab4c-e1e4-4ec0-8b5b-5da1ccd97320" name="Normal"/>
+        <modes id="7e36f547-6e10-4938-b69d-6e8774152008" name="SC_OR Failure 3"/>
+        <transitions id="539c46dc-cc95-4419-ab8c-6f2db0697961" name="F: SC_OR Failure 3">
+          <sourcePointer target="98cfab4c-e1e4-4ec0-8b5b-5da1ccd97320" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="7e36f547-6e10-4938-b69d-6e8774152008" xsi:type="graph:DirectPointer"/>
+          <parameters id="13f432ee-d7a8-4133-b049-a493b610094c" name="Failure Rate">
+            <value value="0.4"/>
+          </parameters>
+        </transitions>
+      </statemachines>
+    </children>
+    <children id="b5d81390-7788-4815-a1f2-b25aeba9cce9" name="SC_AND" xsi:type="prem:SystemComponent">
+      <statemachines name="SC_AND Failure State">
+        <modes entryMode="true" id="3cb6e189-d1b2-4aed-b806-2b89ebd9dc0f" name="Normal"/>
+        <modes id="896b025d-682c-4620-9edc-4846bc034bdd" name="SC_AND Failure"/>
+        <transitions id="41988e6e-3b63-4c2e-9e66-0c7420c9f57b" name="F: SC_AND Failure">
+          <sourcePointer target="3cb6e189-d1b2-4aed-b806-2b89ebd9dc0f" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="896b025d-682c-4620-9edc-4846bc034bdd" xsi:type="graph:DirectPointer"/>
+          <condition junction="AND" xsi:type="elem:GuardCombination">
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="8c51b26e-cc89-462d-a3da-1b7f0a566ab2" xsi:type="graph:DirectPointer"/>
+</children>
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="d655f283-99ac-46dc-8ca3-ac7386ef48cc" xsi:type="graph:DirectPointer"/>
+</children>
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="fac201ec-a81d-424a-b8fa-e83f79470ed1" xsi:type="graph:DirectPointer"/>
+</children>
+          </condition>
+          <parameters id="49cb1369-4a6d-4978-8264-c0d8acbb587d" name="Failure Rate">
+            <value value="0.012"/>
+          </parameters>
+          <balancings target="49cb1369-4a6d-4978-8264-c0d8acbb587d"/>
+        </transitions>
+      </statemachines>
+      <statemachines name="SC_AND Failure 1 State">
+        <modes entryMode="true" id="b0028899-20a6-4a45-af9f-a1ef8fbc6493" name="Normal"/>
+        <modes id="fac201ec-a81d-424a-b8fa-e83f79470ed1" name="SC_AND Failure 1"/>
+        <transitions id="f79d8278-ecdf-49aa-92f2-7d3c5082f35b" name="F: SC_AND Failure 1">
+          <sourcePointer target="b0028899-20a6-4a45-af9f-a1ef8fbc6493" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="fac201ec-a81d-424a-b8fa-e83f79470ed1" xsi:type="graph:DirectPointer"/>
+          <parameters id="a99ca3d5-51ed-4908-af52-4bce4f47ee64" name="Failure Rate">
+            <value value="0.1"/>
+          </parameters>
+        </transitions>
+      </statemachines>
+      <statemachines name="SC_AND Failure 2 State">
+        <modes entryMode="true" id="e1ee6f20-05f7-4cc3-afa2-a520994f6c88" name="Normal"/>
+        <modes id="d655f283-99ac-46dc-8ca3-ac7386ef48cc" name="SC_AND Failure 2"/>
+        <transitions id="705ee5b7-b4e4-4075-adb4-ba7203b68825" name="F: SC_AND Failure 2">
+          <sourcePointer target="e1ee6f20-05f7-4cc3-afa2-a520994f6c88" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="d655f283-99ac-46dc-8ca3-ac7386ef48cc" xsi:type="graph:DirectPointer"/>
+          <parameters id="db52a719-ee4d-439c-be33-819f46809e74" name="Failure Rate">
+            <value value="0.3"/>
+          </parameters>
+        </transitions>
+      </statemachines>
+      <statemachines name="SC_AND Failure 3 State">
+        <modes entryMode="true" id="32ce90c5-49c7-442b-8dc0-9a3a97bf66f8" name="Normal"/>
+        <modes id="8c51b26e-cc89-462d-a3da-1b7f0a566ab2" name="SC_AND Failure 3"/>
+        <transitions id="9004e6dd-0cba-4ab7-866f-e0b65e91be0a" name="F: SC_AND Failure 3">
+          <sourcePointer target="32ce90c5-49c7-442b-8dc0-9a3a97bf66f8" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="8c51b26e-cc89-462d-a3da-1b7f0a566ab2" xsi:type="graph:DirectPointer"/>
+          <parameters id="6aa71b7f-812c-4248-90fe-bfc0d87fb3cb" name="Failure Rate">
+            <value value="0.4"/>
+          </parameters>
+        </transitions>
+      </statemachines>
+    </children>
+    <children id="d96754af-b6e6-40a1-9cb4-ba04da7f5157" name="SC_XOR" xsi:type="prem:SystemComponent">
+      <statemachines name="SC_XOR Failure State">
+        <modes entryMode="true" id="2712e46b-fcf8-4447-bdf3-1761e4f7f8d9" name="Normal"/>
+        <modes id="dd01305b-8090-416c-9f1b-13ddf582237c" name="SC_XOR Failure"/>
+        <transitions id="7b254fd5-802d-4772-80fa-eb8074dc51fa" name="F: SC_XOR Failure">
+          <sourcePointer target="2712e46b-fcf8-4447-bdf3-1761e4f7f8d9" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="dd01305b-8090-416c-9f1b-13ddf582237c" xsi:type="graph:DirectPointer"/>
+          <condition junction="XOR" xsi:type="elem:GuardCombination">
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="bc6e04fb-fde8-44f6-9f07-7cddd012361f" xsi:type="graph:DirectPointer"/>
+</children>
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="2d772f6f-1ef7-4310-95cd-19155ef471fa" xsi:type="graph:DirectPointer"/>
+</children>
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="e5c8ac05-2a72-4d25-af6b-38fdbe6d3eb9" xsi:type="graph:DirectPointer"/>
+</children>
+          </condition>
+          <parameters id="07610497-5008-45ca-b4c7-56954f5a5960" name="Failure Rate">
+            <value value="0.456"/>
+          </parameters>
+          <balancings target="07610497-5008-45ca-b4c7-56954f5a5960"/>
+        </transitions>
+      </statemachines>
+      <statemachines name="SC_XOR Failure 1 State">
+        <modes entryMode="true" id="44cbe16e-936f-45cf-915f-94764d1a00fb" name="Normal"/>
+        <modes id="e5c8ac05-2a72-4d25-af6b-38fdbe6d3eb9" name="SC_XOR Failure 1"/>
+        <transitions id="23b767f1-2174-4b38-85a2-9ba5002c32a3" name="F: SC_XOR Failure 1">
+          <sourcePointer target="44cbe16e-936f-45cf-915f-94764d1a00fb" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="e5c8ac05-2a72-4d25-af6b-38fdbe6d3eb9" xsi:type="graph:DirectPointer"/>
+          <parameters id="5bdf4fed-f734-4735-9829-6218f4ad0b02" name="Failure Rate">
+            <value value="0.1"/>
+          </parameters>
+        </transitions>
+      </statemachines>
+      <statemachines name="SC_XOR Failure 2 State">
+        <modes entryMode="true" id="75f963cb-6391-4be5-8b3d-9ea3be4426a5" name="Normal"/>
+        <modes id="2d772f6f-1ef7-4310-95cd-19155ef471fa" name="SC_XOR Failure 2"/>
+        <transitions id="34cbaf31-29d2-42da-ad6b-008ad5c4637f" name="F: SC_XOR Failure 2">
+          <sourcePointer target="75f963cb-6391-4be5-8b3d-9ea3be4426a5" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="2d772f6f-1ef7-4310-95cd-19155ef471fa" xsi:type="graph:DirectPointer"/>
+          <parameters id="d7f787e7-1d98-45b1-92c3-14d783a12db0" name="Failure Rate">
+            <value value="0.3"/>
+          </parameters>
+        </transitions>
+      </statemachines>
+      <statemachines name="SC_XOR Failure 3 State">
+        <modes entryMode="true" id="4eaaa31d-6267-4f59-8925-549920f2c2d6" name="Normal"/>
+        <modes id="bc6e04fb-fde8-44f6-9f07-7cddd012361f" name="SC_XOR Failure 3"/>
+        <transitions id="98a76904-e745-4827-8156-bad7d7b27a0e" name="F: SC_XOR Failure 3">
+          <sourcePointer target="4eaaa31d-6267-4f59-8925-549920f2c2d6" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="bc6e04fb-fde8-44f6-9f07-7cddd012361f" xsi:type="graph:DirectPointer"/>
+          <parameters id="68ce30e2-eb89-4154-9023-172335f71fcc" name="Failure Rate">
+            <value value="0.4"/>
+          </parameters>
+        </transitions>
+      </statemachines>
+    </children>
+    <children id="5ef70d9b-d79b-48be-8a6c-017faf851e45" name="SC_VOTE" xsi:type="prem:SystemComponent">
+      <statemachines name="SC_VOTE Failure State">
+        <modes entryMode="true" id="d5f7d927-f0e3-4c6b-b709-1fa2feae0a6e" name="Normal"/>
+        <modes id="ce4844eb-629f-4887-a2a3-79fff4d2b78b" name="SC_VOTE Failure"/>
+        <transitions id="c5c5386d-64c2-4212-9f71-42cc35a899de" name="F: SC_VOTE Failure">
+          <sourcePointer target="d5f7d927-f0e3-4c6b-b709-1fa2feae0a6e" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="ce4844eb-629f-4887-a2a3-79fff4d2b78b" xsi:type="graph:DirectPointer"/>
+          <condition junction="VOTE" xsi:type="elem:GuardCombination">
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="5c95eead-6f16-4e07-a799-5b6ebcf52a46" xsi:type="graph:DirectPointer"/>
+</children>
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="67abec15-2801-4f44-9910-9a31cdb52de0" xsi:type="graph:DirectPointer"/>
+</children>
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="fe71c058-a6b9-4bc0-bdb4-44c34c41a056" xsi:type="graph:DirectPointer"/>
+</children>
+          </condition>
+          <parameters id="92830be9-c364-4a0a-912f-c0e6ea3eaea9" name="Failure Rate">
+            <value value="0.1587994428160001"/>
+          </parameters>
+          <balancings target="92830be9-c364-4a0a-912f-c0e6ea3eaea9"/>
+        </transitions>
+      </statemachines>
+      <statemachines name="SC_VOTE Failure 1 State">
+        <modes entryMode="true" id="921ae985-e121-4ece-90ea-a882fa54c191" name="Normal"/>
+        <modes id="fe71c058-a6b9-4bc0-bdb4-44c34c41a056" name="SC_VOTE Failure 1"/>
+        <transitions id="383fc76b-fb3d-4532-8e24-9673824b5d59" name="F: SC_VOTE Failure 1">
+          <sourcePointer target="921ae985-e121-4ece-90ea-a882fa54c191" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="fe71c058-a6b9-4bc0-bdb4-44c34c41a056" xsi:type="graph:DirectPointer"/>
+          <parameters id="6ddf020c-859e-4925-9f48-fcfe33740379" name="Failure Rate">
+            <value value="0.1"/>
+          </parameters>
+        </transitions>
+      </statemachines>
+      <statemachines name="SC_VOTE Failure 2 State">
+        <modes entryMode="true" id="76d65af5-bf9b-4386-bf04-f95f210541ed" name="Normal"/>
+        <modes id="67abec15-2801-4f44-9910-9a31cdb52de0" name="SC_VOTE Failure 2"/>
+        <transitions id="3763fc03-8364-4427-8e6c-621e2667b8c0" name="F: SC_VOTE Failure 2">
+          <sourcePointer target="76d65af5-bf9b-4386-bf04-f95f210541ed" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="67abec15-2801-4f44-9910-9a31cdb52de0" xsi:type="graph:DirectPointer"/>
+          <parameters id="af3ca7e6-2760-47ab-9b59-ab4270e01671" name="Failure Rate">
+            <value value="0.3"/>
+          </parameters>
+        </transitions>
+      </statemachines>
+      <statemachines name="SC_VOTE Failure 3 State">
+        <modes entryMode="true" id="3c68ffe3-5a37-4fc7-ad35-13114832220b" name="Normal"/>
+        <modes id="5c95eead-6f16-4e07-a799-5b6ebcf52a46" name="SC_VOTE Failure 3"/>
+        <transitions id="34738cce-be57-4ec0-9ca2-17c297c7ae6d" name="F: SC_VOTE Failure 3">
+          <sourcePointer target="3c68ffe3-5a37-4fc7-ad35-13114832220b" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="5c95eead-6f16-4e07-a799-5b6ebcf52a46" xsi:type="graph:DirectPointer"/>
+          <parameters id="f9592f10-f418-41ce-9225-49ceacd6d3a9" name="Failure Rate">
+            <value value="0.4"/>
+          </parameters>
+        </transitions>
+      </statemachines>
+    </children>
+  </projects>
+</prem:ProjectRepository>

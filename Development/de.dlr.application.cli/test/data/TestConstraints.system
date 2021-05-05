@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Group Elements" value="false"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Edit local statemachines">
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <projects id="03c36284-f853-4a1b-b474-c33f8e842fe6" name="System 1">
+    <satisfies>
+      <targetPointer xsi:type="graph:DirectPointer">
+        <target href="TestConstraints.usecase#8682b2cc-9d89-4b49-a7f2-496308fab5e9" xsi:type="uc:UseCase"/>
+      </targetPointer>
+    </satisfies>
+    <parameters id="e91814e8-b12d-4414-b8cc-f9821e52119d" name="Mass">
+      <value value="300.0"/>
+      <satisfies>
+        <targetPointer xsi:type="graph:DirectPointer">
+          <target href="TestConstraints.usecase#79b03f6d-fbbc-4363-9abd-71a78ba8e407" xsi:type="uc:RequiredParameter"/>
+        </targetPointer>
+      </satisfies>
+    </parameters>
+    <parameters id="92aa321c-325f-4ebd-9ac7-cb351aa39b10" name="A">
+      <value/>
+      <satisfies>
+        <targetPointer xsi:type="graph:DirectPointer">
+          <target href="TestConstraints.usecase#8b01bf4c-c90e-4a02-9dd5-40213dced2be" xsi:type="uc:RequiredParameter"/>
+        </targetPointer>
+      </satisfies>
+    </parameters>
+    <parameters id="ed472566-c94b-4650-b5eb-e7b70f13fa0f" name="B">
+      <value/>
+      <satisfies>
+        <targetPointer xsi:type="graph:DirectPointer">
+          <target href="TestConstraints.usecase#8b01bf4c-c90e-4a02-9dd5-40213dced2be" xsi:type="uc:RequiredParameter"/>
+        </targetPointer>
+      </satisfies>
+    </parameters>
+    <balancings function="System_1.Mass = SubSystem_A.Mass + SubSystem_B.Mass" name="getSystemMass">
+      <actualSources key="SubSystem_A.Mass">
+        <value target="ec435d47-9963-4706-ba1b-e0e794396a5f" xsi:type="graph:DirectPointer"/>
+      </actualSources>
+      <actualSources key="SubSystem_B.Mass">
+        <value target="7e8827ae-9fe2-45ae-adaf-6486e80a8d52" xsi:type="graph:DirectPointer"/>
+      </actualSources>
+      <actualTarget key="System_1.Mass">
+        <value target="e91814e8-b12d-4414-b8cc-f9821e52119d" xsi:type="graph:DirectPointer"/>
+      </actualTarget>
+    </balancings>
+    <children id="f295d851-6060-4740-b164-5193198424a3" name="SubSystem A" xsi:type="prem:SystemComponent">
+      <parameters id="ec435d47-9963-4706-ba1b-e0e794396a5f" name="Mass">
+        <value value="100"/>
+      </parameters>
+    </children>
+    <children id="0dc52ab0-9168-4db3-ab2d-5db51bad9bf9" name="SubSystem B" xsi:type="prem:SystemComponent">
+      <parameters id="7e8827ae-9fe2-45ae-adaf-6486e80a8d52" name="Mass">
+        <value value="200"/>
+      </parameters>
+    </children>
+  </projects>
+</prem:ProjectRepository>

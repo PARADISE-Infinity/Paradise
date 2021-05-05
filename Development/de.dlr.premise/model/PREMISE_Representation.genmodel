@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.dlr.premise/src-gen" editDirectory="/de.dlr.premise.edit/src-gen"
+    editorDirectory="/de.dlr.premise.editor/src-gen" modelPluginID="de.dlr.premise"
+    redirection="" modelName="PREMISE_Representation" testsDirectory="/de.dlr.premise.tests/src-gen"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0" copyrightFields="false"
+    providerRootExtendsClass="de.dlr.premise.provider.util.ItemProviderAdapterMy"
+    usedGenPackages="PREMISE.genmodel#//registry PREMISE.genmodel#//functionpool PREMISE.genmodel#//element PREMISE.genmodel#//graph PREMISE.genmodel#//component PREMISE.genmodel#//system PREMISE.genmodel#//usecase"
+    interfaceNamePattern="">
+  <foreignModel>PREMISE_Representation.ecore</foreignModel>
+  <genPackages prefix="Representation" basePackage="de.dlr.premise" disposableProviderFactory="true"
+      ecorePackage="PREMISE_Representation.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="PREMISE_Representation.ecore#//StyleTypes">
+      <genEnumLiterals ecoreEnumLiteral="PREMISE_Representation.ecore#//StyleTypes/Line"/>
+      <genEnumLiterals ecoreEnumLiteral="PREMISE_Representation.ecore#//StyleTypes/Dashed"/>
+      <genEnumLiterals ecoreEnumLiteral="PREMISE_Representation.ecore#//StyleTypes/Dotted"/>
+    </genEnums>
+    <genClasses ecoreClass="PREMISE_Representation.ecore#//Representation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Representation.ecore#//Representation/nodeDecorators"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Representation.ecore#//Representation/edgeDecorators"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Representation.ecore#//NodeDecoratorContainer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Representation.ecore#//NodeDecoratorContainer/decorators"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Representation.ecore#//EdgeDecoratorContainer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PREMISE_Representation.ecore#//EdgeDecoratorContainer/decorators"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PREMISE_Representation.ecore#//ADecorator">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Representation.ecore#//ADecorator/labelFilter"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PREMISE_Representation.ecore#//ADecorator/metaTypeFilter"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PREMISE_Representation.ecore#//ANodeDecorator">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PREMISE_Representation.ecore#//ANodeDecorator/componentFilter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Representation.ecore#//ANodeDecorator/recursive"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PREMISE_Representation.ecore#//AEdgeDecorator">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PREMISE_Representation.ecore#//AEdgeDecorator/sourceFilter"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="PREMISE_Representation.ecore#//AColor">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Representation.ecore#//AColor/value"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Representation.ecore#//Color"/>
+    <genClasses ecoreClass="PREMISE_Representation.ecore#//Shape">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Representation.ecore#//Shape/width"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Representation.ecore#//Shape/height"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Representation.ecore#//Coordinate">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Representation.ecore#//Coordinate/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Representation.ecore#//Coordinate/y"/>
+    </genClasses>
+    <genClasses ecoreClass="PREMISE_Representation.ecore#//EdgeColor"/>
+    <genClasses ecoreClass="PREMISE_Representation.ecore#//Style">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Representation.ecore#//Style/width"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PREMISE_Representation.ecore#//Style/type"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

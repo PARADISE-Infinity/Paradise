@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reg:Registry xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" metaModel="1.31" xmi:version="2.0">
+  <constants description="As if the value of 10 will fluctuate... " id="9688604b-e57f-424f-8eb8-7e5fd25fd8d9" name="TEN">
+    <notes author="steh_ti" date="2016-03-04 16:17:34" text="http://stackoverflow.com/a/185712"/>
+    <value uncertainty="" value="10"/>
+  </constants>
+</reg:Registry>

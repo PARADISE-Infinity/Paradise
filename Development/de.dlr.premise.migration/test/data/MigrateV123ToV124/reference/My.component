@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comp:ComponentRepository xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:xmi="http://www.omg.org/XMI" xmi:version="2.0">
+  <metaData name="View">
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="false"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Show Parameters" value="true"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Edit local statemachines">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+    </children>
+  </metaData>
+  <definitions id="108672f5-4ea7-4004-b8bd-aca6201bb596" name="DDD">
+    <parameters id="05675d42-d950-4389-afff-b6a27f9242ad" name="PPP"/>
+    <children name="CCC"/>
+  </definitions>
+</comp:ComponentRepository>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comp:ComponentRepository xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="false"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Show Parameters" value="true"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Edit local statemachines">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <definitions id="fade758d-dff8-43b2-a1a7-f47c433869bf" name="Def">
+    <parameters id="5142f620-c039-4c08-87cd-877b91fc7499" name="P1"/>
+    <parameters id="30b541a0-89f4-44a0-932a-e9579c893832" name="p3"/>
+    <parameters id="2edfe3d4-2318-4c8e-ad2a-c89978a08295" name="ppp"/>
+  </definitions>
+  <components id="72dd778d-3317-4e89-8826-e715580701a9" name="Impl">
+    <parameters id="75653616-fd24-44fc-b0a1-e02e521439aa" name="p">
+<satisfies>
+	<targetPointer target="5142f620-c039-4c08-87cd-877b91fc7499" xsi:type="graph:DirectPointer"/>
+</satisfies>
+<satisfies>
+	<targetPointer target="30b541a0-89f4-44a0-932a-e9579c893832" xsi:type="graph:DirectPointer"/>
+</satisfies>
+<satisfies>
+	<targetPointer target="2edfe3d4-2318-4c8e-ad2a-c89978a08295" xsi:type="graph:DirectPointer"/>
+</satisfies>
+</parameters>
+  <satisfies>
+	<targetPointer target="fade758d-dff8-43b2-a1a7-f47c433869bf" xsi:type="graph:DirectPointer"/>
+</satisfies>
+</components>
+</comp:ComponentRepository>

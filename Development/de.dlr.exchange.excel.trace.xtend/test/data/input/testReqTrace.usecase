@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:xmi="http://www.omg.org/XMI" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+  </metaData>
+  <usecases id="e6303bbe-c0c1-4bd4-bbff-e0c15cf4869f" name="testReqTraceUseCases">
+    <children id="e1d56a2f-5e62-48fb-bd95-911e872f676c" name="Requirement 1"/>
+    <children id="27dc856d-b65e-4c8b-8d6d-18c22d33b676" name="Requirement 2"/>
+    <children id="c52a1612-aed0-41c1-bbc3-822c4843ff93" name="Requirement 3"/>
+    <children id="8a682859-36e8-4823-aa47-63d40feb9016" name="Requirement 4"/>
+    <children id="dc3f764c-e65b-4d9a-895b-3dda618919c4" name="Requirement 5"/>
+    <children id="5f1afc45-52ab-431a-ae86-a79e3244cf34" name="Requirement 6"/>
+    <children id="d3f34b16-ae55-477a-a890-4fe88246885d" name="Requirement 7"/>
+  </usecases>
+</uc:UseCaseRepository>

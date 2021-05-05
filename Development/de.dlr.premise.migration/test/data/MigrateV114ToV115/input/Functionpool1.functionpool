@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fnp:FunctionPool xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/">
+  <calcEngines xsi:type="fnp:CalcEngineSpreadSheet" name="CalcEngineA" fileURI=""/>
+  <calcEngines xsi:type="fnp:CalcEngineSpreadSheet" name="CalcEngineB" fileURI=""/>
+  <functions xsi:type="fnp:FnDefSpreadSheet" name="DummyCalculationEngineA" calcEngine="CalcEngineA"/>
+  <functions xsi:type="fnp:FnDefSpreadSheet" name="DummyCalculationEngineB" calcEngine="CalcEngineB"/>
+  <functions xsi:type="fnp:FnDefSpreadSheet" name="DummyCalculationEngineC" description="This is a cross file reference to another functionpool. Whilst I don't suppose this was used often, it is still possible and thus must be supported." sheetName="">
+    <calcEngine xsi:type="fnp:CalcEngineSpreadSheet" href="Functionpool2.functionpool#CalcEngineC"/>
+  </functions>
+</fnp:FunctionPool>

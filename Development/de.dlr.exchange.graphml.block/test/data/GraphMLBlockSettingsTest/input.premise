@@ -1,0 +1,1948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="false"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Show Parameters" value="true"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Edit local statemachines">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <projects id="01e7cd4d-5c6d-4a48-825c-80c24a8f10ca" name="Root">
+    <connections>
+      <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+      <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+      <sourcePointer target="bdc266b7-6654-4dff-a326-030ebd8089e2" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="c9622d6c-945d-4c66-8e52-9ba230056eda" xsi:type="graph:DirectPointer"/>
+    </connections>
+    <connections>
+      <sourcePointer target="114fbc73-fb7a-42f5-84e3-03e81d4d7f0b" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="34c4051f-d28a-40ae-866c-4109ae0fc92a" xsi:type="graph:DirectPointer"/>
+    </connections>
+    <connections>
+      <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+      <sourcePointer target="cb906b2d-bf82-4423-8c7a-fb7e2c48e96c" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="891262a2-6103-4b75-bd33-98a64fb98ef2" xsi:type="graph:DirectPointer"/>
+    </connections>
+    <connections>
+      <sourcePointer target="114fbc73-fb7a-42f5-84e3-03e81d4d7f0b" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="86834b51-1a68-416a-874a-beb75fdf01b3" xsi:type="graph:DirectPointer"/>
+    </connections>
+    <connections>
+      <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+      <sourcePointer target="fadf56b7-228d-4526-922b-8a64e4723b32" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="cc6b76be-3e9d-427b-95a2-93a1cb2eca0d" xsi:type="graph:DirectPointer"/>
+    </connections>
+    <connections>
+      <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+      <sourcePointer target="83f3378c-f983-4343-9ba2-23698d23c3bf" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="5aba166b-3ec4-4e96-97b6-c995e32279c9" xsi:type="graph:DirectPointer"/>
+    </connections>
+    <connections>
+      <sourcePointer target="5e2fe0a8-388f-4c2a-bea4-bb9439f004a2" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="aaa9ef68-1e4b-46b8-b096-4c1eac9a7d14" xsi:type="graph:DirectPointer"/>
+    </connections>
+    <connections>
+      <sourcePointer target="aecbce1c-7039-44e2-960f-684878f2a8e2" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="83f3378c-f983-4343-9ba2-23698d23c3bf" xsi:type="graph:DirectPointer"/>
+    </connections>
+    <connections>
+      <sourcePointer target="3f25e81c-1c3d-46dd-9537-00197393a833" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="a4469b31-88eb-4d0b-a475-a30eed0167da" xsi:type="graph:DirectPointer"/>
+    </connections>
+    <connections>
+      <sourcePointer target="dc450a86-00a6-48e8-ad5b-e3ed8e73f1da" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="ae677da8-2635-4c43-8f4d-862d9cbb59ad" xsi:type="graph:DirectPointer"/>
+    </connections>
+    <connections>
+      <sourcePointer target="0b971462-034a-43ec-ae89-efc1209497e3" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="1a4b3f20-0843-4b0a-b1d1-2aeb1a6e7a18" xsi:type="graph:DirectPointer"/>
+    </connections>
+    <connections>
+      <sourcePointer target="80539555-f60c-4747-ace1-d2cfadc5d703" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="ea63b169-6a0c-4d1f-b570-c237efd9a0a8" xsi:type="graph:DirectPointer"/>
+    </connections>
+    <connections>
+      <sourcePointer target="9fa49511-b568-4d9a-9cfa-f1f500fad021" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="2b83a086-8f45-4d1c-9d19-92831b2df096" xsi:type="graph:DirectPointer"/>
+    </connections>
+    <connections>
+      <sourcePointer target="6b7b1b24-60e7-465d-aa5f-bc13785a7a7e" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="cb906b2d-bf82-4423-8c7a-fb7e2c48e96c" xsi:type="graph:DirectPointer"/>
+    </connections>
+    <connections>
+      <sourcePointer target="58e79f08-a186-43f6-8182-ccb2dd37703f" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="b4ce6396-5ee2-4b49-a01b-69b9307c14c1" xsi:type="graph:DirectPointer"/>
+    </connections>
+    <connections>
+      <sourcePointer target="cb4ab41b-334d-4179-8c8c-870b82dfb3bc" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="692def65-64ed-498a-bee4-b13706f9c835" xsi:type="graph:DirectPointer"/>
+    </connections>
+    <connections>
+      <sourcePointer target="1df3b7c9-7c61-4d78-bce9-41e965602932" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="80275303-3772-47cc-ac01-9e6487d554a0" xsi:type="graph:DirectPointer"/>
+    </connections>
+    <connections>
+      <sourcePointer target="8d916936-5266-4a30-815e-849274aa6bc3" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="393ad4e3-1be0-42ff-a022-602dc2105e15" xsi:type="graph:DirectPointer"/>
+    </connections>
+    <connections>
+      <sourcePointer target="442c2ea5-7955-49b3-b8b0-6adf92a42826" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="32178bb1-52c0-4be8-afb4-eafbd6ba783b" xsi:type="graph:DirectPointer"/>
+    </connections>
+    <connections>
+      <sourcePointer target="01e7cd4d-5c6d-4a48-825c-80c24a8f10ca" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="2554aca6-cad4-4e61-abd1-090693d6a765" xsi:type="graph:DirectPointer"/>
+    </connections>
+    <connections>
+      <sourcePointer target="4aa045c7-3a9c-45bf-b4e7-51b8b6c4e5f6" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="0c538ede-beca-4ade-b818-e94c8a60396e" xsi:type="graph:DirectPointer"/>
+    </connections>
+    <relations>
+      <sourcePointer target="7c7092ad-5df3-4bc7-9d92-ad2732a8c87e" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="34c4051f-d28a-40ae-866c-4109ae0fc92a" xsi:type="graph:DirectPointer"/>
+    </relations>
+    <relations>
+      <sourcePointer target="b14562f2-4811-4292-9fac-2302633f9e68" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="698c9ce7-91fd-4504-9899-1d079db24fae" xsi:type="graph:DirectPointer"/>
+    </relations>
+    <relations>
+      <sourcePointer target="3d9135b8-72a3-4662-ab6d-d715b8b8f802" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="9cdbba7c-d7d5-460b-831c-5192f0737ba8" xsi:type="graph:DirectPointer"/>
+    </relations>
+    <relations>
+      <sourcePointer target="bfc13edf-59b3-423f-9824-50053b80ee94" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="8c91eecb-7a31-4f97-a741-c1ffd3383cb6" xsi:type="graph:DirectPointer"/>
+    </relations>
+    <relations>
+      <sourcePointer target="654955c6-d34d-4e9f-974f-fb34141087d5" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="62b7a5e8-6217-4649-bd0c-9c96874864ed" xsi:type="graph:DirectPointer"/>
+    </relations>
+    <relations>
+      <sourcePointer target="cca67e79-0bca-433e-8781-5ae1436f6600" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="c2110c41-5652-43d8-b6ae-713b7ad3b8ef" xsi:type="graph:DirectPointer"/>
+    </relations>
+    <relations>
+      <sourcePointer target="6a66632c-e7dd-4ada-b45c-7c715ac71fc8" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="f629f22a-b35f-4c3d-8281-a9c0d61d2182" xsi:type="graph:DirectPointer"/>
+    </relations>
+    <relations>
+      <sourcePointer target="a6a94df6-c4a5-4364-aae4-171fbafe2be9" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="48d8f7e3-1862-46da-a9e9-c4389e7f8aeb" xsi:type="graph:DirectPointer"/>
+    </relations>
+    <relations>
+      <sourcePointer target="3e8ca2f4-8d0b-4bab-82cb-12b97f00844a" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="6a66632c-e7dd-4ada-b45c-7c715ac71fc8" xsi:type="graph:DirectPointer"/>
+    </relations>
+    <relations>
+      <sourcePointer target="96cbfc68-7771-444e-93b1-e073ee1f96e3" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="a65c1a2f-ca58-4680-a4af-e9382f8e145c" xsi:type="graph:DirectPointer"/>
+    </relations>
+    <relations>
+      <sourcePointer target="81fccc9b-f5d3-45de-9a43-ae359b2bf14a" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="36fbe3a5-1b9f-41cf-a693-99b23bfcd5ee" xsi:type="graph:DirectPointer"/>
+    </relations>
+    <relations>
+      <sourcePointer target="cbe1fdad-8b86-4284-a6e0-bdafcfdbe8e3" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="72bc706e-edcd-4a48-9a49-93899b0aa1a0" xsi:type="graph:DirectPointer"/>
+    </relations>
+    <relations>
+      <sourcePointer target="747b55a3-fbaa-401c-828a-de8c910c6c0a" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="9d5f603a-010e-4ff9-9754-4566a221be8a" xsi:type="graph:DirectPointer"/>
+    </relations>
+    <relations name="">
+      <sourcePointer target="ebb40aa2-da91-4a55-9326-297276982d1d" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="1d427b47-2286-4316-abb0-dd3d1b8a080e" xsi:type="graph:DirectPointer"/>
+    </relations>
+    <relations name="">
+      <sourcePointer target="c8d55304-25cc-4923-a9a5-6b3263d3ad44" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="82804026-c07e-4ea1-8b2e-2c6a72e07940" xsi:type="graph:DirectPointer"/>
+    </relations>
+    <relations name="">
+      <sourcePointer target="f8ee4d94-822c-43c9-863a-0a067d3763ed" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="3742e9b0-b086-4b4a-ab01-c610010fb2d9" xsi:type="graph:DirectPointer"/>
+    </relations>
+    <relations name="">
+      <sourcePointer target="bf4ac10d-6064-4028-b532-0f2b94452992" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="72a6f4d1-aab3-433d-9d78-81aaa1d7f482" xsi:type="graph:DirectPointer"/>
+    </relations>
+    <children id="0f68e030-065f-42d4-985d-531b52f77ef1" name="vejov" xsi:type="prem:SystemComponent">
+      <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+      <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+      <connections>
+        <sourcePointer target="de55b540-184f-42a9-aa6e-3c1045583dbe" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="abf43c68-5954-4f4c-8de6-99a8283ab676" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <children id="34e48ec9-4b01-4acc-a43e-21eb523ddd3c" name="wuwes" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+        <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+        <children id="9b2eefdc-7291-42cf-b659-3374cd360f9d" name="pehip" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+          <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+          <children id="bdc266b7-6654-4dff-a326-030ebd8089e2" name="pexed" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+          </children>
+          <children id="34c4051f-d28a-40ae-866c-4109ae0fc92a" name="zagik" xsi:type="prem:SystemComponent"/>
+          <children id="3c5a0d8a-258d-4d76-b879-6ce02dea617c" name="qakif" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+            <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+          </children>
+        </children>
+        <children id="835e1fbb-f234-4d49-865f-bf6ecd1bdad7" name="xulam" xsi:type="prem:SystemComponent"/>
+        <children id="747b55a3-fbaa-401c-828a-de8c910c6c0a" name="maraq" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+          <children id="432fe2a9-bda1-4c41-a5de-ceda99a330c6" name="dadet" xsi:type="prem:SystemComponent"/>
+          <children id="9851ee65-49ee-4e22-bab9-09a0d9b0f3f3" name="ceniq" xsi:type="prem:SystemComponent"/>
+          <children id="1bba574b-5a9a-4615-bbdf-32e95323bb9c" name="yerax" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+          </children>
+        </children>
+        <children id="56bce235-a107-4dc5-bdae-6a88a71b8dca" name="solad" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+        </children>
+      </children>
+      <children id="521d8f23-d285-4443-992a-515046594759" name="capam" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+        <children id="de55b540-184f-42a9-aa6e-3c1045583dbe" name="xemus" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+        </children>
+        <children id="13a6c279-5af5-477a-92af-93dd8ad13adc" name="bugec" xsi:type="prem:SystemComponent"/>
+        <children id="663d709f-0e1e-4f15-b5b8-8009268306f5" name="gireh" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+          <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+        </children>
+        <children id="981717bc-cb2a-4897-8de0-3f94216a9f7d" name="govij" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+        </children>
+        <children id="e179fcce-3699-4a5d-9546-d2a9ea343831" name="lahoy" xsi:type="prem:SystemComponent"/>
+      </children>
+      <children id="45030f6c-56e6-459d-8e3e-8ff8b2852880" name="gamim" xsi:type="prem:SystemComponent">
+        <children id="5c46a392-8ea3-4fee-beb6-bb10f6f30aac" name="yusis" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+          <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+          <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+        </children>
+        <children id="c2110c41-5652-43d8-b6ae-713b7ad3b8ef" name="yadem" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+        </children>
+        <children id="80539555-f60c-4747-ace1-d2cfadc5d703" name="jofub" xsi:type="prem:SystemComponent"/>
+        <children id="3796ec93-f09b-4896-abac-efd8b35d6ea8" name="xiboh" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+        </children>
+        <children id="abf43c68-5954-4f4c-8de6-99a8283ab676" name="vejef" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+        </children>
+      </children>
+    </children>
+    <children id="4f1f48b6-cdde-4b2e-8906-8cb04ec11fe1" name="pedal" xsi:type="prem:SystemComponent">
+      <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+      <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+      <relations>
+        <sourcePointer target="2931ea12-0dfa-459e-b58b-ecfa6d3fb3b7" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="7c7ab625-5b20-4c83-a90f-c6bfbe79d872" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <children id="98833ffb-266d-4f5f-b81c-91de78d8cc34" name="hevab" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+        <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+        <children id="7c7ab625-5b20-4c83-a90f-c6bfbe79d872" name="jimaf" xsi:type="prem:SystemComponent"/>
+        <children id="2f4a6d16-418f-45c4-bdee-ba80a4eeab13" name="furih" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+          <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+        </children>
+        <children id="49db60ec-1066-46c8-8bbf-4997ba0b607f" name="qiyip" xsi:type="prem:SystemComponent"/>
+        <children id="698c9ce7-91fd-4504-9899-1d079db24fae" name="kuhak" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+        </children>
+        <children id="554084a6-5aec-45f5-b6e0-cc5a62173e05" name="hudax" xsi:type="prem:SystemComponent"/>
+      </children>
+      <children id="a4894424-d030-4b32-be0b-85bcbfa13ebe" name="noveh" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+        <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+        <children id="68328083-ce30-4460-8908-f8ec966f5b80" name="geyaw" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+        </children>
+        <children id="a39b7f3f-2428-494e-a019-ec858175e385" name="xabik" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+          <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+          <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+        </children>
+        <children id="cc6b76be-3e9d-427b-95a2-93a1cb2eca0d" name="piwag" xsi:type="prem:SystemComponent"/>
+        <children id="7b225942-3f70-4232-83a1-ce5c61107c3e" name="yokaq" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+        </children>
+        <children id="58e79f08-a186-43f6-8182-ccb2dd37703f" name="kadak" xsi:type="prem:SystemComponent"/>
+      </children>
+      <children id="cb906b2d-bf82-4423-8c7a-fb7e2c48e96c" name="jitos" xsi:type="prem:SystemComponent">
+        <children id="612c48b8-a8ed-47fe-a00d-c18bc4694f00" name="yuwaf" xsi:type="prem:SystemComponent"/>
+        <children id="f56e195a-034c-430b-91d3-aefb3c01c6b1" name="fezov" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+        </children>
+        <children id="9487b084-7825-4071-bf53-4ad0749a2e1f" name="panef" xsi:type="prem:SystemComponent"/>
+        <children id="33ed6b7d-f682-4126-8b33-5a594dfa2e97" name="yokej" xsi:type="prem:SystemComponent"/>
+      </children>
+      <children id="5636eeab-5104-484e-b8ba-0edc2f3349e7" name="senuz" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+        <children id="1d23b0e6-2553-411c-ab96-f496d0454252" name="hipoc" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+        </children>
+        <children id="2931ea12-0dfa-459e-b58b-ecfa6d3fb3b7" name="temeg" xsi:type="prem:SystemComponent"/>
+        <children id="04069fd6-e3fc-4593-b2f2-63fbb5dcc0d5" name="xiraq" xsi:type="prem:SystemComponent"/>
+        <children id="8f62cf67-3807-493f-9ce5-74ce47d84cbf" name="cuces" xsi:type="prem:SystemComponent"/>
+        <children id="2b7b1d6e-5ece-4417-904c-aea2626e00e6" name="qajoc" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+          <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+        </children>
+      </children>
+    </children>
+    <children id="c9622d6c-945d-4c66-8e52-9ba230056eda" name="haway" xsi:type="prem:SystemComponent">
+      <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+      <connections>
+        <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+        <sourcePointer target="dd7f209f-6674-4ca9-9989-2c51da1fdae6" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="dd463b9e-bf42-4f5d-87a7-1bf104d173ba" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <relations>
+        <sourcePointer target="584613f7-b38c-460c-b356-efd3f6f51564" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="17d599c1-0cbd-4538-bb9f-14881105bbb5" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+        <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+        <sourcePointer target="dd463b9e-bf42-4f5d-87a7-1bf104d173ba" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="a6a94df6-c4a5-4364-aae4-171fbafe2be9" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+        <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+        <sourcePointer target="a79f60f4-b6cc-4fdf-92b7-bfc7562fd9c6" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="34dc66f2-3ca1-4a7e-a957-63726f52adda" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="584613f7-b38c-460c-b356-efd3f6f51564" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="9b9b135c-0ceb-45c3-8b2b-43c28918dbd6" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <children id="40e4d424-0e5c-4dad-8248-5955fd73a917" name="yizik" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+        <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+        <children id="f365eaa7-9bc6-440d-a73c-68d7ac8090dc" name="vagul" xsi:type="prem:SystemComponent"/>
+        <children id="9b9b135c-0ceb-45c3-8b2b-43c28918dbd6" name="vitab" xsi:type="prem:SystemComponent">
+          <children id="905c173c-965b-426b-b367-f114301c52e4" name="tabug" xsi:type="prem:SystemComponent"/>
+          <children id="17d599c1-0cbd-4538-bb9f-14881105bbb5" name="danas" xsi:type="prem:SystemComponent"/>
+          <children id="a4ae89c3-6f1c-4276-bb1c-c61fc8ec0bfa" name="dipil" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+          </children>
+        </children>
+        <children id="e3b1ab2f-3ec6-4616-b26e-6db457fc848c" name="qovuq" xsi:type="prem:SystemComponent"/>
+        <children id="63140f74-0a51-4571-9297-60958be2af01" name="zuqim" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+          <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+          <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+        </children>
+      </children>
+      <children id="82f9c2c6-675b-4cce-a39c-c195e5ddda2d" name="buvup" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+        <children id="a79f60f4-b6cc-4fdf-92b7-bfc7562fd9c6" name="cumur" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+          <children id="dd7f209f-6674-4ca9-9989-2c51da1fdae6" name="qezaz" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+            <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+            <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+          </children>
+          <children id="436ef907-59ea-4085-a777-62b4c86d90a8" name="jewih" xsi:type="prem:SystemComponent"/>
+          <children id="99018ae3-1d38-4e3f-922d-d7d3f560828c" name="foduh" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+          </children>
+        </children>
+        <children id="cbe1fdad-8b86-4284-a6e0-bdafcfdbe8e3" name="manik" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+          <children id="7f8c3a21-4845-452b-9525-ad5e32713b87" name="wifiq" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+            <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+            <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+          </children>
+          <children id="5aba166b-3ec4-4e96-97b6-c995e32279c9" name="tehuz" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+          </children>
+          <children id="ba32d7cb-8834-4acd-be61-a882d316d967" name="lasak" xsi:type="prem:SystemComponent"/>
+        </children>
+        <children id="2d3054e5-510e-4934-9357-42b536474dac" name="cefez" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+          <children id="2ca44492-0403-476c-8709-d43c190d7c71" name="zefoq" xsi:type="prem:SystemComponent"/>
+          <children id="a6a94df6-c4a5-4364-aae4-171fbafe2be9" name="xohib" xsi:type="prem:SystemComponent"/>
+          <children id="114fbc73-fb7a-42f5-84e3-03e81d4d7f0b" name="tuliy" xsi:type="prem:SystemComponent"/>
+          <children id="f4bc45df-1a9c-4310-a9fd-6b3d8a6a7057" name="paqir" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+          </children>
+        </children>
+      </children>
+      <children id="731f0a7f-5c39-4280-8771-720a8530e3f6" name="cayoz" xsi:type="prem:SystemComponent">
+        <connections>
+          <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+          <sourcePointer target="731f0a7f-5c39-4280-8771-720a8530e3f6" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="f33d22ce-21f3-4f9c-ad39-5aedb375de25" xsi:type="graph:DirectPointer"/>
+        </connections>
+        <children id="bfc13edf-59b3-423f-9824-50053b80ee94" name="juleh" xsi:type="prem:SystemComponent">
+          <children id="584613f7-b38c-460c-b356-efd3f6f51564" name="moxox" xsi:type="prem:SystemComponent"/>
+          <children id="4abc173f-def8-42e2-9c80-bc7e6825d4b9" name="ninel" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+          </children>
+          <children id="d2cb0422-36e7-4062-9267-5d6d156c3f47" name="boric" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+            <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+          </children>
+        </children>
+        <children id="83c6384e-11e2-4850-ab1c-0cf355139d5e" name="yideh" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+          <children id="dd463b9e-bf42-4f5d-87a7-1bf104d173ba" name="pucan" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+            <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+            <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+          </children>
+          <children id="0009d741-affd-4cb3-baa3-17ecbdb91b69" name="begef" xsi:type="prem:SystemComponent"/>
+          <children id="34dc66f2-3ca1-4a7e-a957-63726f52adda" name="jugid" xsi:type="prem:SystemComponent"/>
+        </children>
+        <children id="c22b6138-c8c9-4ce5-a034-0ecbc0211137" name="mabud" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+          <children id="4cd9a3d2-e420-4401-9e6d-a1c62a8cd833" name="riqev" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+            <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+            <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+          </children>
+          <children id="f33d22ce-21f3-4f9c-ad39-5aedb375de25" name="bafek" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+            <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+          </children>
+          <children id="36fbe3a5-1b9f-41cf-a693-99b23bfcd5ee" name="yekuj" xsi:type="prem:SystemComponent"/>
+        </children>
+      </children>
+    </children>
+    <children id="86834b51-1a68-416a-874a-beb75fdf01b3" name="zoxuz" xsi:type="prem:SystemComponent">
+      <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+      <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+      <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+      <connections>
+        <sourcePointer target="83f3378c-f983-4343-9ba2-23698d23c3bf" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="3f25e81c-1c3d-46dd-9537-00197393a833" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <connections>
+        <sourcePointer target="d2baee6b-9e62-41cc-bc50-78945b361e09" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="e505e465-7625-4c50-9738-c09579ebbd6d" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <relations>
+        <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+        <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+        <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+        <sourcePointer target="83f3378c-f983-4343-9ba2-23698d23c3bf" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="d2baee6b-9e62-41cc-bc50-78945b361e09" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <children id="7361f282-37af-4e7e-8019-8259034e3046" name="pifuq" xsi:type="prem:SystemComponent">
+        <children id="727b6c23-0ecc-476d-89df-f1fc5b7b21ad" name="vatay" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+          <children id="d6f4d4dd-8471-466c-9593-e1a8b83e798a" name="jegit" xsi:type="prem:SystemComponent"/>
+          <children id="ea16ed9a-4095-47c2-9275-a2392dc26b3c" name="nahux" xsi:type="prem:SystemComponent"/>
+          <children id="a0d391db-5134-4a71-a5bf-f979c92f3ba8" name="pamez" xsi:type="prem:SystemComponent"/>
+        </children>
+        <children id="de0b6cee-9ef4-4ea1-a75a-6f8ba6dd049a" name="cotin" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+          <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+        </children>
+        <children id="83f3378c-f983-4343-9ba2-23698d23c3bf" name="kigiq" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+        </children>
+      </children>
+      <children id="459ab27b-d05c-4325-9a91-6aa2f86052ec" name="mowuk" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+        <children id="d6fc1c43-bdd5-47cc-b8c8-5aac2c109690" name="rawoq" xsi:type="prem:SystemComponent"/>
+        <children id="81fccc9b-f5d3-45de-9a43-ae359b2bf14a" name="porow" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+        </children>
+        <children id="3f25e81c-1c3d-46dd-9537-00197393a833" name="noyok" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+        </children>
+        <children id="e505e465-7625-4c50-9738-c09579ebbd6d" name="saxus" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+        </children>
+        <children id="6a66632c-e7dd-4ada-b45c-7c715ac71fc8" name="guyez" xsi:type="prem:SystemComponent"/>
+      </children>
+      <children id="59c13d11-06f7-4277-b06a-4afc73ddf80e" name="wabot" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+        <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+        <children id="d2baee6b-9e62-41cc-bc50-78945b361e09" name="tomij" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+          <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+          <children id="547c7e5b-8106-47b0-a5f9-b445c784479c" name="migus" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+            <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+          </children>
+          <children id="51869a16-02e6-4259-9d19-05d397361c06" name="yuwux" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+            <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+          </children>
+          <children id="1c3d53bc-2660-4329-a00d-40fd9894762e" name="wokuh" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+          </children>
+        </children>
+        <children id="cf3b8c4d-f08f-4125-ae31-61296a2b9c4a" name="reqip" xsi:type="prem:SystemComponent">
+          <children id="fadf56b7-228d-4526-922b-8a64e4723b32" name="yemot" xsi:type="prem:SystemComponent"/>
+          <children id="74e560ef-fb0e-4af0-a8e4-2f449edc60dd" name="posiw" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+          </children>
+          <children id="c85c02b7-c264-4295-a051-b2c8911e6b01" name="fecox" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+            <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+          </children>
+          <children id="20929564-08fa-4a8d-9c5c-be34a8ac39cd" name="gexej" xsi:type="prem:SystemComponent"/>
+        </children>
+        <children id="14581de2-e904-4fe9-b463-abdd45fc358f" name="zapay" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+          <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+          <children id="f9ea5eba-8508-4ef4-8a76-1ce3b48f09e0" name="panid" xsi:type="prem:SystemComponent"/>
+          <children id="81bf72ab-d926-4c0d-8170-97d14adf4f23" name="hatub" xsi:type="prem:SystemComponent"/>
+          <children id="e4706ef9-1701-4148-b48d-31153a4b6a40" name="rebix" xsi:type="prem:SystemComponent"/>
+          <children id="891262a2-6103-4b75-bd33-98a64fb98ef2" name="vomex" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+            <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <children id="4aa045c7-3a9c-45bf-b4e7-51b8b6c4e5f6" name="gojuk" xsi:type="prem:SystemComponent">
+      <relations>
+        <sourcePointer target="cc7b5d66-e665-4390-aaa7-935cbc41539d" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="add5f793-73f0-45cb-a180-e94fbf460c49" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <children id="95a2bc26-e2db-4e76-bc77-e26e3b73ca07" name="qopog" xsi:type="prem:SystemComponent">
+        <children id="37f9f440-e0f3-4746-8597-ac3f1a3248cb" name="cuxuw" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+        </children>
+        <children id="f55cfc75-c67d-4aa9-b14b-8aa29e02d2f3" name="pocez" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+        </children>
+        <children id="b5fc6576-e3dc-4f10-8e48-72935d018a13" name="yedil" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+          <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+        </children>
+      </children>
+      <children id="883eb15a-6018-419b-b20a-8eb9b829ec72" name="mikid" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+        <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+        <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+        <children id="add5f793-73f0-45cb-a180-e94fbf460c49" name="moyap" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+          <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+          <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+          <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+        </children>
+        <children id="7fdd69f9-344c-45f4-b11a-8f7531fa1609" name="kapow" xsi:type="prem:SystemComponent"/>
+        <children id="7546da19-1741-4600-bfda-8116b3b425c6" name="vujiw" xsi:type="prem:SystemComponent"/>
+        <children id="83a769aa-de44-419b-af84-ae4a24e281c3" name="vozej" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+        </children>
+      </children>
+      <children id="e44e4b86-cb3f-43ca-8477-7bb4d49d7bca" name="gurim" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+        <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+        <children id="a6e92f99-87b3-4fde-9947-cae54afa0861" name="kisik" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+        </children>
+        <children id="b14562f2-4811-4292-9fac-2302633f9e68" name="fiyam" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+          <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+          <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+        </children>
+        <children id="b36ab80b-a285-40ad-9d91-4fe07b14763e" name="hotej" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+          <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+        </children>
+      </children>
+      <children id="e70b119d-89fa-415a-9504-bcfc1f16a4b0" name="ziput" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+        <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+      </children>
+      <children id="0ef908b7-3a2f-4462-923a-d46144ab1213" name="xuyom" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+        <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+        <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+        <children id="95c7fd9e-50b2-43f1-b82a-b91acde763c9" name="pujoq" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+          <children id="e1e93c79-b1d9-4e48-852b-ab5c1c5782f9" name="bawib" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+            <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+          </children>
+          <children id="7d795b7d-1a2f-43f8-bea5-fc7106dc7594" name="yomeh" xsi:type="prem:SystemComponent"/>
+          <children id="e822b499-9929-4325-a95a-5457b4da70c0" name="nonig" xsi:type="prem:SystemComponent"/>
+          <children id="d372e6a5-3c1b-4f52-bdb6-b321f485035e" name="rohuh" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+            <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+          </children>
+          <children id="196160b7-4e40-4e5a-819e-6a2e992fb0e9" name="weqiq" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+            <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+          </children>
+        </children>
+        <children id="75e79ed1-f1f6-474c-bfe4-1dbe968f2622" name="zesus" xsi:type="prem:SystemComponent">
+          <children id="666e3d05-2878-400b-8a4c-d0d231c27e2e" name="tizip" xsi:type="prem:SystemComponent">
+            <children id="77aea028-ff45-4dab-a0d7-f5449fce46ec" name="quboj" xsi:type="prem:SystemComponent"/>
+            <children id="3039c52d-1a11-4250-b405-b8eab7ae0a71" name="turel" xsi:type="prem:SystemComponent">
+              <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+              <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+            </children>
+            <children id="af57dce3-2e64-4ae6-8b04-6e235cd77510" name="yidah" xsi:type="prem:SystemComponent">
+              <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+              <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+            </children>
+          </children>
+          <children id="79e62d5f-748d-44e0-8e14-bec7580926db" name="jihux" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+            <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+          </children>
+          <children id="1e09d9b2-0231-456b-8d5e-63b8858ea956" name="gowey" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+            <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+          </children>
+          <children id="8e96d253-2bde-4902-8e1f-34f95cfb1576" name="feqin" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+            <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+            <children id="c9e58458-a5f5-415f-9bc5-752d7338e356" name="woceh" xsi:type="prem:SystemComponent"/>
+            <children id="2a67b89c-1390-40e8-a696-e822a3c7d7c6" name="naheh" xsi:type="prem:SystemComponent">
+              <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+            </children>
+            <children id="cc7b5d66-e665-4390-aaa7-935cbc41539d" name="wolaq" xsi:type="prem:SystemComponent">
+              <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+            </children>
+          </children>
+        </children>
+        <children id="4ba26862-6afc-4c2d-bf97-5a693bf91d19" name="yetip" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+          <children id="d12a7e68-fd2f-45b2-8067-38cbae94efa1" name="hipus" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+          </children>
+          <children id="ebb03445-510a-408d-8219-88b848cfd475" name="ruvon" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+            <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+            <children id="5fdf4744-7314-493a-b094-233b6978c00e" name="zacom" xsi:type="prem:SystemComponent">
+              <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+            </children>
+            <children id="149360ac-00f8-4599-8dc4-d9955b0682b7" name="detow" xsi:type="prem:SystemComponent">
+              <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+              <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+            </children>
+            <children id="a617711f-315f-4495-ad74-5f58bf6cc04c" name="pagar" xsi:type="prem:SystemComponent"/>
+            <children id="7fc9bc57-8d70-49b4-a795-1d35ef37ebcf" name="boyiv" xsi:type="prem:SystemComponent">
+              <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+              <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+            </children>
+          </children>
+          <children id="60246b6d-8c07-4f2a-9946-6148d3a8d7ee" name="jodim" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+            <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+            <children id="82dd1c86-0040-4f7c-996b-e50d3aa19746" name="fonit" xsi:type="prem:SystemComponent">
+              <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+            </children>
+            <children id="a24de07b-4f9f-40d1-8a5b-fb4c53653088" name="hovud" xsi:type="prem:SystemComponent">
+              <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+              <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+            </children>
+            <children id="e65a75dd-8ddc-4feb-bc93-8df61bc54b4d" name="suyum" xsi:type="prem:SystemComponent"/>
+          </children>
+        </children>
+      </children>
+      <children id="f629f22a-b35f-4c3d-8281-a9c0d61d2182" name="xibif" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+        <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+        <children id="f1bd598c-2845-4890-8019-3903b5b15ea9" name="bidis" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+          <children id="4ab2ad08-0b2b-49e2-a1f9-c2ccfb84ecfb" name="lequf" xsi:type="prem:SystemComponent"/>
+          <children id="67d9f1e9-57d8-4cf3-9d30-2386c1b0519a" name="wepis" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+            <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+          </children>
+          <children id="16135c14-ad9c-4e5a-b6bf-cf913cdfcdf5" name="bovop" xsi:type="prem:SystemComponent">
+            <children id="a328204f-7c0f-4fe5-98b9-c671b7700b60" name="hoyaz" xsi:type="prem:SystemComponent">
+              <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+              <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+              <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+            </children>
+            <children id="00ed2bbd-930d-4353-9682-b3bc2e925ee4" name="hosim" xsi:type="prem:SystemComponent">
+              <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+              <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+            </children>
+            <children id="e37b45c7-d3ff-42b6-9089-2b211c2fa9c0" name="piqok" xsi:type="prem:SystemComponent">
+              <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+            </children>
+          </children>
+          <children id="6230fef2-bedd-430e-8502-2630d573aff3" name="kokup" xsi:type="prem:SystemComponent"/>
+        </children>
+        <children id="968c5e4e-1dac-43fd-ad92-a6f9dea9a408" name="pawuq" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+          <children id="4949e1ec-1228-4236-97bb-0fad41620b26" name="dolig" xsi:type="prem:SystemComponent"/>
+          <children id="83c77805-069f-43de-a7cb-8ce6a91881ec" name="yafaz" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+          </children>
+          <children id="7344d90e-4afc-4518-a40d-3877fa632cc3" name="wicob" xsi:type="prem:SystemComponent"/>
+          <children id="cca67e79-0bca-433e-8781-5ae1436f6600" name="sixij" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+          </children>
+          <children id="fae37df2-211e-4958-b167-4bfa8c533c1a" name="sevoc" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+            <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+            <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+            <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+          </children>
+        </children>
+        <children id="b7128ae7-951e-4f0f-81bd-e1d610c5f973" name="wexew" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+          <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+          <children id="bdf36bce-6226-499e-9ac0-c756b2951b9b" name="hagun" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+          </children>
+          <children id="ec4b3e50-8730-4d80-89c4-65183bb3fcc7" name="fayuf" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+            <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+          </children>
+          <children id="faf2ac85-8adc-4a1a-80b1-c7b0ab84a8d2" name="sezoz" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+            <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+          </children>
+          <children id="e29437be-5947-4f4f-8a78-47b83162ca2c" name="qucel" xsi:type="prem:SystemComponent"/>
+          <children id="5247da08-1fa0-4279-8af1-185c31de8e7d" name="zelog" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+            <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+          </children>
+        </children>
+      </children>
+      <children id="e73252ab-f716-4923-9044-ca0021177915" name="mefaf" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+        <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+        <children id="60e4baba-0593-495e-a275-75f6528df703" name="rolew" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+          <children id="934eac58-5d55-4d84-be3b-b24cff13f616" name="luwer" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+            <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+          </children>
+          <children id="3702672c-2941-4b87-85a3-010c0e14995c" name="kibot" xsi:type="prem:SystemComponent"/>
+          <children id="9cdbba7c-d7d5-460b-831c-5192f0737ba8" name="zusej" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+            <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+            <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+          </children>
+          <children id="8548f115-fa4a-4ff1-ad4e-e3934475e5a4" name="kupop" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+          </children>
+        </children>
+        <children id="2625c07a-2db7-4083-96c7-5694b34d98e3" name="tohoz" xsi:type="prem:SystemComponent">
+          <children id="0f6f7937-3ae2-4b3f-b096-38b1b0313c12" name="petig" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+            <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+          </children>
+          <children id="f6bdbe33-72ad-4ef8-806e-b7b3b299605a" name="sajof" xsi:type="prem:SystemComponent"/>
+          <children id="4aa569a7-5b8b-4b64-9abd-b1067e010327" name="zegob" xsi:type="prem:SystemComponent"/>
+        </children>
+        <children id="1a4b3f20-0843-4b0a-b1d1-2aeb1a6e7a18" name="mabiw" xsi:type="prem:SystemComponent">
+          <children id="bfc52de8-793d-49ad-943b-15a8db36e52d" name="wujul" xsi:type="prem:SystemComponent"/>
+          <children id="6740cafa-d937-46fc-89dc-d60f5b3f665f" name="veyaf" xsi:type="prem:SystemComponent"/>
+          <children id="2f3ddbf8-e57d-4e1b-a89d-08af9a7960c2" name="cerem" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+          </children>
+          <children id="22709595-ebf1-42ba-a004-09ee0db48bce" name="kasot" xsi:type="prem:SystemComponent"/>
+          <children id="8e619d17-9922-4885-8038-c442addc7985" name="tanax" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+            <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+          </children>
+        </children>
+        <children id="5982c368-60dd-472c-bb1c-dc70717764bc" name="yirux" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+          <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+          <children id="e600c3b3-5e1e-4dd5-ace8-e2711b9c81e6" name="pixoz" xsi:type="prem:SystemComponent"/>
+          <children id="040bc9d8-da60-49ad-9974-bdfabe8955fa" name="kanac" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+            <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+          </children>
+          <children id="a40c103c-60c8-44ea-a442-7fccfa7f0969" name="luqux" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+          </children>
+          <children id="f881e391-9335-4143-9654-7ceb37cdaeb5" name="bitej" xsi:type="prem:SystemComponent"/>
+        </children>
+      </children>
+      <children id="7ce0820e-4e3b-4073-b587-6e537df6c325" name="qemib" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+        <children id="8c91eecb-7a31-4f97-a741-c1ffd3383cb6" name="cetuv" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+        </children>
+        <children id="9d5f603a-010e-4ff9-9754-4566a221be8a" name="tewiy" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+          <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+          <children id="2ec1e389-6d22-4090-98d4-c34533fb2c68" name="mosid" xsi:type="prem:SystemComponent"/>
+          <children id="8d916936-5266-4a30-815e-849274aa6bc3" name="veral" xsi:type="prem:SystemComponent"/>
+          <children id="ac99cead-54de-4cf3-8e12-f323b4a246e4" name="rucah" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+            <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+          </children>
+        </children>
+        <children id="de52484a-d644-4d5b-895a-45326eb50b68" name="yolul" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+          <children id="d41899b1-f17b-43bb-9dca-f770a3bde607" name="qohop" xsi:type="prem:SystemComponent"/>
+          <children id="ce910753-a005-4dc4-8e16-6f8e3551fe34" name="zufiw" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+          </children>
+          <children id="e70b98a1-ed7c-4945-bebd-924d33325f20" name="buqid" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+          </children>
+        </children>
+        <children id="ee6d2025-9774-482f-8751-aa83906c600f" name="gilow" xsi:type="prem:SystemComponent">
+          <children id="a65c1a2f-ca58-4680-a4af-e9382f8e145c" name="kigod" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+            <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+          </children>
+          <children id="7073dbc9-7895-4db7-898f-f1c8376d7638" name="popif" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+            <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+          </children>
+          <children id="e571b888-a2dc-457c-8008-82bc4b84f379" name="niqun" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+            <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+          </children>
+          <children id="c52fb283-7db9-4c18-96ba-f711464745c5" name="sujip" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+            <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+          </children>
+        </children>
+        <children id="ff503eb9-4485-4067-a7fe-eb0800a0e217" name="ciwav" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+          <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+          <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+          <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+          <children id="17b0c334-5174-4168-8eae-62c7eac14dd7" name="yeheq" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+          </children>
+          <children id="94cd09e1-b84d-4697-9fb3-7c8e44729562" name="kaziw" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+          </children>
+          <children id="4464f0d4-5e83-4887-b031-72ad2bd266d3" name="metib" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <children id="cdc5ef64-ce08-410c-8b72-49ccc04f1ae4" name="mobis" xsi:type="prem:SystemComponent">
+      <connections>
+        <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+        <sourcePointer target="d48409d5-2882-476b-a58b-e83edd916a17" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="7fc112fd-6447-4d7a-824e-361c09e4b451" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <connections>
+        <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+        <sourcePointer target="e29dbfd7-f03e-4e9e-993d-c59249332b73" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="60e7f517-cd23-43a4-a128-f187372f2660" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <connections>
+        <sourcePointer target="442c2ea5-7955-49b3-b8b0-6adf92a42826" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="59f4e95e-b31b-44c0-886a-9ef27beaa37f" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <connections>
+        <sourcePointer target="c11e1256-31f5-4927-bd80-216813798f8f" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="c248b851-0202-4006-b746-df37d649eaec" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <connections>
+        <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+        <sourcePointer target="d48409d5-2882-476b-a58b-e83edd916a17" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="3b1006b6-c6a1-408a-92b8-165d92b1678f" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <connections>
+        <sourcePointer target="5d2c6a36-bfaf-4b90-82db-9da16278de9e" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="8d123bf2-fa4d-4b30-b73a-f80f86a5cb95" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <connections>
+        <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+        <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+        <sourcePointer target="3d9135b8-72a3-4662-ab6d-d715b8b8f802" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="7711839b-1bc3-4176-a9a2-39c609617717" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <connections>
+        <sourcePointer target="36a24029-ff7f-4fbe-b5f3-aeae59f920b7" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="ea63b169-6a0c-4d1f-b570-c237efd9a0a8" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <connections>
+        <sourcePointer target="a70d71e5-8477-4495-ac61-87dbded63e3d" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="641112e1-0ce5-47cf-9def-31b6f4f6500a" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <connections>
+        <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+        <sourcePointer target="4292e22a-1661-451d-9a2c-add1fae0adf3" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="3d9135b8-72a3-4662-ab6d-d715b8b8f802" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <connections>
+        <sourcePointer target="d48409d5-2882-476b-a58b-e83edd916a17" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="301c98f1-6bd8-44a4-8a5a-3cc0cc48f054" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <connections>
+        <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+        <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+        <sourcePointer target="d48409d5-2882-476b-a58b-e83edd916a17" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="8d123bf2-fa4d-4b30-b73a-f80f86a5cb95" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <connections>
+        <sourcePointer target="c737e5f2-417a-40e1-8cbd-84518e1cbd32" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="2554aca6-cad4-4e61-abd1-090693d6a765" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <connections>
+        <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+        <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+        <sourcePointer target="2006b0e5-f901-480b-b81e-c0ac3585a0a0" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="c248b851-0202-4006-b746-df37d649eaec" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <connections>
+        <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+        <sourcePointer target="84c34ff4-bb16-4235-8019-88e7147017de" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="b4ce6396-5ee2-4b49-a01b-69b9307c14c1" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <connections>
+        <sourcePointer target="b4ce6396-5ee2-4b49-a01b-69b9307c14c1" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="5d2c6a36-bfaf-4b90-82db-9da16278de9e" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <connections>
+        <sourcePointer target="2b83a086-8f45-4d1c-9d19-92831b2df096" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="cc8c7a7d-909a-40d0-8679-80ff610da8fd" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <connections>
+        <sourcePointer target="a70d71e5-8477-4495-ac61-87dbded63e3d" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="641112e1-0ce5-47cf-9def-31b6f4f6500a" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <connections>
+        <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+        <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+        <sourcePointer target="692def65-64ed-498a-bee4-b13706f9c835" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="29037d99-55c0-41e4-9e3c-77ec659e234c" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <connections>
+        <sourcePointer target="654955c6-d34d-4e9f-974f-fb34141087d5" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="2554aca6-cad4-4e61-abd1-090693d6a765" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <connections>
+        <sourcePointer target="5e0b5371-49b5-4b06-8e77-216d5f916ebf" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="692def65-64ed-498a-bee4-b13706f9c835" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <connections>
+        <sourcePointer target="de696832-2a21-4b12-b45f-7a6c45cb94ff" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="bc7a5736-a2c9-40a2-bb9b-1be50df593d9" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <relations>
+        <sourcePointer target="8ec6f2c0-bd37-4544-81e3-c91644d08226" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="e77a2089-e844-414f-a681-e61a9fb850ed" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="2464d88f-9736-41d8-997a-35e8effd8e2a" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="ea63b169-6a0c-4d1f-b570-c237efd9a0a8" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="4292e22a-1661-451d-9a2c-add1fae0adf3" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="641112e1-0ce5-47cf-9def-31b6f4f6500a" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="55c3d32d-2792-4f69-a871-a17faa2dd6ad" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="a3cd24f2-2a5f-48a6-84c1-5810e7e24ba8" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="47e93577-9e4f-4f71-a01a-01ddae68bfa9" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="2006b0e5-f901-480b-b81e-c0ac3585a0a0" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+        <sourcePointer target="5e0b5371-49b5-4b06-8e77-216d5f916ebf" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="2554aca6-cad4-4e61-abd1-090693d6a765" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="402f19fa-3d5e-4942-986b-1a52170c1ad3" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="72a6f4d1-aab3-433d-9d78-81aaa1d7f482" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+        <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+        <sourcePointer target="37295df7-dab1-4fe3-ba48-2f7eab6110a1" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="47e93577-9e4f-4f71-a01a-01ddae68bfa9" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="35d795ee-e700-4d22-81bf-7eea970c2465" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="de696832-2a21-4b12-b45f-7a6c45cb94ff" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+        <sourcePointer target="b1d59a5a-0686-442e-bd6b-32d28d89bb7c" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="c248b851-0202-4006-b746-df37d649eaec" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="c2e16464-8d10-40f5-b824-797ffdfac182" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="8d123bf2-fa4d-4b30-b73a-f80f86a5cb95" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+        <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+        <sourcePointer target="62062d1e-07de-403f-9783-00c8b82d813c" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="e36141e6-38f2-40fe-bd32-df65937305ba" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+        <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+        <sourcePointer target="d35c2e40-f228-4314-9fcb-6e9b88d2793c" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="c2e16464-8d10-40f5-b824-797ffdfac182" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="d84cb0a6-d530-46e2-9450-9dfc1527790b" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="8ec6f2c0-bd37-4544-81e3-c91644d08226" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="83714734-0909-4383-88f3-91117faadecf" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="c2e16464-8d10-40f5-b824-797ffdfac182" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="9c3b586a-0977-48ee-8a55-07a51bbcc36d" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="654955c6-d34d-4e9f-974f-fb34141087d5" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="4cd6a4cd-2263-4835-98ce-210d0a661c8d" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="83714734-0909-4383-88f3-91117faadecf" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="90a16305-b876-4b75-aa51-f417169639bd" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="62062d1e-07de-403f-9783-00c8b82d813c" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="cc8c7a7d-909a-40d0-8679-80ff610da8fd" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="6eddddc4-9d67-41bf-9eed-e828c92ca7cf" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+        <sourcePointer target="4b7da627-65a7-4df9-b5d4-f3e9e01bf28d" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="d0dba7f1-aab5-42f8-8a8c-0592ae23bdeb" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+        <sourcePointer target="641886db-bd56-4458-bb0f-97a5bd361b63" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="82804026-c07e-4ea1-8b2e-2c6a72e07940" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+        <sourcePointer target="2006b0e5-f901-480b-b81e-c0ac3585a0a0" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="b1d59a5a-0686-442e-bd6b-32d28d89bb7c" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="4292e22a-1661-451d-9a2c-add1fae0adf3" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="bf51c328-37c0-413d-943a-c93297aa0b90" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="2006b0e5-f901-480b-b81e-c0ac3585a0a0" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="37295df7-dab1-4fe3-ba48-2f7eab6110a1" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="37295df7-dab1-4fe3-ba48-2f7eab6110a1" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="62062d1e-07de-403f-9783-00c8b82d813c" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="692def65-64ed-498a-bee4-b13706f9c835" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="9c3b586a-0977-48ee-8a55-07a51bbcc36d" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="cdc5ef64-ce08-410c-8b72-49ccc04f1ae4" xsi:type="graph:DirectPointer"/>
+        <targetPointer xsi:type="graph:DirectPointer">
+          <target href="input.usecase#210752c5-7ec5-4d10-896f-70482eadd5e4" xsi:type="uc:UseCase"/>
+        </targetPointer>
+      </relations>
+      <children id="6eddddc4-9d67-41bf-9eed-e828c92ca7cf" name="qapib" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+        <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+        <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+      </children>
+      <children id="c11e1256-31f5-4927-bd80-216813798f8f" name="linuw" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+        <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+        <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+        <parameters id="0d81cae7-3f88-4121-961e-6d25d581f7ab" name="p1">
+          <value value="-3.0"/>
+        </parameters>
+        <parameters id="fca93c17-7e75-4a0a-aebc-54a247455470" name="p2">
+          <value value="1"/>
+        </parameters>
+        <parameters id="2565060a-ad55-4ce1-853a-e6cecf0f4715" name="p3">
+          <value value="4"/>
+        </parameters>
+        <balancings function="p1 = p2 - p3">
+          <actualSources key="p2">
+            <value target="fca93c17-7e75-4a0a-aebc-54a247455470" xsi:type="graph:DirectPointer"/>
+          </actualSources>
+          <actualSources key="p3">
+            <value target="2565060a-ad55-4ce1-853a-e6cecf0f4715" xsi:type="graph:DirectPointer"/>
+          </actualSources>
+          <actualTarget key="p1">
+            <value target="0d81cae7-3f88-4121-961e-6d25d581f7ab" xsi:type="graph:DirectPointer"/>
+          </actualTarget>
+        </balancings>
+        <children id="e36141e6-38f2-40fe-bd32-df65937305ba" name="bifaf" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+          <relations>
+            <sourcePointer target="e36141e6-38f2-40fe-bd32-df65937305ba" xsi:type="graph:DirectPointer"/>
+            <targetPointer target="e36141e6-38f2-40fe-bd32-df65937305ba" xsi:type="graph:DirectPointer"/>
+          </relations>
+          <relations>
+            <sourcePointer target="e36141e6-38f2-40fe-bd32-df65937305ba" xsi:type="graph:DirectPointer"/>
+            <targetPointer target="dc450a86-00a6-48e8-ad5b-e3ed8e73f1da" xsi:type="graph:DirectPointer"/>
+          </relations>
+        </children>
+        <children id="72a6f4d1-aab3-433d-9d78-81aaa1d7f482" name="zubiz" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+          <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+          <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+        </children>
+        <children id="d29f252c-fa3e-4112-9ebd-5dd5a5041df8" name="hocog" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+          <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+          <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+          <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+          <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+        </children>
+      </children>
+      <children id="442c2ea5-7955-49b3-b8b0-6adf92a42826" name="riwaq" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+        <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+        <satisfies>
+          <targetPointer xsi:type="graph:DirectPointer">
+            <target href="input.usecase#3f1eb4ac-c85b-438a-bd69-79d914c70794" xsi:type="uc:UseCase"/>
+          </targetPointer>
+        </satisfies>
+        <connections name="">
+          <sourcePointer target="442c2ea5-7955-49b3-b8b0-6adf92a42826" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="442c2ea5-7955-49b3-b8b0-6adf92a42826" xsi:type="graph:DirectPointer"/>
+        </connections>
+      </children>
+      <children id="e77a2089-e844-414f-a681-e61a9fb850ed" name="rirol" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+        <connections>
+          <sourcePointer target="2554aca6-cad4-4e61-abd1-090693d6a765" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="e77a2089-e844-414f-a681-e61a9fb850ed" xsi:type="graph:DirectPointer"/>
+        </connections>
+        <children id="2554aca6-cad4-4e61-abd1-090693d6a765" name="tifoh" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+        </children>
+        <children id="2006b0e5-f901-480b-b81e-c0ac3585a0a0" name="kotoj" xsi:type="prem:SystemComponent"/>
+        <children id="d0dba7f1-aab5-42f8-8a8c-0592ae23bdeb" name="wubuy" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+          <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+        </children>
+      </children>
+      <children id="641112e1-0ce5-47cf-9def-31b6f4f6500a" name="jisar" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+      </children>
+      <children id="1ce78b84-967b-4482-90c6-9522fc70efd0" name="pafix" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+        <connections>
+          <sourcePointer target="81f2cb2c-44d2-4c8c-bb2d-b6efd02a0e80" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="165fc272-c775-4cb3-be3c-970c398169d1" xsi:type="graph:DirectPointer"/>
+        </connections>
+        <children id="b1d59a5a-0686-442e-bd6b-32d28d89bb7c" name="vigeg" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+          <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+          <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+        </children>
+        <children id="81f2cb2c-44d2-4c8c-bb2d-b6efd02a0e80" name="zajep" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+          <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+          <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+          <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+          <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+        </children>
+        <children id="2b83a086-8f45-4d1c-9d19-92831b2df096" name="lixur" xsi:type="prem:SystemComponent">
+          <children id="8d123bf2-fa4d-4b30-b73a-f80f86a5cb95" name="qisey" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+            <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+            <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+          </children>
+          <children id="165fc272-c775-4cb3-be3c-970c398169d1" name="sasiw" xsi:type="prem:SystemComponent"/>
+          <children id="771943a1-a017-43f8-9242-b2c9b662e9c4" name="mucuv" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+            <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+            <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+            <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+            <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+          </children>
+        </children>
+        <children id="4292e22a-1661-451d-9a2c-add1fae0adf3" name="muluj" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+          <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+          <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+          <children id="7711839b-1bc3-4176-a9a2-39c609617717" name="kemay" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+            <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+          </children>
+          <children id="5e0b5371-49b5-4b06-8e77-216d5f916ebf" name="polen" xsi:type="prem:SystemComponent"/>
+          <children id="65151dfc-f3c6-4e18-9b04-d1742b671f8e" name="xahir" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+            <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+          </children>
+          <children id="b4ce6396-5ee2-4b49-a01b-69b9307c14c1" name="komol" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+            <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+          </children>
+        </children>
+        <children id="402f19fa-3d5e-4942-986b-1a52170c1ad3" name="migid" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+          <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+          <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+          <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+        </children>
+      </children>
+      <children id="e74a3984-dbc2-4c53-9cd1-d7054447774d" name="nahic" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+        <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+        <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+        <connections>
+          <sourcePointer target="59f4e95e-b31b-44c0-886a-9ef27beaa37f" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="e74a3984-dbc2-4c53-9cd1-d7054447774d" xsi:type="graph:DirectPointer"/>
+        </connections>
+        <connections>
+          <sourcePointer target="cbf772bb-9ba1-49ae-9dec-a2247f476f0a" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="301c98f1-6bd8-44a4-8a5a-3cc0cc48f054" xsi:type="graph:DirectPointer"/>
+        </connections>
+        <connections>
+          <sourcePointer target="f70cf2a2-9c1f-493f-a196-17adad3df6dd" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="e74a3984-dbc2-4c53-9cd1-d7054447774d" xsi:type="graph:DirectPointer"/>
+        </connections>
+        <connections>
+          <sourcePointer target="b52d82a1-7767-4922-bcef-2f932607c3ca" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="bc7a5736-a2c9-40a2-bb9b-1be50df593d9" xsi:type="graph:DirectPointer"/>
+        </connections>
+        <relations>
+          <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+          <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+          <sourcePointer target="e25c716b-466f-4e47-bb05-fdcc2ace5891" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="83714734-0909-4383-88f3-91117faadecf" xsi:type="graph:DirectPointer"/>
+        </relations>
+        <children id="cbf772bb-9ba1-49ae-9dec-a2247f476f0a" name="zafey" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+          <children id="e25c716b-466f-4e47-bb05-fdcc2ace5891" name="hucek" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+          </children>
+          <children id="186050b5-3f5a-46d2-b177-1f8384cbe332" name="vugux" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+            <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+            <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+          </children>
+          <children id="4b7da627-65a7-4df9-b5d4-f3e9e01bf28d" name="yelok" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+          </children>
+          <children id="bc7a5736-a2c9-40a2-bb9b-1be50df593d9" name="fuxiv" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+            <satisfies>
+              <targetPointer xsi:type="graph:DirectPointer">
+                <target href="input.usecase#3f1eb4ac-c85b-438a-bd69-79d914c70794" xsi:type="uc:UseCase"/>
+              </targetPointer>
+            </satisfies>
+          </children>
+          <children id="29037d99-55c0-41e4-9e3c-77ec659e234c" name="jocon" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+            <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+          </children>
+        </children>
+        <children id="83714734-0909-4383-88f3-91117faadecf" name="quval" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+          <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+          <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+          <children id="84c34ff4-bb16-4235-8019-88e7147017de" name="wucop" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+          </children>
+          <children id="f683c536-38a3-4d2b-88bc-e49d68ef5140" name="sageb" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+          </children>
+          <children id="b52d82a1-7767-4922-bcef-2f932607c3ca" name="quyuc" xsi:type="prem:SystemComponent"/>
+          <children id="f70cf2a2-9c1f-493f-a196-17adad3df6dd" name="waxuj" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+            <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+          </children>
+          <children id="301c98f1-6bd8-44a4-8a5a-3cc0cc48f054" name="vapih" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+            <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+            <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+          </children>
+        </children>
+        <children id="90a16305-b876-4b75-aa51-f417169639bd" name="dapal" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+          <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+          <relations>
+            <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+            <sourcePointer target="90a16305-b876-4b75-aa51-f417169639bd" xsi:type="graph:DirectPointer"/>
+            <targetPointer target="d35c2e40-f228-4314-9fcb-6e9b88d2793c" xsi:type="graph:DirectPointer"/>
+          </relations>
+          <children id="1b9a9a3d-7b4d-4300-8537-fb79c970223f" name="feweb" xsi:type="prem:SystemComponent">
+            <children id="605d9246-7c33-4eb1-ba66-a61aeeef6785" name="zezog" xsi:type="prem:SystemComponent">
+              <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+              <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+              <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+              <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+            </children>
+            <children id="80275303-3772-47cc-ac01-9e6487d554a0" name="sibuy" xsi:type="prem:SystemComponent"/>
+            <children id="eb647410-9826-408a-8d64-3d995b09ef04" name="zejal" xsi:type="prem:SystemComponent">
+              <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+            </children>
+            <children id="c248b851-0202-4006-b746-df37d649eaec" name="cogiv" xsi:type="prem:SystemComponent">
+              <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+              <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+            </children>
+          </children>
+          <children id="9c3b586a-0977-48ee-8a55-07a51bbcc36d" name="simux" xsi:type="prem:SystemComponent">
+            <children id="35d795ee-e700-4d22-81bf-7eea970c2465" name="koxeb" xsi:type="prem:SystemComponent"/>
+            <children id="ea63b169-6a0c-4d1f-b570-c237efd9a0a8" name="puyor" xsi:type="prem:SystemComponent">
+              <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+            </children>
+            <children id="3d9135b8-72a3-4662-ab6d-d715b8b8f802" name="jajiy" xsi:type="prem:SystemComponent">
+              <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+              <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+              <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+            </children>
+          </children>
+          <children id="59f4e95e-b31b-44c0-886a-9ef27beaa37f" name="gofik" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+            <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+            <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+            <children id="d35c2e40-f228-4314-9fcb-6e9b88d2793c" name="qupar" xsi:type="prem:SystemComponent">
+              <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+              <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+            </children>
+            <children id="3b1006b6-c6a1-408a-92b8-165d92b1678f" name="jocew" xsi:type="prem:SystemComponent">
+              <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+            </children>
+            <children id="37295df7-dab1-4fe3-ba48-2f7eab6110a1" name="civuc" xsi:type="prem:SystemComponent">
+              <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+            </children>
+          </children>
+        </children>
+      </children>
+      <children id="1d427b47-2286-4316-abb0-dd3d1b8a080e" name="noror" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+        <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+        <connections>
+          <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+          <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+          <sourcePointer target="cc8c7a7d-909a-40d0-8679-80ff610da8fd" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="a70d71e5-8477-4495-ac61-87dbded63e3d" xsi:type="graph:DirectPointer"/>
+        </connections>
+        <connections>
+          <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+          <sourcePointer target="d84cb0a6-d530-46e2-9450-9dfc1527790b" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="de696832-2a21-4b12-b45f-7a6c45cb94ff" xsi:type="graph:DirectPointer"/>
+        </connections>
+        <children id="3742e9b0-b086-4b4a-ab01-c610010fb2d9" name="mofov" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+          <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+          <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+          <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+          <connections>
+            <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+            <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+            <sourcePointer target="641886db-bd56-4458-bb0f-97a5bd361b63" xsi:type="graph:DirectPointer"/>
+            <targetPointer target="cc8c7a7d-909a-40d0-8679-80ff610da8fd" xsi:type="graph:DirectPointer"/>
+          </connections>
+          <children id="641886db-bd56-4458-bb0f-97a5bd361b63" name="naxax" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+            <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+          </children>
+          <children id="a4469b31-88eb-4d0b-a475-a30eed0167da" name="qugev" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+          </children>
+          <children id="cc8c7a7d-909a-40d0-8679-80ff610da8fd" name="puwej" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+            <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+          </children>
+          <children id="60e7f517-cd23-43a4-a128-f187372f2660" name="pamux" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+            <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+            <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+            <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+          </children>
+        </children>
+        <children id="cc62eccf-bf69-4e71-b0f3-f6b57cccf571" name="nitih" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+          <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+          <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+          <children id="de696832-2a21-4b12-b45f-7a6c45cb94ff" name="bopof" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+            <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+          </children>
+          <children id="3d05e2ca-14ca-43a3-a1d7-7fdc79762e2a" name="diyob" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+            <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+          </children>
+          <children id="692def65-64ed-498a-bee4-b13706f9c835" name="segiz" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+            <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+            <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+            <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+            <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+          </children>
+        </children>
+        <children id="a3cd24f2-2a5f-48a6-84c1-5810e7e24ba8" name="sodoz" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+          <children id="d84cb0a6-d530-46e2-9450-9dfc1527790b" name="kabem" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+            <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+            <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+          </children>
+          <children id="5d2c6a36-bfaf-4b90-82db-9da16278de9e" name="xices" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+            <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+            <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+            <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+          </children>
+          <children id="7fc112fd-6447-4d7a-824e-361c09e4b451" name="xoxob" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+          </children>
+        </children>
+        <children id="2464d88f-9736-41d8-997a-35e8effd8e2a" name="kekeq" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+          <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+          <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+        </children>
+        <children id="a70d71e5-8477-4495-ac61-87dbded63e3d" name="givod" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+        </children>
+      </children>
+      <children id="8ec6f2c0-bd37-4544-81e3-c91644d08226" name="xajeq" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+        <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+        <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+        <connections>
+          <sourcePointer target="7dedfa1b-a652-4357-9b4b-05f7d9a35f4c" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="c2e16464-8d10-40f5-b824-797ffdfac182" xsi:type="graph:DirectPointer"/>
+        </connections>
+        <connections>
+          <sourcePointer target="47e93577-9e4f-4f71-a01a-01ddae68bfa9" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="e29dbfd7-f03e-4e9e-993d-c59249332b73" xsi:type="graph:DirectPointer"/>
+        </connections>
+        <relations>
+          <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+          <sourcePointer target="55c3d32d-2792-4f69-a871-a17faa2dd6ad" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="7dedfa1b-a652-4357-9b4b-05f7d9a35f4c" xsi:type="graph:DirectPointer"/>
+        </relations>
+        <relations>
+          <sourcePointer target="36a24029-ff7f-4fbe-b5f3-aeae59f920b7" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="bf51c328-37c0-413d-943a-c93297aa0b90" xsi:type="graph:DirectPointer"/>
+        </relations>
+        <relations>
+          <sourcePointer target="c2e16464-8d10-40f5-b824-797ffdfac182" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="4cd6a4cd-2263-4835-98ce-210d0a661c8d" xsi:type="graph:DirectPointer"/>
+        </relations>
+        <children id="4cd6a4cd-2263-4835-98ce-210d0a661c8d" name="huqom" xsi:type="prem:SystemComponent">
+          <children id="5673abeb-6e7c-44b1-b9dd-bc54ecafa0da" name="viboz" xsi:type="prem:SystemComponent"/>
+          <children id="393ad4e3-1be0-42ff-a022-602dc2105e15" name="rilov" xsi:type="prem:SystemComponent"/>
+          <children id="7dedfa1b-a652-4357-9b4b-05f7d9a35f4c" name="dujem" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+            <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+          </children>
+        </children>
+        <children id="3831ebd3-8e62-4590-8503-ccae9ab88197" name="ximep" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+          <relations name="">
+            <sourcePointer target="3831ebd3-8e62-4590-8503-ccae9ab88197" xsi:type="graph:DirectPointer"/>
+            <targetPointer xsi:type="graph:DirectPointer">
+              <target href="input.usecase#210752c5-7ec5-4d10-896f-70482eadd5e4" xsi:type="uc:UseCase"/>
+            </targetPointer>
+          </relations>
+        </children>
+        <children id="6303be89-7833-4b01-bcc6-469119be6004" name="walet" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+          <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+          <children id="c2ecbed3-fa1a-491a-a97e-78eef0881f82" name="bizus" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+            <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+            <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+          </children>
+          <children id="f1469fa2-5dfb-4e69-af7a-6c032bae5cc6" name="vegah" xsi:type="prem:SystemComponent"/>
+          <children id="36a24029-ff7f-4fbe-b5f3-aeae59f920b7" name="ceber" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+            <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+            <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+          </children>
+        </children>
+        <children id="c2e16464-8d10-40f5-b824-797ffdfac182" name="wegex" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+          <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+          <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+          <relations>
+            <sourcePointer target="c2e16464-8d10-40f5-b824-797ffdfac182" xsi:type="graph:DirectPointer"/>
+            <targetPointer target="3a50722c-cf3b-4706-9fbd-53ffc34c5d1f" xsi:type="graph:DirectPointer"/>
+          </relations>
+          <children id="654955c6-d34d-4e9f-974f-fb34141087d5" name="nesuy" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+            <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+          </children>
+          <children id="bf51c328-37c0-413d-943a-c93297aa0b90" name="jifaz" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+            <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+          </children>
+          <children id="47e93577-9e4f-4f71-a01a-01ddae68bfa9" name="buzul" xsi:type="prem:SystemComponent"/>
+          <children id="82804026-c07e-4ea1-8b2e-2c6a72e07940" name="bopuf" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+            <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+          </children>
+        </children>
+        <children id="c737e5f2-417a-40e1-8cbd-84518e1cbd32" name="tahod" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+          <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+          <children id="e29dbfd7-f03e-4e9e-993d-c59249332b73" name="kohup" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+            <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+          </children>
+          <children id="d48409d5-2882-476b-a58b-e83edd916a17" name="juziq" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+            <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+          </children>
+          <children id="62062d1e-07de-403f-9783-00c8b82d813c" name="honoq" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+          </children>
+          <children id="55c3d32d-2792-4f69-a871-a17faa2dd6ad" name="ciyeh" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+          </children>
+        </children>
+      </children>
+    <statemachines name="mobis">
+<modes entryMode="true" id="1a68dfcb-937b-4ef1-8886-b690b23e9852" name="1"/>
+<modes id="8f2df9b2-4265-4453-9df5-7166b9dfd072" name="2"/>
+<modes id="f35ae6a6-bd4a-44a4-bc59-e578d06add68" name="3"/>
+<modes id="0a550507-4174-4542-b01a-b49c7cbe68de" name="4"/>
+<transitions id="47263680-200d-4c7d-9f78-2d6b3a52c04e">
+        <sourcePointer target="1a68dfcb-937b-4ef1-8886-b690b23e9852" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="8f2df9b2-4265-4453-9df5-7166b9dfd072" xsi:type="graph:DirectPointer"/>
+      </transitions>
+<transitions id="b9b0c89c-492f-4aa6-a9f5-d8669614e27b">
+        <sourcePointer target="8f2df9b2-4265-4453-9df5-7166b9dfd072" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="f35ae6a6-bd4a-44a4-bc59-e578d06add68" xsi:type="graph:DirectPointer"/>
+      </transitions>
+<transitions id="14b42af9-c4a0-4576-87ae-37a50247241f">
+        <sourcePointer target="f35ae6a6-bd4a-44a4-bc59-e578d06add68" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="0a550507-4174-4542-b01a-b49c7cbe68de" xsi:type="graph:DirectPointer"/>
+      </transitions>
+<transitions id="ea6257e3-5c91-4a5b-aa38-b33dc6a6b85d">
+        <sourcePointer target="0a550507-4174-4542-b01a-b49c7cbe68de" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="1a68dfcb-937b-4ef1-8886-b690b23e9852" xsi:type="graph:DirectPointer"/>
+      </transitions>
+<transitions id="950df197-6215-4d80-8643-80ec9d5b750f">
+        <sourcePointer target="f35ae6a6-bd4a-44a4-bc59-e578d06add68" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="8f2df9b2-4265-4453-9df5-7166b9dfd072" xsi:type="graph:DirectPointer"/>
+      </transitions>
+</statemachines>
+</children>
+    <children id="d64b098f-e90a-49f6-a178-2c6f029532f4" name="xucof" xsi:type="prem:SystemComponent">
+      <children id="dab7a819-c21d-46be-84d6-807b6e4b381b" name="horul" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+        <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+        <children id="aecbce1c-7039-44e2-960f-684878f2a8e2" name="zudur" xsi:type="prem:SystemComponent"/>
+        <children id="db641b61-9515-43c5-b9f3-357c2da6b06d" name="hasos" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+        </children>
+        <children id="edb8276a-afbb-4fa0-8a94-5809e2cb1dd4" name="rariq" xsi:type="prem:SystemComponent"/>
+        <children id="26d10408-99cb-4761-b601-93f0185ff5d7" name="gikiw" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+        </children>
+        <children id="b44a34aa-d207-487d-88a4-f5c10e8563cf" name="kavey" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+        </children>
+      </children>
+      <children id="17856a17-172c-4737-b64c-4a8c0db01667" name="nuwol" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+        <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+        <children id="feedc775-3261-467d-b855-91b4066b9649" name="sewiz" xsi:type="prem:SystemComponent"/>
+        <children id="e26d8b66-b6d0-4337-992a-2e1a767c98d3" name="limiq" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+          <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+        </children>
+        <children id="6b7b1b24-60e7-465d-aa5f-bc13785a7a7e" name="vokin" xsi:type="prem:SystemComponent"/>
+        <children id="d6951c26-b21c-456f-813b-2ade2c6026d9" name="rurib" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+          <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+        </children>
+        <children id="72bc4a40-ae47-4f8c-9438-7a38080bce11" name="kurar" xsi:type="prem:SystemComponent"/>
+      </children>
+      <children id="0e19d6ef-5aec-47da-85c6-54c11955efe2" name="sociz" xsi:type="prem:SystemComponent">
+        <children id="4ec3a353-e623-4edb-9098-1f5361681d85" name="lomij" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+          <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+        </children>
+        <children id="9fa49511-b568-4d9a-9cfa-f1f500fad021" name="civas" xsi:type="prem:SystemComponent"/>
+        <children id="2ece49cb-3f9a-4ca3-a668-667b258dbc21" name="yeyog" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+        </children>
+        <children id="530334e7-460c-4798-8f0a-bebdaca21caf" name="lejak" xsi:type="prem:SystemComponent"/>
+        <children id="f92e735b-1f86-4791-9b91-d7e6dd269ed4" name="deqig" xsi:type="prem:SystemComponent"/>
+      </children>
+    </children>
+    <children id="568922fd-d675-4155-ba4a-c902ed800ef1" name="mohuf" xsi:type="prem:SystemComponent">
+      <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+      <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+      <children id="5143a285-aaa0-4150-91c6-201a4d0a9185" name="yaker" xsi:type="prem:SystemComponent">
+        <children id="a83af346-5b86-4770-9338-fc0fbc05cbc7" name="goboc" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+          <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+        </children>
+        <children id="e54402e3-b80a-4e80-a70d-9fadad6c105d" name="duzuy" xsi:type="prem:SystemComponent"/>
+        <children id="a68148d7-0bec-4ce8-931f-8f7bb7ad1371" name="sobuk" xsi:type="prem:SystemComponent"/>
+      </children>
+      <children id="72bc706e-edcd-4a48-9a49-93899b0aa1a0" name="layub" xsi:type="prem:SystemComponent">
+        <children id="136e9155-3dd3-4f6a-aa29-42526d379621" name="lucor" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+        </children>
+        <children id="daa13298-1dd7-42fa-b67f-d56d228a067b" name="zusoc" xsi:type="prem:SystemComponent"/>
+        <children id="30a0b415-fa25-4f7a-aa77-3af2c30f6bdc" name="fokel" xsi:type="prem:SystemComponent"/>
+      </children>
+      <children id="7c7092ad-5df3-4bc7-9d92-ad2732a8c87e" name="hevug" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+        <children id="58c72ece-a358-4a7c-a7be-e81fcd26d1e1" name="topob" xsi:type="prem:SystemComponent"/>
+        <children id="96cbfc68-7771-444e-93b1-e073ee1f96e3" name="niris" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+        </children>
+        <children id="18a7e87d-94be-4321-869a-7c4ccd6daa3c" name="qafam" xsi:type="prem:SystemComponent"/>
+      </children>
+      <children id="83367bb6-e722-4dcd-95e3-c9ad55d0b240" name="fekit" xsi:type="prem:SystemComponent">
+        <children id="f405e5dd-17d1-4615-9312-e084db1d54dd" name="cizal" xsi:type="prem:SystemComponent"/>
+        <children id="1a96972b-ce15-439d-8e11-f5c34fcc8376" name="segaw" xsi:type="prem:SystemComponent"/>
+        <children id="aaa9ef68-1e4b-46b8-b096-4c1eac9a7d14" name="vihak" xsi:type="prem:SystemComponent"/>
+      </children>
+    </children>
+    <children id="0c538ede-beca-4ade-b818-e94c8a60396e" name="vumil" xsi:type="prem:SystemComponent">
+      <children id="1b109dad-256a-4a1d-a2f2-2e6b8c64c117" name="kexas" xsi:type="prem:SystemComponent">
+        <children id="3861a4fa-6bdc-45d1-ae91-0c4594961350" name="lizog" xsi:type="prem:SystemComponent"/>
+        <children id="2b6dc243-d5dc-4f59-9db7-4aa9419ebb0b" name="tofey" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#7877b6d0-9672-4577-aa50-d275803c12d6"/>
+          <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+        </children>
+        <children id="427a98ac-0385-4fe2-8074-c81074e51e5a" name="yisix" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+        </children>
+      </children>
+      <children id="87a06819-4671-41e1-83e9-eed999496058" name="hesar" xsi:type="prem:SystemComponent">
+        <children id="b30d2d2c-ce86-4893-8d3e-d74f580722d2" name="hofad" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+        </children>
+        <children id="a052adcb-7de7-4b30-b93e-a1c6b497f245" name="rewev" xsi:type="prem:SystemComponent"/>
+        <children id="3ddfbd13-f1c6-4081-a81a-5e89500985dd" name="cupum" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+          <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+        </children>
+        <children id="e8d10d7d-db12-49dc-8cb6-c5643a220083" name="capon" xsi:type="prem:SystemComponent"/>
+      </children>
+      <children id="3e8ca2f4-8d0b-4bab-82cb-12b97f00844a" name="xequy" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+        <children id="99053aa4-7a33-4cf4-804c-3a9935464ab2" name="rofen" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+        </children>
+        <children id="73ff6a0f-0f49-4212-834c-22ec3b4769be" name="mefis" xsi:type="prem:SystemComponent"/>
+        <children id="6cd9c92c-b4e3-47a1-84f9-1c2ea678a334" name="sovuk" xsi:type="prem:SystemComponent"/>
+      </children>
+      <children id="f43b2658-b1fd-4d9e-ba96-67064de68e74" name="zekaz" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+        <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+        <children id="ef030c63-b347-4f72-9450-f4378e54d50f" name="loreq" xsi:type="prem:SystemComponent"/>
+        <children id="2ca35aa1-61f7-42cd-a1a4-36572c2b3319" name="lefuh" xsi:type="prem:SystemComponent"/>
+        <children id="62e324c8-c1c4-478f-a348-48f1495167be" name="yecal" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+          <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+        </children>
+        <children id="4201012e-b9fd-4fa6-9a17-f2f6c9ad29bf" name="kujos" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+        </children>
+      </children>
+    </children>
+    <children id="d9077233-1569-475b-9924-9b780aa62958" name="mameh" xsi:type="prem:SystemComponent">
+      <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+      <children id="9af39db1-9532-40b7-8095-9bbd81da1253" name="visun" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+        <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+        <children id="03d35f03-1cc6-4807-9289-cbafd62e28b9" name="yaqek" xsi:type="prem:SystemComponent"/>
+        <children id="13c20a23-0042-440d-a73f-18cced5142a8" name="nanij" xsi:type="prem:SystemComponent"/>
+        <children id="c2cc308a-e1b3-4c64-9d8f-db847c84638a" name="govad" xsi:type="prem:SystemComponent"/>
+        <children id="07837447-f3ad-4a98-bc48-5fe511fea41d" name="wafer" xsi:type="prem:SystemComponent"/>
+      </children>
+      <children id="cf695085-b642-4cc3-8694-cca06bbf9877" name="zahud" xsi:type="prem:SystemComponent">
+        <children id="12db4ca2-4d31-483f-97ac-4557de7d8a8b" name="guhob" xsi:type="prem:SystemComponent"/>
+        <children id="af0071ac-602b-411d-92d1-e7489f152c50" name="hupad" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+        </children>
+        <children id="6a940190-24fd-4ea9-b347-ec88210100ad" name="cewov" xsi:type="prem:SystemComponent"/>
+      </children>
+      <children id="19a1ac36-ea3f-4819-8953-ed5415154473" name="jizew" xsi:type="prem:SystemComponent">
+        <children id="4a0a2b8c-583e-4681-845b-f2b696a939be" name="rerim" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+        </children>
+        <children id="1d602ddc-9d1e-4de7-8c2d-982d08b614bd" name="pazex" xsi:type="prem:SystemComponent"/>
+        <children id="2b56fd28-9749-489e-aa41-15f79452aa1d" name="gulud" xsi:type="prem:SystemComponent"/>
+        <children id="3a6193ac-a347-4230-8786-cc569254bb64" name="jujen" xsi:type="prem:SystemComponent"/>
+      </children>
+      <children id="36b4527b-4b89-46cf-9529-33ab5ece3b3c" name="yuguc" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+        <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+        <children id="a4e7bbb4-1679-4f16-9628-003b051531f3" name="petos" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+        </children>
+        <children id="1d9e236d-68f7-4ec4-bf06-6b536f9e2669" name="masic" xsi:type="prem:SystemComponent"/>
+        <children id="4c6e408c-0e7a-49f3-975b-aa7d018c8f31" name="jajin" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+        </children>
+      </children>
+    </children>
+    <children id="0b971462-034a-43ec-ae89-efc1209497e3" name="mivir" xsi:type="prem:SystemComponent">
+      <connections>
+        <sourcePointer target="e035910c-afec-45b6-822d-0db20932f8fa" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="7fa3ecc1-9ea6-4426-ad60-d01ec41c6078" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <connections>
+        <sourcePointer target="1e7b213d-fe3b-496d-a9c3-d03a56fd0b27" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="7fa3ecc1-9ea6-4426-ad60-d01ec41c6078" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <connections>
+        <sourcePointer target="0b971462-034a-43ec-ae89-efc1209497e3" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="5ce4a5af-3cbf-4f25-a3c2-81790283950d" xsi:type="graph:DirectPointer"/>
+      </connections>
+      <relations>
+        <sourcePointer target="3a50722c-cf3b-4706-9fbd-53ffc34c5d1f" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="f23982c8-459c-4778-8266-9a9b1fce328f" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="921e31cd-3d5c-4121-951d-f6a7f6661273" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="7fa3ecc1-9ea6-4426-ad60-d01ec41c6078" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="6d41d354-579f-4df7-9dea-9aacef344c05" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="5ce4a5af-3cbf-4f25-a3c2-81790283950d" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="f23982c8-459c-4778-8266-9a9b1fce328f" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="4c443eda-307b-4d07-ab10-5c4119f46604" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="b38f6c34-ecdf-44d5-9ea1-6dab79f774ad" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="c8aad057-4c5b-499d-98f5-fc0d6b75f676" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="031e24a4-bdce-4af1-902e-8e91e6e5adab" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="32178bb1-52c0-4be8-afb4-eafbd6ba783b" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <relations>
+        <sourcePointer target="921e31cd-3d5c-4121-951d-f6a7f6661273" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="f23982c8-459c-4778-8266-9a9b1fce328f" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <children id="921e31cd-3d5c-4121-951d-f6a7f6661273" name="nuwar" xsi:type="prem:SystemComponent">
+        <connections>
+          <sourcePointer target="1e7b213d-fe3b-496d-a9c3-d03a56fd0b27" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="031e24a4-bdce-4af1-902e-8e91e6e5adab" xsi:type="graph:DirectPointer"/>
+        </connections>
+        <relations>
+          <sourcePointer target="921e31cd-3d5c-4121-951d-f6a7f6661273" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="921e31cd-3d5c-4121-951d-f6a7f6661273" xsi:type="graph:DirectPointer"/>
+        </relations>
+        <relations>
+          <sourcePointer target="031e24a4-bdce-4af1-902e-8e91e6e5adab" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="1e7b213d-fe3b-496d-a9c3-d03a56fd0b27" xsi:type="graph:DirectPointer"/>
+        </relations>
+        <children id="1e7b213d-fe3b-496d-a9c3-d03a56fd0b27" name="qirac" xsi:type="prem:SystemComponent"/>
+        <children id="031e24a4-bdce-4af1-902e-8e91e6e5adab" name="fufok" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+          <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+        </children>
+        <children id="e035910c-afec-45b6-822d-0db20932f8fa" name="jiler" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+        </children>
+      </children>
+      <children id="32178bb1-52c0-4be8-afb4-eafbd6ba783b" name="mifam" xsi:type="prem:SystemComponent">
+        <connections>
+          <sourcePointer target="390de8a4-93e9-482c-8165-e954c0182a10" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="6d41d354-579f-4df7-9dea-9aacef344c05" xsi:type="graph:DirectPointer"/>
+        </connections>
+        <connections>
+          <sourcePointer target="4c443eda-307b-4d07-ab10-5c4119f46604" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="6d41d354-579f-4df7-9dea-9aacef344c05" xsi:type="graph:DirectPointer"/>
+        </connections>
+        <relations>
+          <sourcePointer target="b38f6c34-ecdf-44d5-9ea1-6dab79f774ad" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="390de8a4-93e9-482c-8165-e954c0182a10" xsi:type="graph:DirectPointer"/>
+        </relations>
+        <children id="b38f6c34-ecdf-44d5-9ea1-6dab79f774ad" name="pecaz" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+          <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+          <relations>
+            <sourcePointer target="b38f6c34-ecdf-44d5-9ea1-6dab79f774ad" xsi:type="graph:DirectPointer"/>
+            <targetPointer target="b38f6c34-ecdf-44d5-9ea1-6dab79f774ad" xsi:type="graph:DirectPointer"/>
+          </relations>
+        </children>
+        <children id="390de8a4-93e9-482c-8165-e954c0182a10" name="fiyon" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+        </children>
+        <children id="6d41d354-579f-4df7-9dea-9aacef344c05" name="boqoz" xsi:type="prem:SystemComponent"/>
+        <children id="4c443eda-307b-4d07-ab10-5c4119f46604" name="riyuz" xsi:type="prem:SystemComponent">
+          <relations>
+            <sourcePointer target="4c443eda-307b-4d07-ab10-5c4119f46604" xsi:type="graph:DirectPointer"/>
+            <targetPointer target="4c443eda-307b-4d07-ab10-5c4119f46604" xsi:type="graph:DirectPointer"/>
+          </relations>
+        </children>
+      </children>
+      <children id="c8aad057-4c5b-499d-98f5-fc0d6b75f676" name="jucoh" xsi:type="prem:SystemComponent">
+        <connections>
+          <sourcePointer target="f23982c8-459c-4778-8266-9a9b1fce328f" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="3b6dba2e-dc0f-40d2-90f5-04b541c21db0" xsi:type="graph:DirectPointer"/>
+        </connections>
+        <connections>
+          <sourcePointer target="c8aad057-4c5b-499d-98f5-fc0d6b75f676" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="1cb655f8-419d-4e87-85e5-1976ad4e0d69" xsi:type="graph:DirectPointer"/>
+        </connections>
+        <relations>
+          <sourcePointer target="1cb655f8-419d-4e87-85e5-1976ad4e0d69" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="f23982c8-459c-4778-8266-9a9b1fce328f" xsi:type="graph:DirectPointer"/>
+        </relations>
+        <children id="3b6dba2e-dc0f-40d2-90f5-04b541c21db0" name="nukin" xsi:type="prem:SystemComponent"/>
+        <children id="1cb655f8-419d-4e87-85e5-1976ad4e0d69" name="hetap" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+          <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+        </children>
+        <children id="dfc61bca-68d6-40ed-8d6d-5a9e5fdba868" name="laqar" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+        </children>
+        <children id="f23982c8-459c-4778-8266-9a9b1fce328f" name="coxon" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+        </children>
+      </children>
+      <children id="3a50722c-cf3b-4706-9fbd-53ffc34c5d1f" name="wuhic" xsi:type="prem:SystemComponent">
+        <relations>
+          <sourcePointer target="3a50722c-cf3b-4706-9fbd-53ffc34c5d1f" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="5ce4a5af-3cbf-4f25-a3c2-81790283950d" xsi:type="graph:DirectPointer"/>
+        </relations>
+        <children id="7fa3ecc1-9ea6-4426-ad60-d01ec41c6078" name="qayuh" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#274bdb11-10fd-45f6-bd39-279730567fb9"/>
+          <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+        </children>
+        <children id="5ce4a5af-3cbf-4f25-a3c2-81790283950d" name="hazax" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+        </children>
+        <children id="c46acd1d-bcc9-404f-9935-c17f94a32595" name="feban" xsi:type="prem:SystemComponent"/>
+      </children>
+    </children>
+    <children id="a8d14b70-ecb3-4c97-9a8e-bc6f4c6bd627" name="sulic" xsi:type="prem:SystemComponent">
+      <children id="c5092eee-ec18-4c31-ad27-506bb30784e0" name="batus" xsi:type="prem:SystemComponent">
+        <children id="fa93c657-c463-4d69-94dc-d8bba74fedd6" name="wotuj" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+          <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+          <children id="98674298-0c06-42f2-b136-42e825d9e258" name="kijor" xsi:type="prem:SystemComponent"/>
+          <children id="e10df654-9255-4fe2-91e8-ec2c742025ae" name="burow" xsi:type="prem:SystemComponent">
+            <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+            <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+          </children>
+          <children id="5d9a6700-56b0-45ad-9173-e2860d6df4cc" name="mimaw" xsi:type="prem:SystemComponent"/>
+        </children>
+        <children id="f7294984-7464-4068-8b42-6e99d885faaf" name="ninor" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+        </children>
+        <children id="f8ee4d94-822c-43c9-863a-0a067d3763ed" name="waxak" xsi:type="prem:SystemComponent"/>
+      </children>
+      <children id="c61fa22b-067f-40a5-9f13-a808e30cfa40" name="tesic" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+        <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+        <children id="8012945e-0ef7-4a36-abda-9ce8eaf6244c" name="moril" xsi:type="prem:SystemComponent"/>
+        <children id="271b7081-03a8-4fec-a605-bd905723e24b" name="nucet" xsi:type="prem:SystemComponent"/>
+        <children id="560bd832-58b3-4789-804e-1539c61f5087" name="kiheg" xsi:type="prem:SystemComponent"/>
+        <children id="99eb5b13-2032-4ebb-98b5-f61f64895162" name="fowul" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+        </children>
+        <children id="ebb40aa2-da91-4a55-9326-297276982d1d" name="kedol" xsi:type="prem:SystemComponent"/>
+      </children>
+      <children id="00a9d560-bdec-4086-808e-280eb473a809" name="mapoj" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+        <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+        <children id="c8d55304-25cc-4923-a9a5-6b3263d3ad44" name="bufaw" xsi:type="prem:SystemComponent"/>
+        <children id="62b7a5e8-6217-4649-bd0c-9c96874864ed" name="huyew" xsi:type="prem:SystemComponent"/>
+        <children id="cffd269e-1f97-48fb-93e3-e8b597a07f0b" name="moked" xsi:type="prem:SystemComponent"/>
+        <children id="5e2fe0a8-388f-4c2a-bea4-bb9439f004a2" name="vabug" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+        </children>
+        <children id="30106b94-8c17-4975-912e-e7c667ccd6aa" name="zaxol" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#ca319bc4-0f3d-43cb-a115-dbf30f2e9a5f"/>
+          <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+        </children>
+      </children>
+    </children>
+    <children id="95638e43-a8f0-4978-9f76-4d48c69d932a" name="humuw" xsi:type="prem:SystemComponent">
+      <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+      <metaTypes href="input.registry#94cac97b-f421-4a5c-ac76-83d54f71b50c"/>
+      <children id="6f8bfaf5-19e5-4328-a2f2-a75a55bea34d" name="jicaw" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+        <children id="b232e286-246c-487a-9dc1-2eb5613e8bca" name="zegib" xsi:type="prem:SystemComponent"/>
+        <children id="bda15c37-a77c-4e8e-876d-a2eefd4a2a37" name="pilek" xsi:type="prem:SystemComponent"/>
+        <children id="e88762ca-fbf9-444c-8f08-27eb9e8006a6" name="wiqet" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+        </children>
+      </children>
+      <children id="b4a5f6a4-ed2d-40fc-bcc3-171f41cb35a6" name="fipoz" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+      </children>
+      <children id="dc450a86-00a6-48e8-ad5b-e3ed8e73f1da" name="lezat" xsi:type="prem:SystemComponent"/>
+      <children id="de9f5abf-595c-4a08-8955-f42584f97d32" name="kecur" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#06731264-941f-4300-97a0-efc9069334dd"/>
+        <children id="bf4ac10d-6064-4028-b532-0f2b94452992" name="lebuz" xsi:type="prem:SystemComponent"/>
+        <children id="124ef525-f098-4542-a519-332c3189afea" name="hogaf" xsi:type="prem:SystemComponent"/>
+        <children id="20722b82-3298-4917-b4f5-8d9cadda0666" name="kuyud" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+        </children>
+      </children>
+      <children id="ca478137-d033-46b2-ae9c-a48c7bf026a0" name="pigov" xsi:type="prem:SystemComponent"/>
+    </children>
+    <children id="d7ef9588-74bf-4ee9-be5e-597b0bcd0837" name="hukut" xsi:type="prem:SystemComponent">
+      <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+      <children id="347781d5-a81e-4956-9c3d-36384896b2d4" name="tarik" xsi:type="prem:SystemComponent">
+        <children id="12e48ec7-6a7a-4b78-81bb-2498e11afc0c" name="yovak" xsi:type="prem:SystemComponent"/>
+        <children id="a5b5877e-7c36-4ace-9adf-a5474ee151f8" name="givut" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#77628fc1-bb87-48d9-87d6-2c7bf6eab8ea"/>
+        </children>
+        <children id="1df3b7c9-7c61-4d78-bce9-41e965602932" name="yocod" xsi:type="prem:SystemComponent"/>
+        <children id="cb4ab41b-334d-4179-8c8c-870b82dfb3bc" name="refoq" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+          <metaTypes href="input.registry#bcf6ed4b-9eba-4265-a212-ac5764dac27a"/>
+        </children>
+      </children>
+      <children id="ae677da8-2635-4c43-8f4d-862d9cbb59ad" name="xalip" xsi:type="prem:SystemComponent">
+        <metaTypes href="input.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+        <metaTypes href="input.registry#0e152531-3c0a-4f28-83d2-286c4e70a2a2"/>
+        <children id="72ef3bcc-f3aa-420a-bd60-326da86ace64" name="qidej" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+        </children>
+        <children id="733c0e07-6c9d-4c6a-8b13-177da1739f73" name="yunox" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+        </children>
+        <children id="acaa2ea3-97c2-44bf-8d99-2b40380b033b" name="wehav" xsi:type="prem:SystemComponent"/>
+      </children>
+      <children id="7616bf30-a3f4-4a7d-8164-5b95be0b5933" name="biyoh" xsi:type="prem:SystemComponent"/>
+      <children id="48d8f7e3-1862-46da-a9e9-c4389e7f8aeb" name="qexof" xsi:type="prem:SystemComponent">
+        <children id="0f765e9c-cf3e-42e1-a74c-ce8f20da9190" name="kiweq" xsi:type="prem:SystemComponent"/>
+        <children id="07510be6-25d1-4a49-96e9-a70bdd07df39" name="dazoj" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#aa1aa39c-d3d6-41ea-9d67-a9ccfc649f69"/>
+        </children>
+        <children id="0959f957-e487-4881-ab81-f4531015afbd" name="zegel" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+        </children>
+        <children id="51ba7c04-cba2-4d22-97f7-ed1cf35da25a" name="vovem" xsi:type="prem:SystemComponent">
+          <metaTypes href="input.registry#6ae6215d-a2ac-4124-a1ab-b713a2e885d9"/>
+        </children>
+      </children>
+    </children>
+  </projects>
+</prem:ProjectRepository>

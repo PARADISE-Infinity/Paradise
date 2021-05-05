@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" metaModel="1.16">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+    <children name="number representation pattern" value="##0.0###E0"/>
+  </metaData>
+  <projects name="Root" id="bd08cfb1-8768-4fb4-93a4-709008ed63f8">
+    <parameters name="Target" id="84e4fbd5-f80c-41fb-bcb6-67f2721aa674">
+      <value value="76.0286"/>
+    </parameters>
+    <parameters name="Target2" id="cb8ad2c2-06c7-4bb9-a767-5e121342e65e"/>
+    <balancings name="" target="84e4fbd5-f80c-41fb-bcb6-67f2721aa674">
+      <functionDef xsi:type="fnp:FnDefSpreadSheet" href="GlobalFuncDefs.premise.functionpool#//@functions.0"/>
+      <sources xsi:type="prem:Parameter" href="#98932010-f12e-44d8-a261-01f84dcb365f"/>
+      <sources xsi:type="prem:Parameter" href="#0b412549-98a9-4cdc-8128-945050e157fe"/>
+      <sources xsi:type="reg:Constant" href="Registry.premise.registry#60b07a7e-23a7-482a-b069-495cd2cbb0e3"/>
+      <sources xsi:type="reg:Constant" href="Registry.premise.registry#f7b881b3-147b-4c34-a2b0-8b378aa69fdc"/>
+      <sources xsi:type="reg:Constant" href="Registry.premise.registry#62700bc9-2779-4209-b832-ed26fbcf5868"/>
+      <sources xsi:type="reg:Constant" href="Registry.premise.registry#1435a2aa-917e-4261-abcc-eab89aaedae0"/>
+      <sources xsi:type="reg:Constant" href="Other.registry#cc8f836c-c131-400c-b752-dc1463a744ee"/>
+      <sources xsi:type="prem:Parameter" href="#a700c917-6c03-48bd-997c-fe96001a6e57"/>
+      <sources xsi:type="prem:Parameter" href="#98cd820b-b310-4218-b72c-db0d03a28f48"/>
+      <sources xsi:type="prem:Parameter" href="#14206462-ad0a-4dbb-8eaa-04f61b1f0be4"/>
+      <sources xsi:type="prem:Parameter" href="#ab5236e9-cf9b-4d3d-8764-0a854233e8d3"/>
+    </balancings>
+    <balancings name="" description="This balancing has no sources and targets, to see how the migration handles that akward case." balancingMode="OVER_ALL_MODES">
+      <functionDef xsi:type="fnp:FnDefSpreadSheet" href="GlobalFuncDefs.premise.functionpool#//@functions.2"/>
+    </balancings>
+    <balancings name="" target="cb8ad2c2-06c7-4bb9-a767-5e121342e65e">
+      <sources xsi:type="reg:Constant" href="Registry.premise.registry#1435a2aa-917e-4261-abcc-eab89aaedae0"/>
+      <sources xsi:type="reg:Constant" href="Registry.premise.registry#62700bc9-2779-4209-b832-ed26fbcf5868"/>
+    </balancings>
+    <children name="Child1" id="654ccfec-6dfd-461b-819f-a4cad4c92893">
+      <parameters name="DuplicateName" id="98932010-f12e-44d8-a261-01f84dcb365f">
+        <value value="0" uncertainty=""/>
+      </parameters>
+      <children name="Sub" id="e5d7192a-7476-4aa5-8c89-3fac9616f067">
+        <parameters name="DeepDuplicateName" id="a700c917-6c03-48bd-997c-fe96001a6e57">
+          <value value="0" uncertainty=""/>
+        </parameters>
+      </children>
+    </children>
+    <children name="Child2" id="0525b5fb-e420-4874-bea4-c2a3d50790c2">
+      <parameters name="DuplicateName" id="0b412549-98a9-4cdc-8128-945050e157fe">
+        <value value="0"/>
+      </parameters>
+      <children name="Sub" id="2113346c-18f1-449b-89c5-a0cdfd02da8f">
+        <parameters name="DeepDuplicateName" id="98cd820b-b310-4218-b72c-db0d03a28f48">
+          <value value="0" uncertainty=""/>
+        </parameters>
+      </children>
+    </children>
+    <children name="Child3" id="04239da8-7964-4713-b555-b3db8aea4e31">
+      <parameters name="UnfixableDuplicateName" id="14206462-ad0a-4dbb-8eaa-04f61b1f0be4">
+        <notes text="Has the exact same FQN as ab5236e9-cf9b-4d3d-8764-0a854233e8d3. Therefore, migration must add a index number." author="steh_ti" date="2016-02-19 11:14:06"/>
+        <value value="0" uncertainty=""/>
+      </parameters>
+      <parameters name="UnfixableDuplicateName" id="ab5236e9-cf9b-4d3d-8764-0a854233e8d3">
+        <value value="0" uncertainty=""/>
+      </parameters>
+    </children>
+    <children name="MultiMode" id="94c6ea11-01fd-4c38-9db7-1ec2297682f2">
+      <modes name="A" id="d2e29e17-fb65-45d4-a2d2-3845634899fc"/>
+      <modes name="B" id="851325eb-470f-49fa-a04b-681aa37035b3"/>
+      <parameters name="Source" id="7837fab7-7d21-49b8-9c63-5fac80f62a37">
+        <value value="0"/>
+        <modeValues modes="d2e29e17-fb65-45d4-a2d2-3845634899fc" value="6" uncertainty=""/>
+        <modeValues modes="851325eb-470f-49fa-a04b-681aa37035b3" value="2" uncertainty=""/>
+      </parameters>
+      <parameters name="TargetSum" id="d8738d8b-5f50-4167-8a36-f8439f041a5a">
+        <value value="8.0"/>
+      </parameters>
+      <parameters name="TargetMultiply" id="0661a9e3-3871-4100-b40e-38f8d90a9010">
+        <value value="12.0"/>
+      </parameters>
+      <balancings name="" target="d8738d8b-5f50-4167-8a36-f8439f041a5a" balancingMode="OVER_ALL_MODES" sources="7837fab7-7d21-49b8-9c63-5fac80f62a37">
+        <functionDef xsi:type="fnp:FnDefSpreadSheet" href="GlobalFuncDefs.premise.functionpool#//@functions.0"/>
+      </balancings>
+      <balancings target="0661a9e3-3871-4100-b40e-38f8d90a9010" balancingMode="OVER_ALL_MODES" sources="7837fab7-7d21-49b8-9c63-5fac80f62a37">
+        <functionDef xsi:type="fnp:FnDefSpreadSheet" href="GlobalFuncDefs.premise.functionpool#//@functions.1"/>
+      </balancings>
+    </children>
+  </projects>
+</prem:ProjectRepository>

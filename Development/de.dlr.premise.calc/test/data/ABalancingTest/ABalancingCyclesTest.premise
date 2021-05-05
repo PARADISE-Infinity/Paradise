@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="off"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Show Parameters" value="true"/>
+        <metaData name="Group Elements" value="false"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Show Parameters" value="true"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Edit local statemachines">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <projects id="78db26be-2a2a-4f4a-9250-f63983aa4e82" name="SC1">
+    <parameters id="3c8fdc42-782d-4ac3-87c4-f7b4b8503934" name="P1">
+      <value value="1"/>
+    </parameters>
+    <parameters id="e6b10e1a-91d8-456f-a2eb-14e45c8d2aa8" name="P2"/>
+    <parameters id="6e910191-afb1-4a00-aed5-497c4d1ed983" name="P3"/>
+  </projects>
+  <projects id="0c3b461f-ae23-40ef-8615-ffbf5223f9e3" name="SC2">
+    <statemachines name="SC2">
+      <modes entryMode="true" id="0c62f076-0215-417a-b55a-dfe3f153cf20" name="M1"/>
+      <modes id="ce114bb0-3526-4f7b-b0ad-86aa1d2e13cb" name="M2"/>
+      <transitions id="eab4fd99-ba3d-44b7-a810-46e38d7a9741" name="MM2">
+        <sourcePointer target="0c62f076-0215-417a-b55a-dfe3f153cf20" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="ce114bb0-3526-4f7b-b0ad-86aa1d2e13cb" xsi:type="graph:DirectPointer"/>
+        <condition junction="AND" xsi:type="elem:GuardCombination">
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="4ba550f1-cadf-45e6-acf5-10814d79f259" xsi:type="graph:DirectPointer"/>
+</children>
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="75a759da-c125-4761-a8f4-def2c8e4acda" xsi:type="graph:DirectPointer"/>
+</children>
+        </condition>
+        <parameters id="TP" name="TP">
+          <value value="0.03333333333333333"/>
+        </parameters>
+        <balancings target="TP"/>
+      </transitions>
+    </statemachines>
+    <children id="45b1f405-4545-4b80-bfbc-623435c1c0d5" name="SC2.1" xsi:type="prem:SystemComponent">
+      <statemachines name="SC2.1">
+        <modes entryMode="true" id="e71421ff-9858-4e52-af00-40dcd1fd9cba" name="M1"/>
+        <modes id="4ba550f1-cadf-45e6-acf5-10814d79f259" name="M2"/>
+        <modes id="75a759da-c125-4761-a8f4-def2c8e4acda" name="M3"/>
+        <transitions id="4dd737aa-7626-449a-a4a0-1be21a34b85b" name="MM2.1">
+          <sourcePointer target="e71421ff-9858-4e52-af00-40dcd1fd9cba" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="4ba550f1-cadf-45e6-acf5-10814d79f259" xsi:type="graph:DirectPointer"/>
+          <parameters id="MM2.1TP" name="MM2.1TP">
+            <value value="0.1"/>
+          </parameters>
+        </transitions>
+        <transitions id="c3398c7f-eeae-442f-8d98-67571abe8ff7">
+          <sourcePointer target="e71421ff-9858-4e52-af00-40dcd1fd9cba" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="75a759da-c125-4761-a8f4-def2c8e4acda" xsi:type="graph:DirectPointer"/>
+          <parameters id="TP1&gt;3" name="TP1&gt;3">
+            <value value="0.3"/>
+          </parameters>
+        </transitions>
+        <transitions id="56d75e65-81e9-4b56-8e02-24b8b286bd83">
+          <targetPointer target="75a759da-c125-4761-a8f4-def2c8e4acda" xsi:type="graph:DirectPointer"/>
+          <condition xsi:type="elem:ModeGuard">
+<modePointer target="ce114bb0-3526-4f7b-b0ad-86aa1d2e13cb" xsi:type="graph:DirectPointer"/>
+</condition>
+          <parameters id="TP&gt;3" name="TP">
+            <value value="0.03333333333333333"/>
+          </parameters>
+          <balancings name="cycling" target="TP&gt;3"/>
+        </transitions>
+      </statemachines>
+    </children>
+  </projects>
+</prem:ProjectRepository>

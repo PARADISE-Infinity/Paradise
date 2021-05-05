@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fnp:FunctionPool xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.26" xmi:version="2.0">
+  <functions name="heinz" scriptName="tomato" xsi:type="fnp:FnDefScript">
+    <output>
+      <unit href="premise:/Base.registry#K"/>
+    </output>
+    <inputs>
+      <unit href="My.registry#mag"/>
+    </inputs>
+  </functions>
+</fnp:FunctionPool>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" metaModel="1.20">
+  <metaData name="View">
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="false"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Show Parameters" value="true"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Edit local statemachines">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+    </children>
+  </metaData>
+  <usecases name="Root" id="0268a2de-0a15-4194-8e34-39b932da9eae">
+    <connections source="e625c264-a116-4a4b-b1ce-649177bb177a" target="a7f69169-9cdd-4cff-93df-8d2f546af134"/>
+    <children name="UC1" id="70a2f8cf-74c3-47dc-9499-3f59e86f335e">
+      <children name="UC11" id="e625c264-a116-4a4b-b1ce-649177bb177a">
+        <relations source="e625c264-a116-4a4b-b1ce-649177bb177a" target="269e6a27-229b-4840-9590-5cafde3c3b3f"/>
+      </children>
+    </children>
+    <children name="UC2" id="9d8e6b48-0ba0-4f43-ae1f-9611d196f03e">
+      <children name="UC21" id="a7f69169-9cdd-4cff-93df-8d2f546af134"/>
+    </children>
+    <children name="UC3" id="269e6a27-229b-4840-9590-5cafde3c3b3f"/>
+  </usecases>
+</uc:UseCaseRepository>

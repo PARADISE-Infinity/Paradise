@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.25" xmi:version="2.0" xsi:schemaLocation="http://www.dlr.de/ft/premise/2010/ ../../../de.dlr.ft.premise/model/PREMISE_system.ecore http://www.dlr.de/ft/premise/validated/2013/ ../../../de.dlr.ft.premise/model/PREMISE_system.ecore#//validated">
+  <projects id="SC1" name="SC1">
+  <statemachines name="SC1">
+<modes entryMode="true" id="A" name="A" xsi:type="elem:Mode"/>
+<modes entryMode="false" id="B" name="B" xsi:type="elem:Mode"/>
+<modes entryMode="false" id="C" name="C" xsi:type="elem:Mode"/>
+<modes entryMode="false" id="D" name="D" xsi:type="elem:Mode"/>
+<transitions id="A&gt;B" name="A&gt;B">
+<sourcePointer target="A" xsi:type="graph:DirectPointer"/>
+<targetPointer target="B" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions description="" id="A&gt;C" name="A&gt;C">
+<sourcePointer target="A" xsi:type="graph:DirectPointer"/>
+<targetPointer target="C" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="B&gt;C" name="B&gt;C">
+<sourcePointer target="B" xsi:type="graph:DirectPointer"/>
+<targetPointer target="C" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="B&gt;D" name="B&gt;D">
+<sourcePointer target="C" xsi:type="graph:DirectPointer"/>
+<targetPointer target="D" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</projects>
+</prem:ProjectRepository>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:val="http://www.dlr.de/ft/premise/validated/2013/" metaModel="1.03">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+  </metaData>
+  <projects id="6019c83e-4f8a-4ef4-8089-194da22afbed">
+    <parameters id="fe059248-9a74-4df3-9809-4c9d20eec546">
+      <value value="42"/>
+      <modeValues modes="d2be9670-2316-461f-9fad-6fd33ca5bed5" value="7"/>
+    </parameters>
+    <inputs id="510406ac-82ad-472b-a05d-bae35830affe"/>
+    <outputs id="351aaf30-9c16-4e90-b186-83ccc6692490"/>
+    <balancings name="">
+      <sources xsi:type="reg:Constant" href="MigrateV104ToV105.registry#84250a07-9c43-41b4-9f9c-b6c405727514"/>
+    </balancings>
+    <connections source="351aaf30-9c16-4e90-b186-83ccc6692490" target="510406ac-82ad-472b-a05d-bae35830affe"/>
+    <modes id="d2be9670-2316-461f-9fad-6fd33ca5bed5"/>
+    <transitions xsi:type="val:ModeMapping" id="0b30834d-138b-4741-a4a3-f065a6b74c6b">
+      <balancings xsi:type="val:TransitionBalancing"/>
+    </transitions>
+  </projects>
+</prem:ProjectRepository>

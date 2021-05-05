@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Paradise Command Line
+Bundle-SymbolicName: de.dlr.application.cli;singleton:=true
+Bundle-Version: 1.25.0.qualifier
+Bundle-Activator: de.dlr.application.cli.Activator
+Bundle-Vendor: www.dlr.de/ft/ssy
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.resources,
+ org.eclipse.core.runtime,
+ de.dlr.premise.constraints,
+ org.eclipse.emf.ecore,
+ de.dlr.application;bundle-version="1.23.2",
+ de.dlr.premise,
+ de.dlr.premise.edit,
+ de.dlr.premise.calc,
+ de.dlr.premise.validation;bundle-version="1.0.0",
+ org.junit;resolution:=optional
+Bundle-ActivationPolicy: lazy
+Export-Package: de.dlr.application.cli
+Automatic-Module-Name: de.dlr.application.workflows
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.25" xmi:version="2.0">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+    <children name="number representation pattern" value="##0.0###E0"/>
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Group Elements" value="false"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Edit local statemachines">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+    </children>
+  </metaData>
+  <usecases id="cbdecbd2-e756-4b74-8519-916e3ab9863c" name="uc">
+    <statemachines name="uc Failure State">
+      <modes entryMode="true" id="402e9a50-d0ce-4189-b9e6-c9185c6dacad" name="Normal"/>
+      <modes id="e35f6cbc-d0ba-4c4e-bd6a-17f5909beaa9" name="uc Failure"/>
+      <transitions id="27c622d8-3004-4471-9f82-fa383c5ed026" name="F: uc Failure">
+        <sourcePointer target="402e9a50-d0ce-4189-b9e6-c9185c6dacad" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="e35f6cbc-d0ba-4c4e-bd6a-17f5909beaa9" xsi:type="graph:DirectPointer"/>
+        <condition xsi:type="elem:GuardCombination">
+          <children mode="673ba6a4-8b21-4634-badf-0bc17b0ee1bb" xsi:type="elem:ModeGuard"/>
+          <children mode="0a43b124-2606-4538-80ac-f949db6b8ffc" xsi:type="elem:ModeGuard"/>
+        </condition>
+        <parameters id="8f37b84f-7fe9-492a-aba0-181db22cf1b0" name="Failure Rate">
+          <value value="0"/>
+        </parameters>
+        <balancings name="bal" target="8f37b84f-7fe9-492a-aba0-181db22cf1b0">
+        </balancings>
+      </transitions>
+    </statemachines>
+    <statemachines name="uc Failure State">
+      <modes entryMode="true" id="048b7726-ad21-4250-a182-bfe9a6faa05a" name="Normal"/>
+      <modes id="673ba6a4-8b21-4634-badf-0bc17b0ee1bb" name="uc Failure"/>
+      <transitions id="dfbeedd9-0307-4246-b8d1-cbdf424a94a1" name="F: uc Failure">
+        <sourcePointer target="048b7726-ad21-4250-a182-bfe9a6faa05a" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="673ba6a4-8b21-4634-badf-0bc17b0ee1bb" xsi:type="graph:DirectPointer"/>
+        <parameters id="6f4468a8-0f43-46b8-9735-233c4dc14e05" name="Failure Rate">
+          <value value="0"/>
+        </parameters>
+      </transitions>
+    </statemachines>
+    <statemachines name="uc Failure State">
+      <modes entryMode="true" id="3ea0b1ca-e1c6-461c-833f-2ac63825baf2" name="Normal"/>
+      <modes id="0a43b124-2606-4538-80ac-f949db6b8ffc" name="uc Failure"/>
+      <transitions id="f118c6ea-93c9-402a-8a61-e8f43567cc9d" name="F: uc Failure">
+        <sourcePointer target="3ea0b1ca-e1c6-461c-833f-2ac63825baf2" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="0a43b124-2606-4538-80ac-f949db6b8ffc" xsi:type="graph:DirectPointer"/>
+        <parameters id="cfe3ccb7-5190-438a-a60c-05f82cee35d9" name="Failure Rate">
+          <value value="0"/>
+        </parameters>
+      </transitions>
+    </statemachines>
+  </usecases>
+</uc:UseCaseRepository>

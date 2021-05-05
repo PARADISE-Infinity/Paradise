@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<reg:Registry xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xsi:schemaLocation="http://www.dlr.de/ft/premise/registry/validated/2013/ http://www.dlr.de/ft/premise/registry/2010/#//validated">
+  <units/>
+  <units name="Without Symbol"/>
+  <units description="Symbol only" symbol="1"/>
+  <constants id="b02f09a1-1c1c-4136-b8f9-b200298d6b0d"/>
+  <constants description="without unit and value" id="85d0f929-e7d0-4132-bfee-657da522fa24" name="Pi"/>
+  <constants description="only empty unit" id="5523b794-5a86-4815-a8c1-0b98dd420709" unit="//@units.0"/>
+  <constants description="With not named scalar unit" id="a12e0c56-5692-4112-925f-7c960c2e0caa" name="Pi" unit="1"/>
+  <constants description="null value" id="25bb5ace-462d-4da5-9a58-f929f3438f44" name="Pi">
+    <value xsi:type="reg:Value"/>
+  </constants>
+  <constants id="d7fa7ff7-64c0-4e85-8a34-2cd2f8ea8e10" name="Pi">
+    <value value="3.14" xsi:type="reg:Value"/>
+  </constants>
+  <constants id="f95392c0-e5cd-41f4-a6c2-59b9f11ee95a" name="Pi" unit="1">
+    <value value="3.14" xsi:type="reg:Value"/>
+  </constants>
+  <metaTypes id="a73f43ee-93de-4526-9f05-bdfa04c8e77a"/>
+  <metaTypes id="44af2d5d-9209-4a0c-a461-3e25eee157aa" name="Without Icon"/>
+  <metaTypes icon="Icon integrated into registry (SystemComponent_Container.gif)" iconBase64="R0lGODlhEAAQAOeEAJJHFIVJKppGDo1JJH5NNI5LJpxJEo5LMZ5KEo5NKYpOL5hMIqxJDKhKEJpNHZpPHalME4dZAIlbAItcAIxdALdPEY1eALhQEpVXOr5QDJtXNpdkAJlmAJ5mEalhMK9jL6RqEq1kM6BtIKdvALJnNqptFa1sI6xzALtrN79rNLB2ALR4AKl6HMlvNLtzQ8pwNbh7AKt2XqV5Uql9JstyNsxyNcJ0QLt9AKt+Jrp/Db9/ANJ1OK+CKNN3OsKCALOFK8WEANl5OqWDc8iFALmCT8qHALeJLcyIALCLY7yNMMCQMr2RNcWUNcaRW8+dPM2bYs6cY9GhQs2lUtegasumcdmoSN+tc924aeq/X+nAYObDhuTFje3JbunKf+zLgevNgu7OhO3Qh/HPi+/Qh+/Rh/PRjfDTivTTgPDUi/XUkPLWjvLYkPTakvTciPTblPnbl/3bl/bel/7cmPbfmPfhm/jilfnjnf3jnPnlnvvmof/movvoo+7m4/zppP/qpvzrpv3uqf3uqv7vq//xrP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////yH5BAEKAP8ALAAAAAAQABAAAAjYAP8JPEKwoEGBCIu0yYLlzB09EPX4KYLw35BBgupwqSJHjhUUU4ZUBAKoT59AUeDAcdHDBpCKPv7kyfPHyRMoTXYQMVFRxx47dvYwCVKjBYkXNCrewDNnDh4lKTyE0KAlRkUYdNy4oZPkwwMAB97wyYFwRZw1a+IYEWAAgQMMC0ogVMEGDRo2PyDIQBKAQQMQCE+oCRNGDY8LVMQQyFChA8IRZr58MYNjgJAtCgokEIGQA5kuXcbMKEO6TBoOFS0sueIFzAQKsGFbqChwAwspEmjrrhhh97+AADs=" id="0d5e2ab0-929f-4aee-8065-e073b9a6768b" name="Container"/>
+</reg:Registry>

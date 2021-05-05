@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="false"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Show Parameters" value="true"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Edit local statemachines">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <registries href="My.registry#/"/>
+  <functionPools href="My.functionpool#/"/>
+  <projects id="283c88c6-022f-43b1-98f5-8a049a2793a6" name="Root">
+    <parameters id="42125e69-bc57-4f7a-8572-6bb12b0f0680" name="asf"/>
+    <parameters id="3c7e7540-d453-4914-8f8f-f3de2d4a07ef" name="asd"/>
+    <connections>
+      <sourcePointer target="63628772-6681-4535-a422-d7aad73f5b7b" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="237e7b16-696a-42e5-a5c2-a2ec0949b6d8" xsi:type="graph:DirectPointer"/>
+    </connections>
+    <children id="93073113-b177-4cb3-ae74-8b94c13ef8aa" name="C1" xsi:type="prem:SystemComponent">
+      <children id="63628772-6681-4535-a422-d7aad73f5b7b" name="C11" xsi:type="prem:SystemComponent">
+        <parameters id="1d292e68-b53f-46bd-a977-bae7ed02599c" name="T1"/>
+        <parameters id="7bae8e03-982c-4d57-a0da-76f5387c070a" name="T2"/>
+        <balancings function="T1 = fn2(const + ref1.P1, C3.DuplicateName)" name="Balancing">
+          <actualSources key="C3.DuplicateName">
+            <value target="88276439-866e-4444-9f0a-0e2435f86b6e" xsi:type="graph:DirectPointer"/>
+          </actualSources>
+          <actualSources key="const">
+            <value xsi:type="graph:DirectPointer">
+              <target href="My.registry#b97de7d3-31f1-4f8e-acc8-7ba8105783d5" xsi:type="reg:Constant"/>
+            </value>
+          </actualSources>
+          <actualSources key="ref1.P1">
+            <value componentReference="8826000a-e89e-4737-9f2e-23aab13f1c6b" xsi:type="comp:ComponentReferencePointer">
+              <definition href="My.component#5142f620-c039-4c08-87cd-877b91fc7499" xsi:type="comp:ParameterDefinition"/>
+            </value>
+          </actualSources>
+          <actualTarget key="T1">
+            <value target="1d292e68-b53f-46bd-a977-bae7ed02599c" xsi:type="graph:DirectPointer"/>
+          </actualTarget>
+        </balancings>
+        <relations>
+          <sourcePointer target="63628772-6681-4535-a422-d7aad73f5b7b" xsi:type="graph:DirectPointer"/>
+          <targetPointer componentReference="f4327c63-ccf8-433f-a8ba-649572b783a4" xsi:type="comp:ComponentReferencePointer">
+            <definition href="My.component#fade758d-dff8-43b2-a1a7-f47c433869bf" xsi:type="comp:ComponentDefinition"/>
+          </targetPointer>
+        </relations>
+        <children id="8826000a-e89e-4737-9f2e-23aab13f1c6b" name="ref1" xsi:type="prem:ComponentReference">
+          <componentDefinition href="My.component#fade758d-dff8-43b2-a1a7-f47c433869bf"/>
+          <activeImplementation href="My.component#72dd778d-3317-4e89-8826-e715580701a9"/>
+        </children>
+        <children id="1cd59e6c-852a-433d-9998-6d17d57d9c36" name="ref2" xsi:type="prem:ComponentReference">
+          <componentDefinition href="My.component#fade758d-dff8-43b2-a1a7-f47c433869bf"/>
+          <activeImplementation href="My.component#72dd778d-3317-4e89-8826-e715580701a9"/>
+        </children>
+      </children>
+      <children id="fca325b6-b46c-41e8-85e2-b0c47d1cba53" name="ref3" xsi:type="prem:ComponentReference">
+        <componentDefinition href="My.component#fade758d-dff8-43b2-a1a7-f47c433869bf"/>
+        <activeImplementation href="My.component#72dd778d-3317-4e89-8826-e715580701a9"/>
+      </children>
+    </children>
+    <children id="5f5622aa-1c05-4c59-b99e-6970816b096e" name="C2" xsi:type="prem:SystemComponent">
+      <parameters id="247da17d-8f08-444d-a4e8-bef5e5a6c096" name="UR1"/>
+      <parameters id="685bea99-3e71-43ae-9b16-a74ce9c6e2b1" name="UR2"/>
+      <parameters id="b7cc8a31-eb7a-41d5-8fab-75188a825b74" name="DuplicateName"/>
+      <children id="f4327c63-ccf8-433f-a8ba-649572b783a4" name="ref4" xsi:type="prem:ComponentReference">
+        <componentDefinition href="My.component#fade758d-dff8-43b2-a1a7-f47c433869bf"/>
+        <activeImplementation href="My.component#72dd778d-3317-4e89-8826-e715580701a9"/>
+      </children>
+    </children>
+    <children id="237e7b16-696a-42e5-a5c2-a2ec0949b6d8" name="C3" xsi:type="prem:SystemComponent">
+      <parameters id="88276439-866e-4444-9f0a-0e2435f86b6e" name="DuplicateName"/>
+    </children>
+  </projects>
+</prem:ProjectRepository>

@@ -1,0 +1,23 @@
+module de.dlr.ft.premise.Clean
+
+import org.eclipse.emf.mwe.utils.*
+
+Workflow {
+
+	// clean generated code of premise plugin includes model code of premise, 
+	// representation and logic
+	component = DirectoryCleaner {
+		directory="src-gen"
+	}
+	
+	// clean generated premise edit code
+	component = DirectoryCleaner {
+		directory="../de.dlr.aspect.graphml.edit/src-gen"
+	}
+	
+	// clean generated premise editor code
+	component = DirectoryCleaner {
+		directory="../de.dlr.aspect.graphml.editor/src-gen"
+	}
+
+}

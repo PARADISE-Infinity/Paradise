@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reg:Registry xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" metaModel="1.31" xmi:version="2.0">
+  <constants id="b97de7d3-31f1-4f8e-acc8-7ba8105783d5" name="const"/>
+  <constants id="d6738f80-1994-4d6a-83f2-cf8ec88810c0" name="siebzehn"/>
+</reg:Registry>

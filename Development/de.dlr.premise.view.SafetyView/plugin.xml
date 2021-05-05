@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="com.example.test">
+         <viewShortcut
+               id="de.dlr.premise.view.SafetyView.SafetyViewSheet">
+         </viewShortcut>
+         <view
+               id="de.dlr.premise.view.SafetyView.SafetyViewSheet"
+               minimized="false"
+               relationship="stack"
+               relative="de.dlr.premise.view.graphicaleditorview.GraphicalEditorView">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            category="de.dlr.application.rcp.category.paradise"
+            class="de.dlr.premise.view.safetyview.SafetyViewSheet"
+            icon="icons/hazard.png"
+            id="de.dlr.premise.view.SafetyView.SafetyViewSheet"
+            name="Safety Editor"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="de.dlr.premise.view.safetyview.ShowSafetyViewHandler"
+            id="de.dlr.premise.view.SafetyView.showsafetyview"
+            name="Safety Editor">
+      </command>
+   </extension>
+
+</plugin>

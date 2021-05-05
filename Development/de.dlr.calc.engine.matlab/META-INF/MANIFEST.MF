@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Calculation Engine  Matlab
+Bundle-SymbolicName: de.dlr.calc.engine.matlab;singleton:=true
+Bundle-Version: 1.25.0.qualifier
+Bundle-Vendor: www.dlr.de/ft/ssy
+Require-Bundle: de.dlr.premise,
+ de.dlr.premise.util,
+ de.dlr.calc.engine,
+ de.dlr.calc.engine.combined;bundle-version="1.24.0",
+ de.dlr.premise.states;bundle-version="1.0.0",
+ org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.junit;resolution:=optional
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: de.dlr.calc.engine.matlab.Activator
+Export-Package: de.dlr.calc.engine.matlab
+Bundle-ClassPath: .,
+ vendor/com.modelengineers.matlab.staticloader.jar,
+ vendor/com.modelengineers.tooladapter.jmbridge.jar
+Automatic-Module-Name: de.dlr.calc.engine.matlab

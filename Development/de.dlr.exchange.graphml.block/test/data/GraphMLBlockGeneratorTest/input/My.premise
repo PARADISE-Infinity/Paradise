@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:rep="http://www.dlr.de/ft/premise/representation/2012/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.33" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="false"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Show Parameters" value="true"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Edit local statemachines">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <metaData name="Export">
+    <metaData name="GraphML">
+      <metaData name="logical_hierarchy" value="on">
+        <metaData name="group" value="on"/>
+        <metaData name="depth" value="0"/>
+      </metaData>
+      <metaData name="physical_portmappings" value="on"/>
+      <metaData name="parameter" value="on">
+        <metaData name="balancing" value="on"/>
+      </metaData>
+      <metaData name="self_references" value="off"/>
+      <metaData name="relations" value="on"/>
+      <metaData name="satisfies" value="on"/>
+    </metaData>
+  </metaData>
+  <registries href="My.registry#/"/>
+  <extensions href="My.representation#71df981a-adce-401d-8153-b02b2bac768b" xsi:type="rep:Representation"/>
+  <projects id="93e2e369-f7cf-40e1-81e0-2c5ef3c660e0" name="ModelRoot">
+    <connections>
+      <sourcePointer target="d61fa01e-a425-403b-a587-ab40ab4e91f8" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="0fac6baf-313d-4d39-acc7-3707352dfee5" xsi:type="graph:DirectPointer"/>
+      <metaData name="META" value="">
+        <metaData name="DATA" value="-1"/>
+      </metaData>
+    </connections>
+    <connections bidirectional="true">
+      <sourcePointer target="5c761499-100d-47f2-817a-97c592246beb" xsi:type="graph:DirectPointer"/>
+      <targetPointer componentReference="0945ad63-9e75-416c-a2b8-50470f7370ab" xsi:type="comp:ComponentReferencePointer">
+        <definition href="My.component#ca55e139-d003-4643-8622-96db6700d958" xsi:type="comp:ComponentDefinition"/>
+      </targetPointer>
+      <metaData name="META"/>
+    </connections>
+    <children id="d61fa01e-a425-403b-a587-ab40ab4e91f8" name="C1" xsi:type="prem:SystemComponent">
+      <metaTypes href="My.registry#ae318e94-397d-4635-9074-dc2896311619"/>
+      <metaData name="value" value="1">
+        <metaData name="asdfg" value="]]&gt;"/>
+      </metaData>
+    </children>
+    <children id="b5a1ce0f-0939-4e06-a504-09c4342c1c7b" name="C2" xsi:type="prem:SystemComponent">
+      <metaData name="asdfg" value="2"/>
+      <metaData name="URL" value="http://dlr.de"/>
+      <relations name="">
+        <sourcePointer componentReference="3e0c0519-498c-4d16-a6d1-a9b23940d896" xsi:type="comp:ComponentReferencePointer">
+          <definition href="My.component#//@definitions.0/@children.0" xsi:type="comp:ChildComponentDefinition"/>
+        </sourcePointer>
+        <targetPointer componentReference="4ba28bff-f684-46c9-9aca-988c79800a89" xsi:type="comp:ComponentReferencePointer">
+          <definition href="My.component#2da4ee55-f223-4482-835c-1a65045d4a4f" xsi:type="comp:ComponentDefinition"/>
+        </targetPointer>
+      </relations>
+      <relations name="">
+        <metaTypes href="My.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+        <sourcePointer componentReference="3e0c0519-498c-4d16-a6d1-a9b23940d896" xsi:type="comp:ComponentReferencePointer">
+          <definition href="My.component#//@definitions.0/@children.0" xsi:type="comp:ChildComponentDefinition"/>
+        </sourcePointer>
+        <targetPointer componentReference="4ba28bff-f684-46c9-9aca-988c79800a89" xsi:type="comp:ComponentReferencePointer">
+          <definition href="My.component#2da4ee55-f223-4482-835c-1a65045d4a4f" xsi:type="comp:ComponentDefinition"/>
+        </targetPointer>
+      </relations>
+      <relations name="">
+        <metaTypes href="My.registry#9f0c9ba8-f4b0-499e-8895-d0957e9b931b"/>
+        <sourcePointer componentReference="3e0c0519-498c-4d16-a6d1-a9b23940d896" xsi:type="comp:ComponentReferencePointer">
+          <definition href="My.component#//@definitions.0/@children.0" xsi:type="comp:ChildComponentDefinition"/>
+        </sourcePointer>
+        <targetPointer componentReference="4ba28bff-f684-46c9-9aca-988c79800a89" xsi:type="comp:ComponentReferencePointer">
+          <definition href="My.component#2da4ee55-f223-4482-835c-1a65045d4a4f" xsi:type="comp:ComponentDefinition"/>
+        </targetPointer>
+      </relations>
+      <children id="3e0c0519-498c-4d16-a6d1-a9b23940d896" name="CR21" xsi:type="prem:ComponentReference">
+        <componentDefinition href="My.component#2da4ee55-f223-4482-835c-1a65045d4a4f"/>
+        <activeImplementation href="My.component#c9968e18-f8d3-4fc7-a536-084b789fb87a"/>
+      </children>
+    </children>
+    <children description="This is a element" id="4c6c4cb6-f0ff-46a1-b61b-81e617a14229" name="C3" xsi:type="prem:SystemComponent">
+      <satisfies>
+        <targetPointer xsi:type="graph:DirectPointer">
+          <target href="My.usecase#d6143bb9-7001-4462-a04e-da358879fb52" xsi:type="uc:UseCase"/>
+        </targetPointer>
+        <metaData name="asdfg" value="ert">
+          <metaData name="value" value="hallo"/>
+        </metaData>
+      </satisfies>
+      <parameters id="b2092c1e-fee9-4dff-a6a9-decca4617fda" name="P31">
+        <value value="365.0"/>
+      </parameters>
+      <balancings function="CR31.PD11 = P331*SEVENTEEN-3">
+        <actualSources key="P331">
+          <value target="eb33938b-62cd-407f-b8c6-7cbcc5e5d77d" xsi:type="graph:DirectPointer"/>
+        </actualSources>
+        <actualSources key="SEVENTEEN">
+          <value xsi:type="graph:DirectPointer">
+            <target href="My.registry#8a170feb-4837-4a6d-b1b8-21b5635601f1" xsi:type="reg:Constant"/>
+          </value>
+        </actualSources>
+        <actualTarget key="CR31.PD11">
+          <value componentReference="4ba28bff-f684-46c9-9aca-988c79800a89" xsi:type="comp:ComponentReferencePointer">
+            <definition href="My.component#2d83d0ad-bacd-4ad8-b0c4-c9c5c1db3721" xsi:type="comp:ParameterDefinition"/>
+          </value>
+        </actualTarget>
+      </balancings>
+      <balancings function="P31 = CR31.PD11">
+        <actualSources key="CR31.PD11">
+          <value componentReference="4ba28bff-f684-46c9-9aca-988c79800a89" xsi:type="comp:ComponentReferencePointer">
+            <definition href="My.component#2d83d0ad-bacd-4ad8-b0c4-c9c5c1db3721" xsi:type="comp:ParameterDefinition"/>
+          </value>
+        </actualSources>
+        <actualTarget key="P31">
+          <value target="b2092c1e-fee9-4dff-a6a9-decca4617fda" xsi:type="graph:DirectPointer"/>
+        </actualTarget>
+      </balancings>
+      <children id="0d738250-227c-4d87-9cb7-f6a4f18bf8d2" name="C33" xsi:type="prem:SystemComponent">
+        <parameters id="eb33938b-62cd-407f-b8c6-7cbcc5e5d77d" name="P331">
+          <value value="23"/>
+          <satisfies>
+            <targetPointer xsi:type="graph:DirectPointer">
+              <target href="My.usecase#67045d49-0b43-4b67-8fdb-48811335c837" xsi:type="uc:RequiredParameter"/>
+            </targetPointer>
+          </satisfies>
+        </parameters>
+      </children>
+      <children id="0ff59f08-3721-4fae-904c-7a50057a3904" name="C34" xsi:type="prem:SystemComponent">
+        <metaTypes href="My.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+        <children id="ba64a35f-6c30-4179-bfc0-29358699d22e" name="C341" xsi:type="prem:SystemComponent">
+          <metaTypes href="My.registry#8a8f8a37-7fa8-487b-b18c-fdf292247269"/>
+          <satisfies>
+            <targetPointer xsi:type="graph:DirectPointer">
+              <target href="My.usecase#9c8dad9f-4ec6-4b46-a186-361aa33d3c01" xsi:type="uc:UseCase"/>
+            </targetPointer>
+          </satisfies>
+        </children>
+        <children id="6fa5f41b-45a6-41e1-8054-f82dfb476984" name="C341" xsi:type="prem:SystemComponent"/>
+      </children>
+      <children id="4ba28bff-f684-46c9-9aca-988c79800a89" name="CR31" xsi:type="prem:ComponentReference">
+        <componentDefinition href="My.component#2da4ee55-f223-4482-835c-1a65045d4a4f"/>
+        <activeImplementation href="My.component#4a1db9c1-2d47-44f5-bc75-6740e6ad3358"/>
+        <substitutionMap>
+          <original href="My.component#e8cdc941-47f4-4833-99df-b97b7408f450"/>
+          <substitution id="90e19371-2495-45b4-b390-5e81e7211292" name="D1P1111" xsi:type="prem:Parameter">
+            <value value="365.0"/>
+            <satisfies>
+              <targetPointer xsi:type="graph:DirectPointer">
+                <target href="My.component#2d83d0ad-bacd-4ad8-b0c4-c9c5c1db3721" xsi:type="comp:ParameterDefinition"/>
+              </targetPointer>
+            </satisfies>
+          </substitution>
+        </substitutionMap>
+      </children>
+    </children>
+    <children id="0fac6baf-313d-4d39-acc7-3707352dfee5" name="C4" xsi:type="prem:SystemComponent">
+      <metaTypes href="My.registry#e7ff6574-3b70-4432-a20f-50570fae7e5c"/>
+      <metaData name="asdfg" value="ert">
+        <metaData name="value" value="hallo"/>
+      </metaData>
+    </children>
+    <children id="3888568c-4892-470c-b3d6-0ddbd2a0668d" name="C5" xsi:type="prem:SystemComponent">
+      <metaData name="asdfg" value="1"/>
+      <satisfies>
+        <targetPointer xsi:type="graph:DirectPointer">
+          <target href="My.component#ca55e139-d003-4643-8622-96db6700d958" xsi:type="comp:ComponentDefinition"/>
+        </targetPointer>
+      </satisfies>
+      <satisfies>
+        <targetPointer xsi:type="graph:DirectPointer">
+          <target href="My.usecase#1957ef95-8c66-4b38-b29b-df474205768a" xsi:type="uc:UseCase"/>
+        </targetPointer>
+      </satisfies>
+      <parameters id="e866c1c9-670a-4006-9347-9f546f5e9f74" name="P51">
+        <value value="25"/>
+      </parameters>
+      <relations>
+        <sourcePointer target="3888568c-4892-470c-b3d6-0ddbd2a0668d" xsi:type="graph:DirectPointer"/>
+        <targetPointer componentReference="0945ad63-9e75-416c-a2b8-50470f7370ab" xsi:type="comp:ComponentReferencePointer">
+          <definition href="My.component#ca55e139-d003-4643-8622-96db6700d958" xsi:type="comp:ComponentDefinition"/>
+        </targetPointer>
+      </relations>
+      <relations>
+        <sourcePointer target="3888568c-4892-470c-b3d6-0ddbd2a0668d" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="16c3be9c-a6d2-4389-8192-9f8aa9f95227" xsi:type="graph:DirectPointer"/>
+      </relations>
+      <children id="5c761499-100d-47f2-817a-97c592246beb" name="C51" xsi:type="prem:SystemComponent">
+        <satisfies>
+          <targetPointer xsi:type="graph:DirectPointer">
+            <target href="My.component#//@definitions.2/@children.0" xsi:type="comp:ChildComponentDefinition"/>
+          </targetPointer>
+        </satisfies>
+      </children>
+      <children id="16c3be9c-a6d2-4389-8192-9f8aa9f95227" name="C52" xsi:type="prem:SystemComponent">
+        <balancings function="CR521.PD21 = P51^(1/2)">
+          <actualSources key="P51">
+            <value target="e866c1c9-670a-4006-9347-9f546f5e9f74" xsi:type="graph:DirectPointer"/>
+          </actualSources>
+          <actualTarget key="CR521.PD21">
+            <value componentReference="c7c2f861-2406-4fde-bc93-cd21c2c4ba84" xsi:type="comp:ComponentReferencePointer">
+              <definition href="My.component#196ddeb5-9597-4428-a83d-ffb04efd3375" xsi:type="comp:ParameterDefinition"/>
+            </value>
+          </actualTarget>
+        </balancings>
+        <children id="c7c2f861-2406-4fde-bc93-cd21c2c4ba84" name="CR521" xsi:type="prem:ComponentReference">
+          <componentDefinition href="My.component#c97114fa-5060-4669-8930-cb7c14e475ab"/>
+          <activeImplementation href="My.component#db4976c3-af0e-4ba3-84d0-2d46be6740a2"/>
+          <substitutionMap>
+            <original href="My.component#6499f6e1-75d6-4678-8735-0d5bef141478"/>
+            <substitution id="dc8ad72f-b56d-43c1-b75f-4b56f3912dd8" name="D2P1" xsi:type="prem:Parameter">
+              <value value="5.0"/>
+              <satisfies>
+                <targetPointer xsi:type="graph:DirectPointer">
+                  <target href="My.component#196ddeb5-9597-4428-a83d-ffb04efd3375" xsi:type="comp:ParameterDefinition"/>
+                </targetPointer>
+              </satisfies>
+              <satisfies>
+                <targetPointer xsi:type="graph:DirectPointer">
+                  <target href="My.component#4f1ab6d0-7a09-47bc-aa83-be4b2826401c" xsi:type="comp:ParameterDefinition"/>
+                </targetPointer>
+              </satisfies>
+            </substitution>
+          </substitutionMap>
+          <substitutionMap>
+            <original href="My.component#9e962846-7e66-4ec6-aa55-9d9f444356fb"/>
+            <substitution id="f9af37cb-a70a-47c1-b546-648ccc660f49" name="D2P2" xsi:type="prem:Parameter">
+              <value value="24.0"/>
+              <satisfies>
+                <targetPointer xsi:type="graph:DirectPointer">
+                  <target href="My.component#98183bfd-bee5-4852-affb-c5b502197aa6" xsi:type="comp:ParameterDefinition"/>
+                </targetPointer>
+              </satisfies>
+            </substitution>
+          </substitutionMap>
+        </children>
+      </children>
+      <children id="7cc09901-a07b-4a41-bb40-d6736d744b94" name="C53" xsi:type="prem:SystemComponent">
+        <metaTypes href="My.registry#0a0b6d6e-4695-4148-82e7-04e4e169ace4"/>
+        <satisfies>
+          <targetPointer xsi:type="graph:DirectPointer">
+            <target href="My.component#//@definitions.2/@children.1" xsi:type="comp:ChildComponentDefinition"/>
+          </targetPointer>
+        </satisfies>
+      </children>
+    </children>
+    <children activeImplementation="3888568c-4892-470c-b3d6-0ddbd2a0668d" id="0945ad63-9e75-416c-a2b8-50470f7370ab" name="CR1" xsi:type="prem:ComponentReference">
+      <componentDefinition href="My.component#ca55e139-d003-4643-8622-96db6700d958"/>
+    </children>
+  </projects>
+</prem:ProjectRepository>

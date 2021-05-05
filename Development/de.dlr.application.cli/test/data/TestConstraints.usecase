@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Group Elements" value="false"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Edit local statemachines">
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <usecases id="8682b2cc-9d89-4b49-a7f2-496308fab5e9" name="Problem">
+    <requiredParameters id="79b03f6d-fbbc-4363-9abd-71a78ba8e407" name="MassReq">
+      <valueConstraint lower="0" upper="250" xsi:type="uc:RangeConstraint"/>
+    </requiredParameters>
+    <requiredParameters id="09230cca-99eb-4675-8c91-d4834650e949" name="Unsatisfied"/>
+    <requiredParameters id="8b01bf4c-c90e-4a02-9dd5-40213dced2be" name="MultiplySatisfied"/>
+  </usecases>
+</uc:UseCaseRepository>

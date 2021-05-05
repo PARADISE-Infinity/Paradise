@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="de.dlr.premise.editor.customCellEditor">
+      <client
+            class="de.dlr.premise.representation.ui.SelectorQueryCustomCellEditor">
+      </client>
+      <client
+            class="de.dlr.premise.representation.ui.SelectorSourceSelectorCustomCellEditor">
+      </client>
+   </extension>
+
+</plugin>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comp:ComponentRepository xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <metaData name="View">
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="false"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Show Parameters" value="true"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Edit local statemachines">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+    </children>
+    <children name="dataTypeNames" value="on"/>
+    <children name="number representation pattern" value="##0.0###E0"/>
+  </metaData>
+  <definitions id="a01e4219-84ec-44d3-beaa-668dc5df9270" name="Def1">
+    <parameters id="50f91d6b-9680-4b80-bf73-013e9e3c256d" name="PD1"/>
+    <parameters id="ded8f8ea-0592-4105-b4ab-48ef2590f08b" name="PD2"/>
+  </definitions>
+  <components id="f807c009-3ec5-4709-8624-e98de685f597" name="C3">
+    <satisfies>
+	<targetPointer xsi:type="comp:DirectPointer">
+		<target href="#a01e4219-84ec-44d3-beaa-668dc5df9270" xsi:type="comp:ComponentDefinition"/>
+	</targetPointer>
+</satisfies>
+    <satisfies>
+	<targetPointer xsi:type="comp:DirectPointer">
+		<target href="MigrateV121ToV122.usecase#0d40930b-c613-4814-b972-f772362d35f3" xsi:type="uc:UseCase"/>
+	</targetPointer>
+</satisfies>
+    <parameters id="4a0244fd-9c32-4fd6-9a4b-0412339ef5d3" name="P31">
+      <value value=""/>
+      <satisfies>
+	<targetPointer xsi:type="comp:DirectPointer">
+		<target href="#50f91d6b-9680-4b80-bf73-013e9e3c256d" xsi:type="comp:ParameterDefinition"/>
+	</targetPointer>
+</satisfies>
+      <satisfies>
+	<targetPointer xsi:type="comp:DirectPointer">
+		<target href="#ded8f8ea-0592-4105-b4ab-48ef2590f08b" xsi:type="comp:ParameterDefinition"/>
+	</targetPointer>
+</satisfies>
+      <satisfies>
+	<targetPointer xsi:type="comp:DirectPointer">
+		<target href="MigrateV121ToV122.usecase#be0b25e4-2a62-4bc3-89ec-96ec488afd90" xsi:type="uc:RequiredParameter"/>
+	</targetPointer>
+</satisfies>
+    </parameters>
+  </components>
+  <components id="38b4af57-8652-49ba-99d8-b3a128055f81" name="C4">
+    <parameters id="1e459e6f-6917-4e08-a40a-4d043057b99e" name="P41">
+<satisfies>
+	<targetPointer target="50f91d6b-9680-4b80-bf73-013e9e3c256d" xsi:type="comp:DirectPointer"/>
+</satisfies>
+<satisfies>
+	<targetPointer target="ded8f8ea-0592-4105-b4ab-48ef2590f08b" xsi:type="comp:DirectPointer"/>
+</satisfies>
+</parameters>
+  <satisfies>
+	<targetPointer target="a01e4219-84ec-44d3-beaa-668dc5df9270" xsi:type="comp:DirectPointer"/>
+</satisfies>
+</components>
+</comp:ComponentRepository>

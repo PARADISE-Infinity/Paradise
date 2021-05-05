@@ -1,0 +1,1495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml>
+  <net id="Windenergiesystem" type="P/T net">
+    <token id="Default" enabled="true" red="0" green="0" blue="0"/>
+<place id="Windstille1">
+  <graphics>
+    <position x="120.0" y="120.0"/>
+  </graphics>
+  <name>
+    <value>Windstille1</value>
+    <graphics>
+      <offset x="44.0" y="-10.0"/>
+    </graphics>
+  </name>
+  <initialMarking>
+    <value>Default,1</value>
+    <graphics>
+      <offset x="0.0" y="0.0"/>
+    </graphics>
+  </initialMarking>
+  <capacity>
+    <value>1</value>
+  </capacity>
+</place>
+<place id="Wind2">
+  <graphics>
+    <position x="240.0" y="132.0"/>
+  </graphics>
+  <name>
+    <value>Wind2</value>
+    <graphics>
+      <offset x="20.0" y="-10.0"/>
+    </graphics>
+  </name>
+  <initialMarking>
+    <value>Default,0</value>
+    <graphics>
+      <offset x="0.0" y="0.0"/>
+    </graphics>
+  </initialMarking>
+  <capacity>
+    <value>1</value>
+  </capacity>
+</place>
+<place id="Sturm3">
+  <graphics>
+    <position x="120.0" y="252.0"/>
+  </graphics>
+  <name>
+    <value>Sturm3</value>
+    <graphics>
+      <offset x="24.0" y="-10.0"/>
+    </graphics>
+  </name>
+  <initialMarking>
+    <value>Default,0</value>
+    <graphics>
+      <offset x="0.0" y="0.0"/>
+    </graphics>
+  </initialMarking>
+  <capacity>
+    <value>1</value>
+  </capacity>
+</place>
+<transition id="t4">
+  <graphics>
+    <position x="180.0" y="120.0"/>
+  </graphics>
+  <name>
+    <value>t4</value>
+    <graphics>
+      <offset x="-5.0" y="35.0"/>
+    </graphics>
+  </name>
+  <orientation>
+    <value>0</value>
+  </orientation>
+  <rate>
+    <value>1.0</value>
+  </rate>
+  <timed>
+    <value>false</value>
+  </timed>
+  <infiniteServer>
+    <value>false</value>
+  </infiniteServer>
+  <priority>
+    <value>0</value>
+  </priority>
+</transition>
+<arc id="Windstille1 to t4" source="Windstille1" target="t4">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t4 to Wind2" source="t4" target="Wind2">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<transition id="t5">
+  <graphics>
+    <position x="180.0" y="168.0"/>
+  </graphics>
+  <name>
+    <value>t5</value>
+    <graphics>
+      <offset x="-5.0" y="35.0"/>
+    </graphics>
+  </name>
+  <orientation>
+    <value>0</value>
+  </orientation>
+  <rate>
+    <value>1.0</value>
+  </rate>
+  <timed>
+    <value>false</value>
+  </timed>
+  <infiniteServer>
+    <value>false</value>
+  </infiniteServer>
+  <priority>
+    <value>0</value>
+  </priority>
+</transition>
+<arc id="Wind2 to t5" source="Wind2" target="t5">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t5 to Windstille1" source="t5" target="Windstille1">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<transition id="t6">
+  <graphics>
+    <position x="180.0" y="216.0"/>
+  </graphics>
+  <name>
+    <value>t6</value>
+    <graphics>
+      <offset x="-5.0" y="35.0"/>
+    </graphics>
+  </name>
+  <orientation>
+    <value>0</value>
+  </orientation>
+  <rate>
+    <value>1.0</value>
+  </rate>
+  <timed>
+    <value>false</value>
+  </timed>
+  <infiniteServer>
+    <value>false</value>
+  </infiniteServer>
+  <priority>
+    <value>0</value>
+  </priority>
+</transition>
+<arc id="Wind2 to t6" source="Wind2" target="t6">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t6 to Sturm3" source="t6" target="Sturm3">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<transition id="t7">
+  <graphics>
+    <position x="180.0" y="264.0"/>
+  </graphics>
+  <name>
+    <value>t7</value>
+    <graphics>
+      <offset x="-5.0" y="35.0"/>
+    </graphics>
+  </name>
+  <orientation>
+    <value>0</value>
+  </orientation>
+  <rate>
+    <value>1.0</value>
+  </rate>
+  <timed>
+    <value>false</value>
+  </timed>
+  <infiniteServer>
+    <value>false</value>
+  </infiniteServer>
+  <priority>
+    <value>0</value>
+  </priority>
+</transition>
+<arc id="Sturm3 to t7" source="Sturm3" target="t7">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t7 to Wind2" source="t7" target="Wind2">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<place id="RotorDreht8">
+  <graphics>
+    <position x="360.0" y="120.0"/>
+  </graphics>
+  <name>
+    <value>RotorDreht8</value>
+    <graphics>
+      <offset x="44.0" y="-10.0"/>
+    </graphics>
+  </name>
+  <initialMarking>
+    <value>Default,0</value>
+    <graphics>
+      <offset x="0.0" y="0.0"/>
+    </graphics>
+  </initialMarking>
+  <capacity>
+    <value>1</value>
+  </capacity>
+</place>
+<place id="RotorSteht9">
+  <graphics>
+    <position x="480.0" y="132.0"/>
+  </graphics>
+  <name>
+    <value>RotorSteht9</value>
+    <graphics>
+      <offset x="44.0" y="-10.0"/>
+    </graphics>
+  </name>
+  <initialMarking>
+    <value>Default,1</value>
+    <graphics>
+      <offset x="0.0" y="0.0"/>
+    </graphics>
+  </initialMarking>
+  <capacity>
+    <value>1</value>
+  </capacity>
+</place>
+<transition id="t10">
+  <graphics>
+    <position x="420.0" y="120.0"/>
+  </graphics>
+  <name>
+    <value>t10</value>
+    <graphics>
+      <offset x="-5.0" y="35.0"/>
+    </graphics>
+  </name>
+  <orientation>
+    <value>0</value>
+  </orientation>
+  <rate>
+    <value>1.0</value>
+  </rate>
+  <timed>
+    <value>false</value>
+  </timed>
+  <infiniteServer>
+    <value>false</value>
+  </infiniteServer>
+  <priority>
+    <value>11</value>
+  </priority>
+</transition>
+<arc id="RotorDreht8 to t10" source="RotorDreht8" target="t10">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t10 to RotorSteht9" source="t10" target="RotorSteht9">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<transition id="t11">
+  <graphics>
+    <position x="420.0" y="168.0"/>
+  </graphics>
+  <name>
+    <value>t11</value>
+    <graphics>
+      <offset x="-5.0" y="35.0"/>
+    </graphics>
+  </name>
+  <orientation>
+    <value>0</value>
+  </orientation>
+  <rate>
+    <value>1.0</value>
+  </rate>
+  <timed>
+    <value>false</value>
+  </timed>
+  <infiniteServer>
+    <value>false</value>
+  </infiniteServer>
+  <priority>
+    <value>12</value>
+  </priority>
+</transition>
+<arc id="RotorSteht9 to t11" source="RotorSteht9" target="t11">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t11 to RotorDreht8" source="t11" target="RotorDreht8">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<place id="Stromproduktion12">
+  <graphics>
+    <position x="600.0" y="120.0"/>
+  </graphics>
+  <name>
+    <value>Stromproduktion12</value>
+    <graphics>
+      <offset x="68.0" y="-10.0"/>
+    </graphics>
+  </name>
+  <initialMarking>
+    <value>Default,0</value>
+    <graphics>
+      <offset x="0.0" y="0.0"/>
+    </graphics>
+  </initialMarking>
+  <capacity>
+    <value>1</value>
+  </capacity>
+</place>
+<place id="KeineStromprduktion13">
+  <graphics>
+    <position x="720.0" y="132.0"/>
+  </graphics>
+  <name>
+    <value>KeineStromprduktion13</value>
+    <graphics>
+      <offset x="84.0" y="-10.0"/>
+    </graphics>
+  </name>
+  <initialMarking>
+    <value>Default,1</value>
+    <graphics>
+      <offset x="0.0" y="0.0"/>
+    </graphics>
+  </initialMarking>
+  <capacity>
+    <value>1</value>
+  </capacity>
+</place>
+<transition id="t14">
+  <graphics>
+    <position x="660.0" y="120.0"/>
+  </graphics>
+  <name>
+    <value>t14</value>
+    <graphics>
+      <offset x="-5.0" y="35.0"/>
+    </graphics>
+  </name>
+  <orientation>
+    <value>0</value>
+  </orientation>
+  <rate>
+    <value>1.0</value>
+  </rate>
+  <timed>
+    <value>false</value>
+  </timed>
+  <infiniteServer>
+    <value>false</value>
+  </infiniteServer>
+  <priority>
+    <value>12</value>
+  </priority>
+</transition>
+<arc id="Stromproduktion12 to t14" source="Stromproduktion12" target="t14">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t14 to KeineStromprduktion13" source="t14" target="KeineStromprduktion13">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<transition id="t15">
+  <graphics>
+    <position x="660.0" y="168.0"/>
+  </graphics>
+  <name>
+    <value>t15</value>
+    <graphics>
+      <offset x="-5.0" y="35.0"/>
+    </graphics>
+  </name>
+  <orientation>
+    <value>0</value>
+  </orientation>
+  <rate>
+    <value>1.0</value>
+  </rate>
+  <timed>
+    <value>false</value>
+  </timed>
+  <infiniteServer>
+    <value>false</value>
+  </infiniteServer>
+  <priority>
+    <value>12</value>
+  </priority>
+</transition>
+<arc id="KeineStromprduktion13 to t15" source="KeineStromprduktion13" target="t15">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t15 to Stromproduktion12" source="t15" target="Stromproduktion12">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<place id="BremseAn16">
+  <graphics>
+    <position x="840.0" y="120.0"/>
+  </graphics>
+  <name>
+    <value>BremseAn16</value>
+    <graphics>
+      <offset x="40.0" y="-10.0"/>
+    </graphics>
+  </name>
+  <initialMarking>
+    <value>Default,1</value>
+    <graphics>
+      <offset x="0.0" y="0.0"/>
+    </graphics>
+  </initialMarking>
+  <capacity>
+    <value>1</value>
+  </capacity>
+</place>
+<place id="BremseAus17">
+  <graphics>
+    <position x="960.0" y="132.0"/>
+  </graphics>
+  <name>
+    <value>BremseAus17</value>
+    <graphics>
+      <offset x="44.0" y="-10.0"/>
+    </graphics>
+  </name>
+  <initialMarking>
+    <value>Default,0</value>
+    <graphics>
+      <offset x="0.0" y="0.0"/>
+    </graphics>
+  </initialMarking>
+  <capacity>
+    <value>1</value>
+  </capacity>
+</place>
+<transition id="t18">
+  <graphics>
+    <position x="900.0" y="120.0"/>
+  </graphics>
+  <name>
+    <value>t18</value>
+    <graphics>
+      <offset x="-5.0" y="35.0"/>
+    </graphics>
+  </name>
+  <orientation>
+    <value>0</value>
+  </orientation>
+  <rate>
+    <value>1.0</value>
+  </rate>
+  <timed>
+    <value>false</value>
+  </timed>
+  <infiniteServer>
+    <value>false</value>
+  </infiniteServer>
+  <priority>
+    <value>12</value>
+  </priority>
+</transition>
+<arc id="BremseAn16 to t18" source="BremseAn16" target="t18">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t18 to BremseAus17" source="t18" target="BremseAus17">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<transition id="t19">
+  <graphics>
+    <position x="900.0" y="168.0"/>
+  </graphics>
+  <name>
+    <value>t19</value>
+    <graphics>
+      <offset x="-5.0" y="35.0"/>
+    </graphics>
+  </name>
+  <orientation>
+    <value>0</value>
+  </orientation>
+  <rate>
+    <value>1.0</value>
+  </rate>
+  <timed>
+    <value>false</value>
+  </timed>
+  <infiniteServer>
+    <value>false</value>
+  </infiniteServer>
+  <priority>
+    <value>12</value>
+  </priority>
+</transition>
+<arc id="BremseAus17 to t19" source="BremseAus17" target="t19">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t19 to BremseAn16" source="t19" target="BremseAn16">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<place id="WindgeschwindigkeitUeberMax20">
+  <graphics>
+    <position x="1080.0" y="120.0"/>
+  </graphics>
+  <name>
+    <value>WindgeschwindigkeitUeberMax20</value>
+    <graphics>
+      <offset x="116.0" y="-10.0"/>
+    </graphics>
+  </name>
+  <initialMarking>
+    <value>Default,0</value>
+    <graphics>
+      <offset x="0.0" y="0.0"/>
+    </graphics>
+  </initialMarking>
+  <capacity>
+    <value>1</value>
+  </capacity>
+</place>
+<place id="WindgeschwindigkeitUnterMax21">
+  <graphics>
+    <position x="1200.0" y="132.0"/>
+  </graphics>
+  <name>
+    <value>WindgeschwindigkeitUnterMax21</value>
+    <graphics>
+      <offset x="116.0" y="-10.0"/>
+    </graphics>
+  </name>
+  <initialMarking>
+    <value>Default,1</value>
+    <graphics>
+      <offset x="0.0" y="0.0"/>
+    </graphics>
+  </initialMarking>
+  <capacity>
+    <value>1</value>
+  </capacity>
+</place>
+<transition id="t22">
+  <graphics>
+    <position x="1140.0" y="120.0"/>
+  </graphics>
+  <name>
+    <value>t22</value>
+    <graphics>
+      <offset x="-5.0" y="35.0"/>
+    </graphics>
+  </name>
+  <orientation>
+    <value>0</value>
+  </orientation>
+  <rate>
+    <value>1.0</value>
+  </rate>
+  <timed>
+    <value>false</value>
+  </timed>
+  <infiniteServer>
+    <value>false</value>
+  </infiniteServer>
+  <priority>
+    <value>11</value>
+  </priority>
+</transition>
+<arc id="WindgeschwindigkeitUeberMax20 to t22" source="WindgeschwindigkeitUeberMax20" target="t22">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t22 to WindgeschwindigkeitUnterMax21" source="t22" target="WindgeschwindigkeitUnterMax21">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<transition id="t23">
+  <graphics>
+    <position x="1140.0" y="168.0"/>
+  </graphics>
+  <name>
+    <value>t23</value>
+    <graphics>
+      <offset x="-5.0" y="35.0"/>
+    </graphics>
+  </name>
+  <orientation>
+    <value>0</value>
+  </orientation>
+  <rate>
+    <value>1.0</value>
+  </rate>
+  <timed>
+    <value>false</value>
+  </timed>
+  <infiniteServer>
+    <value>false</value>
+  </infiniteServer>
+  <priority>
+    <value>12</value>
+  </priority>
+</transition>
+<arc id="WindgeschwindigkeitUnterMax21 to t23" source="WindgeschwindigkeitUnterMax21" target="t23">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t23 to WindgeschwindigkeitUeberMax20" source="t23" target="WindgeschwindigkeitUeberMax20">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<place id="p24">
+  <graphics>
+    <position x="589.0" y="241.0"/>
+  </graphics>
+  <name>
+    <value>p24</value>
+    <graphics>
+      <offset x="12.0" y="-10.0"/>
+    </graphics>
+  </name>
+  <initialMarking>
+    <value>Default,0</value>
+    <graphics>
+      <offset x="0.0" y="0.0"/>
+    </graphics>
+  </initialMarking>
+  <capacity>
+    <value>1</value>
+  </capacity>
+</place>
+<arc id="p24 to t10" source="p24" target="t10">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<transition id="t25">
+  <graphics>
+    <position x="589.0" y="289.0"/>
+  </graphics>
+  <name>
+    <value>t25</value>
+    <graphics>
+      <offset x="-5.0" y="35.0"/>
+    </graphics>
+  </name>
+  <orientation>
+    <value>0</value>
+  </orientation>
+  <rate>
+    <value>1.0</value>
+  </rate>
+  <timed>
+    <value>false</value>
+  </timed>
+  <infiniteServer>
+    <value>false</value>
+  </infiniteServer>
+  <priority>
+    <value>1</value>
+  </priority>
+</transition>
+<arc id="BremseAn16 to t25" source="BremseAn16" target="t25">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t25 to p24" source="t25" target="p24">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t25 to BremseAn16" source="t25" target="BremseAn16">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<transition id="t26">
+  <graphics>
+    <position x="589.0" y="337.0"/>
+  </graphics>
+  <name>
+    <value>t26</value>
+    <graphics>
+      <offset x="-5.0" y="35.0"/>
+    </graphics>
+  </name>
+  <orientation>
+    <value>0</value>
+  </orientation>
+  <rate>
+    <value>1.0</value>
+  </rate>
+  <timed>
+    <value>false</value>
+  </timed>
+  <infiniteServer>
+    <value>false</value>
+  </infiniteServer>
+  <priority>
+    <value>1</value>
+  </priority>
+</transition>
+<arc id="Windstille1 to t26" source="Windstille1" target="t26">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t26 to p24" source="t26" target="p24">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t26 to Windstille1" source="t26" target="Windstille1">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<place id="p27">
+  <graphics>
+    <position x="709.0" y="349.0"/>
+  </graphics>
+  <name>
+    <value>p27</value>
+    <graphics>
+      <offset x="12.0" y="-10.0"/>
+    </graphics>
+  </name>
+  <initialMarking>
+    <value>Default,0</value>
+    <graphics>
+      <offset x="0.0" y="0.0"/>
+    </graphics>
+  </initialMarking>
+  <capacity>
+    <value>1</value>
+  </capacity>
+</place>
+<arc id="p27 to t11" source="p27" target="t11">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<transition id="t28">
+  <graphics>
+    <position x="709.0" y="397.0"/>
+  </graphics>
+  <name>
+    <value>t28</value>
+    <graphics>
+      <offset x="-5.0" y="35.0"/>
+    </graphics>
+  </name>
+  <orientation>
+    <value>0</value>
+  </orientation>
+  <rate>
+    <value>1.0</value>
+  </rate>
+  <timed>
+    <value>false</value>
+  </timed>
+  <infiniteServer>
+    <value>false</value>
+  </infiniteServer>
+  <priority>
+    <value>1</value>
+  </priority>
+</transition>
+<arc id="Wind2 to t28" source="Wind2" target="t28">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t28 to p27" source="t28" target="p27">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t28 to Wind2" source="t28" target="Wind2">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<transition id="t29">
+  <graphics>
+    <position x="709.0" y="445.0"/>
+  </graphics>
+  <name>
+    <value>t29</value>
+    <graphics>
+      <offset x="-5.0" y="35.0"/>
+    </graphics>
+  </name>
+  <orientation>
+    <value>0</value>
+  </orientation>
+  <rate>
+    <value>1.0</value>
+  </rate>
+  <timed>
+    <value>false</value>
+  </timed>
+  <infiniteServer>
+    <value>false</value>
+  </infiniteServer>
+  <priority>
+    <value>1</value>
+  </priority>
+</transition>
+<arc id="Sturm3 to t29" source="Sturm3" target="t29">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t29 to p27" source="t29" target="p27">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t29 to Sturm3" source="t29" target="Sturm3">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t11 to BremseAus17" source="t11" target="BremseAus17">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="BremseAus17 to t11" source="BremseAus17" target="t11">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t14 to RotorSteht9" source="t14" target="RotorSteht9">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="RotorSteht9 to t14" source="RotorSteht9" target="t14">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t15 to RotorDreht8" source="t15" target="RotorDreht8">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="RotorDreht8 to t15" source="RotorDreht8" target="t15">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t18 to WindgeschwindigkeitUnterMax21" source="t18" target="WindgeschwindigkeitUnterMax21">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="WindgeschwindigkeitUnterMax21 to t18" source="WindgeschwindigkeitUnterMax21" target="t18">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t19 to WindgeschwindigkeitUeberMax20" source="t19" target="WindgeschwindigkeitUeberMax20">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="WindgeschwindigkeitUeberMax20 to t19" source="WindgeschwindigkeitUeberMax20" target="t19">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<place id="p30">
+  <graphics>
+    <position x="829.0" y="457.0"/>
+  </graphics>
+  <name>
+    <value>p30</value>
+    <graphics>
+      <offset x="12.0" y="-10.0"/>
+    </graphics>
+  </name>
+  <initialMarking>
+    <value>Default,0</value>
+    <graphics>
+      <offset x="0.0" y="0.0"/>
+    </graphics>
+  </initialMarking>
+  <capacity>
+    <value>1</value>
+  </capacity>
+</place>
+<arc id="p30 to t22" source="p30" target="t22">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<transition id="t31">
+  <graphics>
+    <position x="829.0" y="505.0"/>
+  </graphics>
+  <name>
+    <value>t31</value>
+    <graphics>
+      <offset x="-5.0" y="35.0"/>
+    </graphics>
+  </name>
+  <orientation>
+    <value>0</value>
+  </orientation>
+  <rate>
+    <value>1.0</value>
+  </rate>
+  <timed>
+    <value>false</value>
+  </timed>
+  <infiniteServer>
+    <value>false</value>
+  </infiniteServer>
+  <priority>
+    <value>1</value>
+  </priority>
+</transition>
+<arc id="Windstille1 to t31" source="Windstille1" target="t31">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t31 to p30" source="t31" target="p30">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t31 to Windstille1" source="t31" target="Windstille1">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<transition id="t32">
+  <graphics>
+    <position x="829.0" y="553.0"/>
+  </graphics>
+  <name>
+    <value>t32</value>
+    <graphics>
+      <offset x="-5.0" y="35.0"/>
+    </graphics>
+  </name>
+  <orientation>
+    <value>0</value>
+  </orientation>
+  <rate>
+    <value>1.0</value>
+  </rate>
+  <timed>
+    <value>false</value>
+  </timed>
+  <infiniteServer>
+    <value>false</value>
+  </infiniteServer>
+  <priority>
+    <value>1</value>
+  </priority>
+</transition>
+<arc id="Wind2 to t32" source="Wind2" target="t32">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t32 to p30" source="t32" target="p30">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t32 to Wind2" source="t32" target="Wind2">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="t23 to Sturm3" source="t23" target="Sturm3">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+<arc id="Sturm3 to t23" source="Sturm3" target="t23">
+  <graphics/>
+  <inscription>
+    <value>Default,1</value>
+    <graphics/>
+  </inscription>
+  <tagged>
+    <value>false</value>
+  </tagged>
+  <arcpath id="000" x="0.0" y="0.0" curvePoint="false"/>
+  <arcpath id="001" x="0.0" y="0.0" curvePoint="false"/>
+  <type value="normal"/>
+</arc>
+  </net>
+</pnml>

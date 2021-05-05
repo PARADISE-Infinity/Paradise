@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0" xsi:schemaLocation="http://www.dlr.de/ft/premise/funcpool/2010/ ../../../de.dlr.ft.premise/model/PREMISE_FnPool.ecore http://www.dlr.de/ft/premise/2010/ ../../../de.dlr.ft.premise/model/PREMISE_system.ecore http://www.dlr.de/ft/premise/validated/2013/ ../../../de.dlr.ft.premise/model/PREMISE_system.ecore#//validated">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+  </metaData>
+  <metaData name="Export">
+    <metaData name="GraphML/StateMachines">
+      <metaData name="Transition constraints" value="on"/>
+      <metaData name="Links between referenced foreign mode and their origin" value="off"/>
+      <metaData name="Color for referenced foreign modes and edges (default grey: #AAAAAA)" value="#bbbbbb"/>
+    </metaData>
+    <metaData name="GraphML">
+      <metaData name="logical_hierarchy" value="on"/>
+      <metaData name="physical_portmappings" value="on"/>
+      <metaData name="parameter_dependencies" value="off"/>
+      <metaData name="self_references" value="off"/>
+      <metaData name="constants" value="off"/>
+      <metaData name="relations" value="off"/>
+      <metaData name="color" value="Applicable for every element's meta data, value example: #D4D4D4CC (grey, default), #00FF00 (green)..."/>
+      <metaData name="width" value="Applicable for every element's meta data, value example: 125 (default)"/>
+      <metaData name="height" value="Applicable for every element's meta data, value example: 55 (default)"/>
+      <metaData name="coordinate" value="Applicable for every element's meta data, value example: 4,4"/>
+    </metaData>
+  </metaData>
+  <projects id="b3425bad-6604-4ed9-995d-e3cad67df118" name="Windenergiesystem">
+    <children id="ab6363ed-353b-4fc3-9593-7b187c443350" name="Umwelt" xsi:type="prem:SystemComponent">
+      <parameters description="" id="6f5af36c-bbb7-4b55-9058-ccf98216ae28" name="Windgeschwindigkeit" xsi:type="prem:Parameter">
+        <modeValues value="0" xsi:type="prem:ModeValueRef">
+<modePointers target="00c87ff6-b5de-4787-b1b1-6a119b9f86cb" xsi:type="graph:DirectPointer"/>
+</modeValues>
+        <modeValues value="80" xsi:type="prem:ModeValueRef">
+<modePointers target="d3c50d75-c68f-45b0-a771-cb1c3d6ebd31" xsi:type="graph:DirectPointer"/>
+</modeValues>
+        <modeValues value="110" xsi:type="prem:ModeValueRef"/>
+        <modeValues value="140" xsi:type="prem:ModeValueRef"/>
+        <modeValues value="190" xsi:type="prem:ModeValueRef"/>
+        <modeValues value="300" xsi:type="prem:ModeValueRef">
+<modePointers target="830df94c-4cc2-45c5-b985-909d514f8f84" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      </parameters>
+    <statemachines name="Umwelt">
+<modes entryMode="true" id="00c87ff6-b5de-4787-b1b1-6a119b9f86cb" name="Windstille" xsi:type="elem:Mode"/>
+<modes entryMode="false" id="d3c50d75-c68f-45b0-a771-cb1c3d6ebd31" name="Wind" xsi:type="elem:Mode"/>
+<modes entryMode="false" id="830df94c-4cc2-45c5-b985-909d514f8f84" name="Sturm" xsi:type="elem:Mode"/>
+<transitions id="07d06f81-5df6-46f0-add2-d42168d61477">
+<sourcePointer target="00c87ff6-b5de-4787-b1b1-6a119b9f86cb" xsi:type="graph:DirectPointer"/>
+<targetPointer target="d3c50d75-c68f-45b0-a771-cb1c3d6ebd31" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="87052009-c60a-4b00-a4dd-bf211967f2d0" name="">
+<sourcePointer target="d3c50d75-c68f-45b0-a771-cb1c3d6ebd31" xsi:type="graph:DirectPointer"/>
+<targetPointer target="00c87ff6-b5de-4787-b1b1-6a119b9f86cb" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="c6e8c2df-a45e-4bd2-96b6-b25f898a5695" name="">
+<sourcePointer target="d3c50d75-c68f-45b0-a771-cb1c3d6ebd31" xsi:type="graph:DirectPointer"/>
+<targetPointer target="830df94c-4cc2-45c5-b985-909d514f8f84" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="30e85e8f-3531-4d6e-9d8a-7156e1695730" name="">
+<sourcePointer target="830df94c-4cc2-45c5-b985-909d514f8f84" xsi:type="graph:DirectPointer"/>
+<targetPointer target="d3c50d75-c68f-45b0-a771-cb1c3d6ebd31" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+    <children id="7d0fdf66-0258-4e12-bb6f-61766bb74f82" name="Windturbine" xsi:type="prem:SystemComponent">
+      <parameters id="9d699d4d-7fa8-4911-9de2-7cbd45209c1d" name="Masse" xsi:type="prem:Parameter">
+        <value value="13155.0" xsi:type="reg:Value">
+        </value>
+      <unit href="premise:/Base.registry#kg"/>
+</parameters>
+      <parameters description="" id="27d3e684-08f0-4fa7-8d80-5477f8df40a6" name="Leistung" xsi:type="prem:Parameter">
+        <value value="1224000.0" xsi:type="reg:Value">
+        </value>
+        <modeValues value="0.0" xsi:type="prem:ModeValueRef">
+<modePointers target="00c87ff6-b5de-4787-b1b1-6a119b9f86cb" xsi:type="graph:DirectPointer"/>
+</modeValues>
+        <modeValues value="979200.0" xsi:type="prem:ModeValueRef">
+<modePointers target="d3c50d75-c68f-45b0-a771-cb1c3d6ebd31" xsi:type="graph:DirectPointer"/>
+</modeValues>
+        <modeValues value="1338994.8" xsi:type="prem:ModeValueRef"/>
+        <modeValues value="1565373.5999999999" xsi:type="prem:ModeValueRef"/>
+        <modeValues value="1366987.6799999997" xsi:type="prem:ModeValueRef"/>
+        <modeValues value="0.0" xsi:type="prem:ModeValueRef">
+<modePointers target="830df94c-4cc2-45c5-b985-909d514f8f84" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      <unit href="premise:/Base.registry#W"/>
+</parameters>
+      <balancings description="" function="Windturbine.Masse = Sum(Turm.Masse, Gondel.Masse)" name="Gesamtmasse" xsi:type="prem:Balancing">
+      <actualSources key="Turm.Masse">
+<value target="219bd294-2bc0-48eb-9d13-0d5f3306410a" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="Gondel.Masse">
+<value target="dcbffa6c-ba2a-4dc5-b205-ab266940a2f1" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="Windturbine.Masse">
+<value target="9d699d4d-7fa8-4911-9de2-7cbd45209c1d" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+      <balancings description="" function="Windturbine.Leistung = _(Generator.Leistung)" name="GeneratorLeistung" xsi:type="prem:Balancing">
+      <actualSources key="Generator.Leistung">
+<value target="97467b19-a018-4452-bd3f-c5f369cb3edf" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="Windturbine.Leistung">
+<value target="27d3e684-08f0-4fa7-8d80-5477f8df40a6" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+      <children id="48712710-0175-43f9-b1d5-68c78127281d" name="Turm" xsi:type="prem:SystemComponent">
+        <parameters id="219bd294-2bc0-48eb-9d13-0d5f3306410a" name="Masse" xsi:type="prem:Parameter">
+          <value value="9900.0" xsi:type="reg:Value">
+          </value>
+        <unit href="premise:/Base.registry#kg"/>
+</parameters>
+        <balancings description="" function="Turm.Masse = Sum(Turmhuelle.Masse, Windnachfuehrung.Masse, Fundament.Masse)" name="GesamtmasseTurm" xsi:type="prem:Balancing">
+        <actualSources key="Turmhuelle.Masse">
+<value target="83176d35-c6a9-492b-91ee-2160c0cbdded" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="Windnachfuehrung.Masse">
+<value target="f7d187c1-aada-4e69-bb44-983faf7f8936" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="Fundament.Masse">
+<value target="147b4b6d-6978-4f0f-80b7-461a89eb88fe" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="Turm.Masse">
+<value target="219bd294-2bc0-48eb-9d13-0d5f3306410a" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+        <children id="91e95120-9f50-4692-8d15-7493813ee5a4" name="Fundament" xsi:type="prem:SystemComponent">
+          <parameters id="147b4b6d-6978-4f0f-80b7-461a89eb88fe" name="Masse" xsi:type="prem:Parameter">
+            <value value="4000" xsi:type="reg:Value">
+            </value>
+          <unit href="premise:/Base.registry#kg"/>
+</parameters>
+        </children>
+        <children id="2f2c7d1e-cb5e-4183-b04e-442cad1c2e52" name="Turmhuelle" xsi:type="prem:SystemComponent">
+          <parameters id="83176d35-c6a9-492b-91ee-2160c0cbdded" name="Masse" xsi:type="prem:Parameter">
+            <value value="5000" xsi:type="reg:Value">
+            </value>
+          <unit href="premise:/Base.registry#kg"/>
+</parameters>
+        </children>
+        <children description="" id="6a9bcd08-83e3-4201-a9c2-90018f74a3a1" name="Windnachfuehrung" xsi:type="prem:SystemComponent">
+          <parameters id="f7d187c1-aada-4e69-bb44-983faf7f8936" name="Masse" xsi:type="prem:Parameter">
+            <value value="900" xsi:type="reg:Value">
+            </value>
+          <unit href="premise:/Base.registry#kg"/>
+</parameters>
+          <connections sourcePortName="GondelDrehen" targetPortName="GondelDrehen">
+<sourcePointer target="41cc3ef0-144e-4b0e-85a4-3e1445034405" xsi:type="graph:DirectPointer"/>
+<targetPointer target="083c443a-d7f2-47fc-8990-d7f322ee04d1" xsi:type="graph:DirectPointer"/>
+</connections>
+          <children id="083c443a-d7f2-47fc-8990-d7f322ee04d1" name="Nachfuehrmotor" xsi:type="prem:SystemComponent">
+          </children>
+          <children id="a1b8d923-3385-4244-8358-d2ed5a085f12" name="Nachfuehrgetriebe" xsi:type="prem:SystemComponent"/>
+          <children id="710e1331-ca1a-4bca-bba8-ea9f08c0b761" name="Orientierungssensor" xsi:type="prem:SystemComponent">
+            <children id="217e035e-59d4-4001-b5dd-a5ce513bb1c6" name="Orientierungssensor" xsi:type="prem:SystemComponent">
+            </children>
+          </children>
+        </children>
+      </children>
+      <children id="2e21fac7-bff5-442b-bd47-97cc9d0994ad" name="Gondel" xsi:type="prem:SystemComponent">
+        <parameters id="dcbffa6c-ba2a-4dc5-b205-ab266940a2f1" name="Masse" xsi:type="prem:Parameter">
+          <value value="3255.0" xsi:type="reg:Value">
+          </value>
+        <unit href="premise:/Base.registry#kg"/>
+</parameters>
+        <balancings function="Gondel.Masse = Sum(Rotor.Masse, Maschinenstrang.Masse, Generator.Masse, Controller.Masse, Umweltsensor.Masse, Huelle.Masse)" name="GesamtmasseGondel" xsi:type="prem:Balancing">
+        <actualSources key="Rotor.Masse">
+<value target="8198f477-354f-489c-822a-21d20744809f" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="Maschinenstrang.Masse">
+<value target="2bae8de8-d373-482a-b4ee-b9ef778c3028" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="Generator.Masse">
+<value target="726b8f31-ba8b-49d4-8bb5-6488ea004632" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="Controller.Masse">
+<value target="ee79b578-d6a5-4bb2-abba-e5f508714481" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="Umweltsensor.Masse">
+<value target="f6c9eed1-d250-4f87-9141-1039ed8f794f" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="Huelle.Masse">
+<value target="2de0675e-394e-45ae-9c58-491d837977c5" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="Gondel.Masse">
+<value target="dcbffa6c-ba2a-4dc5-b205-ab266940a2f1" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+        <children id="2bcfc08b-8cef-4267-b24d-8a14ed438e09" name="Rotor" xsi:type="prem:SystemComponent">
+          <parameters id="8198f477-354f-489c-822a-21d20744809f" name="Masse" xsi:type="prem:Parameter">
+            <value value="500" xsi:type="reg:Value">
+            </value>
+          <unit href="premise:/Base.registry#kg"/>
+</parameters>
+          <parameters id="cc93744a-6286-4a74-9b14-5f9808f29e90" name="AnstellwinkelRotoblaetter" xsi:type="prem:Parameter">
+            <value value="0.0" xsi:type="reg:Value"/>
+            <modeValues value="0.0" xsi:type="prem:ModeValueRef">
+<modePointers target="00c87ff6-b5de-4787-b1b1-6a119b9f86cb" xsi:type="graph:DirectPointer"/>
+</modeValues>
+            <modeValues value="0.0" xsi:type="prem:ModeValueRef">
+<modePointers target="d3c50d75-c68f-45b0-a771-cb1c3d6ebd31" xsi:type="graph:DirectPointer"/>
+</modeValues>
+            <modeValues value="6.0" xsi:type="prem:ModeValueRef"/>
+            <modeValues value="24.0" xsi:type="prem:ModeValueRef"/>
+            <modeValues value="54.0" xsi:type="prem:ModeValueRef"/>
+            <modeValues value="90.0" xsi:type="prem:ModeValueRef">
+<modePointers target="830df94c-4cc2-45c5-b985-909d514f8f84" xsi:type="graph:DirectPointer"/>
+</modeValues>
+          </parameters>
+          <parameters id="73ebb995-0b6f-4d2e-b70a-9127d4b5f461" name="Durchmesser" xsi:type="prem:Parameter">
+            <value value="100" xsi:type="reg:Value">
+            </value>
+          <unit href="premise:/Base.registry#m"/>
+</parameters>
+          <parameters description="" id="fe78a532-2b08-4a12-b14b-88a25d59f51c" name="GeschwindigkeitBlattspitze" xsi:type="prem:Parameter">
+            <value value="314.1000006282" xsi:type="reg:Value"/>
+            <modeValues value="0.0" xsi:type="prem:ModeValueRef">
+<modePointers target="00c87ff6-b5de-4787-b1b1-6a119b9f86cb" xsi:type="graph:DirectPointer"/>
+</modeValues>
+            <modeValues value="251.28000050255997" xsi:type="prem:ModeValueRef">
+<modePointers target="d3c50d75-c68f-45b0-a771-cb1c3d6ebd31" xsi:type="graph:DirectPointer"/>
+</modeValues>
+            <modeValues value="343.60969568721936" xsi:type="prem:ModeValueRef"/>
+            <modeValues value="401.702490803405" xsi:type="prem:ModeValueRef"/>
+            <modeValues value="350.7931627015863" xsi:type="prem:ModeValueRef"/>
+            <modeValues value="0.0" xsi:type="prem:ModeValueRef">
+<modePointers target="830df94c-4cc2-45c5-b985-909d514f8f84" xsi:type="graph:DirectPointer"/>
+</modeValues>
+          </parameters>
+          <parameters id="bd471a27-01d4-4385-bf3c-24477205e408" name="Rotation" xsi:type="prem:Parameter">
+            <modeValues value="0.0" xsi:type="prem:ModeValueRef">
+<modePointers target="00c87ff6-b5de-4787-b1b1-6a119b9f86cb" xsi:type="graph:DirectPointer"/>
+</modeValues>
+            <modeValues value="48.0" xsi:type="prem:ModeValueRef">
+<modePointers target="d3c50d75-c68f-45b0-a771-cb1c3d6ebd31" xsi:type="graph:DirectPointer"/>
+</modeValues>
+            <modeValues value="65.637" xsi:type="prem:ModeValueRef"/>
+            <modeValues value="76.734" xsi:type="prem:ModeValueRef"/>
+            <modeValues value="67.00919999999999" xsi:type="prem:ModeValueRef"/>
+            <modeValues value="0.0" xsi:type="prem:ModeValueRef">
+<modePointers target="830df94c-4cc2-45c5-b985-909d514f8f84" xsi:type="graph:DirectPointer"/>
+</modeValues>
+          </parameters>
+          <balancings description="" function="Rotor.Rotation = &lt;unknown function&gt;(Windgeschwindigkeit, AnstellwinkelRotoblaetter)" name="REDUCED" xsi:type="prem:Balancing">
+<actualSources key="Windgeschwindigkeit">
+<value target="6f5af36c-bbb7-4b55-9058-ccf98216ae28" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="AnstellwinkelRotoblaetter">
+<value target="cc93744a-6286-4a74-9b14-5f9808f29e90" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="Rotor.Rotation">
+<value target="bd471a27-01d4-4385-bf3c-24477205e408" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+          <balancings function="AnstellwinkelRotoblaetter = &lt;unknown function&gt;(Windgeschwindigkeit)" name="REDUCED_WinkelAusWindgeschwindigkeit" xsi:type="prem:Balancing">
+<actualSources key="Windgeschwindigkeit">
+<value target="6f5af36c-bbb7-4b55-9058-ccf98216ae28" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="AnstellwinkelRotoblaetter">
+<value target="cc93744a-6286-4a74-9b14-5f9808f29e90" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+          <balancings function="GeschwindigkeitBlattspitze = Multiply(Rotor.Rotation, Durchmesser)" name="REDUCED" xsi:type="prem:Balancing">
+          <actualSources key="Rotor.Rotation">
+<value target="bd471a27-01d4-4385-bf3c-24477205e408" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="Durchmesser">
+<value target="73ebb995-0b6f-4d2e-b70a-9127d4b5f461" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="GeschwindigkeitBlattspitze">
+<value target="fe78a532-2b08-4a12-b14b-88a25d59f51c" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+          <connections sourcePortName="WinkelRotorblaetter" targetPortName="WinkelRotorblaetter">
+<sourcePointer target="41cc3ef0-144e-4b0e-85a4-3e1445034405" xsi:type="graph:DirectPointer"/>
+<targetPointer target="2bcfc08b-8cef-4267-b24d-8a14ed438e09" xsi:type="graph:DirectPointer"/>
+</connections>
+        <statemachines name="Rotor">
+<modes entryMode="false" id="ec856cc5-e912-4afb-af3e-b1d37fd9daad" name="RotorDreht" xsi:type="elem:Mode"/>
+<modes entryMode="true" id="c6bf6f59-f316-42bc-a24d-a725345de580" name="RotorSteht" xsi:type="elem:Mode"/>
+<transitions id="5b609afb-8ae2-4c42-8b3a-b411d4d86e3d">
+            <condition xsi:type="elem:GuardCombination">
+              <children xsi:type="elem:ModeGuard">
+<modePointer target="93defec3-f3bb-48d0-8dad-c57342bb3a8a" xsi:type="graph:DirectPointer"/>
+</children>
+              <children xsi:type="elem:ModeGuard">
+<modePointer target="00c87ff6-b5de-4787-b1b1-6a119b9f86cb" xsi:type="graph:DirectPointer"/>
+</children>
+            </condition>
+          <sourcePointer target="ec856cc5-e912-4afb-af3e-b1d37fd9daad" xsi:type="graph:DirectPointer"/>
+<targetPointer target="c6bf6f59-f316-42bc-a24d-a725345de580" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="c7aac489-34d1-4876-b690-4f3a2a6801af">
+            <condition junction="AND" xsi:type="elem:GuardCombination">
+              <children xsi:type="elem:GuardCombination">
+                <children xsi:type="elem:ModeGuard">
+<modePointer target="d3c50d75-c68f-45b0-a771-cb1c3d6ebd31" xsi:type="graph:DirectPointer"/>
+</children>
+                <children xsi:type="elem:ModeGuard">
+<modePointer target="830df94c-4cc2-45c5-b985-909d514f8f84" xsi:type="graph:DirectPointer"/>
+</children>
+              </children>
+              <children xsi:type="elem:ModeGuard">
+<modePointer target="e7c12fd5-2f45-4f02-b79e-e68513490bc2" xsi:type="graph:DirectPointer"/>
+</children>
+            </condition>
+          <sourcePointer target="c6bf6f59-f316-42bc-a24d-a725345de580" xsi:type="graph:DirectPointer"/>
+<targetPointer target="ec856cc5-e912-4afb-af3e-b1d37fd9daad" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+        <children id="d59d9164-6018-4250-be17-fa67e79a3545" name="Generator" xsi:type="prem:SystemComponent">
+          <parameters id="97467b19-a018-4452-bd3f-c5f369cb3edf" name="Leistung" xsi:type="prem:Parameter">
+            <value value="1224000.0" xsi:type="reg:Value"/>
+            <modeValues value="0.0" xsi:type="prem:ModeValueRef">
+<modePointers target="00c87ff6-b5de-4787-b1b1-6a119b9f86cb" xsi:type="graph:DirectPointer"/>
+</modeValues>
+            <modeValues value="979200.0" xsi:type="prem:ModeValueRef">
+<modePointers target="d3c50d75-c68f-45b0-a771-cb1c3d6ebd31" xsi:type="graph:DirectPointer"/>
+</modeValues>
+            <modeValues value="1338994.8" xsi:type="prem:ModeValueRef"/>
+            <modeValues value="1565373.5999999999" xsi:type="prem:ModeValueRef"/>
+            <modeValues value="1366987.6799999997" xsi:type="prem:ModeValueRef"/>
+            <modeValues value="0.0" xsi:type="prem:ModeValueRef">
+<modePointers target="830df94c-4cc2-45c5-b985-909d514f8f84" xsi:type="graph:DirectPointer"/>
+</modeValues>
+          </parameters>
+          <parameters id="8c6ee822-9b38-4f98-89b7-82da100c3b96" name="Rotationen pro Minute" xsi:type="prem:Parameter">
+            <value value="4800.0" xsi:type="reg:Value"/>
+            <modeValues value="0.0" xsi:type="prem:ModeValueRef">
+<modePointers target="00c87ff6-b5de-4787-b1b1-6a119b9f86cb" xsi:type="graph:DirectPointer"/>
+</modeValues>
+            <modeValues value="3840.0" xsi:type="prem:ModeValueRef">
+<modePointers target="d3c50d75-c68f-45b0-a771-cb1c3d6ebd31" xsi:type="graph:DirectPointer"/>
+</modeValues>
+            <modeValues value="5250.96" xsi:type="prem:ModeValueRef"/>
+            <modeValues value="6138.719999999999" xsi:type="prem:ModeValueRef"/>
+            <modeValues value="5360.735999999999" xsi:type="prem:ModeValueRef"/>
+            <modeValues value="0.0" xsi:type="prem:ModeValueRef">
+<modePointers target="830df94c-4cc2-45c5-b985-909d514f8f84" xsi:type="graph:DirectPointer"/>
+</modeValues>
+          </parameters>
+          <parameters id="b13f7c46-f1b3-4bc2-8b10-6a0af3ddca45" name="Wirkungsgrad" xsi:type="prem:Parameter">
+            <value value=".85" xsi:type="reg:Value">
+            </value>
+          <unit href="_GLOBAL/Registry.premise.registry#1"/>
+</parameters>
+          <parameters id="726b8f31-ba8b-49d4-8bb5-6488ea004632" name="Masse" xsi:type="prem:Parameter">
+            <value value="1500" xsi:type="reg:Value">
+            </value>
+          <unit href="premise:/Base.registry#kg"/>
+</parameters>
+          <parameters id="1ad1e6f0-48a2-4f4d-bdef-6e75eecc1fb0" name="FaktorLeistung" xsi:type="prem:Parameter">
+            <value value="300" xsi:type="reg:Value">
+            </value>
+            <modeValues value="0.0" xsi:type="prem:ModeValueRef">
+<modePointers target="93defec3-f3bb-48d0-8dad-c57342bb3a8a" xsi:type="graph:DirectPointer"/>
+</modeValues>
+          <unit href="_GLOBAL/Registry.premise.registry#1"/>
+</parameters>
+          <balancings description="" function="Generator.Leistung = Multiply(Rotationen_pro_Minute, FaktorLeistung, Wirkungsgrad)" name="" xsi:type="prem:Balancing">
+          <actualSources key="Rotationen_pro_Minute">
+<value target="8c6ee822-9b38-4f98-89b7-82da100c3b96" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="FaktorLeistung">
+<value target="1ad1e6f0-48a2-4f4d-bdef-6e75eecc1fb0" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="Wirkungsgrad">
+<value target="b13f7c46-f1b3-4bc2-8b10-6a0af3ddca45" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="Generator.Leistung">
+<value target="97467b19-a018-4452-bd3f-c5f369cb3edf" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+          <balancings function="Rotationen_pro_Minute = Sum(Schnelle_Welle.Rotation)" name="" xsi:type="prem:Balancing">
+          <actualSources key="Schnelle_Welle.Rotation">
+<value target="a30a5f45-c3c0-4e70-87ec-cdad896ffca3" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="Rotationen_pro_Minute">
+<value target="8c6ee822-9b38-4f98-89b7-82da100c3b96" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+        <statemachines name="Generator">
+<modes entryMode="false" id="4f8187e4-bade-4ba0-b3c5-fdaa7a0b59ba" name="Stromproduktion" xsi:type="elem:Mode"/>
+<modes entryMode="true" id="15218964-99be-45db-9013-0a7d08ee3119" name="KeineStromprduktion" xsi:type="elem:Mode"/>
+<transitions id="5e776d1a-383e-43cf-88b8-c7e7a800e17d" name="">
+            <condition xsi:type="elem:ModeGuard">
+<modePointer target="c6bf6f59-f316-42bc-a24d-a725345de580" xsi:type="graph:DirectPointer"/>
+</condition>
+          <sourcePointer target="4f8187e4-bade-4ba0-b3c5-fdaa7a0b59ba" xsi:type="graph:DirectPointer"/>
+<targetPointer target="15218964-99be-45db-9013-0a7d08ee3119" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="9b25c972-d0ff-4c61-9771-998a95f7561a">
+            <condition xsi:type="elem:ModeGuard">
+<modePointer target="ec856cc5-e912-4afb-af3e-b1d37fd9daad" xsi:type="graph:DirectPointer"/>
+</condition>
+          <sourcePointer target="15218964-99be-45db-9013-0a7d08ee3119" xsi:type="graph:DirectPointer"/>
+<targetPointer target="4f8187e4-bade-4ba0-b3c5-fdaa7a0b59ba" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+        <children id="cb644cbd-bfcc-4770-bb82-45ee927c986d" name="Maschinenstrang" xsi:type="prem:SystemComponent">
+          <parameters id="2bae8de8-d373-482a-b4ee-b9ef778c3028" name="Masse" xsi:type="prem:Parameter">
+            <value value="620.0" xsi:type="reg:Value">
+            </value>
+          <unit href="premise:/Base.registry#kg"/>
+</parameters>
+          <balancings description="" function="Maschinenstrang.Masse = Sum(Langsame_Welle.Masse, Schnelle_Welle.Masse, Getriebe.Masse)" name="GesamtmasseMaschinenstrang" xsi:type="prem:Balancing">
+          <actualSources key="Langsame_Welle.Masse">
+<value target="25448169-e900-450b-b361-8a3e733e5c09" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="Schnelle_Welle.Masse">
+<value target="b0d36ad8-ef01-4413-a82e-ca19b08a3f19" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="Getriebe.Masse">
+<value target="9271a66d-6a85-458e-b1db-24007bff93a0" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="Maschinenstrang.Masse">
+<value target="2bae8de8-d373-482a-b4ee-b9ef778c3028" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+          <children id="28539942-ec0d-4465-9aec-691990140f28" name="Langsame Welle" xsi:type="prem:SystemComponent">
+            <parameters id="74419dfc-0af2-4de2-bff2-5ae4944a59d7" name="Rotation" xsi:type="prem:Parameter">
+              <modeValues value="0.0" xsi:type="prem:ModeValueRef">
+<modePointers target="00c87ff6-b5de-4787-b1b1-6a119b9f86cb" xsi:type="graph:DirectPointer"/>
+</modeValues>
+              <modeValues value="48.0" xsi:type="prem:ModeValueRef">
+<modePointers target="d3c50d75-c68f-45b0-a771-cb1c3d6ebd31" xsi:type="graph:DirectPointer"/>
+</modeValues>
+              <modeValues value="65.637" xsi:type="prem:ModeValueRef"/>
+              <modeValues value="76.734" xsi:type="prem:ModeValueRef"/>
+              <modeValues value="67.00919999999999" xsi:type="prem:ModeValueRef"/>
+              <modeValues value="0.0" xsi:type="prem:ModeValueRef">
+<modePointers target="830df94c-4cc2-45c5-b985-909d514f8f84" xsi:type="graph:DirectPointer"/>
+</modeValues>
+            </parameters>
+            <parameters id="25448169-e900-450b-b361-8a3e733e5c09" name="Masse" xsi:type="prem:Parameter">
+              <value value="200" xsi:type="reg:Value">
+              </value>
+            <unit href="premise:/Base.registry#kg"/>
+</parameters>
+            <balancings description="" function="Langsame_Welle.Rotation = _(Rotor.Rotation)" name="Rotation des Rotor uebernehmen" xsi:type="prem:Balancing">
+            <actualSources key="Rotor.Rotation">
+<value target="bd471a27-01d4-4385-bf3c-24477205e408" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="Langsame_Welle.Rotation">
+<value target="74419dfc-0af2-4de2-bff2-5ae4944a59d7" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+          </children>
+          <children id="aa095864-3006-4137-abc3-b0839aa46679" name="Getriebe" xsi:type="prem:SystemComponent">
+            <parameters id="791b8048-0238-4a29-aee0-2662a240db45" name="Uebersetzung" xsi:type="prem:Parameter">
+              <value value="80" xsi:type="reg:Value">
+              </value>
+            <unit href="_GLOBAL/Registry.premise.registry#1"/>
+</parameters>
+            <parameters id="9271a66d-6a85-458e-b1db-24007bff93a0" name="Masse" xsi:type="prem:Parameter">
+              <value value="300" xsi:type="reg:Value">
+              </value>
+            <unit href="premise:/Base.registry#kg"/>
+</parameters>
+          </children>
+          <children id="7ed68071-d9fa-497f-815e-d9acec6b8cef" name="Schnelle Welle" xsi:type="prem:SystemComponent">
+            <parameters id="a30a5f45-c3c0-4e70-87ec-cdad896ffca3" name="Rotation" xsi:type="prem:Parameter">
+              <value value="4800.0" xsi:type="reg:Value">
+              </value>
+              <modeValues value="0.0" xsi:type="prem:ModeValueRef">
+<modePointers target="00c87ff6-b5de-4787-b1b1-6a119b9f86cb" xsi:type="graph:DirectPointer"/>
+</modeValues>
+              <modeValues value="3840.0" xsi:type="prem:ModeValueRef">
+<modePointers target="d3c50d75-c68f-45b0-a771-cb1c3d6ebd31" xsi:type="graph:DirectPointer"/>
+</modeValues>
+              <modeValues value="5250.96" xsi:type="prem:ModeValueRef"/>
+              <modeValues value="6138.719999999999" xsi:type="prem:ModeValueRef"/>
+              <modeValues value="5360.735999999999" xsi:type="prem:ModeValueRef"/>
+              <modeValues value="0.0" xsi:type="prem:ModeValueRef">
+<modePointers target="830df94c-4cc2-45c5-b985-909d514f8f84" xsi:type="graph:DirectPointer"/>
+</modeValues>
+            <unit href="_GLOBAL/Registry.premise.registry#1/min"/>
+</parameters>
+            <parameters id="b0d36ad8-ef01-4413-a82e-ca19b08a3f19" name="Masse" xsi:type="prem:Parameter">
+              <value value="120" xsi:type="reg:Value">
+              </value>
+            <unit href="premise:/Base.registry#kg"/>
+</parameters>
+            <balancings description="Die Rotationsgeschwindigkeit der langsamen Achse" function="Schnelle_Welle.Rotation = Multiply(Langsame_Welle.Rotation, Uebersetzung)" name="Rotation Umsetzung" xsi:type="prem:Balancing">
+            <actualSources key="Langsame_Welle.Rotation">
+<value target="74419dfc-0af2-4de2-bff2-5ae4944a59d7" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="Uebersetzung">
+<value target="791b8048-0238-4a29-aee0-2662a240db45" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="Schnelle_Welle.Rotation">
+<value target="a30a5f45-c3c0-4e70-87ec-cdad896ffca3" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+          </children>
+          <children id="eefbdde7-57ec-447e-adce-1638ae4cb10c" name="Bremse" xsi:type="prem:SystemComponent">
+            <connections sourcePortName="Bremsstatus" targetPortName="Bremsseinstellung">
+<sourcePointer target="41cc3ef0-144e-4b0e-85a4-3e1445034405" xsi:type="graph:DirectPointer"/>
+<targetPointer target="eefbdde7-57ec-447e-adce-1638ae4cb10c" xsi:type="graph:DirectPointer"/>
+</connections>
+          <statemachines name="Bremse">
+<modes entryMode="true" id="93defec3-f3bb-48d0-8dad-c57342bb3a8a" name="BremseAn" xsi:type="elem:Mode"/>
+<modes entryMode="false" id="e7c12fd5-2f45-4f02-b79e-e68513490bc2" name="BremseAus" xsi:type="elem:Mode"/>
+<transitions id="e8f3101d-d68d-4920-aa5d-bc83c4847796">
+              <condition xsi:type="elem:ModeGuard">
+<modePointer target="d585c1b2-7c22-4c70-ac93-7b9f5f9ebd93" xsi:type="graph:DirectPointer"/>
+</condition>
+            <targetPointer target="e7c12fd5-2f45-4f02-b79e-e68513490bc2" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="c1bdf59a-e9c8-44ad-8d87-855767231e35" name="">
+              <condition xsi:type="elem:ModeGuard">
+<modePointer target="1fe28e38-bd9f-4ef8-a2ad-a8b089d32e92" xsi:type="graph:DirectPointer"/>
+</condition>
+            <targetPointer target="93defec3-f3bb-48d0-8dad-c57342bb3a8a" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+        </children>
+        <children id="41cc3ef0-144e-4b0e-85a4-3e1445034405" name="Controller" xsi:type="prem:SystemComponent">
+          <parameters id="ee79b578-d6a5-4bb2-abba-e5f508714481" name="Masse" xsi:type="prem:Parameter">
+            <value value="15" xsi:type="reg:Value">
+            </value>
+          <unit href="premise:/Base.registry#kg"/>
+</parameters>
+          <connections sourcePortName="Rotationen pro Minute" targetPortName="Drehgeschwindigkeit">
+<sourcePointer target="2bcfc08b-8cef-4267-b24d-8a14ed438e09" xsi:type="graph:DirectPointer"/>
+<targetPointer target="41cc3ef0-144e-4b0e-85a4-3e1445034405" xsi:type="graph:DirectPointer"/>
+</connections>
+          <connections sourcePortName="Windgeschwindigkeit" targetPortName="Windgeschwindigkeit">
+<sourcePointer target="dc86dd54-fe1c-4a9a-b0b6-1c13821d409e" xsi:type="graph:DirectPointer"/>
+<targetPointer target="41cc3ef0-144e-4b0e-85a4-3e1445034405" xsi:type="graph:DirectPointer"/>
+</connections>
+          <connections sourcePortName="Windrichtung" targetPortName="Windrichtung">
+<sourcePointer target="dc86dd54-fe1c-4a9a-b0b6-1c13821d409e" xsi:type="graph:DirectPointer"/>
+<targetPointer target="41cc3ef0-144e-4b0e-85a4-3e1445034405" xsi:type="graph:DirectPointer"/>
+</connections>
+          <connections sourcePortName="OrientierungGondel" targetPortName="OrientierungGondel">
+<sourcePointer target="710e1331-ca1a-4bca-bba8-ea9f08c0b761" xsi:type="graph:DirectPointer"/>
+<targetPointer target="41cc3ef0-144e-4b0e-85a4-3e1445034405" xsi:type="graph:DirectPointer"/>
+</connections>
+        <statemachines name="Controller">
+<modes entryMode="false" id="1fe28e38-bd9f-4ef8-a2ad-a8b089d32e92" name="WindgeschwindigkeitUeberMax" xsi:type="elem:Mode"/>
+<modes entryMode="true" id="d585c1b2-7c22-4c70-ac93-7b9f5f9ebd93" name="WindgeschwindigkeitUnterMax" xsi:type="elem:Mode"/>
+<transitions id="6f828eea-8272-4ab8-8469-fd30e9f2beb3" name="">
+            <condition xsi:type="elem:GuardCombination">
+              <children xsi:type="elem:ModeGuard">
+<modePointer target="00c87ff6-b5de-4787-b1b1-6a119b9f86cb" xsi:type="graph:DirectPointer"/>
+</children>
+              <children xsi:type="elem:ModeGuard">
+<modePointer target="d3c50d75-c68f-45b0-a771-cb1c3d6ebd31" xsi:type="graph:DirectPointer"/>
+</children>
+            </condition>
+          <sourcePointer target="1fe28e38-bd9f-4ef8-a2ad-a8b089d32e92" xsi:type="graph:DirectPointer"/>
+<targetPointer target="d585c1b2-7c22-4c70-ac93-7b9f5f9ebd93" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="e1f7fb22-9204-4ae0-a0ed-6786035357af">
+            <condition xsi:type="elem:ModeGuard">
+<modePointer target="830df94c-4cc2-45c5-b985-909d514f8f84" xsi:type="graph:DirectPointer"/>
+</condition>
+          <sourcePointer target="d585c1b2-7c22-4c70-ac93-7b9f5f9ebd93" xsi:type="graph:DirectPointer"/>
+<targetPointer target="1fe28e38-bd9f-4ef8-a2ad-a8b089d32e92" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+        <children id="dc86dd54-fe1c-4a9a-b0b6-1c13821d409e" name="Umweltsensor" xsi:type="prem:SystemComponent">
+          <parameters id="f6c9eed1-d250-4f87-9141-1039ed8f794f" name="Masse" xsi:type="prem:Parameter">
+            <value value="20" xsi:type="reg:Value">
+            </value>
+          <unit href="premise:/Base.registry#kg"/>
+</parameters>
+          <relations name="misst">
+<sourcePointer target="dc86dd54-fe1c-4a9a-b0b6-1c13821d409e" xsi:type="graph:DirectPointer"/>
+<targetPointer target="ab6363ed-353b-4fc3-9593-7b187c443350" xsi:type="graph:DirectPointer"/>
+</relations>
+          <children id="97ac4bcb-c0bb-4813-aaa4-3f8157128185" name="Windfahne" xsi:type="prem:SystemComponent"/>
+          <children id="5a8cfee3-20be-4f21-af42-3f1937c903a4" name="Anemometer" xsi:type="prem:SystemComponent"/>
+        </children>
+        <children id="86c31c69-4323-4685-be8b-f27b4a99507d" name="Huelle" xsi:type="prem:SystemComponent">
+          <parameters id="2de0675e-394e-45ae-9c58-491d837977c5" name="Masse" xsi:type="prem:Parameter">
+            <value value="600" xsi:type="reg:Value">
+            </value>
+          <unit href="premise:/Base.registry#kg"/>
+</parameters>
+        </children>
+      </children>
+    </children>
+  </projects>
+<functionPools href="_GLOBAL/GlobalFuncDefs.premise.functionpool#/"/>
+</prem:ProjectRepository>

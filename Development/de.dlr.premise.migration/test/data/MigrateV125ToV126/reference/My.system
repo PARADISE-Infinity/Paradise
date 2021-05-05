@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.26" xmi:version="2.0">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+    <children name="number representation pattern" value="##0.0###E0"/>
+  </metaData>
+  <registries href="My.registry#/"/>
+  <functionPools href="My.functionpool#/"/>
+  <projects id="efd2add8-58fd-4d2f-b5ac-ebeb73adbf40">
+    <satisfies>
+      <targetPointer xsi:type="graph:DirectPointer">
+        <target href="My.function#2ff46a8d-5efa-4312-9322-d6d22106542b" xsi:type="uc:UseCase"/>
+      </targetPointer>
+    </satisfies>
+    <parameters id="da84b7a2-340f-4c76-870d-4fac98923a88" name="P1">
+      <value value="15.708"/>
+      <unit href="premise:/Base.registry#cd"/>
+      <satisfies>
+        <targetPointer xsi:type="graph:DirectPointer">
+          <target href="My.function#7569c0a5-20c5-4966-ba3d-0b4a413737ea" xsi:type="uc:RequiredParameter"/>
+        </targetPointer>
+      </satisfies>
+    </parameters>
+    <parameters id="36f85aec-63d3-4802-b586-eb9858377b05" name="P2">
+      <value value="5"/>
+      <unit href="premise:/Base.registry#m/s^2"/>
+    </parameters>
+    <balancings function="P1 = pi * P2">
+      <actualSources key="P2">
+        <value target="36f85aec-63d3-4802-b586-eb9858377b05" xsi:type="graph:DirectPointer"/>
+      </actualSources>
+      <actualSources key="pi">
+        <value xsi:type="graph:DirectPointer">
+          <target href="premise:/Base.registry#a92e454b-e653-4b6e-8c7e-caf1b1175ca3" xsi:type="reg:Constant"/>
+        </value>
+      </actualSources>
+      <actualTarget key="P1">
+        <value target="da84b7a2-340f-4c76-870d-4fac98923a88" xsi:type="graph:DirectPointer"/>
+      </actualTarget>
+    </balancings>
+  </projects>
+</prem:ProjectRepository>

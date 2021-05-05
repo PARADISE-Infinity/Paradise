@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+  </metaData>
+  <metaData name="Export">
+    <metaData name="TradeOff">
+      <metaData name="Template" value="template.xlsx"/>
+    </metaData>
+  </metaData>
+  <usecases id="bcd2e3ec-a103-4b37-a7d8-47efff6a5afe" name="Required">
+    <children id="6913d56e-8fda-4c5d-8076-a7b9792b1853" name="Toolkit Support">
+      <children id="9f3c4375-21b1-4c63-a7ea-e9690e04f7b9" name="RCP">
+        <requiredParameters id="59e28934-04bb-4d22-b550-0aca44b1dee2" name="RCP" optimum="HIGH">
+          <valueConstraint lower="1" upper="1" xsi:type="uc:RangeConstraint"/>
+        </requiredParameters>
+      </children>
+      <children id="7c4e0853-0511-4247-812e-715db7e91f5b" name="Long Term Support">
+        <requiredParameters id="1a4630b5-7b6f-467d-83d6-3ff70864dd69" name="Long Term Support" optimum="HIGH">
+          <valueConstraint lower="1" upper="1" xsi:type="uc:RangeConstraint"/>
+        </requiredParameters>
+      </children>
+    </children>
+    <children description="" id="6513638b-5c06-433a-942c-eb231ce24f37" name="Flexibility">
+      <children id="f4cf4f2c-aef7-49a9-bb69-7d83e5cf2db3" name="Resuable Tests">
+        <requiredParameters id="77c86b66-70d6-4e64-b3e4-12cd075fa76b" name="Reusable Test" optimum="HIGH">
+          <valueConstraint lower="1" upper="1" xsi:type="uc:RangeConstraint"/>
+        </requiredParameters>
+      </children>
+    </children>
+    <children id="1b10f3a8-4454-4368-97a1-89096c196bb8" name="API">
+      <children id="5463645e-1e1c-4d56-a203-a2389ee75cf7" name="Save/Export Error Report">
+        <requiredParameters id="1651a3ee-0969-4a91-bb81-c16f356ab5e7" name="Save/Export Error Report" optimum="HIGH">
+          <valueConstraint lower="1" upper="1" xsi:type="uc:RangeConstraint"/>
+        </requiredParameters>
+      </children>
+      <children id="d6164ec5-93d1-4dbb-8085-44070e2b0e66" name="EclEmma Support">
+        <requiredParameters id="1c928eb1-3c22-44dc-b13d-10937fa7109f" name="EclEmma Support" optimum="HIGH">
+          <valueConstraint lower="1" upper="1" xsi:type="uc:RangeConstraint"/>
+        </requiredParameters>
+      </children>
+    </children>
+    <children id="ada183ef-f102-4c70-a951-b42909b46075" name="Tests">
+      <children id="8f156371-67fd-40d1-bb1d-b552f3a58bf4" name="Error Handling">
+        <requiredParameters id="94b1f3e9-be90-433b-a403-07e9737f3f7b" name="Error Handling" optimum="HIGH">
+          <valueConstraint lower="1" upper="1" xsi:type="uc:RangeConstraint"/>
+        </requiredParameters>
+      </children>
+      <children id="ba7fa338-746f-42b6-aec4-4b0d10a50e98" name="Multiple Tests">
+        <requiredParameters description="" id="460bc910-7cc3-4846-a4ff-34e0452a1fd4" name="Multiple Tests" optimum="HIGH">
+          <valueConstraint lower="1" upper="1" xsi:type="uc:RangeConstraint"/>
+        </requiredParameters>
+      </children>
+      <children id="1720354f-8f99-427e-bca2-de3f0ba35a62" name="Data Driven">
+        <requiredParameters id="967c5c48-cac2-49bd-b401-b505392c531a" name="Data Driven" optimum="HIGH">
+          <valueConstraint lower="1" upper="1" xsi:type="uc:RangeConstraint"/>
+        </requiredParameters>
+      </children>
+      <children id="f602c40f-196b-476b-8832-7b3ecc64d1ec" name="Management">
+        <requiredParameters id="fa460aaf-d644-40aa-95cd-ef51594d1ad4" name="Management" optimum="HIGH">
+          <valueConstraint lower="1" upper="1" xsi:type="uc:RangeConstraint"/>
+        </requiredParameters>
+      </children>
+    </children>
+  </usecases>
+  <usecases id="38283c94-b293-4bd2-89cb-2e7aa36db0df" name="Extras">
+    <children id="b826d911-383f-46b6-ac39-bf1de548f864" name="Error Image">
+      <requiredParameters id="cb7009da-1b73-4d51-a34e-d420ef57c4ed" name="Error Image" optimum="HIGH">
+        <valueConstraint lower="0" upper="1" xsi:type="uc:RangeConstraint"/>
+      </requiredParameters>
+    </children>
+    <children id="30b326ce-4387-4d2a-a760-840425fcf91e" name="Automatic GUI Mapping">
+      <requiredParameters id="b7ad0fdd-a14d-4d90-9d73-070c51cb517c" name="Automatic GUI Mapping" optimum="HIGH">
+        <valueConstraint lower="0" upper="1" xsi:type="uc:RangeConstraint"/>
+      </requiredParameters>
+    </children>
+  </usecases>
+  <usecases id="21acb67a-d938-4e53-8ba3-1a0f80c6324b" name="Rating">
+    <children id="92e74caa-f52c-48e1-b39f-750dca65651f" name="Reproducibility">
+      <requiredParameters evaluationWeight="4" id="7648ab01-bcbc-4bdb-89df-32e0d7e490e8" name="Reproducibility" optimum="HIGH">
+        <valueConstraint lower="0" upper="10" xsi:type="uc:RangeConstraint"/>
+      </requiredParameters>
+    </children>
+    <children id="74734680-449b-43dc-afeb-9054a424a44e" name="Learnability">
+      <requiredParameters evaluationWeight="1" id="9b360e7f-0b03-4178-935b-e02e42b6e079" name="Learnability" optimum="HIGH">
+        <valueConstraint lower="0" upper="10" xsi:type="uc:RangeConstraint"/>
+      </requiredParameters>
+    </children>
+    <children id="d9353fcc-1400-4f92-a388-f9ac30cb072e" name="Operability">
+      <requiredParameters evaluationWeight="3" id="7cafec25-d74e-49e6-9003-92290adf1a24" name="Operability" optimum="HIGH">
+        <valueConstraint lower="0" upper="10" xsi:type="uc:RangeConstraint"/>
+      </requiredParameters>
+    </children>
+    <children id="3799f7ec-ac9c-4961-ac22-3fd049621bdf" name="Apperance">
+      <requiredParameters evaluationWeight="2" id="853ae134-3c5f-45d0-bd34-f37114699644" name="Apperance" optimum="HIGH">
+        <valueConstraint lower="0" upper="10" xsi:type="uc:RangeConstraint"/>
+      </requiredParameters>
+    </children>
+    <children id="44e2fc23-6b5a-45a5-aa92-900768195190" name="Performance">
+      <requiredParameters evaluationWeight="2" id="c528187e-43f8-4398-848d-061fe62c795c" name="Performance" optimum="HIGH">
+        <valueConstraint lower="0" upper="10" xsi:type="uc:RangeConstraint"/>
+      </requiredParameters>
+    </children>
+  </usecases>
+  <usecases id="be969e49-918d-4bfc-a7f1-483451759116" name="License">
+    <requiredParameters id="626bfe16-ba90-4051-be18-9b60ad5a44b3" name="Cost" optimum="LOW">
+      <valueConstraint lower="0" xsi:type="uc:RangeConstraint"/>
+    </requiredParameters>
+  </usecases>
+</uc:UseCaseRepository>

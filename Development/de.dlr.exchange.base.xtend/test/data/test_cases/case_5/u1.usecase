@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <usecases id="e9d10f91-ac31-4e0e-8be2-e0fccf396097" name="u1.1">
+    <requiredParameters id="050e011b-793a-4fdc-90c7-8f186283bba5" name="p1.1">
+      <valueConstraint lower="0" upper="2" xsi:type="uc:RangeConstraint"/>
+    </requiredParameters>
+  </usecases>
+  <usecases id="98454f57-9e4e-40ee-afeb-d35e7902c111" name="u1.2">
+    <requiredParameters id="8170828d-fdcc-419f-a655-ea846eb8a13f" name="p1.2"/>
+  </usecases>
+  <usecases id="eb88efd8-ceb3-443e-a5c8-e03baec4cab0" name="u1.3">
+    <requiredParameters id="c98dd550-7310-4d70-8a99-3a6dbf697990" name="p1.3"/>
+  </usecases>
+</uc:UseCaseRepository>

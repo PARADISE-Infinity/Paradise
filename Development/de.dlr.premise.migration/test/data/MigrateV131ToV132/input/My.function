@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" metaModel="1.31">
+  <usecases name="RootUC" id="03e60cf7-79b4-4edd-ba6e-d3a61c93df62">
+    <statemachines name="SM2" id="5b52f225-abe8-44b5-9544-ffc38142e408">
+      <modes name="Q" id="a775589d-8c84-40e0-b727-bec688f66989" entryMode="true"/>
+      <modes name="W" id="ac1dfd0e-5e4d-4e81-94f5-5fed0deebdf8"/>
+      <transitions id="1dadbe7b-a2a1-4b62-91f0-38b675e23915">
+        <sourcePointer xsi:type="graph:DirectPointer" target="a775589d-8c84-40e0-b727-bec688f66989"/>
+        <targetPointer xsi:type="graph:DirectPointer" target="ac1dfd0e-5e4d-4e81-94f5-5fed0deebdf8"/>
+        <condition xsi:type="elem:ModeGuard">
+          <modePointer xsi:type="graph:DirectPointer" target="9193408a-5232-4f28-b71a-4644cbe43a1b"/>
+        </condition>
+      </transitions>
+      <transitions id="7ba2a7fa-58a2-4af1-8255-d6872a6f5ef4">
+        <sourcePointer xsi:type="graph:DirectPointer" target="ac1dfd0e-5e4d-4e81-94f5-5fed0deebdf8"/>
+        <targetPointer xsi:type="graph:DirectPointer" target="a775589d-8c84-40e0-b727-bec688f66989"/>
+      </transitions>
+    </statemachines>
+    <statemachines name="SM3" id="c9555a6d-7323-4168-87b7-3b1c355d9354">
+      <modes name="X" id="debfcd00-b7d1-430e-b6bc-6b299e9fa52c" entryMode="true"/>
+      <modes name="Y" id="9193408a-5232-4f28-b71a-4644cbe43a1b"/>
+      <transitions id="a97a81c4-18fc-4743-92d8-24c530b765bd">
+        <sourcePointer xsi:type="graph:DirectPointer" target="debfcd00-b7d1-430e-b6bc-6b299e9fa52c"/>
+        <targetPointer xsi:type="graph:DirectPointer" target="9193408a-5232-4f28-b71a-4644cbe43a1b"/>
+      </transitions>
+      <transitions id="01a029a7-1a03-4de3-b44d-5dd647c4d650">
+        <sourcePointer xsi:type="graph:DirectPointer" target="9193408a-5232-4f28-b71a-4644cbe43a1b"/>
+        <targetPointer xsi:type="graph:DirectPointer" target="debfcd00-b7d1-430e-b6bc-6b299e9fa52c"/>
+      </transitions>
+    </statemachines>
+    <condition href="My.system#67d57cc6-6500-42f4-8300-1058dcef9711"/>
+    <children name="UC1" id="61651abb-c8af-481f-8d79-7ff8ce3d9c5c">
+      <condition href="My.system#f6407a20-e659-4819-ad9b-84a82f8b5623"/>
+    </children>
+    <children name="UC2" id="cf4a7e3b-c666-4470-82f1-7f2459deef19">
+      <condition href="My.system#67d57cc6-6500-42f4-8300-1058dcef9711"/>
+      <condition href="#ac1dfd0e-5e4d-4e81-94f5-5fed0deebdf8"/>
+    </children>
+    <children name="UC3" id="5fa91273-6426-4009-b303-8867e535c211" condition="a775589d-8c84-40e0-b727-bec688f66989 9193408a-5232-4f28-b71a-4644cbe43a1b"/>
+    <children name="UC4" id="4b18423e-8900-4263-9d3c-9eb46ba350bc" condition="9193408a-5232-4f28-b71a-4644cbe43a1b"/>
+    <children name="UC5" id="feece3fd-f094-4b6d-a1ee-9956ba491ef5" condition="debfcd00-b7d1-430e-b6bc-6b299e9fa52c 9193408a-5232-4f28-b71a-4644cbe43a1b"/>
+  </usecases>
+</uc:UseCaseRepository>

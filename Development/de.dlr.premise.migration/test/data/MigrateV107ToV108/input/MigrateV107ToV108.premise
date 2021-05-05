@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:regval="http://www.dlr.de/ft/premise/registry/validated/2013/" xmlns:val="http://www.dlr.de/ft/premise/validated/2013/" metaModel="1.07">
+  <metaData name="View">
+    <children name="dataTypeNames" value="off"/>
+  </metaData>
+  <projects name="C1" id="a7dcfacc-e711-4a4f-9137-ea7c683bc49d">
+    <parameters xsi:type="val:Parameter" name="Mass" id="ac38b25b-c937-418d-a533-c9a23e8e8c1d">
+      <value xsi:type="regval:Value" value="1">
+        <unit href="MigrateV107ToV108.registry#kg"/>
+      </value>
+    </parameters>
+    <parameters xsi:type="val:Parameter" name="Length" id="78e1041f-41e9-4a93-bd37-2cf74dc704f9">
+      <value xsi:type="regval:Value" shared="true" value="2"/>
+    </parameters>
+  </projects>
+</prem:ProjectRepository>

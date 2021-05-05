@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0" xsi:schemaLocation="       http://www.dlr.de/ft/premise/registry/2010/ ../../../de.dlr.ft.premise/model/PREMISE_Registry.ecore        http://www.dlr.de/ft/premise/registry/validated/2013/ ../../../de.dlr.ft.premise/model/PREMISE_Registry.ecore#//validated        http://www.dlr.de/ft/premise/funcpool/2010/ ../../../de.dlr.ft.premise/model/PREMISE_FnPool.ecore        http://www.dlr.de/premise/usecase/2014/ ../../../de.dlr.ft.premise/model/PREMISE_UseCase.ecore        http://www.dlr.de/ft/premise/2010/ ../../../de.dlr.ft.premise/model/PREMISE_system.ecore        http://www.dlr.de/ft/premise/validated/2013/ ../../../de.dlr.ft.premise/model/PREMISE_system.ecore#//validated      ">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="off"/>
+  </metaData>
+  <projects id="90b786fd-2bff-4a78-8dfe-131b19b19a80" name="getQualifyingNamePrefix">
+    <children id="a2564147-85c7-4a59-a356-e3b03ec8d81c" xsi:type="prem:SystemComponent">
+      <children id="df099f04-a0cd-4f27-b455-311ac7909512" name="ElementWithNoNameParent" xsi:type="prem:SystemComponent"/>
+    </children>
+    <children id="d793f64a-07dd-4281-aba8-7066e595596e" name="ParentWithName" xsi:type="prem:SystemComponent">
+      <children id="0cc7ca9e-2ace-4cd4-912b-e547352fefa2" name="ElementWithNoNameParent" xsi:type="prem:SystemComponent"/>
+      <children id="3d6afe49-cccd-445e-8bf7-ac1386cb894d" name="ElementWithSameParent" xsi:type="prem:SystemComponent"/>
+      <children id="df339ffb-f0c9-4dc4-9e85-ea9522886cde" name="ElementWithSameParent" xsi:type="prem:SystemComponent"/>
+    </children>
+  </projects>
+  <projects id="d3e4959a-cb10-46bc-88e9-dc9b0a8e7181" name="getInputsOutputs">
+    <connections sourcePortName="out1" targetPortName="in1">
+<sourcePointer target="3abb68f9-142a-4140-8c95-780ed7e83ca4" xsi:type="graph:DirectPointer"/>
+<targetPointer target="b09f50b6-bd8e-4360-aeec-7290904a66ff" xsi:type="graph:DirectPointer"/>
+</connections>
+    <connections name="noPorts" sourcePortName="" targetPortName="">
+<sourcePointer target="3abb68f9-142a-4140-8c95-780ed7e83ca4" xsi:type="graph:DirectPointer"/>
+<targetPointer target="b09f50b6-bd8e-4360-aeec-7290904a66ff" xsi:type="graph:DirectPointer"/>
+</connections>
+    <connections name="noSource" sourcePortName="out2" targetPortName="in1">
+<sourcePointer target="d3e4959a-cb10-46bc-88e9-dc9b0a8e7181" xsi:type="graph:DirectPointer"/>
+<targetPointer target="b09f50b6-bd8e-4360-aeec-7290904a66ff" xsi:type="graph:DirectPointer"/>
+</connections>
+    <connections name="subChildren" sourcePortName="out1" targetPortName="in1">
+<sourcePointer target="e6426767-e2a4-4a29-bd5f-f772679fa2f1" xsi:type="graph:DirectPointer"/>
+<targetPointer target="de50067a-23e2-4386-a298-18997f5a5819" xsi:type="graph:DirectPointer"/>
+</connections>
+    <children id="3abb68f9-142a-4140-8c95-780ed7e83ca4" name="SC_1" xsi:type="prem:SystemComponent">
+      <children id="e6426767-e2a4-4a29-bd5f-f772679fa2f1" name="SC_1.1" xsi:type="prem:SystemComponent"/>
+    </children>
+    <children id="b09f50b6-bd8e-4360-aeec-7290904a66ff" name="SC_2" xsi:type="prem:SystemComponent">
+      <connections name="toUpper" sourcePortName="out1" targetPortName="in1">
+<sourcePointer target="de50067a-23e2-4386-a298-18997f5a5819" xsi:type="graph:DirectPointer"/>
+<targetPointer target="b09f50b6-bd8e-4360-aeec-7290904a66ff" xsi:type="graph:DirectPointer"/>
+</connections>
+      <children id="de50067a-23e2-4386-a298-18997f5a5819" name="SC_2.1" xsi:type="prem:SystemComponent"/>
+    </children>
+  </projects>
+</prem:ProjectRepository>

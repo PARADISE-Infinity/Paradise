@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" metaModel="1.12">
+  <usecases name="Modes" id="6aabac23-c81c-4be3-903e-1d4067739041">
+    <modes name="A" id="39049e53-3d5d-42f3-a1ca-4b775cf74ba2"/>
+    <modes name="B" id="df8d277f-1a7d-4ced-a7ef-f04c22721de2"/>
+    <modes name="C" id="07adf464-869a-4a56-9072-88983ecac758"/>
+  </usecases>
+  <usecases name="Uno" id="3f5bc217-995e-4d9e-b39e-ec7c6a5b0df9">
+    <constraints name="1" description="" evaluationWeight="">
+      <valueConstraint xsi:type="uc:RangeConstraint" upper="20" lower="1"/>
+      <modeValueConstraints xsi:type="uc:ModeRangeConstraint" modes="df8d277f-1a7d-4ced-a7ef-f04c22721de2" upper="10"/>
+    </constraints>
+    <constraints name="2"/>
+  </usecases>
+  <usecases name="Two" id="48ddea05-e77e-45c5-9b27-fd2c6109c642">
+    <constraints name="3">
+      <valueConstraint xsi:type="uc:RangeConstraint" upper="42" lower="0"/>
+    </constraints>
+  </usecases>
+  <usecases name="Drei" id="a35c2aa4-2854-4455-b819-10dac2349b46">
+    <constraints name="4" description="Describe" optimalValue="1" evaluationWeight="20">
+      <valueConstraint xsi:type="uc:RangeConstraint" lower=""/>
+    </constraints>
+    <constraints name="5" description="Describe" optimalValue="1" evaluationWeight="20">
+      <valueConstraint xsi:type="uc:RangeConstraint" lower=""/>
+    </constraints>
+  </usecases>
+</uc:UseCaseRepository>

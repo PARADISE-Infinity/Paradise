@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Export Structure JSON
+Bundle-SymbolicName: de.dlr.exchange.json.structure;singleton:=true
+Bundle-Version: 1.25.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.core.commands,
+ org.eclipse.core.resources,
+ org.eclipse.xtend.lib,
+ org.eclipse.xtend.lib.macro,
+ org.eclipse.ui,
+ org.eclipse.emf.edit;bundle-version="2.10.1",
+ com.google.guava,
+ org.eclipse.xtext.xbase.lib,
+ de.dlr.premise,
+ de.dlr.exchange.base.xtend,
+ org.eclipse.ui.ide;bundle-version="3.8.2",
+ de.dlr.premise.editor
+Bundle-ClassPath: vendor/gson-2.8.0.jar,
+ .
+Bundle-Vendor: www.dlr.de/ft/ssy
+Automatic-Module-Name: de.dlr.exchange.json.structure
+

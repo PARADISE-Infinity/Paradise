@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ASCII"?>
+<reg:Registry xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" metaModel="1.17" name="PREMISE Registry" xmi:version="2.0">
+  <units name="Scalar" symbol="1"/>
+  <units name="Scalar" symbol="%"/>
+  <units name="Length" symbol="m"/>
+  <units name="Length" symbol="km">
+    <siUnitRef conversionFactorFromSI="0.001" target="m"/>
+  </units>
+  <units name="Length" symbol="nm">
+    <siUnitRef conversionFactorFromSI="5.399568E-4" target="m"/>
+  </units>
+  <units name="Area" symbol="m2"/>
+  <units name="Volume" symbol="m3"/>
+  <units name="Time" symbol="s"/>
+  <units name="Time" symbol="h">
+    <siUnitRef conversionFactorFromSI="2.77778E-4" target="s"/>
+  </units>
+  <units name="Velocity" symbol="m/s"/>
+  <units name="Velocity" symbol="km/h">
+    <siUnitRef conversionFactorFromSI="0.27777778" target="m/s"/>
+  </units>
+  <units name="Acceleration" symbol="m/s2"/>
+  <units name="Frequency 1/s" symbol="1/s"/>
+  <units name="Frequency 1/min" symbol="1/min">
+    <siUnitRef conversionFactorFromSI="0.166667" target="1/s"/>
+  </units>
+  <units name="Frequency 1/h" symbol="1/h">
+    <siUnitRef conversionFactorFromSI="2.77778E-4" target="1/s"/>
+  </units>
+  <units name="Flux" symbol="m3/h"/>
+  <units name="Consumption" symbol="kg/N/s"/>
+  <units name="Mass" symbol="kg"/>
+  <units name="Mass" symbol="g">
+    <siUnitRef conversionFactorFromSI="1000.0" target="kg"/>
+  </units>
+  <units name="Force" symbol="N"/>
+  <units name="Force" symbol="kN">
+    <siUnitRef conversionFactorFromSI="0.001" target="N"/>
+  </units>
+  <units name="Energy" symbol="J"/>
+  <units name="Power" symbol="W"/>
+  <units name="Angle" symbol="deg"/>
+  <units name="Angle" symbol="rad">
+    <siUnitRef conversionFactorFromSI="57.2957795" target="deg"/>
+  </units>
+  <units name="Pressure" symbol="Pa"/>
+  <units name="Density" symbol="kg/m3"/>
+  <units name="Temperature" symbol="K"/>
+  <units name="Temperature" symbol="&#176;C"/>
+  <constants description="" id="1435a2aa-917e-4261-abcc-eab89aaedae0" name="pi">
+    <value value="3.1416"/>
+  </constants>
+  <constants description="Gravitational Acceleration on 45 degree of latitude." id="f7b881b3-147b-4c34-a2b0-8b378aa69fdc" name="gravitational_acc" unit="m/s2">
+    <value value="9.8062"/>
+  </constants>
+  <constants id="60b07a7e-23a7-482a-b069-495cd2cbb0e3" name="carperformance/force">
+    <value value="30.303"/>
+  </constants>
+  <constants id="62700bc9-2779-4209-b832-ed26fbcf5868" name="mps/100kmph">
+    <value value="27.7778"/>
+  </constants>
+  <metaTypes icon="Icon integrated into registry (System Function.png)" iconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGSSURBVCjPVVFNSwJhEF78Ad79Cf6PvXQRsotUlzKICosuRYmR2RJR0KE6lBFFZVEbpFBSqKu2rum6llFS9HHI4iUhT153n6ZtIWMOM+/MM88z7wwH7s9Ub16SJcnbmrNcxVm2q7Z8/QPvEOtntpj92NkCqITLepEpjix7xQtiLOoQ2b6+E7YAN/5nfOEJ2WbKqOIOJ4bYVMEQx4LfBBQDsvFMhUcCVU1/CxVXmDBGA5ZETrhDCQVcYAPbyEJBhvrnBVPiSpNr6cYDNCQwo4zzU/ySckkgDYuNuVpI42T9k4gLKGMPs/xPzzovQiY2hQYe0jlJfyNNhTqiWDYBq/wBMcSRpnyPzu1oS7WtxjVBSthU1vgVksiQ3Dn6Gp5ah2YOKQo5GiuHPA6xT1EKpxQNCNYejgIR457KKio0S56YckjSa9jo//3mrj+BV0QQagqGTOo+Y7gZIf1puP3WHoLhEb2PjTlCTCWGXtbp8DCX3hZuOdaIc9A+aQvWk4ihq95p67a7nP+u+Ws+r0dql9z/zv0NCYhdCPKZ7oYAAAAASUVORK5CYII=" id="ae649381-07a3-47f6-a6f7-a800386beff4" name="RequiredFunction"/>
+  <metaTypes icon="Icon integrated into registry (SystemComponent_Container.gif)" iconBase64="R0lGODlhEAAQAOeEAJJHFIVJKppGDo1JJH5NNI5LJpxJEo5LMZ5KEo5NKYpOL5hMIqxJDKhKEJpNHZpPHalME4dZAIlbAItcAIxdALdPEY1eALhQEpVXOr5QDJtXNpdkAJlmAJ5mEalhMK9jL6RqEq1kM6BtIKdvALJnNqptFa1sI6xzALtrN79rNLB2ALR4AKl6HMlvNLtzQ8pwNbh7AKt2XqV5Uql9JstyNsxyNcJ0QLt9AKt+Jrp/Db9/ANJ1OK+CKNN3OsKCALOFK8WEANl5OqWDc8iFALmCT8qHALeJLcyIALCLY7yNMMCQMr2RNcWUNcaRW8+dPM2bYs6cY9GhQs2lUtegasumcdmoSN+tc924aeq/X+nAYObDhuTFje3JbunKf+zLgevNgu7OhO3Qh/HPi+/Qh+/Rh/PRjfDTivTTgPDUi/XUkPLWjvLYkPTakvTciPTblPnbl/3bl/bel/7cmPbfmPfhm/jilfnjnf3jnPnlnvvmof/movvoo+7m4/zppP/qpvzrpv3uqf3uqv7vq//xrP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////yH5BAEKAP8ALAAAAAAQABAAAAjYAP8JPEKwoEGBCIu0yYLlzB09EPX4KYLw35BBgupwqSJHjhUUU4ZUBAKoT59AUeDAcdHDBpCKPv7kyfPHyRMoTXYQMVFRxx47dvYwCVKjBYkXNCrewDNnDh4lKTyE0KAlRkUYdNy4oZPkwwMAB97wyYFwRZw1a+IYEWAAgQMMC0ogVMEGDRo2PyDIQBKAQQMQCE+oCRNGDY8LVMQQyFChA8IRZr58MYNjgJAtCgokEIGQA5kuXcbMKEO6TBoOFS0sueIFzAQKsGFbqChwAwspEmjrrhhh97+AADs=" id="0d5e2ab0-929f-4aee-8065-e073b9a6768b" name="Container"/>
+  <metaTypes icon="Icon integrated into registry (Requirement.gif)" iconBase64="R0lGODlhEAAQAOeQAFRgbltlc1tndV5reV5remBsemBte2JtemJwfmVyf2dzgWd1g254hGx5hmt7iXCAjnSAjHWBjnODkXWFk3mFknyFkHiGlHqHlHuHk3mKmX+KlnuLmYGNmYKNmn6PnoOOmoGRn4SSoomSnYSTpoOVo4eVp4qVoYuXooaZqIqYqoqdrI6crpKcp5WeqZOfr42hr5mgqZWhr5CkspmirZajspaktpqkr52lr5mmt52msZ2nsp6nsZaptp6ptpqsuqavuaewuaiwuqGyv6qxuqmzwae1v6y1v6i4xK69yLa8xLa9xLrDzbjEzr7FzL/I0cPIz7/J0cHK08LL2MTM08nO08jP18nP1sjQ2MnR2MnR2cjR3MrS2svT2s3U3M3V3M3V39DV2tHX39HY4NLY3tPZ39La4tPa4dTb49Xc49bd5Nnd4dfe5djf5Njf5tnf5tng593h5dvi6d3j6d/l6+Hl6uHl6+Hm6+Pn6+Po7eTp7uXq7efq7+js8Ors7uns8ert8uvu8e3w8+7x9O/x9fHz9fLz9vP19/T2+PX3+fb4+vj5+vn6+/r7/Pv8/f39/f7+/v///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////yH+EUNyZWF0ZWQgd2l0aCBHSU1QACH5BAEKAP8ALAAAAAAQABAAAAjxAP8JlHFEiA8eMhIqFMgQCaSHkBQR0mOHDZQXDFUwgQRoUKFDiBY5gsTIjAqBKJw4yrOjCZ1AggJBwtGoiEASVxJNGRChAAQrfB7FGENCoAcygHKYaLNmRos5j0J4YJjhjp0OGqJs+WAjjiMQDP9NOPQmAQcFBlhg8bohrARGXgygqUKhyxo5ih6EtdDISAM0YXT8aIOnj4OwFx5xWZImDZATZ/6oWcAQQRBBUrR8KSMmixtDVBAwJIChBw0XK1KUGFGjjhICAgXcgAjpEaNEiYjsGSKAoYgkT8DA6WNo0SM/gmCEBcC8OYAABxhUAMAwIAA7" id="210825f1-5abb-4525-a967-1819fbb6d11b" name="Requirement"/>
+  <metaTypes icon="Icon integrated into registry (petrinet16.png)" iconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gMLDAUcFC17QAAAAp5JREFUOMuFk11IU2Ecxv/nnPfMzdn82CY1tzRTl5aOzMxiaF9kftwIqdCHHy2siAgqSIIQgy4VgiRGYRgK6rqxvCm0FGSgYzXJQmmp09LZtpxrO/N87JxuKsba8IH/zcPv/8D7vs+LQQzp9amZLZduN3Icy1pHOru7+j0r0Tgi0jAagXQ6VdkGw62rVf641jQaHVvfucfXfHFiwmQCYcsAuUR5iuGIawqlSlcklms4ELCP1Ne1qbFlWrdPkmSbCX6PGWCoVZ7GkYALwL10rc69Ivcf9C6Q7Kjj/ZPOABP6ImAoW5cnzZr+TNn/O4uhXn7UUKeoDPfa2gCPwLArFxTVl+uSdH8NHADg4XWIE3hMykncb8Pp9nbgIwIEMRZasK9JairLlNsBAIgH92rLPCF1CU4m5GZl6KGyYHn99SS9Ge3GTx6AxExt/olfQbJco9nBFO3VxKPi0oYubY52lyAAuFzfGIs5sQnAOBQtoLj8jr66uryzQa5MQIgonZw0WxDDoQDDEQGWZeIYFqcYBudjdYOmOT5IYxTN8GSIR0GaQQGsqaUl3+uePcxu+ip2Z6Q/WnUNmU0mCMbIEJ+vq9GSaPF4gFNYnU7aRdis1h+HCrweltlMVklm3xh7WS/EFleodctw3Ae9AzMjDofDjQMA9AxsLKZImXGnX1IY+Wx/BgAABjtAIhJBDoawuXDgn5rrFRViUkDrG8QUL4jTqs7cbARMYN4N33/uo5BKKRMIPyVQfUOesahNtH2i7AV5UqkI8bklZefu+oM3ztJ07hEgVrKXluY1KbLQeLfJYw7fiWwadPe7Pzwd9Axvk6XaRKQPCHxDUKvTRuMJvvVxn8ey5WcCAGgHgPQki12dmbzEcjPD89MdPc9e/HRHY38Dwy8UpO/m4+cAAAAASUVORK5CYII=" id="1d00f00b-8186-4510-b408-427ce12357dc" name="States"/>
+</reg:Registry>

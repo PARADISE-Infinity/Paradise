@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comp:ComponentRepository xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.25" xmi:version="2.0">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+    <children name="number representation pattern" value="##0.0###E0"/>
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Group Elements" value="false"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Edit local statemachines">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+    </children>
+  </metaData>
+  <definitions id="23c6c0c4-d258-4f8f-9a1b-e0869c12a0d2" name="scd"/>
+  <components id="a5d2090d-38e9-4d36-9060-049afe057413" name="scd">
+    <statemachines name="scd Failure State">
+      <modes entryMode="true" id="5d325241-ef25-4e19-93a0-39d7e0c1da30" name="Normal"/>
+      <modes id="3f1eefaa-e871-47b6-a333-f9da8926acdb" name="scd Failure"/>
+      <transitions id="b6b9cc2a-fd93-444b-94e1-fcc5a980f94a" name="F: scd Failure">
+        <sourcePointer target="5d325241-ef25-4e19-93a0-39d7e0c1da30" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="3f1eefaa-e871-47b6-a333-f9da8926acdb" xsi:type="graph:DirectPointer"/>
+        <condition xsi:type="elem:GuardCombination">
+          <children mode="d72c2006-5363-44c9-9a85-6014f31aa570" xsi:type="elem:ModeGuard"/>
+          <children mode="076df7b7-08cf-40d5-99ce-aaf09d209bf4" xsi:type="elem:ModeGuard"/>
+        </condition>
+        <parameters id="6d41a74c-9af3-4d53-bfe2-c2e38048aa38" name="Failure Rate">
+          <value value="0"/>
+        </parameters>
+        <balancings name="bal" target="6d41a74c-9af3-4d53-bfe2-c2e38048aa38">
+        </balancings>
+      </transitions>
+    </statemachines>
+    <statemachines name="scd Failure State">
+      <modes entryMode="true" id="82440542-952d-4089-9c85-9668b3a92e36" name="Normal"/>
+      <modes id="d72c2006-5363-44c9-9a85-6014f31aa570" name="scd Failure"/>
+      <transitions id="48604c3f-a3d1-4f55-828d-05390c1ef250" name="F: scd Failure">
+        <sourcePointer target="82440542-952d-4089-9c85-9668b3a92e36" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="d72c2006-5363-44c9-9a85-6014f31aa570" xsi:type="graph:DirectPointer"/>
+        <parameters id="f59d31e9-d661-4881-88d2-77cc753c6670" name="Failure Rate">
+          <value value="0"/>
+        </parameters>
+      </transitions>
+    </statemachines>
+    <statemachines name="scd Failure State">
+      <modes entryMode="true" id="1fec39f5-200c-49a3-a433-1365e5c2fe32" name="Normal"/>
+      <modes id="076df7b7-08cf-40d5-99ce-aaf09d209bf4" name="scd Failure"/>
+      <transitions id="92b389ec-3837-45c8-9959-cbe543256dc5" name="F: scd Failure">
+        <sourcePointer target="1fec39f5-200c-49a3-a433-1365e5c2fe32" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="076df7b7-08cf-40d5-99ce-aaf09d209bf4" xsi:type="graph:DirectPointer"/>
+        <parameters id="fdbf1c69-6d78-49a1-b784-9d83ca7d7d85" name="Failure Rate">
+          <value value="0"/>
+        </parameters>
+      </transitions>
+    </statemachines>
+    <satisfies>
+      <targetPointer target="23c6c0c4-d258-4f8f-9a1b-e0869c12a0d2" xsi:type="graph:DirectPointer"/>
+    </satisfies>
+  </components>
+</comp:ComponentRepository>

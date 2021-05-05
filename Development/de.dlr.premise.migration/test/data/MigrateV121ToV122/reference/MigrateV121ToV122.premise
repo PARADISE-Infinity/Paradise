@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.22" xmi:version="2.0">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+    <children name="number representation pattern" value="##0.0###E0"/>
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="false"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Show Parameters" value="true"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Edit local statemachines">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+    </children>
+  </metaData>
+  <projects id="dcb1c743-c75a-4ac8-b64d-d4c94edd8a5c" name="Root">
+    <children id="c2ae4ad5-c90d-41bb-861d-87736ef07b6a" name="C1" xsi:type="prem:SystemComponent">
+      <modes entryMode="true" id="4addf140-69b7-4cc7-92d3-a9451d1fab8a" name="1"/>
+      <modes id="b88f69d2-3e1b-4630-9462-490218368eae" name="2"/>
+      <modes id="d36c257c-c91c-4722-b6a7-c3ccf275705e" name="3"/>
+      <modes id="507c5e87-c17a-470b-a68b-fbe484686b11" name="4"/>
+      <satisfies>
+	<targetPointer xsi:type="comp:DirectPointer">
+		<target href="MigrateV121ToV122.usecase#0d40930b-c613-4814-b972-f772362d35f3" xsi:type="uc:UseCase"/>
+	</targetPointer>
+</satisfies>
+      <transitions id="355c50ca-f5af-4936-8734-aad15da5a045">
+<sourcePointer target="4addf140-69b7-4cc7-92d3-a9451d1fab8a" xsi:type="comp:DirectPointer"/>
+<targetPointer target="b88f69d2-3e1b-4630-9462-490218368eae" xsi:type="comp:DirectPointer"/>
+</transitions>
+      <transitions id="a7b9c366-fa75-41f5-bb3f-fad090937198">
+<sourcePointer target="b88f69d2-3e1b-4630-9462-490218368eae" xsi:type="comp:DirectPointer"/>
+<targetPointer target="4addf140-69b7-4cc7-92d3-a9451d1fab8a" xsi:type="comp:DirectPointer"/>
+</transitions>
+      <transitions id="e1259fc4-37b4-4117-b25f-9787f9e95e2d">
+        <condition xsi:type="elem:GuardCombination"/>
+      <sourcePointer target="4addf140-69b7-4cc7-92d3-a9451d1fab8a" xsi:type="comp:DirectPointer"/>
+<targetPointer target="d36c257c-c91c-4722-b6a7-c3ccf275705e" xsi:type="comp:DirectPointer"/>
+</transitions>
+      <transitions id="2975ab97-e30c-48d4-9d80-01771f975008">
+<sourcePointer target="d36c257c-c91c-4722-b6a7-c3ccf275705e" xsi:type="comp:DirectPointer"/>
+<targetPointer target="507c5e87-c17a-470b-a68b-fbe484686b11" xsi:type="comp:DirectPointer"/>
+</transitions>
+      <transitions id="4ffdd932-fcf4-4448-ac8a-daa970a1b053">
+<sourcePointer target="507c5e87-c17a-470b-a68b-fbe484686b11" xsi:type="comp:DirectPointer"/>
+<targetPointer target="4addf140-69b7-4cc7-92d3-a9451d1fab8a" xsi:type="comp:DirectPointer"/>
+</transitions>
+    </children>
+    <children id="9a4e5552-aa2c-4171-a005-e5cf0eb45812" name="C2" xsi:type="prem:SystemComponent">
+      <satisfies>
+	<targetPointer xsi:type="comp:DirectPointer">
+		<target href="MigrateV121ToV122.usecase#107ebdd5-fdd8-4199-9a26-85f0731fa372" xsi:type="uc:UseCase"/>
+	</targetPointer>
+</satisfies>
+      <satisfies>
+	<targetPointer xsi:type="comp:DirectPointer">
+		<target href="MigrateV121ToV122.component#a01e4219-84ec-44d3-beaa-668dc5df9270" xsi:type="comp:ComponentDefinition"/>
+	</targetPointer>
+</satisfies>
+      <parameters id="f958b203-06e0-437e-b2f1-d3bfe6ee446d" name="P21">
+        <satisfies>
+	<targetPointer xsi:type="comp:DirectPointer">
+		<target href="MigrateV121ToV122.usecase#e859de33-2a34-46bb-9dce-74ba4a85123f" xsi:type="uc:RequiredParameter"/>
+	</targetPointer>
+</satisfies>
+        <satisfies>
+	<targetPointer xsi:type="comp:DirectPointer">
+		<target href="MigrateV121ToV122.component#50f91d6b-9680-4b80-bf73-013e9e3c256d" xsi:type="comp:ParameterDefinition"/>
+	</targetPointer>
+</satisfies>
+      </parameters>
+    </children>
+  </projects>
+</prem:ProjectRepository>

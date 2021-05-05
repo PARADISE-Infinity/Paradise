@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.11" xmi:version="2.0">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+  </metaData>
+  <projects id="02cba07b-3856-43da-92c1-ad6f22620eff" name="Comp1">
+    <modes id="98f02410-5b19-44cc-9500-3d8f5a10831a" name="Mode1" xsi:type="prem:Mode"/>
+    <modes id="0ad10d36-7bea-48a9-98f4-3c325dc615c5" name="Mode2" xsi:type="prem:Mode"/>
+    <transitions id="3df6a498-2da4-4b6f-a12f-ff9ed2e061b1" source="98f02410-5b19-44cc-9500-3d8f5a10831a" target="0ad10d36-7bea-48a9-98f4-3c325dc615c5" xsi:type="prem:Transition">
+      <constraint trigger="0ad10d36-7bea-48a9-98f4-3c325dc615c5" xsi:type="prem:TransitionConstraint"/>
+      <parameters id="ee4373fc-4658-4e8a-970b-fa905ee57525" name="TParam1"/>
+      <parameters id="5fdb0bc6-8dc1-4669-82c4-e558ef51162a" name="TParam2"/>
+      <balancings name="" sources="ee4373fc-4658-4e8a-970b-fa905ee57525" target="5fdb0bc6-8dc1-4669-82c4-e558ef51162a" xsi:type="prem:TransitionBalancing"/>
+    </transitions>
+    <parameters id="2d8faaa0-2345-4d91-9c6b-d9b4ea66548a" name="Param1" xsi:type="prem:Parameter">
+      <value value="0" xsi:type="reg:Value"/>
+      <modeValues modes="98f02410-5b19-44cc-9500-3d8f5a10831a" value="1" xsi:type="prem:ModeValueRef"/>
+    </parameters>
+    <parameters id="bc0184c2-41f6-4814-b5d4-327b0aed8d63" name="Param2" xsi:type="prem:Parameter">
+      <value value="0" xsi:type="reg:Value"/>
+      <modeValues modes="98f02410-5b19-44cc-9500-3d8f5a10831a" value="1" xsi:type="prem:ModeValueRef"/>
+    </parameters>
+    <balancings name="Copy" target="bc0184c2-41f6-4814-b5d4-327b0aed8d63" xsi:type="prem:Balancing">
+      <sources href="MigrateV110ToV111.registry#c7ef1b3e-032a-4cc9-adcb-299cbc929f81" xsi:type="reg:Constant"/>
+      <sources href="#ee4373fc-4658-4e8a-970b-fa905ee57525" xsi:type="prem:TransitionParameter"/>
+      <sources href="#2d8faaa0-2345-4d91-9c6b-d9b4ea66548a" xsi:type="prem:Parameter"/>
+    </balancings>
+    <connections source="02cba07b-3856-43da-92c1-ad6f22620eff" target="02cba07b-3856-43da-92c1-ad6f22620eff" targetPortName="" type="" xsi:type="prem:Connection"/>
+    <relations source="02cba07b-3856-43da-92c1-ad6f22620eff" target="02cba07b-3856-43da-92c1-ad6f22620eff" type="Circle"/>
+  </projects>
+</prem:ProjectRepository>

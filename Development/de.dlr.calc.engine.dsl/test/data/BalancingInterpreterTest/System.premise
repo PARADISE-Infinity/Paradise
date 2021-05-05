@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="false"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Show Parameters" value="true"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Edit local statemachines">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <registries href="Registry.registry#/"/>
+  <functionPools href="Functions.functionpool#/"/>
+  <projects id="30dc163d-d450-4f0c-9673-9ed12fe3e24e" name="SimpleCalcContainer">
+    <parameters id="b904421d-b5a9-435e-8f9a-71e61c8cdcdd" name="Target">
+      <value value="-15.0"/>
+    </parameters>
+    <parameters id="cdd163aa-0310-4191-a7dd-277abd4427de" name="S1">
+      <value value="1"/>
+    </parameters>
+    <parameters id="dee312e9-fd91-43d1-a4c4-b07fcfc0be5b" name="S2">
+      <value value="2"/>
+    </parameters>
+    <parameters id="04fb7950-593b-486e-9af0-af85d7c375eb" name="S3">
+      <value value="3"/>
+    </parameters>
+    <balancings function="SimpleCalcContainer.Target = TEN + ((SimpleCalcContainer.S1 + SimpleCalcContainer.S2) - SimpleCalcContainer.S3 * (SimpleCalcContainer.S3^SimpleCalcContainer.S2) - 1) + +SimpleCalcContainer.S1 + -SimpleCalcContainer.S1" name="SimpleCalc">
+      <actualSources key="SimpleCalcContainer.S1">
+        <value target="cdd163aa-0310-4191-a7dd-277abd4427de" xsi:type="graph:DirectPointer"/>
+      </actualSources>
+      <actualSources key="SimpleCalcContainer.S2">
+        <value target="dee312e9-fd91-43d1-a4c4-b07fcfc0be5b" xsi:type="graph:DirectPointer"/>
+      </actualSources>
+      <actualSources key="SimpleCalcContainer.S3">
+        <value target="04fb7950-593b-486e-9af0-af85d7c375eb" xsi:type="graph:DirectPointer"/>
+      </actualSources>
+      <actualSources key="TEN">
+        <value xsi:type="graph:DirectPointer">
+          <target href="Registry.registry#9688604b-e57f-424f-8eb8-7e5fd25fd8d9" xsi:type="reg:Constant"/>
+        </value>
+      </actualSources>
+      <actualTarget key="SimpleCalcContainer.Target">
+        <value target="b904421d-b5a9-435e-8f9a-71e61c8cdcdd" xsi:type="graph:DirectPointer"/>
+      </actualTarget>
+    </balancings>
+  </projects>
+  <projects id="8f4b95ea-c5bb-430c-a8ae-d32e2875f521" name="InvalidFunctionCalcContainer">
+    <balancings function="This is not a valid function." name="InvalidFunctionCalc"/>
+  </projects>
+  <projects id="0da6bb80-8310-479b-813d-a5999167e1a0" name="InvalidInputCalcContainer">
+    <parameters id="b7f6e552-76fc-4f7e-88f9-47d8704a5dd8" name="Target">
+      <value value="NaN"/>
+    </parameters>
+    <parameters id="9b466b3d-1cd6-45c8-b2ed-ab4f989e27b2" name="S1">
+      <value value="1"/>
+    </parameters>
+    <parameters id="f179e7f3-3470-4e8c-a491-cb241a8e6129" name="S2">
+      <value value="DUCK"/>
+    </parameters>
+    <balancings function="InvalidInputCalcContainer.Target = InvalidInputCalcContainer.S1 / InvalidInputCalcContainer.S2" name="InvalidInputCalc">
+      <actualSources key="InvalidInputCalcContainer.S1">
+        <value target="9b466b3d-1cd6-45c8-b2ed-ab4f989e27b2" xsi:type="graph:DirectPointer"/>
+      </actualSources>
+      <actualSources key="InvalidInputCalcContainer.S2">
+        <value target="f179e7f3-3470-4e8c-a491-cb241a8e6129" xsi:type="graph:DirectPointer"/>
+      </actualSources>
+      <actualTarget key="InvalidInputCalcContainer.Target">
+        <value target="b7f6e552-76fc-4f7e-88f9-47d8704a5dd8" xsi:type="graph:DirectPointer"/>
+      </actualTarget>
+    </balancings>
+  </projects>
+  <projects id="ec9cf549-4f77-40f0-9e59-6780d55d71be" name="InvalidFnDefCalcContainer">
+    <parameters id="562198bd-62fa-4cf7-941d-67aaeb8180e7" name="Target"/>
+    <parameters id="c9742c95-cbe8-4d17-9f6f-1339369fa4a1" name="S1"/>
+    <balancings function="InvalidFnDefCalcContainer.Target = InvalidFnDef(InvalidFnDefCalcContainer.S1, 42)" name="InvalidFnDefCalc">
+      <actualSources key="InvalidFnDefCalcContainer.S1">
+        <value target="c9742c95-cbe8-4d17-9f6f-1339369fa4a1" xsi:type="graph:DirectPointer"/>
+      </actualSources>
+      <actualTarget key="InvalidFnDefCalcContainer.Target">
+        <value target="562198bd-62fa-4cf7-941d-67aaeb8180e7" xsi:type="graph:DirectPointer"/>
+      </actualTarget>
+    </balancings>
+  </projects>
+  <projects id="f2ee834b-7535-4f9e-ae27-c1c2353262a9" name="InvalidFnArityCalcContainer">
+    <parameters id="580f87dc-ae20-45f7-a510-574f71455c72" name="Target">
+      <value value="NaN"/>
+    </parameters>
+    <parameters id="3c02427d-254e-4d74-823e-2afd6fc9da61" name="S1">
+      <value value="1"/>
+    </parameters>
+    <balancings function="InvalidFnArityCalcContainer.Target = Sin(InvalidFnArityCalcContainer.S1, 10) + InvalidFnDef(5)" name="InvalidFnArityCalc">
+      <actualSources key="InvalidFnArityCalcContainer.S1">
+        <value target="3c02427d-254e-4d74-823e-2afd6fc9da61" xsi:type="graph:DirectPointer"/>
+      </actualSources>
+      <actualTarget key="InvalidFnArityCalcContainer.Target">
+        <value target="580f87dc-ae20-45f7-a510-574f71455c72" xsi:type="graph:DirectPointer"/>
+      </actualTarget>
+    </balancings>
+  </projects>
+  <projects id="17eb4505-8a08-43a2-8da0-b88b0aaf3b24" name="ModeCalcContainer">
+    <parameters id="4fbd660d-63fe-4531-b6b2-18840e0384d1" name="Target">
+      <value value="15.0"/>
+      <modeValues value="-3.0">
+<modePointers target="7dbcc932-2636-4306-967a-217e8c51ce87" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      <modeValues value="75.0">
+<modePointers target="fa9fb74b-93af-4ee9-a8e3-f604716b56a9" xsi:type="graph:DirectPointer"/>
+</modeValues>
+    </parameters>
+    <parameters id="f2adfdbb-fb9c-49fc-b93b-377b070cb8b0" name="S1">
+      <value value="10"/>
+      <modeValues uncertainty="" value="1">
+<modePointers target="7dbcc932-2636-4306-967a-217e8c51ce87" xsi:type="graph:DirectPointer"/>
+</modeValues>
+    </parameters>
+    <parameters id="361e4183-4288-4271-a91d-8cb981ec5b99" name="S2">
+      <value value="4"/>
+    </parameters>
+    <parameters id="6f477ecd-e107-45d7-98a8-33c6f5b6c40d" name="S3">
+      <value value="2"/>
+      <modeValues uncertainty="" value="10">
+<modePointers target="fa9fb74b-93af-4ee9-a8e3-f604716b56a9" xsi:type="graph:DirectPointer"/>
+</modeValues>
+    </parameters>
+    <balancings function="ModeCalcContainer.Target = ((+ModeCalcContainer.S1) - (1 + ModeCalcContainer.S2 % 5)/2) * ModeCalcContainer.S3" name="ModeCalc">
+      <actualSources key="ModeCalcContainer.S1">
+        <value target="f2adfdbb-fb9c-49fc-b93b-377b070cb8b0" xsi:type="graph:DirectPointer"/>
+      </actualSources>
+      <actualSources key="ModeCalcContainer.S2">
+        <value target="361e4183-4288-4271-a91d-8cb981ec5b99" xsi:type="graph:DirectPointer"/>
+      </actualSources>
+      <actualSources key="ModeCalcContainer.S3">
+        <value target="6f477ecd-e107-45d7-98a8-33c6f5b6c40d" xsi:type="graph:DirectPointer"/>
+      </actualSources>
+      <actualTarget key="ModeCalcContainer.Target">
+        <value target="4fbd660d-63fe-4531-b6b2-18840e0384d1" xsi:type="graph:DirectPointer"/>
+      </actualTarget>
+    </balancings>
+  <statemachines name="ModeCalcContainer">
+<modes entryMode="true" id="7dbcc932-2636-4306-967a-217e8c51ce87" name="A"/>
+<modes entryMode="true" id="fa9fb74b-93af-4ee9-a8e3-f604716b56a9" name="B"/>
+</statemachines>
+</projects>
+  <projects id="96420b54-66f0-41eb-8a26-d0804ea4d905" name="ExcelCalcContainer">
+    <parameters id="cc83f4e4-b705-4119-b5e7-0984bf750abc" name="Target">
+      <value value="900.0"/>
+    </parameters>
+    <parameters id="78ff6215-fe83-4d01-a63f-56bcb191589e" name="S1">
+      <value uncertainty="" value="90"/>
+    </parameters>
+    <parameters id="977a8a3c-7fba-4c15-9606-95f66550bb6e" name="S2">
+      <value value="10"/>
+    </parameters>
+    <balancings function="ExcelCalcContainer.Target = Sum(Sin(ExcelCalcContainer.S1), ExcelCalcContainer.S2) - Sin(ExcelCalcContainer.S1) - ExcelCalcContainer.S2 + Multiply(ExcelCalcContainer.S1, ExcelCalcContainer.S2)" name="ExcelCalc">
+      <actualSources key="ExcelCalcContainer.S1">
+        <value target="78ff6215-fe83-4d01-a63f-56bcb191589e" xsi:type="graph:DirectPointer"/>
+      </actualSources>
+      <actualSources key="ExcelCalcContainer.S2">
+        <value target="977a8a3c-7fba-4c15-9606-95f66550bb6e" xsi:type="graph:DirectPointer"/>
+      </actualSources>
+      <actualTarget key="ExcelCalcContainer.Target">
+        <value target="cc83f4e4-b705-4119-b5e7-0984bf750abc" xsi:type="graph:DirectPointer"/>
+      </actualTarget>
+    </balancings>
+  </projects>
+  <projects id="1130ed7e-26c4-4e02-aee7-8646e901ec15" name="JavaCalcContainer">
+    <parameters id="7c95cd37-78ca-4610-b745-f62262173a34" name="Target">
+      <value value="166.0"/>
+      <modeValues value="166.0">
+<modePointers target="765dc0b7-05e1-46f0-b4a6-5e6613b33f5b" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      <modeValues value="166.0">
+<modePointers target="5f8fdb13-5e97-4813-acd0-ea68ca5e5b29" xsi:type="graph:DirectPointer"/>
+</modeValues>
+    </parameters>
+    <parameters id="9078bb1c-f2d1-4db0-bff0-3a991c84b079" name="S1">
+      <value uncertainty="" value="3"/>
+      <modeValues uncertainty="" value="100">
+<modePointers target="765dc0b7-05e1-46f0-b4a6-5e6613b33f5b" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      <modeValues value="50">
+<modePointers target="5f8fdb13-5e97-4813-acd0-ea68ca5e5b29" xsi:type="graph:DirectPointer"/>
+</modeValues>
+    </parameters>
+    <balancings function="JavaCalcContainer.Target = SumOverAllModes(JavaCalcContainer.S1, 10)" name="JavaCalc">
+      <actualSources key="JavaCalcContainer.S1">
+        <value target="9078bb1c-f2d1-4db0-bff0-3a991c84b079" xsi:type="graph:DirectPointer"/>
+      </actualSources>
+      <actualTarget key="JavaCalcContainer.Target">
+        <value target="7c95cd37-78ca-4610-b745-f62262173a34" xsi:type="graph:DirectPointer"/>
+      </actualTarget>
+    </balancings>
+  <statemachines name="JavaCalcContainer">
+<modes entryMode="true" id="765dc0b7-05e1-46f0-b4a6-5e6613b33f5b" name="C"/>
+<modes entryMode="true" id="5f8fdb13-5e97-4813-acd0-ea68ca5e5b29" name="D"/>
+</statemachines>
+</projects>
+</prem:ProjectRepository>

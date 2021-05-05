@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="off"/>
+  </metaData>
+  <projects id="06eb39b3-cd5c-422c-9dc5-73ed60274258" name="Project">
+    <children id="e63b7b4f-3763-401a-9531-f6df811c4133" name="Aircraft" xsi:type="prem:SystemComponent">
+      <parameters id="f3e8b6d3-11f1-4625-8973-31ba4cdb6760" name="Mass"/>
+      <children id="8bfe1e34-14e0-47db-abf1-49993724c5e1" name="Wing" xsi:type="prem:SystemComponent">
+        <parameters id="f2fa9d2f-7b8e-4766-9270-29ab9c259a45" name="Mass">
+          <value value="700.0"/>
+        </parameters>
+        <children id="b76e2150-74e9-4fd6-a0b9-6ad41a924bbc" name="WingLet" xsi:type="prem:SystemComponent">
+          <parameters id="cb5c555d-feb5-4baf-b543-92bf016f1e83" name="Mass"/>
+        </children>
+      </children>
+    </children>
+    <children id="02384a7e-8080-4195-8f15-9d7a973a40e0" name="Air Craft" xsi:type="prem:SystemComponent">
+      <children id="5b234fec-294c-4441-bad7-1a3cf7344f8f" name="Wing" xsi:type="prem:SystemComponent">
+        <parameters id="064815b5-b306-4ece-bc25-6d265c5eadca" name="Mass"/>
+        <children id="4d5f2745-6e68-4a78-9afd-ec380815de32" name="Wing Let" xsi:type="prem:SystemComponent">
+          <parameters id="bdca004f-9b10-4206-bb8a-d58dd62adfda" name="Mass">
+            <value value="20"/>
+          </parameters>
+        </children>
+      </children>
+    </children>
+  </projects>
+</prem:ProjectRepository>

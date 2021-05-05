@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>   
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ygraphml -->
+      <package
+            uri="http://graphml.graphdrawing.org/xmlns"
+            class="org.graphdrawing.graphml.GraphMLPackage"
+            genModel="model/ygraphml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated ygraphml -->
+      <parser
+            type="DO_NOT_USE_DUMMY_graphml"
+            class="org.graphdrawing.graphml.util.GraphMLResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ygraphml -->
+      <package
+            uri="http://www.w3.org/1999/xlink"
+            class="org.w3.xlink.XLinkPackage"
+            genModel="model/ygraphml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ygraphml -->
+      <package
+            uri="http://www.yworks.com/xml/graphml"
+            class="com.yworks.ygraphml.YGraphMLPackage"
+            genModel="model/ygraphml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated ygraphml -->
+      <parser
+            type="graphml"
+            class="com.yworks.ygraphml.util.YGraphMLResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="graphml"
+            class="com.yworks.ygraphml.util.my.YGraphMLResourceFactoryImplMy"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ygraphml -->
+      <package
+            uri="http://www.yworks.com/xml/yed/3"
+            class="com.yworks.yed.YedPackage"
+            genModel="model/ygraphml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated ygraphml -->
+      <parser
+            type="DO_NOT_USE_DUMMY_yed"
+            class="com.yworks.yed.util.YedResourceFactoryImpl"/>
+   </extension>
+</plugin>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comp:ComponentRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" metaModel="1.28">
+  <definitions name="ToExtractDefinition" id="b9fc4695-676b-4ea5-898c-f2d7cf66876c">
+    <parameters name="ComponentParameter2" id="aec63b2d-5fa6-4212-9ef5-428429f6f2a9"/>
+    <parameters name="ComponentParameter3" id="cff51c56-b40f-4a65-b07a-76f403e40c14"/>
+    <parameters name="ComponentParameter1" id="4ca66d57-b80a-4db8-97b7-cda0c2f2fe01"/>
+    <modes name="D" id="4275aaea-0ec6-4335-8d5b-6d298498c967"/>
+    <modes name="A" id="42843a57-de76-4f6b-ba5a-681ca37d45e1"/>
+    <modes name="B" id="953525df-53fa-4d36-8b20-d08fbe4e7dce"/>
+    <children name="Child1" id="062e3ff8-badc-4712-8160-c33ce98bce7b"/>
+  </definitions>
+  <components name="ToExtractReference" id="toExtract">
+    <satisfies>
+      <targetPointer xsi:type="graph:DirectPointer">
+        <target xsi:type="uc:UseCase" href="Problem.usecase#ca995ef0-7b76-43d7-9981-44f153f3e7d4"/>
+      </targetPointer>
+    </satisfies>
+    <satisfies>
+      <targetPointer xsi:type="graph:DirectPointer" target="b9fc4695-676b-4ea5-898c-f2d7cf66876c"/>
+    </satisfies>
+    <satisfies>
+      <targetPointer xsi:type="graph:DirectPointer" target="b9fc4695-676b-4ea5-898c-f2d7cf66876c"/>
+    </satisfies>
+    <parameters name="ComponentParameter1" id="cdddbd0b-8968-417a-93d9-5149c61da763">
+      <value value="1"/>
+      <satisfies>
+        <targetPointer xsi:type="graph:DirectPointer" target="4ca66d57-b80a-4db8-97b7-cda0c2f2fe01"/>
+      </satisfies>
+    </parameters>
+    <parameters name="ComponentParameter2" id="8e77f5e0-4872-4a33-b3c7-9b1230bec24b">
+      <value value="1"/>
+      <satisfies>
+        <targetPointer xsi:type="graph:DirectPointer" target="aec63b2d-5fa6-4212-9ef5-428429f6f2a9"/>
+      </satisfies>
+    </parameters>
+    <parameters name="InternalParameter1" id="eb5cc395-e6d5-4360-ba94-d2aa523f727a">
+      <unit href="Registry.registry#1"/>
+      <value value="15.99999999"/>
+    </parameters>
+    <balancings function="InternalParameter1 = InternalParameter2 + InternalParameter3 &#xD;&#xA;&#x9;+ ComponentParameter1 + ComponentParameter2 + ComponentParameter3 + TP &#xD;&#xA;&#x9;+ TEN">
+      <actualSources key="InternalParameter2">
+        <value xsi:type="graph:DirectPointer" target="3d9c8bb0-040d-4dba-a840-1afba9edc0f3"/>
+      </actualSources>
+      <actualSources key="InternalParameter3">
+        <value xsi:type="graph:DirectPointer" target="f9d55bcf-1331-4dab-91d9-573074882603"/>
+      </actualSources>
+      <actualSources key="ComponentParameter1">
+        <value xsi:type="graph:DirectPointer" target="cdddbd0b-8968-417a-93d9-5149c61da763"/>
+      </actualSources>
+      <actualSources key="ComponentParameter2">
+        <value xsi:type="graph:DirectPointer" target="8e77f5e0-4872-4a33-b3c7-9b1230bec24b"/>
+      </actualSources>
+      <actualSources key="ComponentParameter3">
+        <value xsi:type="graph:DirectPointer" target="cb45c2dd-950c-4479-80bd-2b89240b6e0c"/>
+      </actualSources>
+      <actualSources key="TP">
+        <value xsi:type="graph:DirectPointer" target="892334df-ab48-4652-8c84-a2d9a229958b"/>
+      </actualSources>
+      <actualSources key="TEN">
+        <value xsi:type="graph:DirectPointer">
+          <target xsi:type="reg:Constant" href="Registry.registry#3a1b7684-14d3-4cef-821b-6660b836e55a"/>
+        </value>
+      </actualSources>
+      <actualTarget key="InternalParameter1">
+        <value xsi:type="graph:DirectPointer" target="eb5cc395-e6d5-4360-ba94-d2aa523f727a"/>
+      </actualTarget>
+    </balancings>
+    <connections>
+      <sourcePointer xsi:type="graph:DirectPointer" target="5f1c38ba-de22-4741-b143-3b0caf7465fe"/>
+      <targetPointer xsi:type="graph:DirectPointer" target="fa4672c4-0a90-4347-81b5-b1c97091b20f"/>
+    </connections>
+    <children xsi:type="prem:SystemComponent" name="Child1" id="5f1c38ba-de22-4741-b143-3b0caf7465fe">
+      <statemachines name="Child1" id="f5905f75-f9e4-4744-91e1-4fdd9486c074">
+        <modes name="A" id="a284746d-5d68-4d1b-8dad-f40d798d080b" entryMode="true">
+          <satisfies>
+            <targetPointer xsi:type="graph:DirectPointer" target="42843a57-de76-4f6b-ba5a-681ca37d45e1"/>
+          </satisfies>
+        </modes>
+        <modes name="B" id="ac8e15dc-d88a-4ab3-b153-418d4e9f5fac">
+          <satisfies>
+            <targetPointer xsi:type="graph:DirectPointer" target="953525df-53fa-4d36-8b20-d08fbe4e7dce"/>
+          </satisfies>
+        </modes>
+        <transitions id="17c2b0b1-11d6-4cb8-b909-dbab617edecb">
+          <sourcePointer xsi:type="graph:DirectPointer" target="a284746d-5d68-4d1b-8dad-f40d798d080b"/>
+          <targetPointer xsi:type="graph:DirectPointer" target="ac8e15dc-d88a-4ab3-b153-418d4e9f5fac"/>
+          <parameters name="TP" id="892334df-ab48-4652-8c84-a2d9a229958b">
+            <value value="1" uncertainty=""/>
+          </parameters>
+        </transitions>
+      </statemachines>
+      <satisfies>
+        <targetPointer xsi:type="graph:DirectPointer" target="062e3ff8-badc-4712-8160-c33ce98bce7b"/>
+      </satisfies>
+      <parameters name="ComponentParameter3" id="cb45c2dd-950c-4479-80bd-2b89240b6e0c">
+        <value value="1"/>
+        <satisfies>
+          <targetPointer xsi:type="graph:DirectPointer">
+            <target xsi:type="uc:RequiredParameter" href="Problem.usecase#109b959d-cbbb-4b47-beea-92fd008ca258"/>
+          </targetPointer>
+        </satisfies>
+        <satisfies>
+          <targetPointer xsi:type="graph:DirectPointer" target="cff51c56-b40f-4a65-b07a-76f403e40c14"/>
+        </satisfies>
+      </parameters>
+      <parameters name="InternalParameter2" id="3d9c8bb0-040d-4dba-a840-1afba9edc0f3">
+        <value value="1"/>
+      </parameters>
+      <relations>
+        <sourcePointer xsi:type="graph:DirectPointer" target="5f1c38ba-de22-4741-b143-3b0caf7465fe"/>
+        <targetPointer xsi:type="graph:DirectPointer" target="fa4672c4-0a90-4347-81b5-b1c97091b20f"/>
+      </relations>
+    </children>
+    <children xsi:type="prem:SystemComponent" name="Child2" id="fa4672c4-0a90-4347-81b5-b1c97091b20f">
+      <statemachines name="Child2" id="22c9c54b-9e7f-45a5-81dd-8a272c0c1f5e">
+        <modes name="C" id="07e0f970-06db-44dd-9150-56d525c74846" entryMode="true"/>
+        <modes name="D" id="b639a4d1-b56a-4383-92cd-0c894945afa1" entryMode="true">
+          <satisfies>
+            <targetPointer xsi:type="graph:DirectPointer" target="4275aaea-0ec6-4335-8d5b-6d298498c967"/>
+          </satisfies>
+        </modes>
+        <transitions id="d1f7969e-6d47-4944-94a1-f538543cec3b">
+          <sourcePointer xsi:type="graph:DirectPointer" target="07e0f970-06db-44dd-9150-56d525c74846"/>
+          <targetPointer xsi:type="graph:DirectPointer" target="b639a4d1-b56a-4383-92cd-0c894945afa1"/>
+          <condition xsi:type="elem:ModeGuard">
+            <modePointer xsi:type="graph:DirectPointer" target="ac8e15dc-d88a-4ab3-b153-418d4e9f5fac"/>
+          </condition>
+        </transitions>
+      </statemachines>
+      <parameters name="InternalParameter3" id="f9d55bcf-1331-4dab-91d9-573074882603">
+        <value value="1"/>
+      </parameters>
+    </children>
+  </components>
+</comp:ComponentRepository>

@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Requirements Table Export
+Bundle-SymbolicName: de.dlr.exchange.excel.requirements;singleton:=true
+Bundle-Version: 1.25.0.qualifier
+Bundle-Vendor: www.dlr.de/ft/ssy
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.google.guava,
+ de.dlr.premise,
+ de.dlr.exchange.base.xtend,
+ org.eclipse.core.resources,
+ de.dlr.application.lib.excel
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: de.dlr.exchange.excel.requirements

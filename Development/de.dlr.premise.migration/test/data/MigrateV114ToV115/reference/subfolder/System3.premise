@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:rep="http://www.dlr.de/ft/premise/representation/2012/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.15" xmi:version="2.0">
+  <metaData name="Explanation" value="Identical with System1. This is to test the case where dependent files have already been migrated and only the references need to be updated. We also test for a subfolder, to account for cases where the relative uris differ."/>
+  <functionPools href="../Functionpool1.functionpool#/"/>
+  <extensions href="../Representation.representation#787c352d-87db-4e76-a323-ac9ac2adb65b" xsi:type="rep:Representation"/>
+</prem:ProjectRepository>

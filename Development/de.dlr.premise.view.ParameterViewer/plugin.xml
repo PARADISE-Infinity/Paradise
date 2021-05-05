@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            category="de.dlr.application.rcp.category.paradise"
+            class="de.dlr.premise.view.parameterviewer.ParameterViewerSheet"
+            icon="icons/parameter_view.png"
+            id="de.dlr.premise.view.parameterviewer.ParameterViewerSheet"
+            name="Parameter Viewer"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="com.example.test">
+         <view
+               id="de.dlr.premise.view.parameterviewer.ParameterViewerSheet"
+               minimized="false"
+               relationship="stack"
+               relative="de.dlr.application.rcp.ProblemsView">
+         </view>
+         <viewShortcut
+               id="de.dlr.premise.view.parameterviewer.ParameterViewerSheet">
+         </viewShortcut>
+      </perspectiveExtension>
+   </extension>
+
+
+</plugin>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:rep="http://www.dlr.de/ft/premise/representation/2012/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="Export">
+    <metaData name="GraphML">
+      <metaData name="logical_hierarchy" value="on"/>
+      <metaData name="physical_portmappings" value="on"/>
+      <metaData name="parameter_dependencies" value="on"/>
+      <metaData name="self_references" value="on"/>
+      <metaData name="constants" value="on"/>
+      <metaData name="relations" value="on"/>
+    </metaData>
+  </metaData>
+  <extensions href="rep.representation#/" xsi:type="rep:Representation"/>
+  <extensions href="rep2.representation#3a056681-daf1-4a5c-9d93-5636f300b3db" xsi:type="rep:Representation"/>
+  <projects id="a53e31f5-7ecc-495f-81fe-d052a0ed03ad" name="p1.1">
+    <parameters id="74da4177-118b-4a11-a3f8-d07a32f88c31" name="p1.1" xsi:type="prem:Parameter">
+      <value value="1" xsi:type="reg:Value"/>
+      <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="u2.usecase#//@usecases.1/@requiredParameters.0" xsi:type="uc:RequiredParameter"/>
+	</targetPointer>
+</satisfies>
+    </parameters>
+    <relations>
+    <sourcePointer target="a53e31f5-7ecc-495f-81fe-d052a0ed03ad" xsi:type="graph:DirectPointer"/>
+<targetPointer xsi:type="graph:DirectPointer">
+	<target href="u1.usecase#e9d10f91-ac31-4e0e-8be2-e0fccf396097" xsi:type="uc:UseCase"/>
+</targetPointer>
+</relations>
+    <relations name="test">
+    <sourcePointer target="a53e31f5-7ecc-495f-81fe-d052a0ed03ad" xsi:type="graph:DirectPointer"/>
+<targetPointer xsi:type="graph:DirectPointer">
+	<target href="p2.premise#cbf0878f-843a-410e-85e0-db20c6ab245f" xsi:type="prem:SystemComponent"/>
+</targetPointer>
+</relations>
+  </projects>
+  <projects id="75ebd9a1-bb53-46e3-ad54-1a71e5481119" name="p1.2"/>
+  <projects id="48263fdc-dfe1-45ac-8d5a-589ba9b06d09" name="p1.3"/>
+</prem:ProjectRepository>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fnp:FunctionPool xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xsi:schemaLocation="http://www.dlr.de/ft/premise/funcpool/2010/ ../../../../de.dlr.ft.premise/model/PREMISE_FnPool.ecore http://www.dlr.de/ft/premise/registry/2010/ ../../../../de.dlr.ft.premise/model/PREMISE_Registry.ecore">
+  <functions lastInputMultiple="true" name="Sum" xsi:type="fnp:FnDefSpreadSheet">
+    <calcEngine href="Registry.premise.registry#90a1165e-fbbc-4edc-8ab2-6a3f7ff58fe8" xsi:type="reg:CalcEngineSpreadSheet"/>
+    <output cell="A6" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A5" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+  <functions lastInputMultiple="true" name="Multiply" xsi:type="fnp:FnDefSpreadSheet">
+    <calcEngine href="Registry.premise.registry#90a1165e-fbbc-4edc-8ab2-6a3f7ff58fe8" xsi:type="reg:CalcEngineSpreadSheet"/>
+    <output cell="A10" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A9" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+</fnp:FunctionPool>

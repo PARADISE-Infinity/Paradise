@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Group Elements" value="false"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Edit local statemachines">
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <usecases id="4ca55e7e-fce3-4094-b62b-4d4fe647ac4b" name="Analysis">
+    <statemachines id="975f58a6-441e-40a6-993b-f7ab42fbe4ae" name="System States">
+      <metaTypes href="premise:/Base.registry#4b21a2c9-2c1b-4c29-8fa0-488246036795"/>
+      <modes entryMode="true" id="1a04808d-2f2f-4e8d-97f9-5a3e042a3ec5" name="Phase-A"/>
+    </statemachines>
+    <children id="b18c488e-6369-4fef-bb3a-6bbcc654bc1f" name="Function Charlie">
+      <metaTypes href="premise:/Base.registry#6522e246-f8f7-41ec-8f9b-70bf51484eb6"/>
+      <metaData name="FHA">
+        <metaData name="F#ID" value="test.03"/>
+        <metaData name="Safety Objective"/>
+        <metaData name="Mitigation Objective"/>
+      </metaData>
+      <statemachines id="ca3b22eb-34d0-4438-a7df-e5afec2d4457" name="Function Charlie Failure State">
+        <metaTypes href="premise:/Base.registry#8021351c-a503-4afc-8d65-768d9ec44f62"/>
+        <modes entryMode="true" id="bc3cca6d-c15c-4152-bc4b-1399d119502c" name="Normal"/>
+        <modes id="fbd5ea33-2d68-4d39-9f48-b693c5d1e30c" name="Function Charlie Failure">
+          <metaTypes href="premise:/Base.registry#67943974-27b7-4e15-85cd-59ee99afe08c"/>
+        </modes>
+        <transitions id="c9840c02-9a0a-42f7-92f8-11f3bbc7403d" name="F: Function Charlie Failure">
+          <sourcePointer target="bc3cca6d-c15c-4152-bc4b-1399d119502c" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="fbd5ea33-2d68-4d39-9f48-b693c5d1e30c" xsi:type="graph:DirectPointer"/>
+          <parameters id="b33e58b6-9be9-4132-bf74-febb972848e8" name="Failure Rate">
+            <value value="0"/>
+          </parameters>
+        </transitions>
+      </statemachines>
+    </children>
+  </usecases>
+</uc:UseCaseRepository>

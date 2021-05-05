@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rep:Representation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:rep="http://www.dlr.de/ft/premise/representation/2012/" name="migration representation" id="1750f9ef-4ebf-40a9-a3bb-86b1f035b33f" metaModel="1.26">
+  <nodeDecorators>
+    <decorators xsi:type="rep:Color" value="#EFAA4E" name="Hornhaut Umbra" description="Neue Farbe von der Messe „Schlechter wohnen“." labelFilter="C*" recursive="true"/>
+    <decorators xsi:type="rep:Shape" name="Wide" width="1000.0" height="1.0">
+      <componentFilter xsi:type="prem:SystemComponent" href="My.system#c8eef920-b53c-4161-b0d2-d7d0a3f66f0f"/>
+    </decorators>
+  </nodeDecorators>
+  <edgeDecorators>
+    <decorators xsi:type="rep:EdgeColor" value="#00FF00" name="Green" description="Useless edge color">
+      <metaTypeFilter href="premise:/Base.registry#id_Container"/>
+      <sourceFilter xsi:type="prem:SystemComponent" href="My.system#c8eef920-b53c-4161-b0d2-d7d0a3f66f0f"/>
+    </decorators>
+    <decorators xsi:type="rep:Style" name="Thick line" labelFilter="yyy" width="5.0" type="DASHED"/>
+  </edgeDecorators>
+</rep:Representation>

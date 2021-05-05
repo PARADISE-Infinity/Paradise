@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="off"/>
+  </metaData>
+  <metaData name="Export">
+    <metaData name="GraphML/StateMachines">
+      <metaData name="Transition constraints" value="on"/>
+      <metaData name="Links between referenced foreign mode and their origin" value="off"/>
+      <metaData name="Color for referenced foreign modes and edges (default grey: #AAAAAA)" value="#AAAAAA"/>
+    </metaData>
+  </metaData>
+  <projects id="0e47be12-e3c0-4a2b-8d62-dd5ade75fbbf" name="RedundantComputerSystem">
+    <children id="ee619dc1-1401-4aa4-9032-bd1bb7ad66f4" name="Computer A" xsi:type="prem:SystemComponent">
+    <statemachines name="Computer A">
+<modes entryMode="true" id="7645110a-f6e9-4faa-881e-c934b1c82915" name="On" xsi:type="elem:Mode"/>
+<modes entryMode="false" id="88cb5ece-70cb-449b-a6b8-3cf2d67aad26" name="Off" xsi:type="elem:Mode"/>
+<modes entryMode="false" id="85c9ae4c-ccd2-4c61-b4a5-71b9483a5782" name="Failure" xsi:type="elem:Mode"/>
+<transitions id="6d9ba287-d0fc-47e8-b208-c00a39e886ea" name="">
+<sourcePointer target="88cb5ece-70cb-449b-a6b8-3cf2d67aad26" xsi:type="graph:DirectPointer"/>
+<targetPointer target="7645110a-f6e9-4faa-881e-c934b1c82915" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="a675ce04-a2a3-4e41-ada9-ecac2567aded" name="">
+<sourcePointer target="7645110a-f6e9-4faa-881e-c934b1c82915" xsi:type="graph:DirectPointer"/>
+<targetPointer target="88cb5ece-70cb-449b-a6b8-3cf2d67aad26" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="08850c31-de4a-4f06-b695-daec38c4b793" name="">
+<sourcePointer target="7645110a-f6e9-4faa-881e-c934b1c82915" xsi:type="graph:DirectPointer"/>
+<targetPointer target="85c9ae4c-ccd2-4c61-b4a5-71b9483a5782" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="d4affab4-1ec3-4d4c-bcbe-e1d8619440dc" name="">
+<sourcePointer target="85c9ae4c-ccd2-4c61-b4a5-71b9483a5782" xsi:type="graph:DirectPointer"/>
+<targetPointer target="88cb5ece-70cb-449b-a6b8-3cf2d67aad26" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+  <statemachines name="RedundantComputerSystem">
+<modes entryMode="true" id="8a9de318-66b7-48d1-b9f3-ed97136bfc23" name="On" xsi:type="elem:Mode"/>
+<modes entryMode="true" id="eb3c9508-b157-4c60-a043-f5e21c1549a2" name="Off" xsi:type="elem:Mode"/>
+<modes entryMode="true" id="d2157434-278f-44f9-8f19-339df9349aa0" name="Failure" xsi:type="elem:Mode"/>
+<transitions id="d96cff7a-e8b8-40f0-ad62-7cb56fb0d95e" name="">
+<sourcePointer target="88cb5ece-70cb-449b-a6b8-3cf2d67aad26" xsi:type="graph:DirectPointer"/>
+<targetPointer target="7645110a-f6e9-4faa-881e-c934b1c82915" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="3b51227a-5c41-4d38-b639-82e6401533e8" name="">
+<sourcePointer target="7645110a-f6e9-4faa-881e-c934b1c82915" xsi:type="graph:DirectPointer"/>
+<targetPointer target="88cb5ece-70cb-449b-a6b8-3cf2d67aad26" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="d6d38091-5199-461f-bd90-51e0ce02be0f" name="">
+<sourcePointer target="7645110a-f6e9-4faa-881e-c934b1c82915" xsi:type="graph:DirectPointer"/>
+<targetPointer target="85c9ae4c-ccd2-4c61-b4a5-71b9483a5782" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</projects>
+</prem:ProjectRepository>

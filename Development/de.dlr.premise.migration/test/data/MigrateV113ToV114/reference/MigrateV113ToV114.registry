@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reg:Registry xmi:version="2.0" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.14">
+  <units name="Scalar" symbol="1"/>
+  <constants description="" id="a34de7e1-553d-4d38-9a0e-3347fce6266f" name="NewModelVersion">
+    <value value="1.12" xsi:type="reg:Value"/>
+  </constants>
+  <metaTypes id="3d7bdeb5-a2b3-47b6-a959-67739118b850" name="Magical"/>
+</reg:Registry>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Group Elements" value="false"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Edit local statemachines">
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <projects id="68394457-e832-487f-8ae0-3d0aa9eea457" name="Root">
+    <statemachines id="d7434483-02ce-47f6-9c31-3f241bdb1fdb" name="SM1">
+      <modes entryMode="true" id="33f07563-fa8a-4bb2-b2da-6a8c38893f40" name="A"/>
+      <modes id="5c0a79a5-c364-4cd6-afec-65f716db87e6" name="B"/>
+      <modes id="4946b665-0cbd-459a-b9f9-fd6a6e981493" name="C"/>
+      <modes id="137c10d2-6885-4902-844c-acefbcce2927" name="D"/>
+      <modes id="a4ae0c64-fdde-4894-b968-f7839e68dae8" name="U"/>
+      <modes id="adc8a143-8bb1-4c7c-81f3-529a15355950" name="V"/>
+      <transitions id="073c4cb0-9d37-4f51-853f-c2af8eabb2c0">
+        <sourcePointer target="33f07563-fa8a-4bb2-b2da-6a8c38893f40" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="5c0a79a5-c364-4cd6-afec-65f716db87e6" xsi:type="graph:DirectPointer"/>
+      </transitions>
+      <transitions id="77dc2e75-dad8-496e-9ce8-a27736d226de">
+        <sourcePointer target="5c0a79a5-c364-4cd6-afec-65f716db87e6" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="4946b665-0cbd-459a-b9f9-fd6a6e981493" xsi:type="graph:DirectPointer"/>
+        <condition xsi:type="elem:ModeGuard">
+<modePointer target="c55b5307-23b0-494c-9bf1-2712bb517357" xsi:type="graph:DirectPointer"/>
+</condition>
+      </transitions>
+      <transitions id="3fec4f53-ac9d-4024-83af-5858af56775b">
+        <sourcePointer target="33f07563-fa8a-4bb2-b2da-6a8c38893f40" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="137c10d2-6885-4902-844c-acefbcce2927" xsi:type="graph:DirectPointer"/>
+        <condition xsi:type="elem:ModeGuard">
+<modePointer target="33f07563-fa8a-4bb2-b2da-6a8c38893f40" xsi:type="graph:DirectPointer"/>
+</condition>
+      </transitions>
+      <transitions id="c8a46ae0-e9c2-4607-b750-0f35fda9025f">
+        <sourcePointer target="33f07563-fa8a-4bb2-b2da-6a8c38893f40" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="adc8a143-8bb1-4c7c-81f3-529a15355950" xsi:type="graph:DirectPointer"/>
+        <condition junction="AND" xsi:type="elem:GuardCombination">
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="5c0a79a5-c364-4cd6-afec-65f716db87e6" xsi:type="graph:DirectPointer"/>
+</children>
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="c7460936-232f-4bbf-a1f4-cdf2f15d58da" xsi:type="graph:DirectPointer"/>
+</children>
+        </condition>
+      </transitions>
+    </statemachines>
+    <statemachines id="e37705ed-b316-434b-bb84-f298b5497815" name="SM2">
+      <modes entryMode="true" id="c7460936-232f-4bbf-a1f4-cdf2f15d58da" name="1"/>
+      <modes id="c55b5307-23b0-494c-9bf1-2712bb517357" name="2"/>
+    </statemachines>
+  </projects>
+</prem:ProjectRepository>

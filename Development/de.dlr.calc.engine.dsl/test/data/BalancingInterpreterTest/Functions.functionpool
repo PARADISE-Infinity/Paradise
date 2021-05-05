@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fnp:FunctionPool xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <calcEngines fileURI="ExcelFunctions.xls" id="ExcelFunctions" name="ExcelFunctions" xsi:type="fnp:CalcEngineSpreadSheet"/>
+  <calcEngines className="de.dlr.calc.engine.java.implementations.SumOverAllModes" id="SumOverAllModes" name="SumOverAllModes" xsi:type="fnp:CalcEngineJava"/>
+  <functions calcEngine="ExcelFunctions" lastInputMultiple="true" name="Sum" xsi:type="fnp:FnDefSpreadSheet">
+    <output cell="A6" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A5" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+  <functions calcEngine="ExcelFunctions" lastInputMultiple="true" name="Multiply" xsi:type="fnp:FnDefSpreadSheet">
+    <output cell="A10" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A9" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+  <functions calcEngine="ExcelFunctions" name="Sin" xsi:type="fnp:FnDefSpreadSheet">
+    <output cell="A14" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A13" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+  <functions calcEngine="SumOverAllModes" lastInputMultiple="true" methodName="calculate" name="SumOverAllModes" xsi:type="fnp:FnDefJava">
+    <inputs name="Parameter"/>
+  </functions>
+  <functions lastInputMultiple="true" name="InvalidFnDef" sheetName="" xsi:type="fnp:FnDefSpreadSheet">
+    <output/>
+    <inputs/>
+    <inputs/>
+  </functions>
+</fnp:FunctionPool>

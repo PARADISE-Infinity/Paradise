@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rep:Representation xmlns:rep="http://www.dlr.de/ft/premise/representation/2012/" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="71df981a-adce-401d-8153-b02b2bac768b" metaModel="1.33" name="Representation" xmi:version="2.0">
+<selectors name="Node " query="graph::INode.allInstances()&#13;&#10;-&gt;selectByKind(registry::IMetaTypable)-&gt;select(metaTypes.id-&gt;intersection(Set{'8a8f8a37-7fa8-487b-b18c-fdf292247269'})-&gt;notEmpty())&#13;&#10;-&gt;closure(oclContents)-&gt;selectByKind(graph::INode)&#13;&#10;">
+<decorators name="" value="#FF0000" xsi:type="rep:Color"/>
+<decorators name="hidden" visible="false" xsi:type="rep:LabelStyle"/>
+</selectors>
+<selectors name="Node " query="graph::INode.allInstances()&#13;&#10;-&gt;selectByKind(registry::IMetaTypable)-&gt;select(metaTypes.id-&gt;intersection(Set{'ae318e94-397d-4635-9074-dc2896311619'})-&gt;notEmpty())&#13;&#10;">
+<decorators name="" value="#FF00FF" xsi:type="rep:Color"/>
+</selectors>
+<selectors name="Node invalid color" query="graph::INode.allInstances()&#13;&#10;-&gt;selectByKind(registry::IMetaTypable)-&gt;select(metaTypes.id-&gt;intersection(Set{'e7ff6574-3b70-4432-a20f-50570fae7e5c'})-&gt;notEmpty())&#13;&#10;">
+<decorators name="invalid color" xsi:type="rep:Color"/>
+</selectors>
+<selectors name="Node " query="graph::INode.allInstances()&#13;&#10;-&gt;selectByKind(registry::ANameItem)-&gt;select(name.matches('(?i)ModelRoot'))&#13;&#10;">
+<decorators name="" value="#008000" xsi:type="rep:Color"/>
+</selectors>
+<selectors name="Node Invalid size" query="graph::INode.allInstances()&#13;&#10;-&gt;selectByKind(registry::ADataItem)-&gt;select(Set{'4c6c4cb6-f0ff-46a1-b61b-81e617a14229'}-&gt;includes(id))&#13;&#10;-&gt;closure(oclContents)-&gt;selectByKind(graph::INode)&#13;&#10;">
+<decorators name="Invalid size" xsi:type="rep:NodeShape"/>
+</selectors>
+<selectors name="Node Invalid size2" query="graph::INode.allInstances()&#13;&#10;-&gt;selectByKind(registry::ADataItem)-&gt;select(Set{'4c6c4cb6-f0ff-46a1-b61b-81e617a14229'}-&gt;includes(id))&#13;&#10;-&gt;closure(oclContents)-&gt;selectByKind(graph::INode)&#13;&#10;">
+<decorators height="-1.0" name="Invalid size2" width="-1.0" xsi:type="rep:NodeShape"/>
+</selectors>
+<selectors name="Node valid size" query="graph::INode.allInstances()&#13;&#10;-&gt;selectByKind(registry::IMetaTypable)-&gt;select(metaTypes.id-&gt;intersection(Set{'0a0b6d6e-4695-4148-82e7-04e4e169ace4'})-&gt;notEmpty())&#13;&#10;">
+<decorators height="200.0" name="valid size" width="400.0" xsi:type="rep:NodeShape"/>
+</selectors>
+<selectors name="Node " query="graph::INode.allInstances()&#13;&#10;-&gt;selectByKind(registry::ADataItem)-&gt;select(Set{'d61fa01e-a425-403b-a587-ab40ab4e91f8','4c6c4cb6-f0ff-46a1-b61b-81e617a14229'}-&gt;includes(id))&#13;&#10;">
+<decorators name="" x="10.0" xsi:type="rep:Coordinate" y="10.0"/>
+</selectors>
+<selectors name="Node invalid position" query="graph::INode.allInstances()&#13;&#10;-&gt;selectByKind(registry::ADataItem)-&gt;select(Set{'4a1db9c1-2d47-44f5-bc75-6740e6ad3358'}-&gt;includes(id))&#13;&#10;">
+<decorators name="invalid position" xsi:type="rep:Coordinate"/>
+</selectors>
+<selectors name="Edge " query="graph::IEdge.allInstances()&#13;&#10;-&gt;selectByKind(registry::IMetaTypable)-&gt;select(metaTypes.id-&gt;intersection(Set{'9f0c9ba8-f4b0-499e-8895-d0957e9b931b'})-&gt;notEmpty())&#13;&#10;">
+<decorators name="" value="#00FF40" xsi:type="rep:Color"/>
+</selectors>
+<selectors name="Edge " query="graph::IEdge.allInstances()&#13;&#10;-&gt;selectByKind(registry::IMetaTypable)-&gt;select(metaTypes.id-&gt;intersection(Set{'7877b6d0-9672-4577-aa50-d275803c12d6'})-&gt;notEmpty())&#13;&#10;">
+<decorators name="" value="#FF00FF" xsi:type="rep:Color"/>
+</selectors>
+<selectors name="Edge invalid color" query="graph::IEdge.allInstances()&#13;&#10;-&gt;selectByKind(registry::IMetaTypable)-&gt;select(metaTypes.id-&gt;intersection(Set{'94cac97b-f421-4a5c-ac76-83d54f71b50c'})-&gt;notEmpty())&#13;&#10;">
+<decorators name="invalid color" xsi:type="rep:Color"/>
+</selectors>
+<selectors name="Edge " query="graph::IEdge.allInstances()&#13;&#10;-&gt;selectByKind(registry::IMetaTypable)-&gt;select(metaTypes.id-&gt;intersection(Set{'9f0c9ba8-f4b0-499e-8895-d0957e9b931b'})-&gt;notEmpty())&#13;&#10;">
+<decorators name="" type="DOTTED" width="5.0" xsi:type="rep:LineStyle"/>
+</selectors>
+<selectors name="Edge invalid style" query="graph::IEdge.allInstances()&#13;&#10;-&gt;selectByKind(registry::IMetaTypable)-&gt;select(metaTypes.id-&gt;intersection(Set{'7877b6d0-9672-4577-aa50-d275803c12d6'})-&gt;notEmpty())&#13;&#10;">
+<decorators name="invalid style" width="0.0" xsi:type="rep:LineStyle"/>
+</selectors>
+<selectors name="P51" query="system::Parameter.allInstances()-&gt;select(id = 'e866c1c9-670a-4006-9347-9f546f5e9f74')">
+<decorators name="Green" value="#00FF00" xsi:type="rep:Color"/>
+<decorators height="10.0" name="Wide" width="100.0" xsi:type="rep:NodeShape"/>
+<decorators x="-30.0" xsi:type="rep:Coordinate" y="20.0"/>
+<decorators name="Dashed" type="DASHED" width="2.0" xsi:type="rep:LineStyle"/>
+<decorators fontStyle="BOLD" name="Bold" underlined="true" xsi:type="rep:LabelStyle"/>
+</selectors>
+</rep:Representation>

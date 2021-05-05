@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.xtext.extension_resourceServiceProvider">
+      <resourceServiceProvider
+            class="de.dlr.premise.xtext.ui.ExecutableExtensionFactory:org.eclipse.xtext.resource.IResourceServiceProvider"
+            uriExtension="premise">
+      </resourceServiceProvider>
+   </extension>
+   <extension
+         point="org.eclipse.xtext.extension_resourceServiceProvider">
+      <resourceServiceProvider
+            class="de.dlr.premise.xtext.ui.ExecutableExtensionFactory:org.eclipse.xtext.resource.IResourceServiceProvider"
+            uriExtension="functionpool">
+      </resourceServiceProvider>
+   </extension>
+   <extension
+         point="org.eclipse.xtext.extension_resourceServiceProvider">
+      <resourceServiceProvider
+            class="de.dlr.premise.xtext.ui.ExecutableExtensionFactory:org.eclipse.xtext.resource.IResourceServiceProvider"
+            uriExtension="registry">
+      </resourceServiceProvider>
+   </extension>
+   <extension
+         point="org.eclipse.xtext.extension_resourceServiceProvider">
+      <resourceServiceProvider
+            class="de.dlr.premise.xtext.ui.ExecutableExtensionFactory:org.eclipse.xtext.resource.IResourceServiceProvider"
+            uriExtension="usecase">
+      </resourceServiceProvider>
+   </extension>
+   <extension
+         point="org.eclipse.xtext.extension_resourceServiceProvider">
+      <resourceServiceProvider
+            class="de.dlr.premise.xtext.ui.ExecutableExtensionFactory:org.eclipse.xtext.resource.IResourceServiceProvider"
+            uriExtension="representation">
+      </resourceServiceProvider>
+   </extension>
+   <extension
+         point="org.eclipse.xtext.extension_resourceServiceProvider">
+      <resourceServiceProvider
+            class="de.dlr.premise.xtext.ui.ExecutableExtensionFactory:org.eclipse.xtext.resource.IResourceServiceProvider"
+            uriExtension="element">
+      </resourceServiceProvider>
+   </extension>
+   <extension
+         point="org.eclipse.xtext.extension_resourceServiceProvider">
+      <resourceServiceProvider
+            class="de.dlr.premise.xtext.ui.ExecutableExtensionFactory:org.eclipse.xtext.resource.IResourceServiceProvider"
+            uriExtension="component">
+      </resourceServiceProvider>
+   </extension>
+
+</plugin>

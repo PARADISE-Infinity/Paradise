@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:elem="http://www.dlr.de/premise/element/2014/"
+    xmlns:prem="http://www.dlr.de/ft/premise/2010/"
+    xsi:schemaLocation="http://www.dlr.de/premise/element/2014/ ../../model/PREMISE_Element.ecore http://www.dlr.de/ft/premise/2010/ ../../model/PREMISE_system.ecore">
+  <projects
+      name="Air Vehicle System">
+    <children
+        xsi:type="prem:SystemComponent"
+        name="Atmosphere"/>
+    <children
+        xsi:type="prem:SystemComponent"
+        name="Aircraft">
+      <children
+          xsi:type="prem:SystemComponent"
+          name="A/C modes">
+        <children
+            xsi:type="prem:SystemComponent"
+            name="Flight Phases">
+          <modes
+              name="Clean"/>
+          <modes
+              name="Landing"/>
+          <modes
+              name="TakeOff"/>
+          <transitions
+              name="TakeOff > Clean"
+              target="//@projects.0/@children.1/@children.0/@children.0/@modes.0"
+              source="//@projects.0/@children.1/@children.0/@children.0/@modes.2">
+            <condition
+                xsi:type="elem:GuardCombination"
+                junction="AND">
+              <children
+                  xsi:type="elem:ModeGuard"
+                  mode="//@projects.0/@children.1/@children.1/@children.0/@modes.0"/>
+              <children
+                  xsi:type="elem:ModeGuard"
+                  mode="//@projects.0/@children.1/@children.1/@children.1/@modes.1"/>
+              <children
+                  xsi:type="elem:ModeGuard"
+                  mode="//@projects.0/@children.1/@children.0/@children.2/@modes.1"/>
+            </condition>
+          </transitions>
+          <transitions
+              name="Clean > Landing"
+              target="//@projects.0/@children.1/@children.0/@children.0/@modes.1"
+              source="//@projects.0/@children.1/@children.0/@children.0/@modes.0">
+            <condition
+                xsi:type="elem:GuardCombination"
+                junction="AND">
+              <children
+                  xsi:type="elem:ModeGuard"
+                  mode="//@projects.0/@children.1/@children.1/@children.0/@modes.3"/>
+              <children
+                  xsi:type="elem:ModeGuard"
+                  mode="//@projects.0/@children.1/@children.1/@children.1/@modes.0"/>
+            </condition>
+          </transitions>
+          <transitions
+              name="Landing > TakeOff"
+              target="//@projects.0/@children.1/@children.0/@children.0/@modes.2"
+              source="//@projects.0/@children.1/@children.0/@children.0/@modes.1">
+            <condition
+                xsi:type="elem:GuardCombination"
+                junction="AND">
+              <children
+                  xsi:type="elem:ModeGuard"
+                  mode="//@projects.0/@children.1/@children.1/@children.0/@modes.1"/>
+              <children
+                  xsi:type="elem:ModeGuard"
+                  mode="//@projects.0/@children.1/@children.1/@children.1/@modes.0"/>
+            </condition>
+          </transitions>
+        </children>
+        <children
+            xsi:type="prem:SystemComponent"
+            name="System Conditions">
+          <modes
+              name="Healthy"/>
+          <modes
+              name="Failure"/>
+          <modes
+              name="OEI"/>
+          <transitions
+              name="Healthy > Failure"
+              target="//@projects.0/@children.1/@children.0/@children.1/@modes.1"
+              source="//@projects.0/@children.1/@children.0/@children.1/@modes.0"
+              externallyTriggered="true"/>
+          <transitions
+              name="Healthy > OEI"
+              target="//@projects.0/@children.1/@children.0/@children.1/@modes.2"
+              source="//@projects.0/@children.1/@children.0/@children.1/@modes.0"
+              externallyTriggered="true"/>
+        </children>
+        <children
+            xsi:type="prem:SystemComponent"
+            name="Altitudes">
+          <modes
+              name="Ground"/>
+          <modes
+              name="FreeAir"/>
+          <transitions
+              name="Ground > FreeAir"
+              target="//@projects.0/@children.1/@children.0/@children.2/@modes.1"
+              source="//@projects.0/@children.1/@children.0/@children.2/@modes.0"
+              externallyTriggered="true"/>
+          <transitions
+              name="FreeAir > Ground"
+              target="//@projects.0/@children.1/@children.0/@children.2/@modes.0"
+              source="//@projects.0/@children.1/@children.0/@children.2/@modes.1"
+              externallyTriggered="true"/>
+        </children>
+      </children>
+      <children
+          xsi:type="prem:SystemComponent"
+          name="A320-200">
+        <children
+            xsi:type="prem:SystemComponent"
+            name="Flaps">
+          <modes
+              name="0"/>
+          <modes
+              name="1+F"/>
+          <modes
+              name="2+F"/>
+          <modes
+              name="3+F"/>
+        </children>
+        <children
+            xsi:type="prem:SystemComponent"
+            name="Landing Gear">
+          <modes
+              name="Extracted"/>
+          <modes
+              name="Retracted"/>
+          <transitions
+              name="Extracted > Retracted"
+              target="//@projects.0/@children.1/@children.1/@children.1/@modes.1"
+              source="//@projects.0/@children.1/@children.1/@children.1/@modes.0"
+              externallyTriggered="true"/>
+          <transitions
+              name="Retracted > Extracted"
+              target="//@projects.0/@children.1/@children.1/@children.1/@modes.0"
+              source="//@projects.0/@children.1/@children.1/@children.1/@modes.1"
+              externallyTriggered="true"/>
+        </children>
+      </children>
+    </children>
+  </projects>
+</prem:ProjectRepository>

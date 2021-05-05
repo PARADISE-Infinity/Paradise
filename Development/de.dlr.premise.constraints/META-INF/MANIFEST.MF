@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: PREMISE Constraints
+Bundle-SymbolicName: de.dlr.premise.constraints;singleton:=true
+Bundle-Version: 1.25.0.qualifier
+Require-Bundle: de.dlr.premise;bundle-version="1.22.0",
+ de.dlr.premise.states;bundle-version="1.23.4",
+ org.junit;resolution:=optional
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: de.dlr.premise.constraints,
+ de.dlr.premise.constraints.handlers,
+ de.dlr.premise.constraints.valueconstraints
+Bundle-Vendor: www.dlr.de/ft/ssy
+Automatic-Module-Name: de.dlr.premise.constraints

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.23" xmi:version="2.0">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+    <children name="number representation pattern" value="##0.0###E0"/>
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="false"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Show Parameters" value="true"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Edit local statemachines">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+    </children>
+  </metaData>
+  <usecases id="0ce15286-e6c7-4c61-9ab8-2e948d0a401b" name="uc">
+    <children id="5d2d15db-47fb-4148-9fbd-b5ca5dfa83df" name="ucchild">
+    <statemachines name="ucchild">
+<modes id="92d69567-e5ed-4b43-9eed-fdca1a417206" name="childmode"/>
+<transitions id="abc5f4ba-ba91-4e94-80e0-4bf688350095">
+        <targetPointer target="92d69567-e5ed-4b43-9eed-fdca1a417206" xsi:type="comp:DirectPointer"/>
+      </transitions>
+</statemachines>
+</children>
+  <statemachines name="uc">
+<modes entryMode="true" id="69ab7656-cfcc-4859-9552-a56edadcf94d" name="entry"/>
+<modes id="2315226b-1815-4519-a477-f69213bc0580" name="target"/>
+<transitions id="e89a40f7-5013-4bfb-a85f-e9f8638fba4a">
+      <sourcePointer target="69ab7656-cfcc-4859-9552-a56edadcf94d" xsi:type="comp:DirectPointer"/>
+      <targetPointer target="2315226b-1815-4519-a477-f69213bc0580" xsi:type="comp:DirectPointer"/>
+    </transitions>
+</statemachines>
+</usecases>
+</uc:UseCaseRepository>

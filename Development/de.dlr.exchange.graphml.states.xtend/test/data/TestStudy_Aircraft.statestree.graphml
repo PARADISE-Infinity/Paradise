@@ -1,0 +1,2406 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+  <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.yworks.com/xml/graphml" xmlns:yed="http://www.yworks.com/xml/yed/3" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">
+  <!--Created by yFiles for Java 2.8-->
+  <key for="graphml" id="d0" yfiles.type="resources"/>
+  <key for="port" id="d1" yfiles.type="portgraphics"/>
+  <key for="port" id="d2" yfiles.type="portgeometry"/>
+  <key for="port" id="d3" yfiles.type="portuserdata"/>
+  <key attr.name="url" attr.type="string" for="node" id="d4"/>
+  <key attr.name="description" attr.type="string" for="node" id="d5"/>
+  <key for="node" id="d6" yfiles.type="nodegraphics"/>
+  <key attr.name="Beschreibung" attr.type="string" for="graph" id="d7"/>
+  <key attr.name="url" attr.type="string" for="edge" id="d8"/>
+  <key attr.name="description" attr.type="string" for="edge" id="d9"/>
+  <key for="edge" id="d10" yfiles.type="edgegraphics"/>
+  <graph edgedefault="directed" id="G">
+    <data key="d7"/>
+<node id="n0">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#27AE27" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">
+</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<node id="n1">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">-
+(Atmosphere)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e2" source="n0" target="n1">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n3">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">TakeOff/Ground
+(A/C Modes)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e4" source="n1" target="n3">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n5">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">-
+(Failure Conditions)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e6" source="n3" target="n5">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n7">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Extracted
+(Landing Gear)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e8" source="n5" target="n7">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n9">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">1+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e10" source="n7" target="n9">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n11">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">0
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e12" source="n7" target="n11">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n13">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">3+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e14" source="n7" target="n13">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n15">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Retracted
+(Landing Gear)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e16" source="n5" target="n15">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n17">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">1+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e18" source="n15" target="n17">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n19">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">0
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e20" source="n15" target="n19">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n21">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">3+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e22" source="n15" target="n21">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n23">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Failure
+(Failure Conditions)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e24" source="n3" target="n23">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n25">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Extracted
+(Landing Gear)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e26" source="n23" target="n25">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n27">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">1+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e28" source="n25" target="n27">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n29">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">0
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e30" source="n25" target="n29">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n31">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">3+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e32" source="n25" target="n31">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n33">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Retracted
+(Landing Gear)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e34" source="n23" target="n33">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n35">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">1+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e36" source="n33" target="n35">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n37">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">0
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e38" source="n33" target="n37">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n39">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">3+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e40" source="n33" target="n39">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n41">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">OEI
+(Failure Conditions)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e42" source="n3" target="n41">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n43">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Extracted
+(Landing Gear)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e44" source="n41" target="n43">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n45">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">1+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e46" source="n43" target="n45">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n47">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">0
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e48" source="n43" target="n47">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n49">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">3+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e50" source="n43" target="n49">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n51">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Retracted
+(Landing Gear)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e52" source="n41" target="n51">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n53">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">1+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e54" source="n51" target="n53">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n55">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">0
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e56" source="n51" target="n55">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n57">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">3+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e58" source="n51" target="n57">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n59">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">TakeOff
+(A/C Modes)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e60" source="n1" target="n59">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n61">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">-
+(Failure Conditions)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e62" source="n59" target="n61">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n63">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Extracted
+(Landing Gear)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e64" source="n61" target="n63">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n65">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">1+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e66" source="n63" target="n65">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n67">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">0
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e68" source="n63" target="n67">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n69">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">3+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e70" source="n63" target="n69">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n71">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Retracted
+(Landing Gear)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e72" source="n61" target="n71">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n73">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">1+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e74" source="n71" target="n73">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n75">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">3+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e76" source="n71" target="n75">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n77">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Failure
+(Failure Conditions)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e78" source="n59" target="n77">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n79">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Extracted
+(Landing Gear)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e80" source="n77" target="n79">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n81">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">1+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e82" source="n79" target="n81">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n83">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">0
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e84" source="n79" target="n83">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n85">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">3+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e86" source="n79" target="n85">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n87">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Retracted
+(Landing Gear)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e88" source="n77" target="n87">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n89">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">1+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e90" source="n87" target="n89">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n91">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">3+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e92" source="n87" target="n91">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n93">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">OEI
+(Failure Conditions)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e94" source="n59" target="n93">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n95">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Extracted
+(Landing Gear)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e96" source="n93" target="n95">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n97">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">1+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e98" source="n95" target="n97">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n99">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">0
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e100" source="n95" target="n99">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n101">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">3+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e102" source="n95" target="n101">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n103">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Retracted
+(Landing Gear)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e104" source="n93" target="n103">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n105">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">1+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e106" source="n103" target="n105">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n107">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">3+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e108" source="n103" target="n107">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n109">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Clean
+(A/C Modes)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e110" source="n1" target="n109">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n111">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">-
+(Failure Conditions)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e112" source="n109" target="n111">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n113">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Retracted
+(Landing Gear)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e114" source="n111" target="n113">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n115">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">0
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e116" source="n113" target="n115">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n117">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">3+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e118" source="n113" target="n117">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n119">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Failure
+(Failure Conditions)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e120" source="n109" target="n119">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n121">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Retracted
+(Landing Gear)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e122" source="n119" target="n121">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n123">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">0
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e124" source="n121" target="n123">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n125">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">3+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e126" source="n121" target="n125">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n127">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Landing
+(A/C Modes)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e128" source="n1" target="n127">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n129">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">OEI
+(Failure Conditions)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e130" source="n127" target="n129">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n131">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Retracted
+(Landing Gear)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e132" source="n129" target="n131">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n133">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">0
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e134" source="n131" target="n133">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n135">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">3+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e136" source="n131" target="n135">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n137">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Failure
+(Failure Conditions)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e138" source="n127" target="n137">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n139">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Retracted
+(Landing Gear)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e140" source="n137" target="n139">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n141">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">0
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e142" source="n139" target="n141">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n143">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">3+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e144" source="n139" target="n143">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n145">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Landing/Ground
+(A/C Modes)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e146" source="n1" target="n145">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n147">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">OEI
+(Failure Conditions)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e148" source="n145" target="n147">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n149">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Retracted
+(Landing Gear)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e150" source="n147" target="n149">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n151">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">0
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e152" source="n149" target="n151">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n153">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">3+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e154" source="n149" target="n153">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n155">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Failure
+(Failure Conditions)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e156" source="n145" target="n155">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n157">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="e" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">Retracted
+(Landing Gear)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e158" source="n155" target="n157">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n159">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">0
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e160" source="n157" target="n159">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n161">
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Event.withShadow">
+      <y:Geometry height="30.0" width="30.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
+      <y:BorderStyle color="#DCBA00" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="eight_pos" modelPosition="s" textColor="#000000" visible="true" width="31.345703125" x="34.0" y="5.6494140625">3+F
+(Flaps)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="EVENT_TYPE_PLAIN"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+        <y:Property class="com.yworks.yfiles.bpmn.view.EventCharEnum" name="com.yworks.bpmn.characteristic" value="EVENT_CHARACTERISTIC_START"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+<edge id="e162" source="n157" target="n161">
+  <data key="d9"/>
+  <data key="d10">
+    <y:PolyLineEdge>
+      <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+      <y:LineStyle color="#000000" type="line" width="1.0"/>
+      <y:Arrows source="none" target="none"/>
+      <y:BendStyle smoothed="false"/>
+    </y:PolyLineEdge>
+  </data>
+</edge>
+<node id="n163">
+  <data key="d5"/>
+  <data key="d6">
+    <y:GenericNode configuration="com.yworks.bpmn.Artifact.withShadow">
+      <y:Geometry height="30.0" width="208.0" x="0.0" y="0.0"/>
+      <y:Fill color="#FFFFFFE6" transparent="false"/>
+      <y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" modelName="internal" modelPosition="l" textColor="#000000" visible="true" width="177.408203125" x="4.0" y="-1.701171875">45 valid states
+(of max. 360 without constraints)</y:NodeLabel>
+      <y:StyleProperties>
+        <y:Property class="com.yworks.yfiles.bpmn.view.BPMNTypeEnum" name="com.yworks.bpmn.type" value="ARTIFACT_TYPE_ANNOTATION"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.line.color" value="#000000"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill" value="#ffffff"/>
+        <y:Property class="java.awt.Color" name="com.yworks.bpmn.icon.fill2" value="#d4d4d4"/>
+      </y:StyleProperties>
+    </y:GenericNode>
+  </data>
+</node>
+  </graph>
+  <data key="d0">
+    <y:Resources/>
+  </data>
+</graphml>

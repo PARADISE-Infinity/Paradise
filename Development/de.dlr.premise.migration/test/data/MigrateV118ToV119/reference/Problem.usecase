@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.19" xmi:version="2.0">
+  <metaData name="View">
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Show Parameters" value="true"/>
+        <children name="Group Elements" value="true"/>
+      </children>
+    </children>
+  </metaData>
+  <usecases id="01f09205-1592-4710-b498-9158a7b3d379" name="Root">
+    <children id="6438974f-6aa9-450a-b567-c49fd62db2df" name="X1">
+      <requiredParameters id="4a7c23f0-16c8-4c18-8651-149469c87d2b" name="Sandwich">
+        <valueConstraint lower="7" upper="7" xsi:type="uc:RangeConstraint"/>
+      </requiredParameters>
+    </children>
+  </usecases>
+</uc:UseCaseRepository>

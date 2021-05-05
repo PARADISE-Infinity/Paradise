@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comp:ComponentRepository xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.33" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="false"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Show Parameters" value="true"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Edit local statemachines">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+    </metaData>
+    <metaData name="dataTypeNames" value="on"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+  </metaData>
+  <metaData name="Export">
+    <metaData name="GraphML">
+      <metaData name="logical_hierarchy" value="on">
+        <metaData name="group" value="on"/>
+        <metaData name="depth" value="0"/>
+      </metaData>
+      <metaData name="physical_portmappings" value="on"/>
+      <metaData name="parameter" value="on"/>
+      <metaData name="relations" value="on"/>
+    </metaData>
+  </metaData>
+  <definitions id="2da4ee55-f223-4482-835c-1a65045d4a4f" name="D1">
+    <parameters id="2d83d0ad-bacd-4ad8-b0c4-c9c5c1db3721" name="PD11"/>
+    <children id="edd13cb6-2d7e-4a83-9ecf-726ac21a3657" name="CD11"/>
+    <children id="3080524d-d5db-4d24-9a40-b640acdc1a57" name="CD12"/>
+  </definitions>
+  <definitions id="c97114fa-5060-4669-8930-cb7c14e475ab" name="D2">
+    <parameters id="196ddeb5-9597-4428-a83d-ffb04efd3375" name="PD21"/>
+    <parameters id="4f1ab6d0-7a09-47bc-aa83-be4b2826401c" name="PD22"/>
+    <parameters id="98183bfd-bee5-4852-affb-c5b502197aa6" name="PD23"/>
+  </definitions>
+  <definitions id="ca55e139-d003-4643-8622-96db6700d958" name="D3">
+    <children id="1ea5d0fe-6ce4-4a09-8ba9-e39a21d874e8" name="CD31"/>
+    <children id="0e5c88fc-f686-4174-889c-faa12924083a" name="CD32"/>
+  </definitions>
+  <components id="4a1db9c1-2d47-44f5-bc75-6740e6ad3358" name="D1C1">
+    <statemachines id="SMD1C1" name="D1C1">
+      <modes entryMode="true" id="d45124aa-af0b-4a81-805d-d0aa84a03158" name="1"/>
+      <modes id="e4ada63f-61a9-4a3e-a8a7-73ac2ef02182" name="2"/>
+      <modes id="c8e7b23a-6c0d-4e0a-a83b-ce4f678ed86c" name="3"/>
+      <transitions id="83258d61-1db0-458c-9a16-b72149070208">
+        <sourcePointer target="d45124aa-af0b-4a81-805d-d0aa84a03158" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="e4ada63f-61a9-4a3e-a8a7-73ac2ef02182" xsi:type="graph:DirectPointer"/>
+      </transitions>
+      <transitions id="743338cc-7db1-41f3-aedf-efb3f13ba53d">
+        <sourcePointer target="e4ada63f-61a9-4a3e-a8a7-73ac2ef02182" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="c8e7b23a-6c0d-4e0a-a83b-ce4f678ed86c" xsi:type="graph:DirectPointer"/>
+      </transitions>
+      <transitions id="ee2bfff2-ce97-48e8-af2b-98555f6493e3">
+        <sourcePointer target="c8e7b23a-6c0d-4e0a-a83b-ce4f678ed86c" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="d45124aa-af0b-4a81-805d-d0aa84a03158" xsi:type="graph:DirectPointer"/>
+      </transitions>
+      <transitions id="2896aa7a-f1f2-4c1a-b46e-be24201b3006">
+        <sourcePointer target="e4ada63f-61a9-4a3e-a8a7-73ac2ef02182" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="d45124aa-af0b-4a81-805d-d0aa84a03158" xsi:type="graph:DirectPointer"/>
+      </transitions>
+    </statemachines>
+    <satisfies>
+      <targetPointer target="2da4ee55-f223-4482-835c-1a65045d4a4f" xsi:type="graph:DirectPointer"/>
+    </satisfies>
+    <connections>
+      <sourcePointer target="ade849f5-0c59-429f-89c5-b950b21adf24" xsi:type="graph:DirectPointer"/>
+      <targetPointer componentReference="17de8c94-ab2f-4873-9023-2689bd34a2f5" definition="2da4ee55-f223-4482-835c-1a65045d4a4f" xsi:type="comp:ComponentReferencePointer"/>
+    </connections>
+    <connections>
+      <sourcePointer componentReference="17de8c94-ab2f-4873-9023-2689bd34a2f5" definition="edd13cb6-2d7e-4a83-9ecf-726ac21a3657" xsi:type="comp:ComponentReferencePointer"/>
+      <targetPointer componentReference="17de8c94-ab2f-4873-9023-2689bd34a2f5" definition="3080524d-d5db-4d24-9a40-b640acdc1a57" xsi:type="comp:ComponentReferencePointer"/>
+    </connections>
+    <children id="ade849f5-0c59-429f-89c5-b950b21adf24" name="D1C11" xsi:type="prem:SystemComponent">
+      <satisfies>
+        <targetPointer target="3080524d-d5db-4d24-9a40-b640acdc1a57" xsi:type="graph:DirectPointer"/>
+      </satisfies>
+      <children id="10fd3869-1377-44e1-bff5-9ec2df8d9c33" name="D1C111" xsi:type="prem:SystemComponent">
+        <satisfies>
+          <targetPointer target="edd13cb6-2d7e-4a83-9ecf-726ac21a3657" xsi:type="graph:DirectPointer"/>
+        </satisfies>
+        <parameters id="e8cdc941-47f4-4833-99df-b97b7408f450" name="D1P1111">
+          <value value=""/>
+          <satisfies>
+            <targetPointer target="2d83d0ad-bacd-4ad8-b0c4-c9c5c1db3721" xsi:type="graph:DirectPointer"/>
+          </satisfies>
+        </parameters>
+        <relations>
+          <sourcePointer target="10fd3869-1377-44e1-bff5-9ec2df8d9c33" xsi:type="graph:DirectPointer"/>
+          <targetPointer componentReference="17de8c94-ab2f-4873-9023-2689bd34a2f5" definition="3080524d-d5db-4d24-9a40-b640acdc1a57" xsi:type="comp:ComponentReferencePointer"/>
+        </relations>
+      </children>
+      <children activeImplementation="c9968e18-f8d3-4fc7-a536-084b789fb87a" componentDefinition="2da4ee55-f223-4482-835c-1a65045d4a4f" id="17de8c94-ab2f-4873-9023-2689bd34a2f5" name="D1CR11" xsi:type="prem:ComponentReference"/>
+    </children>
+  </components>
+  <components id="c9968e18-f8d3-4fc7-a536-084b789fb87a" name="D1C2">
+    <satisfies>
+      <targetPointer target="2da4ee55-f223-4482-835c-1a65045d4a4f" xsi:type="graph:DirectPointer"/>
+    </satisfies>
+    <parameters id="a93b250b-743f-48c5-9200-c98a02ebe5ae" name="D1P21">
+      <value value="52.0"/>
+      <satisfies>
+        <targetPointer target="2d83d0ad-bacd-4ad8-b0c4-c9c5c1db3721" xsi:type="graph:DirectPointer"/>
+      </satisfies>
+    </parameters>
+    <parameters id="b6fa88b0-023c-4e6e-8f7c-cba7f0123392" name="D1P22">
+      <value value="42"/>
+    </parameters>
+    <balancings function="D1P21 = D1P22 + 10">
+      <actualSources key="D1P22">
+        <value target="b6fa88b0-023c-4e6e-8f7c-cba7f0123392" xsi:type="graph:DirectPointer"/>
+      </actualSources>
+      <actualTarget key="D1P21">
+        <value target="a93b250b-743f-48c5-9200-c98a02ebe5ae" xsi:type="graph:DirectPointer"/>
+      </actualTarget>
+    </balancings>
+    <children id="6caf650e-a906-4028-ab68-cb72d68bcbf3" name="D1C21" xsi:type="prem:SystemComponent">
+      <satisfies>
+        <targetPointer target="3080524d-d5db-4d24-9a40-b640acdc1a57" xsi:type="graph:DirectPointer"/>
+      </satisfies>
+      <satisfies>
+        <targetPointer target="edd13cb6-2d7e-4a83-9ecf-726ac21a3657" xsi:type="graph:DirectPointer"/>
+      </satisfies>
+    </children>
+  </components>
+  <components id="db4976c3-af0e-4ba3-84d0-2d46be6740a2" name="D2C1">
+    <satisfies>
+      <targetPointer target="c97114fa-5060-4669-8930-cb7c14e475ab" xsi:type="graph:DirectPointer"/>
+    </satisfies>
+    <parameters id="6499f6e1-75d6-4678-8735-0d5bef141478" name="D2P1">
+      <value value="20"/>
+      <satisfies>
+        <targetPointer target="196ddeb5-9597-4428-a83d-ffb04efd3375" xsi:type="graph:DirectPointer"/>
+      </satisfies>
+      <satisfies>
+        <targetPointer target="4f1ab6d0-7a09-47bc-aa83-be4b2826401c" xsi:type="graph:DirectPointer"/>
+      </satisfies>
+    </parameters>
+    <parameters id="9e962846-7e66-4ec6-aa55-9d9f444356fb" name="D2P2">
+      <value value="399.0"/>
+      <satisfies>
+        <targetPointer target="98183bfd-bee5-4852-affb-c5b502197aa6" xsi:type="graph:DirectPointer"/>
+      </satisfies>
+    </parameters>
+    <balancings function="D2P2 = D2P1^2 - 1">
+      <actualSources key="D2P1">
+        <value target="6499f6e1-75d6-4678-8735-0d5bef141478" xsi:type="graph:DirectPointer"/>
+      </actualSources>
+      <actualTarget key="D2P2">
+        <value target="9e962846-7e66-4ec6-aa55-9d9f444356fb" xsi:type="graph:DirectPointer"/>
+      </actualTarget>
+    </balancings>
+  </components>
+</comp:ComponentRepository>

@@ -1,0 +1,55 @@
+module de.dlr.premise.Build
+
+import org.eclipse.emf.mwe.utils.*
+import org.eclipse.xtext.generator.*
+import org.eclipse.xtext.ui.generator.*
+import org.eclipse.emf.mwe2.ecore.*
+
+Workflow {
+	
+	// setup premise model
+	bean = StandaloneSetup {
+		platformUri = ".."
+		registerGenModelFile = "platform:/resource/de.dlr.premise/model/PREMISE.genmodel"
+	}
+	
+	// clean generated code of premise plugin includes model code of premise, 
+	// representation and logic
+	component = DirectoryCleaner {
+		directory="src-gen"
+	}
+	
+	// clean generated premise edit code
+	component = DirectoryCleaner {
+		directory="../de.dlr.premise.edit/src-gen"
+	}
+	
+	// clean generated premise editor code
+	component = DirectoryCleaner {
+		directory="../de.dlr.premise.editor/src-gen"
+	}
+	
+	// generate premise model, edit and editor code
+	component = EcoreGenerator {
+		genModel = "platform:/resource/de.dlr.premise/model/PREMISE.genmodel"
+		srcPath ="platform:/resource/de.dlr.premise/src-gen"
+		generateEdit=true
+		generateEditor=true	
+	}
+	
+	// generate representation model, edit and editor code
+	component = EcoreGenerator {
+		genModel = "platform:/resource/de.dlr.premise/model/PREMISE_Representation.genmodel"
+		srcPath ="platform:/resource/de.dlr.premise/src-gen"
+		generateEdit=true
+		generateEditor=true	
+	}
+	
+	// generate safety model, edit and editor code
+	component = EcoreGenerator {
+		genModel = "platform:/resource/de.dlr.premise/model/PREMISE_Safety.genmodel"
+		srcPath ="platform:/resource/de.dlr.premise/src-gen"
+		generateEdit=true
+		generateEditor=true	
+	}
+}

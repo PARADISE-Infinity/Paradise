@@ -1,0 +1,28 @@
+/**
+* Copyright (C) 2011-2021 German Aerospace Center e. V. (DLR), Braunschweig
+*
+* This code is part of the PARADISE project and is licensed under the EPL 2.0 license,
+* which is available at https://www.eclipse.org/legal/epl-2.0/
+*
+* @author: Axel Berres, Tim Bittner, Söhnke Escher, Dominik Engelhardt, Holger Schumann, Tillman Stehr
+*
+*/
+
+package de.dlr.premise.util.scope
+
+import org.eclipse.emf.ecore.EObject
+import org.eclipse.emf.ecore.impl.EObjectImpl
+
+import static extension de.dlr.premise.util.scope.ScopedEObjectHelper.*
+
+class EObjectImplMy extends EObjectImpl {
+	override equals(Object other) {
+		if (other instanceof EObject) {
+			val invocationHandler = other.invocationHandler;
+			if (invocationHandler != null) {
+				return invocationHandler.delegate == this
+			}
+		}
+		return super.equals(other)
+	}
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<reg:Registry xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" metaModel="1.31" name="PREMISE Registry" xmi:version="2.0">
+  <constants id="Constant1" name="ConstValue2">
+    <value value="2"/>
+  </constants>
+</reg:Registry>

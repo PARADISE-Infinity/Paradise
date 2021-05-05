@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="false"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Show Parameters" value="true"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Edit local statemachines">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <projects id="cadbedfb-8d41-4efc-85e0-8e979424bc70" name="Root1">
+    <parameters id="86e7ab06-2bd5-4aab-9255-1f1ff83c0233" name="Param1">
+      <value value="0.0"/>
+    </parameters>
+    <parameters id="ba631dfe-d945-48b7-bce2-b8c836323fd4" name="Param2">
+      <value value="0"/>
+    </parameters>
+    <parameters id="1939f67e-2d04-4b7e-aee4-d18e3027606a" name="Param3">
+      <value value="0"/>
+    </parameters>
+    <balancings function="Param1 = Param2 + Param3" name="Balancing">
+      <actualSources key="Param2">
+        <value target="ba631dfe-d945-48b7-bce2-b8c836323fd4" xsi:type="graph:DirectPointer"/>
+      </actualSources>
+      <actualSources key="Param3">
+        <value target="1939f67e-2d04-4b7e-aee4-d18e3027606a" xsi:type="graph:DirectPointer"/>
+      </actualSources>
+      <actualTarget key="Param1">
+        <value target="86e7ab06-2bd5-4aab-9255-1f1ff83c0233" xsi:type="graph:DirectPointer"/>
+      </actualTarget>
+    </balancings>
+    <balancings function="Param1 = &lt;invalid&gt;" name="InvalidBalancing">
+      <actualSources key="Param2">
+        <value target="ba631dfe-d945-48b7-bce2-b8c836323fd4" xsi:type="graph:DirectPointer"/>
+      </actualSources>
+      <actualTarget key="Param1">
+        <value target="86e7ab06-2bd5-4aab-9255-1f1ff83c0233" xsi:type="graph:DirectPointer"/>
+      </actualTarget>
+    </balancings>
+  </projects>
+  <projects id="c38b89aa-b08f-49d7-bc10-ca0fb09e299a" name="Root2">
+    <parameters id="86ac5855-79e1-49ab-8ee8-6c48825baec0" name="Param4">
+      <value value="0.0"/>
+    </parameters>
+    <parameters id="613c7da4-644b-4fd8-abbd-1535591916aa" name="Param5">
+      <value value="0"/>
+    </parameters>
+  </projects>
+</prem:ProjectRepository>

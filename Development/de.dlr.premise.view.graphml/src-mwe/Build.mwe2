@@ -1,0 +1,22 @@
+module de.dlr.ft.premise.Build
+
+import org.eclipse.emf.mwe.utils.*
+import org.eclipse.xtext.generator.*
+import org.eclipse.xtext.ui.generator.*
+
+Workflow {
+	
+	// setup premise model
+	bean = StandaloneSetup {
+		platformUri = ".."
+		registerGenModelFile = "platform:/resource/de.dlr.premise.view.graphml/model/ygraphml.genmodel"
+	}
+	
+	// generate ygraphml model code (edit and editor can be enabled -- useful for debugging)
+	component = org.eclipse.emf.mwe2.ecore.EcoreGenerator {
+		genModel = "platform:/resource/de.dlr.premise.view.graphml/model/ygraphml.genmodel"
+		srcPath ="platform:/resource/de.dlr.premise.view.graphml/src-gen"
+		generateEdit=false
+		generateEditor=false
+	}
+}

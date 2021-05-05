@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="Export">
+    <metaData name="GraphML">
+      <metaData name="logical_hierarchy" value="on"/>
+      <metaData name="physical_portmappings" value="on"/>
+      <metaData name="parameter_dependencies" value="on"/>
+      <metaData name="self_references" value="off"/>
+      <metaData name="constants" value="on"/>
+      <metaData name="relations" value="on"/>
+    </metaData>
+  </metaData>
+  <projects id="cbf0878f-843a-410e-85e0-db20c6ab245f" name="p2.1"/>
+</prem:ProjectRepository>

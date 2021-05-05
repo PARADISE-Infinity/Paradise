@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+  </metaData>
+  <functionPools href="_GLOBAL/GlobalFuncDefs.premise.functionpool#/"/>
+  <projects id="df9f3a86-2a7d-4fe2-ae52-651d9575116d" name="Container">
+    <children id="529b7fa3-147d-4a19-ba74-fbfb41a99a59" name="SC1" xsi:type="prem:SystemComponent">
+      <parameters id="0d7c78a9-4ca4-462e-aa88-bb5d0c83405b" name="P1a">
+        <value value="0"/>
+      </parameters>
+      <parameters id="90784bf0-f157-4ea8-b7db-0212a96a5436" name="P1b">
+        <value value="0"/>
+      </parameters>
+      <balancings function="P1a = Sum(P1_1_1a, P1_2b)" name="Calculation with child parameters">
+        <actualSources key="P1_1_1a">
+          <value target="4e0dd28e-5517-4e1e-8c4c-3aa9a5831976" xsi:type="graph:DirectPointer"/>
+        </actualSources>
+        <actualSources key="P1_2b">
+          <value target="4bfef41b-9fda-4f28-9e06-8ac6d4c13d08" xsi:type="graph:DirectPointer"/>
+        </actualSources>
+        <actualTarget key="P1a">
+          <value target="0d7c78a9-4ca4-462e-aa88-bb5d0c83405b" xsi:type="graph:DirectPointer"/>
+        </actualTarget>
+      </balancings>
+      <children id="dd7dfa8f-2284-4c11-886d-b97334c19b92" name="SC1.1" xsi:type="prem:SystemComponent">
+        <parameters id="20a7a3b3-d343-4361-8a1f-b5c5f39c1e95" name="P1.1a">
+          <value value="0"/>
+        </parameters>
+        <parameters id="23a7083c-893d-440c-b321-cc41a62d2cda" name="P1.1b">
+          <value value="0"/>
+        </parameters>
+        <children id="5a33f8ab-497b-4d16-84ec-1242548a26ce" name="SC1.1.1" xsi:type="prem:SystemComponent">
+          <parameters id="4e0dd28e-5517-4e1e-8c4c-3aa9a5831976" name="P1.1.1a">
+            <value value="0"/>
+          </parameters>
+          <parameters id="83b42b82-1cdd-4753-bfda-a20e60b954d1" name="P1.1.1b">
+            <value value="0"/>
+          </parameters>
+        </children>
+      </children>
+      <children id="086bda98-52bf-42a7-b294-7ef6260ed882" name="SC1.2" xsi:type="prem:SystemComponent">
+        <parameters id="aa88aed0-6022-4a10-9a85-86604c9d4aa2" name="P1.2a">
+          <value value="0"/>
+        </parameters>
+        <parameters id="4bfef41b-9fda-4f28-9e06-8ac6d4c13d08" name="P1.2b">
+          <value value="0"/>
+        </parameters>
+      </children>
+    </children>
+    <children id="0379ae19-93c5-4afe-87f7-ee7932e31495" name="SC2" xsi:type="prem:SystemComponent">
+      <parameters id="ba7c91ed-f421-4182-a251-9ccaaf352b9c" name="P2a">
+        <value value="0"/>
+      </parameters>
+      <parameters id="449614e9-f4bd-42ca-898c-3c6e18fbeb9d" name="P2b">
+        <value value="0"/>
+      </parameters>
+      <children id="58b155e9-be41-4375-9d16-2ca730c1a599" name="SC2.1" xsi:type="prem:SystemComponent">
+        <parameters id="697fd828-a22f-48d6-99f1-b5f652a05a06" name="P2.1a">
+          <value value="0"/>
+        </parameters>
+        <parameters id="16fdd267-f148-4bdf-a0be-e07644e61f82" name="P2.1b">
+          <value value="0"/>
+        </parameters>
+        <balancings function="P2_1b = Sum(P2_1a)" name="Calculation with own parameters">
+          <actualSources key="P2_1a">
+            <value target="697fd828-a22f-48d6-99f1-b5f652a05a06" xsi:type="graph:DirectPointer"/>
+          </actualSources>
+          <actualTarget key="P2_1b">
+            <value target="16fdd267-f148-4bdf-a0be-e07644e61f82" xsi:type="graph:DirectPointer"/>
+          </actualTarget>
+        </balancings>
+      </children>
+      <children id="766a91c8-e069-4e8e-9773-32a8e783233b" name="SC2.2" xsi:type="prem:SystemComponent">
+        <parameters id="67924a0f-ce38-4aff-ad27-79763e0a159a" name="P2.2a">
+          <value value="0"/>
+        </parameters>
+        <parameters id="5f0e8d46-020a-40a1-9db0-6de78aec4a4e" name="P2.2b">
+          <value value="0"/>
+        </parameters>
+        <balancings function="P2_2a = Sum(P2a, P2b)" name="Calculation with parent parameters">
+          <actualSources key="P2a">
+            <value target="ba7c91ed-f421-4182-a251-9ccaaf352b9c" xsi:type="graph:DirectPointer"/>
+          </actualSources>
+          <actualSources key="P2b">
+            <value target="449614e9-f4bd-42ca-898c-3c6e18fbeb9d" xsi:type="graph:DirectPointer"/>
+          </actualSources>
+          <actualTarget key="P2_2a">
+            <value target="67924a0f-ce38-4aff-ad27-79763e0a159a" xsi:type="graph:DirectPointer"/>
+          </actualTarget>
+        </balancings>
+      </children>
+    </children>
+    <children id="99ef2243-22b2-46c1-a72c-70694e207e53" name="SC3" xsi:type="prem:SystemComponent">
+      <parameters id="28223a1c-92fe-40fc-ba97-ec47c9c60faf" name="P3a">
+        <value value="3"/>
+      </parameters>
+      <parameters id="c0eceb51-0f9d-4a1d-8c14-800957615bd8" name="P3b"/>
+      <balancings function="P3b = Sum(One, P3a)" name="Calculation with constant">
+        <actualSources key="One">
+          <value xsi:type="graph:DirectPointer">
+            <target href="_GLOBAL/Registry.premise.registry#9030b7b5-1941-47ff-8fca-5bbf25304aab" xsi:type="reg:Constant"/>
+          </value>
+        </actualSources>
+        <actualSources key="P3a">
+          <value target="28223a1c-92fe-40fc-ba97-ec47c9c60faf" xsi:type="graph:DirectPointer"/>
+        </actualSources>
+        <actualTarget key="P3b">
+          <value target="c0eceb51-0f9d-4a1d-8c14-800957615bd8" xsi:type="graph:DirectPointer"/>
+        </actualTarget>
+      </balancings>
+    </children>
+    <children id="54a15fbe-8d61-433d-a310-0f13ce76048a" name="SC4" xsi:type="prem:SystemComponent">
+      <parameters id="e60a3400-8431-4d5f-aa72-e38ccb5459cc" name="P4a">
+        <value value="1"/>
+      </parameters>
+      <parameters id="e04138fb-3dcb-4f8b-bdc6-6c739e351613" name="P4b">
+        <value value="1.0"/>
+      </parameters>
+      <balancings function="P4b = P4a">
+        <actualSources key="P4a">
+          <value target="e60a3400-8431-4d5f-aa72-e38ccb5459cc" xsi:type="graph:DirectPointer"/>
+        </actualSources>
+        <actualTarget key="P4b">
+          <value target="e04138fb-3dcb-4f8b-bdc6-6c739e351613" xsi:type="graph:DirectPointer"/>
+        </actualTarget>
+      </balancings>
+    </children>
+  </projects>
+</prem:ProjectRepository>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="false"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Show Parameters" value="true"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Edit local statemachines">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <projects id="SC1" name="SC1">
+    <statemachines id="3ef12bfa-c176-4ef5-a3d7-e99643ec47f1" name="SC1">
+      <modes entryMode="true" id="A" name="A"/>
+      <modes id="B" name="B"/>
+      <transitions id="7e3e86f4-1ead-4e90-a27e-2602bd1afd62">
+        <sourcePointer target="A" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="B" xsi:type="graph:DirectPointer"/>
+      </transitions>
+    </statemachines>
+    <parameters id="P1" name="P1">
+      <modeValues value="1.25E-54">
+        <modePointers target="A" xsi:type="graph:DirectPointer"/>
+      </modeValues>
+      <modeValues value="-.00025">
+        <modePointers target="A" xsi:type="graph:DirectPointer"/>
+      </modeValues>
+    </parameters>
+    <children id="90e61467-4e10-4da8-b72a-c599d1bcbe52" name="SC3" xsi:type="prem:SystemComponent">
+      <statemachines id="39912eb3-980b-45fc-a59d-d374b47fc265" name="SC3">
+        <modes entryMode="true" id="C" name="C"/>
+      </statemachines>
+    </children>
+  </projects>
+  <projects id="SC2" name="SC2">
+    <statemachines id="934a37fb-2fa9-4cb2-8af6-e2e3a7bdfc7c" name="SC2">
+      <modes entryMode="true" id="D" name="D"/>
+      <modes id="E" name="E"/>
+      <transitions id="4e76c2fe-cfed-494b-b10f-970e2ecb8d03">
+        <sourcePointer target="D" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="E" xsi:type="graph:DirectPointer"/>
+      </transitions>
+    </statemachines>
+    <parameters id="P2" name="P2">
+      <modeValues value="135.E4">
+        <modePointers target="E" xsi:type="graph:DirectPointer"/>
+      </modeValues>
+    </parameters>
+  </projects>
+</prem:ProjectRepository>

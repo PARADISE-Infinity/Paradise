@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="ASCII"?>
+<reg:Registry xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="PREMISE Registry" xmi:version="2.0" xsi:schemaLocation="http://www.dlr.de/ft/premise/registry/2010/ ../../../../de.dlr.ft.premise/model/PREMISE_Registry.ecore">
+</reg:Registry>

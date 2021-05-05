@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+  <extension
+        point="org.eclipse.ui.handlers">
+     <handler
+           class="de.dlr.exchange.petrinet.snoopy.xtend.ExecutableExtensionFactory:de.dlr.exchange.base.xtend.ui.GenerationHandler"
+           commandId="de.dlr.exchange.petrinet.snoopy.xtend.ui.GenerationCommand">
+     </handler>
+  </extension>
+
+  <extension
+        point="org.eclipse.ui.commands">
+        <command name="Snoopy"
+              id="de.dlr.exchange.petrinet.snoopy.xtend.ui.GenerationCommand">
+        </command>
+  </extension>
+
+  <extension
+        point="org.eclipse.ui.menus">
+     <menuContribution
+           locationURI="popup:nav_exp_stat_petr">
+        <command
+              commandId="de.dlr.exchange.petrinet.snoopy.xtend.ui.GenerationCommand"
+              hoverIcon="icons/petrinet16.png"
+              icon="icons/petrinet16.png"
+              style="push">
+           <visibleWhen
+                 checkEnabled="false">
+              <iterate
+                    ifEmpty="false">
+                 <reference
+                       definitionId="de.dlr.exchange.base.expressions.IsSystemFile">
+                 </reference>
+              </iterate>
+           </visibleWhen>
+        </command>
+     </menuContribution>
+     
+            <menuContribution
+        locationURI="popup:premise.rcp.navigator">
+     <menu
+           icon="icons/notebook--arrow.png"
+           id="nav_exp_stat"
+           label="Export States">
+     </menu>
+  </menuContribution>
+  
+  
+         <menuContribution
+        locationURI="popup:nav_exp_stat">
+     <menu
+           icon="icons/notebook--arrow.png"
+           id="nav_exp_stat_petr"
+           label="Petri Nets">
+     </menu>
+  </menuContribution>
+  
+       <menuContribution
+        locationURI="popup:edi_exp_stat">
+     <menu
+           icon="icons/notebook--arrow.png"
+           id="edi_exp_stat_petr"
+           label="Petri Nets">
+     </menu>
+  </menuContribution>
+  
+  <menuContribution
+           locationURI="popup:edi_exp_stat_petr">
+        <command
+              commandId="de.dlr.exchange.petrinet.snoopy.xtend.ui.GenerationCommand"
+              hoverIcon="icons/petrinet16.png"
+              icon="icons/petrinet16.png"
+              style="push">
+           <visibleWhen
+                 checkEnabled="false">
+              <iterate
+                    ifEmpty="false">
+                 <instanceof
+                       value="de.dlr.premise.system.SystemComponent">
+                 </instanceof>
+              </iterate>
+           </visibleWhen>
+        </command>
+     </menuContribution>
+  <menuContribution
+        locationURI="popup:de.dlr.premise.system.presentation.SystemEditorID">
+     <menu
+           icon="icons/notebook--arrow.png"
+           id="edi_exp_stat"
+           label="Export States">
+     </menu>
+  </menuContribution>
+  <menuContribution
+        locationURI="popup:de.dlr.premise.functions.presentation.UseCaseEditorID">
+     <menu
+           icon="icons/notebook--arrow.png"
+           id="edi_exp_stat"
+           label="Export States">
+     </menu>
+  </menuContribution>
+  <menuContribution
+        locationURI="popup:de.dlr.premise.component.presentation.ComponentEditorID">
+     <menu
+           icon="icons/notebook--arrow.png"
+           id="edi_exp_stat"
+           label="Export States">
+     </menu>
+  </menuContribution>
+  </extension>
+</plugin>

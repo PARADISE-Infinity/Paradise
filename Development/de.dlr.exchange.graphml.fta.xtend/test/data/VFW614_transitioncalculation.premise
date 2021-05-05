@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0" xsi:schemaLocation="http://www.dlr.de/ft/premise/funcpool/2010/ ../../../de.dlr.ft.premise/model/PREMISE_FnPool.ecore http://www.dlr.de/ft/premise/2010/ ../../../de.dlr.ft.premise/model/PREMISE_system.ecore http://www.dlr.de/ft/premise/validated/2013/ ../../../de.dlr.ft.premise/model/PREMISE_system.ecore#//validated">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="off"/>
+  </metaData>
+  <projects description="Electric-Hydraulic Servo Actuator" id="c643e617-7bfc-487a-9e71-a4112e8c0278" name="EHS 5 (LH)">
+    <children id="02428b0d-aa44-46de-800f-f45a6bf1e237" name="_failure modes" xsi:type="prem:SystemComponent">
+    <statemachines name="_failure modes">
+<modes entryMode="true" id="8e255c67-5c36-4620-b682-245014fa9f7b" name="Healthy" xsi:type="elem:Mode"/>
+<modes entryMode="false" id="28e1a99b-6053-491a-b428-9781ce63cef9" name="Runaway\n (activated)" xsi:type="elem:Mode"/>
+<transitions id="fc947c53-66d8-4df2-a0ae-70c64bcb396b">
+        <condition junction="AND" xsi:type="elem:GuardCombination">
+          <children xsi:type="elem:GuardCombination">
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="4f1a178b-ba87-4208-b95b-007ae0769774" xsi:type="graph:DirectPointer"/>
+</children>
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="233a490f-ad5c-4b2a-9758-2577c06d9952" xsi:type="graph:DirectPointer"/>
+</children>
+          </children>
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="01ca4dcc-561a-41bd-9ac1-a1c2942d21c7" xsi:type="graph:DirectPointer"/>
+</children>
+        </condition>
+        <parameters id="cf6dc9f4-7725-4538-a170-8239c408f397" name="failureRate">
+          <value value="8.8E-12" xsi:type="reg:Value"/>
+        </parameters>
+        <balancings target="cf6dc9f4-7725-4538-a170-8239c408f397" xsi:type="prem:TransitionBalancing">
+        </balancings>
+      <targetPointer target="28e1a99b-6053-491a-b428-9781ce63cef9" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+    <children id="18c28c89-bfb0-49ac-9f16-6276246f7569" name="Actuator" xsi:type="prem:SystemComponent">
+    <statemachines name="Actuator">
+<modes entryMode="true" id="4f1a178b-ba87-4208-b95b-007ae0769774" name="Runaway" xsi:type="elem:Mode"/>
+<transitions id="4d6a4219-6ab1-4ff6-b42a-b43d42a732a4">
+        <parameters id="59be7822-48f5-4f83-a330-de8b01a05bac" name="failureRate">
+          <value value="5.7E-06" xsi:type="reg:Value"/>
+        </parameters>
+      <targetPointer target="4f1a178b-ba87-4208-b95b-007ae0769774" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+    <children description="Actuator Control Electronics" id="923f80c2-74f3-481c-b961-c07a05aaac0a" name="Active ACE" xsi:type="prem:SystemComponent">
+    <statemachines name="Active ACE">
+<modes entryMode="true" id="233a490f-ad5c-4b2a-9758-2577c06d9952" name="Runaway" xsi:type="elem:Mode"/>
+<modes entryMode="true" id="80e0499e-4c29-4559-8e1d-4b425abbce21" name="Runaway by\n undetected failure" xsi:type="elem:Mode"/>
+<transitions id="b2733487-989d-4310-a938-84e43dcbe3bc">
+        <parameters id="3c43753a-db22-498b-8e38-5a83739fd280" name="failureRate">
+          <value value="5.3E-06" xsi:type="reg:Value"/>
+        </parameters>
+      <targetPointer target="233a490f-ad5c-4b2a-9758-2577c06d9952" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="06d5f71e-b21a-4049-a529-92bf3f4df437">
+        <parameters id="ea4805d8-4dcb-46b2-a316-d06dc821ed12" name="failureRateForUndetected">
+          <value value="1.25E-10" xsi:type="reg:Value"/>
+        </parameters>
+      <targetPointer target="80e0499e-4c29-4559-8e1d-4b425abbce21" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+    <children id="32b4a8f3-710c-4077-a115-887f5584d0cd" name="Switch Mechanism" xsi:type="prem:SystemComponent">
+      <children id="2a1b4a00-cb2b-4cae-8937-a55ef5534264" name="Enable Valve" xsi:type="prem:SystemComponent">
+      <statemachines name="Enable Valve">
+<modes entryMode="true" id="99f9efb0-96a1-468b-a421-1730232f8846" name="Failure" xsi:type="elem:Mode"/>
+<transitions id="fb9b0d89-940c-4d7b-8db7-f027ec0c90f6">
+          <parameters id="ebbdeded-1ccb-4178-a62e-3617ac7b2341" name="failureRate">
+            <value value="7.0E-07" xsi:type="reg:Value"/>
+          </parameters>
+        <targetPointer target="99f9efb0-96a1-468b-a421-1730232f8846" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+      <children id="856b5607-c8f9-4f40-a591-1866ab3762ba" name="Monitor Signal" xsi:type="prem:SystemComponent">
+      <statemachines name="Monitor Signal">
+<modes description="Runaway not monitored, no signal to PFCU" entryMode="true" id="371df173-1c7b-4c64-bdb2-f8479e1b8988" name="Loss" xsi:type="elem:Mode"/>
+<transitions id="93b9962c-8e85-4ea0-8a6a-41ff69c349ca">
+          <parameters id="3e0c554f-f905-4951-bbaa-62a0be34ae56" name="failureRate">
+            <value value="1.0E-07" xsi:type="reg:Value"/>
+          </parameters>
+        <targetPointer target="371df173-1c7b-4c64-bdb2-f8479e1b8988" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+    <statemachines name="Switch Mechanism">
+<modes entryMode="true" id="01ca4dcc-561a-41bd-9ac1-a1c2942d21c7" name="Failure" xsi:type="elem:Mode"/>
+<transitions id="c9560bf9-bf92-4529-af4b-2d7b2eb25492">
+        <condition xsi:type="elem:GuardCombination">
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="99f9efb0-96a1-468b-a421-1730232f8846" xsi:type="graph:DirectPointer"/>
+</children>
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="371df173-1c7b-4c64-bdb2-f8479e1b8988" xsi:type="graph:DirectPointer"/>
+</children>
+        </condition>
+        <parameters id="02a04643-3dc6-41e6-9ccb-3a737a5cbdb9" name="failureRate">
+          <value value="8.0E-7" xsi:type="reg:Value"/>
+        </parameters>
+        <balancings target="02a04643-3dc6-41e6-9ccb-3a737a5cbdb9" xsi:type="prem:TransitionBalancing">
+        </balancings>
+      <targetPointer target="01ca4dcc-561a-41bd-9ac1-a1c2942d21c7" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+  </projects>
+</prem:ProjectRepository>

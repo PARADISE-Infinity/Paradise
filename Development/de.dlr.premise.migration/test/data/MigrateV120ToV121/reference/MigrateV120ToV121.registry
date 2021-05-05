@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reg:Registry xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" metaModel="1.21" xmi:version="2.0">
+  <constants id="ed18adba-4399-4c33-9b0a-92cf7c5e1d8e" name="TEN">
+    <value uncertainty="" value="10"/>
+  </constants>
+</reg:Registry>

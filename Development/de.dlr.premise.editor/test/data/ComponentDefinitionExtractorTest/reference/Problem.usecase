@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" metaModel="1.31">
+  <metaData name="View">
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Show Parameters" value="true"/>
+        <metaData name="Group Elements" value="true"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <usecases name="Should do something" id="ca995ef0-7b76-43d7-9981-44f153f3e7d4">
+    <requiredParameters name="Stuff" id="109b959d-cbbb-4b47-beea-92fd008ca258"/>
+  </usecases>
+</uc:UseCaseRepository>

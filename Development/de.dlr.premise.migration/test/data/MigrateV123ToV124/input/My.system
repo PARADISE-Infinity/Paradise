@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" metaModel="1.23">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+    <children name="number representation pattern" value="##0.0###E0"/>
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="false"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Show Parameters" value="true"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Edit local statemachines">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+    </children>
+  </metaData>
+  <projects name="R" id="0d639e43-8c4c-4d7d-a8a8-72e811a91aa9">
+    <satisfies>
+      <targetPointer xsi:type="comp:DirectPointer">
+        <target xsi:type="uc:UseCase" href="My.usecase#6a90cd84-5c30-47ab-878b-51ed915f569d"/>
+      </targetPointer>
+    </satisfies>
+    <connections>
+      <sourcePointer xsi:type="comp:DirectPointer" target="0edc0fba-3bbc-407b-bdff-3ba24acdac21"/>
+      <targetPointer xsi:type="comp:DirectPointer" target="7f1717da-08f8-4821-bcde-4b65caf36a54"/>
+    </connections>
+    <relations type="">
+      <sourcePointer xsi:type="comp:ComponentReferencePointer" componentReference="8fcee3ca-bb7a-46c0-911c-a7c55abf2620">
+        <definition xsi:type="comp:ComponentDefinition" href="My.component#108672f5-4ea7-4004-b8bd-aca6201bb596"/>
+      </sourcePointer>
+      <targetPointer xsi:type="comp:DirectPointer" target="0edc0fba-3bbc-407b-bdff-3ba24acdac21"/>
+    </relations>
+    <children xsi:type="prem:SystemComponent" name="c1" id="a9af1b64-524b-43bc-97f1-2333a748dba3">
+      <relations>
+        <sourcePointer xsi:type="comp:DirectPointer" target="a9af1b64-524b-43bc-97f1-2333a748dba3"/>
+        <targetPointer xsi:type="comp:DirectPointer" target="0edc0fba-3bbc-407b-bdff-3ba24acdac21"/>
+      </relations>
+    </children>
+    <children xsi:type="prem:SystemComponent" name="c2" id="0edc0fba-3bbc-407b-bdff-3ba24acdac21">
+      <satisfies>
+        <targetPointer xsi:type="comp:DirectPointer">
+          <target xsi:type="uc:UseCase" href="My.usecase#0a9b36af-bfff-411f-8698-b63cd7af38c4"/>
+        </targetPointer>
+      </satisfies>
+    </children>
+    <children xsi:type="prem:SystemComponent" name="c3" id="7f1717da-08f8-4821-bcde-4b65caf36a54">
+      <satisfies>
+        <targetPointer xsi:type="comp:DirectPointer">
+          <target xsi:type="uc:UseCase" href="My.usecase#652004e9-f0fa-4a3e-9904-b0030f0b6789"/>
+        </targetPointer>
+      </satisfies>
+    </children>
+    <children xsi:type="prem:ComponentReference" name="CRCRCR" id="8fcee3ca-bb7a-46c0-911c-a7c55abf2620">
+      <componentDefinition href="My.component#108672f5-4ea7-4004-b8bd-aca6201bb596"/>
+    </children>
+  </projects>
+</prem:ProjectRepository>

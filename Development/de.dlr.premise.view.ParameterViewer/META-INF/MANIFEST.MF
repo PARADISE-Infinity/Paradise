@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ParameterViewer
+Bundle-SymbolicName: de.dlr.premise.view.ParameterViewer;singleton:=true
+Bundle-Version: 1.25.0.qualifier
+Bundle-Activator: de.dlr.premise.view.parameterviewer.Activator
+Bundle-Vendor: www.dlr.de/ft/ssy
+Require-Bundle: org.eclipse.core.runtime,
+ de.dlr.premise.constraints,
+ de.dlr.premise.editor
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: de.dlr.premise.view.parameterviewer
+Import-Package: org.eclipse.ui.part,
+ org.eclipse.xtext.naming
+Automatic-Module-Name: de.dlr.premise.view.ParameterViewer

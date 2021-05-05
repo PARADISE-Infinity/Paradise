@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+   <extension-point id="balancingSourceParameterProportionalityAnalyzer" name="balancingSourceParameterProportionalityAnalyzer" schema="schema/balancingSourceParameterProportionalityAnalyzer.exsd"/>
+   <extension-point id="modeValidator" name="Mode Validator" schema="schema/modeValidator.exsd"/>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.dlr.de/premise/component/2016/"
+            class="de.dlr.premise.component.ComponentPackage"
+            genModel="model/PREMISE.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.dlr.de/premise/element/2014/"
+            class="de.dlr.premise.element.ElementPackage"
+            genModel="model/PREMISE.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.dlr.de/premise/usecase/2014/"
+            class="de.dlr.premise.functions.UseCasePackage"
+            genModel="model/PREMISE.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.dlr.de/ft/premise/funcpool/2010/"
+            class="de.dlr.premise.functionpool.FunctionpoolPackage"
+            genModel="model/PREMISE.genmodel"/>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PREMISE -->
+      <package
+            uri="http://www.dlr.de/premise/graph/2017/"
+            class="de.dlr.premise.graph.GraphPackage"
+            genModel="model/PREMISE.genmodel"/>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PREMISE -->
+      <package
+            uri="http://www.dlr.de/ft/premise/registry/2010/"
+            class="de.dlr.premise.registry.RegistryPackage"
+            genModel="model/PREMISE.genmodel"/>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.dlr.de/ft/premise/representation/2012/"
+            class="de.dlr.premise.representation.RepresentationPackage"
+            genModel="model/PREMISE_Representation.genmodel"/>
+   </extension>
+   <extension
+         point="org.eclipse.emf.ecore.generated_package">
+      <package
+            class="de.dlr.premise.safety.SafetyPackage"
+            genModel="model/PREMISE_Safety.genmodel"
+            uri="http://www.dlr.de/premise/safety/2019">
+      </package>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.dlr.de/ft/premise/2010/"
+            class="de.dlr.premise.system.SystemPackage"
+            genModel="model/PREMISE.genmodel"/>
+   </extension>
+   <extension
+         point="org.eclipse.emf.ecore.factory_override">
+      <factory
+            class="de.dlr.premise.component.impl.my.ComponentFactoryImplMy"
+            uri="http://www.dlr.de/premise/component/2016/">
+      </factory>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.factory_override">
+      <factory
+            uri="http://www.dlr.de/premise/element/2014/"
+            class="de.dlr.premise.element.impl.my.ElementFactoryImplMy"/>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.factory_override">
+      <factory
+            uri="http://www.dlr.de/premise/usecase/2014/"
+            class="de.dlr.premise.functions.impl.my.UseCaseFactoryImplMy"/>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.factory_override">
+      <factory
+            uri="http://www.dlr.de/ft/premise/funcpool/2010/"
+            class="de.dlr.premise.functionpool.impl.my.FunctionpoolFactoryImplMy"/>
+   </extension>
+   <extension
+         point="org.eclipse.emf.ecore.factory_override">
+      <factory
+            class="de.dlr.premise.graph.impl.my.GraphFactoryImplMy"
+            uri="http://www.dlr.de/premise/graph/2017/">
+      </factory>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.factory_override">
+      <factory
+            uri="http://www.dlr.de/ft/premise/registry/2010/"
+            class="de.dlr.premise.registry.impl.my.RegistryFactoryImplMy"/>
+   </extension>
+   <extension
+         point="org.eclipse.emf.ecore.factory_override">
+      <factory
+            class="de.dlr.premise.representation.impl.my.RepresentationFactoryImplMy"
+            uri="http://www.dlr.de/ft/premise/representation/2012/">
+      </factory>
+   </extension>
+   <extension
+         point="org.eclipse.emf.ecore.factory_override">
+      <factory
+            class="de.dlr.premise.safety.impl.my.SafetyFactoryImplMy"
+            uri="http://www.dlr.de/premise/safety/2019">
+      </factory>
+   </extension>
+   <extension
+         point="org.eclipse.emf.ecore.factory_override">
+      <factory
+            class="de.dlr.premise.system.impl.my.SystemFactoryImplMy"
+            uri="http://www.dlr.de/ft/premise/2010/">
+      </factory>
+   </extension>
+</plugin>

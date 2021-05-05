@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="safety" nsURI="http://www.dlr.de/premise/safety/2019" nsPrefix="safe">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+    <details key="copyright" value="Copyright (c)&#xD;&#xA;DLR Institute of Flight Systems, Braunschweig, Germany&#xD;&#xA;All rights reserved&#xD;&#xA; &#xD;&#xA;@version SVN: $Id$"/>
+    <details key="documentation" value="PREMISE safety model package"/>
+  </eAnnotations>
+  <eAnnotations source="http://www.eclipse.org/OCL/Import">
+    <details key="ecore" value="http://www.eclipse.org/emf/2002/Ecore"/>
+    <details key="elem" value="PREMISE_Element.ecore#/"/>
+    <details key="reg" value="PREMISE_Registry.ecore#/"/>
+  </eAnnotations>
+  <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+    <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="SafetyAnalyses" eSuperTypes="PREMISE_Element.ecore#//AExtension PREMISE_Registry.ecore#//AVersionedModelRoot">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="copyright" value="Copyright (c)&#xD;&#xA;DLR Institute of Flight Systems, Braunschweig, Germany&#xD;&#xA;All rights reserved&#xD;&#xA; &#xD;&#xA;@version SVN: $Id$"/>
+      <details key="documentation" value="A safety repository persists a collection of safety information for the assessment of functioal architecture or system design in a persistance."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="analyses" upperBound="-1"
+        eType="#//Analysis" containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The analyses collects all assements done so far."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mitigations" upperBound="-1"
+        eType="#//Mitigation" containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="An mitigation catalogs stores reusable mitigations from previous assessments."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Risk" eSuperTypes="PREMISE_Registry.ecore#//IPremiseObject PREMISE_Registry.ecore#//IMetaTypable">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="copyright" value="Copyright (c)&#xD;&#xA;DLR Institute of Flight Systems, Braunschweig, Germany&#xD;&#xA;All rights reserved&#xD;&#xA; &#xD;&#xA;@version SVN: $Id$"/>
+      <details key="documentation" value="The risk is an assessment and contains all properties for an assessment of a function or a component."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="severity" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Classfication defined by the ARP 4761."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="probability" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Probability defined by the ARP 4761."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="discovery" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Failsafe defined by the ARP 4761."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="failsafe" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="objective" eType="#//Objective"
+        changeable="false" defaultValueLiteral="NONE" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="copyright" value="Copyright (c)&#xD;&#xA;DLR Institute of Flight Systems, Braunschweig, Germany&#xD;&#xA;All rights reserved&#xD;&#xA; &#xD;&#xA;@version SVN: $Id$"/>
+        <details key="documentation" value="Safety objective defined by the ARP 4761."/>
+        <details key="get" value="return de.dlr.premise.safety.impl.my.util.RiskHelper.getObjectiveValue(this);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Mitigation" eSuperTypes="PREMISE_Registry.ecore#//ADataItem">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="copyright" value="Copyright (c)&#xD;&#xA;DLR Institute of Flight Systems, Braunschweig, Germany&#xD;&#xA;All rights reserved&#xD;&#xA; &#xD;&#xA;@version SVN: $Id$"/>
+      <details key="documentation" value="Defines the mitigation for an element and includes the effect of the safety objective."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Assessment" eSuperTypes="PREMISE_Registry.ecore#//IPremiseObject">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="copyright" value="Copyright (c)&#xD;&#xA;DLR Institute of Flight Systems, Braunschweig, Germany&#xD;&#xA;All rights reserved&#xD;&#xA; &#xD;&#xA;@version SVN: $Id$"/>
+      <details key="documentation" value="Contains the qualitative assessment of a component. Is applicable for top down assessment methods."/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="MitigationsEquivalentMitigatedRisk MitigatedRiskLower MaxOneAssessmentPerHazard"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="MitigationsEquivalentMitigatedRisk" value="Tuple {&#xD;&#xA;&#x9;message : String = self.oclType().name + ': If a mitigation is specified, a mitigated risk must also exist.',&#xD;&#xA;&#x9;status : Boolean = ((self.appliedMitigations->size() > 0 implies self.mitigated &lt;> null) and (self.mitigated &lt;> null implies self.appliedMitigations->size() >0))&#xD;&#xA;}.status"/>
+      <details key="MitigatedRiskLower" value="Tuple {&#xD;&#xA;&#x9;message : String = self.oclType().name + ': The mitigated risk needs to be lower as the base risk.',&#xD;&#xA;&#x9;status : Boolean = &#xD;&#xA;self.isMitigatedRiskLowerValid()&#xD;&#xA;}.status"/>
+      <details key="MaxOneAssessmentPerHazard" value="Tuple {&#xD;&#xA;&#x9;message : String = self.oclType().name + ': A hazard is assessed only once for each phase.',&#xD;&#xA;&#x9;status : Boolean = &#xD;&#xA;self.isMaxOneAssessmentPerHazardValid()&#xD;&#xA;}.status"/>
+    </eAnnotations>
+    <eOperations name="isMitigatedRiskLowerValid" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.safety.impl.my.util.AssessmentHelper.isMitigatedRiskLowerValid(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="queryIsValidPhaseValue" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.safety.impl.my.util.AssessmentHelper.queryIsValidPhaseValue(this,mode);"/>
+      </eAnnotations>
+      <eParameters name="mode" eType="ecore:EClass PREMISE_Element.ecore#//Mode"/>
+    </eOperations>
+    <eOperations name="queryIsValidHazardValue" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.safety.impl.my.util.AssessmentHelper.queryIsValidHazardValue(this, hazard);"/>
+      </eAnnotations>
+      <eParameters name="hazard" eType="ecore:EClass PREMISE_Element.ecore#//StateMachine"/>
+    </eOperations>
+    <eOperations name="isMaxOneAssessmentPerHazardValid" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.safety.impl.my.util.AssessmentHelper.isMaxOneAssessmentPerHazardValid(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="element" lowerBound="1"
+        eType="ecore:EClass PREMISE_Element.ecore#//AElement">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="SafetySignificant" value="Tuple {&#xD;&#xA;&#x9;message : String = 'elements: Selectable elements should be safety significant.',&#xD;&#xA;&#x9;status : Boolean = true&#xD;&#xA;}.status"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="phase" eType="ecore:EClass PREMISE_Element.ecore#//Mode"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="baseRisk" eType="#//Risk"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mitigatedRisk" eType="#//Risk"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hazard" eType="ecore:EClass PREMISE_Element.ecore#//StateMachine"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="appliedMitigations" upperBound="-1"
+        eType="#//Mitigation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="effects" upperBound="-1"
+        eType="#//Effect" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Analysis" eSuperTypes="PREMISE_Registry.ecore#//ADataItem">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="copyright" value="Copyright (c)&#xD;&#xA;DLR Institute of Flight Systems, Braunschweig, Germany&#xD;&#xA;All rights reserved&#xD;&#xA; &#xD;&#xA;@version SVN: $Id$"/>
+      <details key="documentation" value="Contains all assessments of an analysis."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//AnalysisType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="assessments" upperBound="-1"
+        eType="#//Assessment" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Effect" eSuperTypes="PREMISE_Registry.ecore#//ANameItem">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="copyright" value="Copyright (c)&#xD;&#xA;DLR Institute of Flight Systems, Braunschweig, Germany&#xD;&#xA;All rights reserved&#xD;&#xA; &#xD;&#xA;@version SVN: $Id$"/>
+      <details key="documentation" value="Defines an effect of a function or a system element."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Objective">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="copyright" value="Copyright (c)&#xD;&#xA;DLR Institute of Flight Systems, Braunschweig, Germany&#xD;&#xA;All rights reserved&#xD;&#xA; &#xD;&#xA;@version SVN: $Id$"/>
+      <details key="documentation" value="Defines the safety or mitigation objective of an event/hazard derived from ARP 4761."/>
+    </eAnnotations>
+    <eLiterals name="NONE" value="5"/>
+    <eLiterals name="PASSED"/>
+    <eLiterals name="MAYBE" value="1"/>
+    <eLiterals name="FAILED" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="AnalysisType">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="copyright" value="Copyright (c)&#xD;&#xA;DLR Institute of Flight Systems, Braunschweig, Germany&#xD;&#xA;All rights reserved&#xD;&#xA; &#xD;&#xA;@version SVN: $Id$"/>
+      <details key="documentation" value="Defines the analysis type defined in ARP 4761."/>
+    </eAnnotations>
+    <eLiterals name="NONE" value="-1" literal="NONE"/>
+    <eLiterals name="FHA" literal="FHA"/>
+    <eLiterals name="FTA" value="1" literal="FTA"/>
+    <eLiterals name="FMEA" literal="FMEA"/>
+  </eClassifiers>
+</ecore:EPackage>

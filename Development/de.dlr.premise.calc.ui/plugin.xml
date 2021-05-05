@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension point="org.eclipse.ui.startup">
+      <startup class="de.dlr.premise.calc.ui.Startup"></startup>
+   </extension>
+ <extension
+       point="org.eclipse.ui.commands">
+    <command
+          defaultHandler="de.dlr.premise.calc.ui.Recalculator"
+          id="de.dlr.premise.calc.recalculate"
+          name="Recalculate All">
+    </command>
+ </extension>
+ <extension
+       point="org.eclipse.ui.bindings">
+    <key
+          commandId="de.dlr.premise.calc.recalculate"
+          contextId="org.eclipse.ui.contexts.window"
+          schemeId="de.dlr.premise"
+          sequence="M2+M3+R R">
+    </key>
+ </extension>
+ <extension
+       point="org.eclipse.ui.preferencePages">
+    <page
+          class="de.dlr.premise.calc.ui.preferences.CalculationPreferencePage"
+          id="de.dlr.premise.calculation"
+          name="Calculation">
+    </page>
+ </extension>
+ <extension
+       point="org.eclipse.core.runtime.preferences">
+    <initializer
+          class="de.dlr.premise.calc.ui.preferences.CalculationPreferenceInitializer">
+    </initializer>
+ </extension>
+</plugin>

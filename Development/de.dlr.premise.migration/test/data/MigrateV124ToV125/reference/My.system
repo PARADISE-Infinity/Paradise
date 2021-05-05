@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.25" xmi:version="2.0">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+    <children name="number representation pattern" value="##0.0###E0"/>
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Group Elements" value="false"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Edit local statemachines">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+    </children>
+  </metaData>
+  <projects id="fb888b10-08f9-4479-9958-ec34e1d727d0" name="SC">
+    <statemachines name="SC Failure State">
+      <modes entryMode="true" id="8e3beed2-ce22-4ccd-9f2b-75c3a4cdcab9" name="Normal"/>
+      <modes id="e616e7d9-3066-497e-8917-7d2aa221ea5d" name="SC Failure"/>
+      <transitions id="e6a45ed1-54bf-4643-913b-d9ab92900fbe" name="F: SC Failure">
+        <sourcePointer target="8e3beed2-ce22-4ccd-9f2b-75c3a4cdcab9" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="e616e7d9-3066-497e-8917-7d2aa221ea5d" xsi:type="graph:DirectPointer"/>
+        <condition xsi:type="elem:GuardCombination">
+          <children mode="1dfccb79-5b8b-4b63-bb4c-ec1343cee93f" xsi:type="elem:ModeGuard"/>
+          <children mode="fe6b539b-b354-4aa5-ab33-257c9bf5d1a5" xsi:type="elem:ModeGuard"/>
+        </condition>
+        <parameters id="1c0f5927-6953-4cf3-ad49-6151afb7392f" name="Failure Rate">
+          <value value="0"/>
+        </parameters>
+        <balancings name="bal" target="1c0f5927-6953-4cf3-ad49-6151afb7392f">
+        </balancings>
+      </transitions>
+    </statemachines>
+    <statemachines name="SC Failure State">
+      <modes entryMode="true" id="f80247e5-3068-4bd5-914a-554837342ea5" name="Normal"/>
+      <modes id="1dfccb79-5b8b-4b63-bb4c-ec1343cee93f" name="SC Failure"/>
+      <transitions id="9c3e02e9-1f7e-44d3-bfd5-b29c03ec4882" name="F: SC Failure">
+        <sourcePointer target="f80247e5-3068-4bd5-914a-554837342ea5" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="1dfccb79-5b8b-4b63-bb4c-ec1343cee93f" xsi:type="graph:DirectPointer"/>
+        <parameters id="9d64b61c-79a4-4d5b-9ae1-c802c1200d69" name="Failure Rate">
+          <value value="0"/>
+        </parameters>
+      </transitions>
+    </statemachines>
+    <statemachines name="SC Failure State">
+      <modes entryMode="true" id="4382b2df-c465-4f10-9424-6504740c03c2" name="Normal"/>
+      <modes id="fe6b539b-b354-4aa5-ab33-257c9bf5d1a5" name="SC Failure"/>
+      <transitions id="f5b8207c-d862-4d2a-b22b-dbc4a85821c3" name="F: SC Failure">
+        <sourcePointer target="4382b2df-c465-4f10-9424-6504740c03c2" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="fe6b539b-b354-4aa5-ab33-257c9bf5d1a5" xsi:type="graph:DirectPointer"/>
+        <parameters id="8182b443-6a20-42d2-885a-8a7e43618482" name="Failure Rate">
+          <value value="0"/>
+        </parameters>
+      </transitions>
+    </statemachines>
+    <satisfies>
+      <targetPointer xsi:type="graph:DirectPointer">
+        <target href="My.usecase#cbdecbd2-e756-4b74-8519-916e3ab9863c" xsi:type="uc:UseCase"/>
+      </targetPointer>
+    </satisfies>
+    <children id="1128fbc7-8a4c-4c9c-89f1-34a54c8ddfd6" name="scd" xsi:type="prem:ComponentReference">
+      <componentDefinition href="My.component#23c6c0c4-d258-4f8f-9a1b-e0869c12a0d2"/>
+      <activeImplementation href="My.component#a5d2090d-38e9-4d36-9060-049afe057413"/>
+    </children>
+  </projects>
+</prem:ProjectRepository>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fnp:FunctionPool xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <functions name="fn2" sheetName="" xsi:type="fnp:FnDefSpreadSheet">
+    <output cell="A1" xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs cell="A2" xsi:type="fnp:FnInputSpreadSheet"/>
+    <inputs cell="A3" xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+</fnp:FunctionPool>

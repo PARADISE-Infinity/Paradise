@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0" xsi:schemaLocation="http://www.dlr.de/ft/premise/registry/validated/2013/ http://www.dlr.de/ft/premise/registry/2010/#//validated http://www.dlr.de/ft/premise/validated/2013/ http://www.dlr.de/ft/premise/2010/#//validated">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="off"/>
+  </metaData>
+  <metaData name="Export">
+    <metaData name="GraphML">
+      <metaData name="logical_hierarchy" value="on"/>
+      <metaData name="physical_portmappings" value="on"/>
+      <metaData name="parameter_dependencies" value="on"/>
+      <metaData name="self_references" value="off"/>
+      <metaData name="constants" value="on"/>
+      <metaData name="relations" value="on"/>
+      <metaData name="color" value="Applicable for every element's meta data, value example: #D4D4D4CC (grey, default), #00FF00 (green)..."/>
+      <metaData name="width" value="Applicable for every element's meta data, value example: 125 (default)"/>
+      <metaData name="height" value="Applicable for every element's meta data, value example: 55 (default)"/>
+      <metaData name="coordinate" value="Applicable for every element's meta data, value example: 4,4"/>
+    </metaData>
+  </metaData>
+  <projects id="1bd03067-b420-49ba-8649-6cd80f2faa1d" name="PowerTrainSystem">
+    <parameters id="8d0a78e6-e593-427e-ad9c-67afacb05a7f" name="repairingCosts" xsi:type="prem:Parameter">
+      <value value="0.0" xsi:type="reg:Value"/>
+      <modeValues value="1110.0" xsi:type="prem:ModeValueRef">
+<modePointers target="80acfdfe-42e2-4dbe-b3b1-01ff94afc501" xsi:type="graph:DirectPointer"/>
+<modePointers target="857fcf40-e250-4614-8c18-e7687a7d79c7" xsi:type="graph:DirectPointer"/>
+<modePointers target="a9615320-5305-4d65-93f8-7ed146739eb9" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      <modeValues value="1100.0" xsi:type="prem:ModeValueRef">
+<modePointers target="fed212d4-32db-4ff6-82e9-81b4fc892aef" xsi:type="graph:DirectPointer"/>
+<modePointers target="857fcf40-e250-4614-8c18-e7687a7d79c7" xsi:type="graph:DirectPointer"/>
+<modePointers target="70a9bd5c-060f-42ce-8f07-f1c6c3a1cef4" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      <modeValues value="1010.0" xsi:type="prem:ModeValueRef">
+<modePointers target="fed212d4-32db-4ff6-82e9-81b4fc892aef" xsi:type="graph:DirectPointer"/>
+<modePointers target="a6080534-84d6-4005-b239-855aec7519cc" xsi:type="graph:DirectPointer"/>
+<modePointers target="a9615320-5305-4d65-93f8-7ed146739eb9" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      <modeValues value="1010.0" xsi:type="prem:ModeValueRef">
+<modePointers target="fed212d4-32db-4ff6-82e9-81b4fc892aef" xsi:type="graph:DirectPointer"/>
+<modePointers target="53a81e78-3212-4605-abda-bfac2790075b" xsi:type="graph:DirectPointer"/>
+<modePointers target="a9615320-5305-4d65-93f8-7ed146739eb9" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      <modeValues value="1000.0" xsi:type="prem:ModeValueRef">
+<modePointers target="fed212d4-32db-4ff6-82e9-81b4fc892aef" xsi:type="graph:DirectPointer"/>
+<modePointers target="a6080534-84d6-4005-b239-855aec7519cc" xsi:type="graph:DirectPointer"/>
+<modePointers target="70a9bd5c-060f-42ce-8f07-f1c6c3a1cef4" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      <modeValues value="1000.0" xsi:type="prem:ModeValueRef">
+<modePointers target="fed212d4-32db-4ff6-82e9-81b4fc892aef" xsi:type="graph:DirectPointer"/>
+<modePointers target="53a81e78-3212-4605-abda-bfac2790075b" xsi:type="graph:DirectPointer"/>
+<modePointers target="70a9bd5c-060f-42ce-8f07-f1c6c3a1cef4" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      <modeValues value="110.0" xsi:type="prem:ModeValueRef">
+<modePointers target="fed212d4-32db-4ff6-82e9-81b4fc892aef" xsi:type="graph:DirectPointer"/>
+<modePointers target="cbb26ca5-29a4-421d-a56b-925b2d0441ae" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      <modeValues value="100.0" xsi:type="prem:ModeValueRef">
+<modePointers target="dfe106ff-e07a-4ced-ac97-fd50c9479e24" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      <modeValues value="10.0" xsi:type="prem:ModeValueRef">
+<modePointers target="1e65961f-2c70-4bf5-8037-4bfc3f4c9887" xsi:type="graph:DirectPointer"/>
+<modePointers target="a9615320-5305-4d65-93f8-7ed146739eb9" xsi:type="graph:DirectPointer"/>
+</modeValues>
+    </parameters>
+    <parameters description="unnamed parameter" id="79585131-f48e-47c2-b6d6-a266a77237c4" xsi:type="prem:Parameter"/>
+    <balancings function="PowerTrainSystem.repairingCosts = Sum(Control.repairingCosts, DriveTrain.repairingCosts, Monitoring___Protection.repairingCosts)" name="" xsi:type="prem:Balancing">
+    <actualSources key="Control.repairingCosts">
+<value target="3db7135f-b852-4c3a-9fa0-404709ab4731" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="DriveTrain.repairingCosts">
+<value target="b7969574-437e-4584-9f5c-05f5146b06b7" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="Monitoring___Protection.repairingCosts">
+<value target="95083008-86b1-47e1-983d-57a65065fe7d" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="PowerTrainSystem.repairingCosts">
+<value target="8d0a78e6-e593-427e-ad9c-67afacb05a7f" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+    <children id="31e4b35e-e204-4f24-bdea-9d4c1690cce2" name="Control" xsi:type="prem:SystemComponent">
+      <parameters id="3db7135f-b852-4c3a-9fa0-404709ab4731" name="repairingCosts" xsi:type="prem:Parameter">
+        <value value="0" xsi:type="reg:Value"/>
+        <modeValues value="1000" xsi:type="prem:ModeValueRef">
+<modePointers target="80acfdfe-42e2-4dbe-b3b1-01ff94afc501" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      </parameters>
+    <statemachines name="Control">
+<modes entryMode="true" id="cbb26ca5-29a4-421d-a56b-925b2d0441ae" name="healthy" xsi:type="elem:Mode"/>
+<modes entryMode="false" id="80acfdfe-42e2-4dbe-b3b1-01ff94afc501" name="failure" xsi:type="elem:Mode"/>
+<transitions id="4d4edeac-e395-4a46-8b60-25d5b7a7b13c">
+        <parameters id="8fbfb8db-3328-46f5-a2f6-70bc166a41d2" name="failureRate">
+          <value value="0.0001" xsi:type="reg:Value"/>
+        </parameters>
+      <sourcePointer target="cbb26ca5-29a4-421d-a56b-925b2d0441ae" xsi:type="graph:DirectPointer"/>
+<targetPointer target="80acfdfe-42e2-4dbe-b3b1-01ff94afc501" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+    <children id="15ddb2c8-e2ab-494e-98b2-ed8b3a64cb3a" name="DriveTrain" xsi:type="prem:SystemComponent">
+      <parameters id="b7969574-437e-4584-9f5c-05f5146b06b7" name="repairingCosts" xsi:type="prem:Parameter">
+        <value value="0" xsi:type="reg:Value"/>
+        <modeValues value="100" xsi:type="prem:ModeValueRef">
+<modePointers target="857fcf40-e250-4614-8c18-e7687a7d79c7" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      </parameters>
+    <statemachines name="DriveTrain">
+<modes entryMode="true" id="a6080534-84d6-4005-b239-855aec7519cc" name="active" xsi:type="elem:Mode"/>
+<modes entryMode="true" id="53a81e78-3212-4605-abda-bfac2790075b" name="inactive" xsi:type="elem:Mode"/>
+<modes entryMode="false" id="857fcf40-e250-4614-8c18-e7687a7d79c7" name="failure" xsi:type="elem:Mode"/>
+<transitions id="646c8595-2075-44af-b86b-5d5b23ac6eec">
+<sourcePointer target="a6080534-84d6-4005-b239-855aec7519cc" xsi:type="graph:DirectPointer"/>
+<targetPointer target="53a81e78-3212-4605-abda-bfac2790075b" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="d65dfd49-238c-4097-a34b-8cbe2b7d3596">
+<sourcePointer target="53a81e78-3212-4605-abda-bfac2790075b" xsi:type="graph:DirectPointer"/>
+<targetPointer target="a6080534-84d6-4005-b239-855aec7519cc" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="e2226b29-46c2-4681-aa0f-fbb104c6a5ed" name="">
+        <parameters id="ff14c1c8-cdd4-4467-884e-94594482527b" name="failureRate">
+          <value value="0.001" xsi:type="reg:Value"/>
+        </parameters>
+      <targetPointer target="857fcf40-e250-4614-8c18-e7687a7d79c7" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+    <children id="3e80e602-78fd-4439-b788-e0eb15112451" name="Monitoring &amp; Protection" xsi:type="prem:SystemComponent">
+      <parameters id="95083008-86b1-47e1-983d-57a65065fe7d" name="repairingCosts" xsi:type="prem:Parameter">
+        <value value="0" xsi:type="reg:Value"/>
+        <modeValues value="10" xsi:type="prem:ModeValueRef">
+<modePointers target="a9615320-5305-4d65-93f8-7ed146739eb9" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      </parameters>
+    <statemachines name="Monitoring &amp; Protection">
+<modes entryMode="true" id="70a9bd5c-060f-42ce-8f07-f1c6c3a1cef4" name="healthy" xsi:type="elem:Mode"/>
+<modes entryMode="false" id="a9615320-5305-4d65-93f8-7ed146739eb9" name="failure" xsi:type="elem:Mode"/>
+<transitions id="e99cf45a-a686-40db-9172-8d1aad7afcd5">
+        <parameters id="5aeec59b-e9d1-4f77-8588-8440d6f786dd" name="failureRate">
+          <value value="0.01" xsi:type="reg:Value"/>
+        </parameters>
+      <sourcePointer target="70a9bd5c-060f-42ce-8f07-f1c6c3a1cef4" xsi:type="graph:DirectPointer"/>
+<targetPointer target="a9615320-5305-4d65-93f8-7ed146739eb9" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+  <statemachines name="PowerTrainSystem">
+<modes entryMode="true" id="1e65961f-2c70-4bf5-8037-4bfc3f4c9887" name="healthy" xsi:type="elem:Mode"/>
+<modes entryMode="true" id="dfe106ff-e07a-4ced-ac97-fd50c9479e24" name="degraded" xsi:type="elem:Mode"/>
+<modes entryMode="false" id="fed212d4-32db-4ff6-82e9-81b4fc892aef" name="failure" xsi:type="elem:Mode"/>
+<transitions id="19d4dbbf-00cf-483f-88da-7135df5d0076" name="">
+      <condition junction="AND" xsi:type="elem:GuardCombination">
+        <children xsi:type="elem:ModeGuard">
+<modePointer target="cbb26ca5-29a4-421d-a56b-925b2d0441ae" xsi:type="graph:DirectPointer"/>
+</children>
+        <children xsi:type="elem:ModeGuard">
+<modePointer target="857fcf40-e250-4614-8c18-e7687a7d79c7" xsi:type="graph:DirectPointer"/>
+</children>
+        <children xsi:type="elem:ModeGuard">
+<modePointer target="70a9bd5c-060f-42ce-8f07-f1c6c3a1cef4" xsi:type="graph:DirectPointer"/>
+</children>
+      </condition>
+      <parameters id="b011965b-a0b1-46d9-bde3-15840a93104a" name="degradedRate">
+        <value value="1.0E-9" xsi:type="reg:Value"/>
+      </parameters>
+      <balancings target="b011965b-a0b1-46d9-bde3-15840a93104a" xsi:type="prem:TransitionBalancing">
+      </balancings>
+    <sourcePointer target="1e65961f-2c70-4bf5-8037-4bfc3f4c9887" xsi:type="graph:DirectPointer"/>
+<targetPointer target="dfe106ff-e07a-4ced-ac97-fd50c9479e24" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="8b9502fd-631f-40b5-af31-80706d195435" name="">
+      <condition xsi:type="elem:GuardCombination">
+        <children xsi:type="elem:ModeGuard">
+<modePointer target="80acfdfe-42e2-4dbe-b3b1-01ff94afc501" xsi:type="graph:DirectPointer"/>
+</children>
+        <children junction="AND" xsi:type="elem:GuardCombination">
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="857fcf40-e250-4614-8c18-e7687a7d79c7" xsi:type="graph:DirectPointer"/>
+</children>
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="a9615320-5305-4d65-93f8-7ed146739eb9" xsi:type="graph:DirectPointer"/>
+</children>
+        </children>
+      </condition>
+      <parameters id="31b267f1-f317-428f-818a-c2673beec536" name="failureRate">
+        <value value="1.1E-4" xsi:type="reg:Value"/>
+      </parameters>
+      <balancings target="31b267f1-f317-428f-818a-c2673beec536" xsi:type="prem:TransitionBalancing">
+      </balancings>
+    <targetPointer target="fed212d4-32db-4ff6-82e9-81b4fc892aef" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</projects>
+<functionPools href="_GLOBAL/GlobalFuncDefs.premise.functionpool#/"/>
+</prem:ProjectRepository>

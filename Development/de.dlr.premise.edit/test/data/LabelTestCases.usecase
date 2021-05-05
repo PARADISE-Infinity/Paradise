@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<uc:UseCaseRepository xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.32" xmi:version="2.0" xsi:schemaLocation="http://www.dlr.de/premise/usecase/2014/ ../../../de.dlr.ft.premise/model/PREMISE_UseCase.ecore http://www.dlr.de/ft/premise/validated/2013/ ../../../de.dlr.ft.premise/model/PREMISE_system.ecore#//validated">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+  </metaData>
+  <usecases id="abb0c2c2-e392-41df-9d36-655f5eed22fe" name="Namespace A">
+    <children id="63d04e47-dff6-42d3-a8b0-a3393eea292e"/>
+    <children id="daaf7394-0086-4c69-afdd-778d5aa8fd68" name="SC1 \nname">
+      <notes author="hschum" date="2013-10-10 14:56:51"/>
+      <notes author="hschum" date="2013-10-10 14:47:53" text="test \ntext"/>
+      <metaData/>
+      <metaData name="test \nname"/>
+      <metaData value="test \nvalue"/>
+      <metaData name="test \nname" value="test \nvalue"/>
+      <relations>
+<sourcePointer target="daaf7394-0086-4c69-afdd-778d5aa8fd68" xsi:type="graph:DirectPointer"/>
+</relations>
+      <relations name="test \ntype">
+<sourcePointer target="daaf7394-0086-4c69-afdd-778d5aa8fd68" xsi:type="graph:DirectPointer"/>
+</relations>
+      <relations>
+<sourcePointer target="daaf7394-0086-4c69-afdd-778d5aa8fd68" xsi:type="graph:DirectPointer"/>
+</relations>
+      <relations>
+<sourcePointer target="daaf7394-0086-4c69-afdd-778d5aa8fd68" xsi:type="graph:DirectPointer"/>
+<targetPointer target="ae1f9942-8531-4aeb-8a35-94e52e15429f" xsi:type="graph:DirectPointer"/>
+</relations>
+      <relations>
+<sourcePointer target="daaf7394-0086-4c69-afdd-778d5aa8fd68" xsi:type="graph:DirectPointer"/>
+<targetPointer target="ae1f9942-8531-4aeb-8a35-94e52e15429f" xsi:type="graph:DirectPointer"/>
+</relations>
+      <relations name="test \ntype">
+<sourcePointer target="daaf7394-0086-4c69-afdd-778d5aa8fd68" xsi:type="graph:DirectPointer"/>
+<targetPointer target="ae1f9942-8531-4aeb-8a35-94e52e15429f" xsi:type="graph:DirectPointer"/>
+</relations>
+    <statemachines name="SC1 \nname">
+<modes entryMode="true" id="baa03eba-7118-4927-8968-4253df17e764" xsi:type="elem:Mode"/>
+<modes entryMode="true" id="c01a8352-2541-4ea9-8a74-f48e8d936da8" name="M1 \nname" xsi:type="elem:Mode"/>
+<modes entryMode="true" id="2078b9a0-72a6-4f3c-90fe-e086a0bb013a" name="M2 \nname" xsi:type="elem:Mode"/>
+<transitions description="all empty" id="5b02addd-78c2-472a-a52b-337173662894"/>
+<transitions description="only name given" id="ca0cf7ca-0842-4b8b-b44c-da2e7dbaa859" name="test \nname"/>
+<transitions description="only source" id="169ad0ec-4e53-4924-8bfb-a8be9ab5a0c9">
+<sourcePointer target="c01a8352-2541-4ea9-8a74-f48e8d936da8" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions description="only target" id="2c6b0546-37e4-4b8b-841e-710fbbaad0ef">
+      <targetPointer target="2078b9a0-72a6-4f3c-90fe-e086a0bb013a" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions description="source and target" id="4611aaec-8955-4380-bb6c-fa6feff1f900">
+<sourcePointer target="c01a8352-2541-4ea9-8a74-f48e8d936da8" xsi:type="graph:DirectPointer"/>
+<targetPointer target="2078b9a0-72a6-4f3c-90fe-e086a0bb013a" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions description="name, source and target given" id="6d159a8b-d1b2-42bf-9aca-d2c66cdcdcc4" name="test \nname">
+<sourcePointer target="c01a8352-2541-4ea9-8a74-f48e8d936da8" xsi:type="graph:DirectPointer"/>
+<targetPointer target="2078b9a0-72a6-4f3c-90fe-e086a0bb013a" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+  </usecases>
+  <usecases id="8a78e85d-d1c6-4568-8043-012bee527d3d" name="Namespace B">
+    <children id="09720f33-c30e-4e69-94d5-37c0048d4a73">
+      <metaTypes href="LabelTestCases.registry#0d5e2ab0-929f-4aee-8065-e073b9a6768b"/>
+    </children>
+    <children description="Use case valid for condition" id="ae1f9942-8531-4aeb-8a35-94e52e15429f" name="SC2 \nname">
+      <metaTypes href="LabelTestCases.registry#0d5e2ab0-929f-4aee-8065-e073b9a6768b"/>
+    <condition junction="AND" xsi:type="elem:GuardCombination">
+  <children xsi:type="elem:ModeGuard">
+    <modePointer target="c01a8352-2541-4ea9-8a74-f48e8d936da8" xsi:type="graph:DirectPointer"/>
+  </children>
+  <children xsi:type="elem:ModeGuard">
+    <modePointer target="2078b9a0-72a6-4f3c-90fe-e086a0bb013a" xsi:type="graph:DirectPointer"/>
+  </children>
+</condition>
+</children>
+  </usecases>
+</uc:UseCaseRepository>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.17" xmi:version="2.0">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+    <children name="number representation pattern" value="##0.0###E0"/>
+  </metaData>
+  <projects id="bd08cfb1-8768-4fb4-93a4-709008ed63f8" name="Root">
+    <parameters id="84e4fbd5-f80c-41fb-bcb6-67f2721aa674" name="Target">
+      <value value="76.0286"/>
+    </parameters>
+    <parameters id="cb8ad2c2-06c7-4bb9-a767-5e121342e65e" name="Target2"/>
+    <parameters id="9e62faa7-77a8-4e56-ab5f-53bae7f88568" name="Target3"/>
+    <parameters id="f27c1530-e41f-4375-81b0-492140f55c87" name="Target4"/>
+    <parameters id="73d6e1a9-2cf4-4b6f-9a68-705a0d1a586a" name="Target5"/>
+    <parameters id="e06e5340-de49-4e74-a085-358772c689fd" name="Target6"/>
+    <balancings function="Root.Target = Child1.DuplicateName + Child2.DuplicateName + carperformance_force + gravitational_acc + mps_100kmph + pi + x + Child1.Sub.DeepDuplicateName + Child2.Sub.DeepDuplicateName + Root.Child3.UnfixableDuplicateName.id_14206 + Root.Child3.UnfixableDuplicateName.id_ab523" name="">
+    <actualSources key="Child1.DuplicateName">
+	 <value href="#98932010-f12e-44d8-a261-01f84dcb365f" xsi:type="prem:Parameter"/>
+</actualSources>
+<actualSources key="Child2.DuplicateName">
+	 <value href="#0b412549-98a9-4cdc-8128-945050e157fe" xsi:type="prem:Parameter"/>
+</actualSources>
+<actualSources key="carperformance_force">
+	 <value href="Registry.premise.registry#60b07a7e-23a7-482a-b069-495cd2cbb0e3" xsi:type="reg:Constant"/>
+</actualSources>
+<actualSources key="gravitational_acc">
+	 <value href="Registry.premise.registry#f7b881b3-147b-4c34-a2b0-8b378aa69fdc" xsi:type="reg:Constant"/>
+</actualSources>
+<actualSources key="mps_100kmph">
+	 <value href="Registry.premise.registry#62700bc9-2779-4209-b832-ed26fbcf5868" xsi:type="reg:Constant"/>
+</actualSources>
+<actualSources key="pi">
+	 <value href="Registry.premise.registry#1435a2aa-917e-4261-abcc-eab89aaedae0" xsi:type="reg:Constant"/>
+</actualSources>
+<actualSources key="x">
+	 <value href="Other.registry#cc8f836c-c131-400c-b752-dc1463a744ee" xsi:type="reg:Constant"/>
+</actualSources>
+<actualSources key="Child1.Sub.DeepDuplicateName">
+	 <value href="#a700c917-6c03-48bd-997c-fe96001a6e57" xsi:type="prem:Parameter"/>
+</actualSources>
+<actualSources key="Child2.Sub.DeepDuplicateName">
+	 <value href="#98cd820b-b310-4218-b72c-db0d03a28f48" xsi:type="prem:Parameter"/>
+</actualSources>
+<actualSources key="Root.Child3.UnfixableDuplicateName.id_14206">
+	 <value href="#14206462-ad0a-4dbb-8eaa-04f61b1f0be4" xsi:type="prem:Parameter"/>
+</actualSources>
+<actualSources key="Root.Child3.UnfixableDuplicateName.id_ab523">
+	 <value href="#ab5236e9-cf9b-4d3d-8764-0a854233e8d3" xsi:type="prem:Parameter"/>
+</actualSources>
+<actualTarget key="Root.Target" value="84e4fbd5-f80c-41fb-bcb6-67f2721aa674"/>
+</balancings>
+    <balancings description="This balancing has no sources and targets, to see how the migration handles that akward case." function=" = DivideOverAllModes()" name="">
+    </balancings>
+    <balancings function="Target2 = &lt;unknown function&gt;(pi, mps_100kmph)" name="">
+    <actualSources key="pi">
+	 <value href="Registry.premise.registry#1435a2aa-917e-4261-abcc-eab89aaedae0" xsi:type="reg:Constant"/>
+</actualSources>
+<actualSources key="mps_100kmph">
+	 <value href="Registry.premise.registry#62700bc9-2779-4209-b832-ed26fbcf5868" xsi:type="reg:Constant"/>
+</actualSources>
+<actualTarget key="Target2" value="cb8ad2c2-06c7-4bb9-a767-5e121342e65e"/>
+</balancings>
+    <balancings function="Target3 = DivideFirstThenMultiply()">
+    <actualTarget key="Target3" value="9e62faa7-77a8-4e56-ab5f-53bae7f88568"/>
+</balancings>
+    <balancings function="Target4 = Source" name="CopyValue">
+    <actualSources key="Source" value="7837fab7-7d21-49b8-9c63-5fac80f62a37"/>
+<actualTarget key="Target4" value="f27c1530-e41f-4375-81b0-492140f55c87"/>
+</balancings>
+    <balancings function="Target5 = Mean(Child1.DuplicateName, Child2.DuplicateName)" name="ActualMean">
+    <actualSources key="Child1.DuplicateName" value="98932010-f12e-44d8-a261-01f84dcb365f"/>
+<actualSources key="Child2.DuplicateName" value="0b412549-98a9-4cdc-8128-945050e157fe"/>
+<actualTarget key="Target5" value="73d6e1a9-2cf4-4b6f-9a68-705a0d1a586a"/>
+</balancings>
+    <balancings function="Target6 = Child2.Sub.DeepDuplicateName / Source * Child2.DuplicateName * Root.Child3.UnfixableDuplicateName.id_14206" name="">
+    <actualSources key="Child2.Sub.DeepDuplicateName" value="98cd820b-b310-4218-b72c-db0d03a28f48"/>
+<actualSources key="Source" value="7837fab7-7d21-49b8-9c63-5fac80f62a37"/>
+<actualSources key="Child2.DuplicateName" value="0b412549-98a9-4cdc-8128-945050e157fe"/>
+<actualSources key="Root.Child3.UnfixableDuplicateName.id_14206" value="14206462-ad0a-4dbb-8eaa-04f61b1f0be4"/>
+<actualTarget key="Target6" value="e06e5340-de49-4e74-a085-358772c689fd"/>
+</balancings>
+    <children id="654ccfec-6dfd-461b-819f-a4cad4c92893" name="Child1">
+      <parameters id="98932010-f12e-44d8-a261-01f84dcb365f" name="DuplicateName">
+        <value uncertainty="" value="0"/>
+      </parameters>
+      <children id="e5d7192a-7476-4aa5-8c89-3fac9616f067" name="Sub">
+        <parameters id="a700c917-6c03-48bd-997c-fe96001a6e57" name="DeepDuplicateName">
+          <value uncertainty="" value="0"/>
+        </parameters>
+      </children>
+    </children>
+    <children id="0525b5fb-e420-4874-bea4-c2a3d50790c2" name="Child2">
+      <parameters id="0b412549-98a9-4cdc-8128-945050e157fe" name="DuplicateName">
+        <value value="0"/>
+      </parameters>
+      <children id="2113346c-18f1-449b-89c5-a0cdfd02da8f" name="Sub">
+        <parameters id="98cd820b-b310-4218-b72c-db0d03a28f48" name="DeepDuplicateName">
+          <value uncertainty="" value="0"/>
+        </parameters>
+      </children>
+    </children>
+    <children id="04239da8-7964-4713-b555-b3db8aea4e31" name="Child3">
+      <parameters id="14206462-ad0a-4dbb-8eaa-04f61b1f0be4" name="UnfixableDuplicateName">
+        <notes author="steh_ti" date="2016-02-19 11:14:06" text="Has the exact same FQN as ab5236e9-cf9b-4d3d-8764-0a854233e8d3. Therefore, migration must add a index number."/>
+        <value uncertainty="" value="0"/>
+      </parameters>
+      <parameters id="ab5236e9-cf9b-4d3d-8764-0a854233e8d3" name="UnfixableDuplicateName">
+        <value uncertainty="" value="0"/>
+      </parameters>
+    </children>
+    <children id="94c6ea11-01fd-4c38-9db7-1ec2297682f2" name="MultiMode">
+      <modes id="d2e29e17-fb65-45d4-a2d2-3845634899fc" name="A"/>
+      <modes id="851325eb-470f-49fa-a04b-681aa37035b3" name="B"/>
+      <parameters id="7837fab7-7d21-49b8-9c63-5fac80f62a37" name="Source">
+        <value value="0"/>
+        <modeValues modes="d2e29e17-fb65-45d4-a2d2-3845634899fc" uncertainty="" value="6"/>
+        <modeValues modes="851325eb-470f-49fa-a04b-681aa37035b3" uncertainty="" value="2"/>
+      </parameters>
+      <parameters id="d8738d8b-5f50-4167-8a36-f8439f041a5a" name="TargetSum">
+        <value value="8.0"/>
+      </parameters>
+      <parameters id="0661a9e3-3871-4100-b40e-38f8d90a9010" name="TargetMultiply">
+        <value value="12.0"/>
+      </parameters>
+      <balancings function="TargetSum = SumOverAllModes(Source)" name="">
+      <actualSources key="Source" value="7837fab7-7d21-49b8-9c63-5fac80f62a37"/>
+<actualTarget key="TargetSum" value="d8738d8b-5f50-4167-8a36-f8439f041a5a"/>
+</balancings>
+      <balancings function="TargetMultiply = MultiplyOverAllModes(Source)">
+      <actualSources key="Source" value="7837fab7-7d21-49b8-9c63-5fac80f62a37"/>
+<actualTarget key="TargetMultiply" value="0661a9e3-3871-4100-b40e-38f8d90a9010"/>
+</balancings>
+    </children>
+  </projects>
+  <projects id="9c031a77-316a-461d-aba2-527d89c291bf" name="TransitionBalancings">
+    <modes id="661c26cb-032f-44a7-a1ca-21aea870f619" name="M1"/>
+    <modes id="72e3a938-2bab-4eb5-b855-08c6f0549ec5" name="M2"/>
+    <transitions id="757d3914-0ed2-4edd-ae9a-a0fb52894d70" source="661c26cb-032f-44a7-a1ca-21aea870f619" target="72e3a938-2bab-4eb5-b855-08c6f0549ec5">
+      <constraint xsi:type="elem:NestedTransitionConstraint">
+        <children trigger="30d804d3-7929-4371-9c35-bfbbe0056eb3" xsi:type="elem:TransitionConstraint"/>
+        <children trigger="199a2907-f08e-4e92-bb1d-3d49dc92d7fc" xsi:type="elem:TransitionConstraint"/>
+      </constraint>
+      <parameters id="921c36bf-5d91-4bc4-9053-e4790ed29719" name="Target">
+        <value value="8.0"/>
+      </parameters>
+      <balancings name="" sources="4d718395-c975-4d75-b019-31c59e9fa295 8bfc5099-2502-46d1-8907-14d252a39410" target="921c36bf-5d91-4bc4-9053-e4790ed29719">
+        <functionDefOr href="GlobalFuncDefs.premise.functionpool#//@functions.0" xsi:type="fnp:FnDefSpreadSheet"/>
+        <functionDefAnd href="GlobalFuncDefs.premise.functionpool#//@functions.1" xsi:type="fnp:FnDefSpreadSheet"/>
+      </balancings>
+    </transitions>
+    <children id="ff82e83c-4cff-4193-94e8-4bcc1e5f31d1" name="Sources">
+      <modes id="ca9406b0-d575-4465-bd5e-fe7e58ea90c3" name="SubMode1"/>
+      <modes id="cd4b1e06-723b-4dd9-aa97-a9705b76f417" name="SubMode2"/>
+      <transitions id="30d804d3-7929-4371-9c35-bfbbe0056eb3" name="SubT1" source="ca9406b0-d575-4465-bd5e-fe7e58ea90c3" target="cd4b1e06-723b-4dd9-aa97-a9705b76f417">
+        <parameters id="8bfc5099-2502-46d1-8907-14d252a39410" name="P1">
+          <value uncertainty="" value="2"/>
+        </parameters>
+      </transitions>
+      <transitions id="199a2907-f08e-4e92-bb1d-3d49dc92d7fc" name="SubT2" source="ca9406b0-d575-4465-bd5e-fe7e58ea90c3" target="cd4b1e06-723b-4dd9-aa97-a9705b76f417">
+        <parameters id="4d718395-c975-4d75-b019-31c59e9fa295" name="P2">
+          <value uncertainty="" value="6"/>
+        </parameters>
+      </transitions>
+    </children>
+  </projects>
+<functionPools href="GlobalFuncDefs.premise.functionpool#/"/>
+</prem:ProjectRepository>

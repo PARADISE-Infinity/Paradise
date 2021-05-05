@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:xmi="http://www.omg.org/XMI" metaModel="1.26" xmi:version="2.0">
+  <usecases id="2ff46a8d-5efa-4312-9322-d6d22106542b">
+    <requiredParameters id="7569c0a5-20c5-4966-ba3d-0b4a413737ea">
+      <unit href="premise:/Base.registry#K"/>
+    </requiredParameters>
+  </usecases>
+</uc:UseCaseRepository>

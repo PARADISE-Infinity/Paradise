@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Group Elements" value="false"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Edit local statemachines">
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <usecases id="4e3bb2a6-59a8-47aa-8fd2-7482f89ae541" name="Analysis">
+    <statemachines id="4ab45f7c-4f9c-43ba-8854-d3fba5574365" name="System States">
+      <metaTypes href="premise:/Base.registry#4b21a2c9-2c1b-4c29-8fa0-488246036795"/>
+      <modes entryMode="true" id="a21bc0d9-8739-40fb-ab44-9a5b894cf9e4" name="Phase-1"/>
+      <modes id="cad5cdd0-d031-4ff2-a50d-4bcb3d336dbc" name="Phase-O"/>
+      <modes id="bc75e949-41ed-4c49-b378-dd3bfc248cc1" name="Phase-Z"/>
+      <transitions id="09ce8a75-cb6e-4259-b674-c33121b6dc50">
+        <sourcePointer target="a21bc0d9-8739-40fb-ab44-9a5b894cf9e4" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="cad5cdd0-d031-4ff2-a50d-4bcb3d336dbc" xsi:type="graph:DirectPointer"/>
+      </transitions>
+      <transitions id="7543b6fd-45bd-4abf-a0e8-89b23d62e0e6">
+        <sourcePointer target="cad5cdd0-d031-4ff2-a50d-4bcb3d336dbc" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="a21bc0d9-8739-40fb-ab44-9a5b894cf9e4" xsi:type="graph:DirectPointer"/>
+      </transitions>
+      <transitions id="e1df142a-4e79-4c46-a801-df68546e4f9a">
+        <sourcePointer target="a21bc0d9-8739-40fb-ab44-9a5b894cf9e4" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="bc75e949-41ed-4c49-b378-dd3bfc248cc1" xsi:type="graph:DirectPointer"/>
+      </transitions>
+      <transitions id="b64d9e6a-29a5-42c3-b535-9c212eae290b">
+        <sourcePointer target="bc75e949-41ed-4c49-b378-dd3bfc248cc1" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="a21bc0d9-8739-40fb-ab44-9a5b894cf9e4" xsi:type="graph:DirectPointer"/>
+      </transitions>
+      <transitions id="d7cb73ad-e09e-45a1-b551-daeb65601656">
+        <sourcePointer target="cad5cdd0-d031-4ff2-a50d-4bcb3d336dbc" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="bc75e949-41ed-4c49-b378-dd3bfc248cc1" xsi:type="graph:DirectPointer"/>
+      </transitions>
+      <transitions id="83ade4f1-808e-472d-b57f-9ffa94e26b14">
+        <sourcePointer target="bc75e949-41ed-4c49-b378-dd3bfc248cc1" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="cad5cdd0-d031-4ff2-a50d-4bcb3d336dbc" xsi:type="graph:DirectPointer"/>
+      </transitions>
+    </statemachines>
+    <children id="db52f9f0-a56c-4850-940a-c504a1176c33" name="Function Alpha">
+      <metaTypes href="premise:/Base.registry#6522e246-f8f7-41ec-8f9b-70bf51484eb6"/>
+      <metaData name="FHA">
+        <metaData name="F#ID" value="test.01"/>
+        <metaData name="Safety Objective" value="MAYBE"/>
+        <metaData name="Mitigation Objective" value="PASSED"/>
+      </metaData>
+      <statemachines id="8829f865-ec73-4b20-8243-8d2262be6c26" name="Function Alpha Failure State">
+        <metaTypes href="premise:/Base.registry#8021351c-a503-4afc-8d65-768d9ec44f62"/>
+        <modes entryMode="true" id="242336d5-ebb4-453d-aae2-eae6f153a7f2" name="Normal"/>
+        <modes id="79b07bf3-bfe3-4935-9ecc-dd213e79b3b5" name="Function Alpha Failure">
+          <metaTypes href="premise:/Base.registry#67943974-27b7-4e15-85cd-59ee99afe08c"/>
+        </modes>
+        <transitions id="81611928-6707-44ac-9b34-55fc1757d32a" name="F: Function Alpha Failure">
+          <sourcePointer target="242336d5-ebb4-453d-aae2-eae6f153a7f2" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="79b07bf3-bfe3-4935-9ecc-dd213e79b3b5" xsi:type="graph:DirectPointer"/>
+          <parameters id="2ece8276-f51f-41e7-bfc5-c7f2c4847ecd" name="Failure Rate">
+            <value value="0"/>
+          </parameters>
+        </transitions>
+      </statemachines>
+      <statemachines id="70c431d9-d946-4d63-b529-7978ea0d002f" name="Function Beta Failure State">
+        <metaTypes href="premise:/Base.registry#8021351c-a503-4afc-8d65-768d9ec44f62"/>
+        <modes entryMode="true" id="c4a816f4-e36f-4361-a58d-bd89d36d7632" name="Normal"/>
+        <modes id="72a5be25-3b1f-408d-acb5-351d43e75d9b" name="Function Beta Failure">
+          <metaTypes href="premise:/Base.registry#67943974-27b7-4e15-85cd-59ee99afe08c"/>
+        </modes>
+        <transitions id="b634ed2b-61d2-4022-8b6b-aa5f3af990ab" name="F: Function Beta Failure">
+          <sourcePointer target="c4a816f4-e36f-4361-a58d-bd89d36d7632" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="72a5be25-3b1f-408d-acb5-351d43e75d9b" xsi:type="graph:DirectPointer"/>
+          <parameters id="a64e621a-1290-44b7-91c9-2a44d7c1ccd3" name="Failure Rate">
+            <value value="0"/>
+          </parameters>
+        </transitions>
+      </statemachines>
+      <statemachines id="c0b498f0-55ac-4210-ab0f-a75b38ee579d" name="Function Gamma Failure State">
+        <metaTypes href="premise:/Base.registry#8021351c-a503-4afc-8d65-768d9ec44f62"/>
+        <modes entryMode="true" id="bfc4f211-f4d7-4de0-805d-2f866566c092" name="Normal"/>
+        <modes id="8155c2c3-5a86-4056-98c4-63e1b12b4eda" name="Function Gamma Failure">
+          <metaTypes href="premise:/Base.registry#67943974-27b7-4e15-85cd-59ee99afe08c"/>
+        </modes>
+        <transitions id="eef9549d-dafd-48ed-a4a3-a607d1b7e216" name="F: Function Gamma Failure">
+          <sourcePointer target="bfc4f211-f4d7-4de0-805d-2f866566c092" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="8155c2c3-5a86-4056-98c4-63e1b12b4eda" xsi:type="graph:DirectPointer"/>
+          <parameters id="9ba3b517-2c45-46b3-ac1c-357476901c69" name="Failure Rate">
+            <value value="0"/>
+          </parameters>
+        </transitions>
+      </statemachines>
+    </children>
+    <children id="6fcfe47b-c547-44c3-aa33-68ff6dc54caf" name="Function Bravo">
+      <metaTypes href="premise:/Base.registry#6522e246-f8f7-41ec-8f9b-70bf51484eb6"/>
+      <metaData name="FHA">
+        <metaData name="F#ID" value="test.02"/>
+        <metaData name="Safety Objective" value="PASSED"/>
+        <metaData name="Mitigation Objective" value="PASSED"/>
+      </metaData>
+    </children>
+  </usecases>
+</uc:UseCaseRepository>

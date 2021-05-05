@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            category="de.dlr.application.rcp.category.paradise"
+            class="de.dlr.premise.view.graphicaleditorview.GraphicalEditorView"
+            icon="icons/chart_organisation.png"
+            id="de.dlr.premise.view.graphicaleditorview.GraphicalEditorView"
+            name="Association Editor"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="com.example.test">
+         <view
+               id="de.dlr.premise.view.graphicaleditorview.GraphicalEditorView"
+               minimized="false"
+               ratio="0.5"
+               relationship="right"
+               relative="org.eclipse.ui.editorss"
+               visible="true">
+         </view>
+         <viewShortcut
+               id="de.dlr.premise.view.graphicaleditorview.GraphicalEditorView">
+         </viewShortcut>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup
+            class="de.dlr.premise.view.graphicaleditorview.Startup">
+      </startup>
+   </extension>
+
+
+</plugin>

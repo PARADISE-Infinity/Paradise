@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="de.dlr.calc.engine.matlab.ui.MatlabPreferencePage"
+            id="de.dlr.calc.engine.matlab.page"
+            name="Matlab">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="de.dlr.calc.engine.matlab.ui.MatlabPreferenceInitializer">
+      </initializer>
+   </extension>
+   <extension
+         point="de.dlr.calc.engine.combined.calculator">
+      <client
+            class="de.dlr.calc.engine.matlab.ScriptCalculator">
+      </client>
+   </extension>
+
+</plugin>

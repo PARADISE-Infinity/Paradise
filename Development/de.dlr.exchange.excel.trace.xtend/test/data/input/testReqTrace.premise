@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:rep="http://www.dlr.de/ft/premise/representation/2012/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="false"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Show Parameters" value="true"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Edit local statemachines">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <extensions href="testReqTrace.representation#cc45776a-feae-4cf5-aa89-9721ffd76c2e" xsi:type="rep:Representation"/>
+  <projects id="33ff0971-933d-4982-a246-66e26e4b9a5d" name="testReqTrace">
+    <connections>
+<sourcePointer target="358d099d-1ab7-4108-af31-d14b849514aa" xsi:type="graph:DirectPointer"/>
+</connections>
+    <relations>
+<sourcePointer target="358d099d-1ab7-4108-af31-d14b849514aa" xsi:type="graph:DirectPointer"/>
+</relations>
+    <children id="44675b66-9369-4385-a113-37170e166804" name="Component 1" xsi:type="prem:SystemComponent">
+      <children id="0f5bf38f-7583-42ce-9497-843202b6df42" name="Component 1.1" xsi:type="prem:SystemComponent">
+        <children id="9efc3a0e-0155-41d0-976e-66a1dc2b5a06" name="Component 1.1.1" xsi:type="prem:SystemComponent">
+          <satisfies name="50">
+<targetPointer xsi:type="graph:DirectPointer">
+	<target href="testReqTrace.usecase#e1d56a2f-5e62-48fb-bd95-911e872f676c" xsi:type="uc:UseCase"/>
+</targetPointer>
+</satisfies>
+        </children>
+      </children>
+      <children id="ef5cf095-72b1-4854-8bee-205a2d9e13e7" name="Component 1.2" xsi:type="prem:SystemComponent"/>
+    </children>
+    <children id="358d099d-1ab7-4108-af31-d14b849514aa" name="Component 2" xsi:type="prem:SystemComponent">
+      <satisfies name="40">
+<targetPointer xsi:type="graph:DirectPointer">
+	<target href="testReqTrace.usecase#27dc856d-b65e-4c8b-8d6d-18c22d33b676" xsi:type="uc:UseCase"/>
+</targetPointer>
+</satisfies>
+    </children>
+    <children id="0d58538d-10e0-4a1d-b7a0-29e0dacca612" name="Component 3" xsi:type="prem:SystemComponent">
+      <satisfies name="30">
+<targetPointer xsi:type="graph:DirectPointer">
+	<target href="testReqTrace.usecase#dc3f764c-e65b-4d9a-895b-3dda618919c4" xsi:type="uc:UseCase"/>
+</targetPointer>
+</satisfies>
+      <satisfies name="">
+<targetPointer xsi:type="graph:DirectPointer">
+	<target href="testReqTrace.usecase#dc3f764c-e65b-4d9a-895b-3dda618919c4" xsi:type="uc:UseCase"/>
+</targetPointer>
+</satisfies>
+    </children>
+    <children id="eda75d55-d144-4b3a-96ad-9cfdbf82e32a" name="Component 4" xsi:type="prem:SystemComponent">
+      <satisfies name="30">
+<targetPointer xsi:type="graph:DirectPointer">
+	<target href="testReqTrace.usecase#8a682859-36e8-4823-aa47-63d40feb9016" xsi:type="uc:UseCase"/>
+</targetPointer>
+</satisfies>
+    </children>
+    <children id="13f45663-f970-4177-b7aa-5d7dc5a02589" name="Component 6" xsi:type="prem:SystemComponent">
+      <satisfies name="30">
+<targetPointer xsi:type="graph:DirectPointer">
+	<target href="testReqTrace.usecase#d3f34b16-ae55-477a-a890-4fe88246885d" xsi:type="uc:UseCase"/>
+</targetPointer>
+</satisfies>
+    </children>
+  </projects>
+</prem:ProjectRepository>

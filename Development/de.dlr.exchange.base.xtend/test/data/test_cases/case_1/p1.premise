@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:xmi="http://www.omg.org/XMI" metaModel="1.25" xmi:version="2.0">
+  <projects id="a53e31f5-7ecc-495f-81fe-d052a0ed03ad" name="p1.1"/>
+  <projects id="75ebd9a1-bb53-46e3-ad54-1a71e5481119" name="p1.2"/>
+  <projects id="48263fdc-dfe1-45ac-8d5a-589ba9b06d09" name="p1.3"/>
+</prem:ProjectRepository>

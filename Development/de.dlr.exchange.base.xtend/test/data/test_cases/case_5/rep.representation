@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rep:Representation xmlns:rep="http://www.dlr.de/ft/premise/representation/2012/" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="cf552910-c8e0-470b-85c2-d7f8b51d2c86" xmi:version="2.0">
+<selectors name="Node red" query="graph::INode.allInstances()&#13;&#10;-&gt;selectByKind(registry::ADataItem)-&gt;select(Set{'a53e31f5-7ecc-495f-81fe-d052a0ed03ad'}-&gt;includes(id))&#13;&#10;">
+<decorators name="red" value="#EE3B3B" xsi:type="rep:Color"/>
+</selectors>
+</rep:Representation>

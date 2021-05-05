@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" metaModel="1.22">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+    <children name="number representation pattern" value="##0.0###E0"/>
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="false"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Show Parameters" value="true"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Edit local statemachines">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+    </children>
+  </metaData>
+  <projects name="sc" id="f1632fc9-9788-4db6-8f33-a587635deed0">
+    <modes name="entry" id="3934f9de-e89a-4a0e-bd25-0804dd74b265" entryMode="true"/>
+    <modes name="target" id="203a8f2d-1ac6-4073-b78c-38fd94902109"/>
+    <satisfies>
+      <targetPointer xsi:type="comp:DirectPointer">
+        <target xsi:type="uc:UseCase" href="MigrateV122ToV123.usecase#0ce15286-e6c7-4c61-9ab8-2e948d0a401b"/>
+      </targetPointer>
+    </satisfies>
+    <transitions id="6cd8a2e8-2934-40c8-a1ea-e41533b97f57">
+      <sourcePointer xsi:type="comp:DirectPointer" target="3934f9de-e89a-4a0e-bd25-0804dd74b265"/>
+      <targetPointer xsi:type="comp:DirectPointer" target="203a8f2d-1ac6-4073-b78c-38fd94902109"/>
+    </transitions>
+    <children xsi:type="prem:SystemComponent" name="scchild" id="b98de8ae-5948-48a2-aa65-77c89b8719d3">
+      <modes name="childmode" id="3e9a0d5e-d209-4052-81e1-af926033aee9"/>
+      <transitions id="f1ef0228-0b1b-475b-8c28-9908d98ace1a">
+        <targetPointer xsi:type="comp:DirectPointer" target="3e9a0d5e-d209-4052-81e1-af926033aee9"/>
+      </transitions>
+    </children>
+    <children xsi:type="prem:ComponentReference" id="010fd2b9-014d-4df7-adca-cc76596215f3">
+      <componentDefinition href="MigrateV122ToV123.component#814cda75-f3a8-4938-ac2c-6f6c7fdfd21e"/>
+      <activeImplementation href="MigrateV122ToV123.component#17e64868-38e4-457e-a6fb-ba9836a027f9"/>
+    </children>
+  </projects>
+</prem:ProjectRepository>

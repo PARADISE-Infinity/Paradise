@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="off"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Group Elements" value="false"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Edit local statemachines">
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <metaData name="Export">
+    <metaData name="GraphML/StateMachines">
+      <metaData name="Transition constraints" value="on"/>
+      <metaData name="Links between referenced foreign mode and their origin" value="off"/>
+      <metaData name="Color for referenced foreign modes and edges (default grey: #AAAAAA)" value="#AAAAAA"/>
+    </metaData>
+  </metaData>
+  <projects id="1bd03067-b420-49ba-8649-6cd80f2faa1d" name="PowerTrainSystem">
+    <statemachines id="fb9a6040-26a5-4c99-b2e2-644108df4974" name="PowerTrainSystem">
+      <modes entryMode="true" id="1e65961f-2c70-4bf5-8037-4bfc3f4c9887" name="healthy"/>
+      <modes entryMode="true" id="dfe106ff-e07a-4ced-ac97-fd50c9479e24" name="degraded"/>
+      <modes id="fed212d4-32db-4ff6-82e9-81b4fc892aef" name="failure"/>
+      <transitions id="ff91dade-4a01-4449-8f29-a88ab5978e25">
+        <sourcePointer target="1e65961f-2c70-4bf5-8037-4bfc3f4c9887" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="dfe106ff-e07a-4ced-ac97-fd50c9479e24" xsi:type="graph:DirectPointer"/>
+        <condition junction="AND" xsi:type="elem:GuardCombination">
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="cbb26ca5-29a4-421d-a56b-925b2d0441ae" xsi:type="graph:DirectPointer"/>
+</children>
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="857fcf40-e250-4614-8c18-e7687a7d79c7" xsi:type="graph:DirectPointer"/>
+</children>
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="70a9bd5c-060f-42ce-8f07-f1c6c3a1cef4" xsi:type="graph:DirectPointer"/>
+</children>
+        </condition>
+      </transitions>
+      <transitions id="c64dce7b-0e35-493a-9f74-51eead4e8468">
+        <targetPointer target="fed212d4-32db-4ff6-82e9-81b4fc892aef" xsi:type="graph:DirectPointer"/>
+        <condition xsi:type="elem:GuardCombination">
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="80acfdfe-42e2-4dbe-b3b1-01ff94afc501" xsi:type="graph:DirectPointer"/>
+</children>
+          <children junction="AND" xsi:type="elem:GuardCombination">
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="857fcf40-e250-4614-8c18-e7687a7d79c7" xsi:type="graph:DirectPointer"/>
+</children>
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="a9615320-5305-4d65-93f8-7ed146739eb9" xsi:type="graph:DirectPointer"/>
+</children>
+          </children>
+        </condition>
+      </transitions>
+    </statemachines>
+    <parameters id="8d0a78e6-e593-427e-ad9c-67afacb05a7f" name="failureRate">
+      <value value="0.0"/>
+      <modeValues value="0.011099999999999999">
+<modePointers target="80acfdfe-42e2-4dbe-b3b1-01ff94afc501" xsi:type="graph:DirectPointer"/>
+<modePointers target="857fcf40-e250-4614-8c18-e7687a7d79c7" xsi:type="graph:DirectPointer"/>
+<modePointers target="a9615320-5305-4d65-93f8-7ed146739eb9" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      <modeValues value="0.0011">
+<modePointers target="fed212d4-32db-4ff6-82e9-81b4fc892aef" xsi:type="graph:DirectPointer"/>
+<modePointers target="857fcf40-e250-4614-8c18-e7687a7d79c7" xsi:type="graph:DirectPointer"/>
+<modePointers target="70a9bd5c-060f-42ce-8f07-f1c6c3a1cef4" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      <modeValues value="0.0101">
+<modePointers target="80acfdfe-42e2-4dbe-b3b1-01ff94afc501" xsi:type="graph:DirectPointer"/>
+<modePointers target="a6080534-84d6-4005-b239-855aec7519cc" xsi:type="graph:DirectPointer"/>
+<modePointers target="a9615320-5305-4d65-93f8-7ed146739eb9" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      <modeValues value="0.0101">
+<modePointers target="80acfdfe-42e2-4dbe-b3b1-01ff94afc501" xsi:type="graph:DirectPointer"/>
+<modePointers target="c09c8fd6-5326-4ab2-9cd0-ba4cde0eb436" xsi:type="graph:DirectPointer"/>
+<modePointers target="a9615320-5305-4d65-93f8-7ed146739eb9" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      <modeValues value="1.0E-4">
+<modePointers target="80acfdfe-42e2-4dbe-b3b1-01ff94afc501" xsi:type="graph:DirectPointer"/>
+<modePointers target="a6080534-84d6-4005-b239-855aec7519cc" xsi:type="graph:DirectPointer"/>
+<modePointers target="70a9bd5c-060f-42ce-8f07-f1c6c3a1cef4" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      <modeValues value="1.0E-4">
+<modePointers target="80acfdfe-42e2-4dbe-b3b1-01ff94afc501" xsi:type="graph:DirectPointer"/>
+<modePointers target="c09c8fd6-5326-4ab2-9cd0-ba4cde0eb436" xsi:type="graph:DirectPointer"/>
+<modePointers target="70a9bd5c-060f-42ce-8f07-f1c6c3a1cef4" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      <modeValues value="0.011">
+<modePointers target="fed212d4-32db-4ff6-82e9-81b4fc892aef" xsi:type="graph:DirectPointer"/>
+<modePointers target="cbb26ca5-29a4-421d-a56b-925b2d0441ae" xsi:type="graph:DirectPointer"/>
+<modePointers target="857fcf40-e250-4614-8c18-e7687a7d79c7" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      <modeValues value="0.0010">
+<modePointers target="dfe106ff-e07a-4ced-ac97-fd50c9479e24" xsi:type="graph:DirectPointer"/>
+<modePointers target="857fcf40-e250-4614-8c18-e7687a7d79c7" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      <modeValues value="0.01">
+<modePointers target="cbb26ca5-29a4-421d-a56b-925b2d0441ae" xsi:type="graph:DirectPointer"/>
+<modePointers target="a6080534-84d6-4005-b239-855aec7519cc" xsi:type="graph:DirectPointer"/>
+<modePointers target="a9615320-5305-4d65-93f8-7ed146739eb9" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      <modeValues value="0.01">
+<modePointers target="cbb26ca5-29a4-421d-a56b-925b2d0441ae" xsi:type="graph:DirectPointer"/>
+<modePointers target="c09c8fd6-5326-4ab2-9cd0-ba4cde0eb436" xsi:type="graph:DirectPointer"/>
+<modePointers target="a9615320-5305-4d65-93f8-7ed146739eb9" xsi:type="graph:DirectPointer"/>
+</modeValues>
+    </parameters>
+    <parameters id="07ae0ec7-074a-4fc3-9bd4-9de10eeede4b" name="probe">
+      <value/>
+      <modeValues uncertainty="">
+<modePointers target="fed212d4-32db-4ff6-82e9-81b4fc892aef" xsi:type="graph:DirectPointer"/>
+</modeValues>
+    </parameters>
+    <balancings function="PowerTrainSystem.failureRate = &lt;unknown function&gt;(Control.failureRate, DriveTrain.failureRate, Monitoring___Protection.failureRate)" name="Sum">
+      <actualSources key="Control.failureRate">
+        <value target="3db7135f-b852-4c3a-9fa0-404709ab4731" xsi:type="graph:DirectPointer"/>
+      </actualSources>
+      <actualSources key="DriveTrain.failureRate">
+        <value target="b7969574-437e-4584-9f5c-05f5146b06b7" xsi:type="graph:DirectPointer"/>
+      </actualSources>
+      <actualSources key="Monitoring___Protection.failureRate">
+        <value target="95083008-86b1-47e1-983d-57a65065fe7d" xsi:type="graph:DirectPointer"/>
+      </actualSources>
+      <actualTarget key="PowerTrainSystem.failureRate">
+        <value target="8d0a78e6-e593-427e-ad9c-67afacb05a7f" xsi:type="graph:DirectPointer"/>
+      </actualTarget>
+    </balancings>
+    <children id="31e4b35e-e204-4f24-bdea-9d4c1690cce2" name="Control" xsi:type="prem:SystemComponent">
+      <statemachines id="fd71853a-d3f6-41b5-a796-f2c673f53072" name="Control">
+        <modes entryMode="true" id="cbb26ca5-29a4-421d-a56b-925b2d0441ae" name="c.healthy"/>
+        <modes id="80acfdfe-42e2-4dbe-b3b1-01ff94afc501" name="c.failure"/>
+        <transitions id="d9435f93-907b-41bc-a1c4-23361390a1bf">
+          <sourcePointer target="cbb26ca5-29a4-421d-a56b-925b2d0441ae" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="80acfdfe-42e2-4dbe-b3b1-01ff94afc501" xsi:type="graph:DirectPointer"/>
+        </transitions>
+      </statemachines>
+      <parameters id="3db7135f-b852-4c3a-9fa0-404709ab4731" name="failureRate">
+        <value value="0"/>
+        <modeValues value="1.0E-4">
+<modePointers target="80acfdfe-42e2-4dbe-b3b1-01ff94afc501" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      </parameters>
+    </children>
+    <children id="15ddb2c8-e2ab-494e-98b2-ed8b3a64cb3a" name="DriveTrain" xsi:type="prem:SystemComponent">
+      <statemachines id="0b6f6b0e-fad8-48ea-9d75-f7df2ff3967b" name="DriveTrain">
+        <modes entryMode="true" id="a6080534-84d6-4005-b239-855aec7519cc" name="d.active"/>
+        <modes entryMode="true" id="c09c8fd6-5326-4ab2-9cd0-ba4cde0eb436" name="d.inactive"/>
+        <modes id="857fcf40-e250-4614-8c18-e7687a7d79c7" name="d.failure"/>
+        <transitions id="d349035b-519b-417a-9430-efaa06ec99b6">
+          <sourcePointer target="a6080534-84d6-4005-b239-855aec7519cc" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="c09c8fd6-5326-4ab2-9cd0-ba4cde0eb436" xsi:type="graph:DirectPointer"/>
+        </transitions>
+        <transitions id="94cc135c-e78b-4bd2-9ff1-395e39e9a446">
+          <sourcePointer target="c09c8fd6-5326-4ab2-9cd0-ba4cde0eb436" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="a6080534-84d6-4005-b239-855aec7519cc" xsi:type="graph:DirectPointer"/>
+        </transitions>
+        <transitions id="124f329f-bf83-405f-9d40-207ec8cbfbf3">
+          <targetPointer target="857fcf40-e250-4614-8c18-e7687a7d79c7" xsi:type="graph:DirectPointer"/>
+        </transitions>
+      </statemachines>
+      <parameters id="b7969574-437e-4584-9f5c-05f5146b06b7" name="failureRate">
+        <value value="0"/>
+        <modeValues value="1.0E-3">
+<modePointers target="857fcf40-e250-4614-8c18-e7687a7d79c7" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      </parameters>
+    </children>
+    <children id="3e80e602-78fd-4439-b788-e0eb15112451" name="Monitoring &amp; Protection" xsi:type="prem:SystemComponent">
+      <statemachines id="72abc7e3-92ed-4da2-a6c0-557bc324979a" name="Monitoring &amp; Protection">
+        <modes entryMode="true" id="70a9bd5c-060f-42ce-8f07-f1c6c3a1cef4" name="mp.healthy"/>
+        <modes id="a9615320-5305-4d65-93f8-7ed146739eb9" name="mp.failure"/>
+        <transitions id="78387df5-ef2a-469e-ac93-7ab4324ee7cc">
+          <sourcePointer target="70a9bd5c-060f-42ce-8f07-f1c6c3a1cef4" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="a9615320-5305-4d65-93f8-7ed146739eb9" xsi:type="graph:DirectPointer"/>
+        </transitions>
+      </statemachines>
+      <parameters id="95083008-86b1-47e1-983d-57a65065fe7d" name="failureRate">
+        <value value="0"/>
+        <modeValues value="1.0E-2">
+<modePointers target="a9615320-5305-4d65-93f8-7ed146739eb9" xsi:type="graph:DirectPointer"/>
+</modeValues>
+      </parameters>
+    </children>
+  </projects>
+</prem:ProjectRepository>

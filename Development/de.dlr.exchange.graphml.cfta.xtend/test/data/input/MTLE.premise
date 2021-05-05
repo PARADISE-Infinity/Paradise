@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="false"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Show Parameters" value="true"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Edit local statemachines">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <metaData name="Export">
+    <metaData name="GraphML/CFTA">
+      <metaData name="Parameter names containing one of the following are skipped in diagram" value="SkippedParamName, _, tmp"/>
+      <metaData name="Component names containing one of the following are skipped (parent name is taken instead)" value="modes, _"/>
+    </metaData>
+  </metaData>
+  <projects id="157cf1d2-422e-46f5-8a50-0b4848203a51" name="Top Component">
+    <statemachines name="Total System Failure State">
+      <modes entryMode="true" id="ca65be8c-e0de-4adf-86f5-63b3f9a72865" name="Normal"/>
+      <modes id="5de0724b-ccc3-4de4-892f-6dbb2ce9541c" name="Total System Failure"/>
+      <transitions id="2ad2c92b-3720-4c11-9ace-4cc09c73c0d1" name="F: Total System Failure">
+        <sourcePointer target="ca65be8c-e0de-4adf-86f5-63b3f9a72865" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="5de0724b-ccc3-4de4-892f-6dbb2ce9541c" xsi:type="graph:DirectPointer"/>
+        <condition junction="AND" xsi:type="elem:GuardCombination">
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="90436b5c-97e4-4f01-a46b-10dbc3f44f1d" xsi:type="graph:DirectPointer"/>
+</children>
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="251e8d7c-9dee-43e9-9a3a-b6f01ac9a407" xsi:type="graph:DirectPointer"/>
+</children>
+        </condition>
+        <parameters id="81e9770a-0688-40f1-aa4e-9eace4caeb78" name="Failure Rate">
+          <value value="24.0"/>
+        </parameters>
+        <balancings name="Top" target="81e9770a-0688-40f1-aa4e-9eace4caeb78">
+        </balancings>
+      </transitions>
+    </statemachines>
+    <statemachines name="System Degraded State">
+      <modes entryMode="true" id="733b5085-0dca-45ad-9653-5045d16f4cc0" name="Normal"/>
+      <modes id="fbd28a51-ce42-47f2-8870-50a2a1a7ba3e" name="System Degraded"/>
+      <transitions id="f920a2b6-9d96-4846-a19c-31c41dfc73d0" name="F: System Degraded">
+        <sourcePointer target="733b5085-0dca-45ad-9653-5045d16f4cc0" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="fbd28a51-ce42-47f2-8870-50a2a1a7ba3e" xsi:type="graph:DirectPointer"/>
+        <condition junction="AND" xsi:type="elem:GuardCombination">
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="251e8d7c-9dee-43e9-9a3a-b6f01ac9a407" xsi:type="graph:DirectPointer"/>
+</children>
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="ff07bdf8-372d-49c8-82bf-21b5bb7a7409" xsi:type="graph:DirectPointer"/>
+</children>
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="02668329-7841-43f2-b7dc-7919f1c0188a" xsi:type="graph:DirectPointer"/>
+</children>
+        </condition>
+        <parameters id="72ac00d8-b1a9-48b2-bc4c-8c597266ea24" name="Failure Rate">
+          <value value="6.0"/>
+        </parameters>
+        <balancings target="72ac00d8-b1a9-48b2-bc4c-8c597266ea24">
+        </balancings>
+      </transitions>
+    </statemachines>
+    <children id="970d1c66-1fe7-4851-9f19-3f9c579f7787" name="Child 1" xsi:type="prem:SystemComponent">
+      <statemachines name="Child 1 Failure">
+        <modes entryMode="true" id="45360ce6-dd15-48f6-84e8-18ac0445800a" name="Normal"/>
+        <modes id="90436b5c-97e4-4f01-a46b-10dbc3f44f1d" name="Failure"/>
+        <transitions id="da39767a-77f6-4e6d-850e-72c7e5817cbf" name="F_Chil">
+          <sourcePointer target="45360ce6-dd15-48f6-84e8-18ac0445800a" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="90436b5c-97e4-4f01-a46b-10dbc3f44f1d" xsi:type="graph:DirectPointer"/>
+          <condition xsi:type="elem:GuardCombination">
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="128f6b9b-2fcc-4f63-bbc9-eb905498298b" xsi:type="graph:DirectPointer"/>
+</children>
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="c6e6789a-a01b-4e0e-afec-b9b43b48a717" xsi:type="graph:DirectPointer"/>
+</children>
+          </condition>
+          <parameters id="6fa06ee7-27d2-4789-b530-01ea04754e01" name="Failure Rate">
+            <value value="4.0"/>
+          </parameters>
+          <balancings target="6fa06ee7-27d2-4789-b530-01ea04754e01">
+          </balancings>
+        </transitions>
+      </statemachines>
+      <statemachines name="Internal Failure State">
+        <modes entryMode="true" id="08ade41b-52a0-42b6-8543-63199fdde814" name="Normal"/>
+        <modes id="128f6b9b-2fcc-4f63-bbc9-eb905498298b" name="Internal Failure"/>
+        <transitions id="5573613a-f8e6-4df6-9e15-9e254fba32dc" name="F: Internal Failure">
+          <sourcePointer target="08ade41b-52a0-42b6-8543-63199fdde814" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="128f6b9b-2fcc-4f63-bbc9-eb905498298b" xsi:type="graph:DirectPointer"/>
+          <parameters id="42da4625-11ce-4928-a1df-a8da25bd945d" name="Failure Rate">
+            <value value="2"/>
+          </parameters>
+        </transitions>
+      </statemachines>
+      <children id="b2eede4c-4583-472e-8f89-3849c841c016" name="Subchild 1" xsi:type="prem:SystemComponent">
+        <statemachines name="Subchild 1 Failure">
+          <modes entryMode="true" id="58fd4988-42a0-4913-81c5-68f8e12d50f0" name="Normal"/>
+          <modes id="c6e6789a-a01b-4e0e-afec-b9b43b48a717" name="Failure"/>
+          <transitions id="b0b851e6-141d-4201-9497-50c486576869" name="F_Subc">
+            <sourcePointer target="58fd4988-42a0-4913-81c5-68f8e12d50f0" xsi:type="graph:DirectPointer"/>
+            <targetPointer target="c6e6789a-a01b-4e0e-afec-b9b43b48a717" xsi:type="graph:DirectPointer"/>
+            <parameters id="d8ae1b24-b053-4a13-aa60-2987c94f653d" name="Failure Rate">
+              <value value="2"/>
+            </parameters>
+          </transitions>
+        </statemachines>
+      </children>
+    </children>
+    <children id="af0faa70-6ecf-4655-8b1a-deb337a70150" name="Child 2" xsi:type="prem:SystemComponent">
+      <statemachines name="Child 2 Failure">
+        <modes entryMode="true" id="4dfa871d-78a2-4a33-851c-67d98821fb49" name="Normal"/>
+        <modes id="251e8d7c-9dee-43e9-9a3a-b6f01ac9a407" name="Failure"/>
+        <transitions id="0f8b64f7-df56-4fc6-bac2-65511a80e656" name="F_Chil">
+          <sourcePointer target="4dfa871d-78a2-4a33-851c-67d98821fb49" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="251e8d7c-9dee-43e9-9a3a-b6f01ac9a407" xsi:type="graph:DirectPointer"/>
+          <condition xsi:type="elem:GuardCombination">
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="028afb76-bdd8-4709-9bb1-dc0e6fa12ed6" xsi:type="graph:DirectPointer"/>
+</children>
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="26cd878c-e306-4559-898c-d6a8cf2f66f4" xsi:type="graph:DirectPointer"/>
+</children>
+          </condition>
+          <parameters id="c84fcf18-2104-4a79-b9d3-6043560342ce" name="Failure Rate">
+            <value value="6.0"/>
+          </parameters>
+          <balancings target="c84fcf18-2104-4a79-b9d3-6043560342ce">
+          </balancings>
+        </transitions>
+      </statemachines>
+      <children id="0d914391-e7f8-4b08-8013-c22692a29260" name="Subchild 2" xsi:type="prem:SystemComponent">
+        <statemachines name="Subchild 2 Failure">
+          <modes entryMode="true" id="31c3ae5d-cefe-4bf4-8d6a-469201eeeea1" name="Normal"/>
+          <modes id="028afb76-bdd8-4709-9bb1-dc0e6fa12ed6" name="Failure"/>
+          <transitions id="d76121d6-ccd5-4f5d-8c97-38b60813510a" name="F_Subc">
+            <sourcePointer target="31c3ae5d-cefe-4bf4-8d6a-469201eeeea1" xsi:type="graph:DirectPointer"/>
+            <targetPointer target="028afb76-bdd8-4709-9bb1-dc0e6fa12ed6" xsi:type="graph:DirectPointer"/>
+            <condition xsi:type="elem:GuardCombination">
+              <children xsi:type="elem:ModeGuard">
+<modePointer target="1f5bd0c5-d9ed-4d39-8074-22e919e6bb9e" xsi:type="graph:DirectPointer"/>
+</children>
+              <children xsi:type="elem:ModeGuard">
+<modePointer target="086c0b5e-a69d-48f6-88c6-b7a3e2f02e75" xsi:type="graph:DirectPointer"/>
+</children>
+            </condition>
+            <parameters id="f119d2c3-65c8-4ffa-ba41-b8ba3fe3d910" name="Failure Rate">
+              <value value="2"/>
+            </parameters>
+            <balancings target="f119d2c3-65c8-4ffa-ba41-b8ba3fe3d910">
+            </balancings>
+          </transitions>
+        </statemachines>
+        <statemachines name="Environmental Failure State">
+          <modes entryMode="true" id="546da5ea-83c5-4f19-b33c-0aa3ca559be3" name="Normal"/>
+          <modes id="1f5bd0c5-d9ed-4d39-8074-22e919e6bb9e" name="Environmental Failure"/>
+          <transitions id="2ab6dccf-7198-4d72-ad56-cc2426999123" name="F: Environmental Failure">
+            <sourcePointer target="546da5ea-83c5-4f19-b33c-0aa3ca559be3" xsi:type="graph:DirectPointer"/>
+            <targetPointer target="1f5bd0c5-d9ed-4d39-8074-22e919e6bb9e" xsi:type="graph:DirectPointer"/>
+            <parameters id="b72cc399-4525-449a-997f-87472625ffcb" name="Failure Rate">
+              <value value="2"/>
+            </parameters>
+          </transitions>
+        </statemachines>
+        <statemachines name="Electrical Failure State">
+          <modes entryMode="true" id="e39c1539-d31d-44a9-8978-aed4ccbe0321" name="Normal"/>
+          <modes id="086c0b5e-a69d-48f6-88c6-b7a3e2f02e75" name="Electrical Failure"/>
+          <transitions id="e886ba52-0f1d-42e1-ad3a-53b492bb31fc" name="F: Electrical Failure">
+            <sourcePointer target="e39c1539-d31d-44a9-8978-aed4ccbe0321" xsi:type="graph:DirectPointer"/>
+            <targetPointer target="086c0b5e-a69d-48f6-88c6-b7a3e2f02e75" xsi:type="graph:DirectPointer"/>
+            <parameters id="a34949c5-4367-47d4-9d79-3f051a6bc5b6" name="Failure Rate">
+              <value value="2"/>
+            </parameters>
+          </transitions>
+        </statemachines>
+      </children>
+      <children id="98a929ae-e080-46ad-ab9b-184e3b57a1b1" name="Subchild 3" xsi:type="prem:SystemComponent">
+        <statemachines name="Subchild 3 Failure">
+          <modes entryMode="true" id="4158665b-8f2a-4593-a587-8e2854e2f057" name="Normal"/>
+          <modes id="26cd878c-e306-4559-898c-d6a8cf2f66f4" name="Failure"/>
+          <transitions id="09a7fc1c-2bfc-4f3d-b5c8-cd57ebb2a89d" name="F_Subc">
+            <sourcePointer target="4158665b-8f2a-4593-a587-8e2854e2f057" xsi:type="graph:DirectPointer"/>
+            <targetPointer target="26cd878c-e306-4559-898c-d6a8cf2f66f4" xsi:type="graph:DirectPointer"/>
+            <condition xsi:type="elem:GuardCombination">
+              <children xsi:type="elem:ModeGuard">
+<modePointer target="8ddbaeb1-a2a5-447f-9f88-e3160569ea5b" xsi:type="graph:DirectPointer"/>
+</children>
+              <children xsi:type="elem:ModeGuard">
+<modePointer target="f00a1605-a71f-406e-a435-aab080f10fa4" xsi:type="graph:DirectPointer"/>
+</children>
+            </condition>
+            <parameters id="f2908797-ea63-403e-9972-dd509977544b" name="Failure Rate">
+              <value value="4.0"/>
+            </parameters>
+            <balancings target="f2908797-ea63-403e-9972-dd509977544b">
+            </balancings>
+          </transitions>
+        </statemachines>
+        <statemachines name="Ommission Failure State">
+          <modes entryMode="true" id="457dc67b-5d79-4c07-97a7-41d614fcfcfb" name="Normal"/>
+          <modes id="8ddbaeb1-a2a5-447f-9f88-e3160569ea5b" name="Ommission Failure"/>
+          <transitions id="12d19858-0446-4e31-9c2e-f43e9e084994" name="F: Ommission Failure">
+            <sourcePointer target="457dc67b-5d79-4c07-97a7-41d614fcfcfb" xsi:type="graph:DirectPointer"/>
+            <targetPointer target="8ddbaeb1-a2a5-447f-9f88-e3160569ea5b" xsi:type="graph:DirectPointer"/>
+            <parameters id="120f4679-7168-4ea7-9ffe-482691503496" name="Failure Rate">
+              <value value="2"/>
+            </parameters>
+          </transitions>
+        </statemachines>
+        <statemachines name="Commission Failure State">
+          <modes entryMode="true" id="618e6dc4-558e-4fa2-b0c6-4ab2add493fe" name="Normal"/>
+          <modes id="f00a1605-a71f-406e-a435-aab080f10fa4" name="Commission Failure"/>
+          <transitions id="a5cd5914-52f5-409a-a938-b93a8890389e" name="F: Commission Failure">
+            <sourcePointer target="618e6dc4-558e-4fa2-b0c6-4ab2add493fe" xsi:type="graph:DirectPointer"/>
+            <targetPointer target="f00a1605-a71f-406e-a435-aab080f10fa4" xsi:type="graph:DirectPointer"/>
+            <parameters id="8f592c8f-13c7-42c3-bf81-a192fb75ab6a" name="Failure Rate">
+              <value value="2"/>
+            </parameters>
+          </transitions>
+        </statemachines>
+      </children>
+    </children>
+    <children id="25360141-1c18-4990-b78b-11daa9d8108b" name="Environment" xsi:type="prem:SystemComponent">
+      <statemachines name="Hazardous Condition State">
+        <modes entryMode="true" id="24d7f246-e225-4d73-903d-918045acdbf1" name="Normal"/>
+        <modes id="ff07bdf8-372d-49c8-82bf-21b5bb7a7409" name="Hazardous Condition"/>
+        <transitions id="3d7373a0-999a-458d-a319-e3eb93f54ef6" name="F: Hazardous Condition">
+          <sourcePointer target="24d7f246-e225-4d73-903d-918045acdbf1" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="ff07bdf8-372d-49c8-82bf-21b5bb7a7409" xsi:type="graph:DirectPointer"/>
+          <parameters id="83669a91-b19e-450e-be34-6bea2a7a1ae2" name="Failure Rate">
+            <value value="0"/>
+          </parameters>
+        </transitions>
+      </statemachines>
+      <statemachines name="Environment Failure State">
+        <modes entryMode="true" id="65c75bc8-d59f-4890-a8fa-8e89bc58db55" name="Normal"/>
+        <modes id="02668329-7841-43f2-b7dc-7919f1c0188a" name="Environment Failure"/>
+        <transitions id="48d155b4-4f2d-4526-aaa3-bdbfbf7be700" name="F: Environment Failure">
+          <sourcePointer target="65c75bc8-d59f-4890-a8fa-8e89bc58db55" xsi:type="graph:DirectPointer"/>
+          <targetPointer target="02668329-7841-43f2-b7dc-7919f1c0188a" xsi:type="graph:DirectPointer"/>
+          <parameters id="d840012b-b4cf-485d-81f2-53e77375f9e1" name="Failure Rate">
+            <value value="0"/>
+          </parameters>
+        </transitions>
+      </statemachines>
+    </children>
+  </projects>
+</prem:ProjectRepository>

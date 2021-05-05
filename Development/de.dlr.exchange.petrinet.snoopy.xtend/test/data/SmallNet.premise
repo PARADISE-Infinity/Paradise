@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.25" xmi:version="2.0" xsi:schemaLocation="http://www.dlr.de/ft/premise/2010/ ../../../de.dlr.ft.premise/model/PREMISE_system.ecore">
+  <projects id="ab6363ed-353b-4fc3-9593-7b187c443350" name="Umwelt">
+  <statemachines name="Umwelt">
+<modes entryMode="true" id="00c87ff6-b5de-4787-b1b1-6a119b9f86cb" name="Windstille" xsi:type="elem:Mode"/>
+<modes entryMode="false" id="d3c50d75-c68f-45b0-a771-cb1c3d6ebd31" name="Wind" xsi:type="elem:Mode"/>
+<transitions id="07d06f81-5df6-46f0-add2-d42168d61477">
+<sourcePointer target="00c87ff6-b5de-4787-b1b1-6a119b9f86cb" xsi:type="graph:DirectPointer"/>
+<targetPointer target="d3c50d75-c68f-45b0-a771-cb1c3d6ebd31" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="87052009-c60a-4b00-a4dd-bf211967f2d0" name="">
+<sourcePointer target="d3c50d75-c68f-45b0-a771-cb1c3d6ebd31" xsi:type="graph:DirectPointer"/>
+<targetPointer target="00c87ff6-b5de-4787-b1b1-6a119b9f86cb" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</projects>
+</prem:ProjectRepository>

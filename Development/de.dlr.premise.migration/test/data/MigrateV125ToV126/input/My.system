@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" metaModel="1.25">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+    <children name="number representation pattern" value="##0.0###E0"/>
+  </metaData>
+  <registries href="My.registry#/"/>
+  <functionPools href="My.functionpool#/"/>
+  <projects id="efd2add8-58fd-4d2f-b5ac-ebeb73adbf40">
+    <satisfies>
+      <targetPointer xsi:type="graph:DirectPointer">
+        <target xsi:type="uc:UseCase" href="My.function#2ff46a8d-5efa-4312-9322-d6d22106542b"/>
+      </targetPointer>
+    </satisfies>
+    <parameters name="P1" id="da84b7a2-340f-4c76-870d-4fac98923a88">
+      <value value="15.708"/>
+      <unit href="My.registry#cd"/>
+      <satisfies>
+        <targetPointer xsi:type="graph:DirectPointer">
+          <target xsi:type="uc:RequiredParameter" href="My.function#7569c0a5-20c5-4966-ba3d-0b4a413737ea"/>
+        </targetPointer>
+      </satisfies>
+    </parameters>
+    <parameters name="P2" id="36f85aec-63d3-4802-b586-eb9858377b05">
+      <value value="5"/>
+      <unit href="My.registry#m/s2"/>
+    </parameters>
+    <balancings function="P1 = pi * P2">
+      <actualSources key="P2">
+        <value xsi:type="graph:DirectPointer" target="36f85aec-63d3-4802-b586-eb9858377b05"/>
+      </actualSources>
+      <actualSources key="pi">
+        <value xsi:type="graph:DirectPointer">
+          <target xsi:type="reg:Constant" href="My.registry#1435a2aa-917e-4261-abcc-eab89aaedae0"/>
+        </value>
+      </actualSources>
+      <actualTarget key="P1">
+        <value xsi:type="graph:DirectPointer" target="da84b7a2-340f-4c76-870d-4fac98923a88"/>
+      </actualTarget>
+    </balancings>
+  </projects>
+</prem:ProjectRepository>

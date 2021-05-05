@@ -1,0 +1,273 @@
+PARADISE - The Parametric Architecture Designer for Integrated Systems Engineering 
+===================================================================================
+
+1.25.0
+-----------------------------------------------
+- Use filter in json export
+- Add requirements export
+- Various bug fixes
+- New splash screen
+
+1.24.0
+-----------------------------------------------
+- Allow Relations between all model nodes
+- Restrict depth in Association Editor
+- Add Unit to ParameterDefinition
+- Allow boolean logic for condition of UseCase
+- Make DSM/Trace-Exporter more performant
+- Add option to infer depth for traceability
+- Export Parameter Value and RequiredParameter ValueConstraint into GraphML
+- Bug fix: Queries not working with same queries in multiple files
+- Bug fix: Filter not always working directly after opening a file
+- Bug fix: Validation markers sometimes not correctly deleted
+
+1.23.4
+-----------------------------------------------
+- Parallelize validation
+- Improve performance of model constraints
+- Bug fix: Prevent excessive editor refreshing blocking important actions in the UI thread
+- Bug fix: Prevent showing File Conflict Dialog multiple times
+- Bug fix: Fix wrong elided number representation
+
+
+1.23.3
+-----------------------------------------------
+- Implement keyboard shortcuts for creating relationships
+- Bug fix: Allow creating Relations/Connections with ComponentReference as source in Association Editor
+- Bug fix: Fix multiple validations running in parallel and causing excessive CPU consumption
+- Bug fixes: Make Parameter Viewer more stable
+
+1.23.2
+-----------------------------------------------
+- Bug fix: Wrong behavior of the FHA export fixed
+
+1.23.1
+-----------------------------------------------
+- Bug fix: Fix not being able to reference needed Modes from ModeValueRefs
+
+1.23.0
+-----------------------------------------------
+- Improving UI of FHA Wizard
+- Create parameter substitution in ComponentReference
+- Filtering RequieredParameter
+- Adding new Representations in GraphML Block Exporter
+- Improvement of Representation mainly for GraphML
+- New left > right Layout in association editor
+- Adding Modes into ComponentReferences
+- Merge GraphML Exporter into one
+- Adding LabelDecorator
+- In line editing for MetaData
+
+BugFixes
+- ComponentRef auto calculation
+- Query problems while multiple selection
+- Update of new added files after changes 
+- Exception after external change of files
+- Fix Migration Problems for Model V1.26 > V1.27
+
+1.22.0
+-----------------------------------------------
+- Add new icons
+- Improve labels of use case and component references
+- Add a base registry to every new created project
+- Reload model after an external change
+- Use queries for representation
+- Add functional hazard analysis and synchronization with FHA templates
+- Round outputs in tradeoff
+BugFixes: 
+- copy/paste in tree viewer
+- missing parameter from component references in ParameterViewer
+- containment relation always in black
+- use satisfy instead of relation in TraceExporter
+- path problems in Tradeoff Export
+- trace generator problems when model contains parameters
+- null pointer exception for use case trace export
+
+
+1.21.0
+-----------------------------------------------
+- Simplify Transition Balancings
+	- Sources are now determined automatically from the Transition's Guard
+	- Functions for Mode Combination Junctions are selected automatically
+- Transition Balancing now supports XOR and VOTE Junction
+- Safety Editor can automatically add a generic fault tree and generic component faults
+- Add new Base.registry with common units and Meta Types
+- Bug fix: Fix some edge cases when using Balancings with Component References
+- Bug fix: Fix not being able to use Ctrl+C in inline editor
+- Bug fix: Fix TradeOff Exporter setting evaluationWeight to 1 when exporting mmodels
+
+1.20.2
+-----------------------------------------------
+- Various bug fixes
+
+1.20.1
+-----------------------------------------------
+- Bug fix: Some changes to the model (e.g. deletes) where not made visible automatically
+
+1.20.0
+-----------------------------------------------
+- Integrate query-capabilities into the main editor
+- Bug fix: Balancing.Function editor window not showing up in component references
+- Bug fix: Unload Resource in Component-Editor
+
+1.12.0
+-----------------------------------------------
+- Add Component Fault Tree (CFT) exporter
+- Add Safety Editor to simplify creation of failure state machines
+- Bug fix: Mode-based calculation now works with modes from all model files
+- Minor bug fixes
+
+1.11.1
+-----------------------------------------------
+- Bug fix: Make DSM and Traceability exporters work with ComponentReferences
+- Bug fix: Fix creation of Satisfy-Edges in Association Editor
+
+1.11.0
+-----------------------------------------------
+- Extend GraphML Block Exporter to support all node and edge types
+- Extend JSON Exporter to export content of ComponentReferences
+- Bug Fix: Inconsistent workspace encoding
+
+1.10.0
+-----------------------------------------------
+- Extend Component model to allow connections, relations and incoming calculations
+- JSON exporter and JSON parameter importer
+- Bug fix: Fix missing edges in GraphML Block exports
+- Bug fix: Inline editor for Parameters handles empty names and values correctly
+
+1.9.0
+-----------------------------------------------
+- Rework state machine model
+- Allow editing of parameter value in parameter label
+- Allow resource unloading
+
+1.8.0
+-----------------------------------------------
+- Add state machine editing to association editor
+- Add GraphMLBlock exporter with export wizard
+
+1.7.4
+-----------------------------------------------
+- Bug fix: Satisfying of required parameters of child usecases was not possible
+
+1.7.3
+-----------------------------------------------
+- Add custom color editor
+- Bug fix: MetaTypeFilter in Representation now works for edges
+- Bug fix: Icons are updated when MetaType is changed
+
+
+1.7.2
+-----------------------------------------------
+- Bug fix: ComponentReferences respect DataTypeNames option and line breaks in label
+- Bug fix: Auto Layout after edge deletion is no longer performed if disabled
+- Bug fix: Connection validation handles ComponentReferences
+- Minor bug fixes
+
+1.7.1
+-----------------------------------------------
+- Bug fix: ComponentDefinitions now get a new ID on copy
+- Bug fix: ComponentDefinitions respect DataTypeNames option and line breaks in label
+
+1.7.0
+-----------------------------------------------
+- Modify CTRL-P adds Parameter and RequiredParameter also when the focus on Parameter and RequiredParameter
+- Add the feature to export MetaDatas into the GraphML exporter
+- Add CTRL+SHIFT+N to create sibling and CTRL+N to create a child
+- Add button to disable automatic layout in the Association Editor
+- Implement ComponentDefintions, allowing reuse and variants of SystemComponents via ComponentRepositories
+
+1.6.2
+-----------------------------------------------
+- Fix Relations not having MetaData
+
+1.6.1
+-----------------------------------------------
+- Move location of update server
+
+1.6
+-----------------------------------------------
+- Added Association Editor
+- Added new calculation system
+	- Balancings now have a function as a text attribute
+	- In the function simple calculations (+, -, *, /, %, ^) can be performed directly
+	- It is also possible to call preexisting functions defined in matlab or excel (via the functionpool mechanism)
+	- Functions use the xbase expression syntax (https://www.eclipse.org/Xtext/documentation/305_xbase.html#xbase-language-ref-expressions)
+- Added filtering for tree editor
+
+1.5.3_20160121
+-----------------------------------------------
+- minor bug fixes
+  - remove bug in state exporter
+
+1.5.3 Parameter Viewer
+-----------------------------------------------
+- Added the Parameter Viewer View for Parameter studies
+
+1.5.2
+-----------------------------------------------
+02.09.2015
+- bug fix in graphML exporter
+
+- Paradise adding update service for FT user
+- MATLAB calculation engine
+  - the preferences can be set either by properties, or by a preferences window
+  - MATLAB supports a multi-calculation mode, therefore MATLAB stay open until 
+    Paradise will be closed
+
+1.5.1
+-----------------------------------------------
+- Introducing the export of Design Structure Matrices (DSM)
+
+1.5.0 Enhanced usability & export capabilities
+-----------------------------------------------
+-Model Editor
+	-Inline editing of tree nodes (use SPACE key)
+	-More short cuts
+	-Number representation in scientific format
+-Architecture Exporter (GraphML)
+	-Representation of hierarchy by groups
+	-Paremeters and their dependencies included in diagram
+	-Optional selection of hierarchy depth
+-Architecture View (GraphML)
+	-Modeling of elements and relations (like traceability) in yEd tool
+-TradeOff Exporter
+	-Full implementation of solutions ranking via relative and absolute (against reference) comparisons
+
+
+1.4.0 ParadimShift full implemented
+------------------------------------
+
+
+1.3.0 Validate Parameter values
+--------------------------------
+- introducing 
+  - modelling use cases for problem domain description
+  - tracing from a usecase into a solution (system component)
+  - validation of system parameter values
+- adding USECASE into PREMISE model and minor bug fixes, therefore creating 
+  a new Premise model 1.10
+
+Features
+ - splitting excel and matlab calculation engines
+   - de.dlr.calc.engine 1.1.6
+   - introduce matlab calc engine de.dlr.calc.engine.matlab
+   - introduce excel  calc engine de.dlr.calc.engine.excel
+   
+  - generate correct matlab parameter files
+    - de.dlr.exchange.matlab.struct 1.1.0   
+
+
+1.2.0 New Year release
+-------------------------
+- Introduction of F8 feature for document linking
+- Rename ModeMapping into Transition, therefore creating a new PREMISE 
+  model 1.07
+- minor bug fixings
+
+
+1.1.7 Actuation 2015 FaultTree Exchange
+----------------------------------------
+- add prototype OpenFTA fault tree import
+- add prototype FaultTree+ fault tree exporter
+- fix icon problems 

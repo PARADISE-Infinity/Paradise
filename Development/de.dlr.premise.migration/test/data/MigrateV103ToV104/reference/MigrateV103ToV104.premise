@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:xmi="http://www.omg.org/XMI" metaModel="1.04" xmi:version="2.0">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+  </metaData>
+  <projects id="4413c1c5-32e1-4a01-9187-1780468bb51f">
+    <metaTypes href="test.registry#d7bf50f6-c0c4-4685-b14f-6ea59e9aa151">
+    </metaTypes>
+    <metaTypes href="test.registry#45ba3bd4-0564-4d43-9356-d75360db916b">
+    </metaTypes>
+    <metaTypes href="test.registry#d7bf50f6-c0c4-4685-b14f-6ea59e9aa151">
+    </metaTypes>
+    <metaTypes/>
+  </projects>
+</prem:ProjectRepository>

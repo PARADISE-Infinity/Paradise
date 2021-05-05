@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.28" xmi:version="2.0">
+  <metaData name="View">
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Group Elements" value="false"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Edit local statemachines">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+    </children>
+  </metaData>
+  <usecases id="73d8241c-2dfe-40da-9b95-30cdcae852b7" name="uc">
+    <connections name="connection in a uc">
+      <sourcePointer target="e7714b04-73cb-40a4-ba88-96138242fb4f" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="c54cec7b-9a2a-4bb3-9328-6be52e282929" xsi:type="graph:DirectPointer"/>
+    </connections>
+    <relations name="relation in a uc">
+      <sourcePointer target="e7714b04-73cb-40a4-ba88-96138242fb4f" xsi:type="graph:DirectPointer"/>
+      <targetPointer target="c54cec7b-9a2a-4bb3-9328-6be52e282929" xsi:type="graph:DirectPointer"/>
+    </relations>
+    <children id="e7714b04-73cb-40a4-ba88-96138242fb4f" name="uc1"/>
+    <children id="c54cec7b-9a2a-4bb3-9328-6be52e282929" name="uc2"/>
+  </usecases>
+</uc:UseCaseRepository>

@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Exchange Block Diagram GraphML
+Bundle-SymbolicName: de.dlr.exchange.graphml.block;singleton:=true
+Bundle-Version: 1.25.0.qualifier
+Bundle-Vendor: www.dlr.de/ft/ssy
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.xtend.lib,
+ org.eclipse.xtend.lib.macro,
+ com.google.guava,
+ org.eclipse.xtext.xbase.lib,
+ de.dlr.exchange.base.xtend;bundle-version="1.1.1",
+ org.eclipse.xtext;bundle-version="2.7.3",
+ org.eclipse.xtext.builder;bundle-version="2.7.3",
+ de.dlr.premise;bundle-version="1.4.0",
+ org.eclipse.emf.edit.ui;bundle-version="2.10.2",
+ de.dlr.premise.editor;bundle-version="1.4.0",
+ org.junit;resolution:=optional
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: de.dlr.exchange.graphml.block
+Automatic-Module-Name: de.dlr.exchange.graphml.block
+

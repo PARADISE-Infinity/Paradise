@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="component" nsURI="http://www.dlr.de/premise/component/2016/"
+    nsPrefix="comp">
+  <eAnnotations source="http://www.eclipse.org/OCL/Import">
+    <details key="elem" value="PREMISE_Element.ecore#/"/>
+    <details key="prem" value="PREMISE_System.ecore#/"/>
+    <details key="reg" value="PREMISE_Registry.ecore#/"/>
+  </eAnnotations>
+  <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+    <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Satisfies">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="TargetValid"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="TargetValid" value="Tuple {&#xD;&#xA;&#x9;message : String = 'Satisfies: Target must be child of element satisfied by parent.',&#xD;&#xA;&#x9;status : Boolean = self.queryIsValidTargetPointerValue(self.target)&#xD;&#xA;}.status"/>
+    </eAnnotations>
+    <eTypeParameters name="S">
+      <eBounds eClassifier="ecore:EClass PREMISE_Graph.ecore#//INode"/>
+    </eTypeParameters>
+    <eTypeParameters name="T">
+      <eBounds eClassifier="#//ISatisfieable"/>
+    </eTypeParameters>
+    <eOperations name="queryIsValidTargetPointerValue" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.component.impl.my.util.SatisfiesHelper.queryIsValidTargetPointerValue(this, target);"/>
+      </eAnnotations>
+      <eParameters name="target" lowerBound="1">
+        <eGenericType eTypeParameter="#//Satisfies/T"/>
+      </eParameters>
+    </eOperations>
+    <eOperations name="setTarget">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="de.dlr.premise.util.PointerHelper.delegateSetToPointer(this, ComponentPackage.Literals.SATISFIES__TARGET_POINTER, newTarget);"/>
+      </eAnnotations>
+      <eParameters name="newTarget">
+        <eGenericType eTypeParameter="#//Satisfies/T"/>
+      </eParameters>
+    </eOperations>
+    <eOperations name="getSourcePointers" upperBound="-1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.element.impl.my.util.IEdgeHelper.getSourcePointers(this);"/>
+      </eAnnotations>
+      <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+        <eTypeArguments eTypeParameter="#//Satisfies/S"/>
+      </eGenericType>
+    </eOperations>
+    <eOperations name="getTargetPointers" upperBound="-1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.element.impl.my.util.IEdgeHelper.getTargetPointers(this);"/>
+      </eAnnotations>
+      <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+        <eTypeArguments eTypeParameter="#//Satisfies/T"/>
+      </eGenericType>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="get" value="return de.dlr.premise.util.PointerHelper.delegateGetToPointer(this, ComponentPackage.Literals.SATISFIES__SOURCE_POINTER);"/>
+      </eAnnotations>
+      <eGenericType eTypeParameter="#//Satisfies/S"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="get" value="return de.dlr.premise.util.PointerHelper.delegateGetToPointer(this, ComponentPackage.Literals.SATISFIES__TARGET_POINTER);"/>
+      </eAnnotations>
+      <eGenericType eTypeParameter="#//Satisfies/T"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourcePointer" changeable="false"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="get" value="return de.dlr.premise.component.impl.my.util.SatisfiesHelper.getSourcePointer(this);"/>
+      </eAnnotations>
+      <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+        <eTypeArguments eTypeParameter="#//Satisfies/S"/>
+      </eGenericType>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetPointer" containment="true">
+      <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+        <eTypeArguments eTypeParameter="#//Satisfies/T"/>
+      </eGenericType>
+    </eStructuralFeatures>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//IMetaTypable"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Graph.ecore#//IEdge">
+      <eTypeArguments eTypeParameter="#//Satisfies/S"/>
+      <eTypeArguments eTypeParameter="#//Satisfies/T"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ISatisfying" abstract="true" interface="true"
+      eSuperTypes="PREMISE_Graph.ecore#//INode">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="ISatisfying is a interface that is added to any type that can have satisfy&#xD;&#xA;Relationships to other types. It has two generic type parameters which determine&#xD;&#xA;valid sources (S) and targets (T) for the satisfy relationship. &#xD;&#xA;&#xD;&#xA;S is always the type itself and only needed since the type doesn't know on which&#xD;&#xA;concrete class it is applied. T is either a concrete satisfieable type or a&#xD;&#xA;marker interface (subtype of ISatisfieable) to allow a type to have satisfy&#xD;&#xA;relationships to multiple other types."/>
+    </eAnnotations>
+    <eTypeParameters name="S">
+      <eBounds eClassifier="ecore:EClass PREMISE_Graph.ecore#//INode"/>
+    </eTypeParameters>
+    <eTypeParameters name="T">
+      <eBounds eClassifier="#//ISatisfieable"/>
+    </eTypeParameters>
+    <eOperations name="getSatisfiedSatisfieables" upperBound="-1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.component.impl.my.util.ISatisfyingHelper.getSatisfiedSatisfieables(this);"/>
+      </eAnnotations>
+      <eGenericType eTypeParameter="#//ISatisfying/T"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="satisfies" upperBound="-1"
+        containment="true">
+      <eGenericType eClassifier="#//Satisfies">
+        <eTypeArguments eTypeParameter="#//ISatisfying/S"/>
+        <eTypeArguments eTypeParameter="#//ISatisfying/T"/>
+      </eGenericType>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ISatisfyingRoot" abstract="true" interface="true">
+    <eTypeParameters name="S">
+      <eBounds eClassifier="ecore:EClass PREMISE_Graph.ecore#//INode"/>
+    </eTypeParameters>
+    <eTypeParameters name="T">
+      <eBounds eClassifier="#//ISatisfieable"/>
+    </eTypeParameters>
+    <eGenericSuperTypes eClassifier="#//ISatisfying">
+      <eTypeArguments eTypeParameter="#//ISatisfyingRoot/S"/>
+      <eTypeArguments eTypeParameter="#//ISatisfyingRoot/T"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ISatisfieable" abstract="true" interface="true"
+      eSuperTypes="PREMISE_Graph.ecore#//INode">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="ISatisfieable is a marker interface for any types that can be satsfied by other&#xD;&#xA;model element. For example, a UseCase can be satisfied by a SystemComponent and&#xD;&#xA;a ParameterDefinition by a Parameter.&#xD;&#xA;&#xD;&#xA;Note that a type will usually only be able to satisfy a subset of all possible&#xD;&#xA;satisfieable types. UseCases for example my not be satisfied by a Parameter. &#xD;&#xA;&#xD;&#xA;To facilitate this, subtypes of ISatisfieable exist for the different satisfying&#xD;&#xA;types: ISystemComponentSatisfieable for SystemComponent,&#xD;&#xA;IComponentReferenceSatisfieable for ComponentReference, IParameterSatisfieable&#xD;&#xA;for Parameter and IModeSatisfieable for Mode."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ISystemComponentSatisfieable" abstract="true"
+      interface="true" eSuperTypes="#//ISatisfieable">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Marker interface: Types that implement this interface can be satisfied by a &#xD;&#xA;SystemComponent."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IComponentReferenceSatisfieable" abstract="true"
+      interface="true" eSuperTypes="#//ISatisfieable">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Marker interface: Types that implement this interface can be satisfied by a &#xD;&#xA;ComponentReference."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IParameterSatisfieable" abstract="true"
+      interface="true" eSuperTypes="#//ISatisfieable">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Marker interface: Types that implement this interface can be satisfied by a &#xD;&#xA;Parameter."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IModeSatisfieable" abstract="true" interface="true"
+      eSuperTypes="#//ISatisfieable">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Marker interface: Types that implement this interface can be satisfied by a &#xD;&#xA;Mode."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IUseCaseSatisfieable" abstract="true"
+      interface="true" eSuperTypes="#//ISatisfieable">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Marker interface: Types that implement this interface can be satisfied by a &#xD;&#xA;UseCase."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IDefinition" abstract="true" interface="true">
+    <eTypeParameters name="T">
+      <eBounds eClassifier="ecore:EClass PREMISE_Graph.ecore#//INode"/>
+    </eTypeParameters>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ComponentReferencePointer">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="Valid"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="Valid" value="Tuple{ &#xA;&#x9;&#x9;&#x9;status = isValid(),&#xA;&#x9;&#x9;&#x9;message = 'Reference to a definition must be valid'&#xA;&#x9;&#x9;}.status"/>
+    </eAnnotations>
+    <eTypeParameters name="T">
+      <eBounds eClassifier="ecore:EClass PREMISE_Graph.ecore#//INode"/>
+    </eTypeParameters>
+    <eOperations name="isValid" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="componentReference &lt;> null&#xA;and componentReference.componentDefinition &lt;> null&#xA;and componentReference.activeImplementation &lt;> null&#xA;and definition &lt;> null&#xA;and &#xA;&#x9;(componentReference.componentDefinition = definition or componentReference.componentDefinition = definition.oclAsType(ocl::OclElement).oclContainer())"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="componentReference" eType="ecore:EClass PREMISE_System.ecore#//ComponentReference"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="definition">
+      <eGenericType eClassifier="#//IDefinition">
+        <eTypeArguments eTypeParameter="#//ComponentReferencePointer/T"/>
+      </eGenericType>
+    </eStructuralFeatures>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+      <eTypeArguments eTypeParameter="#//ComponentReferencePointer/T"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ComponentReferenceDirectPointer">
+    <eTypeParameters name="T"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="relativeScope" upperBound="-1"
+        eType="ecore:EClass PREMISE_System.ecore#//ComponentReference"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Graph.ecore#//DirectPointer">
+      <eTypeArguments eTypeParameter="#//ComponentReferenceDirectPointer/T"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ComponentRepository" eSuperTypes="PREMISE_Element.ecore#//ARepository">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="definitions" upperBound="-1"
+        eType="#//ComponentDefinition" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="components" upperBound="-1"
+        eType="ecore:EClass PREMISE_System.ecore#//SystemComponent" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ComponentDefinition">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameters" upperBound="-1"
+        eType="#//ParameterDefinition" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modes" upperBound="-1"
+        eType="#//ModeDefinition" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="children" upperBound="-1"
+        eType="#//ChildComponentDefinition" containment="true"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//ADataItem"/>
+    <eGenericSuperTypes eClassifier="#//IDefinition">
+      <eTypeArguments eClassifier="ecore:EClass PREMISE_System.ecore#//SystemComponent"/>
+    </eGenericSuperTypes>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//IMetaTypable"/>
+    <eGenericSuperTypes eClassifier="#//ISystemComponentSatisfieable"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ChildComponentDefinition">
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//ADataItem"/>
+    <eGenericSuperTypes eClassifier="#//IDefinition">
+      <eTypeArguments eClassifier="ecore:EClass PREMISE_System.ecore#//SystemComponent"/>
+    </eGenericSuperTypes>
+    <eGenericSuperTypes eClassifier="#//ISystemComponentSatisfieable"/>
+    <eGenericSuperTypes eClassifier="#//IComponentReferenceSatisfieable"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ParameterDefinition">
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//ADataItem"/>
+    <eGenericSuperTypes eClassifier="#//IDefinition">
+      <eTypeArguments eClassifier="ecore:EClass PREMISE_System.ecore#//Parameter"/>
+    </eGenericSuperTypes>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//IMetaTypable"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//IQuantity"/>
+    <eGenericSuperTypes eClassifier="#//IParameterSatisfieable"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ModeDefinition">
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//ADataItem"/>
+    <eGenericSuperTypes eClassifier="#//IDefinition">
+      <eTypeArguments eClassifier="ecore:EClass PREMISE_Element.ecore#//Mode"/>
+    </eGenericSuperTypes>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//IMetaTypable"/>
+    <eGenericSuperTypes eClassifier="#//IModeSatisfieable"/>
+  </eClassifiers>
+</ecore:EPackage>

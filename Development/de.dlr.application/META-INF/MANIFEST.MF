@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: PARADISE Application
+Bundle-SymbolicName: de.dlr.application
+Bundle-Version: 1.25.0.qualifier
+Export-Package: de.dlr.application
+Bundle-Vendor: www.dlr.de/ft/ssy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: de.dlr.application

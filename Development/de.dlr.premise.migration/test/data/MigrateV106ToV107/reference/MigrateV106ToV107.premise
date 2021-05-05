@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:val="http://www.dlr.de/ft/premise/validated/2013/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.07" xmi:version="2.0">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+  </metaData>
+  <projects id="7a6498ce-e4ee-4ab3-ad61-99f1fd45bb28" name="as">
+    <parameters id="7701e345-93c8-450f-bc57-05d3f69373cd" xsi:type="val:Parameter"/>
+    <transitions id="3951541b-a2e2-4c6b-9e71-ad441665775c" xsi:type="val:Transition">
+      <parameters id="af5080b5-fa61-44f2-a159-a11d3cb7f13c"/>
+    </transitions>
+    <balancings name="Multiply" target="ca73678e-af45-42d5-b45b-eac67343b727" xsi:type="val:Balancing">
+      <sources href="#7cd2f081-ddea-48c7-9581-9a758029a865" xsi:type="val:Parameter"/>
+      <sources href="#5e495434-7813-4493-810e-e1bfe56422da" xsi:type="val:Parameter"/>
+      <sources href="Registry.premise.registry#60b07a7e-23a7-482a-b069-495cd2cbb0e3" xsi:type="reg:Constant"/>
+      <sources href="Registry.premise.registry#62700bc9-2779-4209-b832-ed26fbcf5868" xsi:type="reg:Constant"/>
+    </balancings>
+  </projects>
+</prem:ProjectRepository>

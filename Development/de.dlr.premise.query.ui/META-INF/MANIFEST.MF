@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: de.dlr.premise.query.ui
+Bundle-Version: 1.25.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Name: Ui
+Bundle-Vendor: DLR
+Export-Package: de.dlr.premise.query.ui
+Require-Bundle: org.eclipse.ocl.xtext.essentialocl.ui,
+ de.dlr.premise;bundle-version="1.10.0"
+Automatic-Module-Name: de.dlr.premise.query.ui
+

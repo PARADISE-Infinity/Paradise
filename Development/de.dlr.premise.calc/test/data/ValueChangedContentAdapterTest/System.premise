@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="false"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Show Parameters" value="true"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Edit local statemachines">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <functionPools href="Functions.functionpool#/"/>
+  <projects id="23b1ab88-119c-4d74-9f57-9c3ffed86818" name="Component1">
+    <parameters id="450bb416-9ea0-4e0d-be50-0cabd966ab9f" name="Source">
+      <value uncertainty="" value="1"/>
+      <modeValues uncertainty="" value="1">
+<modePointers target="3bbfb095-25b2-4222-9946-7aaff795f527" xsi:type="graph:DirectPointer"/>
+</modeValues>
+    </parameters>
+    <parameters id="154ba3d4-b004-4472-b4f1-21a96f3da204" name="Target">
+      <value value="1"/>
+      <modeValues value="1">
+<modePointers target="3bbfb095-25b2-4222-9946-7aaff795f527" xsi:type="graph:DirectPointer"/>
+</modeValues>
+    </parameters>
+    <balancings function="Target = Source" name="Balancing1">
+      <actualSources key="Source">
+<value target="450bb416-9ea0-4e0d-be50-0cabd966ab9f" xsi:type="graph:DirectPointer"/>
+</actualSources>
+      <actualTarget key="Target">
+<value target="154ba3d4-b004-4472-b4f1-21a96f3da204" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+    </balancings>
+  <statemachines name="Component1">
+<modes entryMode="true" id="3bbfb095-25b2-4222-9946-7aaff795f527" name="Mode A"/>
+<modes entryMode="true" id="d5ea0e7c-e3a9-4997-b63c-640761a67c44" name="Mode B"/>
+<transitions id="b7790021-b5b9-43f0-9b55-5be2eab6c0a0">
+<sourcePointer target="3bbfb095-25b2-4222-9946-7aaff795f527" xsi:type="graph:DirectPointer"/>
+<targetPointer target="d5ea0e7c-e3a9-4997-b63c-640761a67c44" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</projects>
+  <projects id="7333ff50-9728-4fa2-b6a9-ce19c7526698" name="Component2">
+  <statemachines name="Component2">
+<modes entryMode="true" id="ed646124-5cfe-45c1-9567-bb59846d5888" name="C"/>
+<modes entryMode="true" id="174b0285-9f12-4ee0-913f-8d65d16f3103" name="D"/>
+<modes entryMode="true" id="d6378f1b-3c12-4ff2-b166-e46be79d662a" name="E"/>
+<modes entryMode="true" id="9ff02fbd-f194-4574-b50c-16b77b95d39f" name="F"/>
+<transitions id="9c8ea595-15c9-46f4-ad45-2663a8a03bfc">
+      <condition xsi:type="elem:ModeGuard">
+<modePointer target="174b0285-9f12-4ee0-913f-8d65d16f3103" xsi:type="graph:DirectPointer"/>
+</condition>
+      <parameters id="deb7ff52-99b0-4016-8c65-2a4de3764273" name="Target">
+        <value uncertainty="" value="1"/>
+      </parameters>
+      <balancings target="deb7ff52-99b0-4016-8c65-2a4de3764273">
+      </balancings>
+    <sourcePointer target="ed646124-5cfe-45c1-9567-bb59846d5888" xsi:type="graph:DirectPointer"/>
+<targetPointer target="174b0285-9f12-4ee0-913f-8d65d16f3103" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions id="40dedea2-667f-4295-a06c-b45a5f389803">
+      <parameters id="2821f06e-8742-4c88-beed-27b4c6851912" name="Source">
+        <value value="1"/>
+      </parameters>
+    <sourcePointer target="d6378f1b-3c12-4ff2-b166-e46be79d662a" xsi:type="graph:DirectPointer"/>
+<targetPointer target="9ff02fbd-f194-4574-b50c-16b77b95d39f" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</projects>
+</prem:ProjectRepository>

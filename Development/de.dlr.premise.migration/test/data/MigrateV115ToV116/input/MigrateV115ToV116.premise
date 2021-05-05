@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:prem="http://www.dlr.de/ft/premise/2010/" metaModel="1.15">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+    <children name="number representation pattern" value="##0.0###E0"/>
+  </metaData>
+  <projects name="Root" id="8512422c-38b4-4d82-94e5-a9f5d6dc3a51">
+    <connections target="6f043787-85b2-4023-82e7-5b9545d6f90e"/>
+    <connections source="6f043787-85b2-4023-82e7-5b9545d6f90e" target="8512422c-38b4-4d82-94e5-a9f5d6dc3a51"/>
+    <relations target="6f043787-85b2-4023-82e7-5b9545d6f90e"/>
+    <relations source="6f043787-85b2-4023-82e7-5b9545d6f90e" target="8512422c-38b4-4d82-94e5-a9f5d6dc3a51"/>
+    <children name="Child" id="6f043787-85b2-4023-82e7-5b9545d6f90e"/>
+  </projects>
+</prem:ProjectRepository>

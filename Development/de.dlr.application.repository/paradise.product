@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="PARADISE" uid="de.dlr.paradise" id="de.dlr.application.rcp.full" application="de.dlr.application.rcp.application" version="1.25.0.qualifier" useFeatures="false" includeLaunchers="true">
+
+   <aboutInfo>
+      <image path="/de.dlr.application.rcp/DLR_About.png"/>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="/de.dlr.application.rcp/icons/dlr16white.png" i32="/de.dlr.application.rcp/icons/dlr32.png" i48="/de.dlr.application.rcp/icons/dlr.png"/>
+
+   <splash
+      location="de.dlr.application.rcp"
+      startupProgressRect="20,275,430,15"
+      startupMessageRect="20,260,430,15"
+      startupForegroundColor="000000" />
+   <launcher name="PARADISE">
+      <win useIco="false">
+         <bmp
+            winSmallHigh="/de.dlr.application.rcp/icons/16.bmp"
+            winMediumHigh="/de.dlr.application.rcp/icons/32.bmp"
+            winLargeHigh="/de.dlr.application.rcp/icons/48.bmp"/>
+      </win>
+   </launcher>
+
+   <vm>
+      <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</windows>
+   </vm>
+
+   <plugins>
+      <plugin id="com.google.guava"/>
+      <plugin id="com.google.inject"/>
+      <plugin id="com.ibm.icu"/>
+      <plugin id="de.dlr.application" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.application.lib.excel" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.application.rcp" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.calc.engine" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.calc.engine.combined" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.calc.engine.dsl" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.calc.engine.dsl.ui" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.calc.engine.dsl.xtext" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.calc.engine.dsl.xtext.ui" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.calc.engine.excel" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.calc.engine.java" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.calc.engine.matlab" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.exchange.base.xtend" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.exchange.excel.fha" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.exchange.excel.requirements" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.exchange.excel.trace.xtend" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.exchange.excel.tradeoff.xtend" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.exchange.graphml.block" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.exchange.graphml.cfta.xtend" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.exchange.graphml.fta.xtend" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.exchange.graphml.states.xtend" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.exchange.json.structure" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.exchange.matlab.struct.xtend" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.exchange.petrinet.base.xtend" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.exchange.petrinet.pnml.pipe.xtend" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.exchange.petrinet.snoopy.xtend" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.premise" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.premise.calc" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.premise.calc.ui" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.premise.constraints" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.premise.constraints.ui" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.premise.edit" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.premise.editor" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.premise.migration" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.premise.ocl.hacks" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.premise.query" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.premise.query.ui" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.premise.representation.ui" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.premise.states" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.premise.util" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.premise.validation" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.premise.validation.ui" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.premise.view.GraphicalEditorView" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.premise.view.ParameterViewer" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.premise.view.SafetyView" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.premise.view.graphml" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.premise.view.graphml.ui" version="1.25.0.qualifier"/>
+      <plugin id="de.dlr.premise.xtext" version="1.25.0.qualifier"/>
+      <plugin id="javax.annotation"/>
+      <plugin id="javax.inject"/>
+      <plugin id="lpg.runtime.java"/>
+      <plugin id="org.antlr.runtime"/>
+      <plugin id="org.apache.batik.css"/>
+      <plugin id="org.apache.batik.util"/>
+      <plugin id="org.apache.commons.cli"/>
+      <plugin id="org.apache.commons.jxpath"/>
+      <plugin id="org.apache.commons.lang"/>
+      <plugin id="org.apache.commons.logging"/>
+      <plugin id="org.apache.felix.scr"/>
+      <plugin id="org.apache.log4j"/>
+      <plugin id="org.eclipse.ant.core"/>
+      <plugin id="org.eclipse.compare"/>
+      <plugin id="org.eclipse.compare.core"/>
+      <plugin id="org.eclipse.core.commands"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.databinding"/>
+      <plugin id="org.eclipse.core.databinding.observable"/>
+      <plugin id="org.eclipse.core.databinding.property"/>
+      <plugin id="org.eclipse.core.expressions"/>
+      <plugin id="org.eclipse.core.filebuffers"/>
+      <plugin id="org.eclipse.core.filesystem"/>
+      <plugin id="org.eclipse.core.filesystem.win32.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.resources"/>
+      <plugin id="org.eclipse.core.resources.win32.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.core.variables"/>
+      <plugin id="org.eclipse.debug.core"/>
+      <plugin id="org.eclipse.debug.ui"/>
+      <plugin id="org.eclipse.e4.core.commands"/>
+      <plugin id="org.eclipse.e4.core.contexts"/>
+      <plugin id="org.eclipse.e4.core.di"/>
+      <plugin id="org.eclipse.e4.core.di.annotations"/>
+      <plugin id="org.eclipse.e4.core.di.extensions"/>
+      <plugin id="org.eclipse.e4.core.di.extensions.supplier"/>
+      <plugin id="org.eclipse.e4.core.services"/>
+      <plugin id="org.eclipse.e4.emf.xpath"/>
+      <plugin id="org.eclipse.e4.ui.bindings"/>
+      <plugin id="org.eclipse.e4.ui.css.core"/>
+      <plugin id="org.eclipse.e4.ui.css.swt"/>
+      <plugin id="org.eclipse.e4.ui.css.swt.theme"/>
+      <plugin id="org.eclipse.e4.ui.di"/>
+      <plugin id="org.eclipse.e4.ui.model.workbench"/>
+      <plugin id="org.eclipse.e4.ui.services"/>
+      <plugin id="org.eclipse.e4.ui.widgets"/>
+      <plugin id="org.eclipse.e4.ui.workbench"/>
+      <plugin id="org.eclipse.e4.ui.workbench.addons.swt"/>
+      <plugin id="org.eclipse.e4.ui.workbench.renderers.swt"/>
+      <plugin id="org.eclipse.e4.ui.workbench.swt"/>
+      <plugin id="org.eclipse.e4.ui.workbench3"/>
+      <plugin id="org.eclipse.ecf"/>
+      <plugin id="org.eclipse.ecf.filetransfer"/>
+      <plugin id="org.eclipse.ecf.identity"/>
+      <plugin id="org.eclipse.ecf.provider.filetransfer"/>
+      <plugin id="org.eclipse.ecf.provider.filetransfer.ssl" fragment="true"/>
+      <plugin id="org.eclipse.ecf.ssl" fragment="true"/>
+      <plugin id="org.eclipse.emf.codegen"/>
+      <plugin id="org.eclipse.emf.codegen.ecore"/>
+      <plugin id="org.eclipse.emf.common"/>
+      <plugin id="org.eclipse.emf.common.ui"/>
+      <plugin id="org.eclipse.emf.compare"/>
+      <plugin id="org.eclipse.emf.ecore"/>
+      <plugin id="org.eclipse.emf.ecore.change"/>
+      <plugin id="org.eclipse.emf.ecore.edit"/>
+      <plugin id="org.eclipse.emf.ecore.editor"/>
+      <plugin id="org.eclipse.emf.ecore.xmi"/>
+      <plugin id="org.eclipse.emf.edit"/>
+      <plugin id="org.eclipse.emf.edit.ui"/>
+      <plugin id="org.eclipse.emf.mapping.ecore2xml"/>
+      <plugin id="org.eclipse.emf.mwe.core"/>
+      <plugin id="org.eclipse.emf.mwe.utils"/>
+      <plugin id="org.eclipse.emf.mwe2.language"/>
+      <plugin id="org.eclipse.emf.mwe2.language.ui"/>
+      <plugin id="org.eclipse.emf.mwe2.launch"/>
+      <plugin id="org.eclipse.emf.mwe2.lib"/>
+      <plugin id="org.eclipse.emf.mwe2.runtime"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.bidi"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.ds"/>
+      <plugin id="org.eclipse.equinox.event"/>
+      <plugin id="org.eclipse.equinox.frameworkadmin"/>
+      <plugin id="org.eclipse.equinox.frameworkadmin.equinox"/>
+      <plugin id="org.eclipse.equinox.p2.artifact.repository"/>
+      <plugin id="org.eclipse.equinox.p2.core"/>
+      <plugin id="org.eclipse.equinox.p2.director"/>
+      <plugin id="org.eclipse.equinox.p2.director.app"/>
+      <plugin id="org.eclipse.equinox.p2.engine"/>
+      <plugin id="org.eclipse.equinox.p2.garbagecollector"/>
+      <plugin id="org.eclipse.equinox.p2.jarprocessor"/>
+      <plugin id="org.eclipse.equinox.p2.metadata"/>
+      <plugin id="org.eclipse.equinox.p2.metadata.repository"/>
+      <plugin id="org.eclipse.equinox.p2.operations"/>
+      <plugin id="org.eclipse.equinox.p2.publisher"/>
+      <plugin id="org.eclipse.equinox.p2.publisher.eclipse"/>
+      <plugin id="org.eclipse.equinox.p2.repository"/>
+      <plugin id="org.eclipse.equinox.p2.repository.tools"/>
+      <plugin id="org.eclipse.equinox.p2.touchpoint.eclipse"/>
+      <plugin id="org.eclipse.equinox.p2.touchpoint.natives"/>
+      <plugin id="org.eclipse.equinox.p2.transport.ecf"/>
+      <plugin id="org.eclipse.equinox.p2.ui"/>
+      <plugin id="org.eclipse.equinox.p2.ui.sdk.scheduler"/>
+      <plugin id="org.eclipse.equinox.p2.updatechecker"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.equinox.security"/>
+      <plugin id="org.eclipse.equinox.security.ui"/>
+      <plugin id="org.eclipse.equinox.security.win32.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.equinox.simpleconfigurator"/>
+      <plugin id="org.eclipse.equinox.simpleconfigurator.manipulator"/>
+      <plugin id="org.eclipse.help"/>
+      <plugin id="org.eclipse.jdt.compiler.apt" fragment="true"/>
+      <plugin id="org.eclipse.jdt.compiler.tool" fragment="true"/>
+      <plugin id="org.eclipse.jdt.core"/>
+      <plugin id="org.eclipse.jdt.core.manipulation"/>
+      <plugin id="org.eclipse.jdt.debug"/>
+      <plugin id="org.eclipse.jdt.launching"/>
+      <plugin id="org.eclipse.jdt.ui"/>
+      <plugin id="org.eclipse.jface"/>
+      <plugin id="org.eclipse.jface.databinding"/>
+      <plugin id="org.eclipse.jface.text"/>
+      <plugin id="org.eclipse.ltk.core.refactoring"/>
+      <plugin id="org.eclipse.ltk.ui.refactoring"/>
+      <plugin id="org.eclipse.ocl.common"/>
+      <plugin id="org.eclipse.ocl.common.ui"/>
+      <plugin id="org.eclipse.ocl.pivot"/>
+      <plugin id="org.eclipse.ocl.xtext.base"/>
+      <plugin id="org.eclipse.ocl.xtext.base.ui"/>
+      <plugin id="org.eclipse.ocl.xtext.essentialocl"/>
+      <plugin id="org.eclipse.ocl.xtext.essentialocl.ui"/>
+      <plugin id="org.eclipse.ocl.xtext.markup"/>
+      <plugin id="org.eclipse.ocl.xtext.markup.ui"/>
+      <plugin id="org.eclipse.ocl.xtext.oclinecore"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.osgi.compatibility.state" fragment="true"/>
+      <plugin id="org.eclipse.osgi.services"/>
+      <plugin id="org.eclipse.osgi.util"/>
+      <plugin id="org.eclipse.pde.build"/>
+      <plugin id="org.eclipse.pde.core"/>
+      <plugin id="org.eclipse.search"/>
+      <plugin id="org.eclipse.swt"/>
+      <plugin id="org.eclipse.swt.win32.win32.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.team.core"/>
+      <plugin id="org.eclipse.team.ui"/>
+      <plugin id="org.eclipse.text"/>
+      <plugin id="org.eclipse.ui"/>
+      <plugin id="org.eclipse.ui.console"/>
+      <plugin id="org.eclipse.ui.editors"/>
+      <plugin id="org.eclipse.ui.forms"/>
+      <plugin id="org.eclipse.ui.ide"/>
+      <plugin id="org.eclipse.ui.navigator"/>
+      <plugin id="org.eclipse.ui.navigator.resources"/>
+      <plugin id="org.eclipse.ui.views"/>
+      <plugin id="org.eclipse.ui.views.properties.tabbed"/>
+      <plugin id="org.eclipse.ui.win32" fragment="true"/>
+      <plugin id="org.eclipse.ui.workbench"/>
+      <plugin id="org.eclipse.ui.workbench.texteditor"/>
+      <plugin id="org.eclipse.update.configurator"/>
+      <plugin id="org.eclipse.xtend"/>
+      <plugin id="org.eclipse.xtend.core"/>
+      <plugin id="org.eclipse.xtend.lib"/>
+      <plugin id="org.eclipse.xtend.lib.macro"/>
+      <plugin id="org.eclipse.xtext"/>
+      <plugin id="org.eclipse.xtext.builder"/>
+      <plugin id="org.eclipse.xtext.common.types"/>
+      <plugin id="org.eclipse.xtext.common.types.ui"/>
+      <plugin id="org.eclipse.xtext.ide"/>
+      <plugin id="org.eclipse.xtext.logging" fragment="true"/>
+      <plugin id="org.eclipse.xtext.smap"/>
+      <plugin id="org.eclipse.xtext.ui"/>
+      <plugin id="org.eclipse.xtext.ui.codetemplates"/>
+      <plugin id="org.eclipse.xtext.ui.codetemplates.ui"/>
+      <plugin id="org.eclipse.xtext.ui.shared"/>
+      <plugin id="org.eclipse.xtext.util"/>
+      <plugin id="org.eclipse.xtext.xbase"/>
+      <plugin id="org.eclipse.xtext.xbase.ide"/>
+      <plugin id="org.eclipse.xtext.xbase.lib"/>
+      <plugin id="org.eclipse.xtext.xbase.ui"/>
+      <plugin id="org.hamcrest.core"/>
+      <plugin id="org.junit"/>
+      <plugin id="org.objectweb.asm"/>
+      <plugin id="org.sat4j.core"/>
+      <plugin id="org.sat4j.pb"/>
+      <plugin id="org.tukaani.xz"/>
+      <plugin id="org.w3c.css.sac"/>
+   </plugins>
+
+   <configurations>
+      <plugin id="de.dlr.application.rcp" autoStart="false" startLevel="5" />
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="3" />
+   </configurations>
+
+   <repositories>
+      <repository location="https://survey.ft.dlr.de/SSY/PARADISE/repository/_e4" enabled="true" />
+      <repository location="https://survey.ft.dlr.de/SSY/PARADISE/repository/_e4" enabled="true" />
+      <repository location="https://survey.ft.dlr.de/SSY/PARADISE/repository/_e4" enabled="true" />
+   </repositories>
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
+
+</product>

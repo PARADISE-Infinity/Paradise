@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:prem="http://www.dlr.de/ft/premise/2010/">
+  <metaData name="View">
+    <children name="dataTypeNames" value="off"/>
+  </metaData>
+  <metaData name="Export">
+    <children name="GraphML">
+      <children name="logical_hierarchy" value="on"/>
+      <children name="physical_portmappings" value="on"/>
+      <children name="parameter_dependencies" value="on"/>
+      <children name="self_references" value="off"/>
+      <children name="constants" value="on"/>
+      <children name="relations" value="on"/>
+      <children name="color" value="Applicable for every element's meta data, value example: #D4D4D4CC (grey, default), #00FF00 (green)..."/>
+      <children name="width" value="Applicable for every element's meta data, value example: 125 (default)"/>
+      <children name="height" value="Applicable for every element's meta data, value example: 55 (default)"/>
+      <children name="coordinate" value="Applicable for every element's meta data, value example: 4,4"/>
+    </children>
+  </metaData>
+  <projects name="PowerTrainSystem" id="1bd03067-b420-49ba-8649-6cd80f2faa1d">
+    <parameters name="repairingCosts" id="8d0a78e6-e593-427e-ad9c-67afacb05a7f">
+      <value value="0.0"/>
+      <modeValues modes="80acfdfe-42e2-4dbe-b3b1-01ff94afc501 857fcf40-e250-4614-8c18-e7687a7d79c7 a9615320-5305-4d65-93f8-7ed146739eb9" value="1110.0"/>
+      <modeValues modes="fed212d4-32db-4ff6-82e9-81b4fc892aef 857fcf40-e250-4614-8c18-e7687a7d79c7 70a9bd5c-060f-42ce-8f07-f1c6c3a1cef4" value="1100.0"/>
+      <modeValues modes="fed212d4-32db-4ff6-82e9-81b4fc892aef a6080534-84d6-4005-b239-855aec7519cc a9615320-5305-4d65-93f8-7ed146739eb9" value="1010.0"/>
+      <modeValues modes="fed212d4-32db-4ff6-82e9-81b4fc892aef a6080534-84d6-4005-b239-855aec7519cc 70a9bd5c-060f-42ce-8f07-f1c6c3a1cef4" value="1000.0"/>
+      <modeValues modes="fed212d4-32db-4ff6-82e9-81b4fc892aef cbb26ca5-29a4-421d-a56b-925b2d0441ae" value="110.0"/>
+      <modeValues modes="dfe106ff-e07a-4ced-ac97-fd50c9479e24" value="100.0"/>
+      <modeValues modes="1e65961f-2c70-4bf5-8037-4bfc3f4c9887 a9615320-5305-4d65-93f8-7ed146739eb9" value="10.0"/>
+    </parameters>
+    <balancings xsi:type="prem:Balancing" name="" target="8d0a78e6-e593-427e-ad9c-67afacb05a7f" sources="3db7135f-b852-4c3a-9fa0-404709ab4731 b7969574-437e-4584-9f5c-05f5146b06b7 95083008-86b1-47e1-983d-57a65065fe7d">
+      <functionDef xsi:type="fnp:FnDefSpreadSheet" href="../_GLOBAL/GlobalFuncDefs.premise.functionpool#//@functions.0"/>
+    </balancings>
+    <modes name="healthy" id="1e65961f-2c70-4bf5-8037-4bfc3f4c9887"/>
+    <modes name="degraded" id="dfe106ff-e07a-4ced-ac97-fd50c9479e24"/>
+    <modes name="failure" id="fed212d4-32db-4ff6-82e9-81b4fc892aef" entryMode="false"/>
+    <transitions name="" id="19d4dbbf-00cf-483f-88da-7135df5d0076" target="dfe106ff-e07a-4ced-ac97-fd50c9479e24" source="1e65961f-2c70-4bf5-8037-4bfc3f4c9887">
+      <constraint xsi:type="prem:NestedTransitionConstraint" junction="AND">
+        <children xsi:type="prem:TransitionConstraint" trigger="cbb26ca5-29a4-421d-a56b-925b2d0441ae"/>
+        <children xsi:type="prem:TransitionConstraint" trigger="857fcf40-e250-4614-8c18-e7687a7d79c7"/>
+        <children xsi:type="prem:TransitionConstraint" trigger="70a9bd5c-060f-42ce-8f07-f1c6c3a1cef4"/>
+      </constraint>
+    </transitions>
+    <transitions name="" id="8b9502fd-631f-40b5-af31-80706d195435" target="fed212d4-32db-4ff6-82e9-81b4fc892aef">
+      <constraint xsi:type="prem:NestedTransitionConstraint">
+        <children xsi:type="prem:TransitionConstraint" trigger="80acfdfe-42e2-4dbe-b3b1-01ff94afc501"/>
+        <children xsi:type="prem:NestedTransitionConstraint" junction="AND">
+          <children xsi:type="prem:TransitionConstraint" trigger="857fcf40-e250-4614-8c18-e7687a7d79c7"/>
+          <children xsi:type="prem:TransitionConstraint" trigger="a9615320-5305-4d65-93f8-7ed146739eb9"/>
+        </children>
+      </constraint>
+      <parameters name="failureRate" id="31b267f1-f317-428f-818a-c2673beec536">
+        <value value="1.1E-4"/>
+      </parameters>
+      <balancings target="31b267f1-f317-428f-818a-c2673beec536" sources="8fbfb8db-3328-46f5-a2f6-70bc166a41d2 ff14c1c8-cdd4-4467-884e-94594482527b 5aeec59b-e9d1-4f77-8588-8440d6f786dd">
+        <functionDefOr xsi:type="fnp:FnDefSpreadSheet" href="../_GLOBAL/GlobalFuncDefs.premise.functionpool#//@functions.0"/>
+        <functionDefAnd xsi:type="fnp:FnDefSpreadSheet" href="../_GLOBAL/GlobalFuncDefs.premise.functionpool#//@functions.1"/>
+      </balancings>
+    </transitions>
+    <children name="Control" id="31e4b35e-e204-4f24-bdea-9d4c1690cce2">
+      <parameters name="repairingCosts" id="3db7135f-b852-4c3a-9fa0-404709ab4731">
+        <value value="0"/>
+        <modeValues modes="80acfdfe-42e2-4dbe-b3b1-01ff94afc501" value="1000"/>
+      </parameters>
+      <modes name="healthy" id="cbb26ca5-29a4-421d-a56b-925b2d0441ae"/>
+      <modes name="failure" id="80acfdfe-42e2-4dbe-b3b1-01ff94afc501" entryMode="false"/>
+      <transitions id="4d4edeac-e395-4a46-8b60-25d5b7a7b13c" target="80acfdfe-42e2-4dbe-b3b1-01ff94afc501" source="cbb26ca5-29a4-421d-a56b-925b2d0441ae">
+        <parameters name="failureRate" id="8fbfb8db-3328-46f5-a2f6-70bc166a41d2">
+          <value value="0.0001"/>
+        </parameters>
+      </transitions>
+    </children>
+    <children name="DriveTrain" id="15ddb2c8-e2ab-494e-98b2-ed8b3a64cb3a">
+      <parameters name="repairingCosts" id="b7969574-437e-4584-9f5c-05f5146b06b7">
+        <value value="0"/>
+        <modeValues modes="857fcf40-e250-4614-8c18-e7687a7d79c7" value="100"/>
+      </parameters>
+      <modes name="healthy" id="a6080534-84d6-4005-b239-855aec7519cc"/>
+      <modes name="failure" id="857fcf40-e250-4614-8c18-e7687a7d79c7" entryMode="false"/>
+      <transitions id="e2226b29-46c2-4681-aa0f-fbb104c6a5ed" target="857fcf40-e250-4614-8c18-e7687a7d79c7">
+        <parameters name="failureRate" id="ff14c1c8-cdd4-4467-884e-94594482527b">
+          <value value="0.001"/>
+        </parameters>
+      </transitions>
+    </children>
+    <children name="Monitoring &amp; Protection" id="3e80e602-78fd-4439-b788-e0eb15112451">
+      <parameters name="repairingCosts" id="95083008-86b1-47e1-983d-57a65065fe7d">
+        <value value="0"/>
+        <modeValues modes="a9615320-5305-4d65-93f8-7ed146739eb9" value="10"/>
+      </parameters>
+      <modes name="healthy" id="70a9bd5c-060f-42ce-8f07-f1c6c3a1cef4"/>
+      <modes name="failure" id="a9615320-5305-4d65-93f8-7ed146739eb9" entryMode="false"/>
+      <transitions id="e99cf45a-a686-40db-9172-8d1aad7afcd5" target="a9615320-5305-4d65-93f8-7ed146739eb9" source="70a9bd5c-060f-42ce-8f07-f1c6c3a1cef4">
+        <parameters name="failureRate" id="5aeec59b-e9d1-4f77-8588-8440d6f786dd">
+          <value value="0.01"/>
+        </parameters>
+      </transitions>
+    </children>
+  </projects>
+</prem:ProjectRepository>

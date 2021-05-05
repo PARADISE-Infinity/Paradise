@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reg:Registry xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" name="PREMISE Base Registry" description="Global Units, Constants and MetaTypes. Units according to and derived from SI" metaModel="1.26">
+  <units name="Percentage" symbol="%"/>
+  <units name="Length" symbol="m"/>
+  <units name="Length" symbol="km">
+    <siUnitRef target="m" conversionFactorFromSI="0.001"/>
+  </units>
+  <units name="Mass" symbol="kg"/>
+  <units name="Mass" symbol="g">
+    <siUnitRef target="kg" conversionFactorFromSI="1000.0"/>
+  </units>
+  <units name="Time" symbol="s"/>
+  <units name="Time" symbol="min">
+    <siUnitRef target="s" conversionFactorFromSI="60.0"/>
+  </units>
+  <units name="Time" symbol="h">
+    <siUnitRef target="s" conversionFactorFromSI="3660.0"/>
+  </units>
+  <units name="Temperature" symbol="K"/>
+  <units name="Electric Current" symbol="A"/>
+  <units name="Luminous Intensity" symbol="cd"/>
+  <units name="Amount of Substance" symbol="mol"/>
+  <units name="Velocity" symbol="m/s"/>
+  <units name="Velocity" symbol="km/h">
+    <siUnitRef target="m/s" conversionFactorFromSI="0.27777778"/>
+  </units>
+  <units name="Acceleration" symbol="m/s^2"/>
+  <units name="Area" symbol="m^2"/>
+  <units name="Volume" symbol="m^3"/>
+  <units name="Frequency" symbol="Hz"/>
+  <units name="Force" symbol="N"/>
+  <units name="Energy" symbol="J"/>
+  <units name="Power" symbol="W"/>
+  <units name="Angle" symbol="deg"/>
+  <units name="Density" symbol="kg/m^3"/>
+  <units name="Temperature" symbol="°C"/>
+  <units name="Voltage" symbol="V"/>
+  <constants name="e" id="97f9d8e3-7750-484f-ade0-6d47adbe234c">
+    <value value="2.71828" uncertainty=""/>
+  </constants>
+  <constants name="g" id="e5ab3768-a7ff-4721-a158-86f013b484ee" unit="m/s^2">
+    <value value="9.80624"/>
+  </constants>
+  <constants name="pi" id="a92e454b-e653-4b6e-8c7e-caf1b1175ca3">
+    <value value="3.14159"/>
+  </constants>
+  <metaTypes name="Container" description="A logical system element to structure the model" id="id_Container" iconBase64="R0lGODlhEAAQAOeEAJJHFIVJKppGDo1JJH5NNI5LJpxJEo5LMZ5KEo5NKYpOL5hMIqxJDKhKEJpNHZpPHalME4dZAIlbAItcAIxdALdPEY1eALhQEpVXOr5QDJtXNpdkAJlmAJ5mEalhMK9jL6RqEq1kM6BtIKdvALJnNqptFa1sI6xzALtrN79rNLB2ALR4AKl6HMlvNLtzQ8pwNbh7AKt2XqV5Uql9JstyNsxyNcJ0QLt9AKt+Jrp/Db9/ANJ1OK+CKNN3OsKCALOFK8WEANl5OqWDc8iFALmCT8qHALeJLcyIALCLY7yNMMCQMr2RNcWUNcaRW8+dPM2bYs6cY9GhQs2lUtegasumcdmoSN+tc924aeq/X+nAYObDhuTFje3JbunKf+zLgevNgu7OhO3Qh/HPi+/Qh+/Rh/PRjfDTivTTgPDUi/XUkPLWjvLYkPTakvTciPTblPnbl/3bl/bel/7cmPbfmPfhm/jilfnjnf3jnPnlnvvmof/movvoo+7m4/zppP/qpvzrpv3uqf3uqv7vq//xrP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////yH5BAEKAP8ALAAAAAAQABAAAAjYAP8JPEKwoEGBCIu0yYLlzB09EPX4KYLw35BBgupwqSJHjhUUU4ZUBAKoT59AUeDAcdHDBpCKPv7kyfPHyRMoTXYQMVFRxx47dvYwCVKjBYkXNCrewDNnDh4lKTyE0KAlRkUYdNy4oZPkwwMAB97wyYFwRZw1a+IYEWAAgQMMC0ogVMEGDRo2PyDIQBKAQQMQCE+oCRNGDY8LVMQQyFChA8IRZr58MYNjgJAtCgokEIGQA5kuXcbMKEO6TBoOFS0sueIFzAQKsGFbqChwAwspEmjrrhhh97+AADs=" icon="Icon integrated into registry (SystemComponent_Container.gif)"/>
+  <metaTypes name="Failure" description="Undesired effect or functionality. Marking a safety significant Mode." id="67943974-27b7-4e15-85cd-59ee99afe08c" iconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gMICysVArS0dQAAAddJREFUOMulk71rVEEUxX8z816y65t1Y5k2CIaQJVimsBNEkFT2gtikELYIBCyXNCljYa9/QMr8Caa0iakksEWsZJf3sW+c9zFj8XY3eQhqcODChXvO4RzmXvjPJwC+XVz4NE3vROz1ejzc3hYBQJIkPN7dBef+jS0lX87PmxaAosBby+VohE/TP9blaIQ3BooCgGApYAybwyEza8myjHQ2a1uOIrTWbA6HlL8JVBW2rsmyDIBpHPPh4KAl8ProiDVrUUoRdbtQVTcCwhiKosBaC0Bd10RK8er4GICPh4eI6+9kQTg3XCKMaUdwzuEQWFtQFRXrZUm/3wdgvSyRSYKUCgDvRTuCMIbKeaytcE6gwlW2JhN+nJ0BsDWZoOIZQbDa/L1QbQfCGMrSI2WIlOA9bOQ5G/v7AEQnJ5RpjlIhQoimbgvIPMejkLLJGIQCrTU2jgHQWjOVK5Slo9PpsOC0HAihUIFvhl4xffaCyXgMQPfRFk5HOPMTpTULznKRZJKAV9TvhkgRouQK+s1b6vEUPn/FPHmOCLuE0f0lRibJjYPO1RUgWXv/iXxuDeDBYAcGO619uDfHNJy5gBkMiF4+pQTCv5zBAhPv7cHpqRB3vFx/q5dA+AvwHehzNAT3OQAAAABJRU5ErkJggg==" icon="Icon integrated into registry (Failure.png)"/>
+  <metaTypes name="Hazard" description="A Collection of Failures. Marking a safety-significant StateMachine" id="8021351c-a503-4afc-8d65-768d9ec44f62" iconBase64="R0lGODlhEAAQAIQAAAAAAKAKHOxAVY6P8JCR6JOT2ZSU4r+/v8bGwMjGvszLvtPT0dfX19fY19rZ097d1tzd3eHg2uLh2gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH+EUNyZWF0ZWQgd2l0aCBHSU1QACH5BAEKAB8ALAAAAAAQABAAAAVJ4CeOnyCQKCkEwZmO5tqaL126NuymeUkCAJVuBxyWJBGFq1hKOB4mSAOxDJYOC8Yp9rrtdh+mCNxTgW9j3DktGBC43ZKhsK7VQwA7" icon="Icon integrated into registry (Hazard.gif)"/>
+  <metaTypes name="HarmfulHazard" description="A harmful hazard leads to a harm of an interacting object in case of a system or  function failure." id="31c93553-0890-486f-9668-d17e8f67e814" iconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4gINCQUFHT6g0QAAAbBJREFUOMulkr9rU3EUxT8v7Us0idK+FFE6qZhQLCRjIjjIy9B2aAfBURwEB9vSUXApFKQolv4l/gP+A0XEZCiWhE6iwXdfkiot/mhec1xiaRsbrJ7te77n3nu458IAGMwbPOZfEMA1gx8B/DS4cZouNuDjJZBwIA6snml6CHcM9HVuTl9mZ2WgAMp/VSyIGbw111VUqyna3laYSMigKhg6qe8j5uEh8Oj80hKvgPeNBjfHx4k2Ni5/gw8voDLI+gWDRuh56rZaymazyuVy6u7sqDk2JoOgBRdPXaLgKXAltbKC43mkUimSySTOyAjJ5WWASwfw5I/TP8NVg++tiQlpf1+S5Pu+yuWyJElRpPbkpHrRXu9zEIPnwLn02hq4LgCe55HJZHrbGiK1vk4v2mfHGgRwC7gbn5khPjV16KpQKJDP5w/fcd8nPj0NcM/g9tHY3tjwsDqbmzqKWq2mer1+jIu2tmSuK4N3ghgGDwy0u7iokygWiyqVSn387sLC7+O6j8GncHRUB81mn7BSqaharfbx3XZbzUxGBh8dA+G6OOn0mc5de3vQ6eCE8Jr/wC/CvREhDInbDAAAAABJRU5ErkJggg==" icon="Icon integrated into registry (C:\Users\berr_ae\Desktop\hazard.png)"/>
+  <metaTypes name="SSF" description="Safety Significant Function. A Function that could have impact on system safety." id="6522e246-f8f7-41ec-8f9b-70bf51484eb6" iconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gMICygL05ba1QAAAsBJREFUOMttk01oXGUUhp/7/cxk5s5kMkmcJBg7IGl1p5uAILEL6aJZiCguXIiCf2BxUTCtisXgogv/QBHULAoiswktguDKVlyIohTcKUHRJmPamSaZzMy9uT9zv3s/F6WThPYsD4fnPec95zgciM3nztidhXn0bh+920f5Hrrnc7e49+v3HQB1MLl18jgPPbt4qDAeJMSDBD+MMCYjjGP8zRatMLDTFz9zhoDtxZftxngFgJ2uhxQSKRyEFCilmBwbRUmBEIJkdpq180tsB7EVQyWbYt0CWZYRDQxBPMAPI4JoQBQP2Atjul4AQPPNT3nw/llunFzYH8GYFOMWCeOE1tpflC7/RPX3P0iiiPYTJ8hOHGdqsoq1FtXd4c+/16l8e2UfEGWGojvC2vc/MvbRF4wKRXCkhggyZi59R/jzr/x36kUmH3kYca1J/tQ56lca+x7EaUp1tIT88iuMkGx+/gG5XA4HS7t9k+lPViieWWZweZXEZjzwQ8MBGHqQJAnVSpne/DxeHJO2b2LTFCEExdo9dN47ywgZ+XyeMDXDLe2PoARaSfqLj3Pk6lWCt95Fz0wRHJtDCoV7vYVTnyUxKdeVvRNQMskttfFxmu8sMd5YxfvlN8Jr65TzIxTdChvLb1DwfDoj+k6AtCCFg5ICt1YjPv0a5vVXSHs+XmLYG6tw39QEu70unpSHAR8/9YK1C4/R9QK81i62kEfnNVoryhNVpJQoKSgWcqxv9Ogr5zAgdBzE6iW2tntMbfeRYYAKDMr3MVlG4kiyuTqdt19C/tskdA4Azj39vH2mXufoxQuHfsBai0kzTJoB8M+Fb5jQCr3ZJiIb1jkAW48+aZunXyWdqaHHypRLLmW3QKFQIKcVWkm2Oh5aSzpLy8ytfHi7hVuHdL5Wgkbjrm/rOg7V1DLX3+OYH7IyO3lbWAD6f9tTJgvL7nm9AAAAAElFTkSuQmCC" icon="Icon integrated into registry (SSF.png)"/>
+  <metaTypes name="Phases" description="A StateMachine that describes possible phases of a system (such as flight phases of an aircraft)" id="4b21a2c9-2c1b-4c29-8fa0-488246036795" iconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAABZklEQVQ4y6WSsWrCYBSFz5/8WZNYn6A+gYObIAiuIahd6lgRzCBaJ7dCHyBuJTTFKSAZCnaTEoca6BSCb+CgSMTNOXI7iAE7aTxwl8u9H+dwL5BCruvSZDKhqxc9z1uWSiUCQLZtXw6YTqdBsVgkAEmdAMIlAFVVHUVRznpE1ydAEARLXdeJMUaWZREA8GsAhULhHgBs+50OhwMujvBfmcwdAJYeIAgMgiCkB3AugbEbHJyWUwPO4twK4KZpvm02G4MxhlwuNzIMowkA3W7XlCTpmTGGbDb7ORgMHgBgPB7/uK6LKIrgOE4ITdOS92w0GjSfz2k280jTNOJcJABUr9fJ933yfZ+q1WoyX6vViO/3+8TOarVCGIZfABBFkR7Hx2dZr9dYLBYWAGy32/bxlAJ2ux14pVIZiaL4xDlHPp9/6fV6rwDQ7/c/VFVtiqKIcrn82+l0DADycDhUZFl+jOMYrVbr+w+eJo7Rd0dNzQAAAABJRU5ErkJggg==" icon="Icon integrated into registry"/>
+  <metaTypes name="CalculationOutput" description="A Parameter that is output of a calculation" id="627ec0e4-a626-485e-b62d-92f4ad9285be" iconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gQbCSoYlhYJhgAAAgpJREFUOMuNkj1vE0EQhp89750SFAnJjkB2MMKAlEgQiRS2kJU+FR81yFUaGiQa6OgoQHQ0IJcp06TlP5AvOU0Ky46CCAk+G2sv/ohvb4/CvsNOIsTb7Ghn9Mw7sysY6dv+frh29AFpSxIywYpc5bzu53KkZ2fF+J0VBS2l6J72yScfYrThRjZLZm6OdCZDOpPB15pKrcaR64aXAkJjcH+2UGce7ZbC8zza7TbNZpNms0m322VpcZFKtcqPRiOGyCjo+33aDYU682gd/0bcE9i2DYDWmuOTE9Y3NgCo1mqxAwFwdzX3dXpqamWp8IDbt3IcHh7QaLvcub7As6WX+L6P1hqAVCpFvV7n0fKyiEfQvn4841yl8auBDjSDgc+0mKFUeIUQQydSxmYxxkzu4GDt++DNk/cYJdne3qHTGvD26SfshI3jOBMQIcRFAEAQBJRfr5PoXOHd88/Dp93cZHNri8reHq7rYts2lmURBMHlAICPL8pYloWUkl6vx8L8PIV8nlq9jhACIcQEIB4sGNmyLAtjDJY1ZO/s7gJwM5vFcRyklHHtBMCMthxBAE49j2KxSCqVIgzDePaJ2ijQQRBbjNTpdGLgeE7/a4SoKAxDSqUSxhjCMJzIBZe9wlm///d3jXWLukfn+drYgVKKhBA4jhMno87jEkKglLoIuJZM8qVc5n+Uy2bj+A9E9OybjaKCWwAAAABJRU5ErkJggg==" icon="Icon integrated into registry (CalculationOutput.png)"/>
+  <metaTypes name="CalculationInput" description="A Parameter that is input of a calculation" id="c11a5a68-7574-4dd7-bc2f-d5946a6a0dfa" iconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gQbCSozOqrwxgAAAg5JREFUOMt9kzFoU1EUhr/78u6LSSuFvlZaJWpUqIE4SRwyuCiCi5ObZLE4O4iruDno4mqX4iQidBXEyUka0tapgyRSUVtTYnyveUlu7rvXpXkkpnrgwuFw+c7/n3Ov4DDWt7dtOwz5XxTzeRbn5sRozR0mrSCgUCjQ7/eJ4xhrLcYYrLUA7Ozs8Kle5/v+vj05AkkA1hiUUkRRhFIKay2DwQCtNQBRFHG1XKa2tcW3ZtOemp8XYwBz2EkIged5KKWQUgKgtWZ3b4/Xa2sAfK7XJy3EcZwAgAnIpWIRAN/3aTQaCcBJFBiDlBIhRHI8z0MIgZQS1016YYyZVDAsDhUArFerSb64sMDMzAxCiDGA87cFx3ESSLfb5eLSEldKJeqNBlJKHMdJ7k7M4Fn1Pq50SbkplvOPAdjY3ATgdC6XWDsaYAzRQY9r569TbX0klUpxEIaUy2V838daSxzHuK5LfJQFozX7P1oE/ZB2KwCg0+mM2RpaM4dvY0xBV3VpNwOCfkhr9xcAlUrlyBXrEQsOwIXl/Nvn7x9xJneWSHWZzfo8eHWHFx+ejE18CJiwoAf61jFniubPJjrWKDUgmzrO3fLDRP7odvq93jjgy8uv6nbxHjZ0qdU26P2OeVpZZSo7RTqdJpPJkM1mmZ6exvM8giCYnMGJ2VlKnRu8q7/h8rmbrKys/PNb53O5JP8DlePy+2wG5K8AAAAASUVORK5CYII=" icon="Icon integrated into registry (CalculationInput.png)"/>
+</reg:Registry>

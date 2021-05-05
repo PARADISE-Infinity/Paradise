@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ASCII"?>
+<prem:ProjectRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" metaModel="1.33">
+  <projects name="Root" id="80500671-5c89-4439-a07a-7f10230484c5">
+    <relations>
+      <sourcePointer xsi:type="graph:DirectPointer" target="80500671-5c89-4439-a07a-7f10230484c5"/>
+      <targetPointer xsi:type="graph:DirectPointer">
+        <target xsi:type="uc:UseCase" href="tree.usecase#11ea69f7-5734-489c-a866-c1bf720a92ad"/>
+      </targetPointer>
+    </relations>
+    <children xsi:type="prem:SystemComponent" name="1" id="c6516e2b-e2c2-4cd1-84e6-5371caf0864f">
+      <children xsi:type="prem:SystemComponent" name="1.1" id="37c04165-ade6-4b6b-a6c0-725167255f2f">
+        <children xsi:type="prem:SystemComponent" name="1.1.1" id="a8f032bd-ad97-4e96-97bc-51489045a63c"/>
+        <children xsi:type="prem:SystemComponent" name="1.1.2" id="f78aaf43-59e5-47d9-9709-b2c72074cdfc"/>
+      </children>
+      <children xsi:type="prem:SystemComponent" name="1.2" id="8ff10047-ddf3-43f0-8fe3-3a04ac7162e8">
+        <relations>
+          <sourcePointer xsi:type="graph:DirectPointer" target="8ff10047-ddf3-43f0-8fe3-3a04ac7162e8"/>
+          <targetPointer xsi:type="graph:DirectPointer" target="17dfc344-d504-46fa-b962-ebc585e31d68"/>
+        </relations>
+      </children>
+    </children>
+    <children xsi:type="prem:SystemComponent" name="2" id="920eeadf-1892-4700-8a18-396f9912963e">
+      <children xsi:type="prem:SystemComponent" name="2.1" id="6e867a8d-cb5a-4bcd-b11f-79015b8709ca">
+        <children xsi:type="prem:SystemComponent" name="2.1.1" id="4106864d-cb1c-4169-9877-1c08b8df49a1">
+          <relations>
+            <sourcePointer xsi:type="graph:DirectPointer" target="4106864d-cb1c-4169-9877-1c08b8df49a1"/>
+            <targetPointer xsi:type="graph:DirectPointer" target="b4c4870d-4d59-4baa-bd32-d6c35c4de72d"/>
+          </relations>
+        </children>
+      </children>
+      <children xsi:type="prem:SystemComponent" name="2.2" id="b4c4870d-4d59-4baa-bd32-d6c35c4de72d"/>
+      <children xsi:type="prem:SystemComponent" name="2.3" id="5d76cbff-04b2-478e-8a93-73c5812ba9a0">
+        <children xsi:type="prem:SystemComponent" name="2.3.1" id="9a723b5d-437b-45ac-a38c-8375ee2dcdb8"/>
+        <children xsi:type="prem:SystemComponent" name="2.3.2" id="4da2816d-fc7b-45a1-8638-b2018a0a3209"/>
+      </children>
+    </children>
+    <children xsi:type="prem:SystemComponent" name="3" id="0eba641a-07db-4de5-a5bd-b549a09c6497">
+      <children xsi:type="prem:SystemComponent" name="3.1" id="614ba240-c72b-436c-91cc-9e78a92da8a5"/>
+      <children xsi:type="prem:SystemComponent" name="3.2" id="b2a0cc03-fa68-4c2d-9aec-ba55696175f9"/>
+      <children xsi:type="prem:SystemComponent" name="3.3" id="17dfc344-d504-46fa-b962-ebc585e31d68"/>
+    </children>
+  </projects>
+</prem:ProjectRepository>

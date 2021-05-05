@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psf version="2.0">
+<provider id="org.tigris.subversion.subclipse.core.svnnature">
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.application,de.dlr.application"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.application.cli,de.dlr.application.cli"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.application.lib.excel,de.dlr.application.lib.excel"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.application.rcp,de.dlr.application.rcp"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.application.release,de.dlr.application.release"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.application.repository,de.dlr.application.repository"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.calc.engine,de.dlr.calc.engine"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.calc.engine.combined,de.dlr.calc.engine.combined"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.calc.engine.dsl,de.dlr.calc.engine.dsl"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.calc.engine.dsl.ui,de.dlr.calc.engine.dsl.ui"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.calc.engine.dsl.xtext,de.dlr.calc.engine.dsl.xtext"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.calc.engine.dsl.xtext.ui,de.dlr.calc.engine.dsl.xtext.ui"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.calc.engine.excel,de.dlr.calc.engine.excel"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.calc.engine.java,de.dlr.calc.engine.java"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.calc.engine.matlab,de.dlr.calc.engine.matlab"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.exchange.base.xtend,de.dlr.exchange.base.xtend"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.exchange.excel.fha,de.dlr.exchange.excel.fha"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.exchange.excel.trace.xtend,de.dlr.exchange.excel.trace.xtend"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.exchange.excel.tradeoff.xtend,de.dlr.exchange.excel.tradeoff.xtend"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.exchange.graphml.block,de.dlr.exchange.graphml.block"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.exchange.graphml.cfta.xtend,de.dlr.exchange.graphml.cfta.xtend"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.exchange.graphml.fta.xtend,de.dlr.exchange.graphml.fta.xtend"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.exchange.graphml.states.xtend,de.dlr.exchange.graphml.states.xtend"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.exchange.json.structure,de.dlr.exchange.json.structure"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.exchange.matlab.struct.xtend,de.dlr.exchange.matlab.struct.xtend"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.exchange.petrinet.base.xtend,de.dlr.exchange.petrinet.base.xtend"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.exchange.petrinet.pnml.pipe.xtend,de.dlr.exchange.petrinet.pnml.pipe.xtend"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.exchange.petrinet.snoopy.xtend,de.dlr.exchange.petrinet.snoopy.xtend"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.exchange.unity.parameter.xtend,de.dlr.exchange.unity.parameter.xtend"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.premise,de.dlr.premise"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.premise.calc,de.dlr.premise.calc"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.premise.calc.ui,de.dlr.premise.calc.ui"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.premise.constraints,de.dlr.premise.constraints"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.premise.constraints.ui,de.dlr.premise.constraints.ui"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.premise.edit,de.dlr.premise.edit"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.premise.editor,de.dlr.premise.editor"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.premise.migration,de.dlr.premise.migration"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.premise.ocl.hacks,de.dlr.premise.ocl.hacks"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.premise.query,de.dlr.premise.query"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.premise.query.ui,de.dlr.premise.query.ui"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.premise.representation.ui,de.dlr.premise.representation.ui"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.premise.states,de.dlr.premise.states"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.premise.util,de.dlr.premise.util"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.premise.validation,de.dlr.premise.validation"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.premise.validation.ui,de.dlr.premise.validation.ui"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.premise.view.GraphicalEditorView,de.dlr.premise.view.GraphicalEditorView"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.premise.view.graphml,de.dlr.premise.view.graphml"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.premise.view.graphml.ui,de.dlr.premise.view.graphml.ui"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.premise.view.ParameterViewer,de.dlr.premise.view.ParameterViewer"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.premise.view.SafetyView,de.dlr.premise.view.SafetyView"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.premise.xtext,de.dlr.premise.xtext"/>
+<project reference="0.9.3,https://svn.dlr.de/DesignWorks/MoBaSED/dev_eclipse_ide/trunk/de.dlr.testsuite,de.dlr.testsuite"/>
+</provider>
+<workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1406211909797_3" label="Calculation" name="Calculation">
+<item elementID="=de.dlr.calc.engine.excel" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.calc.engine.dsl.xtext.ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.calc.engine.dsl" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.calc.engine.matlab" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.premise.calc.ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.calc.engine.java" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.premise.calc" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.calc.engine" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.calc.engine.combined" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.calc.engine.dsl.ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.calc.engine.dsl.xtext" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSets>
+<workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1406211935955_4" label="Exchange" name="Exchange">
+<item elementID="=de.dlr.exchange.graphml.fta.xtend" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.exchange.json.structure" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.exchange.petrinet.base.xtend" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.exchange.petrinet.snoopy.xtend" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.exchange.graphml.states.xtend" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.exchange.excel.tradeoff.xtend" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.exchange.graphml.block" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.exchange.excel.trace.xtend" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.exchange.graphml.cfta.xtend" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.exchange.base.xtend" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.exchange.matlab.struct.xtend" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.exchange.petrinet.pnml.pipe.xtend" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.exchange.unity.parameter.xtend" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.exchange.excel.fha" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSets>
+<workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1406211867903_2" label="Model" name="Model">
+<item elementID="=de.dlr.premise.query" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.premise.migration" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.premise.query.ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.premise.validation" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.premise.constraints" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.premise.representation.ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.premise" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.premise.util" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.premise.editor" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.premise.ocl.hacks" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.premise.xtext" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.premise.constraints.ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.premise.validation.ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.premise.edit" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.premise.states" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSets>
+<workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1406211961658_5" label="Product" name="Product">
+<item elementID="=de.dlr.application.rcp" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.testsuite" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.application.lib.excel" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/de.dlr.application.repository" type="4"/>
+<item elementID="=de.dlr.application" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.application.release" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.application.cli" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSets>
+<workingSets editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" id="1509022935547_10" label="View" name="View">
+<item elementID="=de.dlr.premise.view.ParameterViewer" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.premise.view.GraphicalEditorView" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.premise.view.graphml.ui" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.premise.view.SafetyView" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=de.dlr.premise.view.graphml" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSets>
+</psf>

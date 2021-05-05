@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="off"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="false"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Show Parameters" value="true"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Edit local statemachines">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <projects id="e1fcf3e8-0892-46df-b121-656213495afe" name="SystemRootComponent">
+    <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="Functions.usecase#d8924ccf-0aaf-4078-9892-0ef02b026e82" xsi:type="uc:UseCase"/>
+	</targetPointer>
+</satisfies>
+    <children id="d004506d-b3aa-4610-a9ce-78c90a6878f8" name="SubComponent" xsi:type="prem:SystemComponent">
+      <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="Functions.usecase#24333bf4-ab30-47cc-a372-bc7123cc92ed" xsi:type="uc:UseCase"/>
+	</targetPointer>
+</satisfies>
+      <parameters id="13c210a4-023f-40dc-ace3-8edf8539c966" name="SatisfyingParameter">
+        <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="Functions.usecase#e450fea2-bf0e-42d8-b25f-743bd4c994c9" xsi:type="uc:RequiredParameter"/>
+	</targetPointer>
+</satisfies>
+      </parameters>
+    </children>
+  </projects>
+</prem:ProjectRepository>

@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.dlr.premise.view.graphml/src-gen" editDirectory="/de.dlr.premise.view.graphml.edit/src-gen"
+    editorDirectory="/de.dlr.premise.view.graphml.editor/src-gen" modelPluginID="de.dlr.premise.view.graphml"
+    modelName="YGraphML" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>graphml.ecore</foreignModel>
+  <foreignModel>xlink.ecore</foreignModel>
+  <foreignModel>ygraphml.ecore</foreignModel>
+  <foreignModel>yed.ecore</foreignModel>
+  <genPackages prefix="GraphML" basePackage="org.graphdrawing" resource="XML" disposableProviderFactory="true"
+      multipleEditorPages="false" generateModelWizard="false" contentTypeIdentifier=""
+      fileExtensions="DO_NOT_USE_DUMMY_graphml" ecorePackage="graphml.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="graphml.ecore#//EndpointType">
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//EndpointType/in"/>
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//EndpointType/out"/>
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//EndpointType/undir"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="graphml.ecore#//GraphEdgedefault">
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//GraphEdgedefault/directed"/>
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//GraphEdgedefault/undirected"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="graphml.ecore#//GraphEdgeids">
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//GraphEdgeids/canonical"/>
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//GraphEdgeids/free"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="graphml.ecore#//GraphNodeids">
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//GraphNodeids/canonical"/>
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//GraphNodeids/free"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="graphml.ecore#//GraphOrder">
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//GraphOrder/free"/>
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//GraphOrder/nodesfirst"/>
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//GraphOrder/adjacencylist"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="graphml.ecore#//KeyFor">
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//KeyFor/all"/>
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//KeyFor/graphml"/>
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//KeyFor/graph"/>
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//KeyFor/node"/>
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//KeyFor/edge"/>
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//KeyFor/hyperedge"/>
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//KeyFor/port"/>
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//KeyFor/endpoint"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="graphml.ecore#//KeyType">
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//KeyType/boolean"/>
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//KeyType/int"/>
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//KeyType/long"/>
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//KeyType/float"/>
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//KeyType/double"/>
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//KeyType/string"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="graphml.ecore#//YfilesFoldertype">
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//YfilesFoldertype/folder"/>
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//YfilesFoldertype/group"/>
+      <genEnumLiterals ecoreEnumLiteral="graphml.ecore#//YfilesFoldertype/leaf"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="graphml.ecore#//EndpointTypeObject"/>
+    <genDataTypes ecoreDataType="graphml.ecore#//GraphEdgedefaultObject"/>
+    <genDataTypes ecoreDataType="graphml.ecore#//GraphEdgeidsObject"/>
+    <genDataTypes ecoreDataType="graphml.ecore#//GraphEdges"/>
+    <genDataTypes ecoreDataType="graphml.ecore#//GraphMaxindegree"/>
+    <genDataTypes ecoreDataType="graphml.ecore#//GraphMaxoutdegree"/>
+    <genDataTypes ecoreDataType="graphml.ecore#//GraphNodeidsObject"/>
+    <genDataTypes ecoreDataType="graphml.ecore#//GraphNodes"/>
+    <genDataTypes ecoreDataType="graphml.ecore#//GraphOrderObject"/>
+    <genDataTypes ecoreDataType="graphml.ecore#//KeyForObject"/>
+    <genDataTypes ecoreDataType="graphml.ecore#//KeyName"/>
+    <genDataTypes ecoreDataType="graphml.ecore#//KeyTypeObject"/>
+    <genDataTypes ecoreDataType="graphml.ecore#//NodeIndegree"/>
+    <genDataTypes ecoreDataType="graphml.ecore#//NodeOutdegree"/>
+    <genDataTypes ecoreDataType="graphml.ecore#//YfilesFoldertypeObject"/>
+    <genClasses ecoreClass="graphml.ecore#//DataExtension">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute graphml.ecore#//DataExtension/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//DataExtension/any"/>
+    </genClasses>
+    <genClasses ecoreClass="graphml.ecore#//Data">
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference graphml.ecore#//Data/key"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Data/time"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Data/id"/>
+    </genClasses>
+    <genClasses ecoreClass="graphml.ecore#//Default"/>
+    <genClasses ecoreClass="graphml.ecore#//Edge">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Edge/desc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference graphml.ecore#//Edge/data"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference graphml.ecore#//Edge/graph"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Edge/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Edge/directed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference graphml.ecore#//Edge/source"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference graphml.ecore#//Edge/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Edge/sourceport"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Edge/targetport"/>
+    </genClasses>
+    <genClasses ecoreClass="graphml.ecore#//Endpoint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Endpoint/desc"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Endpoint/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Endpoint/port"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference graphml.ecore#//Endpoint/node"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Endpoint/type"/>
+    </genClasses>
+    <genClasses ecoreClass="graphml.ecore#//Graphml">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Graphml/desc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference graphml.ecore#//Graphml/key"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute graphml.ecore#//Graphml/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference graphml.ecore#//Graphml/graph"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference graphml.ecore#//Graphml/data"/>
+    </genClasses>
+    <genClasses ecoreClass="graphml.ecore#//Graph">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Graph/desc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute graphml.ecore#//Graph/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference graphml.ecore#//Graph/data"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference graphml.ecore#//Graph/node"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference graphml.ecore#//Graph/edge"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference graphml.ecore#//Graph/hyperedge"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference graphml.ecore#//Graph/locator"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Graph/parseEdgeids"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Graph/parseEdges"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Graph/parseMaxindegree"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Graph/parseMaxoutdegree"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Graph/parseNodeids"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Graph/parseNodes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Graph/parseOrder"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Graph/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Graph/edgedefault"/>
+    </genClasses>
+    <genClasses ecoreClass="graphml.ecore#//Hyperedge">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Hyperedge/desc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute graphml.ecore#//Hyperedge/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference graphml.ecore#//Hyperedge/data"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference graphml.ecore#//Hyperedge/endpoint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference graphml.ecore#//Hyperedge/graph"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Hyperedge/id"/>
+    </genClasses>
+    <genClasses ecoreClass="graphml.ecore#//Key">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Key/desc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference graphml.ecore#//Key/default"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Key/attrName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Key/attrType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Key/yfilesType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Key/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Key/dynamic"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Key/for"/>
+    </genClasses>
+    <genClasses ecoreClass="graphml.ecore#//Locator">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Locator/href"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Locator/type"/>
+    </genClasses>
+    <genClasses ecoreClass="graphml.ecore#//Node">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Node/desc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute graphml.ecore#//Node/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference graphml.ecore#//Node/data"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference graphml.ecore#//Node/port"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference graphml.ecore#//Node/graph"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference graphml.ecore#//Node/locator"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Node/parseIndegree"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Node/parseOutdegree"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Node/yfilesFoldertype"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Node/id"/>
+    </genClasses>
+    <genClasses ecoreClass="graphml.ecore#//Port">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Port/desc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute graphml.ecore#//Port/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference graphml.ecore#//Port/data"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference graphml.ecore#//Port/port"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute graphml.ecore#//Port/name"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="XLink" basePackage="org.w3" disposableProviderFactory="true"
+      multipleEditorPages="false" generateModelWizard="false" fileExtensions="DO_NOT_USE_DUMMY_yed"
+      ecorePackage="xlink.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="xlink.ecore#//Type">
+      <genEnumLiterals ecoreEnumLiteral="xlink.ecore#//Type/simple"/>
+      <genEnumLiterals ecoreEnumLiteral="xlink.ecore#//Type/extended"/>
+      <genEnumLiterals ecoreEnumLiteral="xlink.ecore#//Type/locator"/>
+      <genEnumLiterals ecoreEnumLiteral="xlink.ecore#//Type/arc"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="xlink.ecore#//TypeObject"/>
+  </genPackages>
+  <genPackages prefix="YGraphML" basePackage="com.yworks" resource="XML" disposableProviderFactory="true"
+      fileExtensions="graphml" ecorePackage="ygraphml.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ygraphml.ecore#//Alignment">
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//Alignment/center"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//Alignment/left"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//Alignment/right"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ygraphml.ecore#//ArcType">
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ArcType/fixedHeight"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ArcType/fixedRatio"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ygraphml.ecore#//ArrowType">
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ArrowType/standard"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ArrowType/delta"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ArrowType/diamond"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ArrowType/whiteDiamond"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ArrowType/whiteDelta"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ArrowType/none"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ArrowType/plain"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ArrowType/concave"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ArrowType/convex"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ArrowType/circle"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ArrowType/dash"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ArrowType/transparentCircle"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ArrowType/skewedDash"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ArrowType/tShape"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ArrowType/short"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ygraphml.ecore#//AutoSizePolicy">
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//AutoSizePolicy/nodeWidth"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//AutoSizePolicy/nodeHeight"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//AutoSizePolicy/content"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//AutoSizePolicy/none"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ygraphml.ecore#//EdgeLabelModel">
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//EdgeLabelModel/centered"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//EdgeLabelModel/centerSlider"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//EdgeLabelModel/sideSlider"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//EdgeLabelModel/free"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//EdgeLabelModel/twoPos"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//EdgeLabelModel/threeCenter"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//EdgeLabelModel/sixPos"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//EdgeLabelModel/custom"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ygraphml.ecore#//EdgeLabelPosition">
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//EdgeLabelPosition/center"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//EdgeLabelPosition/tcentr"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//EdgeLabelPosition/scentr"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//EdgeLabelPosition/anywhere"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//EdgeLabelPosition/stail"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//EdgeLabelPosition/ttail"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//EdgeLabelPosition/tail"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//EdgeLabelPosition/shead"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//EdgeLabelPosition/thead"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//EdgeLabelPosition/head"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ygraphml.ecore#//FontStyle">
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//FontStyle/plain"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//FontStyle/bold"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//FontStyle/italic"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//FontStyle/bolditalic"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ygraphml.ecore#//HorizontalTextPosition">
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//HorizontalTextPosition/left"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//HorizontalTextPosition/right"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//HorizontalTextPosition/center"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//HorizontalTextPosition/leftAligned"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//HorizontalTextPosition/rightAligned"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ygraphml.ecore#//LineType">
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//LineType/line"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//LineType/dashed"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//LineType/dotted"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//LineType/dashedDotted"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ygraphml.ecore#//NodeLabelModel">
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelModel/free"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelModel/sides"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelModel/corners"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelModel/eightPos"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelModel/sandwich"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelModel/internal"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelModel/custom"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ygraphml.ecore#//NodeLabelPosition">
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelPosition/n"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelPosition/nw"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelPosition/ne"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelPosition/w"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelPosition/e"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelPosition/sw"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelPosition/s"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelPosition/se"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelPosition/c"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelPosition/tl"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelPosition/t"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelPosition/tr"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelPosition/r"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelPosition/l"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelPosition/bl"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelPosition/b"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelPosition/br"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeLabelPosition/anywhere"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ygraphml.ecore#//NodeScaledPortLocationModelPortLocationPolicy">
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeScaledPortLocationModelPortLocationPolicy/POLICYDISCRETE"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeScaledPortLocationModelPortLocationPolicy/POLICYBOUNDARY"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeScaledPortLocationModelPortLocationPolicy/POLICYBOUNDARYCENTER"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeScaledPortLocationModelPortLocationPolicy/POLICYBOUNDARYINSIDE"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//NodeScaledPortLocationModelPortLocationPolicy/POLICYFREE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ygraphml.ecore#//PortConstraintEndpoint">
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PortConstraintEndpoint/source"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PortConstraintEndpoint/target"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ygraphml.ecore#//PortConstraintSide">
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PortConstraintSide/east"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PortConstraintSide/west"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PortConstraintSide/north"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PortConstraintSide/south"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PortConstraintSide/any"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ygraphml.ecore#//PortLabelModelParameterPosition">
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PortLabelModelParameterPosition/north"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PortLabelModelParameterPosition/south"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PortLabelModelParameterPosition/east"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PortLabelModelParameterPosition/west"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PortLabelModelParameterPosition/center"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ygraphml.ecore#//PreferredPlacement">
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PreferredPlacement/targetRight"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PreferredPlacement/target"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PreferredPlacement/targetLeft"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PreferredPlacement/targetOnEdge"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PreferredPlacement/sourceRight"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PreferredPlacement/source"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PreferredPlacement/sourceLeft"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PreferredPlacement/sourceOnEdge"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PreferredPlacement/centerRight"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PreferredPlacement/center"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PreferredPlacement/centerLeft"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PreferredPlacement/centerOnEdge"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PreferredPlacement/anywhere"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PreferredPlacement/onEdge"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PreferredPlacement/left"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//PreferredPlacement/right"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ygraphml.ecore#//ShapeType">
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ShapeType/rectangle"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ShapeType/roundrectangle"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ShapeType/ellipse"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ShapeType/parallelogram"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ShapeType/hexagon"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ShapeType/octagon"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ShapeType/diamond"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ShapeType/triangle"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ShapeType/trapezoid"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ShapeType/trapezoid2"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//ShapeType/rectangle3d"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ygraphml.ecore#//VerticalTextPosition">
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//VerticalTextPosition/top"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//VerticalTextPosition/bottom"/>
+      <genEnumLiterals ecoreEnumLiteral="ygraphml.ecore#//VerticalTextPosition/center"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="ygraphml.ecore#//AlignmentObject"/>
+    <genDataTypes ecoreDataType="ygraphml.ecore#//ArcObject"/>
+    <genDataTypes ecoreDataType="ygraphml.ecore#//ArrowTypeObject"/>
+    <genDataTypes ecoreDataType="ygraphml.ecore#//AutoSizePolicyObject"/>
+    <genDataTypes ecoreDataType="ygraphml.ecore#//Color"/>
+    <genDataTypes ecoreDataType="ygraphml.ecore#//EdgeLabelModelObject"/>
+    <genDataTypes ecoreDataType="ygraphml.ecore#//EdgeLabelPositionObject"/>
+    <genDataTypes ecoreDataType="ygraphml.ecore#//FontStyleObject"/>
+    <genDataTypes ecoreDataType="ygraphml.ecore#//HorizontalTextPositionObject"/>
+    <genDataTypes ecoreDataType="ygraphml.ecore#//LineTypeObject"/>
+    <genDataTypes ecoreDataType="ygraphml.ecore#//NodeLabelModelObject"/>
+    <genDataTypes ecoreDataType="ygraphml.ecore#//NodeLabelPositionObject"/>
+    <genDataTypes ecoreDataType="ygraphml.ecore#//NodeScaledPortLocationModelPortLocationPolicyObject"/>
+    <genDataTypes ecoreDataType="ygraphml.ecore#//PortConstraintEndpointObject"/>
+    <genDataTypes ecoreDataType="ygraphml.ecore#//PortConstraintSideObject"/>
+    <genDataTypes ecoreDataType="ygraphml.ecore#//PortLabelModelParameterPositionObject"/>
+    <genDataTypes ecoreDataType="ygraphml.ecore#//PreferredPlacementObject"/>
+    <genDataTypes ecoreDataType="ygraphml.ecore#//ShapeTypeObject"/>
+    <genDataTypes ecoreDataType="ygraphml.ecore#//VerticalTextPositionObject"/>
+    <genClasses ecoreClass="ygraphml.ecore#//ArcEdge">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//ArcEdge/arc"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//Arc">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Arc/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Arc/height"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Arc/ratio"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//Arrows">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Arrows/source"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Arrows/target"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//BendStyle">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//BendStyle/smoothed"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//ColumnNodeLabelModelParameter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//ColumnNodeLabelModelParameter/verticalPosition"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//Columns">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//Columns/column"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/arcEdge"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/bezierEdge"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/columnNodeLabelModel"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/columnNodeLabelModelParameter"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/genericEdge"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/genericGroupNode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/genericNode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/geometry"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/graphics"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/groupNode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/imageNode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/nodeScaledPortLocationModel"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/polyLineEdge"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/portConstraint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/portLabelModel"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/portLabelModelParameter"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/postprocessors"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/proxyAutoBoundsNode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/proxyShapeNode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/quadCurveEdge"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/resources"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/rowNodeLabelModel"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/rowNodeLabelModelParameter"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/shapeNode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/simpleStyle"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/splineEdge"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/tableNode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//DocumentRoot/userData"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//DropShadow">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//DropShadow/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//DropShadow/offsetX"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//DropShadow/offsetY"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//EdgeLabel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//EdgeLabel/modelName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//EdgeLabel/modelPosition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//EdgeLabel/preferredPlacement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//EdgeLabel/distance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//EdgeLabel/ratio"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//EdgePort">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//EdgePort/icon"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//EdgePort/type"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//Edge">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//Edge/path"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//Edge/lineStyle"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//Edge/arrows"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//Edge/edgeLabel"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//Edge/sourcePort"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//Edge/targetPort"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Edge/selected"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//Fill">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Fill/hasColor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Fill/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Fill/color2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Fill/transparent"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//FloatInsets">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//FloatInsets/top"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//FloatInsets/bottom"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//FloatInsets/left"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//FloatInsets/right"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//GenericEdge">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//GenericEdge/userData"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//GenericEdge/configuration"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//GenericGroupNode">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//GenericGroupNode/state"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//GenericGroupNode/insets"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//GenericGroupNode/borderInsets"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//GenericNode">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//GenericNode/userData"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//GenericNode/styleProperties"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//GenericNode/configuration"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//Geometry">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Geometry/height"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Geometry/width"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Geometry/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Geometry/y"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//GroupNode">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//GroupNode/shape"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//GroupNode/dropShadow"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//GroupNode/state"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//GroupNode/nodeBounds"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//GroupNode/insets"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//GroupNode/borderInsets"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//Icon">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Icon/icon"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Icon/image"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Icon/iconData"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//ImageNode">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//ImageNode/image"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//Image">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Image/href"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Image/alphaImage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Image/refid"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//Insets">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Insets/topF"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Insets/bottomF"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Insets/leftF"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Insets/rightF"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//IntInsets">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//IntInsets/top"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//IntInsets/bottom"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//IntInsets/left"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//IntInsets/right"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//LabelModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute ygraphml.ecore#//LabelModel/any"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//Label">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ygraphml.ecore#//Label/labelModel"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference ygraphml.ecore#//Label/modelParameter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/height"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/width"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/y"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/visible"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/alignment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/textColor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/lineColor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/hasLineColor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/backgroundColor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/hasBackgroundColor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/hasText"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/fontFamily"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/fontSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/fontStyle"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/rotationAngle"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/icon"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/image"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/iconData"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/underlinedText"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/horizontalTextPosition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/verticalTextPosition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/iconTextGap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Label/configuration"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//LineStyle">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//LineStyle/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//LineStyle/hasColor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//LineStyle/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//LineStyle/width"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//ModelParameter">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute ygraphml.ecore#//ModelParameter/any"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//NodeBounds">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//NodeBounds/considerNodeLabelSize"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//NodeLabel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//NodeLabel/modelName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//NodeLabel/modelPosition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//NodeLabel/autoSizePolicy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//NodeLabel/borderDistance"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//NodePorts">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//NodePorts/nodePort"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//NodePort">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//NodePort/id"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//NodeScaledPortLocationModel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//NodeScaledPortLocationModel/portLocationPolicy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//NodeScaledPortLocationModel/ratioX"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//NodeScaledPortLocationModel/ratioY"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//Node">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//Node/geometry"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//Node/fill"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//Node/borderStyle"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//Node/nodeLabel"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//Node/nodePorts"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Node/selected"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//Option">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Option/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Option/value"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//Path">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//Path/point"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Path/reversedPathRendering"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Path/sx"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Path/sy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Path/tx"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Path/ty"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//Point">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Point/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Point/y"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//PolyLineEdge">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//PolyLineEdge/bendStyle"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//PortConstraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//PortConstraint/endpoint"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//PortConstraint/side"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//PortConstraint/strong"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//PortConstraint/groupid"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//PortGeometry">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute ygraphml.ecore#//PortGeometry/any"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//PortGraphics">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//PortGraphics/configuration"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//PortGraphics/selected"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//PortLabelModelParameter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//PortLabelModelParameter/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//PortLabelModelParameter/position"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//PortLabelModel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//PortLabelModel/localCandidatesEnabled"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//PortLabelModel/offset"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//Postprocessors">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//Postprocessors/processor"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//Processor">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//Processor/option"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Processor/class"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//ProxyShapeNode">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//ProxyShapeNode/realizers"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//QuadCurveEdge">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//QuadCurveEdge/straightness"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//Realizers">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Realizers/any"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Realizers/active"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//Rectangle">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Rectangle/height"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Rectangle/width"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Rectangle/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Rectangle/y"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//ResourceBlock">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//ResourceBlock/resource"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//Resource">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Resource/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Resource/any"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Resource/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Resource/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Resource/format"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//RowNodeLabelModelParameter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//RowNodeLabelModelParameter/horizontalPosition"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//Rows">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//Rows/row"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//ShapeNode">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//ShapeNode/shape"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//ShapeNode/dropShadow"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//Shape">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Shape/type"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//SimpleStyle">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//SimpleStyle/fillColor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//SimpleStyle/lineColor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//SimpleStyle/lineType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//SimpleStyle/lineWidth"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//State">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//State/closed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//State/innerGraphDisplayEnabled"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//State1">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//State1/closed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//State1/autoResize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//State1/closedHeight"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//State1/closedWidth"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//StyleProperties">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//StyleProperties/property"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//StyleProperty">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute ygraphml.ecore#//StyleProperty/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//StyleProperty/any"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//StyleProperty/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//StyleProperty/class"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//StyleProperty/value"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//TableColumn">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//TableColumn/insets"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//TableColumn/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//TableColumn/minimumWidth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//TableColumn/width"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//TableNodeLabelModelParameter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//TableNodeLabelModelParameter/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//TableNodeLabelModelParameter/inside"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//TableNodeLabelModel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//TableNodeLabelModel/offset"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//TableNode">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//TableNode/table"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//TableRow">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//TableRow/insets"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//TableRow/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//TableRow/minimumHeight"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//TableRow/height"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//Table">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//Table/defaultColumnInsets"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//Table/defaultRowInsets"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//Table/insets"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//Table/columns"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ygraphml.ecore#//Table/rows"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Table/autoResizeTable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Table/defaultColumnWidth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Table/defaultMinimumColumnWidth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Table/defaultRowHeight"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//Table/defaultMinimumRowHeight"/>
+    </genClasses>
+    <genClasses ecoreClass="ygraphml.ecore#//UserData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//UserData/class"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ygraphml.ecore#//UserData/value"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Yed" basePackage="com.yworks" resource="XML" disposableProviderFactory="true"
+      multipleEditorPages="false" generateModelWizard="false" contentTypeIdentifier=""
+      fileExtensions="DO_NOT_USE_DUMMY_yed" ecorePackage="yed.ecore#/">
+    <genClasses ecoreClass="yed.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute yed.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference yed.ecore#//DocumentRoot/imageIcon"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference yed.ecore#//DocumentRoot/scaledIcon"/>
+    </genClasses>
+    <genClasses ecoreClass="yed.ecore#//ImageIcon">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute yed.ecore#//ImageIcon/image"/>
+    </genClasses>
+    <genClasses ecoreClass="yed.ecore#//ScaledIcon">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute yed.ecore#//ScaledIcon/xScale"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute yed.ecore#//ScaledIcon/yScale"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute yed.ecore#//ScaledIcon/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute yed.ecore#//ScaledIcon/any"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

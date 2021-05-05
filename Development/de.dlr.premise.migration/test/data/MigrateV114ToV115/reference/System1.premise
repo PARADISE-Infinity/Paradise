@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:rep="http://www.dlr.de/ft/premise/representation/2012/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.15" xmi:version="2.0">
+  <metaData name="Explanation" value="The files are seemingly empty, but they still contain all the elements to be tested. These are Representation (referenced as Extension in the ProjectRepository) and CalcEngine (referenced via the ProjectRepository and its functionpool)"/>
+  <functionPools href="Functionpool1.functionpool#/"/>
+  <extensions href="Representation.representation#2bf86d9c-54ee-4ead-89c7-ca22d88f8db0" xsi:type="rep:Representation"/>
+</prem:ProjectRepository>

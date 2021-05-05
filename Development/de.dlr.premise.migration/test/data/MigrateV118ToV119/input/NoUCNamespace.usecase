@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" metaModel="1.18">
+  <metaData name="View">
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Show Parameters" value="true"/>
+        <children name="Group Elements" value="true"/>
+      </children>
+    </children>
+  </metaData>
+  <usecases name="Root" id="b46102f4-06fa-46f2-84c5-2aff3e78c9da">
+    <requiredParameters name="ReqParam" id="0d94f9db-67b1-4b03-8d27-3f453f283ca3"/>
+  </usecases>
+</uc:UseCaseRepository>

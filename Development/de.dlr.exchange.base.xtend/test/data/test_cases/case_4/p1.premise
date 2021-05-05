@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:rep="http://www.dlr.de/ft/premise/representation/2012/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.27" xmi:version="2.0">
+  <extensions href="rep.representation#/" xsi:type="rep:Representation"/>
+  <projects id="a53e31f5-7ecc-495f-81fe-d052a0ed03ad" name="p1.1">
+    <parameters id="74da4177-118b-4a11-a3f8-d07a32f88c31" name="p1.1" xsi:type="prem:Parameter">
+      <value value="1" xsi:type="reg:Value"/>
+      <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="u1.usecase#//@usecases.0/@requiredParameters.0" xsi:type="uc:RequiredParameter"/>
+	</targetPointer>
+</satisfies>
+    </parameters>
+  </projects>
+  <projects id="75ebd9a1-bb53-46e3-ad54-1a71e5481119" name="p1.2"/>
+  <projects id="48263fdc-dfe1-45ac-8d5a-589ba9b06d09" name="p1.3"/>
+</prem:ProjectRepository>

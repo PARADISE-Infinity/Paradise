@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="system" nsURI="http://www.dlr.de/ft/premise/2010/" nsPrefix="prem">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+    <details key="documentation" value="The premise package is part of the PREMISE Ecore model and  includes all the basic elements to describe system. This includes the description of the system structure and the system behavior. In addition, the organization of systems in system component libraries and project repositories described in premise."/>
+  </eAnnotations>
+  <eAnnotations source="http://www.eclipse.org/OCL/Import">
+    <details key="comp" value="PREMISE_Component.ecore#/"/>
+    <details key="ecore" value="http://www.eclipse.org/emf/2002/Ecore"/>
+    <details key="elem" value="PREMISE_Element.ecore#/"/>
+    <details key="fnp" value="PREMISE_FunctionPool.ecore#/"/>
+    <details key="graph" value="PREMISE_Graph.ecore#/"/>
+    <details key="reg" value="PREMISE_Registry.ecore#/"/>
+    <details key="uc" value="PREMISE_Function.ecore#/"/>
+  </eAnnotations>
+  <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+    <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Parameter">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="A parameter describes a system property, such as the system mass or energy consumption. The parameter can be defined for different system states and can also meet various constraints."/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="UniqueTarget ValidSatisfiedUnit"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="UniqueTarget" value="Tuple {&#xA;&#x9;message : String = getErrorMessageForUniqueTarget(),&#xA;&#x9;status : Boolean = isUniqueTarget()&#xA;}.status"/>
+      <details key="ValidSatisfiedUnit" value="Tuple {&#xA;&#x9;message : String = getErrorMessageForValidSatisfiedUnit(),&#xA;&#x9;status : Boolean = isValidSatisfiedUnit()&#xA;}.status"/>
+    </eAnnotations>
+    <eOperations name="isUniqueTarget" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.ParameterHelper.isUniqueTarget(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getErrorMessageForUniqueTarget" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.ParameterHelper.getErrorMessageForUniqueTarget(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="isValidSatisfiedUnit" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.ParameterHelper.isValidSatisfiedUnit(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getErrorMessageForValidSatisfiedUnit" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.ParameterHelper.getErrorMessageForValidSatisfiedUnit(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modeValues" upperBound="-1"
+        eType="#//ModeValueRef" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="satisfiesRequiredParameters"
+        upperBound="-1" eType="ecore:EClass PREMISE_Function.ecore#//RequiredParameter"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="get" value="return de.dlr.premise.system.impl.my.util.ParameterHelper.getSatisfiesRequiredParameters(this);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//AParameterDef"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//IOclValidated"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Component.ecore#//ISatisfying">
+      <eTypeArguments eClassifier="#//Parameter"/>
+      <eTypeArguments eClassifier="ecore:EClass PREMISE_Component.ecore#//IParameterSatisfieable"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ABalancing" abstract="true">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Abstract base class for all balancing classes.&#xA;Known subclasses are, for instance: TransitionBalancing and Balancing.&#xA;For getting the target or source parameters casting to a derived class is necessary.&#xA;@see PremiseHelper for methods to get all target or source parameters"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="CyclicBalancing"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="CyclicBalancing" value="Tuple {&#xA;&#x9;message : String = getErrorMessageForNotCyclicBalancing(),&#xA;&#x9;status : Boolean = isNotCyclicBalancing()&#xA;&#x9;&#x9;&#xA;}.status"/>
+    </eAnnotations>
+    <eTypeParameters name="T">
+      <eBounds eClassifier="ecore:EClass PREMISE_Registry.ecore#//AParameterDef"/>
+    </eTypeParameters>
+    <eOperations name="isNotCyclicBalancing" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.ABalancingHelper.isNotCyclicBalancing(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getErrorMessageForNotCyclicBalancing" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.ABalancingHelper.getErrorMessageForNotCyclicBalancing(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getSources" upperBound="-1">
+      <eGenericType eTypeParameter="#//ABalancing/T"/>
+    </eOperations>
+    <eOperations name="getTarget">
+      <eGenericType eTypeParameter="#//ABalancing/T"/>
+    </eOperations>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//ANameItem"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//IMetaTypable"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Graph.ecore#//IEdge">
+      <eTypeArguments eTypeParameter="#//ABalancing/T"/>
+      <eTypeArguments eTypeParameter="#//ABalancing/T"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Balancing">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Specifies all information needed to perform a calculation based on static parameters."/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="SourcesValid TargetValid SourcesNeedValue"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="SourcesValid" value="Tuple {&#xA;&#x9;message : String = 'Balancing: Source parameter must be parameter of the containing component or its children or parents.',&#xA;&#x9;status : Boolean = isSourcesValid()&#xA;&#x9;&#x9;&#xA;}.status"/>
+      <details key="TargetValid" value="Tuple {&#xA;&#x9;message : String = 'Balancing: Target parameter must be parameter of containing component.',&#xA;&#x9;status : Boolean = isTargetValid()&#xA;}.status"/>
+      <details key="SourcesNeedValue" value="Tuple {&#xA;&#x9;message : String = 'Balancing: Sources need a value',&#xA;&#x9;status : Boolean = sources->forAll(value &lt;> null)&#xA;}.status"/>
+    </eAnnotations>
+    <eOperations name="queryValidSourcesParentComponentReferenceList" ordered="false"
+        upperBound="-1" eType="#//ComponentReference">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.BalancingHelper.queryValidSourcesParentComponentReferenceList(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="queryValidTargetParentComponentReferenceList" ordered="false"
+        upperBound="-1" eType="#//ComponentReference">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.BalancingHelper.queryValidTargetParentComponentReferenceList(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="queryValidSourcesList" ordered="false" upperBound="-1" eType="ecore:EClass PREMISE_Registry.ecore#//AParameterDef">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.BalancingHelper.queryValidSourcesList(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="queryValidTargetList" ordered="false" upperBound="-1" eType="ecore:EClass PREMISE_Registry.ecore#//AParameterDef">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.BalancingHelper.queryValidTargetList(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="isSourcesValid" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.BalancingHelper.isSourcesValid(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="isTargetValid" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.BalancingHelper.isTargetValid(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="setTarget">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="de.dlr.premise.system.impl.my.util.BalancingHelper.setTarget(this, newTarget);"/>
+      </eAnnotations>
+      <eParameters name="newTarget" eType="ecore:EClass PREMISE_Registry.ecore#//AParameterDef"/>
+    </eOperations>
+    <eOperations name="setTargetPointer">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="de.dlr.premise.system.impl.my.util.BalancingHelper.setTargetPointer(this, newTargetPointer);"/>
+      </eAnnotations>
+      <eParameters name="newTargetPointer">
+        <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+          <eTypeArguments eClassifier="ecore:EClass PREMISE_Registry.ecore#//AParameterDef"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="getTargetPointers" upperBound="-1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.element.impl.my.util.IEdgeHelper.getTargetPointers(this);"/>
+      </eAnnotations>
+      <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+        <eTypeArguments eClassifier="ecore:EClass PREMISE_Registry.ecore#//AParameterDef"/>
+      </eGenericType>
+    </eOperations>
+    <eOperations name="getSourceParameterProportionality" eType="#//ParameterProportionality">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.BalancingHelper.getSourceParameterProportionality(this, parameter);"/>
+      </eAnnotations>
+      <eParameters name="parameter" eType="ecore:EClass PREMISE_Registry.ecore#//AParameterDef"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sources" unique="false"
+        upperBound="-1" eType="ecore:EClass PREMISE_Registry.ecore#//AParameterDef"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="get" value="return de.dlr.premise.util.PointerHelper.delegateGetToPointerCollection(this, SystemPackage.Literals.BALANCING__SOURCE_POINTERS);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
+        eType="ecore:EClass PREMISE_Registry.ecore#//AParameterDef" changeable="false"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="get" value="return de.dlr.premise.util.PointerHelper.delegateGetToPointer(this, SystemPackage.Literals.BALANCING__TARGET_POINTER);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourcePointers" upperBound="-1"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="get" value="return de.dlr.premise.system.impl.my.util.BalancingHelper.getSourcePointers(this);"/>
+      </eAnnotations>
+      <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+        <eTypeArguments eClassifier="ecore:EClass PREMISE_Registry.ecore#//AParameterDef"/>
+      </eGenericType>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetPointer" changeable="false"
+        volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="get" value="return de.dlr.premise.system.impl.my.util.BalancingHelper.getTargetPointer(this);"/>
+      </eAnnotations>
+      <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+        <eTypeArguments eClassifier="ecore:EClass PREMISE_Registry.ecore#//AParameterDef"/>
+      </eGenericType>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actualSources" upperBound="-1"
+        eType="#//ParameterNameMapping" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actualTarget" eType="#//ParameterNameMapping"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="function" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eGenericSuperTypes eClassifier="#//ABalancing">
+      <eTypeArguments eClassifier="ecore:EClass PREMISE_Registry.ecore#//AParameterDef"/>
+    </eGenericSuperTypes>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//IOclValidated"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ParameterNameMapping">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="key" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="value" containment="true">
+      <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+        <eTypeArguments eClassifier="ecore:EClass PREMISE_Registry.ecore#//AParameterDef"/>
+      </eGenericType>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TransitionBalancing">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Specifies all information needed to perform a calculation of a TransitionParameter which is a parameter of a Transition (mode transition).&#xA;This balancing is based on its parent transition which is also specified by the target parameter.&#xA;The function used depends on the guard conditions which may specify logical junctions like AND or OR.&#xA;This enables calculating failureRates or transition probabilities in a state machine or petri net.&#xA;&#xA;If source TransitionParameters belong to transitions which are all targeting a current mode trigger,&#xA;the source parameter values are treated like an OR junction.&#xA;If a specified parameter is invalid or its parent transition not addressed by current constraint, the TransitionBalancing is invalid and calculation omitted.&#xA;@see ABalancing how to get its source parameters&#xA;@see Transition and its constraint&#xA;@see TransitionParameter"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="TargetReachable"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="TargetReachable" value="Tuple {&#xA;&#x9;message : String = 'Transition Balancing: Target must be direct sibling',&#xA;&#x9;status : Boolean = target &lt;> null implies queryValidTargetList()->includes(target)&#xA;}.status"/>
+    </eAnnotations>
+    <eOperations name="queryValidTargetList" ordered="false" upperBound="-1" eType="#//TransitionParameter">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="self.oclContainer().oclAsType(element::Transition).parameters->asSet()"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getTargetPointers" upperBound="-1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.TransitionBalancingHelper.getTargetPointers(this);"/>
+      </eAnnotations>
+      <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+        <eTypeArguments eClassifier="#//TransitionParameter"/>
+      </eGenericType>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
+        eType="#//TransitionParameter"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sources" upperBound="-1"
+        eType="#//TransitionParameter" changeable="false" volatile="true" transient="true"
+        derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="get" value="return de.dlr.premise.util.PointerHelper.delegateGetToPointerCollection(this, SystemPackage.Literals.TRANSITION_BALANCING__SOURCE_POINTERS);"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sourcePointers" upperBound="-1"
+        changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="get" value="return de.dlr.premise.system.impl.my.util.TransitionBalancingHelper.getSourcePointers(this);"/>
+      </eAnnotations>
+      <eGenericType eClassifier="ecore:EClass PREMISE_Graph.ecore#//APointer">
+        <eTypeArguments eClassifier="#//TransitionParameter"/>
+      </eGenericType>
+    </eStructuralFeatures>
+    <eGenericSuperTypes eClassifier="#//ABalancing">
+      <eTypeArguments eClassifier="#//TransitionParameter"/>
+    </eGenericSuperTypes>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//IOclValidated"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Graph.ecore#//IEdge">
+      <eTypeArguments eClassifier="#//TransitionParameter"/>
+      <eTypeArguments eClassifier="#//TransitionParameter"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TransitionParameter" eSuperTypes="PREMISE_Registry.ecore#//AParameterDef">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="A parameter of a transition. It may specify, for instance, a failureRate, priority, or probability of a transition.&#xA;It can also be used as a source parameter of an ordinary Balancing.&#xA;@see TransitionBalancing"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IComponent" abstract="true" interface="true"
+      eSuperTypes="PREMISE_Graph.ecore#//INode">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="component" eType="#//SystemComponent"
+        changeable="false" volatile="true" transient="true" derived="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SystemComponent">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="A system component is a member of a set of components that constitutes a system. Also this component may be a major product, service or function of a system. The term subsystem is sometimes used instead of component."/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="SatisfiesValid"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="SatisfiesValid" value="Tuple{ &#xA;&#x9;&#x9;&#x9;status = isSatisfiesValid(),&#xA;&#x9;&#x9;&#x9;message = getErrorMessageForInvalidSatisfies()&#xA;&#x9;&#x9;}.status"/>
+    </eAnnotations>
+    <eOperations name="getUnsatisfiedSatisfieablesFor" ordered="false" upperBound="-1"
+        eType="ecore:EClass PREMISE_Component.ecore#//ISatisfieable">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.SystemComponentHelper.getUnsatisfiedSatisfieablesFor(this, componentSatisfieable);"/>
+      </eAnnotations>
+      <eParameters name="componentSatisfieable" lowerBound="1" eType="ecore:EClass PREMISE_Component.ecore#//ISystemComponentSatisfieable"/>
+    </eOperations>
+    <eOperations name="satisfieableApplies" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.SystemComponentHelper.satisfieableApplies(this, componentSatisfieable);"/>
+      </eAnnotations>
+      <eParameters name="componentSatisfieable" lowerBound="1" eType="ecore:EClass PREMISE_Component.ecore#//ISystemComponentSatisfieable"/>
+    </eOperations>
+    <eOperations name="getInapplicableSatisfies" ordered="false" upperBound="-1" eType="ecore:EClass PREMISE_Component.ecore#//ISystemComponentSatisfieable">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.SystemComponentHelper.getInapplicableSatisfies(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="isSatisfiesValid" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.SystemComponentHelper.isSatisfiesValid(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getErrorMessageForInvalidSatisfies" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.SystemComponentHelper.getErrorMessageForInvalidSatisfies(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="hasCyclicComponentReference" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.SystemComponentHelper.hasCyclicComponentReference(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameters" ordered="false"
+        upperBound="-1" eType="#//Parameter" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="balancings" ordered="false"
+        upperBound="-1" eType="#//Balancing" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="connections" upperBound="-1"
+        containment="true">
+      <eGenericType eClassifier="ecore:EClass PREMISE_Element.ecore#//Connection">
+        <eTypeArguments eClassifier="#//SystemComponent"/>
+      </eGenericType>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="relations" ordered="false"
+        upperBound="-1" eType="ecore:EClass PREMISE_Element.ecore#//Relation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="children" ordered="false"
+        upperBound="-1" eType="#//IComponent" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="referencedChildren" upperBound="-1"
+        eType="#//SystemComponent" changeable="false" volatile="true" transient="true"
+        derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="The resolved children of a SystemComponent. This reference contains the SystemComponents contained&#xA;in {@link #children} and the {@link ComponentReference#activemplementation} of the ComponentReference&#xA;in children."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Element.ecore#//AElement"/>
+    <eGenericSuperTypes eClassifier="#//IComponent"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//IOclValidated"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Component.ecore#//ISatisfyingRoot">
+      <eTypeArguments eClassifier="#//SystemComponent"/>
+      <eTypeArguments eClassifier="ecore:EClass PREMISE_Component.ecore#//ISystemComponentSatisfieable"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ComponentReference">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="ActiveImplementationValid ComponentReferenceCyclic"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="ActiveImplementationValid" value="Tuple {&#xA;&#x9;message : String = 'Component Reference: Active implementation must satisfy component defintion',&#xA;&#x9;status : Boolean = isActiveImplementationValid()&#xA;}.status"/>
+      <details key="ComponentReferenceCyclic" value="Tuple {&#xA;&#x9;message : String = 'ComponentReferences my not by cyclic',&#xA;&#x9;status : Boolean = &#xA;&#x9;&#x9;&#x9;activeImplementation &lt;> null implies not activeImplementation.hasCyclicComponentReference()&#xA;}.status"/>
+    </eAnnotations>
+    <eOperations name="queryIsValidActiveImplementationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.ComponentReferenceHelper.queryIsValidActiveImplementationValue(this, activeImplementation);"/>
+      </eAnnotations>
+      <eParameters name="activeImplementation" eType="#//SystemComponent"/>
+    </eOperations>
+    <eOperations name="isActiveImplementationValid" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.ComponentReferenceHelper.isActiveImplementationValid(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="componentDefinition" lowerBound="1"
+        eType="ecore:EClass PREMISE_Component.ecore#//ComponentDefinition"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="activeImplementation" lowerBound="1"
+        eType="#//SystemComponent"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="substitutionMap" upperBound="-1"
+        eType="#//ComponentReferenceSubstitutionMapping" containment="true"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//ADataItem"/>
+    <eGenericSuperTypes eClassifier="#//IComponent"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Registry.ecore#//IOclValidated"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass PREMISE_Component.ecore#//ISatisfying">
+      <eTypeArguments eClassifier="#//ComponentReference"/>
+      <eTypeArguments eClassifier="ecore:EClass PREMISE_Component.ecore#//IComponentReferenceSatisfieable"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ComponentReferenceSubstitutionMapping"
+      eSuperTypes="PREMISE_Registry.ecore#//IPremiseObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pinned" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="original" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="relativeScope" upperBound="-1"
+        eType="#//ComponentReference"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="substitution" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ModeValueRef" eSuperTypes="PREMISE_Element.ecore#//AModeCombination PREMISE_Registry.ecore#//AValueDef PREMISE_Registry.ecore#//IOclValidated">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="For this class, change notification is activated."/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="ValidNumber ModesValid"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="ValidNumber" value="Tuple {&#xA;&#x9;message : String = 'Value must be a valid real number',&#xA;&#x9;status : Boolean = value &lt;> null implies value.matches('^-?\\d*(\\d\\.|\\.\\d+)?([eE]-?\\d+)?$')&#xA;}.status"/>
+      <details key="ModesValid" value="Tuple {&#xD;&#xA;&#x9;message : String = 'ModeValueRef: Modes must be of the containing component or its children or parents if the parameter is not calculated.',&#xD;&#xA;&#x9;status : Boolean = self.isModesValid()&#xD;&#xA;}.status"/>
+    </eAnnotations>
+    <eOperations name="isModesValid" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.ModeValueRefHelper.isModesValid(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="queryValidModePointersList" upperBound="-1" eType="ecore:EClass PREMISE_Element.ecore#//Mode">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.ModeValueRefHelper.queryValidModePointersList(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="queryValidModePointersParentComponentReferenceList" upperBound="-1"
+        eType="#//ComponentReference">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.system.impl.my.util.ModeValueRefHelper.queryValidModePointersParentComponentReferenceList(this);"/>
+      </eAnnotations>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProjectRepository" eSuperTypes="PREMISE_Element.ecore#//ARepository">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="A project repository persists a collection of projects in a persistance."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="projects" ordered="false"
+        upperBound="-1" eType="#//SystemComponent" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ParameterProportionality" eSuperTypes="PREMISE_Registry.ecore#//IPremiseObject">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="p" eType="ecore:EClass PREMISE_Registry.ecore#//AParameterDef"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="a" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="b" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+  </eClassifiers>
+</ecore:EPackage>

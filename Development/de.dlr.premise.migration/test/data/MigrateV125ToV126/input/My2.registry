@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reg:Registry xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" metaModel="1.26">
+  <units name="DuplTemperature" symbol="K"/>
+</reg:Registry>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reg:Registry xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" metaModel="1.26" name="Test Registry" xmi:version="2.0">
+  <units name="NonDuplMagic" symbol="mag"/>
+  <units name="DerivLuminous Intensity" symbol="mcd">
+    <siUnitRef conversionFactorFromSI="0.001">
+<target href="premise:/Base.registry#cd"/>
+</siUnitRef>
+  </units>
+  <units name="DerivTempreature" symbol="kK">
+    <siUnitRef conversionFactorFromSI="1000.0">
+      <target href="premise:/Base.registry#K"/>
+    </siUnitRef>
+  </units>
+  <constants id="3d0300c4-ecec-4bb2-baaf-5db1598c32dc" name="AbsouluteZero">
+    <value uncertainty="" value="2"/>
+    <unit href="premise:/Base.registry#K"/>
+  </constants>
+  <constants id="4e41e7cd-5cd9-4015-95a0-91fb9accd31a" name="gravity">
+    <notes author="steh_ti" date="2018-03-14 16:10:07" text="It's not a space station, it's a moon!"/>
+    <value value="1.62"/>
+  <unit href="premise:/Base.registry#m/s^2"/>
+</constants>
+</reg:Registry>

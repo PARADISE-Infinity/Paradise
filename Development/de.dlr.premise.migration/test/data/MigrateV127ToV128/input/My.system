@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" metaModel="1.27">
+  <metaData name="View">
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Group Elements" value="false"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+      <children name="Edit local statemachines">
+        <children name="Group Elements" value="true"/>
+        <children name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </children>
+    </children>
+    <children name="dataTypeNames" value="on"/>
+    <children name="number representation pattern" value="##0.0###E0"/>
+  </metaData>
+  <projects name="Root" id="ec759a79-03f7-44a0-ae05-568e79563c6a">
+    <connections type="connections can also have types">
+      <sourcePointer xsi:type="graph:DirectPointer" target="ec663135-37aa-490e-bb85-1277dab0e946"/>
+      <targetPointer xsi:type="graph:DirectPointer" target="8b032473-0dbb-47b8-957d-fcc004f546a2"/>
+    </connections>
+    <children xsi:type="prem:SystemComponent" name="Child1" id="8b032473-0dbb-47b8-957d-fcc004f546a2">
+      <relations type="some type to migrate">
+        <sourcePointer xsi:type="graph:DirectPointer" target="8b032473-0dbb-47b8-957d-fcc004f546a2"/>
+        <targetPointer xsi:type="graph:DirectPointer">
+          <target xsi:type="uc:UseCase" href="My.usecase#e7714b04-73cb-40a4-ba88-96138242fb4f"/>
+        </targetPointer>
+      </relations>
+    </children>
+    <children xsi:type="prem:SystemComponent" name="Child2" id="ec663135-37aa-490e-bb85-1277dab0e946">
+      <relations type="another type to migrate">
+        <sourcePointer xsi:type="graph:DirectPointer" target="ec663135-37aa-490e-bb85-1277dab0e946"/>
+        <targetPointer xsi:type="graph:DirectPointer">
+          <target xsi:type="uc:UseCase" href="My.usecase#c54cec7b-9a2a-4bb3-9328-6be52e282929"/>
+        </targetPointer>
+      </relations>
+    </children>
+  </projects>
+</prem:ProjectRepository>

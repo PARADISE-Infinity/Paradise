@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0" xsi:schemaLocation="http://www.dlr.de/ft/premise/funcpool/2010/ ../../../de.dlr.ft.premise/model/PREMISE_FnPool.ecore http://www.dlr.de/ft/premise/2010/ ../../../de.dlr.ft.premise/model/PREMISE_system.ecore http://www.dlr.de/ft/premise/validated/2013/ ../../../de.dlr.ft.premise/model/PREMISE_system.ecore#//validated">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="off"/>
+  </metaData>
+  <metaData name="Export">
+    <metaData name="GraphML">
+      <metaData name="logical_hierarchy" value="off"/>
+      <metaData name="physical_portmappings" value="on"/>
+      <metaData name="parameter_dependencies" value="off"/>
+      <metaData name="self_references" value="on"/>
+      <metaData name="constants" value="on"/>
+    </metaData>
+    <metaData name="GraphML/FTA">
+      <metaData name="Names of parameters to be shown in diagram:" value="ReliabilityInfluence"/>
+    </metaData>
+  </metaData>
+  <projects id="32da9a7e-a7e2-455f-a93c-961426790972" name="CriticalControlSystem">
+    <parameters id="2001dbb2-9ce1-4b5c-a4c2-3174030df9a1" name="MissionDuration" xsi:type="prem:Parameter">
+      <value value="30" xsi:type="reg:Value"/>
+    <unit href="premise:/Base.registry#h"/>
+</parameters>
+    <parameters id="dc6fe0eb-49c2-4c4a-8e4d-41e9b3398124" name="MissionFailureProbability" xsi:type="prem:Parameter">
+      <value value="3.6300000000000005E-9" xsi:type="reg:Value"/>
+    </parameters>
+    <parameters id="266b66a0-c2a2-4896-b841-23bf9a96b885" name="ReliabilityInfluence" xsi:type="prem:Parameter">
+      <value value="100" xsi:type="reg:Value"/>
+    </parameters>
+    <parameters id="b006dcb4-a53e-4802-92a6-213e06906b89" name="tmpSubFailRates" xsi:type="prem:Parameter">
+      <value value="2.2000000000000003E-5" xsi:type="reg:Value"/>
+    </parameters>
+    <balancings function="MissionFailureProbability = Multiply(CriticalControlSystem._.FailureRate, MissionDuration)" name="Mul" xsi:type="prem:Balancing">
+    <actualSources key="CriticalControlSystem._.FailureRate">
+<value target="4135c360-1015-4fc6-843b-30a7bfa64a7f" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="MissionDuration">
+<value target="2001dbb2-9ce1-4b5c-a4c2-3174030df9a1" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="MissionFailureProbability">
+<value target="dc6fe0eb-49c2-4c4a-8e4d-41e9b3398124" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+    <balancings function="CriticalControlSystem.tmpSubFailRates = Sum(ActuationSystem1._.FailureRate, ActuationSystem2._.FailureRate)" name="SumSubFailRates" xsi:type="prem:Balancing">
+    <actualSources key="ActuationSystem1._.FailureRate">
+<value target="3677264a-044a-4a22-825d-bcc1051b9fcb" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="ActuationSystem2._.FailureRate">
+<value target="bb65c4d1-cfd7-4246-8749-7b345d02cc34" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="CriticalControlSystem.tmpSubFailRates">
+<value target="b006dcb4-a53e-4802-92a6-213e06906b89" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+    <connections sourcePortName="ACT1Out" targetPortName="ACT1In">
+<sourcePointer target="83a56139-c55b-41c3-860c-e12286b8d5bb" xsi:type="graph:DirectPointer"/>
+<targetPointer target="32da9a7e-a7e2-455f-a93c-961426790972" xsi:type="graph:DirectPointer"/>
+</connections>
+    <connections sourcePortName="ACT2Out" targetPortName="ACT2In">
+<sourcePointer target="0f614414-1654-489e-9830-c65fb553bf87" xsi:type="graph:DirectPointer"/>
+<targetPointer target="32da9a7e-a7e2-455f-a93c-961426790972" xsi:type="graph:DirectPointer"/>
+</connections>
+    <children id="dbfff46a-716f-4240-be1d-147f68c1935d" name="ActuationSystem1" xsi:type="prem:SystemComponent">
+      <parameters id="5dd27483-c4f6-4aff-a76f-84d6d48cad24" name="ReliabilityInfluence" xsi:type="prem:Parameter">
+        <value value="50.0" xsi:type="reg:Value"/>
+      </parameters>
+      <balancings function="ActuationSystem1.ReliabilityInfluence = _(ActuationSystem1._.FailureRate, CriticalControlSystem.tmpSubFailRates, CriticalControlSystem.ReliabilityInfluence)" xsi:type="prem:Balancing">
+      <actualSources key="ActuationSystem1._.FailureRate">
+<value target="3677264a-044a-4a22-825d-bcc1051b9fcb" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="CriticalControlSystem.tmpSubFailRates">
+<value target="b006dcb4-a53e-4802-92a6-213e06906b89" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="CriticalControlSystem.ReliabilityInfluence">
+<value target="266b66a0-c2a2-4896-b841-23bf9a96b885" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="ActuationSystem1.ReliabilityInfluence">
+<value target="5dd27483-c4f6-4aff-a76f-84d6d48cad24" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+      <children id="83a56139-c55b-41c3-860c-e12286b8d5bb" name="Actuator1" xsi:type="prem:SystemComponent">
+        <parameters id="ffb8532d-7355-4862-94ce-13f3cabba6ff" name="ReliabilityInfluence" xsi:type="prem:Parameter">
+          <value value="45.45454545454545" xsi:type="reg:Value"/>
+        </parameters>
+        <balancings function="Actuator1.ReliabilityInfluence = _(Actuator1._.FailureRate, ActuationSystem1._.FailureRate, ActuationSystem1.ReliabilityInfluence)" xsi:type="prem:Balancing">
+        <actualSources key="Actuator1._.FailureRate">
+<value target="5318f5a7-21e2-4bbc-a66a-95e2415312c7" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="ActuationSystem1._.FailureRate">
+<value target="3677264a-044a-4a22-825d-bcc1051b9fcb" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="ActuationSystem1.ReliabilityInfluence">
+<value target="5dd27483-c4f6-4aff-a76f-84d6d48cad24" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="Actuator1.ReliabilityInfluence">
+<value target="ffb8532d-7355-4862-94ce-13f3cabba6ff" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+        <connections sourcePortName="CC1Out" targetPortName="CC1In">
+<sourcePointer target="6f2727af-e61c-4784-a8ae-ca12180aa185" xsi:type="graph:DirectPointer"/>
+<targetPointer target="83a56139-c55b-41c3-860c-e12286b8d5bb" xsi:type="graph:DirectPointer"/>
+</connections>
+        <connections sourcePortName="CC2Out" targetPortName="CC2In">
+<sourcePointer target="0f9db2ac-1d90-46b0-9d55-39e3771e30ea" xsi:type="graph:DirectPointer"/>
+<targetPointer target="83a56139-c55b-41c3-860c-e12286b8d5bb" xsi:type="graph:DirectPointer"/>
+</connections>
+      <statemachines name="Actuator1">
+<modes entryMode="false" id="d6de20dd-0a14-4b10-abd8-ae32aaa6fe8e" name="Failure" xsi:type="elem:Mode"/>
+<transitions id="627f0ecb-e2f3-4c06-97c4-5cba465049dd">
+          <parameters id="5318f5a7-21e2-4bbc-a66a-95e2415312c7" name="FailureRate">
+            <value value="1.0E-05" xsi:type="reg:Value">
+            </value>
+          <unit href="_GLOBAL/Registry.premise.registry#1/h"/>
+</parameters>
+        <targetPointer target="d6de20dd-0a14-4b10-abd8-ae32aaa6fe8e" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+      <children id="103ca39c-f0a0-4334-9d73-c186dd18de9d" name="ComputerSystem1" xsi:type="prem:SystemComponent">
+        <parameters id="18cf2fde-2041-4629-a655-9968aa2808ad" name="ReliabilityInfluence" xsi:type="prem:Parameter">
+          <value value="4.545454545454545" xsi:type="reg:Value"/>
+        </parameters>
+        <parameters id="824c8581-860e-4e90-95fb-58030a7d7a5e" name="tmpSubFailRates" xsi:type="prem:Parameter">
+          <value value="0.0020" xsi:type="reg:Value"/>
+        </parameters>
+        <balancings function="ComputerSystem1.ReliabilityInfluence = _(ActuationSystem1._.FailureRate, ActuationSystem1.ReliabilityInfluence)" xsi:type="prem:Balancing">
+        <actualSources key="ActuationSystem1._.FailureRate">
+<value target="3677264a-044a-4a22-825d-bcc1051b9fcb" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="ActuationSystem1.ReliabilityInfluence">
+<value target="5dd27483-c4f6-4aff-a76f-84d6d48cad24" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="ComputerSystem1.ReliabilityInfluence">
+<value target="18cf2fde-2041-4629-a655-9968aa2808ad" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+        <balancings function="ComputerSystem1.tmpSubFailRates = Sum(ControlComputer1._.FailureRate, ControlComputer2._.FailureRate)" name="SumSubFailRates" xsi:type="prem:Balancing">
+        <actualSources key="ControlComputer1._.FailureRate">
+<value target="1cf39694-a72e-4768-86a4-9640acaf4caa" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="ControlComputer2._.FailureRate">
+<value target="60dfa0f3-e779-452b-833c-02b0567276c9" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="ComputerSystem1.tmpSubFailRates">
+<value target="824c8581-860e-4e90-95fb-58030a7d7a5e" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+        <children id="6f2727af-e61c-4784-a8ae-ca12180aa185" name="ControlComputer1" xsi:type="prem:SystemComponent">
+          <parameters id="fbd77a55-b8b1-4093-8791-ad1aae56da8a" name="ReliabilityInfluence" xsi:type="prem:Parameter">
+            <value value="2.2727272727272725" xsi:type="reg:Value"/>
+          </parameters>
+          <balancings function="ControlComputer1.ReliabilityInfluence = _(ControlComputer1._.FailureRate, ComputerSystem1.tmpSubFailRates, ComputerSystem1.ReliabilityInfluence)" xsi:type="prem:Balancing">
+          <actualSources key="ControlComputer1._.FailureRate">
+<value target="1cf39694-a72e-4768-86a4-9640acaf4caa" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="ComputerSystem1.tmpSubFailRates">
+<value target="824c8581-860e-4e90-95fb-58030a7d7a5e" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="ComputerSystem1.ReliabilityInfluence">
+<value target="18cf2fde-2041-4629-a655-9968aa2808ad" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="ControlComputer1.ReliabilityInfluence">
+<value target="fbd77a55-b8b1-4093-8791-ad1aae56da8a" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+        <statemachines name="ControlComputer1">
+<modes entryMode="false" id="49036dea-64f8-43fc-a34c-4605281b6131" name="Failure" xsi:type="elem:Mode"/>
+<transitions id="527f0ecb-e2f3-4c06-97c4-5cba465049dc">
+            <parameters id="1cf39694-a72e-4768-86a4-9640acaf4caa" name="FailureRate">
+              <value value="1.0E-03" xsi:type="reg:Value">
+              </value>
+            <unit href="_GLOBAL/Registry.premise.registry#1/h"/>
+</parameters>
+          <targetPointer target="49036dea-64f8-43fc-a34c-4605281b6131" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+        <children id="0f9db2ac-1d90-46b0-9d55-39e3771e30ea" name="ControlComputer2" xsi:type="prem:SystemComponent">
+          <parameters id="3ba593b0-e81b-46bc-93b0-1132f9cdee6d" name="ReliabilityInfluence" xsi:type="prem:Parameter">
+            <value value="2.2727272727272725" xsi:type="reg:Value"/>
+          </parameters>
+          <balancings function="ControlComputer2.ReliabilityInfluence = _(ControlComputer2._.FailureRate, ComputerSystem1.tmpSubFailRates, ComputerSystem1.ReliabilityInfluence)" xsi:type="prem:Balancing">
+          <actualSources key="ControlComputer2._.FailureRate">
+<value target="60dfa0f3-e779-452b-833c-02b0567276c9" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="ComputerSystem1.tmpSubFailRates">
+<value target="824c8581-860e-4e90-95fb-58030a7d7a5e" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="ComputerSystem1.ReliabilityInfluence">
+<value target="18cf2fde-2041-4629-a655-9968aa2808ad" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="ControlComputer2.ReliabilityInfluence">
+<value target="3ba593b0-e81b-46bc-93b0-1132f9cdee6d" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+        <statemachines name="ControlComputer2">
+<modes entryMode="false" id="61ec475f-f1d8-48bb-809e-cde5bf7260b6" name="Failure" xsi:type="elem:Mode"/>
+<transitions id="427f0ecb-e2f3-4c06-97c4-5cba465049db">
+            <parameters id="60dfa0f3-e779-452b-833c-02b0567276c9" name="FailureRate">
+              <value value="1.0E-03" xsi:type="reg:Value">
+              </value>
+            <unit href="_GLOBAL/Registry.premise.registry#1/h"/>
+</parameters>
+          <targetPointer target="61ec475f-f1d8-48bb-809e-cde5bf7260b6" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+      </children>
+    <statemachines name="ActuationSystem1">
+<modes entryMode="true" id="2cf1e292-e0e6-47e3-ac58-dbd24a800bc0" name="Healthy" xsi:type="elem:Mode"/>
+<modes entryMode="false" id="07b86bd1-6310-44e3-af52-9503dc4331ac" name="Failure" xsi:type="elem:Mode"/>
+<transitions id="1fdc7498-1f7e-4cef-be64-2a89f5d14c5f">
+        <condition xsi:type="elem:GuardCombination">
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="d6de20dd-0a14-4b10-abd8-ae32aaa6fe8e" xsi:type="graph:DirectPointer"/>
+</children>
+          <children junction="AND" xsi:type="elem:GuardCombination">
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="49036dea-64f8-43fc-a34c-4605281b6131" xsi:type="graph:DirectPointer"/>
+</children>
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="61ec475f-f1d8-48bb-809e-cde5bf7260b6" xsi:type="graph:DirectPointer"/>
+</children>
+          </children>
+        </condition>
+        <parameters id="3677264a-044a-4a22-825d-bcc1051b9fcb" name="FailureRate">
+          <value value="1.1000000000000001E-5" xsi:type="reg:Value">
+          </value>
+        <unit href="_GLOBAL/Registry.premise.registry#1/h"/>
+</parameters>
+        <balancings target="3677264a-044a-4a22-825d-bcc1051b9fcb" xsi:type="prem:TransitionBalancing">
+        </balancings>
+      <targetPointer target="07b86bd1-6310-44e3-af52-9503dc4331ac" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+    <children id="43ce5963-4597-4deb-b460-81ea449976c2" name="ActuationSystem2" xsi:type="prem:SystemComponent">
+      <parameters id="4e4b8883-eaa1-4a40-858c-cb55c25c93b8" name="ReliabilityInfluence" xsi:type="prem:Parameter">
+        <value value="50.0" xsi:type="reg:Value"/>
+      </parameters>
+      <balancings function="ActuationSystem2.ReliabilityInfluence = _(ActuationSystem2._.FailureRate, CriticalControlSystem.tmpSubFailRates, CriticalControlSystem.ReliabilityInfluence)" xsi:type="prem:Balancing">
+      <actualSources key="ActuationSystem2._.FailureRate">
+<value target="bb65c4d1-cfd7-4246-8749-7b345d02cc34" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="CriticalControlSystem.tmpSubFailRates">
+<value target="b006dcb4-a53e-4802-92a6-213e06906b89" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="CriticalControlSystem.ReliabilityInfluence">
+<value target="266b66a0-c2a2-4896-b841-23bf9a96b885" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="ActuationSystem2.ReliabilityInfluence">
+<value target="4e4b8883-eaa1-4a40-858c-cb55c25c93b8" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+      <children id="0f614414-1654-489e-9830-c65fb553bf87" name="Actuator2" xsi:type="prem:SystemComponent">
+        <parameters id="bf465b54-2175-4fbb-a01c-4c28155696b4" name="ReliabilityInfluence" xsi:type="prem:Parameter">
+          <value value="45.45454545454545" xsi:type="reg:Value"/>
+        </parameters>
+        <balancings function="Actuator2.ReliabilityInfluence = _(Actuator2._.FailureRate, ActuationSystem2._.FailureRate, ActuationSystem2.ReliabilityInfluence)" xsi:type="prem:Balancing">
+        <actualSources key="Actuator2._.FailureRate">
+<value target="29ad31bb-ccd2-4f1d-8141-164867339a5d" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="ActuationSystem2._.FailureRate">
+<value target="bb65c4d1-cfd7-4246-8749-7b345d02cc34" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="ActuationSystem2.ReliabilityInfluence">
+<value target="4e4b8883-eaa1-4a40-858c-cb55c25c93b8" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="Actuator2.ReliabilityInfluence">
+<value target="bf465b54-2175-4fbb-a01c-4c28155696b4" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+        <connections sourcePortName="CC3Out" targetPortName="CC3In">
+<sourcePointer target="3c801b90-67c3-477e-8c5f-25ca294ca944" xsi:type="graph:DirectPointer"/>
+<targetPointer target="0f614414-1654-489e-9830-c65fb553bf87" xsi:type="graph:DirectPointer"/>
+</connections>
+        <connections sourcePortName="CC4Out" targetPortName="CC4In">
+<sourcePointer target="569c86ae-d507-4d8f-a868-7f3531d6ced0" xsi:type="graph:DirectPointer"/>
+<targetPointer target="0f614414-1654-489e-9830-c65fb553bf87" xsi:type="graph:DirectPointer"/>
+</connections>
+      <statemachines name="Actuator2">
+<modes entryMode="false" id="d30eed23-95eb-4407-b18c-d87845efae85" name="Failure" xsi:type="elem:Mode"/>
+<transitions id="327f0ecb-e2f3-4c06-97c4-5cba465049da">
+          <parameters id="29ad31bb-ccd2-4f1d-8141-164867339a5d" name="FailureRate">
+            <value value="1.0E-05" xsi:type="reg:Value">
+            </value>
+          <unit href="_GLOBAL/Registry.premise.registry#1/h"/>
+</parameters>
+        <targetPointer target="d30eed23-95eb-4407-b18c-d87845efae85" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+      <children id="869d1ec7-5f8c-48fe-b8fa-0a09cbe129d7" name="ComputerSystem2" xsi:type="prem:SystemComponent">
+        <parameters id="447af7a1-07f6-46d0-a203-a8074a2f2e6c" name="ReliabilityInfluence" xsi:type="prem:Parameter">
+          <value value="4.545454545454545" xsi:type="reg:Value"/>
+        </parameters>
+        <parameters id="59eb90f8-0764-4438-8d18-2738cfcf8e22" name="tmpSubFailRates" xsi:type="prem:Parameter">
+          <value value="0.0020" xsi:type="reg:Value"/>
+        </parameters>
+        <balancings function="ComputerSystem2.ReliabilityInfluence = _(ActuationSystem2._.FailureRate, ActuationSystem2.ReliabilityInfluence)" xsi:type="prem:Balancing">
+        <actualSources key="ActuationSystem2._.FailureRate">
+<value target="bb65c4d1-cfd7-4246-8749-7b345d02cc34" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="ActuationSystem2.ReliabilityInfluence">
+<value target="4e4b8883-eaa1-4a40-858c-cb55c25c93b8" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="ComputerSystem2.ReliabilityInfluence">
+<value target="447af7a1-07f6-46d0-a203-a8074a2f2e6c" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+        <balancings function="ComputerSystem2.tmpSubFailRates = Sum(ControlComputer3._.FailureRate, ControlComputer4._.FailureRate)" name="SumSubFailRates" xsi:type="prem:Balancing">
+        <actualSources key="ControlComputer3._.FailureRate">
+<value target="6ecbd06d-c199-4e9b-97fb-d2740e0aca18" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="ControlComputer4._.FailureRate">
+<value target="4181df59-466a-44ff-89fc-ad596f601318" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="ComputerSystem2.tmpSubFailRates">
+<value target="59eb90f8-0764-4438-8d18-2738cfcf8e22" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+        <children id="3c801b90-67c3-477e-8c5f-25ca294ca944" name="ControlComputer3" xsi:type="prem:SystemComponent">
+          <parameters id="539e3f30-7ed2-4dab-ba1e-02c9550c69e1" name="ReliabilityInfluence" xsi:type="prem:Parameter">
+            <value value="2.2727272727272725" xsi:type="reg:Value"/>
+          </parameters>
+          <balancings function="ControlComputer3.ReliabilityInfluence = _(ControlComputer3._.FailureRate, ComputerSystem2.tmpSubFailRates, ComputerSystem2.ReliabilityInfluence)" xsi:type="prem:Balancing">
+          <actualSources key="ControlComputer3._.FailureRate">
+<value target="6ecbd06d-c199-4e9b-97fb-d2740e0aca18" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="ComputerSystem2.tmpSubFailRates">
+<value target="59eb90f8-0764-4438-8d18-2738cfcf8e22" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="ComputerSystem2.ReliabilityInfluence">
+<value target="447af7a1-07f6-46d0-a203-a8074a2f2e6c" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="ControlComputer3.ReliabilityInfluence">
+<value target="539e3f30-7ed2-4dab-ba1e-02c9550c69e1" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+        <statemachines name="ControlComputer3">
+<modes entryMode="false" id="ec4db73f-2c7e-4b32-8dab-69d1e11f2eff" name="Failure" xsi:type="elem:Mode"/>
+<transitions id="227f0ecb-e2f3-4c06-97c4-5cba465049d9">
+            <parameters id="6ecbd06d-c199-4e9b-97fb-d2740e0aca18" name="FailureRate">
+              <value value="1.0E-03" xsi:type="reg:Value">
+              </value>
+            <unit href="_GLOBAL/Registry.premise.registry#1/h"/>
+</parameters>
+          <targetPointer target="ec4db73f-2c7e-4b32-8dab-69d1e11f2eff" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+        <children id="569c86ae-d507-4d8f-a868-7f3531d6ced0" name="ControlComputer4" xsi:type="prem:SystemComponent">
+          <parameters id="1c262940-95fb-4bd1-9ccc-afe222de0d26" name="ReliabilityInfluence" xsi:type="prem:Parameter">
+            <value value="2.2727272727272725" xsi:type="reg:Value"/>
+          </parameters>
+          <balancings function="ControlComputer4.ReliabilityInfluence = _(ControlComputer4._.FailureRate, ComputerSystem2.tmpSubFailRates, ComputerSystem2.ReliabilityInfluence)" xsi:type="prem:Balancing">
+          <actualSources key="ControlComputer4._.FailureRate">
+<value target="4181df59-466a-44ff-89fc-ad596f601318" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="ComputerSystem2.tmpSubFailRates">
+<value target="59eb90f8-0764-4438-8d18-2738cfcf8e22" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualSources key="ComputerSystem2.ReliabilityInfluence">
+<value target="447af7a1-07f6-46d0-a203-a8074a2f2e6c" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="ControlComputer4.ReliabilityInfluence">
+<value target="1c262940-95fb-4bd1-9ccc-afe222de0d26" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+        <statemachines name="ControlComputer4">
+<modes entryMode="false" id="cb87d103-ed58-4fc1-9f7e-cbc167d57202" name="Failure" xsi:type="elem:Mode"/>
+<transitions id="127f0ecb-e2f3-4c06-97c4-5cba465049d8">
+            <parameters id="4181df59-466a-44ff-89fc-ad596f601318" name="FailureRate">
+              <value value="1.0E-03" xsi:type="reg:Value">
+              </value>
+            <unit href="_GLOBAL/Registry.premise.registry#1/h"/>
+</parameters>
+          <targetPointer target="cb87d103-ed58-4fc1-9f7e-cbc167d57202" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+      </children>
+    <statemachines name="ActuationSystem2">
+<modes entryMode="true" id="1ee8a06e-f4a8-4d16-85b5-38fc494c2e79" name="Healthy" xsi:type="elem:Mode"/>
+<modes entryMode="false" id="e83bfed7-ca13-417c-b2a1-700233e0947c" name="Failure" xsi:type="elem:Mode"/>
+<transitions id="027f0ecb-e2f3-4c06-97c4-5cba465049d7">
+        <condition xsi:type="elem:GuardCombination">
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="d30eed23-95eb-4407-b18c-d87845efae85" xsi:type="graph:DirectPointer"/>
+</children>
+          <children junction="AND" xsi:type="elem:GuardCombination">
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="ec4db73f-2c7e-4b32-8dab-69d1e11f2eff" xsi:type="graph:DirectPointer"/>
+</children>
+            <children xsi:type="elem:ModeGuard">
+<modePointer target="cb87d103-ed58-4fc1-9f7e-cbc167d57202" xsi:type="graph:DirectPointer"/>
+</children>
+          </children>
+        </condition>
+        <parameters id="bb65c4d1-cfd7-4246-8749-7b345d02cc34" name="FailureRate">
+          <value value="1.1000000000000001E-5" xsi:type="reg:Value">
+          </value>
+        <unit href="_GLOBAL/Registry.premise.registry#1/h"/>
+</parameters>
+        <balancings target="bb65c4d1-cfd7-4246-8749-7b345d02cc34" xsi:type="prem:TransitionBalancing">
+        </balancings>
+      <targetPointer target="e83bfed7-ca13-417c-b2a1-700233e0947c" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+  <statemachines name="CriticalControlSystem">
+<modes entryMode="true" id="8910b4fc-7326-4203-ac59-1c471479dede" name="Healthy" xsi:type="elem:Mode"/>
+<modes entryMode="false" id="dcc40e82-8bfe-49c6-91a2-ed5332798e97" name="Failure" xsi:type="elem:Mode"/>
+<transitions id="826b2cb4-361f-4a2e-87d2-e4e246ce0978">
+      <condition junction="AND" xsi:type="elem:GuardCombination">
+        <children xsi:type="elem:ModeGuard">
+<modePointer target="07b86bd1-6310-44e3-af52-9503dc4331ac" xsi:type="graph:DirectPointer"/>
+</children>
+        <children xsi:type="elem:ModeGuard">
+<modePointer target="e83bfed7-ca13-417c-b2a1-700233e0947c" xsi:type="graph:DirectPointer"/>
+</children>
+      </condition>
+      <parameters id="4135c360-1015-4fc6-843b-30a7bfa64a7f" name="FailureRate">
+        <value value="1.2100000000000002E-10" xsi:type="reg:Value">
+        </value>
+      <unit href="_GLOBAL/Registry.premise.registry#1/h"/>
+</parameters>
+      <balancings target="4135c360-1015-4fc6-843b-30a7bfa64a7f" xsi:type="prem:TransitionBalancing">
+      </balancings>
+    <sourcePointer target="8910b4fc-7326-4203-ac59-1c471479dede" xsi:type="graph:DirectPointer"/>
+<targetPointer target="dcc40e82-8bfe-49c6-91a2-ed5332798e97" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</projects>
+<functionPools href="_GLOBAL/GlobalFuncDefs.premise.functionpool#/"/>
+</prem:ProjectRepository>

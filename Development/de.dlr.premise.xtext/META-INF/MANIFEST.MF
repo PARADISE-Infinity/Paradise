@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Premise Xtext Support
+Bundle-SymbolicName: de.dlr.premise.xtext;singleton:=true
+Bundle-Version: 1.25.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.ui,
+ org.eclipse.xtext.ui.shared,
+ org.eclipse.xtext.xbase.ui,
+ org.eclipse.ui.ide,
+ de.dlr.premise
+Bundle-Activator: de.dlr.premise.xtext.Activator
+Export-Package: de.dlr.premise.xtext,
+ de.dlr.premise.xtext.naming
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: www.dlr.de/ft/ssy
+Automatic-Module-Name: de.dlr.premise.xtext

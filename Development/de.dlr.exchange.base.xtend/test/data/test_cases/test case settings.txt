@@ -1,0 +1,43 @@
+.premise:
+   - export von datei
+   - export von 1 rep
+   - export von 1 sc
+   - export von 2 sc
+   - export von 3 sc
+ 
+.usecase:
+   - export von datei
+   - export von 1 rep
+   - export von 1 uc
+   - export von 2 uc
+   - export von 3 uc 
+
+.premise + .funcpool + .registry:
+   - export von datei
+   - export von 1 rep
+   - export von 1 sc
+   - export von 2 sc
+   - export von 3 sc
+   
+.premise + .usecase + .representation:
+   - export von datei usecase
+   - export von datei premise
+   - export von 1 sc rep
+   - export von 1 uc rep
+   - export von 1 sc
+   - export von 1 uc
+   - export von 1 sc + 1 uc
+   - export von 2 sc + 2 uc
+   
+   
+2x .premise + 2x .usecase + 2x .representation:
+p1 -> p2 /relation) + u1 -> u2.1 (relation) + p1 -> u1 (via relation) + p1 -> u2.2 (satisfies) + r1 -> p1 + r2 -> u2
+
+    - export von datei p1
+    - export von datei u1
+    - export von 1 sc in p1
+    - export von 1 uc in u1
+    - export von 1 sc in p1 + 1 uc in u1
+
+.usecase (in UTF-8) + .usecase (in ISO):
+	- export von uc + üc1 

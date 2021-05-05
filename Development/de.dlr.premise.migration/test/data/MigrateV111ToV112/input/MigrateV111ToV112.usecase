@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uc:UseCaseRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" metaModel="1.11">
+  <usecases name="A" id="90c1a9ed-fe22-4f0f-ae2b-9d17cca5f9a3">
+    <modes name="Eins" description="" id="81ed27ea-39a0-4c1a-b77f-79555b9022ab"/>
+    <modes name="Zwei" description="" id="097fefe0-ae2d-402f-a66f-7261654202b3" entryMode="false"/>
+    <modes name="Drei" id="f2f607da-f5a1-4ab3-bfa1-88f9e2b171d2" entryMode="false"/>
+    <transitions id="3acc0daf-e6f1-4ef5-9515-3ab8211ff3ca" target="097fefe0-ae2d-402f-a66f-7261654202b3" source="81ed27ea-39a0-4c1a-b77f-79555b9022ab">
+      <constraint xsi:type="prem:NestedTransitionConstraint" junction="AND">
+        <children xsi:type="prem:TransitionConstraint">
+          <trigger xsi:type="prem:Transition" href="MigrateV111ToV112.premise#cdf78a71-264b-459f-a304-34b76319df6a"/>
+        </children>
+        <children xsi:type="prem:TransitionConstraint" trigger="61a446c9-49dd-4a46-9868-611a6f44caf2"/>
+      </constraint>
+      <parameters name="German 1>2" id="43c908de-1e6d-429f-8613-8402cf7d7a0f">
+        <unit href="MigrateV111ToV112.registry#1"/>
+      </parameters>
+      <balancings name="" description="" target="43c908de-1e6d-429f-8613-8402cf7d7a0f">
+        <sources href="#eb8f118c-aab1-4682-b4fe-53ebff18dd07"/>
+        <sources href="MigrateV111ToV112.premise#eb71a164-8cae-4486-bf46-b6b0907374da"/>
+      </balancings>
+    </transitions>
+    <transitions name="" id="cfc2bb76-e84b-4575-9b00-c5316240788e" target="f2f607da-f5a1-4ab3-bfa1-88f9e2b171d2" source="097fefe0-ae2d-402f-a66f-7261654202b3"/>
+    <children name="B" id="6943fe64-7902-4eb7-828b-40c579e50a05">
+      <modes name="nolla" id="fc8f4d5f-743d-4ad0-a9f8-8e01566a4292"/>
+      <modes name="yksi" id="43611919-9e78-4a64-925e-febe07df63e5" entryMode="false"/>
+      <modes name="kaksi" id="097c60fa-9c3d-4edb-bd8e-fce1f9d92f41" entryMode="false"/>
+      <transitions id="61a446c9-49dd-4a46-9868-611a6f44caf2" target="43611919-9e78-4a64-925e-febe07df63e5" source="fc8f4d5f-743d-4ad0-a9f8-8e01566a4292">
+        <parameters name="Finnish 1>2" id="eb8f118c-aab1-4682-b4fe-53ebff18dd07">
+          <unit href="MigrateV111ToV112.registry#1"/>
+        </parameters>
+      </transitions>
+      <transitions id="47bc8c91-6753-4f7c-8eff-6c40a57ba724" target="097c60fa-9c3d-4edb-bd8e-fce1f9d92f41" source="43611919-9e78-4a64-925e-febe07df63e5"/>
+    </children>
+  </usecases>
+  <usecases name="C" id="fb7002b0-0e2e-4136-ab3c-2dd889cf098d">
+    <constraints name="ParameterConstraint">
+      <unit href="MigrateV111ToV112.registry#1"/>
+      <valueConstraint xsi:type="uc:RangeConstraint" upper="10" lower="0"/>
+      <modeValueConstraints xsi:type="uc:ModeRangeConstraint" modes="81ed27ea-39a0-4c1a-b77f-79555b9022ab" upper="15" lower="5"/>
+    </constraints>
+  </usecases>
+</uc:UseCaseRepository>

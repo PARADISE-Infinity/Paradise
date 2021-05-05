@@ -1,0 +1,5 @@
+This plugin should not be included in the product or distributed to customers.
+
+It is solely used for the Design-Explorer VR demo, and should only be included in special builds.
+
+It is however kept in the trunk to make sure it still compiles with the current PARADISE version.

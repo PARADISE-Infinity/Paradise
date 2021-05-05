@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Hacks
+Bundle-SymbolicName: de.dlr.premise.ocl.hacks
+Bundle-Version: 1.25.0.qualifier
+Require-Bundle: org.eclipse.ocl.pivot,
+ org.eclipse.core.resources
+Export-Package: de.dlr.premise.ocl.hacks
+Automatic-Module-Name: de.dlr.premise.ocl.hacks
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

@@ -1,0 +1,38 @@
+module de.dlr.ft.premise.Build
+
+import org.eclipse.emf.mwe.utils.*
+import org.eclipse.xtext.generator.*
+import org.eclipse.xtext.ui.generator.*
+
+Workflow {
+
+	// clean generated code of premise plugin includes model code of premise, 
+	// representation and logic
+	component = DirectoryCleaner {
+		directory="src-gen"
+	}
+	
+	// clean generated premise edit code
+	component = DirectoryCleaner {
+		directory="../de.dlr.exchange.excel.fha.edit/src-gen"
+	}
+	
+	// clean generated premise editor code
+	component = DirectoryCleaner {
+		directory="../de.dlr.exchange.excel.fha.editor/src-gen"
+	}
+	
+	// setup premise model
+	bean = StandaloneSetup {
+		platformUri = ".."
+		registerGenModelFile = "platform:/resource/de.dlr.exchange.excel.fha/model/fha.genmodel"
+	}
+	
+	// generate fha model code (edit and editor can be enabled -- useful for debugging)
+	component = org.eclipse.emf.mwe2.ecore.EcoreGenerator {
+		genModel = "platform:/resource/de.dlr.exchange.excel.fha/model/fha.genmodel"
+		srcPath ="platform:/resource/de.dlr.exchange.excel.fha/src-gen"
+		generateEdit=false
+		generateEditor=false
+	}
+}

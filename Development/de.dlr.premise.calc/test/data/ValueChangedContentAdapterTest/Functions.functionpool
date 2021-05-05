@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fnp:FunctionPool xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <calcEngines id="46405727-94c0-4641-ac20-f3821db2a3bc" name="DUMMY_ENGINE_SCRIPT" workDirURI="" xsi:type="fnp:CalcEngineScript"/>
+  <calcEngines id="c6868955-97e1-4f4e-8553-e37b363c4ad5" name="DUMMY_ENGINE_SPREADSHEET" xsi:type="fnp:CalcEngineSpreadSheet"/>
+  <functions calcEngine="46405727-94c0-4641-ac20-f3821db2a3bc" name="DUMMY_FN_SCRIPT" scriptName="" xsi:type="fnp:FnDefScript"/>
+  <functions calcEngine="c6868955-97e1-4f4e-8553-e37b363c4ad5" name="DUMMY_FN_SPREADSHEET" sheetName="" xsi:type="fnp:FnDefSpreadSheet">
+    <output xsi:type="fnp:FnOutputSpreadSheet"/>
+    <inputs xsi:type="fnp:FnInputSpreadSheet"/>
+  </functions>
+</fnp:FunctionPool>

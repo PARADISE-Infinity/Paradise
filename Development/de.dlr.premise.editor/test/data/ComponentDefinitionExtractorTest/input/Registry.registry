@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reg:Registry xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:xmi="http://www.omg.org/XMI" metaModel="1.31" xmi:version="2.0">
+  <units name="Scalar" symbol="1"/>
+  <constants id="3a1b7684-14d3-4cef-821b-6660b836e55a" name="TEN" unit="1">
+    <notes author="steh_ti" date="2016-06-10 15:43:45" text="As if the value of 10 will fluctuate"/>
+    <value uncertainty="" value="9.99999999"/>
+  </constants>
+</reg:Registry>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rep:Representation xmlns:rep="http://www.dlr.de/ft/premise/representation/2012/" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="cc45776a-feae-4cf5-aa89-9721ffd76c2e" metaModel="1.31" name="set a name" xmi:version="2.0">
+<selectors name="Node red" query="graph::INode.allInstances()&#13;&#10;-&gt;selectByKind(registry::ADataItem)-&gt;select(Set{'9efc3a0e-0155-41d0-976e-66a1dc2b5a06','358d099d-1ab7-4108-af31-d14b849514aa'}-&gt;includes(id))&#13;&#10;">
+<decorators name="red" value="#FF0000" xsi:type="rep:Color"/>
+</selectors>
+<selectors name="Node green" query="graph::INode.allInstances()&#13;&#10;-&gt;selectByKind(registry::ADataItem)-&gt;select(Set{'44675b66-9369-4385-a113-37170e166804','ef5cf095-72b1-4854-8bee-205a2d9e13e7','0d58538d-10e0-4a1d-b7a0-29e0dacca612'}-&gt;includes(id))&#13;&#10;">
+<decorators name="green" value="#58FA58" xsi:type="rep:Color"/>
+</selectors>
+<selectors name="Node blue" query="graph::INode.allInstances()&#13;&#10;-&gt;selectByKind(registry::ADataItem)-&gt;select(Set{'27dc856d-b65e-4c8b-8d6d-18c22d33b676','dc3f764c-e65b-4d9a-895b-3dda618919c4','5f1afc45-52ab-431a-ae86-a79e3244cf34'}-&gt;includes(id))&#13;&#10;">
+<decorators name="blue" value="#2E2EFE" xsi:type="rep:Color"/>
+</selectors>
+</rep:Representation>

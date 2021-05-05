@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.33" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="false"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Show Parameters" value="true"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Edit local statemachines">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <projects id="8430a30c-175c-4e3c-bc7f-b241a5353731" name="Root">
+    <parameters id="d0a6af7e-6593-4b6b-96c7-5545b25237f5" name="C1">
+      <value value="103.0"/>
+    </parameters>
+    <parameters id="8c80c08e-5452-40d3-919b-df67194821fc" name="C2">
+      <value value="203.0"/>
+    </parameters>
+    <balancings function="Any1.AnyComponent.A = 100" name="SetAny1A">
+      <actualTarget key="Any1.AnyComponent.A">
+        <value componentReference="6380822a-f673-41dc-97d1-0b50cce05f28" xsi:type="comp:ComponentReferencePointer">
+          <definition href="My.component#cbc4ddd1-56ea-442c-af84-153e17282a84" xsi:type="comp:ParameterDefinition"/>
+        </value>
+      </actualTarget>
+    </balancings>
+    <balancings function="Any2.AnyComponent.A = 200" name="SetAny2A">
+      <actualTarget key="Any2.AnyComponent.A">
+        <value componentReference="878b3936-a409-43d8-940f-09635fa5653e" xsi:type="comp:ComponentReferencePointer">
+          <definition href="My.component#cbc4ddd1-56ea-442c-af84-153e17282a84" xsi:type="comp:ParameterDefinition"/>
+        </value>
+      </actualTarget>
+    </balancings>
+    <balancings function="C1 = Any1.AnyComponent.C" name="ReadAny1C">
+      <actualSources key="Any1.AnyComponent.C">
+        <value componentReference="6380822a-f673-41dc-97d1-0b50cce05f28" xsi:type="comp:ComponentReferencePointer">
+          <definition href="My.component#08adcac4-a670-4057-afae-2fcd4da8b4e4" xsi:type="comp:ParameterDefinition"/>
+        </value>
+      </actualSources>
+      <actualTarget key="C1">
+        <value target="d0a6af7e-6593-4b6b-96c7-5545b25237f5" xsi:type="graph:DirectPointer"/>
+      </actualTarget>
+    </balancings>
+    <balancings function="C2 = Any2.AnyComponent.C" name="ReadAny2C">
+      <actualSources key="Any2.AnyComponent.C">
+        <value componentReference="878b3936-a409-43d8-940f-09635fa5653e" xsi:type="comp:ComponentReferencePointer">
+          <definition href="My.component#08adcac4-a670-4057-afae-2fcd4da8b4e4" xsi:type="comp:ParameterDefinition"/>
+        </value>
+      </actualSources>
+      <actualTarget key="C2">
+        <value target="8c80c08e-5452-40d3-919b-df67194821fc" xsi:type="graph:DirectPointer"/>
+      </actualTarget>
+    </balancings>
+    <children id="6380822a-f673-41dc-97d1-0b50cce05f28" name="Any1" xsi:type="prem:ComponentReference">
+      <componentDefinition href="My.component#396d12a9-a283-4320-b41d-6367d96534df"/>
+      <activeImplementation href="My.component#ec58b12b-5c66-40ba-a2e8-5fbabfb82b53"/>
+      <substitutionMap>
+        <original href="My.component#09e14327-bbd5-448b-8b45-1ca514450079"/>
+        <substitution id="1ec1ee5b-1f2f-449b-b252-635e86fa4603" name="A" xsi:type="prem:Parameter">
+          <value value="100.0"/>
+          <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="My.component#cbc4ddd1-56ea-442c-af84-153e17282a84" xsi:type="comp:ParameterDefinition"/>
+	</targetPointer>
+</satisfies>
+        </substitution>
+      </substitutionMap>
+      <substitutionMap>
+        <original href="My.component#900bd2cb-b1fa-4337-a1cd-4722c819d772"/>
+        <substitution id="86c0f55f-b3cb-4075-8f51-9a83aecee9a1" name="C" xsi:type="prem:Parameter">
+          <value value="103.0"/>
+          <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="My.component#08adcac4-a670-4057-afae-2fcd4da8b4e4" xsi:type="comp:ParameterDefinition"/>
+	</targetPointer>
+</satisfies>
+        </substitution>
+      </substitutionMap>
+      <substitutionMap>
+        <original href="My.component#8d433208-3fe4-434a-8722-29347303897f"/>
+        <relativeScope href="My.component#0199c636-22be-4ff1-99ff-b4d8979f7070"/>
+        <substitution id="ddc6bf45-d128-4323-96f0-33144a9f27bf" name="in" xsi:type="prem:Parameter">
+          <value value="100.0"/>
+          <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="My.component#2a09a061-a23c-41da-bc81-b3e058d3ef60" xsi:type="comp:ParameterDefinition"/>
+	</targetPointer>
+</satisfies>
+        </substitution>
+      </substitutionMap>
+      <substitutionMap>
+        <original href="My.component#ee024098-a55a-4649-b2ca-13d9734e71d9"/>
+        <relativeScope href="My.component#0199c636-22be-4ff1-99ff-b4d8979f7070"/>
+        <substitution id="cefcb19f-9905-4613-bdd5-0ae20dd88b3b" name="out" xsi:type="prem:Parameter">
+          <value value="102.0"/>
+          <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="My.component#b993e773-8a65-4793-a8c2-d6db8a24cd73" xsi:type="comp:ParameterDefinition"/>
+	</targetPointer>
+</satisfies>
+        </substitution>
+      </substitutionMap>
+      <substitutionMap>
+        <original href="My.component#19a228c1-0f94-4f8e-ac35-5ae272bce18e"/>
+        <substitution id="4fe373c3-96aa-448d-a22f-00b8e76541c0" name="B" xsi:type="prem:Parameter">
+          <value value="102.0"/>
+        </substitution>
+      </substitutionMap>
+      <substitutionMap>
+        <original href="My.component#35ba1085-9b6e-4bdb-97ec-505c7af2b668"/>
+        <relativeScope href="My.component#35a4f270-a9cd-4e7d-91b6-2150db748df9"/>
+        <substitution id="c53a2158-0bcb-4528-94aa-d5cc9ffb88e9" name="in" xsi:type="prem:Parameter">
+          <value value="102.0"/>
+          <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="My.component#2a09a061-a23c-41da-bc81-b3e058d3ef60" xsi:type="comp:ParameterDefinition"/>
+	</targetPointer>
+</satisfies>
+        </substitution>
+      </substitutionMap>
+      <substitutionMap>
+        <original href="My.component#6a2997ac-54be-4a7d-a8b4-95acaaff2454"/>
+        <relativeScope href="My.component#35a4f270-a9cd-4e7d-91b6-2150db748df9"/>
+        <substitution id="35abace3-4f39-4f49-a9d2-74324f148fb6" name="out" xsi:type="prem:Parameter">
+          <value value="103.0"/>
+          <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="My.component#b993e773-8a65-4793-a8c2-d6db8a24cd73" xsi:type="comp:ParameterDefinition"/>
+	</targetPointer>
+</satisfies>
+        </substitution>
+      </substitutionMap>
+    </children>
+    <children id="878b3936-a409-43d8-940f-09635fa5653e" name="Any2" xsi:type="prem:ComponentReference">
+      <componentDefinition href="My.component#396d12a9-a283-4320-b41d-6367d96534df"/>
+      <activeImplementation href="My.component#ec58b12b-5c66-40ba-a2e8-5fbabfb82b53"/>
+      <substitutionMap>
+        <original href="My.component#09e14327-bbd5-448b-8b45-1ca514450079"/>
+        <substitution id="78123ccf-cd0d-4d44-9637-c1bce2e1975a" name="A" xsi:type="prem:Parameter">
+          <value value="200.0"/>
+          <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="My.component#cbc4ddd1-56ea-442c-af84-153e17282a84" xsi:type="comp:ParameterDefinition"/>
+	</targetPointer>
+</satisfies>
+        </substitution>
+      </substitutionMap>
+      <substitutionMap>
+        <original href="My.component#8d433208-3fe4-434a-8722-29347303897f"/>
+        <relativeScope href="My.component#0199c636-22be-4ff1-99ff-b4d8979f7070"/>
+        <substitution id="de440936-ad69-40a0-9ecc-3a7e4ef625df" name="in" xsi:type="prem:Parameter">
+          <value value="200.0"/>
+          <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="My.component#2a09a061-a23c-41da-bc81-b3e058d3ef60" xsi:type="comp:ParameterDefinition"/>
+	</targetPointer>
+</satisfies>
+        </substitution>
+      </substitutionMap>
+      <substitutionMap>
+        <original href="My.component#ee024098-a55a-4649-b2ca-13d9734e71d9"/>
+        <relativeScope href="My.component#0199c636-22be-4ff1-99ff-b4d8979f7070"/>
+        <substitution id="77caf545-713b-4138-be8d-94914f86f324" name="out" xsi:type="prem:Parameter">
+          <value value="202.0"/>
+          <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="My.component#b993e773-8a65-4793-a8c2-d6db8a24cd73" xsi:type="comp:ParameterDefinition"/>
+	</targetPointer>
+</satisfies>
+        </substitution>
+      </substitutionMap>
+      <substitutionMap>
+        <original href="My.component#19a228c1-0f94-4f8e-ac35-5ae272bce18e"/>
+        <substitution id="68c8991b-b79f-46ef-b080-59ce645a0c20" name="B" xsi:type="prem:Parameter">
+          <value value="202.0"/>
+        </substitution>
+      </substitutionMap>
+      <substitutionMap>
+        <original href="My.component#35ba1085-9b6e-4bdb-97ec-505c7af2b668"/>
+        <relativeScope href="My.component#35a4f270-a9cd-4e7d-91b6-2150db748df9"/>
+        <substitution id="a0de466e-79e9-4446-995b-4ef32601bf7f" name="in" xsi:type="prem:Parameter">
+          <value value="202.0"/>
+          <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="My.component#2a09a061-a23c-41da-bc81-b3e058d3ef60" xsi:type="comp:ParameterDefinition"/>
+	</targetPointer>
+</satisfies>
+        </substitution>
+      </substitutionMap>
+      <substitutionMap>
+        <original href="My.component#6a2997ac-54be-4a7d-a8b4-95acaaff2454"/>
+        <relativeScope href="My.component#35a4f270-a9cd-4e7d-91b6-2150db748df9"/>
+        <substitution id="d4f31085-b97b-4937-b31a-12e5e7b7210f" name="out" xsi:type="prem:Parameter">
+          <value value="203.0"/>
+          <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="My.component#b993e773-8a65-4793-a8c2-d6db8a24cd73" xsi:type="comp:ParameterDefinition"/>
+	</targetPointer>
+</satisfies>
+        </substitution>
+      </substitutionMap>
+      <substitutionMap>
+        <original href="My.component#900bd2cb-b1fa-4337-a1cd-4722c819d772"/>
+        <substitution id="a65c8ba2-b0a4-4f4c-b77d-b0fe8be474e8" name="C" xsi:type="prem:Parameter">
+          <value value="203.0"/>
+          <satisfies>
+	<targetPointer xsi:type="graph:DirectPointer">
+		<target href="My.component#08adcac4-a670-4057-afae-2fcd4da8b4e4" xsi:type="comp:ParameterDefinition"/>
+	</targetPointer>
+</satisfies>
+        </substitution>
+      </substitutionMap>
+    </children>
+    <children id="4b21a0bb-2236-439c-abd6-f7fd996ae96c" name="Trans3" xsi:type="prem:ComponentReference">
+      <componentDefinition href="My.component#4a3ce8a6-28b8-4c6a-828b-fdac773c092c"/>
+      <activeImplementation href="My.component#98f9a022-ebbf-4c3f-a0ec-8e2f89f739cd"/>
+    </children>
+  </projects>
+</prem:ProjectRepository>

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: PARADISE Vendor Libs
+Bundle-SymbolicName: de.dlr.application.lib.excel
+Bundle-Version: 1.25.0.qualifier
+Bundle-ClassPath: SX.jar
+Export-Package: com.smartxls
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: de.dlr.application.lib.excel
+Bundle-Vendor: www.dlr.de/ft/ssy

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reg:Registry xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:regval="http://www.dlr.de/ft/premise/registry/validated/2013/">
+  <constants name="One" description="As if the value of one would fluctuate!" id="c7ef1b3e-032a-4cc9-adcb-299cbc929f81">
+    <value xsi:type="regval:Value" value="1"/>
+  </constants>
+</reg:Registry>

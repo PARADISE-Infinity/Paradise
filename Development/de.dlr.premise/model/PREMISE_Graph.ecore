@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="graph" nsURI="http://www.dlr.de/premise/graph/2017/" nsPrefix="graph">
+  <eClassifiers xsi:type="ecore:EClass" name="INode" abstract="true" interface="true"
+      eSuperTypes="PREMISE_Registry.ecore#//IPremiseObject">
+    <eOperations name="getConnectedElements" upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return getConnectedElements(-1);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getConnectedElements" upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.element.impl.my.util.INodeHelper.getConnectedElements(this, depth);"/>
+      </eAnnotations>
+      <eParameters name="depth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IEdge" abstract="true" interface="true"
+      eSuperTypes="PREMISE_Registry.ecore#//ANameItem">
+    <eTypeParameters name="S">
+      <eBounds eClassifier="#//INode"/>
+    </eTypeParameters>
+    <eTypeParameters name="T">
+      <eBounds eClassifier="#//INode"/>
+    </eTypeParameters>
+    <eOperations name="getSourcePointers" upperBound="-1">
+      <eGenericType eClassifier="#//APointer">
+        <eTypeArguments eTypeParameter="#//IEdge/S"/>
+      </eGenericType>
+    </eOperations>
+    <eOperations name="getTargetPointers" upperBound="-1">
+      <eGenericType eClassifier="#//APointer">
+        <eTypeArguments eTypeParameter="#//IEdge/T"/>
+      </eGenericType>
+    </eOperations>
+    <eOperations name="getReferencedSources" upperBound="-1" eType="#//INode">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.element.impl.my.util.IEdgeHelper.getSources(this);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getReferencedTargets" upperBound="-1" eType="#//INode">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return de.dlr.premise.element.impl.my.util.IEdgeHelper.getTargets(this);"/>
+      </eAnnotations>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="APointer" abstract="true">
+    <eTypeParameters name="T"/>
+    <eOperations name="getTarget">
+      <eGenericType eTypeParameter="#//APointer/T"/>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DirectPointer">
+    <eTypeParameters name="T"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target">
+      <eGenericType eTypeParameter="#//DirectPointer/T"/>
+    </eStructuralFeatures>
+    <eGenericSuperTypes eClassifier="#//APointer">
+      <eTypeArguments eTypeParameter="#//DirectPointer/T"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+</ecore:EPackage>

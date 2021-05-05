@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:fnp="http://www.dlr.de/ft/premise/funcpool/2010/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.32" xmi:version="2.0" xsi:schemaLocation="http://www.dlr.de/ft/premise/validated/2013/ http://www.dlr.de/ft/premise/2010/#//validated">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="off"/>
+  </metaData>
+  <projects id="abb0c2c2-e392-41df-9d36-655f5eed22fe" name="Namespace A">
+    <children id="63d04e47-dff6-42d3-a8b0-a3393eea292e" xsi:type="prem:SystemComponent"/>
+    <children id="daaf7394-0086-4c69-afdd-778d5aa8fd68" name="SC1 \nname" xsi:type="prem:SystemComponent">
+      <notes author="hschum" date="2013-10-10 14:56:51"/>
+      <notes author="hschum" date="2013-10-10 14:47:53" text="test \ntext"/>
+      <metaData/>
+      <metaData name="test \nname"/>
+      <metaData value="test \nvalue"/>
+      <metaData name="test \nname" value="test \nvalue"/>
+      <parameters id="6d102a53-a1c6-41f4-814e-4d50327dbe0e" xsi:type="prem:Parameter"/>
+      <parameters id="7cb0ee20-7b70-41e4-abc0-d163ba9a80a6" name="P1" xsi:type="prem:Parameter"/>
+      <parameters id="b4cc65b2-709c-440c-a7d5-3d01615f8341" name="P2 \nname" xsi:type="prem:Parameter"/>
+      <balancings description="all empty" function=" = &lt;unknown function&gt;()" xsi:type="prem:Balancing"/>
+      <balancings description="only name given" function=" = &lt;unknown function&gt;()" name="Bal1 \nname" xsi:type="prem:Balancing"/>
+      <balancings description="only fn given" function=" = Fn1()" xsi:type="prem:Balancing">
+      </balancings>
+      <balancings description="name and fn given" function=" = Fn1()" name="Bal2 \nname" xsi:type="prem:Balancing">
+      </balancings>
+      <balancings description="fn and target given" function="P1 = Fn1()" xsi:type="prem:Balancing">
+      <actualTarget key="P1">
+<value target="7cb0ee20-7b70-41e4-abc0-d163ba9a80a6" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+      <balancings description="name and target given" function="P1 = &lt;unknown function&gt;()" name="Bal3 \nname" xsi:type="prem:Balancing">
+<actualTarget key="P1">
+<value target="7cb0ee20-7b70-41e4-abc0-d163ba9a80a6" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+      <balancings description="fn and target and source given" function="P1 = Fn1(P2__nname)" xsi:type="prem:Balancing">
+      <actualSources key="P2__nname">
+<value target="b4cc65b2-709c-440c-a7d5-3d01615f8341" xsi:type="graph:DirectPointer"/>
+</actualSources>
+<actualTarget key="P1">
+<value target="7cb0ee20-7b70-41e4-abc0-d163ba9a80a6" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+      <balancings function="P1 = &lt;unknown function&gt;()" xsi:type="prem:Balancing">
+<actualTarget key="P1">
+<value target="7cb0ee20-7b70-41e4-abc0-d163ba9a80a6" xsi:type="graph:DirectPointer"/>
+</actualTarget>
+</balancings>
+      <connections>
+<sourcePointer target="daaf7394-0086-4c69-afdd-778d5aa8fd68" xsi:type="graph:DirectPointer"/>
+</connections>
+      <connections sourcePortName="Out1 name">
+<sourcePointer target="daaf7394-0086-4c69-afdd-778d5aa8fd68" xsi:type="graph:DirectPointer"/>
+</connections>
+      <connections targetPortName="In1 name">
+<sourcePointer target="daaf7394-0086-4c69-afdd-778d5aa8fd68" xsi:type="graph:DirectPointer"/>
+<targetPointer target="daaf7394-0086-4c69-afdd-778d5aa8fd68" xsi:type="graph:DirectPointer"/>
+</connections>
+      <connections sourcePortName="Out1 name" targetPortName="In1 name">
+<sourcePointer target="daaf7394-0086-4c69-afdd-778d5aa8fd68" xsi:type="graph:DirectPointer"/>
+<targetPointer target="daaf7394-0086-4c69-afdd-778d5aa8fd68" xsi:type="graph:DirectPointer"/>
+</connections>
+      <relations>
+<sourcePointer target="daaf7394-0086-4c69-afdd-778d5aa8fd68" xsi:type="graph:DirectPointer"/>
+</relations>
+      <relations name="test \ntype">
+<sourcePointer target="daaf7394-0086-4c69-afdd-778d5aa8fd68" xsi:type="graph:DirectPointer"/>
+</relations>
+      <relations>
+<sourcePointer target="daaf7394-0086-4c69-afdd-778d5aa8fd68" xsi:type="graph:DirectPointer"/>
+</relations>
+      <relations>
+<sourcePointer target="daaf7394-0086-4c69-afdd-778d5aa8fd68" xsi:type="graph:DirectPointer"/>
+<targetPointer target="ae1f9942-8531-4aeb-8a35-94e52e15429f" xsi:type="graph:DirectPointer"/>
+</relations>
+      <relations>
+<sourcePointer target="daaf7394-0086-4c69-afdd-778d5aa8fd68" xsi:type="graph:DirectPointer"/>
+<targetPointer target="ae1f9942-8531-4aeb-8a35-94e52e15429f" xsi:type="graph:DirectPointer"/>
+</relations>
+      <relations name="test \ntype">
+<sourcePointer target="daaf7394-0086-4c69-afdd-778d5aa8fd68" xsi:type="graph:DirectPointer"/>
+<targetPointer target="ae1f9942-8531-4aeb-8a35-94e52e15429f" xsi:type="graph:DirectPointer"/>
+</relations>
+      <relations name="satisfies">
+      <sourcePointer target="daaf7394-0086-4c69-afdd-778d5aa8fd68" xsi:type="graph:DirectPointer"/>
+<targetPointer xsi:type="graph:DirectPointer">
+	<target href="LabelTestCases.usecase#daaf7394-0086-4c69-afdd-778d5aa8fd68" xsi:type="uc:UseCase"/>
+</targetPointer>
+</relations>
+    <statemachines name="SC1 \nname">
+<modes entryMode="true" id="baa03eba-7118-4927-8968-4253df17e764" xsi:type="elem:Mode"/>
+<modes entryMode="true" id="c01a8352-2541-4ea9-8a74-f48e8d936da8" name="M1 \nname" xsi:type="elem:Mode"/>
+<modes entryMode="true" id="2078b9a0-72a6-4f3c-90fe-e086a0bb013a" name="M2 \nname" xsi:type="elem:Mode"/>
+<transitions description="all empty" id="5b02addd-78c2-472a-a52b-337173662894"/>
+<transitions description="only name given" id="ca0cf7ca-0842-4b8b-b44c-da2e7dbaa859" name="test \nname"/>
+<transitions description="only source" id="169ad0ec-4e53-4924-8bfb-a8be9ab5a0c9">
+<sourcePointer target="c01a8352-2541-4ea9-8a74-f48e8d936da8" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions description="only target" id="2c6b0546-37e4-4b8b-841e-710fbbaad0ef">
+        <parameters id="51f5f01e-61a7-4dac-84d2-53db4ce35dd3" name="TP1 name"/>
+      <targetPointer target="2078b9a0-72a6-4f3c-90fe-e086a0bb013a" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions description="source and target" id="4611aaec-8955-4380-bb6c-fa6feff1f900">
+<sourcePointer target="c01a8352-2541-4ea9-8a74-f48e8d936da8" xsi:type="graph:DirectPointer"/>
+<targetPointer target="2078b9a0-72a6-4f3c-90fe-e086a0bb013a" xsi:type="graph:DirectPointer"/>
+</transitions>
+<transitions description="name, source and target given" id="6d159a8b-d1b2-42bf-9aca-d2c66cdcdcc4" name="test \nname">
+<sourcePointer target="c01a8352-2541-4ea9-8a74-f48e8d936da8" xsi:type="graph:DirectPointer"/>
+<targetPointer target="2078b9a0-72a6-4f3c-90fe-e086a0bb013a" xsi:type="graph:DirectPointer"/>
+</transitions>
+</statemachines>
+</children>
+  </projects>
+  <projects id="8a78e85d-d1c6-4568-8043-012bee527d3d" name="Namespace B">
+    <children id="09720f33-c30e-4e69-94d5-37c0048d4a73" xsi:type="prem:SystemComponent">
+      <metaTypes href="LabelTestCases.registry#0d5e2ab0-929f-4aee-8065-e073b9a6768b"/>
+    </children>
+    <children id="ae1f9942-8531-4aeb-8a35-94e52e15429f" name="SC2 \nname" xsi:type="prem:SystemComponent">
+      <metaTypes href="LabelTestCases.registry#0d5e2ab0-929f-4aee-8065-e073b9a6768b"/>
+    </children>
+  </projects>
+<functionPools href="LabelTestCases.functionpool#/"/>
+</prem:ProjectRepository>

@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Calculation Engine DSL
+Bundle-SymbolicName: de.dlr.calc.engine.dsl;singleton:=true
+Bundle-Version: 1.25.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.xtend.lib,
+ org.eclipse.xtend.lib.macro,
+ com.google.guava,
+ org.eclipse.xtext.xbase.lib,
+ de.dlr.premise;bundle-version="1.4.0",
+ org.eclipse.emf.edit;bundle-version="2.10.1",
+ de.dlr.premise.util;bundle-version="1.0.1",
+ org.eclipse.xtext.ui;bundle-version="2.7.3",
+ de.dlr.calc.engine.dsl.xtext;bundle-version="1.0.0",
+ de.dlr.calc.engine.dsl.xtext.ui;bundle-version="1.0.0",
+ de.dlr.premise.xtext;bundle-version="1.0.0",
+ de.dlr.premise.states;bundle-version="1.0.0",
+ de.dlr.calc.engine;bundle-version="1.22.0",
+ de.dlr.calc.engine.combined;bundle-version="1.22.0",
+ org.junit;resolution:=optional
+Export-Package: de.dlr.calc.engine.dsl,
+ de.dlr.calc.engine.dsl.scope,
+ de.dlr.calc.engine.dsl.tools
+Bundle-Vendor: www.dlr.de/ft/ssy
+Automatic-Module-Name: de.dlr.calc.engine.dsl
+

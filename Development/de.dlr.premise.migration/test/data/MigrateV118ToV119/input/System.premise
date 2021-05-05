@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" xmlns:uc="http://www.dlr.de/premise/usecase/2014/" metaModel="1.18">
+  <metaData name="View">
+    <children name="dataTypeNames" value="on"/>
+    <children name="number representation pattern" value="##0.0###E0"/>
+    <children name="Association Editor">
+      <children name="Draw Relations">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="true"/>
+      </children>
+      <children name="Draw Connections">
+        <children name="Show Parameters" value="false"/>
+        <children name="Group Elements" value="false"/>
+      </children>
+      <children name="Draw Satisfy-Relations">
+        <children name="Show Parameters" value="true"/>
+        <children name="Group Elements" value="true"/>
+      </children>
+    </children>
+  </metaData>
+  <projects name="Root" id="1776e87e-7867-4ea5-b774-729416157fb1">
+    <relations source="1776e87e-7867-4ea5-b774-729416157fb1" type="satisfies">
+      <target xsi:type="uc:UseCase" href="Problem.usecase#01f09205-1592-4710-b498-9158a7b3d379"/>
+    </relations>
+    <children name="X1" id="324da891-9c11-496b-af5a-46638ff6a028">
+      <parameters name="Cheese" id="310005ea-4e34-459a-a007-1e8836cdca8f">
+        <value value="1"/>
+      </parameters>
+      <parameters name="Ham" id="f766d4ca-b503-4e24-ba7d-1dc51e20ec17">
+        <value value="1"/>
+      </parameters>
+      <parameters name="Sandwich" id="9e468a4e-bdfc-40c9-abb8-36ecddf98980">
+        <value value="7.0"/>
+        <satisfies href="Problem.usecase#4a7c23f0-16c8-4c18-8651-149469c87d2b"/>
+      </parameters>
+      <balancings name="" function="Sandwich = Cheese + Ham + x">
+        <actualSources key="Cheese" value="310005ea-4e34-459a-a007-1e8836cdca8f"/>
+        <actualSources key="Ham" value="f766d4ca-b503-4e24-ba7d-1dc51e20ec17"/>
+        <actualSources key="x">
+          <value xsi:type="reg:Constant" href="Registry.registry#25c7247a-3e69-4bfc-a139-856eba685148"/>
+        </actualSources>
+        <actualTarget key="Sandwich" value="9e468a4e-bdfc-40c9-abb8-36ecddf98980"/>
+      </balancings>
+      <relations source="324da891-9c11-496b-af5a-46638ff6a028" type="satisfy">
+        <target xsi:type="uc:UseCase" href="Problem.usecase#6438974f-6aa9-450a-b567-c49fd62db2df"/>
+      </relations>
+      <relations source="324da891-9c11-496b-af5a-46638ff6a028" target="3aee2076-793b-4990-b866-77c145d817d2" type="satisfies"/>
+    </children>
+    <children name="X2" id="3aee2076-793b-4990-b866-77c145d817d2">
+      <modes name="Carnivore" id="94911f18-73fb-446f-9b06-11f49f8ee943"/>
+      <modes name="Vegan" id="ee97d016-0a42-4eaf-9f50-db4056292acf"/>
+      <transitions id="1858a691-c91e-446e-a596-b83de0208bdb" target="ee97d016-0a42-4eaf-9f50-db4056292acf" source="94911f18-73fb-446f-9b06-11f49f8ee943">
+        <constraint xsi:type="elem:NestedTransitionConstraint">
+          <children xsi:type="elem:TransitionConstraint" trigger="8bc9e2b7-a528-4b89-8da1-cf27476c9630"/>
+        </constraint>
+      </transitions>
+      <relations source="3aee2076-793b-4990-b866-77c145d817d2" target="4a2da186-49cb-4d05-b514-abcd38b44acc" type="likes"/>
+    </children>
+    <children name="X3" id="4a2da186-49cb-4d05-b514-abcd38b44acc">
+      <modes name="Morals" id="8bc9e2b7-a528-4b89-8da1-cf27476c9630">
+        <notes text="Highly simplified" author="steh_ti" date="2016-06-16 11:11:39">
+          <children text="True!" author="steh_ti" date="2016-06-16 11:11:49"/>
+        </notes>
+      </modes>
+    </children>
+  </projects>
+</prem:ProjectRepository>

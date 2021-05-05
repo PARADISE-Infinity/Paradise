@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" metaModel="1.31" xmi:version="2.0">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Group Elements" value="false"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+      <metaData name="Edit local statemachines">
+        <metaData name="Group Elements" value="true"/>
+        <metaData name="Group Edges (Bus-Style Edge Routing)" value="false"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <projects id="dac21708-088d-478a-9b59-2e5332205277" name="Root">
+    <statemachines id="cffff672-e79f-48d9-999a-4049ef61c36d" name="SM1">
+      <modes entryMode="true" id="83d8b5a6-de2f-4c85-8b45-f41d1221e828" name="A"/>
+      <modes id="e1b3faf4-7da7-490f-86ba-39e921071e1c" name="B"/>
+      <modes id="adb277f1-0d4e-4656-9a6b-8f2112d7d1a4" name="C"/>
+      <modes id="35aa66c3-a871-4577-a31d-ca7cb764d73c" name="D"/>
+      <transitions id="e47822b4-8ecc-414e-80c5-0e2bff1ebdbb">
+        <sourcePointer target="83d8b5a6-de2f-4c85-8b45-f41d1221e828" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="e1b3faf4-7da7-490f-86ba-39e921071e1c" xsi:type="graph:DirectPointer"/>
+      </transitions>
+      <transitions behavior="EXTERNAL" id="f02ddc69-c5b1-4b40-895c-8eaefc7b4e38">
+        <sourcePointer target="e1b3faf4-7da7-490f-86ba-39e921071e1c" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="adb277f1-0d4e-4656-9a6b-8f2112d7d1a4" xsi:type="graph:DirectPointer"/>
+      </transitions>
+      <transitions behavior="IMMEDIATE" id="1b4dbd26-bf9a-4860-9fe1-7f580dae1f7b">
+        <sourcePointer target="adb277f1-0d4e-4656-9a6b-8f2112d7d1a4" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="35aa66c3-a871-4577-a31d-ca7cb764d73c" xsi:type="graph:DirectPointer"/>
+      </transitions>
+      <transitions behavior="IMMEDIATE" id="b72de0eb-4e48-461e-8590-8344354b93e5">
+        <sourcePointer target="35aa66c3-a871-4577-a31d-ca7cb764d73c" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="35aa66c3-a871-4577-a31d-ca7cb764d73c" xsi:type="graph:DirectPointer"/>
+      </transitions>
+    </statemachines>
+    <statemachines id="0da911fb-717b-4fcb-b9cf-0cfb9598961c" name="SM2">
+      <modes entryMode="true" id="99c8803f-5f6b-43d2-879a-f4f7b61009a9" name="1"/>
+      <modes id="4182ac59-c386-490c-88b3-98df70757af9" name="2"/>
+      <modes id="efeaf1c2-739c-4783-9f45-77f5ac6396ed" name="3"/>
+      <transitions id="35923422-20a1-4e13-a4f5-8eaba199f515">
+        <sourcePointer target="99c8803f-5f6b-43d2-879a-f4f7b61009a9" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="4182ac59-c386-490c-88b3-98df70757af9" xsi:type="graph:DirectPointer"/>
+        <condition xsi:type="elem:ModeGuard">
+<modePointer target="35aa66c3-a871-4577-a31d-ca7cb764d73c" xsi:type="graph:DirectPointer"/>
+</condition>
+      </transitions>
+      <transitions id="785f379f-f402-4d1a-a522-dc639aef92a5">
+        <sourcePointer target="4182ac59-c386-490c-88b3-98df70757af9" xsi:type="graph:DirectPointer"/>
+        <targetPointer target="efeaf1c2-739c-4783-9f45-77f5ac6396ed" xsi:type="graph:DirectPointer"/>
+        <condition xsi:type="elem:GuardCombination">
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="83d8b5a6-de2f-4c85-8b45-f41d1221e828" xsi:type="graph:DirectPointer"/>
+</children>
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="e1b3faf4-7da7-490f-86ba-39e921071e1c" xsi:type="graph:DirectPointer"/>
+</children>
+          <children xsi:type="elem:ModeGuard">
+<modePointer target="35aa66c3-a871-4577-a31d-ca7cb764d73c" xsi:type="graph:DirectPointer"/>
+</children>
+        </condition>
+      </transitions>
+    </statemachines>
+  </projects>
+</prem:ProjectRepository>

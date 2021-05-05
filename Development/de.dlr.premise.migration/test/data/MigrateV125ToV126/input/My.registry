@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reg:Registry xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" name="Test Registry" metaModel="1.25">
+  <units name="NonDuplMagic" symbol="mag"/>
+  <units name="ReplAcceleration" symbol="m/s2"/>
+  <units name="DuplLuminous Intensity" symbol="cd"/>
+  <units name="DerivLuminous Intensity" symbol="mcd">
+    <siUnitRef target="cd" conversionFactorFromSI="0.001"/>
+  </units>
+  <units name="DerivTempreature" symbol="kK">
+    <siUnitRef conversionFactorFromSI="1000.0">
+      <target href="My2.registry#K"/>
+    </siUnitRef>
+  </units>
+  <constants name="pi" id="1435a2aa-917e-4261-abcc-eab89aaedae0">
+    <value value="3.1416"/>
+  </constants>
+  <constants name="AbsouluteZero" id="3d0300c4-ecec-4bb2-baaf-5db1598c32dc">
+    <value value="2" uncertainty=""/>
+    <unit href="My2.registry#K"/>
+  </constants>
+  <constants name="gravity" id="4e41e7cd-5cd9-4015-95a0-91fb9accd31a" unit="m/s2">
+    <notes text="It's not a space station, it's a moon!" author="steh_ti" date="2018-03-14 16:10:07"/>
+    <value value="1.62"/>
+  </constants>
+</reg:Registry>

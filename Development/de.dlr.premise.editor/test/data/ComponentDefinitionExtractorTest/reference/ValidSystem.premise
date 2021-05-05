@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prem:ProjectRepository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:comp="http://www.dlr.de/premise/component/2016/" xmlns:elem="http://www.dlr.de/premise/element/2014/" xmlns:graph="http://www.dlr.de/premise/graph/2017/" xmlns:prem="http://www.dlr.de/ft/premise/2010/" xmlns:reg="http://www.dlr.de/ft/premise/registry/2010/" metaModel="1.31">
+  <metaData name="View">
+    <metaData name="dataTypeNames" value="on"/>
+    <metaData name="number representation pattern" value="##0.0###E0"/>
+    <metaData name="Association Editor">
+      <metaData name="Draw Relations">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="true"/>
+      </metaData>
+      <metaData name="Draw Connections">
+        <metaData name="Show Parameters" value="false"/>
+        <metaData name="Group Elements" value="false"/>
+      </metaData>
+      <metaData name="Draw Satisfy-Relations">
+        <metaData name="Show Parameters" value="true"/>
+        <metaData name="Group Elements" value="true"/>
+      </metaData>
+    </metaData>
+  </metaData>
+  <projects name="Root" id="root">
+    <statemachines name="Root" id="e80c8b75-e244-4aac-898f-70622eeed506">
+      <modes name="X" id="ee2f47ee-9c77-4694-b9f2-733029ae3a47" entryMode="true"/>
+      <modes name="Y" id="1cd70a8b-9f89-4103-bcfa-3d899b5b65d9" entryMode="true"/>
+      <transitions id="2dbd0c7e-e4a7-4ca0-bada-55377cf8684b">
+        <sourcePointer xsi:type="graph:DirectPointer" target="ee2f47ee-9c77-4694-b9f2-733029ae3a47"/>
+        <targetPointer xsi:type="graph:DirectPointer" target="1cd70a8b-9f89-4103-bcfa-3d899b5b65d9"/>
+        <condition xsi:type="elem:ModeGuard">
+          <modePointer xsi:type="comp:ComponentReferencePointer" componentReference="92e4f326-86ff-427a-8ba2-701e9460b656">
+            <definition xsi:type="comp:ModeDefinition" href="Components.component#42843a57-de76-4f6b-ba5a-681ca37d45e1"/>
+          </modePointer>
+        </condition>
+      </transitions>
+    </statemachines>
+    <parameters name="Target" id="19dcf498-ee18-424c-9f89-21862c768673">
+      <value value="12.99999999"/>
+      <modeValues value="42" uncertainty="">
+        <modePointers xsi:type="graph:DirectPointer" target="ee2f47ee-9c77-4694-b9f2-733029ae3a47"/>
+        <modePointers xsi:type="comp:ComponentReferencePointer" componentReference="92e4f326-86ff-427a-8ba2-701e9460b656">
+          <definition xsi:type="comp:ModeDefinition" href="Components.component#953525df-53fa-4d36-8b20-d08fbe4e7dce"/>
+        </modePointers>
+        <modePointers xsi:type="comp:ComponentReferencePointer" componentReference="92e4f326-86ff-427a-8ba2-701e9460b656">
+          <definition xsi:type="comp:ModeDefinition" href="Components.component#4275aaea-0ec6-4335-8d5b-6d298498c967"/>
+        </modePointers>
+      </modeValues>
+    </parameters>
+    <balancings function="Target = ComponentParameter1 + ComponentParameter2 + ComponentParameter3 + TEN">
+      <actualSources key="ComponentParameter1">
+        <value xsi:type="comp:ComponentReferencePointer" componentReference="92e4f326-86ff-427a-8ba2-701e9460b656">
+          <definition xsi:type="comp:ParameterDefinition" href="Components.component#4ca66d57-b80a-4db8-97b7-cda0c2f2fe01"/>
+        </value>
+      </actualSources>
+      <actualSources key="ComponentParameter2">
+        <value xsi:type="comp:ComponentReferencePointer" componentReference="92e4f326-86ff-427a-8ba2-701e9460b656">
+          <definition xsi:type="comp:ParameterDefinition" href="Components.component#aec63b2d-5fa6-4212-9ef5-428429f6f2a9"/>
+        </value>
+      </actualSources>
+      <actualSources key="ComponentParameter3">
+        <value xsi:type="comp:ComponentReferencePointer" componentReference="92e4f326-86ff-427a-8ba2-701e9460b656">
+          <definition xsi:type="comp:ParameterDefinition" href="Components.component#cff51c56-b40f-4a65-b07a-76f403e40c14"/>
+        </value>
+      </actualSources>
+      <actualSources key="TEN">
+        <value xsi:type="graph:DirectPointer">
+          <target xsi:type="reg:Constant" href="Registry.registry#3a1b7684-14d3-4cef-821b-6660b836e55a"/>
+        </value>
+      </actualSources>
+      <actualTarget key="Target">
+        <value xsi:type="graph:DirectPointer" target="19dcf498-ee18-424c-9f89-21862c768673"/>
+      </actualTarget>
+    </balancings>
+    <connections>
+      <sourcePointer xsi:type="graph:DirectPointer" target="root"/>
+      <targetPointer xsi:type="comp:ComponentReferencePointer" componentReference="92e4f326-86ff-427a-8ba2-701e9460b656">
+        <definition xsi:type="comp:ChildComponentDefinition" href="Components.component#062e3ff8-badc-4712-8160-c33ce98bce7b"/>
+      </targetPointer>
+    </connections>
+    <relations>
+      <sourcePointer xsi:type="graph:DirectPointer" target="root"/>
+      <targetPointer xsi:type="comp:ComponentReferencePointer" componentReference="92e4f326-86ff-427a-8ba2-701e9460b656">
+        <definition xsi:type="comp:ComponentDefinition" href="Components.component#b9fc4695-676b-4ea5-898c-f2d7cf66876c"/>
+      </targetPointer>
+    </relations>
+    <children xsi:type="prem:ComponentReference" name="ToExtract" id="92e4f326-86ff-427a-8ba2-701e9460b656">
+      <componentDefinition href="Components.component#b9fc4695-676b-4ea5-898c-f2d7cf66876c"/>
+      <activeImplementation href="Components.component#toExtract"/>
+    </children>
+  </projects>
+</prem:ProjectRepository>
