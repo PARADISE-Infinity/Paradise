@@ -4,7 +4,7 @@
 * This code is part of the PARADISE project and is licensed under the EPL 2.0 license,
 * which is available at https://www.eclipse.org/legal/epl-2.0/
 *
-* @author: Tillman Stehr
+* @author: Tilman Stehr
 *
 */
 package de.dlr.calc.engine.combined
