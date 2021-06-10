@@ -1,8 +1,6 @@
 # PARADISE 
 
-Is a systems engineering tool for conduction feasibility studies in early stages of product development. The closed development started in 2012 and was closed in 2020. Back than it was decided to provide the code base 
-
-
+Is a systems engineering tool for conduction feasibility studies in early stages of product development. The closed development started in 2012 and was closed in 2020. Back than it was decided to provide the code base as open source.
 
 # Publications
 
