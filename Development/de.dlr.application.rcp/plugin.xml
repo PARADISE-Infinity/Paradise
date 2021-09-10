@@ -257,7 +257,7 @@
           name="PARADISE">
        <property
              name="startupForegroundColor"
-             value="FFFFFF">
+             value="000000">
        </property>
        <property
              name="startupProgressRect"
