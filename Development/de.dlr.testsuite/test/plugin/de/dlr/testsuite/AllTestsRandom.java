@@ -128,7 +128,7 @@ import de.dlr.testsuite.runner.RandomSuite;
     de.dlr.premise.states.test.util.StateCheckingHelperTest.class,
 
     // de.dlr.premise.util
-    de.dlr.premise.util.logging.LoggerFacadeTest.class,
+    // de.dlr.premise.util.logging.LoggerFacadeTest.class,
 
     // de.dlr.premise.validation.ui
     de.dlr.premise.validation.BalancingValidationTest.class,

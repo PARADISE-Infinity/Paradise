@@ -26,7 +26,7 @@ Require-Bundle: org.eclipse.emf.mwe2.launch;bundle-version="2.1.0",
  org.eclipse.xtext.xbase.lib;bundle-version="2.3.0",
  org.eclipse.xtend.core;bundle-version="2.3.0",
  de.dlr.premise.editor;bundle-version="1.0.0",
- de.dlr.premise.util;bundle-version="1.11.1",
+ de.dlr.premise.util;bundle-version="1.11.1";resolution:=optional,
  de.dlr.exchange.base.xtend,
  org.junit;resolution:=optional,
  de.dlr.premise.states;bundle-version="1.0.0"

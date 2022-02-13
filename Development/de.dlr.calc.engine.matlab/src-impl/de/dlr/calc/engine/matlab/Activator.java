@@ -15,7 +15,7 @@ import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.BundleContext;
 
 import de.dlr.calc.engine.matlab.ui.MatlabPreferenceConfig;
-import de.dlr.premise.util.logging.LoggerFacade;
+// import de.dlr.premise.util.logging.LoggerFacade;
 
 /**
  * The activator class controls the plug-in life cycle
@@ -99,7 +99,7 @@ public class Activator extends AbstractUIPlugin {
 	}
 
 	private void initialize () {		
-		LoggerFacade.getLogger(PLUGIN_ID);
+		// LoggerFacade.getLogger(PLUGIN_ID);
 		
 		MatlabConfig config = getMatlabConfiguration();		
 		if (config.getMultiCalc() == true) {
