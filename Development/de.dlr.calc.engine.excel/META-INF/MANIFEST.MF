@@ -6,7 +6,6 @@ Bundle-Version: 1.25.0.qualifier
 Bundle-Activator: de.dlr.calc.engine.excel.Activator
 Bundle-Vendor: www.dlr.de/ft/ssy
 Require-Bundle: de.dlr.premise,
- de.dlr.premise.util;resolution:=optional,
  de.dlr.calc.engine,
  de.dlr.calc.engine.combined;bundle-version="1.24.0",
  de.dlr.premise.states;bundle-version="1.0.0",

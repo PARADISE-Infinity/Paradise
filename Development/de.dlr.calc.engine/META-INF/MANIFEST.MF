@@ -5,7 +5,6 @@ Bundle-SymbolicName: de.dlr.calc.engine;singleton:=true
 Bundle-Version: 1.25.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Require-Bundle: de.dlr.premise;bundle-version="1.0.0",
- de.dlr.premise.util;bundle-version="1.11.1";resolution:=optional,
  de.dlr.premise.states;bundle-version="1.0.0",
  org.junit;resolution:=optional
 Bundle-ClassPath: .
