@@ -145,7 +145,7 @@ public class TabelLabelProvider implements ITableLabelProvider, ITableColorProvi
             }
         }
 
-        // Mark Balancingtargets
+        // Mark Balancing targets
         for (ABalancing<?> bal : page.getAllBalancings()) {
             if (element.equals(bal.getTarget())) {
                 return targetColor;
@@ -378,6 +378,7 @@ public class TabelLabelProvider implements ITableLabelProvider, ITableColorProvi
     }
 
     private String getSatisfiesColumnText(Object element) {
+        
         // Shows Satisfy Names in Parameter Row
         if (element instanceof AParameterDef) {
             if ((element instanceof Parameter)) {
@@ -398,12 +399,12 @@ public class TabelLabelProvider implements ITableLabelProvider, ITableColorProvi
                 double lower = -Double.MAX_VALUE;
                 double upper = Double.MAX_VALUE;
                 Parameter par = (Parameter) ((EObject) element).eContainer();
-                if (!par.getSatisfiedSatisfieables().isEmpty()) { // has Satiesfies?
+                if (!par.getSatisfiedSatisfieables().isEmpty()) { // has Satisfies?
                     for (RequiredParameter satisfie : par.getSatisfiesRequiredParameters()) {
-                        // limit out of all Requiered Parameter
+                        // limit out of all Required Parameter
                         double tempLower = -Double.MAX_VALUE;
                         double tempUpper = Double.MAX_VALUE;
-                        if ((element instanceof Value)) {
+                        if (element instanceof Value) {
 
                             ARange con = (RangeConstraint) satisfie.getValueConstraint();
                             if (con != null) {

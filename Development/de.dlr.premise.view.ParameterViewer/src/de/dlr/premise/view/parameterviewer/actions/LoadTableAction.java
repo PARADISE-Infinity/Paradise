@@ -11,15 +11,14 @@
 package de.dlr.premise.view.parameterviewer.actions;
 
 import org.eclipse.jface.action.Action;
+import org.eclipse.jface.viewers.TreeViewer;
 import org.eclipse.ui.actions.ActionFactory.IWorkbenchAction;
 
 import de.dlr.premise.view.parameterviewer.ParameterViewerPage;
 
 public class LoadTableAction extends Action implements IWorkbenchAction {
 
-    /**
-     * 
-     */
+    // 
     private final ParameterViewerPage parameterViewerPage;
 
     /**
@@ -31,19 +30,19 @@ public class LoadTableAction extends Action implements IWorkbenchAction {
 
     @Override
     public void run() {
+        
         parameterViewerPage.loadTableFromPreferences();
 
+        TreeViewer treeViewer = parameterViewerPage.getObservedTreeViewer();
         for (int i = 0; i < parameterViewerPage.getColumns().size(); i++) {
-            parameterViewerPage.getObservedTreeViewer().getTree().getColumn(i).setWidth(parameterViewerPage.getColumns().get(i).width);
+            treeViewer.getTree().getColumn(i).setWidth(parameterViewerPage.getColumns().get(i).width);
         }
 
-        parameterViewerPage.getObservedTreeViewer().getTree().setColumnOrder(parameterViewerPage.getColumnOrder());
-        parameterViewerPage.getObservedTreeViewer().refresh();
+        treeViewer.getTree().setColumnOrder(parameterViewerPage.getColumnOrder());
+        treeViewer.refresh();
     }
 
     @Override
     public void dispose() {
-
     }
-
 }

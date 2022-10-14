@@ -78,7 +78,6 @@
       <plugin id="de.dlr.premise.query.ui" version="1.25.0.qualifier"/>
       <plugin id="de.dlr.premise.representation.ui" version="1.25.0.qualifier"/>
       <plugin id="de.dlr.premise.states" version="1.25.0.qualifier"/>
-      <plugin id="de.dlr.premise.util" version="1.25.0.qualifier"/>
       <plugin id="de.dlr.premise.validation" version="1.25.0.qualifier"/>
       <plugin id="de.dlr.premise.validation.ui" version="1.25.0.qualifier"/>
       <plugin id="de.dlr.premise.view.GraphicalEditorView" version="1.25.0.qualifier"/>

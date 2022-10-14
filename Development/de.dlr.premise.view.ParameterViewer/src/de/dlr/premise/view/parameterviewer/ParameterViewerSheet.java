@@ -25,7 +25,7 @@ import de.dlr.premise.system.presentation.my.SystemEditorMy;
 
 public class ParameterViewerSheet extends PageBookView implements ISelectionListener {
 
-    // private ISelection bootstrapSelection;
+    final static String EDITOR_NAME = "de.dlr.premise.editor";
 
     @Override
     protected IPage createDefaultPage(PageBook book) {
@@ -63,7 +63,6 @@ public class ParameterViewerSheet extends PageBookView implements ISelectionList
     protected IWorkbenchPart getBootstrapPart() {
         IWorkbenchPage page = getSite().getPage();
         if (page != null) {
-            // bootstrapSelection = page.getSelection();
             return page.getActivePart();
         }
         return null;
@@ -71,15 +70,21 @@ public class ParameterViewerSheet extends PageBookView implements ISelectionList
 
     @Override
     protected boolean isImportant(IWorkbenchPart part) {
-        return "de.dlr.premise.editor".equals(part.getSite().getPluginId());
+        String pluginID = part.getSite().getPluginId();
+        return EDITOR_NAME.equals(pluginID);
     }
 
     @Override
     public void selectionChanged(IWorkbenchPart part, ISelection selection) {
-        if (selection instanceof TreeSelection && getCurrentPage() instanceof ParameterViewerPage) {
-            ((ParameterViewerPage) getCurrentPage()).setRootElementsIfVisible(selection);
-
+        
+        // get page
+        ParameterViewerPage page = null;
+        if (getCurrentPage() instanceof ParameterViewerPage) {
+            page = (ParameterViewerPage) getCurrentPage();            
+        }
+        
+        if (selection instanceof TreeSelection && page != null) {           
+            page.setRootElementsIfVisible(selection);
         }
     }
-
 }

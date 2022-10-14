@@ -27,8 +27,6 @@ import de.dlr.premise.registry.Constant
 
 class PremiseQualifiedNameProvider extends DefaultDeclarativeQualifiedNameProvider {
 	
-	// @Inject IDValueConverter idValueConverter
-	
 	def QualifiedName qualifiedName(ANameItem ele) {
 		if (ele instanceof Balancing) {
 			return QualifiedName.create(EcoreUtil.getURI(ele).toString.replaceAll("\\.", ":"))

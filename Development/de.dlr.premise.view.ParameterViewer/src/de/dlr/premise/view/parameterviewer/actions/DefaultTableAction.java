@@ -11,6 +11,7 @@
 package de.dlr.premise.view.parameterviewer.actions;
 
 import org.eclipse.jface.action.Action;
+import org.eclipse.jface.viewers.TreeViewer;
 import org.eclipse.ui.actions.ActionFactory.IWorkbenchAction;
 
 import de.dlr.premise.view.parameterviewer.ParameterViewerPage;
@@ -31,27 +32,32 @@ public class DefaultTableAction extends Action implements IWorkbenchAction {
 
     public void run() {
 
-        parameterViewerPage.getObservedTreeViewer().getTree().setRedraw(false);
+        TreeViewer treeViewer = parameterViewerPage.getObservedTreeViewer();
+        
+        treeViewer.getTree().setRedraw(false);
         parameterViewerPage.setDefaultColumns();
 
         // Default Order
-        int[] order = new int[parameterViewerPage.getColumns().size()];
+        int size = parameterViewerPage.getColumns().size();
+        
+        int[] order = new int[size];
         for (int i = 0; i < order.length; i++) {
             order[i] = i;
         }
-        parameterViewerPage.getObservedTreeViewer().getTree().setColumnOrder(order);
+                
+        treeViewer.getTree().setColumnOrder(order);
 
         // Default Size
-        for (int i = 0; i < parameterViewerPage.getColumns().size(); i++) {
-            parameterViewerPage.getObservedTreeViewer().getTree().getColumn(i).setWidth(parameterViewerPage.getColumns().get(i).width);
+        for (int i = 0; i < size; i++) {
+            treeViewer.getTree().getColumn(i).setWidth(parameterViewerPage.getColumns().get(i).width);
         }
+        
         parameterViewerPage.saveTable();
 
-        parameterViewerPage.getObservedTreeViewer().getTree().setRedraw(true);
+        treeViewer.getTree().setRedraw(true);
     }
 
     @Override
     public void dispose() {
     }
-
 }

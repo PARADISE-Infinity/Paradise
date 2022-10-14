@@ -11,15 +11,14 @@
 package de.dlr.premise.view.parameterviewer.actions;
 
 import org.eclipse.jface.action.Action;
+import org.eclipse.jface.viewers.TreeViewer;
 import org.eclipse.ui.actions.ActionFactory.IWorkbenchAction;
 
 import de.dlr.premise.view.parameterviewer.ParameterViewerPage;
 
 public class CollapseExpandAllAction extends Action implements IWorkbenchAction {
 
-    /**
-     * 
-     */
+    // 
     private final ParameterViewerPage parameterViewerPage;
 
     /**
@@ -33,21 +32,26 @@ public class CollapseExpandAllAction extends Action implements IWorkbenchAction 
 
     @Override
     public void run() {
-        parameterViewerPage.getSourceTreeViewer().getTree().setRedraw(false);
-        parameterViewerPage.getSourceTreeViewer().getTree().setRedraw(false);
+        
+        TreeViewer treeViewer = parameterViewerPage.getSourceTreeViewer();
+        
+        treeViewer.getTree().setRedraw(false);
+        treeViewer.getTree().setRedraw(false);
+        
         if (isExpanded) {
             isExpanded = false;
-            parameterViewerPage.getSourceTreeViewer().collapseAll();
+            treeViewer.collapseAll();
             parameterViewerPage.getObservedTreeViewer().collapseAll();
         } else {
             isExpanded = true;
-            parameterViewerPage.getSourceTreeViewer().expandAll();
+            treeViewer.expandAll();
             parameterViewerPage.getObservedTreeViewer().expandAll();
         }
+
         parameterViewerPage.getObservedTreeViewer().refresh();
-        parameterViewerPage.getSourceTreeViewer().refresh();
-        parameterViewerPage.getSourceTreeViewer().getTree().setRedraw(true);
-        parameterViewerPage.getSourceTreeViewer().getTree().setRedraw(true);
+        treeViewer.refresh();
+        treeViewer.getTree().setRedraw(true);
+        treeViewer.getTree().setRedraw(true);
     }
 
     @Override

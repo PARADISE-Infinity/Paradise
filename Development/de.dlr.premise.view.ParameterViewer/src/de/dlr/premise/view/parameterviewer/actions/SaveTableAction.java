@@ -17,9 +17,7 @@ import de.dlr.premise.view.parameterviewer.ParameterViewerPage;
 
 public class SaveTableAction extends Action implements IWorkbenchAction {
 
-    /**
-     * 
-     */
+    //
     private final ParameterViewerPage parameterViewerPage;
 
     /**
@@ -36,7 +34,5 @@ public class SaveTableAction extends Action implements IWorkbenchAction {
 
     @Override
     public void dispose() {
-
     }
-
 }
