@@ -95,11 +95,12 @@ class DSMGenerator extends AbstractGenerator {
 
 	def void doGenerate(ResourceSet resSet, ARepository rootRepo, EObject toproot, EObject leftroot, String fileName,
 		IFileSystemAccess fsa, IProgressMonitor monitor) {
+	
 		// set options and init colors
 		new TraceOptions().setOptions(rootRepo)
 		initOption(rootRepo, DSMOptions.OPT_TECH)
 		repHelper = RepresentationHelper.getInstance(resSet)
-
+		
 		var toprow = ScopedEObjectFactory.INSTANCE.createScopedEObjectForNullscope(toproot).eAllContentsIncludingRoot.filter(AElement).toList
 		var leftcol = ScopedEObjectFactory.INSTANCE.createScopedEObjectForNullscope(leftroot).eAllContentsIncludingRoot.filter(AElement).toList
 
@@ -123,14 +124,17 @@ class DSMGenerator extends AbstractGenerator {
 		leftcol.forEach [ left, j |
 			// count the relations/connections/...
 			var List<Pair<String, Integer>> counters = new ArrayList
+			
 			// relations
 			if (OPT_DEPENDENCY_TYPES_RELATIONS.option == "on") {
 				counters.add("r" -> relations.filter[source == top && target == left].length)
 			}
+			
 			// connections
 			if (OPT_DEPENDENCY_TYPES_CONNECTIONS.option == "on") {
 				counters.add("c" -> connections.filter[source == top && target == left].length)
 			}
+			
 			// balancings
 			if (OPT_DEPENDENCY_TYPES_BALANCINGS.option == "on") {
 				if (top instanceof SystemComponent && left instanceof SystemComponent) {
@@ -140,6 +144,7 @@ class DSMGenerator extends AbstractGenerator {
 					].length)
 				}
 			}
+			
 			// satisfies
 			if (OPT_DEPENDENCY_TYPES_SATISFIES.option == "on") {						
 				if (top instanceof SystemComponent && left instanceof ISystemComponentSatisfieable) {
@@ -160,6 +165,7 @@ class DSMGenerator extends AbstractGenerator {
 					}
 				}
 			}
+			
 			if (OPT_DEPENDENCY_COUNT.option == "on") {
 				var count = counters.map[value].reduce[a, b|a + b]
 				// print the counter

@@ -86,6 +86,7 @@
       <plugin id="de.dlr.premise.view.graphml" version="1.25.0.qualifier"/>
       <plugin id="de.dlr.premise.view.graphml.ui" version="1.25.0.qualifier"/>
       <plugin id="de.dlr.premise.xtext" version="1.25.0.qualifier"/>
+      <plugin id="de.pkt.exchange.excel.funArch"/>
       <plugin id="javax.annotation"/>
       <plugin id="javax.inject"/>
       <plugin id="lpg.runtime.java"/>

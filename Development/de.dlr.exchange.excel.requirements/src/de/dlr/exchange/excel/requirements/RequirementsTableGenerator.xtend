@@ -14,7 +14,6 @@ import com.smartxls.WorkBook
 import de.dlr.exchange.base.xtend.GeneratorHelper
 import de.dlr.premise.component.Satisfies
 import de.dlr.premise.element.AElement
-import de.dlr.premise.element.Connection
 import de.dlr.premise.element.Relation
 import de.dlr.premise.functions.RangeConstraint
 import de.dlr.premise.functions.RequiredParameter
@@ -42,6 +41,9 @@ import org.eclipse.emf.ecore.resource.ResourceSet
 import static de.dlr.premise.util.PremiseHelper.getGuardConditionString
 
 import static extension de.dlr.premise.util.PremiseHelper.closure
+import de.dlr.premise.util.LabelHelper
+import de.dlr.premise.functions.impl.my.UseCaseHelper
+import de.dlr.premise.functions.impl.my.RequiredParameterHelper
 
 class RequirementsTableGenerator {
 	val static level = "Level"
@@ -137,6 +139,7 @@ class RequirementsTableGenerator {
 			input.allContents.filter(Satisfies as Class<?> as Class<Satisfies<?, ?>>).filter [
 				target instanceof UseCase || target instanceof RequiredParameter
 			].groupBy[target as INode].mapValues[map[source]],
+			
 			input.allContents.filter(Relation).filter [
 				(target instanceof UseCase || target instanceof RequiredParameter) && source instanceof EObject &&
 					(source as EObject).closure[#[eContainer]].filter(IMetaTypable).map[metaTypes].flatten.exists [
@@ -144,17 +147,15 @@ class RequirementsTableGenerator {
 					]
 			].groupBy[target].mapValues[map[source]]
 		)
-		val connections = input.allContents.filter(Connection as Class<?> as Class<Connection<?>>).filter [
-			target instanceof UseCase
-		].toList
-		inputRelations = input.allContents.filter(Relation).filter [
-			target instanceof RequiredParameter
-		].groupBy[target].mapValues[it.map[source]]
-		outputRelations = input.allContents.filter(Relation).filter [
-			source instanceof RequiredParameter
-		].groupBy[source].mapValues[it.map[target]]
+		
+		// filters all connections of UseCases classes	
+		val connections = UseCaseHelper.getConncections(input)
 		inputConnections = connections.groupBy[target].mapValues[it.map[source]]
 		outputConnections = connections.groupBy[source].mapValues[it.map[target]]
+		
+		inputRelations = RequiredParameterHelper.getInputRelations(input)
+		outputRelations = RequiredParameterHelper.getOutputRelations(input)
+
 		input.resources.map[contents.filter(UseCaseRepository)].flatten.map[usecases].flatten.forEach [
 			iterateTree(0, 0, null, "")
 		]
@@ -228,11 +229,15 @@ class RequirementsTableGenerator {
 	private def void writeTo(String value, String columnName) {
 		if(value.nullOrEmpty) return;
 		wb.setRowHeight(activeRow, Math.max(value.split("\n").length * 300, wb.getRowHeight(activeRow)))
-		wb.setEntry(activeRow, columnName.col, value)
+		wb.setEntry(activeRow, columnName.col, LabelHelper.cleanName(value))
 	}
 
 	private def void writeTo(String[] values, String columnName) {
-		values.join("\n").writeTo(columnName)
+		val delim = ";"
+		for (var i = 0; i < values.length; i++) {
+			values.set(i, LabelHelper.cleanName(values.get(i)))
+		}
+		values.join(delim).writeTo(columnName)
 	}
 
 	private def int col(String colName) {
