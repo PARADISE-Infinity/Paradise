@@ -23,6 +23,7 @@ import static extension de.dlr.premise.util.PremiseHelper.closure
 import static extension de.dlr.premise.util.PremiseHelper.toUnmodifieableEList
 
 class ConnectionHelper {
+	
 	static def queryValidSourcePointerParentComponentReferenceList(Connection<?> con) {
 		doQueryValidSourceOrTargetPointerParentComponentReferenceList(con)
 	}	
