@@ -34,8 +34,8 @@ class LabelHelper {
 
         var String cleanName = label;
         
-		for (delim : delims) {
-        var idx = cleanName.indexOf(delim)
+		for (delim : delims) {		
+	        var idx = cleanName.indexOf(delim)
 	        while (idx > 0) {
 	            cleanName = cleanName.replace(cleanName.subSequence(idx, idx + delim.length),"");
 	            idx = cleanName.indexOf(delim);            
@@ -43,4 +43,19 @@ class LabelHelper {
 		}
         return cleanName;  
     }
+    
+    def static public String cleanQualifiedName(String name) {
+
+		val delim = '.'
+        var String cleanName = name   
+	    var idx = cleanName.indexOf(delim)
+
+		while (idx > 0) {
+		    cleanName = cleanName.replace(cleanName.subSequence(idx, idx + delim.length),'');
+		    idx = cleanName.indexOf(delim);            
+		}			
+		
+		return cleanName;
+	}
+	
 }
