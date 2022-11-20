@@ -40,6 +40,7 @@ import org.eclipse.xtext.util.RuntimeIOException
 
 import static extension de.dlr.premise.util.PremiseHelper.*
 import de.dlr.premise.util.PremiseHelper
+import de.dlr.premise.util.LabelHelper
 
 abstract class AbstractGenerator implements IGeneratorMyWithProgress {
 
@@ -58,6 +59,7 @@ abstract class AbstractGenerator implements IGeneratorMyWithProgress {
 	public static String OPT_DEPENDENCY_TYPES_SATISFIES = "Satisfies (on/off)"
 	public static String OPT_PARENT_NAMES = "Print parent names (all/none/one)"
 	public static String OPT_INCLUDE_PARENTS = "Include parents in export (on/off)"
+	public static String OPT_INCLUDE_COLOR = "Include colors in export (on/off)"
 	public static String OPT_DEPTH_INFERENCE = "Infer depth of satisfying components (on/off)"
 
 	def protected abstract String getTitle();
@@ -113,11 +115,15 @@ abstract class AbstractGenerator implements IGeneratorMyWithProgress {
 		if(monitor.isCanceled) return;
 		// print the left column
 		leftcol.forEach [ it, i |
+
 			// set color
-			if (repHelper.getColor(it) != null) {
-				workbook.setSelection(5 + i, 0, 5 + i, 0)
-				workbook.setElementsColor(it)
+			if (OPT_INCLUDE_COLOR.option == "on") {		
+				if (repHelper.getColor(it) != null) {
+					workbook.setSelection(5 + i, 0, 5 + i, 0)
+					workbook.setElementsColor(it)
+				}				
 			}
+
 			var String prefix = ""
 			if (OPT_INCLUDE_PARENTS.option == "on") {
 				for (var j = 0; j < hierarchyLevel; j++) {
@@ -133,7 +139,19 @@ abstract class AbstractGenerator implements IGeneratorMyWithProgress {
 						prefix = (allParents.head?.name ?: "") + pathSeperatorLeft
 				}
 			}
-			workbook.setText(5 + i, 0, prefix + name)
+			
+			// clean prefix
+			var clean_prefix = LabelHelper.cleanName(prefix)
+			clean_prefix = clean_prefix.replace('/','.').trim()
+
+			// clean name
+			var clean_name = name
+			clean_name = LabelHelper.cleanName(name)
+			clean_name = clean_name.trim()
+
+			clean_name = LabelHelper.cleanQualifiedName(clean_name)
+
+			workbook.setText(5 + i, 0, clean_prefix + clean_name)
 
 			grayOutUnneededRow(toprow, workbook, i)
 		]
@@ -190,13 +208,16 @@ abstract class AbstractGenerator implements IGeneratorMyWithProgress {
 		Set<Balancing> balancings)
 
 	private def void setupCell(WorkBook workbook, Integer i, AElement top, int minHierarchyLevel) {
+		
 		// set orientation vertical
 		workbook.setSelection(3, i + 2, 3, i + 2)
 		workbook.setRotation(90)
 
 		// set color
-		if (repHelper.getColor(top) != null) {
-			workbook.setElementsColor(top)
+		if (OPT_INCLUDE_COLOR.option == "on") {	
+			if (repHelper.getColor(top) != null) {
+				workbook.setElementsColor(top)
+			}			
 		}
 
 		// set indentation/path postfix
@@ -217,7 +238,13 @@ abstract class AbstractGenerator implements IGeneratorMyWithProgress {
 				default:
 					postfix = pathSeperatorTop + (top.allParents.head?.name ?: "")
 			}
-			workbook.setText(3, i + 2, top.name + postfix)
+			
+			var clean_name = LabelHelper.cleanName(top.name).trim()
+			
+			var clean_postfix = LabelHelper.cleanName(postfix).trim()
+			clean_postfix = clean_postfix.replace('|', '.')
+			
+			workbook.setText(3, i + 2, clean_name + clean_postfix)
 		}
 	}
 
