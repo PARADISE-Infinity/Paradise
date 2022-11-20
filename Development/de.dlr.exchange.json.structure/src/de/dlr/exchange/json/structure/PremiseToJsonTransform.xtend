@@ -29,6 +29,7 @@ import org.eclipse.xtend.lib.annotations.Accessors
 import org.eclipse.xtend.lib.annotations.FinalFieldsConstructor
 
 import static extension org.eclipse.emf.ecore.util.EcoreUtil.getURI
+import de.dlr.premise.util.LabelHelper
 
 @FinalFieldsConstructor class PremiseToJsonTransform {
 	
@@ -53,7 +54,7 @@ import static extension org.eclipse.emf.ecore.util.EcoreUtil.getURI
 	def private JsonElement transformAElement(AElement elem) {
 		new JsonElement => [
 			id = elem.id
-			name = elem.name
+			name = LabelHelper.cleanName(elem.name)
 			
 			if (!elem.contained.empty) {
 				children = elem.contained.map[transformAElement]
