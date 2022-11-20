@@ -30,7 +30,8 @@ public class DSMOptions extends StructuredOptions {
 				},
 				OPT_DEPENDENCY_COUNT -> "off",
 				OPT_PARENT_NAMES -> "one",
-				OPT_INCLUDE_PARENTS -> "off"
+				OPT_INCLUDE_PARENTS -> "off",
+				OPT_INCLUDE_COLOR -> "off"
 			}
 		}
 	}
