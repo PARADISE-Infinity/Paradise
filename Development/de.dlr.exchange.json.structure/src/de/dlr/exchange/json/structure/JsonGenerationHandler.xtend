@@ -33,14 +33,18 @@ import static extension de.dlr.premise.util.PremiseHelper.*
 
 class JsonGenerationHandler extends AGenerationHandler {
 
+	public static String EXTENSION = ".json"
+
 	override void generateFromAElements(IFolder srcGenFolder, ResourceSet editorResSet, List<AElement> selectedElements) {
 		val transform = new PremiseToJsonTransform(selectedElements, predicate)
 		transform.run()
 		
-		val gson = GsonFactory.createGson()		
+		val gson = GsonFactory.createGson()
 		val generated = gson.toJson(transform.jsonRoot)
 		
-		val name = ExportFileHelper.findFileName(srcGenFolder, GeneratorHelper.encodeFileName(selectedElements.head.name), ".json")
+		val encoded_name = GeneratorHelper.encodeFileName(selectedElements.head.name)
+		
+		val name = ExportFileHelper.findFileName(srcGenFolder, encoded_name, EXTENSION)
 		val file = srcGenFolder.getFile(name)
 		
 		ExportFileHelper.createOrUpdateFile(file, generated)
