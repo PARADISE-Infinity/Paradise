@@ -256,8 +256,27 @@ abstract class AbstractGenerator implements IGeneratorMyWithProgress {
 
 		connections.forEach[ it, k |
 			workbook.setText(1 + k, 0, name)
-			workbook.setText(1 + k, 1, LabelHelper.cleanName(sourcePointer.target.name))
-			workbook.setText(1 + k, 2, LabelHelper.cleanName(targetPointer.target.name))
+
+			var String sourceName = null
+			if (sourcePointer != null) {
+				if (sourcePointer.target != null) {
+					sourceName = sourcePointer.target.name
+				}
+			}
+
+			var String targetName = null
+			if (targetPointer != null) {
+				if (targetPointer.target != null) {
+					targetName = targetPointer.target.name
+				}
+			}
+			
+			if (sourceName != null) { 			
+				workbook.setText(1 + k, 1, LabelHelper.cleanName(sourceName))
+			}
+			if (targetName != null) {
+				workbook.setText(1 + k, 2, LabelHelper.cleanName(targetName))
+			}
 		]
 		
 		// save the file
