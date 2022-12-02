@@ -27,7 +27,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ANameItem" abstract="true" eSuperTypes="#//IPremiseObject">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-      <details key="documentation" value="All elemets which shall have a name inherits from this abstract class."/>
+      <details key="documentation" value="All elements which shall have a name inherits from this abstract class."/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
         defaultValueLiteral=""/>

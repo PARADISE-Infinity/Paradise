@@ -26,6 +26,7 @@ import org.eclipse.xtext.util.StringInputStream
 import java.io.InputStream
 
 class ExportFileHelper {
+	
 	def static findFileName(IFolder folder, String name, String fileExt) {
 		if (!folder.exists(new Path(name + fileExt))) {
 			return name + fileExt

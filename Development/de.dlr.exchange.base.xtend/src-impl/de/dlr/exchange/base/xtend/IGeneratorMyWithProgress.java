@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
 import de.dlr.premise.element.AElement;
 
 public interface IGeneratorMyWithProgress extends IGeneratorMy {
+    
     default public void doGenerateFromAElements(ResourceSet input, List<AElement> selectedElements, ICharsetProvidingFileSystemAccess fsa) {
         doGenerateFromAElements(input, selectedElements, fsa, new NullProgressMonitor());
     }

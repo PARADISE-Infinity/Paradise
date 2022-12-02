@@ -43,10 +43,12 @@ import static extension de.dlr.premise.util.PremiseHelper.*
 class DSMGenerator extends AbstractGenerator {
 
 	override doGenerateFromAElements(ResourceSet resSet, List<AElement> selectedElements, ICharsetProvidingFileSystemAccess fsa, IProgressMonitor monitor) {
+		
 		var ARepository rootRepo
 		var EObject toproot
 		var EObject leftroot
 		var String fileName
+
 		try {
 
 			rootRepo = PremiseHelper::getRoot(selectedElements.get(0)) as ARepository
@@ -96,7 +98,7 @@ class DSMGenerator extends AbstractGenerator {
 	def void doGenerate(ResourceSet resSet, ARepository rootRepo, EObject toproot, EObject leftroot, String fileName,
 		IFileSystemAccess fsa, IProgressMonitor monitor) {
 	
-		// set options and init colors
+		// set options and initialize colors
 		new TraceOptions().setOptions(rootRepo)
 		initOption(rootRepo, DSMOptions.OPT_TECH)
 		repHelper = RepresentationHelper.getInstance(resSet)
@@ -225,6 +227,5 @@ class DSMGenerator extends AbstractGenerator {
 		} else if (repo instanceof UseCaseRepository) {
 			return repo.usecases?.get(0)
 		}
-	}
-	
+	}	
 }

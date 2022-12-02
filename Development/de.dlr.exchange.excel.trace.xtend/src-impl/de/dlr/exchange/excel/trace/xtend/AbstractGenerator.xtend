@@ -48,8 +48,7 @@ abstract class AbstractGenerator implements IGeneratorMyWithProgress {
 	private EObject optRoot
 
 	private static String indentationString = "   "
-	private static String pathSeperatorLeft = "/ "
-	private static String pathSeperatorTop = "| "
+	private static String pathSeperator = "/"
 
 	public static String OPT_DEPENDENCY_COUNT = "Calculate number of dependencies (on/off)"
 	public static String OPT_DEPENDENCY_TYPES = "Types of dependencies to consider"
@@ -62,12 +61,16 @@ abstract class AbstractGenerator implements IGeneratorMyWithProgress {
 	public static String OPT_INCLUDE_COLOR = "Include colors in export (on/off)"
 	public static String OPT_DEPTH_INFERENCE = "Infer depth of satisfying components (on/off)"
 
+	public static String EXTENSION = ".xlsx"
+
 	def protected abstract String getTitle();
 
 	def void compile(IFileSystemAccess fsa, ResourceSet resSet, List<AElement> toprow, List<AElement> leftcol,
 		String fileName, IProgressMonitor monitor) {
+			
 		monitor.beginTask("Exporting " + title, toprow.length)
 
+		// get content
 		val resSetRoots = resSet.resources.flatMap[contents].map [
 			ScopedEObjectFactory.INSTANCE.createScopedEObjectForNullscope(it)
 		].toList
@@ -80,12 +83,21 @@ abstract class AbstractGenerator implements IGeneratorMyWithProgress {
 			toSet as Set<?> as Set<Satisfies<?, ?>>
 		val balancings = resSetRoots.iterator.flatMap[it.eAllContentsIncludingRoot].filter(Balancing).toSet
 
+		// start writing
 		val workbook = new WorkBook
+		workbook.insertSheets(0, 2)
 
+		workbook.sheet = 0
+		workbook.setSheetName(0, 'Function')
+
+		workbook.sheet = 1
+		workbook.setSheetName(1, 'DSM')
+
+				
 		// print the title of the sheet
 		workbook.setText(0, 0, title)
-
 		workbook.setText(1, 0, fileName)
+				
 		var rangeStyle = workbook.rangeStyle
 		workbook.setSelection(0, 0, 0, toprow.length + 1)
 		rangeStyle.mergeCells = true
@@ -101,6 +113,8 @@ abstract class AbstractGenerator implements IGeneratorMyWithProgress {
 
 		// print the top row and relations
 		val minHierarchyLevel = toprow.minHierarchyLevel
+		
+		
 		toprow.forEach [ top, i |
 			if(monitor.isCanceled) return;
 			setupCell(workbook, i, top, minHierarchyLevel)
@@ -113,6 +127,7 @@ abstract class AbstractGenerator implements IGeneratorMyWithProgress {
 		]
 
 		if(monitor.isCanceled) return;
+		
 		// print the left column
 		leftcol.forEach [ it, i |
 
@@ -132,23 +147,22 @@ abstract class AbstractGenerator implements IGeneratorMyWithProgress {
 			} else {
 				switch (OPT_PARENT_NAMES.option) {
 					case "all":
-						prefix = allParents.reverseView.join("", pathSeperatorLeft, pathSeperatorLeft, [name])
+						prefix = allParents.reverseView.join("", pathSeperator, pathSeperator, [name])
 					case "none":
 						prefix = ""
 					default:
-						prefix = (allParents.head?.name ?: "") + pathSeperatorLeft
+						prefix = (allParents.head?.name ?: "") + pathSeperator
 				}
 			}
 			
 			// clean prefix
 			var clean_prefix = LabelHelper.cleanName(prefix)
-			clean_prefix = clean_prefix.replace('/','.').trim()
+			clean_prefix = clean_prefix.replace(pathSeperator,'.').trim()
 
 			// clean name
 			var clean_name = name
 			clean_name = LabelHelper.cleanName(name)
 			clean_name = clean_name.trim()
-
 			clean_name = LabelHelper.cleanQualifiedName(clean_name)
 
 			workbook.setText(5 + i, 0, clean_prefix + clean_name)
@@ -181,16 +195,83 @@ abstract class AbstractGenerator implements IGeneratorMyWithProgress {
 		}
 
 		if(monitor.isCanceled) return;
+		
+		// connection functions etc ...
+		workbook.sheet = 0
+		workbook.setText(0, 0, "Name")
+		workbook.setText(0, 1, "Description")
+
+		leftcol.forEach [ it, i |
+
+			val offset = 1
+	
+			// set color
+			if (OPT_INCLUDE_COLOR.option == "on") {		
+				if (repHelper.getColor(it) != null) {
+					workbook.setSelection(offset + i, 0, offset + i, 0)
+					workbook.setElementsColor(it)
+				}				
+			}
+		
+			var String pre = ""
+			if (OPT_INCLUDE_PARENTS.option == "on") {
+				for (var j = 0; j < hierarchyLevel; j++) {
+					pre += indentationString
+				}
+			} else {
+				switch (OPT_PARENT_NAMES.option) {
+					case "all":
+						pre = allParents.reverseView.join("", pathSeperator, pathSeperator, [name])
+					case "none":
+						pre = ""
+					default:
+						pre = (allParents.head?.name ?: "") + pathSeperator
+				}
+			}
+			
+			// clean prefix
+			var clean_prefix = LabelHelper.cleanName(pre)
+			clean_prefix = clean_prefix.replace(pathSeperator,'.').trim()
+
+			// clean name
+			var clean_name = name
+			clean_name = LabelHelper.cleanName(name)
+			clean_name = clean_name.trim()
+			clean_name = LabelHelper.cleanQualifiedName(clean_name)
+
+			workbook.setText(offset + i, 0, clean_prefix + clean_name)
+			workbook.setText(offset + i, 1, description)
+
+			grayOutUnneededRow(toprow, workbook, i)
+		]
+
+
+		// connections
+		workbook.sheet = 2
+		workbook.setSheetName(2, 'Connections')
+		
+		workbook.setText(0, 0, 'Name')
+		workbook.setText(0, 1, 'Source Name')
+		workbook.setText(0, 2, 'Target Name')
+
+		connections.forEach[ it, k |
+			workbook.setText(1 + k, 0, name)
+			workbook.setText(1 + k, 1, LabelHelper.cleanName(sourcePointer.target.name))
+			workbook.setText(1 + k, 2, LabelHelper.cleanName(targetPointer.target.name))
+		]
+		
 		// save the file
 		try {
 			var out = new ByteArrayOutputStream
 			workbook.writeXLSX(out)
+			
+			var encoded_file = GeneratorHelper::encodeFileName(fileName)
+			var inStream = new ByteArrayInputStream(out.toByteArray)
+					
 			if (fsa instanceof InMemoryFileSystemAccess) { // still needed, the GenerationHandler uses it
-				fsa.generateFile(GeneratorHelper::encodeFileName(fileName) + ".xlsx",
-					new ByteArrayInputStream(out.toByteArray))
+				fsa.generateFile(encoded_file + EXTENSION, inStream)
 			} else if (fsa instanceof EclipseResourceFileSystemAccess2) {
-				fsa.generateFile(GeneratorHelper::encodeFileName(fileName) + ".xlsx",
-					new ByteArrayInputStream(out.toByteArray))
+				fsa.generateFile(encoded_file + EXTENSION, inStream)
 			}
 		} catch (RuntimeIOException e) {
 			println("Could not write file: " + (e.cause as CoreException).status.exception.message)
@@ -229,22 +310,34 @@ abstract class AbstractGenerator implements IGeneratorMyWithProgress {
 			}
 			workbook.setText(3, i + 2, prefix + top.name)
 		} else {
+
+			var prefix =""
+			switch (OPT_PARENT_NAMES.option) {
+				case "all":
+					prefix = top.allParents.reverseView.join("", pathSeperator, pathSeperator, [name])
+				case "none":
+					prefix = ""
+				default:
+					prefix = (top.allParents.head?.name ?: "") + pathSeperator
+			}
+			
+			/*
 			var String postfix = ""
 			switch (OPT_PARENT_NAMES.option) {
 				case "all":
-					postfix = top.allParents.join(pathSeperatorTop, pathSeperatorTop, "", [name])
+					postfix = top.allParents.join(pathSeperator, pathSeperator, "", [name])
 				case "none":
 					postfix = ""
 				default:
-					postfix = pathSeperatorTop + (top.allParents.head?.name ?: "")
-			}
+					postfix = pathSeperator + (top.allParents.head?.name ?: "")
+			}*/
 			
 			var clean_name = LabelHelper.cleanName(top.name).trim()
 			
-			var clean_postfix = LabelHelper.cleanName(postfix).trim()
-			clean_postfix = clean_postfix.replace('|', '.')
+			var clean_prefix = LabelHelper.cleanName(prefix).trim()
+			clean_prefix = clean_prefix.replace(pathSeperator, '.')
 			
-			workbook.setText(3, i + 2, clean_name + clean_postfix)
+			workbook.setText(3, i + 2, clean_prefix + clean_name)
 		}
 	}
 
@@ -356,5 +449,4 @@ abstract class AbstractGenerator implements IGeneratorMyWithProgress {
 		var c2 = (base + col % 26) as char
 		'''«IF c0 != '@'.charAt(0)»«c0»«ENDIF»«IF c1 != '@'.charAt(0)»«c1»«ENDIF»«c2»«row + 1»'''
 	}
-
 }
