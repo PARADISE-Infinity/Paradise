@@ -90,5 +90,4 @@ class GeneratorTest {
 	def operator_spaceship(long expected, long actual) {
 		assertEquals(expected, actual)
 	}
-
 }
